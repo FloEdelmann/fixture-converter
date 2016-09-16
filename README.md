@@ -11,4 +11,4 @@ For this purpose, I created this little script that converts a JSON file with al
 
 ## How does the input format have to look like?
 
-Just see [fixtures_convert.js, line 13](fixture_convert.js#L13).
+Just see [fixtures_convert.js, line 13](fixtures_convert.js#L13).
