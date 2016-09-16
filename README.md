@@ -1,4 +1,4 @@
-# Fixture converter
+# DMX Fixture converter
 
 Creating fixture files is relatively easy for most DMX control software, as they offer editors for their proprietary formats. But what if you want to try another program?
 
