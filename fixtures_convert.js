@@ -1,11 +1,5 @@
 #!/usr/bin/node
 
-/* TODO:
-* what is ecue's deflection?
-* what is ecue's header?
-* what is ecue's (classicPos) / classicEntry?
-*/
-
 'use strict';
 
 let filename = 'fixtures.json';
@@ -89,10 +83,14 @@ const formats = ['ecue', 'qlcplus'];
 
 const fs = require('fs');
 const path = require('path');
+const mkdirp = require('mkdirp');
+
+let outDir = ['out', '%FORMAT%'].join(path.sep);
 
 const {argv, options} = require('node-getopt').create([
     ['o' , 'format=ARG', `Required. Specifies output format. Possible arguments: "${formats.join('", "')}"`],
     ['f' , 'filename=ARG', `Specifies input filename. Default: "${filename}"`],
+    ['d' , 'outdir=ARG', `Specifies the output directory. "%FORMAT%" gets replaced by the used output format. Default: "${outDir}"`],
     ['h' , 'help', 'Display this help.']
 ])              // create Getopt instance
 .bindHelp()     // bind option 'help' to default action
@@ -104,6 +102,9 @@ if (!options.format || formats.indexOf(options.format) == -1) {
 
 if (options.filename) {
     filename = options.filename;
+}
+if (options.outdir) {
+    outDir = options.outdir;
 }
 
 let manufacturers;
@@ -123,22 +124,23 @@ fs.access(filename, fs.constants.R_OK, (readError) => {
         die(`Malformed JSON file "${filename}"! The error is attached below:\n`, parseError);
     }
 
-    fs.mkdir(options.format, (mkdirError) => {
-        if (mkdirError && mkdirError.code != 'EEXIST') {
-            die(`Error creating directory "${options.format}", exiting.`, mkdirError);
+    const localOutDir = outDir.replace(/%FORMAT%/g, options.format);
+    mkdirp(localOutDir, (mkdirpError) => {
+        if (mkdirpError) {
+            die(`Could not create directory "${localOutDir}", exiting.`, mkdirpError);
         }
 
         if (options.format == 'ecue') {
-            formatEcue();
+            formatEcue(localOutDir);
         }
         else if (options.format == 'qlcplus') {
-            formatQLCplus();
+            formatQLCplus(localOutDir);
         }
-    })
+    });
 });
 
 
-function formatEcue() {
+function formatEcue(localOutDir) {
     const timestamp = new Date().toISOString().replace(/T/, '#').replace(/\..+/, '');
     let str = '<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n';
     str += `<Document Owner="user" TypeVersion="2" SaveTimeStamp="${timestamp}">\n`;
@@ -262,7 +264,7 @@ function formatEcue() {
     str += '    </Library>\n';
     str += '</Document>\n';
 
-    let outFile = [options.format, 'UserLibrary.xml'].join(path.sep);
+    let outFile = [localOutDir, 'UserLibrary.xml'].join(path.sep);
 
     fs.writeFile(outFile, str, (writeError) => {
         if (writeError) {
@@ -271,7 +273,7 @@ function formatEcue() {
         console.log(`File "${outFile} successfully written.`);
     });
 }
-function formatQLCplus() {
+function formatQLCplus(localOutDir) {
     console.log("handling qlcplus");
 }
 
