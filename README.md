@@ -25,7 +25,7 @@ Just see [fixtures_convert.js, line 7](fixtures_convert.js#L7).
 ## Usage
 
 ```
-./fixture_convert.js --help
+./fixtures_convert.js --help
 ```
 lists all possible options.
 
