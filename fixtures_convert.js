@@ -15,7 +15,7 @@ const formats = ['ecue', 'qlcplus'];
 
 const {argv, options} = require('node-getopt').create([
     ['f' , 'format=ARG', `Required. Specifies output format. Possible arguments: "${formats.join('", "')}"`],
-    ['i' , 'input=ARG', `Specifies input filename. If this is not a JSON file, import it using the format speciefied in --format. Default: "${filename}"`],
+    ['i' , 'input=ARG', `Specifies input filename. If this is not a JSON file, import it using the format specified in --format. Default: "${filename}"`],
     ['d' , 'outdir=ARG', `Specifies the output directory. "%FORMAT%" gets replaced by the used output format. Default: "${outDir}"`],
     ['h' , 'help', 'Display this help.']
 ])              // create Getopt instance
@@ -53,7 +53,7 @@ function handleExport() {
             str = fs.readFileSync(imports[i], 'utf8');
         }
         catch (readError) {
-            die(`Can't read file "${imports[i]}", exiting. The error is attached below:\n`, readError);
+            die(`Can't read file "${imports[i]}", exiting. The error is attached below:\n`, readError); // '
         }
 
         // read JSON
@@ -62,7 +62,7 @@ function handleExport() {
             parsedJSON = JSON.parse(str);
         }
         catch (parseError) {
-            die(`Malformed JSON file "${imports[i]}"! The error is attached below:\n`, parseError);
+            die(`Malformed JSON file "${imports[i]}", exiting. The error is attached below:\n`, parseError);
         }
 
         if (parsedJSON.imports) {
@@ -97,7 +97,7 @@ function handleImport() {
     const formatter = require(['.', 'formats', `${options.format}.js`].join(path.sep));
 
     if (!formatter.import) {
-        die(`Format "${options.format}" can't import yet.`);
+        die(`Format "${options.format}" can't import yet.`); // '
     }
 
     let str = '';
@@ -105,7 +105,7 @@ function handleImport() {
         str = fs.readFileSync(filename, 'utf8');
     }
     catch (readError) {
-        die(`Can't read file "${filename}", exiting. The error is attached below:\n`, readError);
+        die(`Can't read file "${filename}", exiting. The error is attached below:\n`, readError); // '
     }
 
     const localOutDir = outDir.replace(/%FORMAT%/g, options.format);
@@ -123,7 +123,7 @@ function handleImport() {
                 if (writeError) {
                     die(`Error writing to file "${outFile}", exiting.`, writeError);
                 }
-                console.log(`File "${outFile} successfully written.`);
+                console.log(`File "${outFile}" successfully written.`);
             });
         });
     });
