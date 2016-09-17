@@ -1,5 +1,5 @@
 module.exports = {
-    "imports": [], // optional. Contains paths (relative to the base directory) to other fixture JSON files that shall be included
+    "imports": [], // optional. Contains paths (relative to the working directory) to other fixture JSON files that shall be included
     "manufacturers": {
         "shortName": {
             "name": null, // required
@@ -34,7 +34,7 @@ module.exports = {
                 "DMXconnector": "3-pin", // optional. Possible values: "3-pin/5-pin/3-pin and 5-pin/3.5mm stereo jack/Other/free text"
                 "power": 0 // optional. in W.
             },
-            "availableChannels": {
+            "availableChannels": { // required
                 "ch1": {
                     "name": null, // required
                     "byte": 0, // only for 16bit channels. 0 for MSB / 1 for LSB
