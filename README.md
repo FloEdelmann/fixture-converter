@@ -4,10 +4,10 @@ Creating fixture files is relatively easy for most DMX control software, as they
 
 For this purpose, I created this little script that converts a JSON file with all fixture data to various output formats.
 
-## Supported output formats
+## Supported formats formats
 
-* [e:cue](http://www.ecue.de/)
-* [QLC+](http://www.qlcplus.org/)
+* [e:cue](http://www.ecue.de/) (import / export)
+* [QLC+](http://www.qlcplus.org/) (export only for now)
 
 
 ## How does the input format have to look like?
@@ -32,6 +32,12 @@ npm install node-getopt mkdirp extend xml2js
 `./fixtures_convert.js --help` lists all possible options.
 
 **Note:** This script uses [destructuring](http://stackoverflow.com/questions/17379277/destructuring-in-node-js). For older versions of Node.js, you will have to use `node --harmony_destructuring fixtures_convert.js --help`.
+
+### Examples
+
+**Typical use:** `./fixtures_convert.js -f ecue` formats `fixtures.json` as *e:cue* and writes it to `out/ecue/UserLibrary.xml`
+
+**Import:** `./fixtures_convert.js -i UserLibrary.xml -f ecue` imports `UserLibrary.xml` as *e:cue* format and writes the resulting JSON file to `out/ecue/import_YYYY-MM-DD_hh:mm:ss.json`
 
 
 ## Contributing

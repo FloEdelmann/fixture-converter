@@ -94,6 +94,12 @@ function handleExport() {
 }
 
 function handleImport() {
+    const formatter = require(['.', 'formats', `${options.format}.js`].join(path.sep));
+
+    if (!formatter.import) {
+        die(`Format "${options.format}" can't import yet.`);
+    }
+
     let str = '';
     try {
         str = fs.readFileSync(filename, 'utf8');
@@ -108,7 +114,6 @@ function handleImport() {
             die(`Could not create directory "${localOutDir}", exiting.`, mkdirpError);
         }
 
-        const formatter = require(['.', 'formats', `${options.format}.js`].join(path.sep));
         const promise = formatter.import(str, filename);
 
         promise.then((obj) => {

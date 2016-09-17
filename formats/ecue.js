@@ -324,8 +324,6 @@ module.exports.import = function importEcue(str, filename) {
 
             resolve(out);
         });
-
-        
     });
 }
 
