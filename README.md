@@ -22,14 +22,15 @@ Just see [fixtures_defaults.js](fixtures_defaults.js).
 * [mkdirp](https://www.npmjs.com/package/mkdirp)
 * [extend](https://www.npmjs.com/package/extend)
 
-    npm install node-getopt mkdirp extend
-
+```
+npm install node-getopt mkdirp extend
+```
 
 ## Usage
 
 `./fixtures_convert.js --help` lists all possible options.
 
-**Note:** This script uses destructuring. For older versions of Node.js, you will have to use `node --harmony_destructuring fixtures_convert.js --help`.
+**Note:** This script uses [destructuring](http://stackoverflow.com/questions/17379277/destructuring-in-node-js). For older versions of Node.js, you will have to use `node --harmony_destructuring fixtures_convert.js --help`.
 
 
 ## Contributing
