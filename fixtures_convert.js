@@ -9,6 +9,7 @@ const formats = ['ecue', 'qlcplus'];
 const fs = require('fs');
 const path = require('path');
 const mkdirp = require('mkdirp');
+const extend = require('extend');
 
 let outDir = ['out', '%FORMAT%'].join(path.sep);
 
@@ -32,34 +33,55 @@ if (options.outdir) {
     outDir = options.outdir;
 }
 
-let manufacturers;
-let fixtures;
+let imports = [filename];
+let manufacturers = {};
+let fixtures = [];
 
-fs.access(filename, fs.constants.R_OK, (readError) => {
-    if (readError) {
-        die(`Can't read file "${filename}", exiting.`);
+let i = 0;
+while (i < imports.length) {
+    // check access
+    try {
+        fs.accessSync(imports[i], fs.constants.R_OK);
+    }
+    catch (readError) {
+        die(`Can't read file "${imports[i]}", exiting. The error is attached below:\n`, readError);
     }
 
+    // read JSON
+    let parsedJSON = {};
     try {
-        let json = JSON.parse(fs.readFileSync(filename, 'utf8'));
-        manufacturers = json.manufacturers;
-        fixtures = json.fixtures;
+        parsedJSON = JSON.parse(fs.readFileSync(imports[i], 'utf8'));
     }
     catch (parseError) {
-        die(`Malformed JSON file "${filename}"! The error is attached below:\n`, parseError);
+        die(`Malformed JSON file "${imports[i]}"! The error is attached below:\n`, parseError);
     }
 
-    const localOutDir = outDir.replace(/%FORMAT%/g, options.format);
-    mkdirp(localOutDir, (mkdirpError) => {
-        if (mkdirpError) {
-            die(`Could not create directory "${localOutDir}", exiting.`, mkdirpError);
+    if (parsedJSON.imports) {
+        for (let newImport of parsedJSON.imports) {
+            if (imports.indexOf(newImport) == -1) {
+                // only if not already imported
+                imports.push(newImport);
+            }
         }
+    }
 
-        console.log(`Handling ${options.format} formatting...`);
+    extend(manufacturers, parsedJSON.manufacturers);
+    fixtures = fixtures.concat(parsedJSON.fixtures);
 
-        let formatter = require(['.', 'formats', `${options.format}.js`].join(path.sep));
-        formatter.format(manufacturers, fixtures, localOutDir);
-    });
+    i++;
+}
+
+
+const localOutDir = outDir.replace(/%FORMAT%/g, options.format);
+mkdirp(localOutDir, (mkdirpError) => {
+    if (mkdirpError) {
+        die(`Could not create directory "${localOutDir}", exiting.`, mkdirpError);
+    }
+
+    console.log(`Handling ${options.format} formatting...`);
+
+    let formatter = require(['.', 'formats', `${options.format}.js`].join(path.sep));
+    formatter.format(manufacturers, fixtures, localOutDir);
 });
 
 

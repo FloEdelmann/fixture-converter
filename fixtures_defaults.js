@@ -1,4 +1,5 @@
 module.exports = {
+    "imports": [], // optional. Contains paths (relative to the base directory) to other fixture JSON files that shall be included
     "manufacturers": {
         "shortName": {
             "name": null, // required
@@ -45,7 +46,7 @@ module.exports = {
                     "constant": false, // optional
                     "crossfade": false, // optional
                     "precendence": "LTP", // optional. Possible values: "HTP/LTP"
-                    "capabilities": [ // required
+                    "capabilities": [ // optional
                         {
                             "range": [0, 255],
                             "name": "0-100%",

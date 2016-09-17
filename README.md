@@ -12,7 +12,7 @@ For this purpose, I created this little script that converts a JSON file with al
 
 ## How does the input format have to look like?
 
-Just see [fixtures_convert.js, line 7](fixtures_convert.js#L7).
+Just see [fixtures_defaults.js](fixtures_defaults.js).
 
 
 ## Dependencies
@@ -20,6 +20,7 @@ Just see [fixtures_convert.js, line 7](fixtures_convert.js#L7).
 * [Node.js](https://nodejs.org/en/)
 * [node-getopt](https://www.npmjs.com/package/node-getopt)
 * [mkdirp](https://www.npmjs.com/package/mkdirp)
+* [extend](https://www.npmjs.com/package/extend)
 
 
 ## Usage

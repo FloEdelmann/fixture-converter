@@ -1,5 +1,7 @@
 const fs = require('fs');
 const path = require('path');
+const extend = require('extend');
+
 const defaults = require(['..', 'fixtures_defaults.js'].join(path.sep));
 
 module.exports.format = function formatEcue(manufacturers, fixtures, localOutDir) {
@@ -9,7 +11,9 @@ module.exports.format = function formatEcue(manufacturers, fixtures, localOutDir
     str += '    <Library>\n'
     str += '        <Fixtures>\n';
 
-    for (const manufacturer in manufacturers) {
+    const manufacturerShortNames = Object.keys(manufacturers).sort();
+
+    for (const manufacturer of manufacturerShortNames) {
         const manData = extend({}, defaults.manufacturers.shortName, manufacturers[manufacturer]);
 
         str += `            <Manufacturer _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${manData.name}" Comment="${manData.comment}" Web="${manData.website}">\n`;
@@ -18,13 +22,15 @@ module.exports.format = function formatEcue(manufacturers, fixtures, localOutDir
             if (fixture.manufacturer != manufacturer) continue;
 
             let fixData = extend({}, defaults.fixtures[0], fixture);
-            if (fixData.shortName == null)
+            if (fixData.shortName == null) {
                 fixData.shortName = fixData.name;
+            }
 
             for (const mode of fixture.modes) {
                 let modeData = extend({}, defaults.fixtures[0].modes[0], mode);
-                if (modeData.shortName == null)
+                if (modeData.shortName == null) {
                     modeData.shortName = modeData.name;
+                }
 
                 const useName = fixData.name + (fixture.modes.length == 1 ? '' : ` (${modeData.shortName})`);
                 const useComment = fixData.comment + (fixture.modes.length == 1 ? '' : ` (${modeData.name})`);
@@ -117,7 +123,7 @@ module.exports.format = function formatEcue(manufacturers, fixtures, localOutDir
     str += '        </Fixtures>\n';
     str += '        <Tiles>\n';
 
-    for (const manufacturer in manufacturers) {
+    for (const manufacturer of manufacturerShortNames) {
         const manData = extend({}, defaults.manufacturers.shortName, manufacturers[manufacturer]);
 
         str += `            <Manufacturer _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${manData.name}" Comment="${manData.comment}" Web="${manData.website}" />\n`;
@@ -134,19 +140,6 @@ module.exports.format = function formatEcue(manufacturers, fixtures, localOutDir
         }
         console.log(`File "${outFile} successfully written.`);
     });
-}
-
-
-// from http://stackoverflow.com/a/11197343
-function extend(target, ...sources) {
-    for (let obj of sources) {
-        for (let key in obj) {
-            if (obj.hasOwnProperty(key)) {
-                target[key] = obj[key];
-            }
-        }
-    }
-    return target;
 }
 
 function die(errorStr, logStr) {
