@@ -2,16 +2,16 @@
 
 'use strict';
 
-let filename = 'fixtures.json';
-
-const formats = ['ecue', 'qlcplus'];
-
 const fs = require('fs');
 const path = require('path');
 const mkdirp = require('mkdirp');
 const extend = require('extend');
 
+let filename = 'fixtures.json';
 let outDir = ['out', '%FORMAT%'].join(path.sep);
+
+const formats = ['ecue', 'qlcplus'];
+
 
 const {argv, options} = require('node-getopt').create([
     ['f' , 'format=ARG', `Required. Specifies output format. Possible arguments: "${formats.join('", "')}"`],
@@ -66,7 +66,7 @@ function handleExport() {
         }
 
         if (parsedJSON.imports) {
-            for (let newImport of parsedJSON.imports) {
+            for (const newImport of parsedJSON.imports) {
                 if (imports.indexOf(newImport) == -1) {
                     // only if not already imported
                     imports.push(newImport);
@@ -88,7 +88,7 @@ function handleExport() {
 
         console.log(`Handling ${options.format} formatting...`);
 
-        let formatter = require(['.', 'formats', `${options.format}.js`].join(path.sep));
+        const formatter = require(['.', 'formats', `${options.format}.js`].join(path.sep));
         formatter.format(manufacturers, fixtures, localOutDir);
     });
 }
@@ -102,7 +102,26 @@ function handleImport() {
         die(`Can't read file "${filename}", exiting. The error is attached below:\n`, readError);
     }
 
+    const localOutDir = outDir.replace(/%FORMAT%/g, options.format);
+    mkdirp(localOutDir, (mkdirpError) => {
+        if (mkdirpError) {
+            die(`Could not create directory "${localOutDir}", exiting.`, mkdirpError);
+        }
 
+        const formatter = require(['.', 'formats', `${options.format}.js`].join(path.sep));
+        const promise = formatter.import(str, filename);
+
+        promise.then((obj) => {
+            const timestamp = new Date().toISOString().replace(/T/, '_').replace(/:/g, '-').replace(/\..+/, '');
+            const outFile = [localOutDir, `import_${timestamp}.json`].join(path.sep);
+            fs.writeFile(outFile, JSON.stringify(obj, null, 4), (writeError) => {
+                if (writeError) {
+                    die(`Error writing to file "${outFile}", exiting.`, writeError);
+                }
+                console.log(`File "${outFile} successfully written.`);
+            });
+        });
+    });
 }
 
 
