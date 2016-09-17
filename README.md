@@ -4,7 +4,7 @@ Creating fixture files is relatively easy for most DMX control software, as they
 
 For this purpose, I created this little script that converts a JSON file with all fixture data to various output formats.
 
-## Supported formats formats
+## Supported formats
 
 * [e:cue](http://www.ecue.de/) (import / export)
 * [QLC+](http://www.qlcplus.org/) (export only for now)
