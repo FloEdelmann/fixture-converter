@@ -119,11 +119,21 @@ function handleImport() {
         promise.then((obj) => {
             const timestamp = new Date().toISOString().replace(/T/, '_').replace(/:/g, '-').replace(/\..+/, '');
             const outFile = [localOutDir, `import_${timestamp}.json`].join(path.sep);
-            fs.writeFile(outFile, JSON.stringify(obj, null, 4), (writeError) => {
-                if (writeError) {
+            let outStr = JSON.stringify(obj, null, 4);
+
+            // make arrays fit in one line
+            outStr = outStr.replace(/^( +)"(range|dimensions|degreesMinMax)": \[\n((?:.|\n)*?)^\1\]/mg, (match, spaces, key, values) => {
+                return `${spaces}"${key}": [` + JSON.parse('[' + values + ']').join(', ') + ']';
+            });
+
+            fs.writeFile(outFile, outStr, (writeError) => {
+                if (writeError)
                     die(`Error writing to file "${outFile}", exiting.`, writeError);
-                }
+                
                 console.log(`File "${outFile}" successfully written.`);
+
+                if (outStr.includes('warning'))
+                    console.log('Please check for warnings using a text editor.');
             });
         });
     });

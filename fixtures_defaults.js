@@ -15,13 +15,15 @@ module.exports = {
             "type": "Other", // optional. Possible values: "Color Changer/Dimmer/Effect/Fan/Flower/Hazer/Laser/Moving Head/Other/Scanner/Smoke/Strobe"
             "comment": "", // optional
             "physical": {  // optional
+                "dimensions": [0, 0, 0], // optional. width, height, depth (in mm)
+                "weight": 0.0, // optional. in kg.
+                "power": 0, // optional. in W.
+                "DMXconnector": "3-pin", // optional. Possible values: "3-pin/5-pin/3-pin and 5-pin/3.5mm stereo jack/Other/free text"
                 "bulb": {
                     "colorTemperature": 0, // optional
                     "type": "", // optional. e.g. "LED"
                     "lumens": 0 // optional
                 },
-                "dimensions": [0, 0, 0], // optional. width, height, depth (in mm)
-                "weight": 0.0, // optional. in kg.
                 "lens": {
                     "name": "Other", // optional. Possible values: "PC/Fresnel/Other/free text"
                     "degreesMinMax": [0.0, 0.0] // optional. Range 0..360 (in deg)
@@ -30,14 +32,12 @@ module.exports = {
                     "type": "Fixed", // optional. Possible values: "Fixed/Head/Mirror/Barrel/free text"
                     "panMax": 0, // optional. in deg.
                     "tiltMax": 0 // optional. in deg.
-                },
-                "DMXconnector": "3-pin", // optional. Possible values: "3-pin/5-pin/3-pin and 5-pin/3.5mm stereo jack/Other/free text"
-                "power": 0 // optional. in W.
+                }
             },
             "availableChannels": { // required
                 "ch1": {
                     "name": null, // required
-                    "byte": 0, // only for 16bit channels. 0 for MSB / 1 for LSB
+                    "byte": "MSB", // only for 16bit channels. Possible Values: "MSB/LSB" (most / least significant byte)
                     "type": "Intensity", // optional. Possible values: "Intensity/Shutter/Speed/Color/Gobo/Prism/Pan/Tilt/Beam/Effect/Maintenance/Nothing". Note: Use "Color" only for multiple colors in one channel, and "Intensity" else.
                     "color": "Generic", // optional. Possible values: "Generic/Red/Green/Blue/Cyan/Magenta/Yellow/Amber/White/UV/Lime". Note: Only important if "type" is "Intensity"
                     "defaultValue": 0, // optional. DMX channel value

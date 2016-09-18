@@ -36,7 +36,7 @@ module.exports.format = function formatQLCplus(manufacturers, fixtures, localOut
             const chData = chDatas[channel] = extend({}, defaults.fixtures[0].availableChannels.ch1, fixData.availableChannels[channel]);
 
             str += ` <Channel Name="${chData.name}">\n`;
-            str += `  <Group Byte="${chData.byte}">${chData.type}</Group>\n`;
+            str += `  <Group Byte="${chData.byte == "MSB" ? 0 : 1}">${chData.type}</Group>\n`;
 
             for (const capability of chData.capabilities) {
                 const capData = extend({}, defaults.fixtures[0].availableChannels.ch1.capabilities[0], capability);
