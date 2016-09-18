@@ -17,9 +17,7 @@ const {argv, options} = require('node-getopt').create([
     ['i' , 'input=ARG', `Specifies input filename. If this is not a JSON file, import it using the format specified in --format. Default: "${filename}"`],
     ['d' , 'outdir=ARG', `Specifies the output directory. "%FORMAT%" gets replaced by the used output format. Default: "${outDir}"`],
     ['h' , 'help', 'Display this help.']
-])              // create Getopt instance
-.bindHelp()     // bind option 'help' to default action
-.parseSystem(); // parse command line
+]).bindHelp().parseSystem();
 
 if (!options.format || formats.indexOf(options.format) == -1) {
     die("Invalid output format. Please specify --format. For help, use --help.");

@@ -21,9 +21,10 @@ Just see [fixtures_defaults.js](fixtures_defaults.js).
 * [node-getopt](https://www.npmjs.com/package/node-getopt)
 * [mkdirp](https://www.npmjs.com/package/mkdirp)
 * [xml2js](https://github.com/Leonidas-from-XIV/node-xml2js)
+* [color-names](https://www.npmjs.com/package/color-names)
 
 ```
-npm install node-getopt mkdirp xml2js
+npm install node-getopt mkdirp xml2js color-names
 ```
 
 ## Usage

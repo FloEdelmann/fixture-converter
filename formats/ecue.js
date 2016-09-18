@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const colors = require('color-names');
 
 const defaults = require(['..', 'fixtures_defaults.js'].join(path.sep));
 
@@ -244,7 +245,7 @@ module.exports.import = function importEcue(str, filename) {
                             let name = channel.$.Name;
                             let shortName = name;
                             if (fix.availableChannels[shortName]) {
-                                shortName += Math.random().toString(36).substr(2, 5);
+                                shortName += '-' + Math.random().toString(36).substr(2, 5);
                             }
 
                             let ch = {
@@ -323,6 +324,16 @@ module.exports.import = function importEcue(str, filename) {
 
                                     if (cap.range[0] < 0 || cap.range[0] > 255 || cap.range[1] < 0 || cap.range[1] > 255) {
                                         cap.warning = "Out of range!";
+                                    }
+
+                                    // try to read a color
+                                    let substrLen = 0;
+                                    for (let hex in colors) {
+                                        //console.log(`Name "${cap.name}", Color "${colors[hex]}", Matches? ${cap.name.toLowerCase().includes(colors[hex].toLowerCase())}, Longer? ${colors[hex].length > substrLen}`);
+                                        if (cap.name.toLowerCase().includes(colors[hex].toLowerCase()) && colors[hex].length > substrLen) {
+                                            cap.color = hex;
+                                            substrLen = colors[hex].length;
+                                        }
                                     }
                                     
                                     if (range.$.AutoMenu != "1")
