@@ -2,7 +2,6 @@
 
 const fs = require('fs');
 const path = require('path');
-const extend = require('extend');
 
 const defaults = require(['..', 'fixtures_defaults.js'].join(path.sep));
 
@@ -20,12 +19,12 @@ module.exports.format = function formatQLCplus(manufacturers, fixtures, localOut
         str += `  <Author>${username}</Author>\n`;
         str += ' </Creator>\n';
 
-        let fixData = extend({}, defaults.fixtures[0], fixture);
+        let fixData = Object.assign({}, defaults.fixtures[0], fixture);
         if (fixData.shortName == null) {
             fixData.shortName = fixData.name;
         }
 
-        const manData = extend({}, defaults.manufacturers.shortName, manufacturers[fixData.manufacturer]);
+        const manData = Object.assign({}, defaults.manufacturers.shortName, manufacturers[fixData.manufacturer]);
 
         str += ` <Manufacturer>${manData.name}</Manufacturer>\n`;
         str += ` <Model>${fixData.name}</Model>\n`;
@@ -33,13 +32,13 @@ module.exports.format = function formatQLCplus(manufacturers, fixtures, localOut
 
         const chDatas = {};
         for (const channel in fixData.availableChannels) {
-            const chData = chDatas[channel] = extend({}, defaults.fixtures[0].availableChannels.ch1, fixData.availableChannels[channel]);
+            const chData = chDatas[channel] = Object.assign({}, defaults.fixtures[0].availableChannels.ch1, fixData.availableChannels[channel]);
 
             str += ` <Channel Name="${chData.name}">\n`;
             str += `  <Group Byte="${chData.byte == "MSB" ? 0 : 1}">${chData.type}</Group>\n`;
 
             for (const capability of chData.capabilities) {
-                const capData = extend({}, defaults.fixtures[0].availableChannels.ch1.capabilities[0], capability);
+                const capData = Object.assign({}, defaults.fixtures[0].availableChannels.ch1.capabilities[0], capability);
 
                 str += `  <Capability Min="${capData.range[0]}" Max="${capData.range[1]}"`;
                 if (capData.image != null) {
@@ -59,14 +58,14 @@ module.exports.format = function formatQLCplus(manufacturers, fixtures, localOut
             str += ' </Channel>\n';
         }
 
-        let physData = extend({}, defaults.fixtures[0].physical, fixData.physical);
-        physData.bulb = extend({}, defaults.fixtures[0].physical.bulb, fixData.physical.bulb);
-        physData.lens = extend({}, defaults.fixtures[0].physical.lens, fixData.physical.lens);
-        physData.focus = extend({}, defaults.fixtures[0].physical.focus, fixData.physical.focus);
+        let physData = Object.assign({}, defaults.fixtures[0].physical, fixData.physical);
+        physData.bulb = Object.assign({}, defaults.fixtures[0].physical.bulb, fixData.physical.bulb);
+        physData.lens = Object.assign({}, defaults.fixtures[0].physical.lens, fixData.physical.lens);
+        physData.focus = Object.assign({}, defaults.fixtures[0].physical.focus, fixData.physical.focus);
 
         for (const mode of fixData.modes) {
-            let modeData = extend({}, defaults.fixtures[0].modes[0], mode);
-            modeData.physical = extend({}, physData, modeData.physical);
+            let modeData = Object.assign({}, defaults.fixtures[0].modes[0], mode);
+            modeData.physical = Object.assign({}, physData, modeData.physical);
 
             str += ` <Mode Name="${modeData.name}">\n`;
 

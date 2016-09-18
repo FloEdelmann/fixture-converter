@@ -2,7 +2,6 @@
 
 const fs = require('fs');
 const path = require('path');
-const extend = require('extend');
 
 const defaults = require(['..', 'fixtures_defaults.js'].join(path.sep));
 
@@ -16,20 +15,20 @@ module.exports.format = function formatEcue(manufacturers, fixtures, localOutDir
     const manufacturerShortNames = Object.keys(manufacturers).sort();
 
     for (const manufacturer of manufacturerShortNames) {
-        const manData = extend({}, defaults.manufacturers.shortName, manufacturers[manufacturer]);
+        const manData = Object.assign({}, defaults.manufacturers.shortName, manufacturers[manufacturer]);
 
         str += `            <Manufacturer _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${manData.name}" Comment="${manData.comment}" Web="${manData.website}">\n`;
 
         for (const fixture of fixtures) {
             if (fixture.manufacturer != manufacturer) continue;
 
-            let fixData = extend({}, defaults.fixtures[0], fixture);
+            let fixData = Object.assign({}, defaults.fixtures[0], fixture);
             if (fixData.shortName == null) {
                 fixData.shortName = fixData.name;
             }
 
             for (const mode of fixture.modes) {
-                let modeData = extend({}, defaults.fixtures[0].modes[0], mode);
+                let modeData = Object.assign({}, defaults.fixtures[0].modes[0], mode);
                 if (modeData.shortName == null) {
                     modeData.shortName = modeData.name;
                 }
@@ -37,10 +36,10 @@ module.exports.format = function formatEcue(manufacturers, fixtures, localOutDir
                 const useName = fixData.name + (fixture.modes.length == 1 ? '' : ` (${modeData.shortName})`);
                 const useComment = fixData.comment + (fixture.modes.length == 1 ? '' : ` (${modeData.name})`);
 
-                const physicalData = extend({}, defaults.fixtures[0].modes[0].physical, fixData.physical, modeData.physical);
-                const bulbData = extend({}, defaults.fixtures[0].modes[0].physical.bulb, physicalData.bulb);
-                const lensData = extend({}, defaults.fixtures[0].modes[0].physical.lens, physicalData.lens);
-                const focusData = extend({}, defaults.fixtures[0].modes[0].physical.focus, physicalData.focus);
+                const physicalData = Object.assign({}, defaults.fixtures[0].modes[0].physical, fixData.physical, modeData.physical);
+                const bulbData = Object.assign({}, defaults.fixtures[0].modes[0].physical.bulb, physicalData.bulb);
+                const lensData = Object.assign({}, defaults.fixtures[0].modes[0].physical.lens, physicalData.lens);
+                const focusData = Object.assign({}, defaults.fixtures[0].modes[0].physical.focus, physicalData.focus);
 
                 let fixStr = '';
 
@@ -54,7 +53,7 @@ module.exports.format = function formatEcue(manufacturers, fixtures, localOutDir
                         die(`Channel "${mode.channels[ch]}" not found in fixture "${fixData.name}", exiting.`);
                     }
 
-                    let chData = extend({}, defaults.fixtures[0].availableChannels.ch1, channel);
+                    let chData = Object.assign({}, defaults.fixtures[0].availableChannels.ch1, channel);
 
                     let chType = '';
                     let chName = chData.name;
@@ -91,7 +90,7 @@ module.exports.format = function formatEcue(manufacturers, fixtures, localOutDir
 
                     if (doubleByte) {
                         let msb = chData;
-                        let lsb = extend({}, defaults.fixtures[0].availableChannels.ch1, fixture.availableChannels[mode.channels[1]]);
+                        let lsb = Object.assign({}, defaults.fixtures[0].availableChannels.ch1, fixture.availableChannels[mode.channels[1]]);
 
                         dmxByte0 = i+1; // lsb
                         dmxByte1 = i; // msb
@@ -117,7 +116,7 @@ module.exports.format = function formatEcue(manufacturers, fixtures, localOutDir
 
                     if (hasCapabilities) {
                         for (const cap of channel.capabilities) {
-                            const capData = extend({}, defaults.fixtures[0].availableChannels.ch1.capabilities[0], cap);
+                            const capData = Object.assign({}, defaults.fixtures[0].availableChannels.ch1.capabilities[0], cap);
 
                             fixStr += `                        <Range Name="${capData.name}" Start="${capData.range[0]}" End="${capData.range[1]}" AutoMenu="${capData.showInMenu ? 1 : 0}" Centre="${capData.center ? 1 : 0}" />\n`;
                         }
@@ -138,7 +137,7 @@ module.exports.format = function formatEcue(manufacturers, fixtures, localOutDir
     str += '        <Tiles>\n';
 
     for (const manufacturer of manufacturerShortNames) {
-        const manData = extend({}, defaults.manufacturers.shortName, manufacturers[manufacturer]);
+        const manData = Object.assign({}, defaults.manufacturers.shortName, manufacturers[manufacturer]);
 
         str += `            <Manufacturer _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${manData.name}" Comment="${manData.comment}" Web="${manData.website}" />\n`;
     }

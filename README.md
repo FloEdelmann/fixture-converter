@@ -20,11 +20,10 @@ Just see [fixtures_defaults.js](fixtures_defaults.js).
 * [Node.js](https://nodejs.org/en/)
 * [node-getopt](https://www.npmjs.com/package/node-getopt)
 * [mkdirp](https://www.npmjs.com/package/mkdirp)
-* [extend](https://www.npmjs.com/package/extend)
 * [xml2js](https://github.com/Leonidas-from-XIV/node-xml2js)
 
 ```
-npm install node-getopt mkdirp extend xml2js
+npm install node-getopt mkdirp xml2js
 ```
 
 ## Usage

@@ -5,7 +5,6 @@
 const fs = require('fs');
 const path = require('path');
 const mkdirp = require('mkdirp');
-const extend = require('extend');
 
 let filename = 'fixtures.json';
 let outDir = ['out', '%FORMAT%'].join(path.sep);
@@ -74,7 +73,7 @@ function handleExport() {
             }
         }
 
-        extend(manufacturers, parsedJSON.manufacturers);
+        Object.assign(manufacturers, parsedJSON.manufacturers);
         fixtures = fixtures.concat(parsedJSON.fixtures);
 
         i++;
@@ -129,7 +128,7 @@ function handleImport() {
             fs.writeFile(outFile, outStr, (writeError) => {
                 if (writeError)
                     die(`Error writing to file "${outFile}", exiting.`, writeError);
-                
+
                 console.log(`File "${outFile}" successfully written.`);
 
                 if (outStr.includes('warning'))
