@@ -5,7 +5,7 @@ const path = require('path');
 
 const defaults = require(['..', 'fixtures_defaults.js'].join(path.sep));
 
-module.exports.format = function formatQLCplus(manufacturers, fixtures, localOutDir) {
+module.exports.export = function formatQLCplus(manufacturers, fixtures, localOutDir) {
     for (const fixture of fixtures) {
         let str = '<?xml version="1.0" encoding="UTF-8"?>\n';
         str += '<!DOCTYPE FixtureDefinition>\n';

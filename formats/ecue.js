@@ -5,7 +5,7 @@ const path = require('path');
 
 const defaults = require(['..', 'fixtures_defaults.js'].join(path.sep));
 
-module.exports.format = function formatEcue(manufacturers, fixtures, localOutDir) {
+module.exports.export = function formatEcue(manufacturers, fixtures, localOutDir) {
     const timestamp = new Date().toISOString().replace(/T/, '#').replace(/\..+/, '');
     let str = '<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n';
     str += `<Document Owner="user" TypeVersion="2" SaveTimeStamp="${timestamp}">\n`;

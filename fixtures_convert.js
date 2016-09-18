@@ -79,6 +79,11 @@ function handleExport() {
         i++;
     }
 
+    const formatter = require(['.', 'formats', `${options.format}.js`].join(path.sep));
+    if (!formatter.export) {
+        die(`Export to "${options.format}" not implemented yet.`);
+    }
+
     const localOutDir = outDir.replace(/%FORMAT%/g, options.format);
     mkdirp(localOutDir, (mkdirpError) => {
         if (mkdirpError) {
@@ -87,8 +92,7 @@ function handleExport() {
 
         console.log(`Handling ${options.format} formatting...`);
 
-        const formatter = require(['.', 'formats', `${options.format}.js`].join(path.sep));
-        formatter.format(manufacturers, fixtures, localOutDir);
+        formatter.export(manufacturers, fixtures, localOutDir);
     });
 }
 
@@ -96,7 +100,7 @@ function handleImport() {
     const formatter = require(['.', 'formats', `${options.format}.js`].join(path.sep));
 
     if (!formatter.import) {
-        die(`Format "${options.format}" can't import yet.`); // '
+        die(`Import from "${options.format}" not implemented yet.`);
     }
 
     let str = '';

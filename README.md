@@ -42,3 +42,14 @@ npm install node-getopt mkdirp xml2js
 ## Contributing
 
 Feel free to add your own output formats and / or fixtures. Just create a pull request!
+
+### New formats
+
+Each format may implement two functions:
+
+```js
+module.exports.export = function(manufacturers, fixtures, localOutDir) { ... }
+module.exports.import = function(str, filename) { ... }
+```
+
+Those will get called from [fixtures_convert.js](fixtures_convert.js), so you won't have to bother with command line arguments.
