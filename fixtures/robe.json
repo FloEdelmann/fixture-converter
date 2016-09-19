@@ -1,7 +1,8 @@
 {
     "manufacturers": {
         "Robe": {
-            "name": "Robe"
+            "name": "Robe",
+            "website": "http://www.robe.cz/"
         }
     },
     "fixtures": [
@@ -9,10 +10,21 @@
             "manufacturer": "Robe",
             "name": "DJ Scan 250 XT",
             "shortName": "Scan250XT",
+            "type": "Scanner",
             "physical": {
                 "dimensions": [308, 163, 483],
                 "weight": 9.5,
-                "power": 500
+                "power": 500,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 250"
+                },
+                "lens": {
+                    "degreesMinMax": [19.0, 19.0]
+                },
+                "focus": {
+                    "type": "Mirror"
+                }
             },
             "availableChannels": {
                 "pan": {
@@ -186,7 +198,7 @@
                         },
                         {
                             "range": [128, 190],
-                            "name": "CW rotation f-s",
+                            "name": "CW fast-slow",
                             "center": true
                         },
                         {
@@ -195,7 +207,7 @@
                         },
                         {
                             "range": [193, 255],
-                            "name": "CCW rotation s-f",
+                            "name": "CCW slow-fast",
                             "center": true
                         }
                     ]
@@ -211,7 +223,7 @@
                         },
                         {
                             "range": [1, 63],
-                            "name": "Intens 0-100%",
+                            "name": "Dimmer 0-100%",
                             "center": true
                         },
                         {

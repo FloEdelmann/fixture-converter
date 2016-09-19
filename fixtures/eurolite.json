@@ -1,7 +1,8 @@
 {
     "manufacturers": {
         "Eurolite": {
-            "name": "Eurolite"
+            "name": "Eurolite",
+            "website": "http://eshop.steinigke.de/Eurolite/"
         }
     },
     "fixtures": [
@@ -13,11 +14,14 @@
             "comment": "Compact Light Set. When Program is active, Red 1 (ch4) controls running speed, Green 1 (ch5) controls fade time.",
             "physical": {
                 "dimensions": [1200, 315, 65],
-                "weight": 9,
+                "weight": 9.0,
                 "power": 130,
                 "DMXconnector": "3-pin",
                 "bulb": {
                     "type": "LED"
+                },
+                "focus": {
+                    "type": "Fixed"
                 }
             },
             "availableChannels": {
@@ -261,7 +265,7 @@
                     "type": "LED"
                 },
                 "lens": {
-                    "degreesMinMax": [0.0, 14.0]
+                    "degreesMinMax": [14.0, 14.0]
                 },
                 "focus": {
                     "type": "Fixed"
@@ -338,7 +342,7 @@
             "manufacturer": "Eurolite",
             "name": "LED TMH-18",
             "shortName": "TMH18",
-            "type": "Color Changer",
+            "type": "Moving Head",
             "physical": {
                 "dimensions": [145, 260, 360],
                 "weight": 5.8,
@@ -1029,6 +1033,17 @@
                 ["pan", "pan16bit"],
                 ["tilt", "tilt16bit"]
             ],
+            "heads": {
+                "top left": ["red1", "green1", "blue1", "white1"],
+                "top center": ["red2", "green2", "blue2", "white2"],
+                "top right": ["red3", "green3", "blue3", "white3"],
+                "center left": ["red4", "green4", "blue4", "white4"],
+                "center center": ["red5", "green5", "blue5", "white5"],
+                "center right": ["red6", "green6", "blue6", "white6"],
+                "bottom left": ["red7", "green7", "blue7", "white7"],
+                "bottom center": ["red8", "green8", "blue8", "white8"],
+                "bottom right": ["red9", "green9", "blue9", "white9"],
+            },
             "modes": [
                 {
                     "name": "1-channel Mode",

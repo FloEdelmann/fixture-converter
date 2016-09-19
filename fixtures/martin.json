@@ -1,7 +1,8 @@
 {
     "manufacturers": {
         "Martin": {
-            "name": "Martin"
+            "name": "Martin",
+            "website": "http://www.martin.com/"
         }
     },
     "fixtures": [
@@ -9,10 +10,26 @@
             "manufacturer": "Martin",
             "name": "RoboScan 812",
             "shortName": "Scan812",
+            "type": "Scanner",
             "physical": {
                 "dimensions": [190, 165, 436],
                 "weight": 9.4,
-                "power": 170
+                "power": 170,
+                "DMXconnector": "3-pin (swapped +/-)",
+                "bulb": {
+                    "colorTemperature": 0, // optional
+                    "type": "", // optional. e.g. "LED"
+                    "lumens": 0 // optional
+                },
+                "lens": {
+                    "name": "Other", // optional. Possible values: "PC/Fresnel/Other/free text"
+                    "degreesMinMax": [15.5, 15.5]
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 173,
+                    "tiltMax": 83
+                }
             },
             "availableChannels": {
                 "strobe": {
@@ -26,19 +43,19 @@
                         },
                         {
                             "range": [11, 74],
-                            "name": "Strobe gobo"
+                            "name": "Gobo strobe fast-slow"
                         },
                         {
                             "range": [75, 138],
-                            "name": "Strobe color"
+                            "name": "Color strobe fast-slow"
                         },
                         {
                             "range": [139, 170],
-                            "name": "Autotrigger"
+                            "name": "Remote Autotrigger"
                         },
                         {
                             "range": [171, 202],
-                            "name": "Musictrigger"
+                            "name": "Remote Musictrigger"
                         },
                         {
                             "range": [203, 235],
@@ -334,19 +351,52 @@
                 "pan": {
                     "name": "Pan",
                     "type": "Pan",
-                    "defaultValue": 128
+                    "defaultValue": 127
                 },
                 "tilt": {
                     "name": "Tilt",
                     "type": "Tilt",
-                    "defaultValue": 128
+                    "defaultValue": 127
+                },
+                "movementSpeed": {
+                    "name": "Movement Speed",
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Tracking mode"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "fast-slow"
+                        }
+                    ]
+                },
+                "colorGoboSpeed": {
+                    "name": "Color+Gobo Speed",
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Tracking mode"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "fast-slow"
+                        }
+                    ]
                 }
             },
             "modes": [
                 {
-                    "name": "5-channel Mode",
-                    "shortName": "5ch",
+                    "name": "5-channel tracking Mode",
+                    "shortName": "tracking",
                     "channels": ["strobe", "color", "gobo", "pan", "tilt"]
+                },
+                {
+                    "name": "7-channel vector Mode",
+                    "shortName": "vector",
+                    "channels": ["strobe", "color", "gobo", "pan", "tilt", "movementSpeed", "colorGoboSpeed"]
                 }
             ]
         }
