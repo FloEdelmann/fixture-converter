@@ -36,8 +36,7 @@ module.exports = {
             },
             "availableChannels": { // required
                 "ch1": {
-                    "name": null, // required
-                    "byte": "MSB", // only for 16bit channels. Possible Values: "MSB/LSB" (most / least significant byte)
+                    "name": null, // optional. default: channel object key (here: "ch1")
                     "type": "Intensity", // optional. Possible values: "Intensity/Shutter/Speed/Color/Gobo/Prism/Pan/Tilt/Beam/Effect/Maintenance/Nothing". Note: Use "Color" only for multiple colors in one channel, and "Intensity" else.
                     "color": "Generic", // optional. Possible values: "Generic/Red/Green/Blue/Cyan/Magenta/Yellow/Amber/White/UV/Lime". Note: Only important if "type" is "Intensity"
                     "defaultValue": 0, // optional. DMX channel value
@@ -60,13 +59,14 @@ module.exports = {
                     ]
                 }
             },
+            "multiByteChannels": [], // optional. May contain arrays with corresponding channels, the most significant first. e.g. [["pan", "pan-fine"], ["tilt", "tilt-fine"]]
+            "heads": {}, // optional. Group channels used for each head. e.g. { "Head 1": ["ch4", "ch5"], "Head 2": ["ch6", "ch7"] }
             "modes": [ // required
                 {
                     "name": null, // required. e.g. "7-channel Mode",
                     "shortName": null, // optional. Default: name. e.g. "7ch"
                     "physical": {}, // optional. overrides fixture defaults.
-                    "channels": null, // required. Use channels defined in availableChannels. To mark 16bit channels, wrap them in another array, e.g. ["ch1", ["ch2", "ch3"], "ch4", "ch5", "ch6", "ch7"]
-                    "heads": {} // optional. Group channels used for each head. e.g. { "Head 1":["ch4","ch5"], "Head 2":["ch6","ch7"] }
+                    "channels": null // required. Use channels defined in availableChannels. Unused channels can be null, e.g. ["ch1", null, "ch3"]
                 }
             ]
         }

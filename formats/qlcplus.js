@@ -25,6 +25,9 @@ module.exports.export = function formatQLCplus(manufacturers, fixtures, localOut
         }
 
         const manData = Object.assign({}, defaults.manufacturers.shortName, manufacturers[fixData.manufacturer]);
+        if (manData.name == null) {
+            manData.name = fixData.manufacturer;
+        }
 
         str += ` <Manufacturer>${manData.name}</Manufacturer>\n`;
         str += ` <Model>${fixData.name}</Model>\n`;
@@ -34,8 +37,21 @@ module.exports.export = function formatQLCplus(manufacturers, fixtures, localOut
         for (const channel in fixData.availableChannels) {
             const chData = chDatas[channel] = Object.assign({}, defaults.fixtures[0].availableChannels.ch1, fixData.availableChannels[channel]);
 
+            if (!chData.name)
+                chData.name = channel;
+
+            let byte = 0;
+            for (const multiByteChannel of fixData.multiByteChannels) {
+                for (const i in multiByteChannel) {
+                    if (multiByteChannel[i] == channel) {
+                        byte = i;
+                        break;
+                    }
+                }
+            }
+
             str += ` <Channel Name="${chData.name}">\n`;
-            str += `  <Group Byte="${chData.byte == "MSB" ? 0 : 1}">${chData.type}</Group>\n`;
+            str += `  <Group Byte="${byte}">${chData.type}</Group>\n`;
 
             for (const capability of chData.capabilities) {
                 const capData = Object.assign({}, defaults.fixtures[0].availableChannels.ch1.capabilities[0], capability);
@@ -66,6 +82,9 @@ module.exports.export = function formatQLCplus(manufacturers, fixtures, localOut
         for (const mode of fixData.modes) {
             let modeData = Object.assign({}, defaults.fixtures[0].modes[0], mode);
             modeData.physical = Object.assign({}, physData, modeData.physical);
+            modeData.physical.bulb = Object.assign({}, physData.bulb, modeData.physical.bulb);
+            modeData.physical.lens = Object.assign({}, physData.lens, modeData.physical.lens);
+            modeData.physical.focus = Object.assign({}, physData.focus, modeData.physical.focus);
 
             str += ` <Mode Name="${modeData.name}">\n`;
 
@@ -79,20 +98,26 @@ module.exports.export = function formatQLCplus(manufacturers, fixtures, localOut
 
             for (let i = 0; i < modeData.channels.length; i++) {
                 let channel = modeData.channels[i];
-                if (typeof channel != "string") {
-                    modeData.channels.splice(i+1, 0, channel[1]);
-                    channel = channel[0];
-                }
                 str += `  <Channel Number="${i}">${chDatas[channel].name}</Channel>\n`;
             }
 
-            for (const head in modeData.heads) {
-                const headData = modeData.heads[head];
-                str += '  <Head>\n';
-                for (const channel of headData) {
-                    str += `   <Channel>${modeData.channels.indexOf(channel)}</Channel>\n`;
+            for (const head in fixData.heads) {
+                const headLampList = fixData.heads[head];
+                let headChannelList = [];
+                for (const channel of headLampList) {
+                    const chNum = modeData.channels.indexOf(channel);
+                    if (chNum != -1) {
+                        headChannelList.push(chNum);
+                    }
                 }
-                str += '  </Head>\n';
+
+                if (headChannelList.length > 0) {
+                    str += '  <Head>\n';
+                    for (const chNum of headChannelList) {
+                        str += `   <Channel>${chNum}</Channel>\n`;
+                    }
+                    str += '  </Head>\n';
+                }
             }
 
             str += ` </Mode>\n`;

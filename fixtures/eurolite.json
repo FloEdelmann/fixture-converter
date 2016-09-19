@@ -218,17 +218,17 @@
                     "crossfade": true
                 }
             },
+            "heads": {
+                "LED1": ["red1", "red1combined", "green1", "green1combined", "blue1"],
+                "LED2": ["red2", "green2", "blue2"],
+                "LED3": ["red3", "green3", "blue3"],
+                "LED4": ["red4", "green4", "blue4"]
+            },
             "modes": [
                 {
                     "name": "Combined Mode",
                     "shortName": "combined",
-                    "channels": ["program", "master", "strobe", "red1combined", "green1combined", "blue1", "red2", "green2", "blue2", "red3", "green3", "blue3", "red4", "green4", "blue4"],
-                    "heads": {
-                        "LED1": ["red1combined", "green1combined", "blue1"],
-                        "LED2": ["red2", "green2", "blue2"],
-                        "LED3": ["red3", "green3", "blue3"],
-                        "LED4": ["red4", "green4", "blue4"]
-                    }
+                    "channels": ["program", "master", "strobe", "red1combined", "green1combined", "blue1", "red2", "green2", "blue2", "red3", "green3", "blue3", "red4", "green4", "blue4"]
                 },
                 {
                     "name": "Control Only Mode",
@@ -243,13 +243,7 @@
                 {
                     "name": "Color Mode",
                     "shortName": "color",
-                    "channels": ["program", "master", "strobe", "red1", "green1", "blue1", "red2", "green2", "blue2", "red3", "green3", "blue3", "red4", "green4", "blue4"],
-                    "heads": {
-                        "LED1": ["red1", "green1", "blue1"],
-                        "LED2": ["red2", "green2", "blue2"],
-                        "LED3": ["red3", "green3", "blue3"],
-                        "LED4": ["red4", "green4", "blue4"]
-                    }
+                    "channels": ["program", "master", "strobe", "red1", "green1", "blue1", "red2", "green2", "blue2", "red3", "green3", "blue3", "red4", "green4", "blue4"]
                 }
             ]
         },
@@ -392,28 +386,24 @@
                 },
                 "pan": {
                     "name": "Pan",
-                    "byte": "MSB",
                     "type": "Pan",
                     "defaultValue": 128,
                     "crossfade": true
                 },
                 "pan16bit": {
                     "name": "Pan (fine)",
-                    "byte": "LSB",
                     "type": "Pan",
                     "defaultValue": 128,
                     "crossfade": true
                 },
                 "tilt": {
                     "name": "Tilt",
-                    "byte": "MSB",
                     "type": "Tilt",
                     "defaultValue": 128,
                     "crossfade": true
                 },
                 "tilt16bit": {
                     "name": "Tilt (fine)",
-                    "byte": "LSB",
                     "type": "Tilt",
                     "defaultValue": 128,
                     "crossfade": true
@@ -783,6 +773,10 @@
                     "crossfade": true
                 }
             },
+            "multiByteChannels": [
+                ["pan", "pan16bit"],
+                ["tilt", "tilt16bit"]
+            ],
             "modes": [
                 {
                     "name": "1-channel Mode",
@@ -792,7 +786,24 @@
                 {
                     "name": "16-channel Mode",
                     "shortName": "16ch",
-                    "channels": [["pan", "pan16bit"], ["tilt", "tilt16bit"], "panTiltSpeed", "macros", "macroSpeed", "function", "dimmer", "strobe", "red", "green", "blue", "white", "colorMacros", "colorSpeed"]
+                    "channels": [
+                        "pan",
+                        "pan16bit",
+                        "tilt",
+                        "tilt16bit",
+                        "panTiltSpeed",
+                        "macros",
+                        "macroSpeed",
+                        "function",
+                        "dimmer",
+                        "strobe",
+                        "red",
+                        "green",
+                        "blue",
+                        "white",
+                        "colorMacros",
+                        "colorSpeed"
+                    ]
                 },
                 {
                     "name": "48-channel Mode",

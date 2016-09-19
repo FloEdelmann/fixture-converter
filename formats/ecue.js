@@ -42,22 +42,40 @@ module.exports.export = function formatEcue(manufacturers, fixtures, localOutDir
                 const lensData = Object.assign({}, defaults.fixtures[0].modes[0].physical.lens, physicalData.lens);
                 const focusData = Object.assign({}, defaults.fixtures[0].modes[0].physical.focus, physicalData.focus);
 
-                let fixStr = '';
+                str += `                <Fixture _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${useName}" NameShort="${fixData.shortName}" Comment="${useComment}" AllocateDmxChannels="${mode.channels.length}" Weight="${physicalData.weight}" Power="${physicalData.power}" DimWidth="${physicalData.dimensions[0]}" DimHeight="${physicalData.dimensions[1]}" DimDepth="${physicalData.dimensions[2]}">\n`;
 
-                let i = 1;
-                for (const ch in mode.channels) {
-                    const doubleByte = Array.isArray(mode.channels[ch]);
-                    const chan = (doubleByte ? mode.channels[ch][0] : mode.channels[ch]);
-                    const channel = fixture.availableChannels[chan];
+                let viewPosCount = 1;
+                for (const dmxCount in mode.channels) {
+                    let chKey = mode.channels[dmxCount];
+
+                    if (chKey === null) {
+                        // we already handled this as part of a 16-bit channel, so just skip
+                        continue;
+                    }
+
+                    let doubleByte = false;
+                    const multiByteChannels = getCorrespondingMultiByteChannels(chKey, fixData);
+                    console.log(fixData.name, multiByteChannels);
+                    if (multiByteChannels != null
+                        && mode.channels.includes(multiByteChannels[0])
+                        && mode.channels.includes(multiByteChannels[1])) {
+                        // it is a 16-bit channel and both 8-bit parts are used in this mode
+                        chKey = multiByteChannels[0];
+                        doubleByte = true;
+                    }
+
+                    const channel = fixture.availableChannels[chKey];
 
                     if (channel === undefined) {
-                        die(`Channel "${mode.channels[ch]}" not found in fixture "${fixData.name}", exiting.`);
+                        die(`Channel "${chKey}" not found in fixture "${fixData.name}", exiting.`);
                     }
 
                     let chData = Object.assign({}, defaults.fixtures[0].availableChannels.ch1, channel);
 
+                    if (!chData.name)
+                        chData.name = chKey;
+
                     let chType = '';
-                    let chName = chData.name;
                     switch (chData.type) {
                         case 'Color':
                             chType = 'Color';
@@ -83,52 +101,46 @@ module.exports.export = function formatEcue(manufacturers, fixtures, localOutDir
 
                     if (channel.type == 'Intensity' && channel.color) {
                         chType = 'Color';
-                        chName = chData.color;
                     }
 
-                    let dmxByte0 = i;
-                    let dmxByte1 = 0;
+                    let dmxByteLow = dmxCount;
+                    let dmxByteHigh = -1;
 
                     if (doubleByte) {
-                        let msb = chData;
-                        let lsb = Object.assign({}, defaults.fixtures[0].availableChannels.ch1, fixture.availableChannels[mode.channels[1]]);
+                        const chKeyLsb = multiByteChannels[1];
+                        const channelLsb = fixture.availableChannels[chKeyLsb];
 
-                        dmxByte0 = i+1; // lsb
-                        dmxByte1 = i; // msb
-
-                        if (msb.byte == "LSB") {
-                            // swap msb and lsb
-                            [msb, lsb] = [lsb, msb];
-
-                            dmxByte0 = i; // lsb
-                            dmxByte1 = i+1; // msb
+                        if (channelLsb === undefined) {
+                            die(`Channel "${chKeyLsb}" not found in fixture "${fixData.name}", exiting.`);
                         }
+                        const chDataLsb = Object.assign({}, defaults.fixtures[0].availableChannels.ch1, channelLsb);
 
-                        i++; // array has two channels
+                        chData.defaultValue *= 256;
+                        chData.defaultValue += chDataLsb.defaultValue;
 
-                        chData.defaultValue = (msb.defaultValue * 256) + lsb.defaultValue;
-                        chData.highlightValue = (msb.highlightValue * 256) + lsb.highlightValue;
+                        chData.highlightValue *= 256;
+                        chData.highlightValue += chDataLsb.highlightValue;
+
+                        dmxByteLow = mode.channels.indexOf(chKeyLsb);
+                        dmxByteHigh = mode.channels.indexOf(chKey);
+
+                        // mark other part of 16-bit channel as already handled
+                        mode.channels[Math.max(dmxByteHigh, dmxByteLow)] = null;
                     }
 
                     const hasCapabilities = (channel.capabilities !== undefined);
 
-
-                    fixStr += `                    <Channel${chType} Name="${chName}" DefaultValue="${chData.defaultValue}" Highlight="${chData.highlightValue}" Deflection="0" DmxByte0="${dmxByte0}" DmxByte1="${dmxByte1}" Constant="${chData.constant ? 1 : 0}" Crossfade="${chData.crossfade ? 1 : 0}" Invert="${chData.invert ? 1 : 0}" Precedence="${chData.precendence}" ClassicPos="${ch}"` + (hasCapabilities ? '' : ' /') + '>\n';
+                    str += `                    <Channel${chType} Name="${chData.name}" DefaultValue="${chData.defaultValue}" Highlight="${chData.highlightValue}" Deflection="0" DmxByte0="${dmxByteHigh+1}" DmxByte1="${dmxByteLow+1}" Constant="${chData.constant ? 1 : 0}" Crossfade="${chData.crossfade ? 1 : 0}" Invert="${chData.invert ? 1 : 0}" Precedence="${chData.precendence}" ClassicPos="${viewPosCount++}"` + (hasCapabilities ? '' : ' /') + '>\n';
 
                     if (hasCapabilities) {
                         for (const cap of channel.capabilities) {
                             const capData = Object.assign({}, defaults.fixtures[0].availableChannels.ch1.capabilities[0], cap);
 
-                            fixStr += `                        <Range Name="${capData.name}" Start="${capData.range[0]}" End="${capData.range[1]}" AutoMenu="${capData.showInMenu ? 1 : 0}" Centre="${capData.center ? 1 : 0}" />\n`;
+                            str += `                        <Range Name="${capData.name}" Start="${capData.range[0]}" End="${capData.range[1]}" AutoMenu="${capData.showInMenu ? 1 : 0}" Centre="${capData.center ? 1 : 0}" />\n`;
                         }
-                        fixStr += `                    </Channel${chType}>\n`;
+                        str += `                    </Channel${chType}>\n`;
                     }
-
-                    i++;
                 }
-
-                str += `                <Fixture _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${useName}" NameShort="${fixData.shortName}" Comment="${useComment}" AllocateDmxChannels="${i-1}" Weight="${physicalData.weight}" Power="${physicalData.power}" DimWidth="${physicalData.dimensions[0]}" DimHeight="${physicalData.dimensions[1]}" DimDepth="${physicalData.dimensions[2]}">\n`;
-                str += fixStr;
                 str += '                </Fixture>\n';
             }
         }
@@ -213,6 +225,7 @@ module.exports.import = function importEcue(str, filename) {
                             fix.physical = physical;
 
                         fix.availableChannels = {};
+                        fix.multiByteChannels = [];
                         fix.modes = [{
                             "name": `${fixture.$.AllocateDmxChannels}-channel Mode`,
                             "shortName": `${fixture.$.AllocateDmxChannels}ch`,
@@ -232,10 +245,10 @@ module.exports.import = function importEcue(str, filename) {
                             channels = channels.concat(fixture.ChannelFocus);
 
                         channels = channels.sort((a, b) => {
-                            if (a.$.DmxByte0 < b.$.DmxByte0)
+                            if (parseInt(a.$.DmxByte0) < parseInt(b.$.DmxByte0))
                                 return -1;
 
-                            if (a.$.DmxByte0 > b.$.DmxByte0)
+                            if (parseInt(a.$.DmxByte0) > parseInt(b.$.DmxByte0))
                                 return 1;
 
                             return 0;
@@ -250,7 +263,6 @@ module.exports.import = function importEcue(str, filename) {
 
                             let ch = {
                                 "name": name,
-                                "byte": "MSB",
                                 "type": "Intensity"
                             };
 
@@ -304,7 +316,7 @@ module.exports.import = function importEcue(str, filename) {
                                 ch.crossfade = true;
 
                             if (channel.$.Precedence == "HTP")
-                                ch.crossfade = "HTP";
+                                ch.precendence = "HTP";
 
                             if (channel.Range) {
                                 ch.capabilities = [];
@@ -327,14 +339,13 @@ module.exports.import = function importEcue(str, filename) {
                                     }
 
                                     // try to read a color
-                                    let substrLen = 0;
+                                    /*let substrLen = 0;
                                     for (let hex in colors) {
-                                        //console.log(`Name "${cap.name}", Color "${colors[hex]}", Matches? ${cap.name.toLowerCase().includes(colors[hex].toLowerCase())}, Longer? ${colors[hex].length > substrLen}`);
                                         if (cap.name.toLowerCase().includes(colors[hex].toLowerCase()) && colors[hex].length > substrLen) {
                                             cap.color = hex;
                                             substrLen = colors[hex].length;
                                         }
-                                    }
+                                    }*/
                                     
                                     if (range.$.AutoMenu != "1")
                                         cap.showInMenu = false;
@@ -346,11 +357,13 @@ module.exports.import = function importEcue(str, filename) {
                                 });
                             }
 
+                            fix.availableChannels[shortName] = ch;
+                            fix.modes[0].channels[parseInt(channel.$.DmxByte0) - 1] = shortName;
+
                             if (channel.$.DmxByte1 != "0") {
                                 let chLsb = JSON.parse(JSON.stringify(ch)); // clone channel data
-                                const shortNameFine = shortName + "-fine";
 
-                                chLsb.byte = "LSB";
+                                const shortNameFine = shortName + "-fine";
                                 chLsb.name += " (fine)";
 
                                 ch.defaultValue = Math.floor(ch.defaultValue / 256);
@@ -359,23 +372,17 @@ module.exports.import = function importEcue(str, filename) {
                                 ch.highlightValue = Math.floor(ch.highlightValue / 256);
                                 chLsb.highlightValue %= 256;
 
-                                if (parseInt(channel.$.DmxByte0) < parseInt(channel.$.DmxByte1)) {
-                                    fix.modes[0].channels.push([shortNameFine, shortName]);
-                                }
-                                else {
-                                    fix.modes[0].channels.push([shortName, shortNameFine]);
-                                }
+                                fix.multiByteChannels.push([shortName, shortNameFine]);
                                 
-                                fix.availableChannels[shortName] = ch;
                                 fix.availableChannels[shortNameFine] = chLsb;
-                            }
-                            else {
-                                delete ch.byte;
 
-                                fix.availableChannels[shortName] = ch;
-                                fix.modes[0].channels.push(shortName);
+                                fix.modes[0].channels[parseInt(channel.$.DmxByte1) - 1] = shortNameFine;
                             }
                         }
+
+                        if (fix.multiByteChannels.length == 0)
+                            delete fix.multiByteChannels;
+
                         out.fixtures.push(fix);
                     }
                 }
@@ -387,6 +394,17 @@ module.exports.import = function importEcue(str, filename) {
             resolve(out);
         });
     });
+}
+
+function getCorrespondingMultiByteChannels(channelKey, fixture) {
+    for (let channelList of fixture.multiByteChannels) {
+        for (let channel of channelList) {
+            if (channelKey == channel) {
+                return channelList;
+            }
+        }
+    }
+    return null;
 }
 
 function die(errorStr, logStr) {
