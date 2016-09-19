@@ -7,10 +7,9 @@ const path = require('path');
 const mkdirp = require('mkdirp');
 
 let filename = 'fixtures.json';
-let outDir = ['out', '%FORMAT%'].join(path.sep);
+let outDir = path.join('out', '%FORMAT%');
 
-const formats = ['ecue', 'qlcplus'];
-
+const formats = fs.readdirSync(path.join(__dirname, 'formats')).map(file => file.replace(/\.js$/, ''));
 
 const {argv, options} = require('node-getopt').create([
     ['f' , 'format=ARG', `Required. Specifies output format. Possible arguments: "${formats.join('", "')}"`],
@@ -30,6 +29,8 @@ if (options.outdir) {
     outDir = options.outdir;
 }
 
+const formatter = require(path.join(__dirname, 'formats', `${options.format}.js`));
+
 if (filename.endsWith('.json')) {
     handleExport();
 }
@@ -38,7 +39,10 @@ else {
 }
 
 function handleExport() {
-    let imports = [filename];
+    if (!formatter.export)
+        die(`Export to "${options.format}" not implemented yet.`);
+
+    let imports = [fs.realpathSync(filename)]; // try
     let manufacturers = {};
     let fixtures = [];
 
@@ -53,6 +57,8 @@ function handleExport() {
             die(`Can't read file "${imports[i]}", exiting. The error is attached below:\n`, readError); // '
         }
 
+        const importBasePath = path.dirname(fs.realpathSync(imports[i])); // try
+
         // read JSON
         let parsedJSON = {};
         try {
@@ -64,9 +70,11 @@ function handleExport() {
 
         if (parsedJSON.imports) {
             for (const newImport of parsedJSON.imports) {
-                if (imports.indexOf(newImport) == -1) {
+                const absPath = path.isAbsolute(newImport) ? newImport : path.normalize(path.join(importBasePath, newImport));
+                
+                if (imports.indexOf(absPath) == -1) {
                     // only if not already imported
-                    imports.push(newImport);
+                    imports.push(absPath);
                 }
             }
         }
@@ -75,11 +83,6 @@ function handleExport() {
         fixtures = fixtures.concat(parsedJSON.fixtures);
 
         i++;
-    }
-
-    const formatter = require(['.', 'formats', `${options.format}.js`].join(path.sep));
-    if (!formatter.export) {
-        die(`Export to "${options.format}" not implemented yet.`);
     }
 
     const localOutDir = outDir.replace(/%FORMAT%/g, options.format);
@@ -95,11 +98,8 @@ function handleExport() {
 }
 
 function handleImport() {
-    const formatter = require(['.', 'formats', `${options.format}.js`].join(path.sep));
-
-    if (!formatter.import) {
+    if (!formatter.import)
         die(`Import from "${options.format}" not implemented yet.`);
-    }
 
     let str = '';
     try {

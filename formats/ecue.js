@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const colors = require('color-names');
 
-const defaults = require(['..', 'fixtures_defaults.js'].join(path.sep));
+const defaults = require(path.join(__dirname, '..', 'fixtures_defaults.js'));
 
 module.exports.export = function formatEcue(manufacturers, fixtures, localOutDir) {
     const timestamp = new Date().toISOString().replace(/T/, '#').replace(/\..+/, '');
@@ -37,10 +37,10 @@ module.exports.export = function formatEcue(manufacturers, fixtures, localOutDir
                 const useName = fixData.name + (fixture.modes.length == 1 ? '' : ` (${modeData.shortName})`);
                 const useComment = fixData.comment + (fixture.modes.length == 1 ? '' : ` (${modeData.name})`);
 
-                const physicalData = Object.assign({}, defaults.fixtures[0].modes[0].physical, fixData.physical, modeData.physical);
-                const bulbData = Object.assign({}, defaults.fixtures[0].modes[0].physical.bulb, physicalData.bulb);
-                const lensData = Object.assign({}, defaults.fixtures[0].modes[0].physical.lens, physicalData.lens);
-                const focusData = Object.assign({}, defaults.fixtures[0].modes[0].physical.focus, physicalData.focus);
+                const physicalData = Object.assign({}, defaults.fixtures[0].physical, fixData.physical, modeData.physical);
+                const bulbData = Object.assign({}, defaults.fixtures[0].physical.bulb, physicalData.bulb);
+                const lensData = Object.assign({}, defaults.fixtures[0].physical.lens, physicalData.lens);
+                const focusData = Object.assign({}, defaults.fixtures[0].physical.focus, physicalData.focus);
 
                 str += `                <Fixture _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${useName}" NameShort="${fixData.shortName}" Comment="${useComment}" AllocateDmxChannels="${mode.channels.length}" Weight="${physicalData.weight}" Power="${physicalData.power}" DimWidth="${physicalData.dimensions[0]}" DimHeight="${physicalData.dimensions[1]}" DimDepth="${physicalData.dimensions[2]}">\n`;
 
@@ -55,7 +55,6 @@ module.exports.export = function formatEcue(manufacturers, fixtures, localOutDir
 
                     let doubleByte = false;
                     const multiByteChannels = getCorrespondingMultiByteChannels(chKey, fixData);
-                    console.log(fixData.name, multiByteChannels);
                     if (multiByteChannels != null
                         && mode.channels.includes(multiByteChannels[0])
                         && mode.channels.includes(multiByteChannels[1])) {
@@ -158,7 +157,7 @@ module.exports.export = function formatEcue(manufacturers, fixtures, localOutDir
     str += '    </Library>\n';
     str += '</Document>\n';
 
-    const outFile = [localOutDir, 'UserLibrary.xml'].join(path.sep);
+    const outFile = path.join(localOutDir, 'UserLibrary.xml');
     fs.writeFile(outFile, str, (writeError) => {
         if (writeError) {
             die(`Error writing to file "${outFile}", exiting.`, writeError);

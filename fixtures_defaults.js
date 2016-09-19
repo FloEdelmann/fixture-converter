@@ -1,5 +1,5 @@
 module.exports = {
-    "imports": [], // optional. Contains paths (relative to the working directory) to other fixture JSON files that shall be included
+    "imports": [], // optional. Contains paths (either absolute or relative to the current file) to other fixture JSON files that shall be included
     "manufacturers": {
         "shortName": {
             "name": null, // required
