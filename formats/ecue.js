@@ -2,7 +2,6 @@
 
 const fs = require('fs');
 const path = require('path');
-const colors = require('color-names');
 
 const defaults = require(path.join(__dirname, '..', 'fixtures_defaults.js'));
 
@@ -167,6 +166,12 @@ module.exports.export = function formatEcue(manufacturers, fixtures, localOutDir
 }
 
 module.exports.import = function importEcue(str, filename) {
+    const colorNames = require('color-names');
+    let colors = {};
+    for (const hex in colorNames) {
+        colors[colorNames[hex].toLowerCase().replace(/\s/g, '')] = hex;
+    }
+
     const xml2js = require('xml2js');
 
     const parser = new xml2js.Parser();
@@ -338,13 +343,10 @@ module.exports.import = function importEcue(str, filename) {
                                     }
 
                                     // try to read a color
-                                    /*let substrLen = 0;
-                                    for (let hex in colors) {
-                                        if (cap.name.toLowerCase().includes(colors[hex].toLowerCase()) && colors[hex].length > substrLen) {
-                                            cap.color = hex;
-                                            substrLen = colors[hex].length;
-                                        }
-                                    }*/
+                                    let color = cap.name.toLowerCase().replace(/\s/g, '');
+                                    if (colors[color]) {
+                                        cap.color = colors[color];
+                                    }
                                     
                                     if (range.$.AutoMenu != "1")
                                         cap.showInMenu = false;
