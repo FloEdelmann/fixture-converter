@@ -1,0 +1,102 @@
+{
+    "manufacturers": {
+        "Gruft": {
+            "name": "Gruft",
+            "comment": "Goerli + Edelnoerd"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Gruft",
+            "name": "Ventilator",
+            "shortName": "Venti",
+            "type": "Effect",
+            "comment": "(C) Goerli + Edelnoerd 2016",
+            "physical" : {
+                "dimensions": [1000, 1000, 160],
+                "weight": 10.0,
+                "power": 48,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "motorSpeed": {
+                    "name": "Motor Speed",
+                    "type": "Speed",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [4, 4],
+                            "name": "CCW full speed"
+                        },
+                        {
+                            "range": [5, 119],
+                            "name": "CCW",
+                            "center": true
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Off",
+                            "center": true
+                        },
+                        {
+                            "range": [140, 254],
+                            "name": "CW",
+                            "center": true
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "CW full speed"
+                        }
+                    ]
+                },
+                "red": {
+                    "name": "Red",
+                    "type": "Intensity",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "green": {
+                    "name": "Green",
+                    "type": "Intensity",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "blue": {
+                    "name": "Blue",
+                    "type": "Intensity",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "strobe": {
+                    "name": "Strobe",
+                    "type": "Shutter",
+                    "highlightValue": 230
+                }
+            },
+            "modes": [
+                {
+                    "name": "5-channel Mode",
+                    "shortName": "5ch",
+                    "channels": ["motorSpeed", "red", "green", "blue", "strobe"]
+                }
+            ]
+        }
+    ]
+}

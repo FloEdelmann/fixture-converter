@@ -1,7 +1,8 @@
 {
     "manufacturers": {
         "Eurolite": {
-            "name": "Eurolite"
+            "name": "Eurolite",
+            "website": "http://eshop.steinigke.de/Eurolite/"
         }
     },
     "fixtures": [
@@ -12,13 +13,16 @@
             "type": "Color Changer",
             "comment": "Compact Light Set. When Program is active, Red 1 (ch4) controls running speed, Green 1 (ch5) controls fade time.",
             "physical": {
+                "dimensions": [1200, 315, 65],
+                "weight": 9.0,
+                "power": 130,
+                "DMXconnector": "3-pin",
                 "bulb": {
                     "type": "LED"
                 },
-                "dimensions": [1200, 315, 65],
-                "weight": 9,
-                "DMXconnector": "3-pin",
-                "power": 130
+                "focus": {
+                    "type": "Fixed"
+                }
             },
             "availableChannels": {
                 "program": {
@@ -218,38 +222,32 @@
                     "crossfade": true
                 }
             },
+            "heads": {
+                "LED1": ["red1", "red1combined", "green1", "green1combined", "blue1"],
+                "LED2": ["red2", "green2", "blue2"],
+                "LED3": ["red3", "green3", "blue3"],
+                "LED4": ["red4", "green4", "blue4"]
+            },
             "modes": [
                 {
-                    "name": "Combined Mode",
-                    "shortName": "combined",
-                    "channels": ["program", "master", "strobe", "red1combined", "green1combined", "blue1", "red2", "green2", "blue2", "red3", "green3", "blue3", "red4", "green4", "blue4"],
-                    "heads": {
-                        "LED1": ["red1combined", "green1combined", "blue1"],
-                        "LED2": ["red2", "green2", "blue2"],
-                        "LED3": ["red3", "green3", "blue3"],
-                        "LED4": ["red4", "green4", "blue4"]
-                    }
-                },
-                {
-                    "name": "Control Only Mode",
+                    "name": "Control Only 3-channel Mode",
                     "shortName": "control",
                     "channels": ["program", "master", "strobe"]
                 },
                 {
-                    "name": "Program Mode",
+                    "name": "Program 5-channel Mode",
                     "shortName": "program",
                     "channels": ["program", "master", "strobe", "speed", "fadetime"]
                 },
                 {
-                    "name": "Color Mode",
+                    "name": "Combined 15-channel Mode",
+                    "shortName": "combined",
+                    "channels": ["program", "master", "strobe", "red1combined", "green1combined", "blue1", "red2", "green2", "blue2", "red3", "green3", "blue3", "red4", "green4", "blue4"]
+                },
+                {
+                    "name": "Color 15-channel Mode",
                     "shortName": "color",
-                    "channels": ["program", "master", "strobe", "red1", "green1", "blue1", "red2", "green2", "blue2", "red3", "green3", "blue3", "red4", "green4", "blue4"],
-                    "heads": {
-                        "LED1": ["red1", "green1", "blue1"],
-                        "LED2": ["red2", "green2", "blue2"],
-                        "LED3": ["red3", "green3", "blue3"],
-                        "LED4": ["red4", "green4", "blue4"]
-                    }
+                    "channels": ["program", "master", "strobe", "red1", "green1", "blue1", "red2", "green2", "blue2", "red3", "green3", "blue3", "red4", "green4", "blue4"]
                 }
             ]
         },
@@ -259,19 +257,19 @@
             "shortName": "PAR56",
             "type": "Color Changer",
             "physical": {
+                "dimensions": [165, 205, 215],
+                "weight": 1.5,
+                "power": 45,
+                "DMXconnector": "3-pin",
                 "bulb": {
                     "type": "LED"
                 },
-                "dimensions": [165, 205, 215],
-                "weight": 1.5,
                 "lens": {
-                    "degreesMinMax": [0.0, 14.0]
+                    "degreesMinMax": [14.0, 14.0]
                 },
                 "focus": {
                     "type": "Fixed"
-                },
-                "DMXconnector": "3-pin",
-                "power": 45
+                }
             },
             "availableChannels": {
                 "red": {
@@ -344,20 +342,20 @@
             "manufacturer": "Eurolite",
             "name": "LED TMH-18",
             "shortName": "TMH18",
-            "type": "Color Changer",
+            "type": "Moving Head",
             "physical": {
+                "dimensions": [145, 260, 360],
+                "weight": 5.8,
+                "power": 125,
+                "DMXconnector": "3-pin",
                 "bulb": {
                     "type": "LED"
                 },
-                "dimensions": [145, 260, 360],
-                "weight": 5.8,
                 "focus": {
                     "type": "Head",
                     "panMax": 540,
                     "tiltMax": 200
-                },
-                "DMXconnector": "3-pin",
-                "power": 125
+                }
             },
             "availableChannels": {
                 "internalPrograms": {
@@ -392,28 +390,24 @@
                 },
                 "pan": {
                     "name": "Pan",
-                    "byte": 0,
                     "type": "Pan",
                     "defaultValue": 128,
                     "crossfade": true
                 },
                 "pan16bit": {
                     "name": "Pan (fine)",
-                    "byte": 1,
                     "type": "Pan",
                     "defaultValue": 128,
                     "crossfade": true
                 },
                 "tilt": {
                     "name": "Tilt",
-                    "byte": 0,
                     "type": "Tilt",
                     "defaultValue": 128,
                     "crossfade": true
                 },
                 "tilt16bit": {
                     "name": "Tilt (fine)",
-                    "byte": 1,
                     "type": "Tilt",
                     "defaultValue": 128,
                     "crossfade": true
@@ -560,6 +554,258 @@
                 },
                 "white": {
                     "name": "White",
+                    "type": "Intensity",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "red1": {
+                    "name": "Red 1",
+                    "type": "Intensity",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "green1": {
+                    "name": "Green 1",
+                    "type": "Intensity",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "blue1": {
+                    "name": "Blue 1",
+                    "type": "Intensity",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "white1": {
+                    "name": "White 1",
+                    "type": "Intensity",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "red2": {
+                    "name": "Red 2",
+                    "type": "Intensity",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "green2": {
+                    "name": "Green 2",
+                    "type": "Intensity",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "blue2": {
+                    "name": "Blue 2",
+                    "type": "Intensity",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "white2": {
+                    "name": "White 2",
+                    "type": "Intensity",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "red3": {
+                    "name": "Red 3",
+                    "type": "Intensity",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "green3": {
+                    "name": "Green 3",
+                    "type": "Intensity",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "blue3": {
+                    "name": "Blue 3",
+                    "type": "Intensity",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "white3": {
+                    "name": "White 3",
+                    "type": "Intensity",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "red4": {
+                    "name": "Red 4",
+                    "type": "Intensity",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "green4": {
+                    "name": "Green 4",
+                    "type": "Intensity",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "blue4": {
+                    "name": "Blue 4",
+                    "type": "Intensity",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "white4": {
+                    "name": "White 4",
+                    "type": "Intensity",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "red5": {
+                    "name": "Red 5",
+                    "type": "Intensity",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "green5": {
+                    "name": "Green 5",
+                    "type": "Intensity",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "blue5": {
+                    "name": "Blue 5",
+                    "type": "Intensity",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "white5": {
+                    "name": "White 5",
+                    "type": "Intensity",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "red6": {
+                    "name": "Red 6",
+                    "type": "Intensity",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "green6": {
+                    "name": "Green 6",
+                    "type": "Intensity",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "blue6": {
+                    "name": "Blue 6",
+                    "type": "Intensity",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "white6": {
+                    "name": "White 6",
+                    "type": "Intensity",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "red7": {
+                    "name": "Red 7",
+                    "type": "Intensity",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "green7": {
+                    "name": "Green 7",
+                    "type": "Intensity",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "blue7": {
+                    "name": "Blue 7",
+                    "type": "Intensity",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "white7": {
+                    "name": "White 7",
+                    "type": "Intensity",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "red8": {
+                    "name": "Red 8",
+                    "type": "Intensity",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "green8": {
+                    "name": "Green 8",
+                    "type": "Intensity",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "blue8": {
+                    "name": "Blue 8",
+                    "type": "Intensity",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "white8": {
+                    "name": "White 8",
+                    "type": "Intensity",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "red9": {
+                    "name": "Red 9",
+                    "type": "Intensity",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "green9": {
+                    "name": "Green 9",
+                    "type": "Intensity",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "blue9": {
+                    "name": "Blue 9",
+                    "type": "Intensity",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "white9": {
+                    "name": "White 9",
                     "type": "Intensity",
                     "color": "White",
                     "highlightValue": 255,
@@ -783,6 +1029,21 @@
                     "crossfade": true
                 }
             },
+            "multiByteChannels": [
+                ["pan", "pan16bit"],
+                ["tilt", "tilt16bit"]
+            ],
+            "heads": {
+                "top left": ["red1", "green1", "blue1", "white1"],
+                "top center": ["red2", "green2", "blue2", "white2"],
+                "top right": ["red3", "green3", "blue3", "white3"],
+                "center left": ["red4", "green4", "blue4", "white4"],
+                "center center": ["red5", "green5", "blue5", "white5"],
+                "center right": ["red6", "green6", "blue6", "white6"],
+                "bottom left": ["red7", "green7", "blue7", "white7"],
+                "bottom center": ["red8", "green8", "blue8", "white8"],
+                "bottom right": ["red9", "green9", "blue9", "white9"],
+            },
             "modes": [
                 {
                     "name": "1-channel Mode",
@@ -792,12 +1053,51 @@
                 {
                     "name": "16-channel Mode",
                     "shortName": "16ch",
-                    "channels": [["pan", "pan16bit"], ["tilt", "tilt16bit"], "panTiltSpeed", "macros", "macroSpeed", "function", "dimmer", "strobe", "red", "green", "blue", "white", "colorMacros", "colorSpeed"]
+                    "channels": [
+                        "pan",
+                        "pan16bit",
+                        "tilt",
+                        "tilt16bit",
+                        "panTiltSpeed",
+                        "macros",
+                        "macroSpeed",
+                        "function",
+                        "dimmer",
+                        "strobe",
+                        "red",
+                        "green",
+                        "blue",
+                        "white",
+                        "colorMacros",
+                        "colorSpeed"
+                    ]
                 },
                 {
                     "name": "48-channel Mode",
-                    "shortName": "18ch",
-                    "channels": ["internalPrograms"]
+                    "shortName": "48ch",
+                    "channels": [
+                        "pan",
+                        "pan16bit",
+                        "tilt",
+                        "tilt16bit",
+                        "panTiltSpeed",
+                        "macros",
+                        "macroSpeed",
+                        "function",
+                        "dimmer",
+                        "strobe",
+                        "red1", "green1", "blue1", "white1",
+                        "red2", "green2", "blue2", "white2",
+                        "red3", "green3", "blue3", "white3",
+                        "red4", "green4", "blue4", "white4",
+                        "red5", "green5", "blue5", "white5",
+                        "red6", "green6", "blue6", "white6",
+                        "red7", "green7", "blue7", "white7",
+                        "red8", "green8", "blue8", "white8",
+                        "red9", "green9", "blue9", "white9",
+                        "colorMacros",
+                        "colorSpeed"
+                    ]
                 }
             ]
         }

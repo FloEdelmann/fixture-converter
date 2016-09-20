@@ -17,14 +17,17 @@ Just see [fixtures_defaults.js](fixtures_defaults.js).
 
 ## Dependencies
 
-* [Node.js](https://nodejs.org/en/)
+* [Node.js](https://nodejs.org/en/) (I have version 6.6.0, but maybe it works with lower versions, too.)
+
+### Modules
+
 * [node-getopt](https://www.npmjs.com/package/node-getopt)
 * [mkdirp](https://www.npmjs.com/package/mkdirp)
-* [extend](https://www.npmjs.com/package/extend)
 * [xml2js](https://github.com/Leonidas-from-XIV/node-xml2js)
+* [color-names](https://www.npmjs.com/package/color-names)
 
 ```
-npm install node-getopt mkdirp extend xml2js
+npm install node-getopt mkdirp xml2js color-names
 ```
 
 ## Usage
@@ -43,3 +46,21 @@ npm install node-getopt mkdirp extend xml2js
 ## Contributing
 
 Feel free to add your own output formats and / or fixtures. Just create a pull request!
+
+### New formats
+
+Each format may implement two functions:
+
+```js
+module.exports.export = function(manufacturers, fixtures, localOutDir) { ... }
+module.exports.import = function(str, filename) {
+    ...
+    // use a promise to allow asynchronous return values
+    return new Promise((resolve, reject) => {
+        ...
+        resolve(objectToConvertToJSON);
+    });
+}
+```
+
+Those will get called from [fixtures_convert.js](fixtures_convert.js), so you won't have to bother with command line arguments.

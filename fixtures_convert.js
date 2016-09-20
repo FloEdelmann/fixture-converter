@@ -5,22 +5,18 @@
 const fs = require('fs');
 const path = require('path');
 const mkdirp = require('mkdirp');
-const extend = require('extend');
 
 let filename = 'fixtures.json';
-let outDir = ['out', '%FORMAT%'].join(path.sep);
+let outDir = path.join('out', '%FORMAT%');
 
-const formats = ['ecue', 'qlcplus'];
-
+const formats = fs.readdirSync(path.join(__dirname, 'formats')).map(file => file.replace(/\.js$/, ''));
 
 const {argv, options} = require('node-getopt').create([
     ['f' , 'format=ARG', `Required. Specifies output format. Possible arguments: "${formats.join('", "')}"`],
     ['i' , 'input=ARG', `Specifies input filename. If this is not a JSON file, import it using the format specified in --format. Default: "${filename}"`],
     ['d' , 'outdir=ARG', `Specifies the output directory. "%FORMAT%" gets replaced by the used output format. Default: "${outDir}"`],
     ['h' , 'help', 'Display this help.']
-])              // create Getopt instance
-.bindHelp()     // bind option 'help' to default action
-.parseSystem(); // parse command line
+]).bindHelp().parseSystem();
 
 if (!options.format || formats.indexOf(options.format) == -1) {
     die("Invalid output format. Please specify --format. For help, use --help.");
@@ -33,6 +29,8 @@ if (options.outdir) {
     outDir = options.outdir;
 }
 
+const formatter = require(path.join(__dirname, 'formats', `${options.format}.js`));
+
 if (filename.endsWith('.json')) {
     handleExport();
 }
@@ -41,7 +39,10 @@ else {
 }
 
 function handleExport() {
-    let imports = [filename];
+    if (!formatter.export)
+        die(`Export to "${options.format}" not implemented yet.`);
+
+    let imports = [fs.realpathSync(filename)]; // try
     let manufacturers = {};
     let fixtures = [];
 
@@ -56,6 +57,8 @@ function handleExport() {
             die(`Can't read file "${imports[i]}", exiting. The error is attached below:\n`, readError); // '
         }
 
+        const importBasePath = path.dirname(fs.realpathSync(imports[i])); // try
+
         // read JSON
         let parsedJSON = {};
         try {
@@ -67,14 +70,16 @@ function handleExport() {
 
         if (parsedJSON.imports) {
             for (const newImport of parsedJSON.imports) {
-                if (imports.indexOf(newImport) == -1) {
+                const absPath = path.isAbsolute(newImport) ? newImport : path.normalize(path.join(importBasePath, newImport));
+                
+                if (imports.indexOf(absPath) == -1) {
                     // only if not already imported
-                    imports.push(newImport);
+                    imports.push(absPath);
                 }
             }
         }
 
-        extend(manufacturers, parsedJSON.manufacturers);
+        Object.assign(manufacturers, parsedJSON.manufacturers);
         fixtures = fixtures.concat(parsedJSON.fixtures);
 
         i++;
@@ -88,17 +93,13 @@ function handleExport() {
 
         console.log(`Handling ${options.format} formatting...`);
 
-        const formatter = require(['.', 'formats', `${options.format}.js`].join(path.sep));
-        formatter.format(manufacturers, fixtures, localOutDir);
+        formatter.export(manufacturers, fixtures, localOutDir);
     });
 }
 
 function handleImport() {
-    const formatter = require(['.', 'formats', `${options.format}.js`].join(path.sep));
-
-    if (!formatter.import) {
-        die(`Format "${options.format}" can't import yet.`); // '
-    }
+    if (!formatter.import)
+        die(`Import from "${options.format}" not implemented yet.`);
 
     let str = '';
     try {
@@ -119,11 +120,21 @@ function handleImport() {
         promise.then((obj) => {
             const timestamp = new Date().toISOString().replace(/T/, '_').replace(/:/g, '-').replace(/\..+/, '');
             const outFile = [localOutDir, `import_${timestamp}.json`].join(path.sep);
-            fs.writeFile(outFile, JSON.stringify(obj, null, 4), (writeError) => {
-                if (writeError) {
+            let outStr = JSON.stringify(obj, null, 4);
+
+            // make arrays fit in one line
+            outStr = outStr.replace(/^( +)"(range|dimensions|degreesMinMax)": \[\n((?:.|\n)*?)^\1\]/mg, (match, spaces, key, values) => {
+                return `${spaces}"${key}": [` + JSON.parse('[' + values + ']').join(', ') + ']';
+            });
+
+            fs.writeFile(outFile, outStr, (writeError) => {
+                if (writeError)
                     die(`Error writing to file "${outFile}", exiting.`, writeError);
-                }
+
                 console.log(`File "${outFile}" successfully written.`);
+
+                if (outStr.includes('warning'))
+                    console.log('Please check for warnings using a text editor.');
             });
         });
     });
