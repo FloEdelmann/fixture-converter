@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>DMX Fixture converter</Name>
+  <Version>1.0</Version>
+  <Author>felix</Author>
+ </Creator>
+ <Manufacturer>American DJ</Manufacturer>
+ <Model>Quad Phase HP</Model>
+ <Type>Flower</Type>
+ <Channel Name="Color">
+  <Group Byte="0">Colour</Group>
+  <Colour>Generic</Colour>
+  <Capability Min="0" Max="16" Color="#000000">Color 1</Capability>
+  <Capability Min="17" Max="33" Color="#000000">Color 2</Capability>
+  <Capability Min="34" Max="50" Color="#000000">Color 3</Capability>
+  <Capability Min="51" Max="67" Color="#000000">Color 4</Capability>
+  <Capability Min="68" Max="84" Color="#000000">Color 5</Capability>
+  <Capability Min="85" Max="101" Color="#000000">Color 6</Capability>
+  <Capability Min="102" Max="118" Color="#000000">Color 7</Capability>
+  <Capability Min="119" Max="135" Color="#000000">Color 8</Capability>
+  <Capability Min="136" Max="152" Color="#000000">Color 9</Capability>
+  <Capability Min="153" Max="169" Color="#000000">Color 10</Capability>
+  <Capability Min="170" Max="186" Color="#000000">Color 11</Capability>
+  <Capability Min="187" Max="203" Color="#000000">Color 12</Capability>
+  <Capability Min="204" Max="220" Color="#000000">Color 13</Capability>
+  <Capability Min="221" Max="237" Color="#000000">Color 14</Capability>
+  <Capability Min="238" Max="255" Color="#000000">Color 15</Capability>
+ </Channel>
+ <Channel Name="Rotation">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="9">No Rotation</Capability>
+  <Capability Min="10" Max="120">CW fast-slow</Capability>
+  <Capability Min="121" Max="134">No Rotation</Capability>
+  <Capability Min="135" Max="245">CCW slow-fast</Capability>
+  <Capability Min="246" Max="249">No Rotation</Capability>
+  <Capability Min="250" Max="255">Sound</Capability>
+ </Channel>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="0">No Strobe</Capability>
+  <Capability Min="1" Max="255">Strobe slo-fast</Capability>
+ </Channel>
+ <Channel Name="Shutter">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="15">Shutter closed</Capability>
+  <Capability Min="16" Max="255">Shutter open</Capability>
+ </Channel>
+ <Mode Name="4-channel Mode">
+  <Physical>
+   <Bulb ColourTemperature="0" Type="LED" Lumens="0" />
+   <Dimensions Width="312" Height="198" Depth="279" Weight="4" />
+   <Lens Name="Other" DegreesMin="65" DegreesMax="65" />
+   <Focus Type="Fixed" TiltMax="0" PanMax="0" />
+   <Technical DmxConnector="3-pin" PowerConsumption="64" />
+  </Physical>
+  <Channel Number="0">Color</Channel>
+  <Channel Number="1">Rotation</Channel>
+  <Channel Number="2">Strobe</Channel>
+  <Channel Number="3">Shutter</Channel>
+ </Mode>
+</FixtureDefinition>
