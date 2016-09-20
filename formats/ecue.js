@@ -68,7 +68,7 @@ module.exports.export = function formatEcue(manufacturers, fixtures, localOutDir
                         die(`Channel "${chKey}" not found in fixture "${fixData.name}", exiting.`);
                     }
 
-                    let chData = Object.assign({}, defaults.fixtures[0].availableChannels.ch1, channel);
+                    let chData = Object.assign({}, defaults.fixtures[0].availableChannels["Unique channel name"], channel);
 
                     if (!chData.name)
                         chData.name = chKey;
@@ -111,7 +111,7 @@ module.exports.export = function formatEcue(manufacturers, fixtures, localOutDir
                         if (channelLsb === undefined) {
                             die(`Channel "${chKeyLsb}" not found in fixture "${fixData.name}", exiting.`);
                         }
-                        const chDataLsb = Object.assign({}, defaults.fixtures[0].availableChannels.ch1, channelLsb);
+                        const chDataLsb = Object.assign({}, defaults.fixtures[0].availableChannels["Unique channel name"], channelLsb);
 
                         chData.defaultValue *= 256;
                         chData.defaultValue += chDataLsb.defaultValue;
@@ -132,7 +132,7 @@ module.exports.export = function formatEcue(manufacturers, fixtures, localOutDir
 
                     if (hasCapabilities) {
                         for (const cap of channel.capabilities) {
-                            const capData = Object.assign({}, defaults.fixtures[0].availableChannels.ch1.capabilities[0], cap);
+                            const capData = Object.assign({}, defaults.fixtures[0].availableChannels["Unique channel name"].capabilities[0], cap);
 
                             str += `                        <Range Name="${capData.name}" Start="${capData.range[0]}" End="${capData.range[1]}" AutoMenu="${capData.showInMenu ? 1 : 0}" Centre="${capData.center ? 1 : 0}" />\n`;
                         }
