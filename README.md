@@ -50,7 +50,14 @@ Each format may implement two functions:
 
 ```js
 module.exports.export = function(manufacturers, fixtures, localOutDir) { ... }
-module.exports.import = function(str, filename) { ... }
+module.exports.import = function(str, filename) {
+    ...
+    // use a promise to allow asynchronous return values
+    return new Promise((resolve, reject) => {
+        ...
+        resolve(objectToConvertToJSON);
+    });
+}
 ```
 
 Those will get called from [fixtures_convert.js](fixtures_convert.js), so you won't have to bother with command line arguments.

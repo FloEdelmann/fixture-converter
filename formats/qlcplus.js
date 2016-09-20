@@ -226,7 +226,7 @@ module.exports.import = function importQLCplus(str, filename) {
                         ];
                     }
 
-                    if (mode.Physical[0].Dimensions[0].$.Weight != "0" && mode.Physical[0].Dimensions[0].$.Weight != "0.0")
+                    if (parseFloat(mode.Physical[0].Dimensions[0].$.Weight) !== 0.0)
                         physical.weight = parseFloat(mode.Physical[0].Dimensions[0].$.Weight);
 
                     if (mode.Physical[0].Technical[0].$.PowerConsumption != "0")
@@ -248,7 +248,7 @@ module.exports.import = function importQLCplus(str, filename) {
                     let lensData = {};
                     if (mode.Physical[0].Lens[0].$.Name != "")
                         lensData.name = mode.Physical[0].Lens[0].$.Name;
-                    if (mode.Physical[0].Lens[0].$.DegreesMin != "0" || mode.Physical[0].Lens[0].$.DegreesMax != "0")
+                    if (parseFloat(mode.Physical[0].Lens[0].$.DegreesMin) !== 0.0 || parseFloat(mode.Physical[0].Lens[0].$.DegreesMax) !== 0.0)
                         lensData.degreesMinMax = [parseFloat(mode.Physical[0].Lens[0].$.DegreesMin), parseFloat(mode.Physical[0].Lens[0].$.DegreesMax)];
                     if (JSON.stringify(lensData) != '{}')
                         physical.lens = lensData;
