@@ -9,21 +9,20 @@ const diff = require('diff');
 
 const assert = require('assert');
 
-
-fs.mkdtemp(path.join(__dirname, 'out-'), (err, folder) => {
+const timestamp = new Date().toISOString().replace(/T/, '_').replace(/:/g, '-').replace(/\..+/, '');
+const outputDir = path.join(__dirname, `out-${timestamp}`);
+fs.mkdir(outputDir, (err) => {
     if (err) throw err;
 
     test(
         'ADJ Quad Phase HP',
         'qlcplus',
-        folder,
         'adj_quad_phase_hp.json',
         'American-DJ-Quad-Phase-HP.qxf'
     );
     test(
         'Eurolite LED KLS-801',
         'ecue',
-        folder,
         'eurolite_led_kls-801.json',
         'UserLibrary.xml',
         'Eurolite-LED-KLS-801.xml'
@@ -31,7 +30,7 @@ fs.mkdtemp(path.join(__dirname, 'out-'), (err, folder) => {
 });
 
 
-function test(name, format, outputDir, inputFile, desiredOutputFile, outputFile) {
+function test(name, format, inputFile, desiredOutputFile, outputFile) {
     if (outputFile === undefined) {
         outputFile = desiredOutputFile;
     }
