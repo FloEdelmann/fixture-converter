@@ -1,0 +1,35 @@
+{
+    "name": "fixture-coverter",
+    "version": 1.0,
+    "description": "Convert DMX fixture data between various formats.",
+    "keywords": ["dmx", "fixture", "convert", "lighting", "ecue", "qlcplus"],
+    "homepage": "https://github.com/FloEdelmann/fixture-converter",
+    "repository": "FloEdelmann/fixture-converter",
+    "bugs": {
+        "url": "https://github.com/FloEdelmann/fixture-converter/issues",
+        "email": "florian-edelmann@online.de"
+    },
+    "license": "CC-BY-SA-4.0",
+    "author": "Florian Edelmann <florian-edelmann@online.de>",
+    "contributors": [
+        "Felix Edelmann <fxedel@gmail.com>"
+    ],
+    "files": [
+        "fixtures",
+        "formats",
+        "fixtures.json",
+        "fixtures_convert.js",
+        "fixtures_defaults.js"
+    ],
+    "bin": "fixtures_convert.js",
+    "scripts": {
+        "start": "node fixtures_convert.js",
+        "test": "node tests/fixtures_convert_test.js"
+    },
+    "dependencies": {
+        "node-getopt": "*",
+        "mkdirp": "*",
+        "xml2js": "*",
+        "color-names": "*"
+    }
+}
