@@ -20,14 +20,10 @@ module.exports.export = function formatQLCplus(manufacturers, fixtures, localOut
         str += ' </Creator>\n';
 
         let fixData = Object.assign({}, defaults.fixtures[0], fixture);
-        if (fixData.shortName == null) {
-            fixData.shortName = fixData.name;
-        }
 
-        const manData = Object.assign({}, defaults.manufacturers.shortName, manufacturers[fixData.manufacturer]);
-        if (manData.name == null) {
+        let manData = Object.assign({}, defaults.manufacturers.shortName, manufacturers[fixData.manufacturer]);
+        if (manData.name == null)
             manData.name = fixData.manufacturer;
-        }
 
         str += ` <Manufacturer>${manData.name}</Manufacturer>\n`;
         str += ` <Model>${fixData.name}</Model>\n`;
@@ -51,7 +47,15 @@ module.exports.export = function formatQLCplus(manufacturers, fixtures, localOut
             }
 
             str += ` <Channel Name="${chData.name}">\n`;
-            str += `  <Group Byte="${byte}">${chData.type}</Group>\n`;
+
+            if (chData.type == "Color") {
+                str += `  <Group Byte="${byte}">Colour</Group>\n`;
+                str += `  <Colour>${chData.color}</Colour>\n`;
+            }
+            else {
+                str += `  <Group Byte="${byte}">${chData.type}</Group>\n`;
+            }
+
 
             for (const capability of chData.capabilities) {
                 const capData = Object.assign({}, defaults.fixtures[0].availableChannels.ch1.capabilities[0], capability);
@@ -166,18 +170,25 @@ module.exports.import = function importQLCplus(str, filename) {
 
                 let doubleByteChannels = [];
 
-                for (const channel of fixture.Channel) {
+                for (const channel of fixture.Channel || []) {
                     let ch = {
-                        "name": channel.$.Name,
-                        "type": channel.Group[0]._,
-                        "capabilities": []
+                        "type": channel.Group[0]._
                     };
 
-                    if (channel.Group[0].$.Byte == "1") {
-                        doubleByteChannels.push([channel.$.Name]);
-                    }
+                    if (ch.type == "Colour")
+                        ch.type = "Color";
 
-                    for (const capability of channel.Capability) {
+                    if (channel.Colour)
+                        ch.color = channel.Colour[0];
+
+                    if (ch.type == "Intensity")
+                        ch.crossfade = true;
+
+                    if (channel.Group[0].$.Byte == "1")
+                        doubleByteChannels.push([channel.$.Name]);
+
+                    ch.capabilities = [];
+                    for (const capability of channel.Capability || []) {
                         let cap = {
                             "range": [parseInt(capability.$.Min), parseInt(capability.$.Max)],
                             "name": capability._
@@ -194,7 +205,6 @@ module.exports.import = function importQLCplus(str, filename) {
 
                         ch.capabilities.push(cap);
                     }
-
                     if (ch.capabilities.length == 0)
                         delete ch.capabilities;
 
@@ -209,65 +219,80 @@ module.exports.import = function importQLCplus(str, filename) {
                 fix.heads = {};
                 fix.modes = [];
 
-                for (const mode of fixture.Mode) {
+                for (const mode of fixture.Mode || []) {
                     let mod = {
                         "name": mode.$.Name
                     };
 
                     let physical = {};
 
-                    if (mode.Physical[0].Dimensions[0].$.Width != "0"
-                        || mode.Physical[0].Dimensions[0].$.Height != "0"
-                        || mode.Physical[0].Dimensions[0].$.Depth != "0") {
-                        physical.dimensions = [
-                            parseInt(mode.Physical[0].Dimensions[0].$.Width),
-                            parseInt(mode.Physical[0].Dimensions[0].$.Height),
-                            parseInt(mode.Physical[0].Dimensions[0].$.Depth)
-                        ];
+                    const dimWidth = parseInt(mode.Physical[0].Dimensions[0].$.Width);
+                    const dimHeight = parseInt(mode.Physical[0].Dimensions[0].$.Height);
+                    const dimDepth = parseInt(mode.Physical[0].Dimensions[0].$.Depth);
+                    if ((dimWidth != 0 || dimHeight != 0 || dimDepth != 0)
+                        && (!fix.physical.dimensions || fix.physical.dimensions[0] != dimWidth || fix.physical.dimensions[1] != dimHeight || fix.physical.dimensions[2] != dimDepth)) {
+                        physical.dimensions = [dimWidth, dimHeight, dimDepth];
                     }
 
-                    if (parseFloat(mode.Physical[0].Dimensions[0].$.Weight) !== 0.0)
-                        physical.weight = parseFloat(mode.Physical[0].Dimensions[0].$.Weight);
+                    const weight = parseFloat(mode.Physical[0].Dimensions[0].$.Weight);
+                    if (weight != 0.0 && (fix.physical.weight != weight))
+                        physical.weight = weight;
 
-                    if (mode.Physical[0].Technical[0].$.PowerConsumption != "0")
-                        physical.power = parseInt(mode.Physical[0].Technical[0].$.PowerConsumption);
+                    const power = parseInt(mode.Physical[0].Technical[0].$.PowerConsumption);
+                    if (power != 0 && (fix.physical.power != power))
+                        physical.power = power;
 
-                    if (mode.Physical[0].Technical[0].$.DmxConnector != "")
-                        physical.DMXconnector = mode.Physical[0].Technical[0].$.DmxConnector;
+                    const DMXconnector = mode.Physical[0].Technical[0].$.DmxConnector;
+                    if (DMXconnector != "" && fix.physical.DMXconnector != DMXconnector)
+                        physical.DMXconnector = DMXconnector;
 
                     let bulbData = {};
-                    if (mode.Physical[0].Bulb[0].$.Type != "")
-                        bulbData.type = mode.Physical[0].Bulb[0].$.Type;
-                    if (mode.Physical[0].Bulb[0].$.ColourTemperature != "0")
-                        bulbData.colorTemperature = parseInt(mode.Physical[0].Bulb[0].$.ColourTemperature);
-                    if (mode.Physical[0].Bulb[0].$.Lumens != "0")
-                        bulbData.lumens = parseInt(mode.Physical[0].Bulb[0].$.Lumens);
+                    const bulbType = mode.Physical[0].Bulb[0].$.Type;
+                    if (bulbType != "" && (!fix.physical.bulb || fix.physical.bulb.type != bulbType))
+                        bulbData.type = bulbType;
+                    const bulbColorTemp = parseInt(mode.Physical[0].Bulb[0].$.ColourTemperature);
+                    if (bulbColorTemp != 0 && (!fix.physical.bulb || fix.physical.bulb.colorTemperature != bulbColorTemp))
+                        bulbData.colorTemperature = bulbColorTemp;
+                    const bulbLumens = parseInt(mode.Physical[0].Bulb[0].$.Lumens);
+                    if (bulbLumens != 0 && (!fix.physical.bulb || fix.physical.bulb.lumens != bulbLumens))
+                        bulbData.lumens = bulbLumens;
                     if (JSON.stringify(bulbData) != '{}')
                         physical.bulb = bulbData;
 
                     let lensData = {};
-                    if (mode.Physical[0].Lens[0].$.Name != "")
-                        lensData.name = mode.Physical[0].Lens[0].$.Name;
-                    if (parseFloat(mode.Physical[0].Lens[0].$.DegreesMin) !== 0.0 || parseFloat(mode.Physical[0].Lens[0].$.DegreesMax) !== 0.0)
-                        lensData.degreesMinMax = [parseFloat(mode.Physical[0].Lens[0].$.DegreesMin), parseFloat(mode.Physical[0].Lens[0].$.DegreesMax)];
+                    const lensName = mode.Physical[0].Lens[0].$.Name;
+                    if (lensName != "" && (!fix.physical.lens || fix.physical.lens.name != lensName))
+                        lensData.name = lensName;
+                    const lensDegMin = parseFloat(mode.Physical[0].Lens[0].$.DegreesMin);
+                    const lensDegMax = parseFloat(mode.Physical[0].Lens[0].$.DegreesMax);
+                    if ((lensDegMin != 0.0 || lensDegMax != 0.0)
+                        && (!fix.physical.lens || !fix.physical.lens.degreesMinMax || fix.physical.lens.degreesMinMax[0] != lensDegMin || fix.physical.lens.degreesMinMax[1] != lensDegMax))
+                        lensData.degreesMinMax = [lensDegMin, lensDegMax];
                     if (JSON.stringify(lensData) != '{}')
                         physical.lens = lensData;
 
                     let focusData = {};
-                    if (mode.Physical[0].Focus[0].$.Type != "")
-                        focusData.type = mode.Physical[0].Focus[0].$.Type;
-                    if (mode.Physical[0].Focus[0].$.PanMax != "0")
-                        focusData.panMax = parseInt(mode.Physical[0].Focus[0].$.PanMax);
-                    if (mode.Physical[0].Focus[0].$.TiltMax != "0")
-                        focusData.tiltMax = parseInt(mode.Physical[0].Focus[0].$.TiltMax);
+                    const focusType = mode.Physical[0].Focus[0].$.Type;
+                    if (focusType != "" && (!fix.physical.focus || fix.physical.focus.type != focusType))
+                        focusData.type = focusType;
+                    const focusPanMax = parseInt(mode.Physical[0].Focus[0].$.PanMax);
+                    if (focusPanMax != 0 && (!fix.physical.focus || fix.physical.focus.panMax != focusPanMax))
+                        focusData.panMax = focusPanMax;
+                    const focusTiltMax = parseInt(mode.Physical[0].Focus[0].$.TiltMax);
+                    if (focusTiltMax != 0 && (!fix.physical.focus || fix.physical.focus.tiltMax != focusTiltMax))
+                        focusData.tiltMax = focusTiltMax;
                     if (JSON.stringify(focusData) != '{}')
                         physical.focus = focusData;
 
-                    if (JSON.stringify(physical) != '{}')
-                        mod.physical = physical;
+                    if (JSON.stringify(physical) != '{}') {
+                        if (fix.modes.length == 0) // this is the first mode -> fixture defaults
+                            fix.physical = physical;
+                        else
+                            mod.physical = physical;
+                    }
 
                     mod.channels = [];
-                    for (const ch of mode.Channel) {
+                    for (const ch of mode.Channel || []) {
                         mod.channels[parseInt(ch.$.Number)] = ch._;
                     }
 

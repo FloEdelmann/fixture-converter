@@ -188,7 +188,7 @@ module.exports.import = function importEcue(str, filename) {
             };
 
             try {
-                for (const manufacturer of xml.Document.Library[0].Fixtures[0].Manufacturer) {
+                for (const manufacturer of xml.Document.Library[0].Fixtures[0].Manufacturer || []) {
                     const manName = manufacturer.$.Name;
                     out.manufacturers[manName] = {
                         "name": manName
@@ -203,7 +203,7 @@ module.exports.import = function importEcue(str, filename) {
                         continue;
                     }
 
-                    for (const fixture of manufacturer.Fixture) {
+                    for (const fixture of manufacturer.Fixture || []) {
                         let fix = {
                             "manufacturer": manName,
                             "name": fixture.$.Name
@@ -269,6 +269,9 @@ module.exports.import = function importEcue(str, filename) {
                                 "name": name,
                                 "type": "Intensity"
                             };
+
+                            if (name == shortName)
+                                delete ch.name;
 
                             if (fixture.ChannelColor && fixture.ChannelColor.indexOf(channel) != -1) {
                                 if (channel.Range && channel.Range.length > 1) {

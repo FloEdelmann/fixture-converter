@@ -17,7 +17,10 @@ Just see [fixtures_defaults.js](fixtures_defaults.js).
 
 ## Dependencies
 
-* [Node.js](https://nodejs.org/en/)
+* [Node.js](https://nodejs.org/en/) (I have version 6.6.0, but maybe it works with lower versions, too.)
+
+### Modules
+
 * [node-getopt](https://www.npmjs.com/package/node-getopt)
 * [mkdirp](https://www.npmjs.com/package/mkdirp)
 * [xml2js](https://github.com/Leonidas-from-XIV/node-xml2js)
