@@ -61,6 +61,10 @@ function test(name, format, outputDir, inputFile, desiredOutputFile, outputFile)
                 out = out.replace(/\d\d\d\d\-\d\d\-\d\d#\d\d:\d\d:\d\d/g, '');
                 desiredOut = desiredOut.replace(/\d\d\d\d\-\d\d\-\d\d#\d\d:\d\d:\d\d/g, '');
             }
+            else if (format == 'qlcplus') {
+                out = out.replace(/<Author>[^<]*<\/Author>/g, '<Author></Author>');
+                desiredOut = desiredOut.replace(/<Author>[^<]*<\/Author>/g, '<Author></Author>');
+            }
 
             try {
                 assert(out == desiredOut);
