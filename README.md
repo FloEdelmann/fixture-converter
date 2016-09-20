@@ -1,26 +1,44 @@
 # DMX Fixture converter
 
-Creating fixture files is relatively easy for most DMX control software, as they offer editors for their proprietary formats. But what if you want to try another program?
+Creating fixture files is relatively easy for most DMX control software, as they offer graphical editors for their proprietary formats. But what if you want to try another program?
 
-For this purpose, I created this little script that converts a JSON file with all fixture data to various output formats.
+For this purpose, I created this little script that uses a JSON file to store all fixture data. Other files may be generated from this format or imported into it.
+
 
 ## Supported formats
 
-* [e:cue](http://www.ecue.de/) (import / export)
-* [QLC+](http://www.qlcplus.org/) (export only for now)
+### Internal JSON
 
+See [fixtures_defaults.js](fixtures_defaults.js) or look at the [fixtures/ directory](fixtures/) to learn how the JSON structure used by this script looks like.
 
-## How does the input format have to look like?
+### e:cue (`ecue`)
 
-Just see [fixtures_defaults.js](fixtures_defaults.js).
+**Import:** Yes
+**Export:** Yes
+
+**Website:** [http://www.ecue.com/](http://www.ecue.com/index.php?id=502)
+
+**Where do I find my previous fixture definitions?**
+Main Library: `C:\ProgramData\ecue\Library V7.0\MainLibrary.xml`
+User Library: `C:\Documents and Settings\[Your User]\AppData\Local\ecue\Library V7.0\UserLibrary.xml`
+
+### QLC+ (`qlcplus`)
+
+**Import:** Yes
+**Export:** Yes
+
+**Website:** http://www.qlcplus.org/
+
+**Where do I find my previous fixture definitions?**
+Main Library: `/usr/share/qlcplus/fixtures` (Linux)
+User Library: `~/.qlcplus/fixtures` (Linux)
 
 
 ## Dependencies
 
 * [Node.js](https://nodejs.org/en/) (I have version 6.6.0, but maybe it works with lower versions, too.)
 
-### Modules
-
+**Node.js Modules:**
 * [node-getopt](https://www.npmjs.com/package/node-getopt)
 * [mkdirp](https://www.npmjs.com/package/mkdirp)
 * [xml2js](https://github.com/Leonidas-from-XIV/node-xml2js)
@@ -38,7 +56,7 @@ npm install node-getopt mkdirp xml2js color-names
 
 ### Examples
 
-**Typical use:** `./fixtures_convert.js -f ecue` formats `fixtures.json` as *e:cue* and writes it to `out/ecue/UserLibrary.xml`
+**Typical use:** `./fixtures_convert.js -f qlcplus` formats `fixtures.json` as *QLC+* and writes the resulting fixture definition `.qxf` files to `out/qlcplus/`
 
 **Import:** `./fixtures_convert.js -i UserLibrary.xml -f ecue` imports `UserLibrary.xml` as *e:cue* format and writes the resulting JSON file to `out/ecue/import_YYYY-MM-DD_hh:mm:ss.json`
 
