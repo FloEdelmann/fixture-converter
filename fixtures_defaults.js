@@ -35,8 +35,8 @@ module.exports = {
                 }
             },
             "availableChannels": { // required
-                "ch1": {
-                    "name": null, // optional. default: channel object key (here: "ch1")
+                "Unique channel name": {
+                    "name": null, // optional. default: Unique channel name
                     "type": "Intensity", // optional. Possible values: "Intensity/Shutter/Speed/Color/Gobo/Prism/Pan/Tilt/Beam/Effect/Maintenance/Nothing". Note: Use "Color" only for multiple colors in one channel, and "Intensity" else.
                     "color": "Generic", // optional. Possible values: "Generic/Red/Green/Blue/Cyan/Magenta/Yellow/Amber/White/UV/Lime". Note: Only important if "type" is "Intensity"
                     "defaultValue": 0, // optional. DMX channel value
