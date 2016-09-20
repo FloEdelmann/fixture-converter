@@ -13,24 +13,24 @@ See [fixtures_defaults.js](fixtures_defaults.js) or look at the [fixtures/ direc
 
 ### e:cue (`ecue`)
 
-**Import:** Yes
+**Import:** Yes  
 **Export:** Yes
 
 **Website:** [http://www.ecue.com/](http://www.ecue.com/index.php?id=502)
 
-**Where do I find my previous fixture definitions?**
-Main Library: `C:\ProgramData\ecue\Library V7.0\MainLibrary.xml`
+**Where do I find my previous fixture definitions?**  
+Main Library: `C:\ProgramData\ecue\Library V7.0\MainLibrary.xml`  
 User Library: `C:\Documents and Settings\[Your User]\AppData\Local\ecue\Library V7.0\UserLibrary.xml`
 
 ### QLC+ (`qlcplus`)
 
-**Import:** Yes
+**Import:** Yes  
 **Export:** Yes
 
 **Website:** http://www.qlcplus.org/
 
-**Where do I find my previous fixture definitions?**
-Main Library: `/usr/share/qlcplus/fixtures` (Linux)
+**Where do I find my previous fixture definitions?**  
+Main Library: `/usr/share/qlcplus/fixtures` (Linux)  
 User Library: `~/.qlcplus/fixtures` (Linux)
 
 
@@ -56,9 +56,11 @@ npm install node-getopt mkdirp xml2js color-names
 
 ### Examples
 
-**Typical use:** `./fixtures_convert.js -f qlcplus` formats `fixtures.json` as *QLC+* and writes the resulting fixture definition `.qxf` files to `out/qlcplus/`
+**Typical use:** `./fixtures_convert.js -f qlcplus`  
+formats `fixtures.json` as *QLC+* and writes the resulting fixture definition `.qxf` files to `out/qlcplus/`
 
-**Import:** `./fixtures_convert.js -i UserLibrary.xml -f ecue` imports `UserLibrary.xml` as *e:cue* format and writes the resulting JSON file to `out/ecue/import_YYYY-MM-DD_hh:mm:ss.json`
+**Import:** `./fixtures_convert.js -i UserLibrary.xml -f ecue`  
+imports `UserLibrary.xml` as *e:cue* format and writes the resulting JSON file to `out/ecue/import_YYYY-MM-DD_hh:mm:ss.json`
 
 
 ## Contributing
