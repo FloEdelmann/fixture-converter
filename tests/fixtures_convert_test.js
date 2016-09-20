@@ -37,7 +37,7 @@ function test(name, format, outputDir, inputFile, desiredOutputFile, outputFile)
     }
 
     cp.exec(
-        path.join('node', __dirname, '..', 'fixtures_convert.js')
+        'node ' + path.join(__dirname, '..', 'fixtures_convert.js')
         + ' -i ' + path.join(__dirname, 'fixtures', inputFile)
         + ` -f ${format} -d ` + path.join(outputDir, '%FORMAT%'),
         (error, stdout, stderr) => {
