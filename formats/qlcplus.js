@@ -31,7 +31,7 @@ module.exports.export = function formatQLCplus(manufacturers, fixtures, localOut
 
         const chDatas = {};
         for (const channel in fixData.availableChannels) {
-            const chData = chDatas[channel] = Object.assign({}, defaults.fixtures[0].availableChannels.ch1, fixData.availableChannels[channel]);
+            const chData = chDatas[channel] = Object.assign({}, defaults.fixtures[0].availableChannels["Unique channel name"], fixData.availableChannels[channel]);
 
             if (!chData.name)
                 chData.name = channel;
@@ -58,7 +58,7 @@ module.exports.export = function formatQLCplus(manufacturers, fixtures, localOut
 
 
             for (const capability of chData.capabilities) {
-                const capData = Object.assign({}, defaults.fixtures[0].availableChannels.ch1.capabilities[0], capability);
+                const capData = Object.assign({}, defaults.fixtures[0].availableChannels["Unique channel name"].capabilities[0], capability);
 
                 str += `  <Capability Min="${capData.range[0]}" Max="${capData.range[1]}"`;
                 if (capData.image != null) {
