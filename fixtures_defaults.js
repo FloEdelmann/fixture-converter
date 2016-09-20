@@ -20,8 +20,8 @@ module.exports = {
                 "power": 0, // optional. in W.
                 "DMXconnector": "3-pin", // optional. Possible values: "3-pin/5-pin/3-pin and 5-pin/3.5mm stereo jack/Other/free text"
                 "bulb": {
-                    "colorTemperature": 0, // optional
                     "type": "", // optional. e.g. "LED"
+                    "colorTemperature": 0, // optional
                     "lumens": 0 // optional
                 },
                 "lens": {

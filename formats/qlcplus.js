@@ -139,6 +139,166 @@ module.exports.export = function formatQLCplus(manufacturers, fixtures, localOut
     }
 }
 
+module.exports.import = function importQLCplus(str, filename) {
+    const xml2js = require('xml2js');
+
+    const parser = new xml2js.Parser();
+
+    return new Promise((resolve, reject) => {
+        parser.parseString(str, function(parseError, xml) {
+            if (parseError) {
+                die(`Error parsing "${filename}", exiting.`, parseError);
+            }
+
+            let out = {
+                "manufacturers": {},
+                "fixtures": []
+            };
+            let fix = {};
+
+            try {
+                const fixture = xml.FixtureDefinition
+                fix.manufacturer = fixture.Manufacturer[0];
+                fix.name = fixture.Model[0];
+                fix.type = fixture.Type[0];
+                fix.physical = {};
+                fix.availableChannels = {};
+
+                let doubleByteChannels = [];
+
+                for (const channel of fixture.Channel) {
+                    let ch = {
+                        "name": channel.$.Name,
+                        "type": channel.Group[0]._,
+                        "capabilities": []
+                    };
+
+                    if (channel.Group[0].$.Byte == "1") {
+                        doubleByteChannels.push([channel.$.Name]);
+                    }
+
+                    for (const capability of channel.Capability) {
+                        let cap = {
+                            "range": [parseInt(capability.$.Min), parseInt(capability.$.Max)],
+                            "name": capability._
+                        };
+
+                        if (capability.$.Color)
+                            cap.color = capability.$.Color;
+
+                        if (capability.$.Color2)
+                            cap.color2 = capability.$.Color2;
+
+                        if (capability.$.res)
+                            cap.image = capability.$.res;
+
+                        ch.capabilities.push(cap);
+                    }
+
+                    if (ch.capabilities.length == 0)
+                        delete ch.capabilities;
+
+                    fix.availableChannels[channel.$.Name] = ch;
+                }
+
+                if (doubleByteChannels.length > 0) {
+                    fix.multiByteChannels = doubleByteChannels;
+                    fix.warning = "Please validate these 16-bit channels!";
+                }
+
+                fix.heads = {};
+                fix.modes = [];
+
+                for (const mode of fixture.Mode) {
+                    let mod = {
+                        "name": mode.$.Name
+                    };
+
+                    let physical = {};
+
+                    if (mode.Physical[0].Dimensions[0].$.Width != "0"
+                        || mode.Physical[0].Dimensions[0].$.Height != "0"
+                        || mode.Physical[0].Dimensions[0].$.Depth != "0") {
+                        physical.dimensions = [
+                            parseInt(mode.Physical[0].Dimensions[0].$.Width),
+                            parseInt(mode.Physical[0].Dimensions[0].$.Height),
+                            parseInt(mode.Physical[0].Dimensions[0].$.Depth)
+                        ];
+                    }
+
+                    if (mode.Physical[0].Dimensions[0].$.Weight != "0" && mode.Physical[0].Dimensions[0].$.Weight != "0.0")
+                        physical.weight = parseFloat(mode.Physical[0].Dimensions[0].$.Weight);
+
+                    if (mode.Physical[0].Technical[0].$.PowerConsumption != "0")
+                        physical.power = parseInt(mode.Physical[0].Technical[0].$.PowerConsumption);
+
+                    if (mode.Physical[0].Technical[0].$.DmxConnector != "")
+                        physical.DMXconnector = mode.Physical[0].Technical[0].$.DmxConnector;
+
+                    let bulbData = {};
+                    if (mode.Physical[0].Bulb[0].$.Type != "")
+                        bulbData.type = mode.Physical[0].Bulb[0].$.Type;
+                    if (mode.Physical[0].Bulb[0].$.ColourTemperature != "0")
+                        bulbData.colorTemperature = parseInt(mode.Physical[0].Bulb[0].$.ColourTemperature);
+                    if (mode.Physical[0].Bulb[0].$.Lumens != "0")
+                        bulbData.lumens = parseInt(mode.Physical[0].Bulb[0].$.Lumens);
+                    if (JSON.stringify(bulbData) != '{}')
+                        physical.bulb = bulbData;
+
+                    let lensData = {};
+                    if (mode.Physical[0].Lens[0].$.Name != "")
+                        lensData.name = mode.Physical[0].Lens[0].$.Name;
+                    if (mode.Physical[0].Lens[0].$.DegreesMin != "0" || mode.Physical[0].Lens[0].$.DegreesMax != "0")
+                        lensData.degreesMinMax = [parseFloat(mode.Physical[0].Lens[0].$.DegreesMin), parseFloat(mode.Physical[0].Lens[0].$.DegreesMax)];
+                    if (JSON.stringify(lensData) != '{}')
+                        physical.lens = lensData;
+
+                    let focusData = {};
+                    if (mode.Physical[0].Focus[0].$.Type != "")
+                        focusData.type = mode.Physical[0].Focus[0].$.Type;
+                    if (mode.Physical[0].Focus[0].$.PanMax != "0")
+                        focusData.panMax = parseInt(mode.Physical[0].Focus[0].$.PanMax);
+                    if (mode.Physical[0].Focus[0].$.TiltMax != "0")
+                        focusData.tiltMax = parseInt(mode.Physical[0].Focus[0].$.TiltMax);
+                    if (JSON.stringify(focusData) != '{}')
+                        physical.focus = focusData;
+
+                    if (JSON.stringify(physical) != '{}')
+                        mod.physical = physical;
+
+                    mod.channels = [];
+                    for (const ch of mode.Channel) {
+                        mod.channels[parseInt(ch.$.Number)] = ch._;
+                    }
+
+                    for (let i in mode.Head) {
+                        let head = [];
+
+                        for (const ch of mode.Head[i].Channel) {
+                            const chNum = parseInt(ch);
+                            head.push(mod.channels[chNum]);
+                        }
+
+                        fix.heads[mod.name + '-head' + i] = head;
+                    }
+
+                    fix.modes.push(mod);
+                }
+
+                if (JSON.stringify(fix.heads) == '{}')
+                    delete fix.heads;
+
+                out.fixtures.push(fix);
+            }
+            catch (parseError) {
+                die(`Error parsing "${filename}", exiting.`, parseError);
+            }
+
+            resolve(out);
+        });
+    });
+}
+
 function die(errorStr, logStr) {
     console.error(errorStr);
     if (logStr)
