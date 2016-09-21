@@ -271,7 +271,7 @@ module.exports.import = function importEcue(str, filename) {
                             if (name == shortName)
                                 delete ch.name;
 
-                            if (fixture.ChannelColor && fixture.ChannelColor.includes(channel)) {
+                            if (fixture.ChannelColor && fixture.ChannelColor.indexOf(channel) != -1) {
                                 if (channel.Range && channel.Range.length > 1) {
                                     ch.type = 'MultiColor';
                                 }
@@ -303,9 +303,9 @@ module.exports.import = function importEcue(str, filename) {
                                 ch.type = 'Pan';
                             else if (channel.$.Name.toLowerCase().includes('tilt'))
                                 ch.type = 'Tilt';
-                            else if (fixture.ChannelBeam && fixture.ChannelBeam.includes(channel))
+                            else if (fixture.ChannelBeam && fixture.ChannelBeam.indexOf(channel) != -1)
                                 ch.type = 'Beam';
-                            else if (!fixture.ChannelIntensity || fixture.ChannelIntensity.includes(channel)) // not even a default Intensity channel
+                            else if (!fixture.ChannelIntensity || fixture.ChannelIntensity.indexOf(channel) != -1) // not even a default Intensity channel
                                 ch.warning = "Please check type!";
 
                             if (channel.$.DefaultValue != "0")
@@ -418,12 +418,4 @@ function die(errorStr, logStr) {
     if (logStr)
         console.log(logStr);
     process.exit(1);
-}
-
-
-// polyfill to support Node v5 and below
-if (!Array.prototype.includes) {
-    Array.prototype.includes = function(searchElement, fromIndex) {
-        return (this.indexOf(searchElement, fromIndex) != -1);
-    };
 }
