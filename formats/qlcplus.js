@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const defaults = require(['..', 'fixtures_defaults.js'].join(path.sep));
+const defaults = require(path.join(__dirname, '..', 'fixtures_defaults.js'));
 
 module.exports.export = function formatQLCplus(manufacturers, fixtures, localOutDir) {
     for (const fixture of fixtures) {
@@ -129,10 +129,10 @@ module.exports.export = function formatQLCplus(manufacturers, fixtures, localOut
 
         str += '</FixtureDefinition>';
 
-        const outFile = [
+        const outFile = path.join(
             localOutDir,
             (manData.name + "-" + fixData.name).replace(/\s+/g, '-') + '.qxf'
-        ].join(path.sep);
+        );
 
         fs.writeFile(outFile, str, (writeError) => {
             if (writeError) {

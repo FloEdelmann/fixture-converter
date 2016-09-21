@@ -12,26 +12,24 @@ let outDir = path.join('out', '%FORMAT%');
 const formats = fs.readdirSync(path.join(__dirname, 'formats')).map(file => file.replace(/\.js$/, ''));
 
 const {argv, options} = require('node-getopt').create([
-    ['f' , 'format=ARG', `Required. Specifies output format. Possible arguments: "${formats.join('", "')}"`],
-    ['i' , 'input=ARG', `Specifies input filename. If this is not a JSON file, import it using the format specified in --format. Default: "${filename}"`],
-    ['d' , 'outdir=ARG', `Specifies the output directory. "%FORMAT%" gets replaced by the used output format. Default: "${outDir}"`],
-    ['h' , 'help', 'Display this help.']
+    ['f' , 'format=ARG', `\t(required)\n\t\tSpecifies output format.\n\t\tPossible arguments: "${formats.join('", "')}"\n`],
+    ['i' , 'input=ARG+', `\t(optional, may be specified multiple times)\n\t\tSpecifies input filenames. If the first is not a JSON file, import all using the format\n\t\tspecified in --format.\n\t\tDefault: "${filename}\n"`],
+    ['d' , 'outdir=ARG', `\t(optional)\n\t\tSpecifies the output directory. "%FORMAT%" gets replaced by the used output format.\n\t\tDefault: "${outDir}"\n`],
+    ['h' , 'help', '\n\t\tDisplay this help.']
 ]).bindHelp().parseSystem();
 
-if (!options.format || formats.indexOf(options.format) == -1) {
+if (!options.format || formats.indexOf(options.format) == -1)
     die("Invalid output format. Please specify --format. For help, use --help.");
-}
 
-if (options.input) {
-    filename = options.input;
-}
-if (options.outdir) {
+if (!options.input || options.input.length == 0)
+    options.input = [filename];
+
+if (options.outdir)
     outDir = options.outdir;
-}
 
 const formatter = require(path.join(__dirname, 'formats', `${options.format}.js`));
 
-if (filename.endsWith('.json')) {
+if (options.input[0].endsWith('.json')) {
     handleExport();
 }
 else {
@@ -42,13 +40,20 @@ function handleExport() {
     if (!formatter.export)
         die(`Export to "${options.format}" not implemented yet.`);
 
-    let imports = [fs.realpathSync(filename)]; // try
+    let imports = options.input.map(function(file) {
+        try {
+            return fs.realpathSync(file);
+        }
+        catch (realpathError) {
+            die(`realpath failed for file "${file}", exiting.`, realpathError);
+        }
+    });
+    
     let manufacturers = {};
     let fixtures = [];
 
     let i = 0;
     while (i < imports.length) {
-        // check access
         let str = '';
         try {
             str = fs.readFileSync(imports[i], 'utf8');
@@ -57,7 +62,13 @@ function handleExport() {
             die(`Can't read file "${imports[i]}", exiting. The error is attached below:\n`, readError); // '
         }
 
-        const importBasePath = path.dirname(fs.realpathSync(imports[i])); // try
+        let importBasePath;
+        try {
+            importBasePath = path.dirname(fs.realpathSync(imports[i])); // try
+        }
+        catch (realpathError) {
+            die(`realpath failed for file "${imports[i]}", exiting.`, realpathError);
+        }
 
         // read JSON
         let parsedJSON = {};
@@ -101,12 +112,17 @@ function handleImport() {
     if (!formatter.import)
         die(`Import from "${options.format}" not implemented yet.`);
 
-    let str = '';
-    try {
-        str = fs.readFileSync(filename, 'utf8');
-    }
-    catch (readError) {
-        die(`Can't read file "${filename}", exiting. The error is attached below:\n`, readError); // '
+    let fileContents = [];
+    for (const file of options.input) {
+        try {
+            fileContents.push({
+                "name": file,
+                "contents": fs.readFileSync(file, 'utf8')
+            });
+        }
+        catch (readError) {
+            die(`Can't read file "${file}", exiting. The error is attached below:\n`, readError); // '
+        }
     }
 
     const localOutDir = outDir.replace(/%FORMAT%/g, options.format);
@@ -115,12 +131,22 @@ function handleImport() {
             die(`Could not create directory "${localOutDir}", exiting.`, mkdirpError);
         }
 
-        const promise = formatter.import(str, filename);
+        const promises = fileContents.map((file) => formatter.import(file.contents, file.name));
 
-        promise.then((obj) => {
+        Promise.all(promises).then((objects) => {
             const timestamp = new Date().toISOString().replace(/T/, '_').replace(/:/g, '-').replace(/\..+/, '');
-            const outFile = [localOutDir, `import_${timestamp}.json`].join(path.sep);
-            let outStr = JSON.stringify(obj, null, 4);
+            const outFile = path.join(localOutDir, `import_${timestamp}.json`);
+
+            const combinedObject = {
+                "manufacturers": {},
+                "fixtures": []
+            };
+            for (const obj of objects) {
+                Object.assign(combinedObject.manufacturers, obj.manufacturers);
+                combinedObject.fixtures = combinedObject.fixtures.concat(obj.fixtures);
+            }
+
+            let outStr = JSON.stringify(combinedObject, null, 4);
 
             // make arrays fit in one line
             outStr = outStr.replace(/^( +)"(range|dimensions|degreesMinMax)": \[\n((?:.|\n)*?)^\1\]/mg, (match, spaces, key, values) => {
