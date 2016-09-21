@@ -12,6 +12,7 @@
             "shortName": "MiniTri",
             "type": "Color Changer",
             "comment": "Platinum Line Mini TRI-PAR 7x3 Watt",
+            "manualURL": "https://www.musicstore.de/de_DE/EUR/lightmaXX-Platinum-LED-MINI-PAR-Tri-LED-7x-3-Watt-black/art-LIG0007474-000",
             "physical": {
                 "dimensions": [170, 170, 160],
                 "weight": 2.0,
@@ -28,40 +29,36 @@
                 }
             },
             "availableChannels": {
-                "intensity": {
-                    "name": "Intensity",
+                "Intensity": {
                     "type": "Intensity",
                     "highlightValue": 255,
                     "crossfade": true,
                     "precendence": "HTP"
                 },
-                "red": {
-                    "name": "Red",
-                    "type": "Intensity",
+                "Red": {
+                    "type": "SingleColor",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true,
                     "precendence": "HTP"
                 },
-                "green": {
-                    "name": "Green",
-                    "type": "Intensity",
+                "Green": {
+                    "type": "SingleColor",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true,
                     "precendence": "HTP"
                 },
-                "blue": {
-                    "name": "Blue",
-                    "type": "Intensity",
+                "Blue": {
+                    "type": "SingleColor",
                     "color": "Blue",
                     "highlightValue": 255,
                     "crossfade": true,
                     "precendence": "HTP"
                 },
-                "macro": {
+                "Macro": {
                     "name": "Macro",
-                    "type": "Color",
+                    "type": "MultiColor",
                     "capabilities": [
                         {
                             "range": [0, 4],
@@ -157,9 +154,8 @@
                         }
                     ]
                 },
-                "strobe": {
-                    "name": "Strobe",
-                    "type": "Shutter",
+                "Strobe": {
+                    "type": "Strobe",
                     "highlightValue": 200
                 }
             },
@@ -167,7 +163,7 @@
                 {
                     "name": "6-channel Mode",
                     "shortName": "6ch",
-                    "channels": ["intensity", "red", "green", "blue", "macro", "strobe"]
+                    "channels": ["Intensity", "Red", "Green", "Blue", "Macro", "Strobe"]
                 }
             ]
         }

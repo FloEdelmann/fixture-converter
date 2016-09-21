@@ -6,6 +6,9 @@ const path = require('path');
 const defaults = require(path.join(__dirname, '..', 'fixtures_defaults.js'));
 
 module.exports.export = function formatQLCplus(manufacturers, fixtures, localOutDir) {
+    const allowedChannelTypes = ["Intensity", "Shutter", "Speed", "Gobo", "Prism", "Pan", "Tilt", "Beam", "Effect", "Maintenance", "Nothing"];
+
+
     for (const fixture of fixtures) {
         let str = '<?xml version="1.0" encoding="UTF-8"?>\n';
         str += '<!DOCTYPE FixtureDefinition>\n';
@@ -48,12 +51,24 @@ module.exports.export = function formatQLCplus(manufacturers, fixtures, localOut
 
             str += ` <Channel Name="${chData.name}">\n`;
 
-            if (chData.type == "Color") {
-                str += `  <Group Byte="${byte}">Colour</Group>\n`;
-                str += `  <Colour>${chData.color}</Colour>\n`;
+            
+            if (chData.type == 'SingleColor') {
+                chData.type = 'Intensity';
             }
-            else {
-                str += `  <Group Byte="${byte}">${chData.type}</Group>\n`;
+            else if (chData.type == 'MultiColor') {
+                chData.type = 'Colour';
+            }
+            else if (chData.type == 'Strobe') {
+                chData.type = 'Shutter';
+            }
+            else if (!allowedChannelTypes.includes(chData.type)) {
+                console.warn(`Channel type "${chData.type}" not supported, falling back to "Intensity" (in "${fixData.name}", channel "${chData.name}").`);
+                chData.type = 'Intensity';
+            }
+            
+            str += `  <Group Byte="${byte}">${chData.type}</Group>\n`;
+            if (chData.type == 'Intensity') {
+                str += `  <Colour>${chData.color}</Colour>\n`;
             }
 
 
@@ -102,6 +117,10 @@ module.exports.export = function formatQLCplus(manufacturers, fixtures, localOut
 
             for (let i = 0; i < modeData.channels.length; i++) {
                 let channel = modeData.channels[i];
+
+                if (!chDatas[channel])
+                    die(`Channel "${channel}" not found in fixture "${fixData.name}" (mode "${modeData.name}"), exiting.`);
+                
                 str += `  <Channel Number="${i}">${chDatas[channel].name}</Channel>\n`;
             }
 
@@ -175,8 +194,12 @@ module.exports.import = function importQLCplus(str, filename) {
                         "type": channel.Group[0]._
                     };
 
-                    if (ch.type == "Colour")
-                        ch.type = "Color";
+                    if (ch.type == "Colour") {
+                        ch.type = (channel.Capability && channel.Capability.length > 1) ? "MultiColor" : "SingleColor";
+                    }
+                    else if (channel.$.Name.toLowerCase().includes("strob")) {
+                        ch.type = "Strobe";
+                    }
 
                     if (channel.Colour)
                         ch.color = channel.Colour[0];
