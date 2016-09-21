@@ -55,8 +55,8 @@ module.exports.export = function formatEcue(manufacturers, fixtures, localOutDir
                     let doubleByte = false;
                     const multiByteChannels = getCorrespondingMultiByteChannels(chKey, fixData);
                     if (multiByteChannels != null
-                        && mode.channels.includes(multiByteChannels[0])
-                        && mode.channels.includes(multiByteChannels[1])) {
+                        && mode.channels.indexOf(multiByteChannels[0]) != -1
+                        && mode.channels.indexOf(multiByteChannels[1]) != -1) {
                         // it is a 16-bit channel and both 8-bit parts are used in this mode
                         chKey = multiByteChannels[0];
                         doubleByte = true;
@@ -271,7 +271,7 @@ module.exports.import = function importEcue(str, filename) {
                             if (name == shortName)
                                 delete ch.name;
 
-                            if (fixture.ChannelColor && fixture.ChannelColor.includes(channel)) {
+                            if (fixture.ChannelColor && fixture.ChannelColor.indexOf(channel) != -1) {
                                 if (channel.Range && channel.Range.length > 1) {
                                     ch.type = 'MultiColor';
                                 }
@@ -303,9 +303,9 @@ module.exports.import = function importEcue(str, filename) {
                                 ch.type = 'Pan';
                             else if (channel.$.Name.toLowerCase().includes('tilt'))
                                 ch.type = 'Tilt';
-                            else if (fixture.ChannelBeam && fixture.ChannelBeam.includes(channel))
+                            else if (fixture.ChannelBeam && fixture.ChannelBeam.indexOf(channel) != -1)
                                 ch.type = 'Beam';
-                            else if (!fixture.ChannelIntensity || fixture.ChannelIntensity.includes(channel)) // not even a default Intensity channel
+                            else if (!fixture.ChannelIntensity || fixture.ChannelIntensity.indexOf(channel) != -1) // not even a default Intensity channel
                                 ch.warning = "Please check type!";
 
                             if (channel.$.DefaultValue != "0")
