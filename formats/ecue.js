@@ -5,6 +5,8 @@ const path = require('path');
 
 const defaults = require(path.join(__dirname, '..', 'fixtures_defaults.js'));
 
+module.exports.defaultFileName = 'UserLibrary.xml';
+
 module.exports.export = function formatEcue(manufacturers, fixtures, localOutDir) {
     const timestamp = new Date().toISOString().replace(/T/, '#').replace(/\..+/, '');
     let str = '<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n';

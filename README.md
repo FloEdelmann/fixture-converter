@@ -72,6 +72,10 @@ Feel free to add your own output formats and / or fixtures. Just create a pull r
 Each format may implement two functions:
 
 ```js
+// required
+module.exports.defaultFileName = '%MANUFACTURER%-%FIXTURE%.xml';
+
+// both are optional
 module.exports.export = function(manufacturers, fixtures, localOutDir) { ... }
 module.exports.import = function(str, filename) {
     ...

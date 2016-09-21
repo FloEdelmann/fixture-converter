@@ -5,6 +5,8 @@ const path = require('path');
 
 const defaults = require(path.join(__dirname, '..', 'fixtures_defaults.js'));
 
+module.exports.defaultFileName = '%MANUFACTURER%-%FIXTURE%.qxf';
+
 module.exports.export = function formatQLCplus(manufacturers, fixtures, localOutDir) {
     const allowedChannelTypes = ["Intensity", "Shutter", "Speed", "Gobo", "Prism", "Pan", "Tilt", "Beam", "Effect", "Maintenance", "Nothing"];
 

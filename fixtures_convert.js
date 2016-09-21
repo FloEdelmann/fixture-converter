@@ -6,28 +6,25 @@ const fs = require('fs');
 const path = require('path');
 const mkdirp = require('mkdirp');
 
-let filename = 'fixtures.json';
-let outDir = path.join('out', '%FORMAT%');
+const filename = 'fixtures.json';
+const outDir = path.join('out', '%FORMAT%');
 
 const formats = fs.readdirSync(path.join(__dirname, 'formats')).map(file => file.replace(/\.js$/, ''));
 
 const {argv, options} = require('node-getopt').create([
     ['f' , 'format=ARG', `\t(required)\n\t\tSpecifies output format.\n\t\tPossible arguments: "${formats.join('", "')}"\n`],
-    ['i' , 'input=ARG+', `\t(optional, may be specified multiple times)\n\t\tSpecifies input filenames. If the first is not a JSON file, import all using the format\n\t\tspecified in --format.\n\t\tDefault: "${filename}\n"`],
-    ['d' , 'outdir=ARG', `\t(optional)\n\t\tSpecifies the output directory. "%FORMAT%" gets replaced by the used output format.\n\t\tDefault: "${outDir}"\n`],
+    ['i' , 'input=ARG+', `\t(optional, may be specified multiple times)\n\t\tSpecifies input filenames. If the first is not a JSON file, import all using the format\n\t\tspecified in --format.\n\t\tDefault: "${filename}"\n`],
+    ['o' , 'output=ARG', `\t(optional)\n\t\tSpecifies the output directory and filename. The following placeholders will be replaced:\n\t\t  %FORMAT%        output format (-f parameter)\n\t\t  %MANUFACTURER%  manufacturer name (spaces replaced with dashes)\n\t\t  %FIXTURE%       fixture name (spaces replaced with dashes)\n\t\t  %TIMESTAMP%     the current timestamp\n\t\tDefault: "${outDir}${path.sep}[format dependent]"\n`],
     ['h' , 'help', '\n\t\tDisplay this help.']
 ]).bindHelp().parseSystem();
 
 if (!options.format || formats.indexOf(options.format) == -1)
     die("Invalid output format. Please specify --format. For help, use --help.");
 
+const formatter = require(path.join(__dirname, 'formats', `${options.format}.js`));
+
 if (!options.input || options.input.length == 0)
     options.input = [filename];
-
-if (options.outdir)
-    outDir = options.outdir;
-
-const formatter = require(path.join(__dirname, 'formats', `${options.format}.js`));
 
 if (options.input[0].endsWith('.json')) {
     handleExport();
@@ -96,16 +93,13 @@ function handleExport() {
         i++;
     }
 
-    const localOutDir = outDir.replace(/%FORMAT%/g, options.format);
-    mkdirp(localOutDir, (mkdirpError) => {
-        if (mkdirpError) {
-            die(`Could not create directory "${localOutDir}", exiting.`, mkdirpError);
-        }
 
-        console.log(`Handling ${options.format} formatting...`);
+    if (!options.output)
+        options.outdir = path.join(outDir, formatter.defaultFileName);
+    options.output = options.output.replace(/%FORMAT%/g, options.format);
 
-        formatter.export(manufacturers, fixtures, localOutDir);
-    });
+    console.log(`Handling ${options.format} formatting...`);
+    formatter.export(manufacturers, fixtures, options.output);
 }
 
 function handleImport() {
@@ -125,44 +119,116 @@ function handleImport() {
         }
     }
 
-    const localOutDir = outDir.replace(/%FORMAT%/g, options.format);
-    mkdirp(localOutDir, (mkdirpError) => {
-        if (mkdirpError) {
-            die(`Could not create directory "${localOutDir}", exiting.`, mkdirpError);
+    if (!options.output)
+        options.outdir = path.join(outDir, 'import_' + formatter.defaultFileName);
+    options.output = options.output.replace(/%FORMAT%/g, options.format);
+
+    const promises = fileContents.map((file) => formatter.import(file.contents, file.name));
+    Promise.all(promises).then((objects) => {
+        const timestamp = new Date().toISOString().replace(/T/, '_').replace(/:/g, '-').replace(/\..+/, '');
+        options.output = options.output.replace(/%TIMESTAMP%/g, timestamp);
+
+        const combinedObject = {
+            "manufacturers": {},
+            "fixtures": []
+        };
+        for (const obj of objects) {
+            Object.assign(combinedObject.manufacturers, obj.manufacturers);
+            combinedObject.fixtures = combinedObject.fixtures.concat(obj.fixtures);
         }
 
-        const promises = fileContents.map((file) => formatter.import(file.contents, file.name));
+        let outputfiles = [];
+        if (options.output.includes('%MANUFACTURER%') && options.output.includes('%FIXTURE%')) {
+            for (let man in combinedObject.manufacturers) {
+                if (!combinedObject.manufacturers[man].name)
+                    combinedObject.manufacturers[man].name = man;
 
-        Promise.all(promises).then((objects) => {
-            const timestamp = new Date().toISOString().replace(/T/, '_').replace(/:/g, '-').replace(/\..+/, '');
-            const outFile = path.join(localOutDir, `import_${timestamp}.json`);
+                for (const fix of combinedObject.fixtures) {
+                    if (fix.manufacturer == man) {
+                        let obj = {
+                            "manufacturers": {},
+                            "fixtures": [fix]
+                        };
+                        obj.manufacturers[man] = combinedObject.manufacturers[man];
 
-            const combinedObject = {
-                "manufacturers": {},
-                "fixtures": []
-            };
-            for (const obj of objects) {
-                Object.assign(combinedObject.manufacturers, obj.manufacturers);
-                combinedObject.fixtures = combinedObject.fixtures.concat(obj.fixtures);
+                        outputfiles.push({
+                            "filename": options.output
+                                .replace(/%MANUFACTURER%/g, combinedObject.manufacturers[man].name)
+                                .replace(/%FIXTURE%/g, fix.name),
+                            "data": obj
+                        });
+                    }
+                }
             }
+        }
+        else if (options.output.includes('%MANUFACTURER%')) {
+            for (let man in combinedObject.manufacturers) {
+                if (!combinedObject.manufacturers[man].name)
+                    combinedObject.manufacturers[man].name = man;
 
-            let outStr = JSON.stringify(combinedObject, null, 4);
+                let obj = {
+                    "manufacturers": {},
+                    "fixtures": []
+                };
+                obj.manufacturers[man] = combinedObject.manufacturers[man];
+
+                for (const fix of combinedObject.fixtures) {
+                    if (fix.manufacturer == man) {
+                        obj.fixtures.push(fix);
+                    }
+                }
+
+                outputfiles.push({
+                    "filename": options.output.replace(/%MANUFACTURER%/g, combinedObject.manufacturers[man].name),
+                    "data": obj
+                });
+            }
+        }
+        else if (options.output.includes('%FIXTURE%')) {
+            for (const fix of combinedObject.fixtures) {
+                let obj = {
+                    "manufacturers": {},
+                    "fixtures": [fix]
+                };
+                if (combinedObject.manufacturers[fix.manufacturer])
+                    obj.manufacturers[fix.manufacturer] = combinedObject.manufacturers[fix.manufacturer];
+                
+                outputfiles.push({
+                    "filename": options.output.replace(/%FIXTURE%/g, fix.name),
+                    "data": obj
+                });
+            }
+        }
+        else {
+            outputfiles.push({
+                "filename": options.output,
+                "data": combinedObject
+            });
+        }
+
+        for (const outFile of outputfiles) {
+            let outStr = JSON.stringify(outFile.data, null, 4);
 
             // make arrays fit in one line
             outStr = outStr.replace(/^( +)"(range|dimensions|degreesMinMax)": \[\n((?:.|\n)*?)^\1\]/mg, (match, spaces, key, values) => {
                 return `${spaces}"${key}": [` + JSON.parse('[' + values + ']').join(', ') + ']';
             });
 
-            fs.writeFile(outFile, outStr, (writeError) => {
-                if (writeError)
-                    die(`Error writing to file "${outFile}", exiting.`, writeError);
+            mkdirp(path.dirname(outFile.filename), (mkdirpError) => {
+                if (mkdirpError)
+                    die(`Could not create directory "${path.dirname(outFile.filename)}", exiting.`, mkdirpError);
+                
+                fs.writeFile(outFile.filename, outStr, (writeError) => {
+                    if (writeError)
+                        die(`Error writing to file "${outFile.filename}", exiting.`, writeError);
 
-                console.log(`File "${outFile}" successfully written.`);
+                    console.log(`File "${outFile.filename}" successfully written.`);
 
-                if (outStr.includes('warning'))
-                    console.log('Please check for warnings using a text editor.');
+                    if (outStr.includes('warning'))
+                        console.log('Please check for warnings using a text editor.');
+                });
             });
-        });
+        }
     });
 }
 
