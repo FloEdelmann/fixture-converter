@@ -44,10 +44,11 @@ function test(name, format, inputFile, desiredOutputFile, outputFile) {
 
             if (error) {
                 console.error(error);
-                return;
+                process.exit(1);
             }
             if (stderr) {
-               console.log(stderr);
+                console.error(stderr);
+                process.exit(1);
             }
 
             const outFilePath = path.join(outputDir, format, desiredOutputFile);
