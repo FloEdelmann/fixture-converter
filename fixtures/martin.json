@@ -11,6 +11,7 @@
             "name": "RoboScan 812",
             "shortName": "Scan812",
             "type": "Scanner",
+            "manualURL": "http://www.martin.com/files/files/productdocuments/11_MANUALS/999/UM_RoboScan812_DE_B.pdf",
             "physical": {
                 "dimensions": [190, 165, 436],
                 "weight": 9.4,
@@ -26,9 +27,8 @@
                 }
             },
             "availableChannels": {
-                "strobe": {
-                    "name": "Strobe",
-                    "type": "Shutter",
+                "Strobe": {
+                    "type": "Strobe",
                     "highlightValue": 200,
                     "capabilities": [
                         {
@@ -61,9 +61,8 @@
                         }
                     ]
                 },
-                "color": {
-                    "name": "Color",
-                    "type": "Color",
+                "Color": {
+                    "type": "MultiColor",
                     "capabilities": [
                         {
                             "range": [0, 8],
@@ -215,8 +214,7 @@
                         }
                     ]
                 },
-                "gobo": {
-                    "name": "Gobo",
+                "Gobo": {
                     "type": "Gobo",
                     "capabilities": [
                         {
@@ -342,18 +340,15 @@
                         }
                     ]
                 },
-                "pan": {
-                    "name": "Pan",
+                "Pan": {
                     "type": "Pan",
                     "defaultValue": 127
                 },
-                "tilt": {
-                    "name": "Tilt",
+                "Tilt": {
                     "type": "Tilt",
                     "defaultValue": 127
                 },
-                "movementSpeed": {
-                    "name": "Movement Speed",
+                "Movement Speed": {
                     "type": "Speed",
                     "capabilities": [
                         {
@@ -366,8 +361,7 @@
                         }
                     ]
                 },
-                "colorGoboSpeed": {
-                    "name": "Color+Gobo Speed",
+                "Color+Gobo Speed": {
                     "type": "Speed",
                     "capabilities": [
                         {
@@ -385,12 +379,12 @@
                 {
                     "name": "5-channel tracking Mode",
                     "shortName": "tracking",
-                    "channels": ["strobe", "color", "gobo", "pan", "tilt"]
+                    "channels": ["Strobe", "Color", "Gobo", "Pan", "Tilt"]
                 },
                 {
                     "name": "7-channel vector Mode",
                     "shortName": "vector",
-                    "channels": ["strobe", "color", "gobo", "pan", "tilt", "movementSpeed", "colorGoboSpeed"]
+                    "channels": ["Strobe", "Color", "Gobo", "Pan", "Tilt", "Movement Speed", "Color+Gobo Speed"]
                 }
             ]
         }

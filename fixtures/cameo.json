@@ -11,6 +11,7 @@
             "name": "Thunderwash 100 W",
             "shortName": "CLTW100W",
             "type": "Strobe",
+            "manualURL": "http://adamhall.invaliddomain.de/out/media/downloads/MARKEN/CAMEO/CLTW100W/CLTW100W_Cameo_Bedienungsanleitung_EN_DE_FR_ES_PL_IT.pdf",
             "physical": {
                 "dimensions": [310, 70, 70],
                 "weight": 1.0,
@@ -29,7 +30,7 @@
             "availableChannels": {
                 "strobe1": {
                     "name": "Strobe",
-                    "type": "Shutter",
+                    "type": "Strobe",
                     "highlightValue": 220,
                     "capabilities": [
                         {
@@ -45,7 +46,7 @@
                 },
                 "strobe2": {
                     "name": "Strobe",
-                    "type": "Shutter",
+                    "type": "Strobe",
                     "highlightValue": 220,
                     "capabilities": [
                         {
@@ -70,7 +71,7 @@
                 },
                 "strobe3": {
                     "name": "Strobe",
-                    "type": "Shutter",
+                    "type": "Strobe",
                     "highlightValue": 220,
                     "capabilities": [
                         {
@@ -118,113 +119,12 @@
                         }
                     ]
                 },
-                "dimmer": {
-                    "name": "Dimmer",
+                "Dimmer": {
                     "type": "Intensity",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "color": {
-                    "name": "Color Macro",
-                    "type": "Color",
-                    "capabilities": [
-                        {
-                            "range": [0, 5],
-                            "name": "Color off",
-                            "color": "#000000"
-                        },
-                        {
-                            "range": [6, 13],
-                            "name": "Red",
-                            "color": "#ff0000"
-                        },
-                        {
-                            "range": [14, 21],
-                            "name": "Amber",
-                            "color": "#ffbf00"
-                        },
-                        {
-                            "range": [22, 29],
-                            "name": "Yellow warm",
-                            "color": "#f9ba16"
-                        },
-                        {
-                            "range": [30, 37],
-                            "name": "Yellow",
-                            "color": "#ffff00"
-                        },
-                        {
-                            "range": [38, 45],
-                            "name": "Green",
-                            "color": "#00ff00"
-                        },
-                        {
-                            "range": [46, 53],
-                            "name": "Turquoise",
-                            "color": "#40e0d0"
-                        },
-                        {
-                            "range": [54, 61],
-                            "name": "Cyan",
-                            "color": "#00ffff"
-                        },
-                        {
-                            "range": [62, 69],
-                            "name": "Blue",
-                            "color": "#0000ff"
-                        },
-                        {
-                            "range": [70, 77],
-                            "name": "Lavender",
-                            "color": "#e6e6fa"
-                        },
-                        {
-                            "range": [78, 85],
-                            "name": "Mauve",
-                            "color": "#e0b0ff"
-                        },
-                        {
-                            "range": [86, 93],
-                            "name": "Magenta",
-                            "color": "#ff00ff"
-                        },
-                        {
-                            "range": [94, 101],
-                            "name": "Pink",
-                            "color": "#ffc0cb"
-                        },
-                        {
-                            "range": [102, 109],
-                            "name": "Warm White",
-                            "color": "#fffbf2"
-                        },
-                        {
-                            "range": [110, 117],
-                            "name": "White",
-                            "color": "#ffffff"
-                        },
-                        {
-                            "range": [118, 125],
-                            "name": "Cold White",
-                            "color": "#f2f6fe"
-                        },
-                        {
-                            "range": [126, 128],
-                            "name": "Jump Stop"
-                        },
-                        {
-                            "range": [129, 192],
-                            "name": "Jump slow-fast"
-                        },
-                        {
-                            "range": [193, 255],
-                            "name": "Fade slow-fast",
-                            "color": "Others/rainbow.png"
-                        }
-                    ]
-                },
-                "duration": {
-                    "name": "Flash Duration",
+                "Flash Duration": {
                     "type": "Speed",
                     "capabilities": [
                         {
@@ -233,8 +133,7 @@
                         }
                     ]
                 },
-                "sound": {
-                    "name": "Sound Control",
+                "Sound Control": {
                     "type": "Speed",
                     "capabilities": [
                         {
@@ -247,66 +146,6 @@
                             "center": true
                         }
                     ]
-                },
-                "red": {
-                    "name": "Red",
-                    "type": "Intensity",
-                    "color": "Red",
-                    "highlightValue": 255,
-                    "crossfade": true
-                },
-                "green": {
-                    "name": "Green",
-                    "type": "Intensity",
-                    "color": "Green",
-                    "highlightValue": 255,
-                    "crossfade": true
-                },
-                "blue": {
-                    "name": "Blue",
-                    "type": "Intensity",
-                    "color": "Blue",
-                    "highlightValue": 255,
-                    "crossfade": true
-                },
-                "programs": {
-                    "name": "Programs",
-                    "type": "Effect",
-                    "capabilities": [
-                        {
-                            "range": [0, 10],
-                            "name": "No function"
-                        },
-                        {
-                            "range": [11, 255],
-                            "name": "Strobe Programs (alternating segments)"
-                        }
-                    ]
-                },
-                "speed": {
-                    "name": "Program Speed",
-                    "type": "Speed",
-                    "crossfade": true
-                },
-                "led1": {
-                    "name": "LED1 Dimmer",
-                    "type": "Intensity",
-                    "crossfade": true
-                },
-                "led2": {
-                    "name": "LED2 Dimmer",
-                    "type": "Intensity",
-                    "crossfade": true
-                },
-                "led3": {
-                    "name": "LED3 Dimmer",
-                    "type": "Intensity",
-                    "crossfade": true
-                },
-                "led4": {
-                    "name": "LED4 Dimmer",
-                    "type": "Intensity",
-                    "crossfade": true
                 }
             },
             "modes": [
@@ -318,17 +157,17 @@
                 {
                     "name": "2-channel Mode",
                     "shortName": "2ch",
-                    "channels": ["dimmer", "strobe2"]
+                    "channels": ["Dimmer", "strobe2"]
                 },
                 {
                     "name": "3-channel Mode 1",
                     "shortName": "3ch1",
-                    "channels": ["dimmer", "strobe2", "duration"]
+                    "channels": ["Dimmer", "strobe2", "Flash Duration"]
                 },
                 {
                     "name": "3-channel Mode 2",
                     "shortName": "3ch2",
-                    "channels": ["dimmer", "strobe3", "sound"]
+                    "channels": ["Dimmer", "strobe3", "Sound Control"]
                 }
             ]
         },
@@ -337,6 +176,7 @@
             "name": "Thunderwash 100 RGB",
             "shortName": "CLTW100RGB",
             "type": "Strobe",
+            "manualURL": "http://adamhall.invaliddomain.de/out/media/downloads/MARKEN/CAMEO/CLTW100RGB/CLTW100RGB_Cameo_Bedienungsanleitung_EN_DE_FR_ES_PL_IT.pdf",
             "physical": {
                 "dimensions": [310, 70, 70],
                 "weight": 1.0,
@@ -355,7 +195,7 @@
             "availableChannels": {
                 "strobe1": {
                     "name": "Strobe",
-                    "type": "Shutter",
+                    "type": "Strobe",
                     "highlightValue": 220,
                     "capabilities": [
                         {
@@ -371,7 +211,7 @@
                 },
                 "strobe2": {
                     "name": "Strobe",
-                    "type": "Shutter",
+                    "type": "Strobe",
                     "highlightValue": 220,
                     "capabilities": [
                         {
@@ -396,7 +236,7 @@
                 },
                 "strobe3": {
                     "name": "Strobe",
-                    "type": "Shutter",
+                    "type": "Strobe",
                     "highlightValue": 220,
                     "capabilities": [
                         {
@@ -444,15 +284,13 @@
                         }
                     ]
                 },
-                "dimmer": {
-                    "name": "Dimmer",
+                "Dimmer": {
                     "type": "Intensity",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "color": {
-                    "name": "Color Macro",
-                    "type": "Color",
+                "Color Macros": {
+                    "type": "MultiColor",
                     "capabilities": [
                         {
                             "range": [0, 5],
@@ -549,8 +387,7 @@
                         }
                     ]
                 },
-                "duration": {
-                    "name": "Flash Duration",
+                "Flash Duration": {
                     "type": "Speed",
                     "capabilities": [
                         {
@@ -559,8 +396,7 @@
                         }
                     ]
                 },
-                "sound": {
-                    "name": "Sound Control",
+                "Sound Control": {
                     "type": "Speed",
                     "capabilities": [
                         {
@@ -574,64 +410,22 @@
                         }
                     ]
                 },
-                "red": {
-                    "name": "Red",
-                    "type": "Intensity",
+                "Red": {
+                    "type": "SingleColor",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "green": {
-                    "name": "Green",
-                    "type": "Intensity",
+                "Green": {
+                    "type": "SingleColor",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "blue": {
-                    "name": "Blue",
-                    "type": "Intensity",
+                "Blue": {
+                    "type": "SingleColor",
                     "color": "Blue",
                     "highlightValue": 255,
-                    "crossfade": true
-                },
-                "programs": {
-                    "name": "Programs",
-                    "type": "Effect",
-                    "capabilities": [
-                        {
-                            "range": [0, 10],
-                            "name": "No function"
-                        },
-                        {
-                            "range": [11, 255],
-                            "name": "Strobe Programs (alternating segments)"
-                        }
-                    ]
-                },
-                "speed": {
-                    "name": "Program Speed",
-                    "type": "Speed",
-                    "crossfade": true
-                },
-                "led1": {
-                    "name": "LED1 Dimmer",
-                    "type": "Intensity",
-                    "crossfade": true
-                },
-                "led2": {
-                    "name": "LED2 Dimmer",
-                    "type": "Intensity",
-                    "crossfade": true
-                },
-                "led3": {
-                    "name": "LED3 Dimmer",
-                    "type": "Intensity",
-                    "crossfade": true
-                },
-                "led4": {
-                    "name": "LED4 Dimmer",
-                    "type": "Intensity",
                     "crossfade": true
                 }
             },
@@ -644,37 +438,37 @@
                 {
                     "name": "2-channel Mode 1",
                     "shortName": "2ch1",
-                    "channels": ["dimmer", "color"]
+                    "channels": ["Dimmer", "Color Macros"]
                 },
                 {
                     "name": "2-channel Mode 2",
                     "shortName": "2ch2",
-                    "channels": ["dimmer", "strobe2"]
+                    "channels": ["Dimmer", "strobe2"]
                 },
                 {
                     "name": "3-channel Mode 1",
                     "shortName": "3ch1",
-                    "channels": ["dimmer", "strobe2", "duration"]
+                    "channels": ["Dimmer", "strobe2", "Flash Duration"]
                 },
                 {
                     "name": "3-channel Mode 2",
                     "shortName": "3ch2",
-                    "channels": ["dimmer", "strobe2", "color"]
+                    "channels": ["Dimmer", "strobe2", "Color Macros"]
                 },
                 {
                     "name": "3-channel Mode 3",
                     "shortName": "3ch3",
-                    "channels": ["red", "green", "blue"]
+                    "channels": ["Red", "Green", "Blue"]
                 },
                 {
                     "name": "4-channel Mode",
                     "shortName": "4ch",
-                    "channels": ["dimmer", "strobe3", "color", "sound"]
+                    "channels": ["Dimmer", "strobe3", "Color Macros", "Sound Control"]
                 },
                 {
                     "name": "6-channel Mode",
                     "shortName": "6ch",
-                    "channels": ["dimmer", "strobe3", "red", "green", "blue", "sound"]
+                    "channels": ["Dimmer", "strobe3", "Red", "Green", "Blue", "Sound Control"]
                 }
             ]
         },
@@ -683,6 +477,7 @@
             "name": "Thunderwash 600 W",
             "shortName": "CLTW600W",
             "type": "Strobe",
+            "manualURL": "http://adamhall.invaliddomain.de/out/media/downloads/MARKEN/CAMEO/CLTW600W/CLTW600W_Cameo_Bedienungsanleitung_EN_DE_FR_ES_PL_IT.pdf",
             "physical": {
                 "dimensions": [335, 182, 93],
                 "weight": 3.25,
@@ -701,7 +496,7 @@
             "availableChannels": {
                 "strobe1": {
                     "name": "Strobe",
-                    "type": "Shutter",
+                    "type": "Strobe",
                     "highlightValue": 220,
                     "capabilities": [
                         {
@@ -717,7 +512,7 @@
                 },
                 "strobe2": {
                     "name": "Strobe",
-                    "type": "Shutter",
+                    "type": "Strobe",
                     "highlightValue": 220,
                     "capabilities": [
                         {
@@ -742,7 +537,7 @@
                 },
                 "strobe3": {
                     "name": "Strobe",
-                    "type": "Shutter",
+                    "type": "Strobe",
                     "highlightValue": 220,
                     "capabilities": [
                         {
@@ -790,113 +585,12 @@
                         }
                     ]
                 },
-                "dimmer": {
-                    "name": "Dimmer",
+                "Dimmer": {
                     "type": "Intensity",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "color": {
-                    "name": "Color Macro",
-                    "type": "Color",
-                    "capabilities": [
-                        {
-                            "range": [0, 5],
-                            "name": "Color off",
-                            "color": "#000000"
-                        },
-                        {
-                            "range": [6, 13],
-                            "name": "Red",
-                            "color": "#ff0000"
-                        },
-                        {
-                            "range": [14, 21],
-                            "name": "Amber",
-                            "color": "#ffbf00"
-                        },
-                        {
-                            "range": [22, 29],
-                            "name": "Yellow warm",
-                            "color": "#f9ba16"
-                        },
-                        {
-                            "range": [30, 37],
-                            "name": "Yellow",
-                            "color": "#ffff00"
-                        },
-                        {
-                            "range": [38, 45],
-                            "name": "Green",
-                            "color": "#00ff00"
-                        },
-                        {
-                            "range": [46, 53],
-                            "name": "Turquoise",
-                            "color": "#40e0d0"
-                        },
-                        {
-                            "range": [54, 61],
-                            "name": "Cyan",
-                            "color": "#00ffff"
-                        },
-                        {
-                            "range": [62, 69],
-                            "name": "Blue",
-                            "color": "#0000ff"
-                        },
-                        {
-                            "range": [70, 77],
-                            "name": "Lavender",
-                            "color": "#e6e6fa"
-                        },
-                        {
-                            "range": [78, 85],
-                            "name": "Mauve",
-                            "color": "#e0b0ff"
-                        },
-                        {
-                            "range": [86, 93],
-                            "name": "Magenta",
-                            "color": "#ff00ff"
-                        },
-                        {
-                            "range": [94, 101],
-                            "name": "Pink",
-                            "color": "#ffc0cb"
-                        },
-                        {
-                            "range": [102, 109],
-                            "name": "Warm White",
-                            "color": "#fffbf2"
-                        },
-                        {
-                            "range": [110, 117],
-                            "name": "White",
-                            "color": "#ffffff"
-                        },
-                        {
-                            "range": [118, 125],
-                            "name": "Cold White",
-                            "color": "#f2f6fe"
-                        },
-                        {
-                            "range": [126, 128],
-                            "name": "Jump Stop"
-                        },
-                        {
-                            "range": [129, 192],
-                            "name": "Jump slow-fast"
-                        },
-                        {
-                            "range": [193, 255],
-                            "name": "Fade slow-fast",
-                            "color": "Others/rainbow.png"
-                        }
-                    ]
-                },
-                "duration": {
-                    "name": "Flash Duration",
+                "Flash Duration": {
                     "type": "Speed",
                     "capabilities": [
                         {
@@ -905,8 +599,7 @@
                         }
                     ]
                 },
-                "sound": {
-                    "name": "Sound Control",
+                "Sound Control": {
                     "type": "Speed",
                     "capabilities": [
                         {
@@ -920,29 +613,7 @@
                         }
                     ]
                 },
-                "red": {
-                    "name": "Red",
-                    "type": "Intensity",
-                    "color": "Red",
-                    "highlightValue": 255,
-                    "crossfade": true
-                },
-                "green": {
-                    "name": "Green",
-                    "type": "Intensity",
-                    "color": "Green",
-                    "highlightValue": 255,
-                    "crossfade": true
-                },
-                "blue": {
-                    "name": "Blue",
-                    "type": "Intensity",
-                    "color": "Blue",
-                    "highlightValue": 255,
-                    "crossfade": true
-                },
-                "programs": {
-                    "name": "Programs",
+                "Programs": {
                     "type": "Effect",
                     "capabilities": [
                         {
@@ -955,37 +626,32 @@
                         }
                     ]
                 },
-                "speed": {
-                    "name": "Program Speed",
+                "Program Speed": {
                     "type": "Speed",
                     "crossfade": true
                 },
-                "led1": {
-                    "name": "LED1 Dimmer",
+                "LED1 Dimmer": {
                     "type": "Intensity",
                     "crossfade": true
                 },
-                "led2": {
-                    "name": "LED2 Dimmer",
+                "LED2 Dimmer": {
                     "type": "Intensity",
                     "crossfade": true
                 },
-                "led3": {
-                    "name": "LED3 Dimmer",
+                "LED3 Dimmer": {
                     "type": "Intensity",
                     "crossfade": true
                 },
-                "led4": {
-                    "name": "LED4 Dimmer",
+                "LED4 Dimmer": {
                     "type": "Intensity",
                     "crossfade": true
                 }
             },
             "heads": {
-                "LED1": ["led1"],
-                "LED2": ["led2"],
-                "LED3": ["led3"],
-                "LED4": ["led4"]
+                "LED1": ["LED1 Dimmer"],
+                "LED2": ["LED2 Dimmer"],
+                "LED3": ["LED3 Dimmer"],
+                "LED4": ["LED4 Dimmer"]
             },
             "modes": [
                 {
@@ -996,22 +662,22 @@
                 {
                     "name": "2-channel Mode",
                     "shortName": "2ch",
-                    "channels": ["dimmer", "strobe2"]
+                    "channels": ["Dimmer", "strobe2"]
                 },
                 {
                     "name": "3-channel Mode",
                     "shortName": "3ch",
-                    "channels": ["dimmer", "strobe2", "duration"]
+                    "channels": ["Dimmer", "strobe2", "Flash Duration"]
                 },
                 {
                     "name": "5-channel Mode",
                     "shortName": "5ch",
-                    "channels": ["dimmer", "strobe3", "programs", "speed", "sound"]
+                    "channels": ["Dimmer", "strobe3", "Programs", "Program Speed", "Sound Control"]
                 },
                 {
                     "name": "7-channel Mode",
                     "shortName": "7ch",
-                    "channels": ["dimmer", "strobe2", "duration", "led1", "led2", "led3", "led4"]
+                    "channels": ["Dimmer", "strobe2", "Flash Duration", "LED1 Dimmer", "LED2 Dimmer", "LED3 Dimmer", "LED4 Dimmer"]
                 }
             ]
         },
@@ -1020,6 +686,7 @@
             "name": "Thunderwash 600 RGB",
             "shortName": "CLTW600RGB",
             "type": "Strobe",
+            "manualURL": "http://adamhall.invaliddomain.de/out/media/downloads/MARKEN/CAMEO/CLTW600RGB/CLTW600RGB_Cameo_Bedienungsanleitung_EN_DE_FR_ES_PL_IT.pdf",
             "physical": {
                 "dimensions": [335, 182, 93],
                 "weight": 3.25,
@@ -1038,7 +705,7 @@
             "availableChannels": {
                 "strobe1": {
                     "name": "Strobe",
-                    "type": "Shutter",
+                    "type": "Strobe",
                     "highlightValue": 220,
                     "capabilities": [
                         {
@@ -1054,7 +721,7 @@
                 },
                 "strobe2": {
                     "name": "Strobe",
-                    "type": "Shutter",
+                    "type": "Strobe",
                     "highlightValue": 220,
                     "capabilities": [
                         {
@@ -1079,7 +746,7 @@
                 },
                 "strobe3": {
                     "name": "Strobe",
-                    "type": "Shutter",
+                    "type": "Strobe",
                     "highlightValue": 220,
                     "capabilities": [
                         {
@@ -1127,15 +794,13 @@
                         }
                     ]
                 },
-                "dimmer": {
-                    "name": "Dimmer",
+                "Dimmer": {
                     "type": "Intensity",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "color": {
-                    "name": "Color Macro",
-                    "type": "Color",
+                "Color Macros": {
+                    "type": "MultiColor",
                     "capabilities": [
                         {
                             "range": [0, 5],
@@ -1232,8 +897,7 @@
                         }
                     ]
                 },
-                "duration": {
-                    "name": "Flash Duration",
+                "Flash Duration": {
                     "type": "Speed",
                     "capabilities": [
                         {
@@ -1242,8 +906,7 @@
                         }
                     ]
                 },
-                "sound": {
-                    "name": "Sound Control",
+                "Sound Control": {
                     "type": "Speed",
                     "capabilities": [
                         {
@@ -1257,64 +920,22 @@
                         }
                     ]
                 },
-                "red": {
-                    "name": "Red",
-                    "type": "Intensity",
+                "Red": {
+                    "type": "SingleColor",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "green": {
-                    "name": "Green",
-                    "type": "Intensity",
+                "Green": {
+                    "type": "SingleColor",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "blue": {
-                    "name": "Blue",
-                    "type": "Intensity",
+                "Blue": {
+                    "type": "SingleColor",
                     "color": "Blue",
                     "highlightValue": 255,
-                    "crossfade": true
-                },
-                "programs": {
-                    "name": "Programs",
-                    "type": "Effect",
-                    "capabilities": [
-                        {
-                            "range": [0, 10],
-                            "name": "No function"
-                        },
-                        {
-                            "range": [11, 255],
-                            "name": "Strobe Programs (alternating segments)"
-                        }
-                    ]
-                },
-                "speed": {
-                    "name": "Program Speed",
-                    "type": "Speed",
-                    "crossfade": true
-                },
-                "led1": {
-                    "name": "LED1 Dimmer",
-                    "type": "Intensity",
-                    "crossfade": true
-                },
-                "led2": {
-                    "name": "LED2 Dimmer",
-                    "type": "Intensity",
-                    "crossfade": true
-                },
-                "led3": {
-                    "name": "LED3 Dimmer",
-                    "type": "Intensity",
-                    "crossfade": true
-                },
-                "led4": {
-                    "name": "LED4 Dimmer",
-                    "type": "Intensity",
                     "crossfade": true
                 }
             },
@@ -1327,37 +948,37 @@
                 {
                     "name": "2-channel Mode 1",
                     "shortName": "2ch1",
-                    "channels": ["dimmer", "color"]
+                    "channels": ["Dimmer", "Color Macros"]
                 },
                 {
                     "name": "2-channel Mode 2",
                     "shortName": "2ch2",
-                    "channels": ["dimmer", "strobe2"]
+                    "channels": ["Dimmer", "strobe2"]
                 },
                 {
                     "name": "3-channel Mode 1",
                     "shortName": "3ch1",
-                    "channels": ["dimmer", "strobe2", "duration"]
+                    "channels": ["Dimmer", "strobe2", "Flash Duration"]
                 },
                 {
                     "name": "3-channel Mode 2",
                     "shortName": "3ch2",
-                    "channels": ["dimmer", "strobe2", "color"]
+                    "channels": ["Dimmer", "strobe2", "Color Macros"]
                 },
                 {
                     "name": "3-channel Mode 3",
                     "shortName": "3ch3",
-                    "channels": ["red", "green", "blue"]
+                    "channels": ["Red", "Green", "Blue"]
                 },
                 {
                     "name": "4-channel Mode",
                     "shortName": "4ch",
-                    "channels": ["dimmer", "strobe3", "color", "sound"]
+                    "channels": ["Dimmer", "strobe3", "Color Macros", "Sound Control"]
                 },
                 {
                     "name": "6-channel Mode",
                     "shortName": "6ch",
-                    "channels": ["dimmer", "strobe3", "red", "green", "blue", "sound"]
+                    "channels": ["Dimmer", "strobe3", "Red", "Green", "Blue", "Sound Control"]
                 }
             ]
         }

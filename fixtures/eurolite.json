@@ -12,6 +12,7 @@
             "shortName": "KLS801",
             "type": "Color Changer",
             "comment": "Compact Light Set. When Program is active, Red 1 (ch4) controls running speed, Green 1 (ch5) controls fade time.",
+            "manualURL": "http://media.steinigke.de/documents_t/42109851-DATASHEET-1.00-en_00063098.pdf",
             "physical": {
                 "dimensions": [1200, 315, 65],
                 "weight": 9.0,
@@ -25,8 +26,7 @@
                 }
             },
             "availableChannels": {
-                "program": {
-                    "name": "Program",
+                "Program": {
                     "type": "Effect",
                     "capabilities": [
                         {
@@ -87,15 +87,13 @@
                         }
                     ]
                 },
-                "master": {
-                    "name": "Master",
+                "Master": {
                     "type": "Intensity",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "strobe": {
-                    "name": "Strobe",
-                    "type": "Shutter",
+                "Strobe": {
+                    "type": "Strobe",
                     "highlightValue": 220,
                     "capabilities": [
                         {
@@ -109,145 +107,155 @@
                         }
                     ]
                 },
-                "red1": {
-                    "name": "Red 1",
-                    "type": "Intensity",
+                "Red 1": {
+                    "type": "SingleColor",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "speed": {
-                    "name": "Running Speed",
+                "Running Speed": {
                     "type": "Speed",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "red1combined": {
-                    "name": "Red 1 / Running Speed",
+                "Red 1 / Running Speed": {
                     "type": "Effect",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "green1": {
-                    "name": "Green 1",
-                    "type": "Intensity",
+                "Green 1": {
+                    "type": "SingleColor",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "fadetime": {
-                    "name": "Fade time",
+                "Fade time": {
                     "type": "Speed",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "green1combined": {
-                    "name": "Green 1 / Fade time",
+                "Green 1 / Fade time": {
                     "type": "Effect",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "blue1": {
-                    "name": "Blue 1",
-                    "type": "Intensity",
+                "Blue 1": {
+                    "type": "SingleColor",
                     "color": "Blue",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "red2": {
-                    "name": "Red 2",
-                    "type": "Intensity",
+                "Red 2": {
+                    "type": "SingleColor",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "green2": {
-                    "name": "Green 2",
-                    "type": "Intensity",
+                "Green 2": {
+                    "type": "SingleColor",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "blue2": {
-                    "name": "Blue 2",
-                    "type": "Intensity",
+                "Blue 2": {
+                    "type": "SingleColor",
                     "color": "Blue",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "red3": {
-                    "name": "Red 3",
-                    "type": "Intensity",
+                "Red 3": {
+                    "type": "SingleColor",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "green3": {
-                    "name": "Green 3",
-                    "type": "Intensity",
+                "Green 3": {
+                    "type": "SingleColor",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "blue3": {
-                    "name": "Blue 3",
-                    "type": "Intensity",
+                "Blue 3": {
+                    "type": "SingleColor",
                     "color": "Blue",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "red4": {
-                    "name": "Red 4",
-                    "type": "Intensity",
+                "Red 4": {
+                    "type": "SingleColor",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "green4": {
-                    "name": "Green 4",
-                    "type": "Intensity",
+                "Green 4": {
+                    "type": "SingleColor",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "blue4": {
-                    "name": "Blue 4",
-                    "type": "Intensity",
+                "Blue 4": {
+                    "type": "SingleColor",
                     "color": "Blue",
                     "highlightValue": 255,
                     "crossfade": true
                 }
             },
             "heads": {
-                "LED1": ["red1", "red1combined", "green1", "green1combined", "blue1"],
-                "LED2": ["red2", "green2", "blue2"],
-                "LED3": ["red3", "green3", "blue3"],
-                "LED4": ["red4", "green4", "blue4"]
+                "LED1": ["Red 1", "Red 1 / Running Speed", "Green 1", "Green 1 / Fade time", "Blue 1"],
+                "LED2": ["Red 2", "Green 2", "Blue 2"],
+                "LED3": ["Red 3", "Green 3", "Blue 3"],
+                "LED4": ["Red 4", "Green 4", "Blue 4"]
             },
             "modes": [
                 {
                     "name": "Control Only 3-channel Mode",
                     "shortName": "control",
-                    "channels": ["program", "master", "strobe"]
+                    "channels": [
+                        "Program",
+                        "Master",
+                        "Strobe"
+                    ]
                 },
                 {
                     "name": "Program 5-channel Mode",
                     "shortName": "program",
-                    "channels": ["program", "master", "strobe", "speed", "fadetime"]
+                    "channels": [
+                        "Program",
+                        "Master",
+                        "Strobe",
+                        "Running Speed",
+                        "Fade time"
+                    ]
                 },
                 {
                     "name": "Combined 15-channel Mode",
                     "shortName": "combined",
-                    "channels": ["program", "master", "strobe", "red1combined", "green1combined", "blue1", "red2", "green2", "blue2", "red3", "green3", "blue3", "red4", "green4", "blue4"]
+                    "channels": [
+                        "Program",
+                        "Master",
+                        "Strobe",
+                        "Red 1 / Running Speed", "Green 1 / Fade time", "Blue 1",
+                        "Red 2", "Green 2", "Blue 2",
+                        "Red 3", "Green 3", "Blue 3",
+                        "Red 4", "Green 4", "Blue 4"
+                    ]
                 },
                 {
                     "name": "Color 15-channel Mode",
                     "shortName": "color",
-                    "channels": ["program", "master", "strobe", "red1", "green1", "blue1", "red2", "green2", "blue2", "red3", "green3", "blue3", "red4", "green4", "blue4"]
+                    "channels": [
+                        "Program",
+                        "Master",
+                        "Strobe",
+                        "Red 1", "Green 1", "Blue 1",
+                        "Red 2", "Green 2", "Blue 2",
+                        "Red 3", "Green 3", "Blue 3",
+                        "Red 4", "Green 4", "Blue 4"
+                    ]
                 }
             ]
         },
@@ -256,6 +264,7 @@
             "name": "LED PAR-56 TCL",
             "shortName": "PAR56",
             "type": "Color Changer",
+            "manualURL": "http://media.steinigke.de/documents_t/51913611-MANUAL-1.00-de-en_00066247.pdf",
             "physical": {
                 "dimensions": [165, 205, 215],
                 "weight": 1.5,
@@ -272,36 +281,31 @@
                 }
             },
             "availableChannels": {
-                "red": {
-                    "name": "Red",
-                    "type": "Intensity",
+                "Red": {
+                    "type": "SingleColor",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "green": {
-                    "name": "Green",
-                    "type": "Intensity",
+                "Green": {
+                    "type": "SingleColor",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "blue": {
-                    "name": "Blue",
-                    "type": "Intensity",
+                "Blue": {
+                    "type": "SingleColor",
                     "color": "Blue",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "dimmer": {
-                    "name": "Dimmer",
+                "Dimmer": {
                     "type": "Intensity",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "strobe": {
-                    "name": "Strobe",
-                    "type": "Speed",
+                "Strobe": {
+                    "type": "Strobe",
                     "highlightValue": 220,
                     "capabilities": [
                         {
@@ -329,12 +333,12 @@
                 {
                     "name": "5-channel Mode",
                     "shortName": "5ch",
-                    "channels": ["red", "green", "blue", "dimmer", "strobe"]
+                    "channels": ["Red", "Green", "Blue", "Dimmer", "Strobe"]
                 },
                 {
                     "name": "3-channel Mode",
                     "shortName": "3ch",
-                    "channels": ["red", "green", "blue"]
+                    "channels": ["Red", "Green", "Blue"]
                 }
             ]
         },
@@ -343,6 +347,7 @@
             "name": "LED TMH-18",
             "shortName": "TMH18",
             "type": "Moving Head",
+            "manualURL": "http://media.steinigke.de/documents_t/51786060-MANUAL-1.00-de-en_00095278.pdf",
             "physical": {
                 "dimensions": [145, 260, 360],
                 "weight": 5.8,
@@ -358,8 +363,7 @@
                 }
             },
             "availableChannels": {
-                "internalPrograms": {
-                    "name": "Internal Programs",
+                "Internal Programs": {
                     "type": "Effect",
                     "capabilities": [
                         {
@@ -388,39 +392,33 @@
                         }
                     ]
                 },
-                "pan": {
-                    "name": "Pan",
+                "Pan": {
                     "type": "Pan",
                     "defaultValue": 128,
                     "crossfade": true
                 },
-                "pan16bit": {
-                    "name": "Pan (fine)",
+                "Pan (fine)": {
                     "type": "Pan",
                     "defaultValue": 128,
                     "crossfade": true
                 },
-                "tilt": {
-                    "name": "Tilt",
+                "Tilt": {
                     "type": "Tilt",
                     "defaultValue": 128,
                     "crossfade": true
                 },
-                "tilt16bit": {
-                    "name": "Tilt (fine)",
+                "Tilt (fine)": {
                     "type": "Tilt",
                     "defaultValue": 128,
                     "crossfade": true
                 },
-                "panTiltSpeed": {
-                    "name": "PanTilt Speed",
+                "PanTilt Speed": {
                     "type": "Speed",
                     "defaultValue": 128,
                     "invert": true,
                     "crossfade": true
                 },
-                "macros": {
-                    "name": "Macros",
+                "Macros": {
                     "type": "Effect",
                     "capabilities": [
                         {
@@ -477,14 +475,12 @@
                         }
                     ]
                 },
-                "macroSpeed": {
-                    "name": "Macro Speed",
+                "Macro Speed": {
                     "type": "Speed",
                     "defaultValue": 128,
                     "crossfade": true
                 },
-                "function": {
-                    "name": "Function",
+                "Function": {
                     "type": "Maintenance",
                     "capabilities": [
                         {
@@ -511,14 +507,13 @@
                         }
                     ]
                 },
-                "dimmer": {
-                    "name": "Dimmer",
+                "Dimmer": {
                     "type": "Intensity",
                     "crossfade": true
                 },
-                "strobe": {
+                "Strobe": {
                     "name": "Strobe",
-                    "type": "Shutter",
+                    "type": "Strobe",
                     "highlightValue": 200,
                     "capabilities": [
                         {
@@ -531,289 +526,248 @@
                         }
                     ]
                 },
-                "red": {
-                    "name": "Red",
-                    "type": "Intensity",
+                "Red": {
+                    "type": "SingleColor",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "green": {
-                    "name": "Green",
-                    "type": "Intensity",
+                "Green": {
+                    "type": "SingleColor",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "blue": {
-                    "name": "Blue",
-                    "type": "Intensity",
+                "Blue": {
+                    "type": "SingleColor",
                     "color": "Blue",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "white": {
-                    "name": "White",
-                    "type": "Intensity",
+                "White": {
+                    "type": "SingleColor",
                     "color": "White",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "red1": {
-                    "name": "Red 1",
-                    "type": "Intensity",
+                "Red 1": {
+                    "type": "SingleColor",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "green1": {
-                    "name": "Green 1",
-                    "type": "Intensity",
+                "Green 1": {
+                    "type": "SingleColor",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "blue1": {
-                    "name": "Blue 1",
-                    "type": "Intensity",
+                "Blue 1": {
+                    "type": "SingleColor",
                     "color": "Blue",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "white1": {
-                    "name": "White 1",
-                    "type": "Intensity",
+                "White 1": {
+                    "type": "SingleColor",
                     "color": "White",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "red2": {
-                    "name": "Red 2",
-                    "type": "Intensity",
+                "Red 2": {
+                    "type": "SingleColor",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "green2": {
-                    "name": "Green 2",
-                    "type": "Intensity",
+                "Green 2": {
+                    "type": "SingleColor",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "blue2": {
-                    "name": "Blue 2",
-                    "type": "Intensity",
+                "Blue 2": {
+                    "type": "SingleColor",
                     "color": "Blue",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "white2": {
-                    "name": "White 2",
-                    "type": "Intensity",
+                "White 2": {
+                    "type": "SingleColor",
                     "color": "White",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "red3": {
-                    "name": "Red 3",
-                    "type": "Intensity",
+                "Red 3": {
+                    "type": "SingleColor",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "green3": {
-                    "name": "Green 3",
-                    "type": "Intensity",
+                "Green 3": {
+                    "type": "SingleColor",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "blue3": {
-                    "name": "Blue 3",
-                    "type": "Intensity",
+                "Blue 3": {
+                    "type": "SingleColor",
                     "color": "Blue",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "white3": {
-                    "name": "White 3",
-                    "type": "Intensity",
+                "White 3": {
+                    "type": "SingleColor",
                     "color": "White",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "red4": {
-                    "name": "Red 4",
-                    "type": "Intensity",
+                "Red 4": {
+                    "type": "SingleColor",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "green4": {
-                    "name": "Green 4",
-                    "type": "Intensity",
+                "Green 4": {
+                    "type": "SingleColor",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "blue4": {
-                    "name": "Blue 4",
-                    "type": "Intensity",
+                "Blue 4": {
+                    "type": "SingleColor",
                     "color": "Blue",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "white4": {
-                    "name": "White 4",
-                    "type": "Intensity",
+                "White 4": {
+                    "type": "SingleColor",
                     "color": "White",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "red5": {
-                    "name": "Red 5",
-                    "type": "Intensity",
+                "Red 5": {
+                    "type": "SingleColor",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "green5": {
-                    "name": "Green 5",
-                    "type": "Intensity",
+                "Green 5": {
+                    "type": "SingleColor",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "blue5": {
-                    "name": "Blue 5",
-                    "type": "Intensity",
+                "Blue 5": {
+                    "type": "SingleColor",
                     "color": "Blue",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "white5": {
-                    "name": "White 5",
-                    "type": "Intensity",
+                "White 5": {
+                    "type": "SingleColor",
                     "color": "White",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "red6": {
-                    "name": "Red 6",
-                    "type": "Intensity",
+                "Red 6": {
+                    "type": "SingleColor",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "green6": {
-                    "name": "Green 6",
-                    "type": "Intensity",
+                "Green 6": {
+                    "type": "SingleColor",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "blue6": {
-                    "name": "Blue 6",
-                    "type": "Intensity",
+                "Blue 6": {
+                    "type": "SingleColor",
                     "color": "Blue",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "white6": {
-                    "name": "White 6",
-                    "type": "Intensity",
+                "White 6": {
+                    "type": "SingleColor",
                     "color": "White",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "red7": {
-                    "name": "Red 7",
-                    "type": "Intensity",
+                "Red 7": {
+                    "type": "SingleColor",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "green7": {
-                    "name": "Green 7",
-                    "type": "Intensity",
+                "Green 7": {
+                    "type": "SingleColor",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "blue7": {
-                    "name": "Blue 7",
-                    "type": "Intensity",
+                "Blue 7": {
+                    "type": "SingleColor",
                     "color": "Blue",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "white7": {
-                    "name": "White 7",
-                    "type": "Intensity",
+                "White 7": {
+                    "type": "SingleColor",
                     "color": "White",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "red8": {
-                    "name": "Red 8",
-                    "type": "Intensity",
+                "Red 8": {
+                    "type": "SingleColor",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "green8": {
-                    "name": "Green 8",
-                    "type": "Intensity",
+                "Green 8": {
+                    "type": "SingleColor",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "blue8": {
-                    "name": "Blue 8",
-                    "type": "Intensity",
+                "Blue 8": {
+                    "type": "SingleColor",
                     "color": "Blue",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "white8": {
-                    "name": "White 8",
-                    "type": "Intensity",
+                "White 8": {
+                    "type": "SingleColor",
                     "color": "White",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "red9": {
-                    "name": "Red 9",
-                    "type": "Intensity",
+                "Red 9": {
+                    "type": "SingleColor",
                     "color": "Red",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "green9": {
-                    "name": "Green 9",
-                    "type": "Intensity",
+                "Green 9": {
+                    "type": "SingleColor",
                     "color": "Green",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "blue9": {
-                    "name": "Blue 9",
-                    "type": "Intensity",
+                "Blue 9": {
+                    "type": "SingleColor",
                     "color": "Blue",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "white9": {
-                    "name": "White 9",
-                    "type": "Intensity",
+                "White 9": {
+                    "type": "SingleColor",
                     "color": "White",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "colorMacros": {
-                    "name": "Color macros",
-                    "type": "Color",
+                "Color Macros": {
+                    "type": "MultiColor",
                     "capabilities": [
                         {
                             "range": [0, 7],
@@ -1022,81 +976,80 @@
                         }
                     ]
                 },
-                "colorSpeed": {
-                    "name": "Color Speed",
+                "Color Speed": {
                     "type": "Speed",
                     "defaultValue": 128,
                     "crossfade": true
                 }
             },
             "multiByteChannels": [
-                ["pan", "pan16bit"],
-                ["tilt", "tilt16bit"]
+                ["Pan", "Pan (fine)"],
+                ["Tilt", "Tilt (fine)"]
             ],
             "heads": {
-                "top left": ["red1", "green1", "blue1", "white1"],
-                "top center": ["red2", "green2", "blue2", "white2"],
-                "top right": ["red3", "green3", "blue3", "white3"],
-                "center left": ["red4", "green4", "blue4", "white4"],
-                "center center": ["red5", "green5", "blue5", "white5"],
-                "center right": ["red6", "green6", "blue6", "white6"],
-                "bottom left": ["red7", "green7", "blue7", "white7"],
-                "bottom center": ["red8", "green8", "blue8", "white8"],
-                "bottom right": ["red9", "green9", "blue9", "white9"]
+                "top left": ["Red 1", "Green 1", "Blue 1", "White 1"],
+                "top center": ["Red 2", "Green 2", "Blue 2", "White 2"],
+                "top right": ["Red 3", "Green 3", "Blue 3", "White 3"],
+                "center left": ["Red 4", "Green 4", "Blue 4", "White 4"],
+                "center center": ["Red 5", "Green 5", "Blue 5", "White 5"],
+                "center right": ["Red 6", "Green 6", "Blue 6", "White 6"],
+                "bottom left": ["Red 7", "Green 7", "Blue 7", "White 7"],
+                "bottom center": ["Red 8", "Green 8", "Blue 8", "White 8"],
+                "bottom right": ["Red 9", "Green 9", "Blue 9", "White 9"]
             },
             "modes": [
                 {
                     "name": "1-channel Mode",
                     "shortName": "1ch",
-                    "channels": ["internalPrograms"]
+                    "channels": ["Internal Programs"]
                 },
                 {
                     "name": "16-channel Mode",
                     "shortName": "16ch",
                     "channels": [
-                        "pan",
-                        "pan16bit",
-                        "tilt",
-                        "tilt16bit",
-                        "panTiltSpeed",
-                        "macros",
-                        "macroSpeed",
-                        "function",
-                        "dimmer",
-                        "strobe",
-                        "red",
-                        "green",
-                        "blue",
-                        "white",
-                        "colorMacros",
-                        "colorSpeed"
+                        "Pan",
+                        "Pan (fine)",
+                        "Tilt",
+                        "Tilt (fine)",
+                        "PanTilt Speed",
+                        "Macros",
+                        "Macro Speed",
+                        "Function",
+                        "Dimmer",
+                        "Strobe",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Color Macros",
+                        "Color Speed"
                     ]
                 },
                 {
                     "name": "48-channel Mode",
                     "shortName": "48ch",
                     "channels": [
-                        "pan",
-                        "pan16bit",
-                        "tilt",
-                        "tilt16bit",
-                        "panTiltSpeed",
-                        "macros",
-                        "macroSpeed",
-                        "function",
-                        "dimmer",
-                        "strobe",
-                        "red1", "green1", "blue1", "white1",
-                        "red2", "green2", "blue2", "white2",
-                        "red3", "green3", "blue3", "white3",
-                        "red4", "green4", "blue4", "white4",
-                        "red5", "green5", "blue5", "white5",
-                        "red6", "green6", "blue6", "white6",
-                        "red7", "green7", "blue7", "white7",
-                        "red8", "green8", "blue8", "white8",
-                        "red9", "green9", "blue9", "white9",
-                        "colorMacros",
-                        "colorSpeed"
+                        "Pan",
+                        "Pan (fine)",
+                        "Tilt",
+                        "Tilt (fine)",
+                        "PanTilt Speed",
+                        "Macros",
+                        "Macro Speed",
+                        "Function",
+                        "Dimmer",
+                        "Strobe",
+                        "Red 1", "Green 1", "Blue 1", "White 1",
+                        "Red 2", "Green 2", "Blue 2", "White 2",
+                        "Red 3", "Green 3", "Blue 3", "White 3",
+                        "Red 4", "Green 4", "Blue 4", "White 4",
+                        "Red 5", "Green 5", "Blue 5", "White 5",
+                        "Red 6", "Green 6", "Blue 6", "White 6",
+                        "Red 7", "Green 7", "Blue 7", "White 7",
+                        "Red 8", "Green 8", "Blue 8", "White 8",
+                        "Red 9", "Green 9", "Blue 9", "White 9",
+                        "Color Macros",
+                        "Color Speed"
                     ]
                 }
             ]

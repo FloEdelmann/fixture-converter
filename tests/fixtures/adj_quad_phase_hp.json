@@ -11,6 +11,7 @@
             "name": "Quad Phase HP",
             "shortName": "QPHP",
             "type": "Flower",
+            "manualURL": "http://intranet.americandj.com/ItemRelatedFiles/6976/quad_phase_hp.pdf",
             "physical": {
                 "dimensions": [312, 198, 279],
                 "weight": 4.0,
@@ -27,9 +28,8 @@
                 }
             },
             "availableChannels": {
-                "color": {
-                    "name": "Color",
-                    "type": "Color",
+                "Color": {
+                    "type": "MultiColor",
                     "capabilities": [
                         {
                             "range": [0, 16],
@@ -108,8 +108,7 @@
                         }
                     ]
                 },
-                "rotation": {
-                    "name": "Rotation",
+                "Rotation": {
                     "type": "Speed",
                     "highlightValue": 220,
                     "crossfade": true,
@@ -142,9 +141,8 @@
                         }
                     ]
                 },
-                "strobe": {
-                    "name": "Strobe",
-                    "type": "Shutter",
+                "Strobe": {
+                    "type": "Strobe",
                     "highlightValue": 200,
                     "capabilities": [
                         {
@@ -157,8 +155,7 @@
                         }
                     ]
                 },
-                "shutter": {
-                    "name": "Shutter",
+                "Shutter": {
                     "type": "Shutter",
                     "highlightValue": 255,
                     "capabilities": [
@@ -177,7 +174,7 @@
                 {
                     "name": "4-channel Mode",
                     "shortName": "4ch",
-                    "channels": ["color", "rotation", "strobe", "shutter"]
+                    "channels": ["Color", "Rotation", "Strobe", "Shutter"]
                 }
             ]
         }

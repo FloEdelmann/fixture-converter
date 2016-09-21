@@ -75,11 +75,13 @@ module.exports.export = function formatEcue(manufacturers, fixtures, localOutDir
 
                     let chType = '';
                     switch (chData.type) {
-                        case 'Color':
+                        case 'MultiColor':
+                        case 'SingleColor':
                             chType = 'Color';
                             break;
                         case 'Beam':
                         case 'Shutter':
+                        case 'Strobe':
                         case 'Gobo':
                         case 'Prism':
                         case 'Effect':
@@ -95,10 +97,6 @@ module.exports.export = function formatEcue(manufacturers, fixtures, localOutDir
                         case 'Intensity':
                         default:
                             chType = 'Intensity';
-                    }
-
-                    if (channel.type == 'Intensity' && channel.color) {
-                        chType = 'Color';
                     }
 
                     let dmxByteLow = dmxCount;
@@ -273,11 +271,12 @@ module.exports.import = function importEcue(str, filename) {
                             if (name == shortName)
                                 delete ch.name;
 
-                            if (fixture.ChannelColor && fixture.ChannelColor.indexOf(channel) != -1) {
+                            if (fixture.ChannelColor && fixture.ChannelColor.includes(channel)) {
                                 if (channel.Range && channel.Range.length > 1) {
-                                    ch.type = 'Color';
+                                    ch.type = 'MultiColor';
                                 }
                                 else {
+                                    ch.type = 'SingleColor';
                                     ch.color = 'Generic';
                                     ['Red', 'Green', 'Blue', 'Cyan', 'Magenta', 'Yellow', 'Amber', 'White', 'UV', 'Lime'].some((color) => {
                                         if (channel.$.Name.toLowerCase().includes(color.toLowerCase())) {
@@ -296,15 +295,17 @@ module.exports.import = function importEcue(str, filename) {
                                 ch.type = 'Effect';
                             else if (channel.$.Name.toLowerCase().includes('prism'))
                                 ch.type = 'Prism';
-                            else if (channel.$.Name.toLowerCase().includes('shutter') || channel.$.Name.toLowerCase().includes('strob'))
+                            else if (channel.$.Name.toLowerCase().includes('shutter'))
                                 ch.type = 'Shutter';
+                            else if (channel.$.Name.toLowerCase().includes('strob'))
+                                ch.type = 'Strobe';
                             else if (channel.$.Name.toLowerCase().includes('pan'))
                                 ch.type = 'Pan';
                             else if (channel.$.Name.toLowerCase().includes('tilt'))
                                 ch.type = 'Tilt';
-                            else if (fixture.ChannelBeam && fixture.ChannelBeam.indexOf(channel) != -1)
+                            else if (fixture.ChannelBeam && fixture.ChannelBeam.includes(channel))
                                 ch.type = 'Beam';
-                            else if (!fixture.ChannelIntensity || fixture.ChannelIntensity.indexOf(channel) == -1) // not even a default Intesity channel
+                            else if (!fixture.ChannelIntensity || fixture.ChannelIntensity.includes(channel)) // not even a default Intensity channel
                                 ch.warning = "Please check type!";
 
                             if (channel.$.DefaultValue != "0")
@@ -367,8 +368,9 @@ module.exports.import = function importEcue(str, filename) {
                             if (channel.$.DmxByte1 != "0") {
                                 let chLsb = JSON.parse(JSON.stringify(ch)); // clone channel data
 
-                                const shortNameFine = shortName + "-fine";
-                                chLsb.name += " (fine)";
+                                const shortNameFine = shortName + " fine";
+                                if (chLsb.name)
+                                    chLsb.name += " fine";
 
                                 ch.defaultValue = Math.floor(ch.defaultValue / 256);
                                 chLsb.defaultValue %= 256;

@@ -12,8 +12,9 @@ module.exports = {
             "manufacturer": null, // required. One of the shortNames from above
             "name": null, // required
             "shortName": null, // optional but recommended. Default: name. Keep as short as possible!
-            "type": "Other", // optional. Possible values: "Color Changer/Dimmer/Effect/Fan/Flower/Hazer/Laser/Moving Head/Other/Scanner/Smoke/Strobe"
+            "type": "Other", // optional. Possible values: "Other/Color Changer/Dimmer/Effect/Fan/Flower/Hazer/Laser/Moving Head/Scanner/Smoke/Strobe"
             "comment": "", // optional
+            "manualURL": "", // optional. URL to manual
             "physical": {  // optional
                 "dimensions": [0, 0, 0], // optional. width, height, depth (in mm)
                 "weight": 0.0, // optional. in kg.
@@ -37,8 +38,8 @@ module.exports = {
             "availableChannels": { // required
                 "Unique channel name": {
                     "name": null, // optional. default: Unique channel name
-                    "type": "Intensity", // optional. Possible values: "Intensity/Shutter/Speed/Color/Gobo/Prism/Pan/Tilt/Beam/Effect/Maintenance/Nothing". Note: Use "Color" only for multiple colors in one channel, and "Intensity" else.
-                    "color": "Generic", // optional. Possible values: "Generic/Red/Green/Blue/Cyan/Magenta/Yellow/Amber/White/UV/Lime". Note: Only important if "type" is "Intensity"
+                    "type": "Intensity", // optional. Possible values: "Intensity/Strobe/Shutter/Speed/SingleColor/MultiColor/Gobo/Prism/Pan/Tilt/Beam/Effect/Maintenance/Nothing"
+                    "color": "Generic", // optional. Possible values: "Generic/Red/Green/Blue/Cyan/Magenta/Yellow/Amber/White/UV/Lime". Note: Only used if "type" is "SingleColor"
                     "defaultValue": 0, // optional. DMX channel value
                     "highlightValue": 0, // optional. DMX channel value
                     "invert": false, // optional

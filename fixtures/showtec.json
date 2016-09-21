@@ -11,6 +11,7 @@
             "name": "Kanjo Wash RGB",
             "shortName": "KanjoWash",
             "type": "Moving Head",
+            "manualURL": "https://www.highlite.nl/de/silver.download/Documents@extern@Manuals/45000_MANUAL_GB_V1.pdf",
             "physical": {
                 "dimensions": [169, 156, 270],
                 "weight": 2.52,
@@ -53,7 +54,7 @@
                     "crossfade": true
                 },
                 "Strobe": {
-                    "type": "Shutter",
+                    "type": "Strobe",
                     "capabilities": [
                         {
                             "range": [0, 255],
@@ -62,22 +63,22 @@
                     ]
                 },
                 "Red": {
-                    "type": "Intensity",
+                    "type": "SingleColor",
                     "color": "Red",
                     "crossfade": true
                 },
                 "Green": {
-                    "type": "Intensity",
+                    "type": "SingleColor",
                     "color": "Green",
                     "crossfade": true
                 },
                 "Blue": {
-                    "type": "Intensity",
+                    "type": "SingleColor",
                     "color": "Blue",
                     "crossfade": true
                 },
-                "Preset Colors": {
-                    "type": "Color",
+                "Color Presets": {
+                    "type": "MultiColor",
                     "capabilities": [
                         {
                             "range": [0, 0],
@@ -247,7 +248,7 @@
                         "Red",
                         "Green",
                         "Blue",
-                        "Preset Colors",
+                        "Color Presets",
                         "Color Speed",
                         "Programs",
                         "Factory reset"
@@ -261,6 +262,7 @@
             "shortName": "Phant50",
             "type": "Moving Head",
             "comment": "Ordercode 40187",
+            "manualURL": "http://www.highlite.nl/de/silver.download/Documents@extern@Manuals/40187_MANUAL_GB_V1.pdf",
             "physical": {
                 "dimensions": [210, 225, 340],
                 "weight": 5.64,
@@ -280,33 +282,27 @@
                 }
             },
             "availableChannels": {
-                "pan": {
-                    "name": "Pan",
+                "Pan": {
                     "type": "Pan",
                     "defaultValue": 128
                 },
-                "pan-fine": {
-                    "name": "Pan (fine)",
+                "Pan fine": {
                     "type": "Pan"
                 },
-                "tilt": {
-                    "name": "Tilt",
+                "Tilt": {
                     "type": "Tilt",
                     "defaultValue": 128
                 },
-                "tilt-fine": {
-                    "name": "Tilt (fine)",
+                "Tilt fine": {
                     "type": "Tilt"
                 },
-                "speedPanTilt": {
-                    "name": "Speed Pan-Tilt",
+                "PanTilt Speed": {
                     "type": "Speed",
                     "defaultValue": 128,
                     "invert": true
                 },
-                "color": {
-                    "name": "Color",
-                    "type": "Color",
+                "Color Presets": {
+                    "type": "MultiColor",
                     "capabilities": [
                         {
                             "range": [0, 6],
@@ -419,8 +415,7 @@
                         }
                     ]
                 },
-                "shutter": {
-                    "name": "Shutter",
+                "Shutter": {
                     "type": "Shutter",
                     "defaultValue": 255,
                     "highlightValue": 200,
@@ -444,14 +439,12 @@
                         }
                     ]
                 },
-                "intensity": {
-                    "name": "Intensity",
+                "Intensity": {
                     "type": "Intensity",
                     "highlightValue": 255,
                     "crossfade": true
                 },
-                "gobo": {
-                    "name": "Gobo",
+                "Gobo": {
                     "type": "Gobo",
                     "capabilities": [
                         {
@@ -539,9 +532,8 @@
                         }
                     ]
                 },
-                "goboRotation": {
-                    "name": "Gobo Rotation",
-                    "type": "Gobo",
+                "Gobo Rotation": {
+                    "type": "Speed",
                     "highlightValue": 255,
                     "capabilities": [
                         {
@@ -564,8 +556,7 @@
                         }
                     ]
                 },
-                "prism": {
-                    "name": "Prism",
+                "Prism": {
                     "type": "Prism",
                     "highlightValue": 255,
                     "capabilities": [
@@ -579,8 +570,7 @@
                         }
                     ]
                 },
-                "channelFunctions": {
-                    "name": "Chan Functions",
+                "Functions": {
                     "type": "Maintenance",
                     "capabilities": [
                         {
@@ -646,8 +636,7 @@
                         }
                     ]
                 },
-                "programs": {
-                    "name": "Programs",
+                "Programs": {
                     "type": "Effect",
                     "capabilities": [
                         {
@@ -722,41 +711,41 @@
                 }
             },
             "multiByteChannels": [
-                ["pan", "pan-fine"],
-                ["tilt", "tilt-fine"]
+                ["Pan", "Pan fine"],
+                ["Tilt", "Tilt fine"]
             ],
             "modes": [
                 {
                     "name": "Advanced 13-channel Mode",
                     "shortName": "13ch",
                     "channels": [
-                        "pan",
-                        "tilt",
-                        "pan-fine",
-                        "tilt-fine",
-                        "speedPanTilt",
-                        "color",
-                        "shutter",
-                        "intensity",
-                        "gobo",
-                        "goboRotation",
-                        "prism",
-                        "channelFunctions",
-                        "programs"
+                        "Pan",
+                        "Tilt",
+                        "Pan fine",
+                        "Tilt fine",
+                        "PanTilt Speed",
+                        "Color Presets",
+                        "Shutter",
+                        "Intensity",
+                        "Gobo",
+                        "Gobo Rotation",
+                        "Prism",
+                        "Functions",
+                        "Programs"
                     ]
                 },
                 {
                     "name": "Basic 8-channel Mode",
                     "shortName": "13ch",
                     "channels": [
-                        "pan",
-                        "tilt",
-                        "color",
-                        "shutter",
-                        "intensity",
-                        "gobo",
-                        "goboRotation",
-                        "prism"
+                        "Pan",
+                        "Tilt",
+                        "Color Presets",
+                        "Shutter",
+                        "Intensity",
+                        "Gobo",
+                        "Gobo Rotation",
+                        "Prism"
                     ]
                 }
             ]
