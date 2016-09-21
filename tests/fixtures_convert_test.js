@@ -6,10 +6,13 @@ const fs = require('fs');
 const path = require('path');
 const cp = require('child_process');
 const diff = require('diff');
-
 const assert = require('assert');
 
 const timestamp = new Date().toISOString().replace(/T/, '_').replace(/:/g, '-').replace(/\..+/, '');
+
+const useHarmonyFlag = require('semver').lt(process.version, '6.0.0');
+console.log(`Using --harmony-destructuring flag? ${useHarmonyFlag}`);
+
 const outputDir = path.join(__dirname, `out-${timestamp}`);
 fs.mkdir(outputDir, (err) => {
     if (err) throw err;
@@ -38,7 +41,8 @@ fs.mkdir(outputDir, (err) => {
 
 function test(name, format, inputFile, desiredOutputFile, outputFile) {
     cp.exec(
-        'node ' + path.join(__dirname, '..', 'fixtures_convert.js')
+        'node ' + (useHarmonyFlag ? '--harmony-destructuring ' : '')
+        + path.join(__dirname, '..', 'fixtures_convert.js')
         + ' -i ' + path.join(__dirname, inputFile)
         + ` -f ${format} -d ` + path.join(outputDir, '%FORMAT%'),
         (error, stdout, stderr) => {
