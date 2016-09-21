@@ -55,8 +55,8 @@ module.exports.export = function formatEcue(manufacturers, fixtures, localOutDir
                     let doubleByte = false;
                     const multiByteChannels = getCorrespondingMultiByteChannels(chKey, fixData);
                     if (multiByteChannels != null
-                        && mode.channels.includes(multiByteChannels[0])
-                        && mode.channels.includes(multiByteChannels[1])) {
+                        && mode.channels.indexOf(multiByteChannels[0]) != -1
+                        && mode.channels.indexOf(multiByteChannels[1]) != -1) {
                         // it is a 16-bit channel and both 8-bit parts are used in this mode
                         chKey = multiByteChannels[0];
                         doubleByte = true;
