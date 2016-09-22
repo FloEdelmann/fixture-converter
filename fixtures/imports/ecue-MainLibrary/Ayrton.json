@@ -1,0 +1,97 @@
+{
+    "manufacturers": {
+        "Ayrton": {
+            "name": "Ayrton",
+            "website": "http://www.ayrton.eu"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Ayrton",
+            "name": "eyecolor",
+            "shortName": "eyecolor",
+            "physical": {
+                "dimensions": [300, 300, 500],
+                "weight": 8,
+                "power": 250
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "crossfade": true
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "crossfade": true
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "crossfade": true
+                },
+                "Rainbow": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "crossfade": true
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "9-channel Mode",
+                    "shortName": "9ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Rainbow",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "manufacturers": {
+        "TAS": {
+            "name": "TAS",
+            "comment": "?"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "TAS",
+            "name": "Versicolore",
+            "shortName": "Versicolore",
+            "comment": "250W MSD",
+            "physical": {
+                "dimensions": [285, 285, 585],
+                "weight": 17,
+                "power": 250
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Effects": {
+                    "type": "Effect",
+                    "crossfade": true
+                },
+                "Color 1": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true
+                },
+                "Color 2": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true
+                },
+                "Reset": {
+                    "type": "Beam",
+                    "crossfade": true
+                }
+            },
+            "modes": [
+                {
+                    "name": "5-channel Mode",
+                    "shortName": "5ch",
+                    "channels": [
+                        "Intensity",
+                        "Effects",
+                        "Color 1",
+                        "Color 2",
+                        "Reset"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,123 @@
+{
+    "manufacturers": {
+        "MediaLas": {
+            "name": "MediaLas",
+            "website": "http://www.medialas.de/"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "MediaLas",
+            "name": "Tweety",
+            "shortName": "Tweety",
+            "comment": "cd",
+            "physical": {
+                "dimensions": [300, 300, 300]
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "crossfade": true
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "crossfade": true
+                },
+                "Gobo": {
+                    "type": "Gobo"
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "off"
+                        },
+                        {
+                            "range": [10, 120],
+                            "name": "on"
+                        },
+                        {
+                            "range": [138, 255],
+                            "name": "strobe"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 120],
+                            "name": "static"
+                        },
+                        {
+                            "range": [138, 255],
+                            "name": "auto"
+                        }
+                    ]
+                },
+                "Gobo rot.": {
+                    "type": "Gobo",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 120],
+                            "name": "ind."
+                        },
+                        {
+                            "range": [138, 255],
+                            "name": "rot."
+                        }
+                    ]
+                },
+                "Wave": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 120],
+                            "name": "move"
+                        },
+                        {
+                            "range": [138, 255],
+                            "name": "static"
+                        }
+                    ]
+                },
+                "Blanking": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 60],
+                            "name": "static"
+                        },
+                        {
+                            "range": [68, 120],
+                            "name": "dyn."
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "8-channel Mode",
+                    "shortName": "8ch",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Gobo",
+                        "Strobe",
+                        "Zoom",
+                        "Gobo rot.",
+                        "Wave",
+                        "Blanking"
+                    ]
+                }
+            ]
+        }
+    ]
+}

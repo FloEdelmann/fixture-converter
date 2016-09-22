@@ -1,0 +1,229 @@
+{
+    "manufacturers": {
+        "Pangolin": {
+            "name": "Pangolin",
+            "website": "http://www.pangolin.com/"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Pangolin",
+            "name": "Flashback 3",
+            "shortName": "FB3",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Control": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "defaultValue": 255
+                },
+                "Cue": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 48],
+                            "name": "Cue #"
+                        }
+                    ]
+                },
+                "Page": {
+                    "type": "Beam",
+                    "defaultValue": 1,
+                    "capabilities": [
+                        {
+                            "range": [1, 9],
+                            "name": "Page #"
+                        }
+                    ]
+                },
+                "Fade": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "crossfade": true
+                },
+                "X Scale": {
+                    "type": "Intensity",
+                    "defaultValue": 255
+                },
+                "Y Scale": {
+                    "type": "Intensity",
+                    "defaultValue": 255
+                },
+                "Z Rotation": {
+                    "type": "Intensity",
+                    "crossfade": true
+                },
+                "X Position": {
+                    "type": "Intensity",
+                    "defaultValue": 128,
+                    "crossfade": true
+                },
+                "Y Position": {
+                    "type": "Intensity",
+                    "defaultValue": 128,
+                    "crossfade": true
+                }
+            },
+            "modes": [
+                {
+                    "name": "10-channel Mode",
+                    "shortName": "10ch",
+                    "channels": [
+                        "Control",
+                        "Cue",
+                        "Page",
+                        "Fade",
+                        "Zoom",
+                        "X Scale",
+                        "Y Scale",
+                        "Z Rotation",
+                        "X Position",
+                        "Y Position"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Pangolin",
+            "name": "Live",
+            "shortName": "Live",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Control": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Balckout"
+                        },
+                        {
+                            "range": [32, 255],
+                            "name": "ON"
+                        }
+                    ]
+                },
+                "Page": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Page 1"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Page 2"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Page 3"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Page 4"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Page 5"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Page 6"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Page 7"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Page 8"
+                        },
+                        {
+                            "range": [0, 0],
+                            "name": "New Range"
+                        }
+                    ]
+                },
+                "Cue": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [32, 223],
+                            "name": "Cues",
+                            "showInMenu": false
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "100%"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Pause"
+                        },
+                        {
+                            "range": [32, 255],
+                            "name": "Variable"
+                        }
+                    ]
+                },
+                "Brightness": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true
+                },
+                "Size": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "crossfade": true
+                },
+                "X Position": {
+                    "type": "Intensity",
+                    "defaultValue": 127,
+                    "crossfade": true
+                },
+                "Y Position": {
+                    "type": "Intensity",
+                    "defaultValue": 127,
+                    "crossfade": true
+                }
+            },
+            "modes": [
+                {
+                    "name": "8-channel Mode",
+                    "shortName": "8ch",
+                    "channels": [
+                        "Control",
+                        "Page",
+                        "Cue",
+                        "Speed",
+                        "Brightness",
+                        "Size",
+                        "X Position",
+                        "Y Position"
+                    ]
+                }
+            ]
+        }
+    ]
+}

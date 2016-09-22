@@ -1,0 +1,433 @@
+{
+    "manufacturers": {
+        "Xilver": {
+            "name": "Xilver",
+            "website": "www.xilver.nl"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Xilver",
+            "name": "Droplet",
+            "shortName": "Droplet",
+            "comment": "RGB Normal Mode - DIP 10=1; 11=0",
+            "physical": {
+                "dimensions": [80, 80, 58],
+                "weight": 0.2,
+                "power": 5
+            },
+            "availableChannels": {
+                "Reset": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 249],
+                            "name": "nofunction"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "reset"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "full"
+                        },
+                        {
+                            "range": [5, 204],
+                            "name": "slow"
+                        },
+                        {
+                            "range": [205, 255],
+                            "name": "fast"
+                        }
+                    ]
+                },
+                "strobe_l": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "12-channel Mode",
+                    "shortName": "12ch",
+                    "channels": [
+                        "Reset",
+                        "Pan",
+                        "Tilt",
+                        "Speed",
+                        "Pan fine",
+                        "Tilt fine",
+                        "Strobe",
+                        "strobe_l",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Intensity"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Xilver",
+            "name": "Sparkle HSI",
+            "shortName": "SparkleHSI",
+            "comment": "Sparkle RGB with Dipswitch Nr. 10 set to 0 (HSI)",
+            "physical": {
+                "dimensions": [100, 100, 120],
+                "weight": 1,
+                "power": 20
+            },
+            "availableChannels": {
+                "Reset": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 249],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Reset (hold 5s)"
+                        }
+                    ]
+                },
+                "StrobeFrq": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "no strobe"
+                        },
+                        {
+                            "range": [5, 204],
+                            "name": "Strobe 1-25Hz"
+                        },
+                        {
+                            "range": [205, 255],
+                            "name": "Strobe 25-50Hz"
+                        }
+                    ]
+                },
+                "StrobeDur": {
+                    "type": "Strobe",
+                    "crossfade": true
+                },
+                "Hue": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [1, 42],
+                            "name": "Red <> Yellow",
+                            "center": true
+                        },
+                        {
+                            "range": [43, 43],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [44, 84],
+                            "name": "Yellow <> Green",
+                            "center": true
+                        },
+                        {
+                            "range": [85, 85],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [86, 127],
+                            "name": "Green <> Cyan",
+                            "center": true
+                        },
+                        {
+                            "range": [128, 128],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [129, 170],
+                            "name": "Cyan <> Blue",
+                            "center": true
+                        },
+                        {
+                            "range": [171, 171],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [172, 212],
+                            "name": "Blue <> Magenta",
+                            "center": true
+                        },
+                        {
+                            "range": [213, 213],
+                            "name": "Magenta",
+                            "color": "#ca1f7b"
+                        },
+                        {
+                            "range": [214, 254],
+                            "name": "Magenta <> Red",
+                            "center": true
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "Saturation": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                }
+            },
+            "modes": [
+                {
+                    "name": "6-channel Mode",
+                    "shortName": "6ch",
+                    "channels": [
+                        "Reset",
+                        "StrobeFrq",
+                        "StrobeDur",
+                        "Hue",
+                        "Saturation",
+                        "Intensity"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Xilver",
+            "name": "Sparkle RGB",
+            "shortName": "SparkleRGB",
+            "comment": "Sparkle RGB with Dipswitch Nr. 10 set to 1 (RGB)",
+            "physical": {
+                "dimensions": [100, 100, 120],
+                "weight": 1,
+                "power": 20
+            },
+            "availableChannels": {
+                "Reset": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 249],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Reset (hold 5s)"
+                        }
+                    ]
+                },
+                "StrobeFrq": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "no strobe"
+                        },
+                        {
+                            "range": [5, 204],
+                            "name": "strobe 1-25Hz"
+                        },
+                        {
+                            "range": [205, 255],
+                            "name": "strobe 25-50Hz"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                }
+            },
+            "modes": [
+                {
+                    "name": "6-channel Mode",
+                    "shortName": "6ch",
+                    "channels": [
+                        "Reset",
+                        "StrobeFrq",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Intensity"
+                    ]
+                }
+            ]
+        }
+    ]
+}

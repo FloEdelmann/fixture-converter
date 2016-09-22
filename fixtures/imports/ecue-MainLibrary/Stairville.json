@@ -1,0 +1,339 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville",
+            "website": "http://www.thomann.de/de/stairville.html"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "MH-575 S 16bit",
+            "shortName": "MH-575 S",
+            "comment": "http://images6.thomann.de/pics/prod/stairville_mh575_manual.pdf",
+            "physical": {
+                "dimensions": [450, 450, 600],
+                "weight": 29,
+                "power": 800
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Shutter/Strobe": {
+                    "type": "Shutter",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "blackout"
+                        },
+                        {
+                            "range": [2, 7],
+                            "name": "open"
+                        },
+                        {
+                            "range": [8, 63],
+                            "name": "Strobe: slow>fa"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "open"
+                        },
+                        {
+                            "range": [72, 127],
+                            "name": "Pulse Strobe"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "open"
+                        },
+                        {
+                            "range": [136, 191],
+                            "name": "Pulse Strobe"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "open"
+                        },
+                        {
+                            "range": [200, 253],
+                            "name": "Random Strobe"
+                        },
+                        {
+                            "range": [254, 255],
+                            "name": "open"
+                        }
+                    ]
+                },
+                "Color Wheel": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 13],
+                            "name": "white",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [14, 27],
+                            "name": "Steel Blue",
+                            "color": "#4682b4"
+                        },
+                        {
+                            "range": [28, 41],
+                            "name": "Orange",
+                            "color": "#ff7f00"
+                        },
+                        {
+                            "range": [42, 55],
+                            "name": "Green Blue",
+                            "color": "#1164b4"
+                        },
+                        {
+                            "range": [56, 69],
+                            "name": "Bright Blue"
+                        },
+                        {
+                            "range": [70, 83],
+                            "name": "Bright Pink"
+                        },
+                        {
+                            "range": [84, 97],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [98, 111],
+                            "name": "Deep Blue",
+                            "color": "#220878"
+                        },
+                        {
+                            "range": [112, 125],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [126, 139],
+                            "name": "Dark Pink",
+                            "color": "#e75480"
+                        },
+                        {
+                            "range": [140, 153],
+                            "name": "Moos Green"
+                        },
+                        {
+                            "range": [154, 167],
+                            "name": "Light Blue",
+                            "color": "#add8e6"
+                        },
+                        {
+                            "range": [168, 255],
+                            "name": "Rainbow"
+                        }
+                    ]
+                },
+                "Rot. Gobo": {
+                    "type": "Gobo",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 23],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [24, 47],
+                            "name": "Gobo1"
+                        },
+                        {
+                            "range": [48, 71],
+                            "name": "Gobo2"
+                        },
+                        {
+                            "range": [72, 95],
+                            "name": "Gobo3"
+                        },
+                        {
+                            "range": [96, 119],
+                            "name": "Gobo4"
+                        },
+                        {
+                            "range": [120, 143],
+                            "name": "Gobo5"
+                        },
+                        {
+                            "range": [144, 167],
+                            "name": "Gobo6"
+                        },
+                        {
+                            "range": [168, 255],
+                            "name": "Gobo Spin"
+                        }
+                    ]
+                },
+                "Gobo Rotation": {
+                    "type": "Gobo",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Gobo Index"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Clockwise Rotat"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Count. Clockwis"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [2, 255],
+                            "name": "Prism (static)"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "defaultValue": 128,
+                    "crossfade": true
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "18"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "14"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Pan fine fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Tilt fine fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Control": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Tracking Mode"
+                        },
+                        {
+                            "range": [8, 63],
+                            "name": "Vector Mode"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Mech. Reset"
+                        }
+                    ]
+                },
+                "Lamp On/Off": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 47],
+                            "name": "Standby"
+                        },
+                        {
+                            "range": [48, 0],
+                            "name": "Lamp On (3sec.)"
+                        },
+                        {
+                            "range": [96, 159],
+                            "name": "Standby"
+                        },
+                        {
+                            "range": [160, 207],
+                            "name": "Lamp off (3sec."
+                        },
+                        {
+                            "range": [208, 255],
+                            "name": "Standby"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan fine",
+                    "Pan fine fine"
+                ],
+                [
+                    "Tilt fine",
+                    "Tilt fine fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "14-channel Mode",
+                    "shortName": "14ch",
+                    "channels": [
+                        "Dimmer",
+                        "Shutter/Strobe",
+                        "Color Wheel",
+                        "Rot. Gobo",
+                        "Gobo Rotation",
+                        "Prism",
+                        "Focus",
+                        "Zoom",
+                        "Pan fine",
+                        "Tilt fine",
+                        "Pan fine fine",
+                        "Tilt fine fine",
+                        "Control",
+                        "Lamp On/Off"
+                    ]
+                }
+            ]
+        }
+    ]
+}

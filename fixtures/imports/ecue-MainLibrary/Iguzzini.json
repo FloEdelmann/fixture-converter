@@ -1,0 +1,155 @@
+{
+    "manufacturers": {
+        "Iguzzini": {
+            "name": "Iguzzini",
+            "website": "www.iguzzini.com"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Iguzzini",
+            "name": "Color Woody",
+            "shortName": "CW",
+            "comment": "http://microsites.iguzzini.it/colourwoody/inglese/download/istruzioni.pdf",
+            "physical": {
+                "dimensions": [620, 380, 760],
+                "weight": 38
+            },
+            "availableChannels": {
+                "Filter_In": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Filter_Out": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "capabilities": [
+                        {
+                            "range": [0, 64],
+                            "name": "Lamp_off"
+                        },
+                        {
+                            "range": [65, 255],
+                            "name": "Lamp_On"
+                        }
+                    ]
+                },
+                "Reset": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 64],
+                            "name": "off"
+                        },
+                        {
+                            "range": [100, 100],
+                            "name": "hold_10s"
+                        }
+                    ]
+                },
+                "Switch": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 85],
+                            "name": "Cursor 1+2"
+                        },
+                        {
+                            "range": [86, 170],
+                            "name": "reprogramming"
+                        },
+                        {
+                            "range": [171, 255],
+                            "name": "Cursor 8"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "White",
+                            "color": "#ffffff",
+                            "center": true
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Magenta",
+                            "color": "#ca1f7b",
+                            "center": true
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Cyan",
+                            "color": "#00ffff",
+                            "center": true
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Yellow",
+                            "color": "#ffff00",
+                            "center": true
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Red",
+                            "color": "#ff0000",
+                            "center": true
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Green",
+                            "color": "#00ff00",
+                            "center": true
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Blue",
+                            "color": "#0000ff",
+                            "center": true
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Yellow",
+                            "color": "#ffff00",
+                            "center": true
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "8-channel Mode",
+                    "shortName": "8ch",
+                    "channels": [
+                        "Filter_In",
+                        "Filter_Out",
+                        null,
+                        "Control",
+                        null,
+                        "Reset",
+                        "Switch",
+                        "Color"
+                    ]
+                }
+            ]
+        }
+    ]
+}

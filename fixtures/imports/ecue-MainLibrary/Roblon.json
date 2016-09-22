@@ -1,0 +1,120 @@
+{
+    "manufacturers": {
+        "Roblon": {
+            "name": "Roblon",
+            "website": "www.roblon.com"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Roblon",
+            "name": "Fiber Optic Source FL150-2C",
+            "shortName": "FL150-2C",
+            "physical": {
+                "dimensions": [234, 160, 414],
+                "power": 185
+            },
+            "availableChannels": {
+                "Color": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 30],
+                            "name": "white",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [31, 63],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [64, 98],
+                            "name": "Orange",
+                            "color": "#ff7f00"
+                        },
+                        {
+                            "range": [99, 130],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [131, 166],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [167, 195],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [196, 221],
+                            "name": "Rotation forwar"
+                        },
+                        {
+                            "range": [223, 248],
+                            "name": "Rotation backwa"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Reset"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 165,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "closed"
+                        },
+                        {
+                            "range": [167, 167],
+                            "name": "full"
+                        },
+                        {
+                            "range": [168, 254],
+                            "name": "reserved"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "reset"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Beam",
+                    "defaultValue": 120,
+                    "highlightValue": 120,
+                    "capabilities": [
+                        {
+                            "range": [67, 128],
+                            "name": "lamp on"
+                        },
+                        {
+                            "range": [0, 65],
+                            "name": "lamp off"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-channel Mode",
+                    "shortName": "3ch",
+                    "channels": [
+                        "Color",
+                        "Intensity",
+                        "Control"
+                    ]
+                }
+            ]
+        }
+    ]
+}

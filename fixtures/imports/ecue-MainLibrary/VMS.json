@@ -1,0 +1,335 @@
+{
+    "manufacturers": {
+        "VMS": {
+            "name": "VMS",
+            "website": "http://www.vms-at.com"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "VMS",
+            "name": "VMU 5 13 Ch",
+            "shortName": "VMU5",
+            "comment": "13 DMX Ch.",
+            "physical": {
+                "dimensions": [112, 455, 160],
+                "weight": 4.4
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Reset": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 254],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "mirror reset"
+                        }
+                    ]
+                },
+                "Mute": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 254],
+                            "name": "off"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "on"
+                        }
+                    ]
+                },
+                "Freeze": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 254],
+                            "name": "off"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "on"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Key hor.": {
+                    "type": "Beam",
+                    "defaultValue": 128,
+                    "crossfade": true
+                },
+                "Key ver.": {
+                    "type": "Beam",
+                    "defaultValue": 128,
+                    "crossfade": true
+                },
+                "Orientation": {
+                    "type": "Beam",
+                    "defaultValue": 140,
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Mir. up rev.",
+                            "center": true
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Mir. down",
+                            "center": true
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Mir. up",
+                            "center": true
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Mir. down rev.",
+                            "center": true
+                        }
+                    ]
+                },
+                "Source": {
+                    "type": "Beam",
+                    "defaultValue": 30,
+                    "capabilities": [
+                        {
+                            "range": [0, 64],
+                            "name": "video",
+                            "center": true
+                        },
+                        {
+                            "range": [128, 150],
+                            "name": "s-video",
+                            "center": true
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "VGA",
+                            "center": true
+                        }
+                    ]
+                },
+                "Lamp": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [128, 192],
+                            "name": "on",
+                            "center": true
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "off"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "13-channel Mode",
+                    "shortName": "13ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Reset",
+                        "Mute",
+                        "Freeze",
+                        "Zoom",
+                        "Key hor.",
+                        "Key ver.",
+                        "Orientation",
+                        "Source",
+                        "Lamp"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "VMS",
+            "name": "VMU 5 5 Ch",
+            "shortName": "VMU5.1",
+            "comment": "5 DMX Ch.",
+            "physical": {
+                "dimensions": [112, 455, 160],
+                "weight": 4.4
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Reset": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 254],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "mirror reset"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "5-channel Mode",
+                    "shortName": "5ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Reset"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "VMS",
+            "name": "VMU 5-5",
+            "shortName": "VMU5-5",
+            "comment": "cd",
+            "physical": {
+                "dimensions": [112, 455, 160],
+                "weight": 4.4
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Reset": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 254],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "mirror reset"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "5-channel Mode",
+                    "shortName": "5ch",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan fine",
+                        "Tilt fine",
+                        "Reset"
+                    ]
+                }
+            ]
+        }
+    ]
+}

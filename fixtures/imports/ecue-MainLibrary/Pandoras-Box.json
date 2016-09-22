@@ -1,0 +1,51 @@
+{
+    "manufacturers": {
+        "Pandoras Box": {
+            "name": "Pandoras Box",
+            "website": "http://www.coolux.de/"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Pandoras Box",
+            "name": "Pandoras Box 25",
+            "shortName": "PanBox",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Dimmer/Volume": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "trans. sound of",
+                            "center": true
+                        },
+                        {
+                            "range": [1, 254],
+                            "name": "%"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "full",
+                            "center": true
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "1-channel Mode",
+                    "shortName": "1ch",
+                    "channels": [
+                        "Dimmer/Volume"
+                    ]
+                }
+            ]
+        }
+    ]
+}

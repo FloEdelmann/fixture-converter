@@ -1,0 +1,100 @@
+{
+    "manufacturers": {
+        "Element Labs": {
+            "name": "Element Labs",
+            "website": "www.elementlabs.com"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Element Labs",
+            "name": "VersaDrive C1",
+            "shortName": "VD-C1",
+            "physical": {
+                "dimensions": [100, 100, 100],
+                "weight": 4
+            },
+            "availableChannels": {
+                "Pattern Select": {
+                    "type": "Beam"
+                },
+                "Playback Mode": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 50],
+                            "name": "Loop"
+                        },
+                        {
+                            "range": [51, 100],
+                            "name": "Hold"
+                        },
+                        {
+                            "range": [101, 150],
+                            "name": "Once"
+                        },
+                        {
+                            "range": [151, 200],
+                            "name": "Bounce"
+                        },
+                        {
+                            "range": [201, 255],
+                            "name": "All"
+                        }
+                    ]
+                },
+                "D.C. Mode": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "additive"
+                        },
+                        {
+                            "range": [64, 193],
+                            "name": "undefined"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "subtractive"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "invert": true,
+                    "precendence": "HTP"
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "invert": true,
+                    "precendence": "HTP"
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "invert": true,
+                    "precendence": "HTP"
+                }
+            },
+            "modes": [
+                {
+                    "name": "6-channel Mode",
+                    "shortName": "6ch",
+                    "channels": [
+                        "Pattern Select",
+                        "Playback Mode",
+                        "D.C. Mode",
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

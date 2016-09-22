@@ -1,0 +1,873 @@
+{
+    "manufacturers": {
+        "ecue": {
+            "name": "ecue",
+            "website": "www.ecue.com"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "ecue",
+            "name": "DMX to DALI Converter",
+            "shortName": "DMXtoDALI",
+            "comment": "cd",
+            "physical": {
+                "dimensions": [110, 80, 60]
+            },
+            "availableChannels": {
+                "Channel 1": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Channel 2": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Channel 3": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Channel 4": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Channel 5": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Channel 6": {
+                    "type": "Beam",
+                    "crossfade": true
+                }
+            },
+            "modes": [
+                {
+                    "name": "6-channel Mode",
+                    "shortName": "6ch",
+                    "channels": [
+                        "Channel 1",
+                        "Channel 2",
+                        "Channel 3",
+                        "Channel 4",
+                        "Channel 5",
+                        "Channel 6"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "ecue",
+            "name": "DMX2DALI 2010",
+            "shortName": "DMX2DALI",
+            "comment": "cd",
+            "physical": {
+                "dimensions": [110, 80, 60]
+            },
+            "availableChannels": {
+                "Channel 1": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Channel 2": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Channel 3": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Channel 4": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Channel 5": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Channel 6": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true
+                }
+            },
+            "modes": [
+                {
+                    "name": "6-channel Mode",
+                    "shortName": "6ch",
+                    "channels": [
+                        "Channel 1",
+                        "Channel 2",
+                        "Channel 3",
+                        "Channel 4",
+                        "Channel 5",
+                        "Channel 6"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "ecue",
+            "name": "ecue CAM",
+            "shortName": "ecueCam",
+            "comment": "3D Camera",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Intensity fine": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "PosX": {
+                    "type": "Intensity",
+                    "defaultValue": 127,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "PosX fine": {
+                    "type": "Intensity",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "PosY": {
+                    "type": "Intensity",
+                    "defaultValue": 127,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "PosY fine": {
+                    "type": "Intensity",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "PosZ": {
+                    "type": "Intensity",
+                    "defaultValue": 127,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "PosZ fine": {
+                    "type": "Intensity",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "RotX": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "RotX fine": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "RotY": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "RotY fine": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "RotZ": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "RotZ fine": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "defaultValue": null,
+                    "highlightValue": null
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Intensity",
+                    "Intensity fine"
+                ],
+                [
+                    "PosX",
+                    "PosX fine"
+                ],
+                [
+                    "PosY",
+                    "PosY fine"
+                ],
+                [
+                    "PosZ",
+                    "PosZ fine"
+                ],
+                [
+                    "RotX",
+                    "RotX fine"
+                ],
+                [
+                    "RotY",
+                    "RotY fine"
+                ],
+                [
+                    "RotZ",
+                    "RotZ fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "14-channel Mode",
+                    "shortName": "14ch",
+                    "channels": [
+                        "Intensity",
+                        "Intensity fine",
+                        "PosX",
+                        "PosX fine",
+                        "PosY",
+                        "PosY fine",
+                        "PosZ",
+                        "PosZ fine",
+                        "RotX",
+                        "RotX fine",
+                        "RotY",
+                        "RotY fine",
+                        "RotZ",
+                        "RotZ fine"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "ecue",
+            "name": "ecue Programmer",
+            "shortName": "ecueProg",
+            "comment": "Remote control another e:cue Programmer via DMX",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "QL": {
+                    "type": "Beam"
+                },
+                "Cue": {
+                    "type": "Beam"
+                },
+                "PlayCtrl": {
+                    "type": "Beam",
+                    "defaultValue": 160,
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "STOP",
+                            "center": true
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "PAUSE",
+                            "center": true
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "--",
+                            "center": true
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "PLAY",
+                            "center": true
+                        }
+                    ]
+                },
+                "SkipCtrl": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "SkpBk",
+                            "center": true
+                        },
+                        {
+                            "range": [64, 191],
+                            "name": "--",
+                            "center": true
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "SkipFW",
+                            "center": true
+                        }
+                    ]
+                },
+                "GM": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "SM1": {
+                    "type": "Beam",
+                    "defaultValue": 12,
+                    "capabilities": [
+                        {
+                            "range": [0, 20721],
+                            "name": "Slow",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [20722, 20722],
+                            "name": "Normal",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [20723, 255],
+                            "name": "Faster",
+                            "warning": "Out of range!",
+                            "center": true
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "SM1 fine": {
+                    "type": "Beam",
+                    "defaultValue": 90,
+                    "capabilities": [
+                        {
+                            "range": [0, 20721],
+                            "name": "Slow",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [20722, 20722],
+                            "name": "Normal",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [20723, 255],
+                            "name": "Faster",
+                            "warning": "Out of range!",
+                            "center": true
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "SM2": {
+                    "type": "Beam",
+                    "defaultValue": 12,
+                    "capabilities": [
+                        {
+                            "range": [0, 20721],
+                            "name": "Slow",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [20722, 20722],
+                            "name": "Normal",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [20723, 255],
+                            "name": "Faster",
+                            "warning": "Out of range!",
+                            "center": true
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "SM2 fine": {
+                    "type": "Beam",
+                    "defaultValue": 90,
+                    "capabilities": [
+                        {
+                            "range": [0, 20721],
+                            "name": "Slow",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [20722, 20722],
+                            "name": "Normal",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [20723, 255],
+                            "name": "Faster",
+                            "warning": "Out of range!",
+                            "center": true
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "SM3": {
+                    "type": "Beam",
+                    "defaultValue": 12,
+                    "capabilities": [
+                        {
+                            "range": [0, 20721],
+                            "name": "Slow",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [20722, 20722],
+                            "name": "Normal",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [20723, 255],
+                            "name": "Faster",
+                            "warning": "Out of range!",
+                            "center": true
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "SM3 fine": {
+                    "type": "Beam",
+                    "defaultValue": 90,
+                    "capabilities": [
+                        {
+                            "range": [0, 20721],
+                            "name": "Slow",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [20722, 20722],
+                            "name": "Normal",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [20723, 255],
+                            "name": "Faster",
+                            "warning": "Out of range!",
+                            "center": true
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "SM4": {
+                    "type": "Beam",
+                    "defaultValue": 12,
+                    "capabilities": [
+                        {
+                            "range": [0, 20721],
+                            "name": "Slow",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [20722, 20722],
+                            "name": "Normal",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [20723, 255],
+                            "name": "Faster",
+                            "warning": "Out of range!",
+                            "center": true
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "SM4 fine": {
+                    "type": "Beam",
+                    "defaultValue": 90,
+                    "capabilities": [
+                        {
+                            "range": [0, 20721],
+                            "name": "Slow",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [20722, 20722],
+                            "name": "Normal",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [20723, 255],
+                            "name": "Faster",
+                            "warning": "Out of range!",
+                            "center": true
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "SM5": {
+                    "type": "Beam",
+                    "defaultValue": 12,
+                    "capabilities": [
+                        {
+                            "range": [0, 20721],
+                            "name": "Slow",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [20722, 20722],
+                            "name": "Normal",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [20723, 255],
+                            "name": "Faster",
+                            "warning": "Out of range!",
+                            "center": true
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "SM5 fine": {
+                    "type": "Beam",
+                    "defaultValue": 90,
+                    "capabilities": [
+                        {
+                            "range": [0, 20721],
+                            "name": "Slow",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [20722, 20722],
+                            "name": "Normal",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [20723, 255],
+                            "name": "Faster",
+                            "warning": "Out of range!",
+                            "center": true
+                        }
+                    ],
+                    "highlightValue": null
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "SM1",
+                    "SM1 fine"
+                ],
+                [
+                    "SM2",
+                    "SM2 fine"
+                ],
+                [
+                    "SM3",
+                    "SM3 fine"
+                ],
+                [
+                    "SM4",
+                    "SM4 fine"
+                ],
+                [
+                    "SM5",
+                    "SM5 fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "15-channel Mode",
+                    "shortName": "15ch",
+                    "channels": [
+                        "QL",
+                        "Cue",
+                        "PlayCtrl",
+                        "SkipCtrl",
+                        "GM",
+                        "SM1",
+                        "SM1 fine",
+                        "SM2",
+                        "SM2 fine",
+                        "SM3",
+                        "SM3 fine",
+                        "SM4",
+                        "SM4 fine",
+                        "SM5",
+                        "SM5 fine"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "ecue",
+            "name": "Media Player 2D",
+            "shortName": "MP2D",
+            "comment": "Remote Control e:Player2D via DMX",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Track": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "default"
+                        },
+                        {
+                            "range": [1, 1],
+                            "name": "Track 1"
+                        },
+                        {
+                            "range": [2, 2],
+                            "name": "Track 2"
+                        },
+                        {
+                            "range": [3, 3],
+                            "name": "Track 3"
+                        },
+                        {
+                            "range": [4, 4],
+                            "name": "Track 4"
+                        },
+                        {
+                            "range": [5, 5],
+                            "name": "Track 5"
+                        },
+                        {
+                            "range": [6, 6],
+                            "name": "Track 6"
+                        },
+                        {
+                            "range": [7, 7],
+                            "name": "Track 7"
+                        },
+                        {
+                            "range": [8, 8],
+                            "name": "Track 8"
+                        },
+                        {
+                            "range": [9, 9],
+                            "name": "Track 9"
+                        },
+                        {
+                            "range": [10, 10],
+                            "name": "Track 10"
+                        },
+                        {
+                            "range": [11, 11],
+                            "name": "Track 11"
+                        },
+                        {
+                            "range": [12, 12],
+                            "name": "Track 12"
+                        },
+                        {
+                            "range": [13, 13],
+                            "name": "Track 13"
+                        },
+                        {
+                            "range": [14, 14],
+                            "name": "Track 14"
+                        },
+                        {
+                            "range": [15, 15],
+                            "name": "Track 15"
+                        },
+                        {
+                            "range": [16, 16],
+                            "name": "Track 16"
+                        },
+                        {
+                            "range": [17, 17],
+                            "name": "Track 17"
+                        },
+                        {
+                            "range": [18, 18],
+                            "name": "Track 18"
+                        },
+                        {
+                            "range": [19, 19],
+                            "name": "Track 19"
+                        },
+                        {
+                            "range": [20, 20],
+                            "name": "Track 20"
+                        },
+                        {
+                            "range": [21, 255],
+                            "name": "Track x"
+                        }
+                    ]
+                },
+                "Players": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Player A",
+                            "center": true
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Player B",
+                            "center": true
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "default"
+                        },
+                        {
+                            "range": [1, 50],
+                            "name": "Stop",
+                            "center": true
+                        },
+                        {
+                            "range": [51, 100],
+                            "name": "Pause",
+                            "center": true
+                        },
+                        {
+                            "range": [101, 255],
+                            "name": "Play Track",
+                            "center": true
+                        }
+                    ]
+                },
+                "Volume": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Playmode": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Single",
+                            "center": true
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Repeat Track",
+                            "center": true
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Repeat All",
+                            "center": true
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Random",
+                            "center": true
+                        }
+                    ]
+                },
+                "SeekPos": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "SeekPos fine": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Seek": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "default",
+                            "center": true
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Tracking abs",
+                            "center": true
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "reserved",
+                            "center": true
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Seek to",
+                            "center": true
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "SeekPos",
+                    "SeekPos fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "8-channel Mode",
+                    "shortName": "8ch",
+                    "channels": [
+                        "Track",
+                        "Players",
+                        "Control",
+                        "Volume",
+                        "Playmode",
+                        "SeekPos",
+                        "SeekPos fine",
+                        "Seek"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "manufacturers": {
+        "Lightmaxx": {
+            "name": "Lightmaxx"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Lightmaxx",
+            "name": "LED PAR 64",
+            "shortName": "LED64",
+            "comment": "cd",
+            "physical": {
+                "dimensions": [260, 260, 300]
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 189,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 189],
+                            "name": "intensity"
+                        },
+                        {
+                            "range": [190, 250],
+                            "name": "strobe"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "idle"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "4-channel Mode",
+                    "shortName": "4ch",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Intensity"
+                    ]
+                }
+            ]
+        }
+    ]
+}

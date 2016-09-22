@@ -1,0 +1,1808 @@
+{
+    "manufacturers": {
+        "Showtec": {
+            "name": "Showtec",
+            "website": "www.highlite.nl"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Showtec",
+            "name": "Explorer 250 Pro",
+            "shortName": "Explorer250Pro",
+            "comment": "http:  www.highlite.nl index.php highlite silver.download downl",
+            "physical": {
+                "dimensions": [400, 400, 500],
+                "weight": 25,
+                "power": 500
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "% Fs-Sl"
+                        }
+                    ]
+                },
+                "Lamp": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [128, 139],
+                            "name": "LampON (>3sRes)",
+                            "center": true
+                        },
+                        {
+                            "range": [140, 229],
+                            "name": "No Function",
+                            "center": true
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "LampOff(>3sRes)",
+                            "center": true
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "No Function",
+                            "center": true
+                        }
+                    ]
+                },
+                "Color1": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "open"
+                        },
+                        {
+                            "range": [15, 31],
+                            "name": "Red",
+                            "color": "#ff0000",
+                            "center": true
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Yellow",
+                            "color": "#ffff00",
+                            "center": true
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Magenta",
+                            "color": "#ca1f7b",
+                            "center": true
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Green",
+                            "color": "#00ff00",
+                            "center": true
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Orange",
+                            "color": "#ff7f00",
+                            "center": true
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Blue",
+                            "color": "#0000ff",
+                            "center": true
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Pink",
+                            "color": "#ffc0cb",
+                            "center": true
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "rainbow_cw S-F"
+                        }
+                    ]
+                },
+                "Stat.Gobo Color": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 36],
+                            "name": "open"
+                        },
+                        {
+                            "range": [37, 73],
+                            "name": "Gobo1",
+                            "center": true
+                        },
+                        {
+                            "range": [74, 110],
+                            "name": "Gobo2",
+                            "center": true
+                        },
+                        {
+                            "range": [111, 147],
+                            "name": "Gobo3 Color",
+                            "center": true
+                        },
+                        {
+                            "range": [148, 184],
+                            "name": "Light Orange",
+                            "center": true
+                        },
+                        {
+                            "range": [185, 221],
+                            "name": "Pale Purple",
+                            "center": true
+                        },
+                        {
+                            "range": [222, 255],
+                            "name": "Light Blue",
+                            "color": "#add8e6",
+                            "center": true
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "open"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "3 facet Prism",
+                            "center": true
+                        }
+                    ]
+                },
+                "Prism rot": {
+                    "type": "Prism",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "stop"
+                        },
+                        {
+                            "range": [5, 127],
+                            "name": "rotate_cw S-F"
+                        },
+                        {
+                            "range": [128, 132],
+                            "name": "stop"
+                        },
+                        {
+                            "range": [133, 255],
+                            "name": "rotate_ccw S-F"
+                        }
+                    ]
+                },
+                "Rot Gobo": {
+                    "type": "Gobo",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "open",
+                            "center": true
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Gobo1 (Glas)",
+                            "center": true
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Gobo2 (Glas)",
+                            "center": true
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Gobo3 (Glas)",
+                            "center": true
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Gobo4",
+                            "center": true
+                        },
+                        {
+                            "range": [160, 223],
+                            "name": "Gobo5",
+                            "center": true
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "rot wheel S-F",
+                            "center": true
+                        }
+                    ]
+                },
+                "Gobo ind/rot": {
+                    "type": "Gobo",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 60],
+                            "name": "Index 0-540"
+                        },
+                        {
+                            "range": [61, 158],
+                            "name": "rot cw S-F"
+                        },
+                        {
+                            "range": [159, 255],
+                            "name": "rot ccw S-F"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "15deg"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "18deg"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "21deg"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "24deg"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "26deg"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Frost",
+                            "color": "#edf5dd",
+                            "center": true
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "UV-Filter",
+                            "center": true
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "15deg correctio"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "18deg correctio"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "21deg correctio"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "24deg correctio"
+                        },
+                        {
+                            "range": [208, 223],
+                            "name": "26deg correctio"
+                        },
+                        {
+                            "range": [224, 239],
+                            "name": "Frost",
+                            "color": "#edf5dd",
+                            "center": true
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "UV-Filter",
+                            "center": true
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "closed",
+                            "center": true
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "open",
+                            "center": true
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "strobe"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "open"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "pulse_o"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "pulse_c"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "random"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "open"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "16-channel Mode",
+                    "shortName": "16ch",
+                    "channels": [
+                        "Pan",
+                        null,
+                        "Tilt",
+                        "Tilt fine",
+                        "Speed",
+                        "Lamp",
+                        "Color1",
+                        "Stat.Gobo Color",
+                        "Prism",
+                        "Prism rot",
+                        "Rot Gobo",
+                        "Gobo ind/rot",
+                        "Zoom",
+                        "Focus",
+                        "Shutter",
+                        "Intensity"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Showtec",
+            "name": "Indigo 4500 Advanced",
+            "shortName": "Indigo4500Advanced",
+            "comment": "http://www.highlite.nl/highlite/silver.econtent/catalog/highlite/entertainment_products/showtec/lighteffects/movingheads/indigo_4500",
+            "physical": {
+                "dimensions": [295, 290, 485],
+                "weight": 14,
+                "power": 60
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "P/T speed": {
+                    "type": "Speed",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "P+T Speed"
+                        }
+                    ]
+                },
+                "Colorwheel": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 16],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [17, 33],
+                            "name": "Red",
+                            "color": "#ff0000",
+                            "center": true
+                        },
+                        {
+                            "range": [34, 50],
+                            "name": "Yellow",
+                            "color": "#ffff00",
+                            "center": true
+                        },
+                        {
+                            "range": [51, 67],
+                            "name": "Magenta",
+                            "color": "#ca1f7b",
+                            "center": true
+                        },
+                        {
+                            "range": [68, 84],
+                            "name": "Green",
+                            "color": "#00ff00",
+                            "center": true
+                        },
+                        {
+                            "range": [85, 101],
+                            "name": "Orange",
+                            "color": "#ff7f00",
+                            "center": true
+                        },
+                        {
+                            "range": [102, 118],
+                            "name": "Blue",
+                            "color": "#0000ff",
+                            "center": true
+                        },
+                        {
+                            "range": [119, 135],
+                            "name": "Lite Blue",
+                            "center": true
+                        },
+                        {
+                            "range": [136, 152],
+                            "name": "Light Green",
+                            "color": "#90ee90",
+                            "center": true
+                        },
+                        {
+                            "range": [153, 255],
+                            "name": "Backwards"
+                        }
+                    ]
+                },
+                "Stat Gobo Wheel": {
+                    "type": "Gobo",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "open",
+                            "center": true
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Gobo1 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Gobo2 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Gobo3 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Gobo4 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Gobo5 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Gobo6 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Gobo7 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Gobo8 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Gobo9 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [100, 114],
+                            "name": "Gobo9 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [115, 129],
+                            "name": "Gobo8 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [130, 144],
+                            "name": "Gobo7 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [145, 159],
+                            "name": "Gobo6 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [160, 174],
+                            "name": "Gobo5 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [175, 189],
+                            "name": "Gobo4 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [190, 204],
+                            "name": "Gobo3 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [205, 219],
+                            "name": "Gobo2 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [220, 234],
+                            "name": "Gobo1 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [235, 255],
+                            "name": "Backwards ",
+                            "center": true
+                        }
+                    ]
+                },
+                "Rot Gobo Wheel": {
+                    "type": "Gobo",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "open",
+                            "center": true
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Gobo1 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Gobo2 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Gobo3 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Gobo4 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Gobo5 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Gobo6 Glass",
+                            "center": true
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Gobo7 Glass",
+                            "center": true
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Gobo7 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Gobo6 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Gobo5 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Gobo4 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Gobo3 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "Gobo2 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Gobo1 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [220, 255],
+                            "name": "Forwards",
+                            "center": true
+                        }
+                    ]
+                },
+                "Gobo Rot": {
+                    "type": "Gobo",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 60],
+                            "name": "Index"
+                        },
+                        {
+                            "range": [61, 158],
+                            "name": "Rot cw S-F"
+                        },
+                        {
+                            "range": [159, 255],
+                            "name": "Rot ccw S-F"
+                        }
+                    ]
+                },
+                "Prism Rot": {
+                    "type": "Prism",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [5, 127],
+                            "name": "Rotate_ccw S-F"
+                        },
+                        {
+                            "range": [128, 132],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [133, 255],
+                            "name": "Rotate_ccw S-F"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Closed",
+                            "center": true
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Open",
+                            "center": true
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse-Effect"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "random"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "open"
+                        }
+                    ]
+                },
+                "Channel Funct": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "No Function",
+                            "center": true
+                        },
+                        {
+                            "range": [20, 39],
+                            "name": "Blackout P+T",
+                            "center": true
+                        },
+                        {
+                            "range": [40, 59],
+                            "name": "Disable Blackou",
+                            "center": true
+                        },
+                        {
+                            "range": [60, 79],
+                            "name": "Auto 1",
+                            "center": true
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Auto 2",
+                            "center": true
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Sound 1",
+                            "center": true
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Sound 2 ",
+                            "center": true
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Custom",
+                            "center": true
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Test",
+                            "center": true
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "No Function",
+                            "center": true
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Reset",
+                            "center": true
+                        },
+                        {
+                            "range": [220, 255],
+                            "name": "No Function",
+                            "center": true
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "14-channel Mode",
+                    "shortName": "14ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "P/T speed",
+                        "Colorwheel",
+                        "Stat Gobo Wheel",
+                        "Rot Gobo Wheel",
+                        "Gobo Rot",
+                        "Prism Rot",
+                        "Focus",
+                        "Intensity",
+                        "Shutter",
+                        "Channel Funct"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Showtec",
+            "name": "Indigo 4500 Basic",
+            "shortName": "Indigo4500Basic",
+            "comment": "http://www.highlite.nl/highlite/silver.econtent/catalog/highlite/entertainment_products/showtec/lighteffects/movingheads/indigo_4500",
+            "physical": {
+                "dimensions": [295, 290, 485],
+                "weight": 14,
+                "power": 60
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 32768,
+                    "highlightValue": 65535,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 32768,
+                    "highlightValue": 65535,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Colorwheel": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 16],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [17, 33],
+                            "name": "Red",
+                            "color": "#ff0000",
+                            "center": true
+                        },
+                        {
+                            "range": [34, 50],
+                            "name": "Yellow",
+                            "color": "#ffff00",
+                            "center": true
+                        },
+                        {
+                            "range": [51, 67],
+                            "name": "Magenta",
+                            "color": "#ca1f7b",
+                            "center": true
+                        },
+                        {
+                            "range": [68, 84],
+                            "name": "Green",
+                            "color": "#00ff00",
+                            "center": true
+                        },
+                        {
+                            "range": [85, 101],
+                            "name": "Orange",
+                            "color": "#ff7f00",
+                            "center": true
+                        },
+                        {
+                            "range": [102, 118],
+                            "name": "Blue",
+                            "color": "#0000ff",
+                            "center": true
+                        },
+                        {
+                            "range": [119, 135],
+                            "name": "Lite Blue",
+                            "center": true
+                        },
+                        {
+                            "range": [136, 152],
+                            "name": "Light Green",
+                            "color": "#90ee90",
+                            "center": true
+                        },
+                        {
+                            "range": [153, 255],
+                            "name": "Backwards"
+                        }
+                    ]
+                },
+                "Stat Gobo Wheel": {
+                    "type": "Gobo",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "open",
+                            "center": true
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Gobo1 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Gobo2 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Gobo3 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Gobo4 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Gobo5 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Gobo6 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Gobo7 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Gobo8 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Gobo9 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [100, 114],
+                            "name": "Gobo9 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [115, 129],
+                            "name": "Gobo8 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [130, 144],
+                            "name": "Gobo7 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [145, 159],
+                            "name": "Gobo6 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [160, 174],
+                            "name": "Gobo5 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [175, 189],
+                            "name": "Gobo4 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [190, 204],
+                            "name": "Gobo3 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [205, 219],
+                            "name": "Gobo2 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [220, 234],
+                            "name": "Gobo1 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [235, 255],
+                            "name": "Backwards ",
+                            "center": true
+                        }
+                    ]
+                },
+                "Rot Gobo Wheel": {
+                    "type": "Gobo",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "open",
+                            "center": true
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Gobo1 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Gobo2 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Gobo3 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Gobo4 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Gobo5 Metal",
+                            "center": true
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Gobo6 Glass",
+                            "center": true
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Gobo7 Glass",
+                            "center": true
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Gobo7 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Gobo6 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Gobo5 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Gobo4 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Gobo3 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "Gobo2 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Gobo1 Shake",
+                            "center": true
+                        },
+                        {
+                            "range": [220, 255],
+                            "name": "Forwards",
+                            "center": true
+                        }
+                    ]
+                },
+                "Gobo Rot": {
+                    "type": "Gobo",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 60],
+                            "name": "Index"
+                        },
+                        {
+                            "range": [61, 158],
+                            "name": "Rot cw S-F"
+                        },
+                        {
+                            "range": [159, 255],
+                            "name": "Rot ccw S-F"
+                        }
+                    ]
+                },
+                "Prism Rot": {
+                    "type": "Prism",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [5, 127],
+                            "name": "Rotate_ccw S-F"
+                        },
+                        {
+                            "range": [128, 132],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [133, 255],
+                            "name": "Rotate_ccw S-F"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Closed",
+                            "center": true
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Open",
+                            "center": true
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse-Effect"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "random"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "open"
+                        }
+                    ]
+                },
+                "Channel Funct": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "No Function",
+                            "center": true
+                        },
+                        {
+                            "range": [20, 39],
+                            "name": "Blackout P+T",
+                            "center": true
+                        },
+                        {
+                            "range": [40, 59],
+                            "name": "Disable Blackou",
+                            "center": true
+                        },
+                        {
+                            "range": [60, 79],
+                            "name": "Auto 1",
+                            "center": true
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Auto 2",
+                            "center": true
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Sound 1",
+                            "center": true
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Sound 2 ",
+                            "center": true
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Custom",
+                            "center": true
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Test",
+                            "center": true
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "No Function",
+                            "center": true
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Reset",
+                            "center": true
+                        },
+                        {
+                            "range": [220, 255],
+                            "name": "No Function",
+                            "center": true
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "14-channel Mode",
+                    "shortName": "14ch",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Colorwheel",
+                        "Stat Gobo Wheel",
+                        "Rot Gobo Wheel",
+                        "Gobo Rot",
+                        "Prism Rot",
+                        "Focus",
+                        "Intensity",
+                        "Shutter",
+                        "Channel Funct"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Showtec",
+            "name": "Revolution 250",
+            "shortName": "Revo250",
+            "comment": "cd",
+            "physical": {
+                "dimensions": [430, 460, 400],
+                "weight": 19,
+                "power": 300
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 159],
+                            "name": "dim"
+                        },
+                        {
+                            "range": [160, 253],
+                            "name": "strobe"
+                        },
+                        {
+                            "range": [254, 255],
+                            "name": "open"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 13],
+                            "name": "open"
+                        },
+                        {
+                            "range": [14, 25],
+                            "name": "blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [26, 38],
+                            "name": "green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [39, 51],
+                            "name": "pink",
+                            "color": "#ffc0cb"
+                        },
+                        {
+                            "range": [52, 63],
+                            "name": "yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [64, 77],
+                            "name": "violet",
+                            "color": "#7f00ff"
+                        },
+                        {
+                            "range": [78, 89],
+                            "name": "red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [90, 102],
+                            "name": "UV"
+                        },
+                        {
+                            "range": [103, 115],
+                            "name": "dark blue",
+                            "color": "#00008b"
+                        },
+                        {
+                            "range": [116, 127],
+                            "name": "orange",
+                            "color": "#ff7f00"
+                        },
+                        {
+                            "range": [128, 141],
+                            "name": "bright blue"
+                        },
+                        {
+                            "range": [142, 153],
+                            "name": "CTO"
+                        },
+                        {
+                            "range": [154, 202],
+                            "name": ">>"
+                        },
+                        {
+                            "range": [203, 206],
+                            "name": "stop"
+                        },
+                        {
+                            "range": [207, 255],
+                            "name": "<<"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 23],
+                            "name": "open"
+                        },
+                        {
+                            "range": [24, 47],
+                            "name": "slot1"
+                        },
+                        {
+                            "range": [48, 71],
+                            "name": "slot2"
+                        },
+                        {
+                            "range": [72, 95],
+                            "name": "slot3"
+                        },
+                        {
+                            "range": [96, 119],
+                            "name": "slot4"
+                        },
+                        {
+                            "range": [120, 143],
+                            "name": "slot5"
+                        },
+                        {
+                            "range": [144, 167],
+                            "name": "slot6"
+                        },
+                        {
+                            "range": [168, 255],
+                            "name": ">>"
+                        }
+                    ]
+                },
+                "Gobo rot.": {
+                    "type": "Gobo",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "ind."
+                        },
+                        {
+                            "range": [128, 190],
+                            "name": ">>"
+                        },
+                        {
+                            "range": [191, 192],
+                            "name": "stop"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "<<"
+                        }
+                    ]
+                },
+                "Prisma": {
+                    "type": "Prism",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "open"
+                        },
+                        {
+                            "range": [2, 7],
+                            "name": "prisma"
+                        },
+                        {
+                            "range": [8, 127],
+                            "name": "<<"
+                        },
+                        {
+                            "range": [128, 133],
+                            "name": "stop"
+                        },
+                        {
+                            "range": [134, 253],
+                            "name": ">>"
+                        },
+                        {
+                            "range": [254, 255],
+                            "name": "stop"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "defaultValue": 128,
+                    "crossfade": true
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "crossfade": true
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "crossfade": true
+                },
+                "Pan rot.": {
+                    "type": "Pan",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [4, 127],
+                            "name": ">>"
+                        },
+                        {
+                            "range": [128, 131],
+                            "name": "stop"
+                        },
+                        {
+                            "range": [132, 255],
+                            "name": "<<"
+                        }
+                    ]
+                },
+                "Tilt rot.": {
+                    "type": "Tilt",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [4, 127],
+                            "name": ">>"
+                        },
+                        {
+                            "range": [128, 131],
+                            "name": "stop"
+                        },
+                        {
+                            "range": [132, 255],
+                            "name": "<<"
+                        }
+                    ]
+                },
+                "Reset": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "reset"
+                        }
+                    ]
+                },
+                "Lamp": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 47],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [48, 95],
+                            "name": "on"
+                        },
+                        {
+                            "range": [96, 159],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [160, 207],
+                            "name": "off"
+                        },
+                        {
+                            "range": [208, 255],
+                            "name": "idle"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "12-channel Mode",
+                    "shortName": "12ch",
+                    "channels": [
+                        "Intensity",
+                        "Color",
+                        "Gobo",
+                        "Gobo rot.",
+                        "Prisma",
+                        "Focus",
+                        "Pan",
+                        "Tilt",
+                        "Pan rot.",
+                        "Tilt rot.",
+                        "Reset",
+                        "Lamp"
+                    ]
+                }
+            ]
+        }
+    ]
+}

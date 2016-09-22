@@ -1,0 +1,55 @@
+{
+    "manufacturers": {
+        "Diversitonics": {
+            "name": "Diversitonics",
+            "website": "http://www.diversitronics.com/"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Diversitonics",
+            "name": "DK56QH-DMX",
+            "shortName": "DK56",
+            "comment": "http://www.diversitronics.com/ http://www.feiner-lichttechnik.de/index.php/od-dk56qh-dmx.html Seit 1967 produziert der amerikanische Hersteller Diversitronics hochwertige Xenon-Stroboskope.",
+            "physical": {
+                "dimensions": [200, 200, 240],
+                "weight": 5.5,
+                "power": 3500
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "New Range"
+                        }
+                    ]
+                },
+                "Rate": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "New Range"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "2-channel Mode",
+                    "shortName": "2ch",
+                    "channels": [
+                        "Intensity",
+                        "Rate"
+                    ]
+                }
+            ]
+        }
+    ]
+}

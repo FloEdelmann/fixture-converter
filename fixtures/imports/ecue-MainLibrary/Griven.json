@@ -1,0 +1,59 @@
+{
+    "manufacturers": {
+        "Griven": {
+            "name": "Griven",
+            "website": "http://www.griven.com"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Griven",
+            "name": "Colorado 1800 MK 2",
+            "shortName": "Colorado 1800",
+            "physical": {
+                "dimensions": [650, 650, 650],
+                "weight": 60
+            },
+            "availableChannels": {
+                "Lamp On": {
+                    "type": "Beam"
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "crossfade": true
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "crossfade": true
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "crossfade": true
+                }
+            },
+            "modes": [
+                {
+                    "name": "5-channel Mode",
+                    "shortName": "5ch",
+                    "channels": [
+                        "Lamp On",
+                        "Dimmer",
+                        "Yellow",
+                        "Cyan",
+                        "Magenta"
+                    ]
+                }
+            ]
+        }
+    ]
+}

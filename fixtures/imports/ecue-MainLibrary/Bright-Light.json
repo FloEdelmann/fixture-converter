@@ -1,0 +1,264 @@
+{
+    "manufacturers": {
+        "Bright Light": {
+            "name": "Bright Light"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Bright Light",
+            "name": "Spot 7",
+            "shortName": "Spot 7",
+            "physical": {
+                "dimensions": [70, 70, 160],
+                "weight": 0.4,
+                "power": 13
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Clr Macro": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 210],
+                            "name": "Colors"
+                        },
+                        {
+                            "range": [211, 215],
+                            "name": "3200K"
+                        },
+                        {
+                            "range": [216, 220],
+                            "name": "3400K"
+                        },
+                        {
+                            "range": [221, 225],
+                            "name": "4200K"
+                        },
+                        {
+                            "range": [226, 230],
+                            "name": "4900K"
+                        },
+                        {
+                            "range": [231, 235],
+                            "name": "5600K"
+                        },
+                        {
+                            "range": [236, 240],
+                            "name": "5900K"
+                        },
+                        {
+                            "range": [241, 245],
+                            "name": "6500K"
+                        },
+                        {
+                            "range": [246, 250],
+                            "name": "7200K"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "8500K"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "crossfade": true
+                },
+                "Auto": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Auto Speed": {
+                    "type": "Speed",
+                    "crossfade": true
+                }
+            },
+            "modes": [
+                {
+                    "name": "9-channel Mode",
+                    "shortName": "9ch",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Clr Macro",
+                        "Strobe",
+                        "Auto",
+                        "Auto Speed"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Bright Light",
+            "name": "Wash LED 49",
+            "shortName": "Wash LED 49",
+            "comment": "LED Moving Head",
+            "physical": {
+                "dimensions": [400, 400, 400],
+                "weight": 9,
+                "power": 120
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "highlightValue": 128,
+                    "crossfade": true
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "highlightValue": 128,
+                    "crossfade": true
+                },
+                "PT Speed": {
+                    "type": "Speed",
+                    "crossfade": true
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "White /Mac Spd": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "crossfade": true
+                },
+                "Macro": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Close",
+                            "center": true
+                        },
+                        {
+                            "range": [6, 240],
+                            "name": "RGBW"
+                        },
+                        {
+                            "range": [241, 250],
+                            "name": "Auto"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "White",
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "crossfade": true
+                },
+                "Control": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Normal"
+                        },
+                        {
+                            "range": [20, 39],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [40, 59],
+                            "name": "Auto1"
+                        },
+                        {
+                            "range": [60, 79],
+                            "name": "Auto2"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Sound1"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Sound2"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Custom"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "11-channel Mode",
+                    "shortName": "11ch",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "PT Speed",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White /Mac Spd",
+                        "Macro",
+                        "Dimmer",
+                        "Strobe",
+                        "Control"
+                    ]
+                }
+            ]
+        }
+    ]
+}

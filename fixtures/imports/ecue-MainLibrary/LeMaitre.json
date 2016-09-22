@@ -1,0 +1,41 @@
+{
+    "manufacturers": {
+        "LeMaitre": {
+            "name": "LeMaitre",
+            "website": "http://www.lemaitre.co.uk/"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "LeMaitre",
+            "name": "Radiance",
+            "shortName": "Radiance",
+            "comment": "DMX Control for Hazer",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Haze": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255
+                },
+                "Blower": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255
+                }
+            },
+            "modes": [
+                {
+                    "name": "2-channel Mode",
+                    "shortName": "2ch",
+                    "channels": [
+                        "Haze",
+                        "Blower"
+                    ]
+                }
+            ]
+        }
+    ]
+}

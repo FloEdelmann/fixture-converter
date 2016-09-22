@@ -1,0 +1,245 @@
+{
+    "manufacturers": {
+        "Publitec": {
+            "name": "Publitec",
+            "website": "http://www.publitec.tv"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Publitec",
+            "name": "BeaMover 40",
+            "shortName": "Bea40",
+            "comment": "http://www.beamover.tv/de/  http://www.beamover.tv/de/attachments/023_beaMover%2040-50-55%20DMX.pdf",
+            "physical": {
+                "dimensions": [954, 954, 1024]
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Signal": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 84],
+                            "name": "Slot 1",
+                            "center": true
+                        },
+                        {
+                            "range": [85, 169],
+                            "name": "Slot 2",
+                            "center": true
+                        },
+                        {
+                            "range": [170, 255],
+                            "name": "Slot 3",
+                            "center": true
+                        }
+                    ]
+                },
+                "Imgage": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "inv.off/rear.of",
+                            "center": true
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "inv.off/rear.on",
+                            "center": true
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "inv.on/rear.off",
+                            "center": true
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "inv.on/rear.on",
+                            "center": true
+                        }
+                    ]
+                },
+                "Trapezoid_vert": {
+                    "type": "Beam",
+                    "defaultValue": 31,
+                    "highlightValue": 31,
+                    "capabilities": [
+                        {
+                            "range": [0, 64],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Trapezoid_hor": {
+                    "type": "Beam",
+                    "defaultValue": 14,
+                    "highlightValue": 14,
+                    "capabilities": [
+                        {
+                            "range": [0, 28],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Mute on"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Shutter"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Beam",
+                    "defaultValue": 100,
+                    "highlightValue": 100,
+                    "capabilities": [
+                        {
+                            "range": [0, 99],
+                            "name": "nofunction"
+                        },
+                        {
+                            "range": [100, 100],
+                            "name": "Power on"
+                        },
+                        {
+                            "range": [101, 199],
+                            "name": "nofunction"
+                        },
+                        {
+                            "range": [200, 200],
+                            "name": "Power off"
+                        },
+                        {
+                            "range": [201, 201],
+                            "name": "nofunction"
+                        },
+                        {
+                            "range": [202, 202],
+                            "name": "reset servo"
+                        },
+                        {
+                            "range": [203, 203],
+                            "name": "reset trapezoid"
+                        },
+                        {
+                            "range": [204, 255],
+                            "name": "nofunction"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "12-channel Mode",
+                    "shortName": "12ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Focus",
+                        "Zoom",
+                        "Signal",
+                        "Imgage",
+                        "Trapezoid_vert",
+                        "Trapezoid_hor",
+                        "Shutter",
+                        "Control"
+                    ]
+                }
+            ]
+        }
+    ]
+}

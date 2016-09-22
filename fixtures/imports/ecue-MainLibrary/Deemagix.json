@@ -1,0 +1,1313 @@
+{
+    "manufacturers": {
+        "Deemagix": {
+            "name": "Deemagix",
+            "website": "http://www.laseranimation.com/products/deemag_d.html"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Deemagix",
+            "name": "DaeMoniX",
+            "shortName": "DaeMoniX",
+            "comment": "control Lasershow like Moving Head",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 198,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [1, 198],
+                            "name": "%"
+                        },
+                        {
+                            "range": [216, 228],
+                            "name": "Pulse opening"
+                        },
+                        {
+                            "range": [229, 241],
+                            "name": "Pulse closing"
+                        },
+                        {
+                            "range": [242, 246],
+                            "name": "Random pulse op"
+                        },
+                        {
+                            "range": [249, 253],
+                            "name": "Random pulse cl"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Wheel Select": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 253],
+                            "name": "Wheels"
+                        },
+                        {
+                            "range": [254, 254],
+                            "name": "Test Picture"
+                        }
+                    ]
+                },
+                "Wheel Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 24],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [25, 49],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [50, 75],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [76, 100],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [101, 126],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [127, 151],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [152, 177],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [178, 202],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [203, 228],
+                            "name": "Gobo 9"
+                        },
+                        {
+                            "range": [229, 255],
+                            "name": "Gobo 10"
+                        }
+                    ]
+                },
+                "Effect Move": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 121],
+                            "name": "%"
+                        },
+                        {
+                            "range": [122, 182],
+                            "name": "Saw"
+                        },
+                        {
+                            "range": [183, 192],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "Triangle"
+                        }
+                    ]
+                },
+                "Effect Rotation": {
+                    "type": "Effect",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 121],
+                            "name": "0"
+                        },
+                        {
+                            "range": [122, 182],
+                            "name": "Saw"
+                        },
+                        {
+                            "range": [183, 192],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "Triangle"
+                        }
+                    ]
+                },
+                "Rotation X": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 126],
+                            "name": "0"
+                        },
+                        {
+                            "range": [127, 190],
+                            "name": "Continous =>"
+                        },
+                        {
+                            "range": [191, 192],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "Continous <="
+                        }
+                    ]
+                },
+                "Rotation Y": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 126],
+                            "name": "0"
+                        },
+                        {
+                            "range": [127, 190],
+                            "name": "Continous =>"
+                        },
+                        {
+                            "range": [191, 192],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "Continous <="
+                        }
+                    ]
+                },
+                "Rotation Z": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 126],
+                            "name": "0"
+                        },
+                        {
+                            "range": [127, 190],
+                            "name": "Continous =>"
+                        },
+                        {
+                            "range": [191, 192],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "Continous <="
+                        }
+                    ]
+                },
+                "Zoom X": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Size"
+                        }
+                    ]
+                },
+                "Zoom Y": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Size"
+                        }
+                    ]
+                },
+                "Zoom Z": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Size"
+                        }
+                    ]
+                },
+                "Effects": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 24],
+                            "name": "No Effect"
+                        },
+                        {
+                            "range": [25, 49],
+                            "name": "Color Cycle"
+                        },
+                        {
+                            "range": [50, 74],
+                            "name": "Pattern"
+                        },
+                        {
+                            "range": [75, 99],
+                            "name": "Visible Mask"
+                        },
+                        {
+                            "range": [100, 126],
+                            "name": "Invisible Mask"
+                        }
+                    ]
+                },
+                "Effect Par 1": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [50, 60],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [61, 70],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [71, 80],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [81, 90],
+                            "name": "Gobo 9"
+                        },
+                        {
+                            "range": [91, 100],
+                            "name": "Gobo 10"
+                        }
+                    ]
+                },
+                "Effect Par 2": {
+                    "type": "Effect",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Effect Par 3": {
+                    "type": "Effect",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Effect Par 4": {
+                    "type": "Effect",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Effect Par 5": {
+                    "type": "Effect",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Effect Par 6": {
+                    "type": "Effect",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Frame Top": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Frame Left": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Frame Right": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Frame Bottom": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Size Horizontal": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Size Vertical": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 127,
+                    "highlightValue": 127,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 127,
+                    "highlightValue": 127,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "31-channel Mode",
+                    "shortName": "31ch",
+                    "channels": [
+                        "Intensity",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "Wheel Select",
+                        "Wheel Gobo",
+                        "Effect Move",
+                        "Effect Rotation",
+                        "Rotation X",
+                        "Rotation Y",
+                        "Rotation Z",
+                        "Zoom X",
+                        "Zoom Y",
+                        "Zoom Z",
+                        "Effects",
+                        "Effect Par 1",
+                        "Effect Par 2",
+                        "Effect Par 3",
+                        "Effect Par 4",
+                        "Effect Par 5",
+                        "Effect Par 6",
+                        "Frame Top",
+                        "Frame Left",
+                        "Frame Right",
+                        "Frame Bottom",
+                        "Size Horizontal",
+                        "Size Vertical",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Deemagix",
+            "name": "Deemagix",
+            "shortName": "Deemagix",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "none"
+                        },
+                        {
+                            "range": [2, 3],
+                            "name": "gobo1"
+                        },
+                        {
+                            "range": [4, 5],
+                            "name": "gobo2"
+                        },
+                        {
+                            "range": [6, 7],
+                            "name": "gobo3"
+                        },
+                        {
+                            "range": [8, 9],
+                            "name": "gobo4"
+                        },
+                        {
+                            "range": [10, 11],
+                            "name": "gobo5"
+                        },
+                        {
+                            "range": [12, 13],
+                            "name": "gobo6"
+                        },
+                        {
+                            "range": [14, 15],
+                            "name": "gobo7"
+                        },
+                        {
+                            "range": [16, 17],
+                            "name": "gobo8"
+                        },
+                        {
+                            "range": [18, 19],
+                            "name": "gobo9"
+                        },
+                        {
+                            "range": [20, 21],
+                            "name": "gobo10"
+                        },
+                        {
+                            "range": [22, 23],
+                            "name": "gobo11"
+                        },
+                        {
+                            "range": [24, 25],
+                            "name": "gobo12"
+                        },
+                        {
+                            "range": [26, 27],
+                            "name": "gobo13"
+                        },
+                        {
+                            "range": [28, 29],
+                            "name": "gobo14"
+                        },
+                        {
+                            "range": [30, 31],
+                            "name": "gobo15"
+                        },
+                        {
+                            "range": [32, 33],
+                            "name": "gobo16"
+                        },
+                        {
+                            "range": [34, 35],
+                            "name": "gobo17"
+                        },
+                        {
+                            "range": [36, 37],
+                            "name": "gobo18"
+                        },
+                        {
+                            "range": [38, 39],
+                            "name": "gobo19"
+                        },
+                        {
+                            "range": [40, 41],
+                            "name": "gobo20"
+                        },
+                        {
+                            "range": [42, 43],
+                            "name": "gobo21"
+                        },
+                        {
+                            "range": [44, 45],
+                            "name": "gobo22"
+                        },
+                        {
+                            "range": [46, 47],
+                            "name": "gobo23"
+                        },
+                        {
+                            "range": [48, 49],
+                            "name": "gobo24"
+                        },
+                        {
+                            "range": [50, 51],
+                            "name": "gobo25"
+                        },
+                        {
+                            "range": [52, 53],
+                            "name": "gobo26"
+                        },
+                        {
+                            "range": [54, 55],
+                            "name": "gobo27"
+                        },
+                        {
+                            "range": [56, 57],
+                            "name": "gobo28"
+                        },
+                        {
+                            "range": [58, 59],
+                            "name": "gobo29"
+                        },
+                        {
+                            "range": [60, 61],
+                            "name": "gobo30"
+                        },
+                        {
+                            "range": [62, 63],
+                            "name": "gobo31"
+                        },
+                        {
+                            "range": [64, 65],
+                            "name": "gobo32"
+                        },
+                        {
+                            "range": [66, 223],
+                            "name": "reserved"
+                        },
+                        {
+                            "range": [224, 225],
+                            "name": "animation1"
+                        },
+                        {
+                            "range": [226, 227],
+                            "name": "animation2"
+                        },
+                        {
+                            "range": [228, 229],
+                            "name": "animation3"
+                        },
+                        {
+                            "range": [230, 231],
+                            "name": "text1"
+                        },
+                        {
+                            "range": [232, 233],
+                            "name": "text2"
+                        },
+                        {
+                            "range": [234, 235],
+                            "name": "text3"
+                        },
+                        {
+                            "range": [236, 237],
+                            "name": "text4"
+                        },
+                        {
+                            "range": [238, 239],
+                            "name": "text5"
+                        },
+                        {
+                            "range": [240, 241],
+                            "name": "text6"
+                        },
+                        {
+                            "range": [242, 243],
+                            "name": "text7"
+                        },
+                        {
+                            "range": [244, 245],
+                            "name": "text8"
+                        },
+                        {
+                            "range": [246, 247],
+                            "name": "text9"
+                        },
+                        {
+                            "range": [248, 249],
+                            "name": "text10"
+                        },
+                        {
+                            "range": [250, 251],
+                            "name": "testpicture1"
+                        },
+                        {
+                            "range": [252, 253],
+                            "name": "logo"
+                        },
+                        {
+                            "range": [254, 255],
+                            "name": "testpicture2"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "defaultValue": 32,
+                    "highlightValue": 32,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "open"
+                        },
+                        {
+                            "range": [64, 255],
+                            "name": "strobe"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 185],
+                            "name": "%"
+                        },
+                        {
+                            "range": [186, 255],
+                            "name": "colorfade"
+                        }
+                    ]
+                },
+                "SizeG": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Sizeall": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 127,
+                    "highlightValue": 127,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 127,
+                    "highlightValue": 127,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Ratio": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Y-Size"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "X-Size"
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "open"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "circle"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "square"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "left-right"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "up-down"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "default"
+                        },
+                        {
+                            "range": [1, 2],
+                            "name": "circle"
+                        },
+                        {
+                            "range": [3, 4],
+                            "name": "square"
+                        },
+                        {
+                            "range": [5, 6],
+                            "name": "triangle"
+                        },
+                        {
+                            "range": [7, 8],
+                            "name": "star1"
+                        },
+                        {
+                            "range": [9, 10],
+                            "name": "star2"
+                        },
+                        {
+                            "range": [11, 12],
+                            "name": "star3"
+                        },
+                        {
+                            "range": [13, 14],
+                            "name": "star4"
+                        },
+                        {
+                            "range": [15, 16],
+                            "name": "star5"
+                        },
+                        {
+                            "range": [17, 18],
+                            "name": "spiral1"
+                        },
+                        {
+                            "range": [19, 20],
+                            "name": "spiral2"
+                        },
+                        {
+                            "range": [21, 22],
+                            "name": "spiral3"
+                        },
+                        {
+                            "range": [23, 24],
+                            "name": "spiral4"
+                        },
+                        {
+                            "range": [25, 26],
+                            "name": "multisquare"
+                        },
+                        {
+                            "range": [27, 28],
+                            "name": "line1"
+                        },
+                        {
+                            "range": [29, 30],
+                            "name": "line2"
+                        },
+                        {
+                            "range": [31, 32],
+                            "name": "2 lines"
+                        },
+                        {
+                            "range": [33, 34],
+                            "name": "3 lines"
+                        },
+                        {
+                            "range": [35, 36],
+                            "name": "multilines"
+                        },
+                        {
+                            "range": [37, 38],
+                            "name": "simple cross"
+                        },
+                        {
+                            "range": [39, 40],
+                            "name": "pointed circle"
+                        },
+                        {
+                            "range": [41, 42],
+                            "name": "multipoint circ"
+                        },
+                        {
+                            "range": [43, 44],
+                            "name": "half circle"
+                        },
+                        {
+                            "range": [45, 46],
+                            "name": "multi circle"
+                        },
+                        {
+                            "range": [47, 48],
+                            "name": "circle blank 1"
+                        },
+                        {
+                            "range": [49, 50],
+                            "name": "circle blank 2"
+                        },
+                        {
+                            "range": [51, 52],
+                            "name": "logo"
+                        },
+                        {
+                            "range": [53, 54],
+                            "name": "saw blade"
+                        },
+                        {
+                            "range": [55, 56],
+                            "name": "cross outline"
+                        },
+                        {
+                            "range": [57, 58],
+                            "name": "cross maltese"
+                        },
+                        {
+                            "range": [59, 60],
+                            "name": "ornament 1"
+                        },
+                        {
+                            "range": [61, 62],
+                            "name": "ornament 2"
+                        },
+                        {
+                            "range": [62, 64],
+                            "name": "ornament 3"
+                        },
+                        {
+                            "range": [65, 66],
+                            "name": "ornament 4"
+                        },
+                        {
+                            "range": [67, 68],
+                            "name": "snowflake"
+                        },
+                        {
+                            "range": [69, 70],
+                            "name": "crystal 1"
+                        },
+                        {
+                            "range": [71, 72],
+                            "name": "crystal 2"
+                        },
+                        {
+                            "range": [73, 74],
+                            "name": "sun",
+                            "color": "#fbac13"
+                        },
+                        {
+                            "range": [75, 76],
+                            "name": "stars"
+                        },
+                        {
+                            "range": [77, 78],
+                            "name": "polygon"
+                        },
+                        {
+                            "range": [79, 80],
+                            "name": "cushion"
+                        },
+                        {
+                            "range": [81, 82],
+                            "name": "arrow up"
+                        },
+                        {
+                            "range": [83, 84],
+                            "name": "arrow left"
+                        },
+                        {
+                            "range": [85, 86],
+                            "name": "arrow curved"
+                        },
+                        {
+                            "range": [87, 88],
+                            "name": "arrow wavy"
+                        },
+                        {
+                            "range": [89, 90],
+                            "name": "3 arrows"
+                        },
+                        {
+                            "range": [91, 92],
+                            "name": "9 arrows"
+                        },
+                        {
+                            "range": [93, 94],
+                            "name": "9 arrows curved"
+                        },
+                        {
+                            "range": [95, 96],
+                            "name": "splash 1"
+                        },
+                        {
+                            "range": [97, 98],
+                            "name": "splash 2"
+                        },
+                        {
+                            "range": [99, 100],
+                            "name": "ornament 6"
+                        },
+                        {
+                            "range": [101, 102],
+                            "name": "ornament 7"
+                        },
+                        {
+                            "range": [103, 104],
+                            "name": "star"
+                        },
+                        {
+                            "range": [105, 106],
+                            "name": "ornament 8"
+                        },
+                        {
+                            "range": [107, 108],
+                            "name": "ornament 9"
+                        },
+                        {
+                            "range": [109, 110],
+                            "name": "ornament 10"
+                        },
+                        {
+                            "range": [111, 112],
+                            "name": "ornament 11"
+                        },
+                        {
+                            "range": [113, 114],
+                            "name": "ornament 12"
+                        },
+                        {
+                            "range": [115, 116],
+                            "name": "ornament 13"
+                        },
+                        {
+                            "range": [117, 118],
+                            "name": "ornament 14"
+                        },
+                        {
+                            "range": [119, 254],
+                            "name": "reserved"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "testpicture"
+                        }
+                    ]
+                },
+                "Rotation": {
+                    "type": "Beam",
+                    "defaultValue": 127,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "index"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "fast"
+                        },
+                        {
+                            "range": [1, 126],
+                            "name": "%"
+                        },
+                        {
+                            "range": [127, 127],
+                            "name": "slow"
+                        },
+                        {
+                            "range": [128, 254],
+                            "name": "%"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "normal"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "default"
+                        },
+                        {
+                            "range": [1, 127],
+                            "name": "cont"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "autofade"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "multicolor"
+                        }
+                    ]
+                },
+                "Repeat": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "repeats"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "sparkle"
+                        }
+                    ]
+                },
+                "Invert": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "normal"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "invert"
+                        }
+                    ]
+                },
+                "reserved": {
+                    "type": "Beam",
+                    "crossfade": true
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "18-channel Mode",
+                    "shortName": "18ch",
+                    "channels": [
+                        "Effect",
+                        "Shutter",
+                        "Intensity",
+                        "SizeG",
+                        "Sizeall",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Ratio",
+                        "Iris",
+                        "Gobo",
+                        "Rotation",
+                        "Speed",
+                        "Color",
+                        "Repeat",
+                        "Invert",
+                        "reserved"
+                    ]
+                }
+            ]
+        }
+    ]
+}

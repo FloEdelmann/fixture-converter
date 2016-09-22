@@ -1,0 +1,1766 @@
+{
+    "manufacturers": {
+        "Spotlight": {
+            "name": "Spotlight",
+            "comment": "Manufactor from Mailand, Italy with more than 45 Years Experience to develop and build Luminaires. The New GreenLine offers Fresnels, PCs and ZoomProfiles with LEDs. From 25W up to 600W  in the moment.",
+            "website": "www.spotlight.it"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Spotlight",
+            "name": "ARC Beamlight 16bit",
+            "shortName": "ARC Beam",
+            "comment": "80V 1200W beamlight in ARC Yoke with Focus",
+            "physical": {
+                "dimensions": [250, 250, 150],
+                "weight": 30,
+                "power": 1300
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Focus fine": {
+                    "type": "Beam",
+                    "defaultValue": null,
+                    "highlightValue": null
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ],
+                [
+                    "Focus",
+                    "Focus fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "7-channel Mode",
+                    "shortName": "7ch",
+                    "channels": [
+                        "Intensity",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Focus",
+                        "Focus fine"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "ARC Fresnel 250W CCT 8bit",
+            "shortName": "ARCFN250CCT",
+            "comment": "Yoke in 16bit and Fresnel 250W CCT in 8bit",
+            "physical": {
+                "dimensions": [500, 450, 30],
+                "weight": 29,
+                "power": 350
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": null
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "CCT": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 50],
+                            "name": "3000K",
+                            "center": true
+                        },
+                        {
+                            "range": [51, 100],
+                            "name": "3200K",
+                            "center": true
+                        },
+                        {
+                            "range": [101, 150],
+                            "name": "4000K",
+                            "center": true
+                        },
+                        {
+                            "range": [151, 200],
+                            "name": "5600K",
+                            "center": true
+                        },
+                        {
+                            "range": [201, 255],
+                            "name": "6500K",
+                            "center": true
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "7-channel Mode",
+                    "shortName": "7ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Intensity",
+                        "CCT",
+                        "Strobe"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "ARC Fresnel 250W RGBW  8bit",
+            "shortName": "ARCFN250RGBW8",
+            "comment": "Fresnel 250W RGBW in 8bit, Yoke in 16bit",
+            "physical": {
+                "dimensions": [500, 450, 30],
+                "weight": 29,
+                "power": 350
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": null
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "10-channel Mode",
+                    "shortName": "10ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Intensity",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Strobe"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "ARC Fresnel 250W RGBW + CCT 8bit",
+            "shortName": "ARC250RGBWC8",
+            "comment": "the Yoke in 16bit the Fresnel in 8bit",
+            "physical": {
+                "dimensions": [500, 450, 30],
+                "weight": 29,
+                "power": 350
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": null
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "CCT": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 50],
+                            "name": "2900K",
+                            "center": true
+                        },
+                        {
+                            "range": [51, 100],
+                            "name": "3200K",
+                            "center": true
+                        },
+                        {
+                            "range": [101, 150],
+                            "name": "4000K",
+                            "center": true
+                        },
+                        {
+                            "range": [151, 200],
+                            "name": "5600K",
+                            "center": true
+                        },
+                        {
+                            "range": [201, 255],
+                            "name": "6500K",
+                            "center": true
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "11-channel Mode",
+                    "shortName": "11ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Intensity",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "CCT",
+                        "Strobe"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "ARC Fresnel 250W RGBW 16bit",
+            "shortName": "ARCFN250RGBW",
+            "comment": "Yoke and Fresnel 250W RGBW in 16bit",
+            "physical": {
+                "dimensions": [500, 450, 30],
+                "weight": 29,
+                "power": 350
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": null
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Red fine": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Green fine": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Blue fine": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "White fine": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ],
+                [
+                    "Red",
+                    "Red fine"
+                ],
+                [
+                    "Green",
+                    "Green fine"
+                ],
+                [
+                    "Blue",
+                    "Blue fine"
+                ],
+                [
+                    "White",
+                    "White fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "14-channel Mode",
+                    "shortName": "14ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Intensity",
+                        "Red",
+                        "Red fine",
+                        "Green",
+                        "Green fine",
+                        "Blue",
+                        "Blue fine",
+                        "White",
+                        "White fine",
+                        "Strobe"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "ARC Fresnel 250W TW",
+            "shortName": "ARCFN250TW",
+            "comment": "Yoke in 16bit and Fresnel 250W TW (Tunable White) in 8bit",
+            "physical": {
+                "dimensions": [500, 450, 30],
+                "weight": 29,
+                "power": 350
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": null
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "CTO": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "3000K",
+                            "center": true
+                        },
+                        {
+                            "range": [11, 60],
+                            "name": "3000-3200",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [61, 70],
+                            "name": "3200K",
+                            "center": true
+                        },
+                        {
+                            "range": [71, 120],
+                            "name": "3200-4000",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [121, 130],
+                            "name": "4000K",
+                            "center": true
+                        },
+                        {
+                            "range": [131, 180],
+                            "name": "4000-5600",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [181, 190],
+                            "name": "5600K",
+                            "center": true
+                        },
+                        {
+                            "range": [191, 240],
+                            "name": "5600-6500",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "6500K",
+                            "center": true
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "7-channel Mode",
+                    "shortName": "7ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Intensity",
+                        "CTO",
+                        "Strobe"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "ARC only Yoke in 16bit",
+            "shortName": "ARC",
+            "comment": "only Pan/Tilt. Yoke for different Fixtures",
+            "physical": {
+                "dimensions": [600, 600, 30],
+                "weight": 20,
+                "power": 100
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": null
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "4-channel Mode",
+                    "shortName": "4ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "Fresnel 250W CCT 8bit",
+            "shortName": "FN250CCT",
+            "comment": "Fresnel 250W CCT in 8bit",
+            "physical": {
+                "dimensions": [500, 450, 30],
+                "weight": 9,
+                "power": 250
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "CCT": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 50],
+                            "name": "3000K",
+                            "center": true
+                        },
+                        {
+                            "range": [51, 100],
+                            "name": "3200K",
+                            "center": true
+                        },
+                        {
+                            "range": [101, 150],
+                            "name": "4000K",
+                            "center": true
+                        },
+                        {
+                            "range": [151, 200],
+                            "name": "5600K",
+                            "center": true
+                        },
+                        {
+                            "range": [201, 255],
+                            "name": "6500K",
+                            "center": true
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-channel Mode",
+                    "shortName": "3ch",
+                    "channels": [
+                        "Intensity",
+                        "CCT",
+                        "Strobe"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "Fresnel 250W CMYW  8bit",
+            "shortName": "FN250CYMW",
+            "comment": "Fresnel 250W RGBW in 8bit",
+            "physical": {
+                "dimensions": [500, 450, 30],
+                "weight": 9,
+                "power": 250
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "modes": [
+                {
+                    "name": "6-channel Mode",
+                    "shortName": "6ch",
+                    "channels": [
+                        "Intensity",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "White",
+                        "Strobe"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "Fresnel 250W HSI 8bit",
+            "shortName": "FN250HSI",
+            "comment": "Fresnel 250W HSI in 8bit",
+            "physical": {
+                "dimensions": [500, 450, 30],
+                "weight": 9,
+                "power": 250
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Hue": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Saturation": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "modes": [
+                {
+                    "name": "4-channel Mode",
+                    "shortName": "4ch",
+                    "channels": [
+                        "Intensity",
+                        "Hue",
+                        "Saturation",
+                        "Strobe"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "Fresnel 250W RGBW  8bit",
+            "shortName": "FN250RGBW8",
+            "comment": "Fresnel 250W RGBW in 8bit",
+            "physical": {
+                "dimensions": [500, 450, 30],
+                "weight": 9,
+                "power": 250
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "modes": [
+                {
+                    "name": "6-channel Mode",
+                    "shortName": "6ch",
+                    "channels": [
+                        "Intensity",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Strobe"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "Fresnel 250W RGBW + CCT 8bit",
+            "shortName": "FN250RGBWC8",
+            "comment": "Fresnel 250W RGBW in 8bit with CCT",
+            "physical": {
+                "dimensions": [500, 450, 30],
+                "weight": 9,
+                "power": 250
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "CCT": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 50],
+                            "name": "2900K",
+                            "center": true
+                        },
+                        {
+                            "range": [51, 100],
+                            "name": "3200K",
+                            "center": true
+                        },
+                        {
+                            "range": [101, 150],
+                            "name": "4000K",
+                            "center": true
+                        },
+                        {
+                            "range": [151, 200],
+                            "name": "5600K",
+                            "center": true
+                        },
+                        {
+                            "range": [201, 255],
+                            "name": "6500K",
+                            "center": true
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "modes": [
+                {
+                    "name": "7-channel Mode",
+                    "shortName": "7ch",
+                    "channels": [
+                        "Intensity",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "CCT",
+                        "Strobe"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "Fresnel 250W RGBW 16bit",
+            "shortName": "FN250RGBW",
+            "comment": "Fresnel 250W RGBW in 16bit",
+            "physical": {
+                "dimensions": [500, 450, 30],
+                "weight": 9,
+                "power": 250
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Red fine": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Green fine": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Blue fine": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "White fine": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Red",
+                    "Red fine"
+                ],
+                [
+                    "Green",
+                    "Green fine"
+                ],
+                [
+                    "Blue",
+                    "Blue fine"
+                ],
+                [
+                    "White",
+                    "White fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "10-channel Mode",
+                    "shortName": "10ch",
+                    "channels": [
+                        "Intensity",
+                        "Red",
+                        "Red fine",
+                        "Green",
+                        "Green fine",
+                        "Blue",
+                        "Blue fine",
+                        "White",
+                        "White fine",
+                        "Strobe"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "Fresnel 250W TW",
+            "shortName": "FN250TW",
+            "comment": "Fresnel 250W TW (Tunable White) in 8bit",
+            "physical": {
+                "dimensions": [500, 450, 30],
+                "weight": 9,
+                "power": 250
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "CTO": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "3000K",
+                            "center": true
+                        },
+                        {
+                            "range": [11, 60],
+                            "name": "3000-3200",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [61, 70],
+                            "name": "3200K",
+                            "center": true
+                        },
+                        {
+                            "range": [71, 120],
+                            "name": "3200-4000",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [121, 130],
+                            "name": "4000K",
+                            "center": true
+                        },
+                        {
+                            "range": [131, 180],
+                            "name": "4000-5600",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [181, 190],
+                            "name": "5600K",
+                            "center": true
+                        },
+                        {
+                            "range": [191, 240],
+                            "name": "5600-6500",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "6500K",
+                            "center": true
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-channel Mode",
+                    "shortName": "3ch",
+                    "channels": [
+                        "Intensity",
+                        "CTO",
+                        "Strobe"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "RGB 25W mini",
+            "shortName": "mini",
+            "physical": {
+                "dimensions": [60, 60, 240],
+                "weight": 2,
+                "power": 25
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "modes": [
+                {
+                    "name": "5-channel Mode",
+                    "shortName": "5ch",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Intensity",
+                        "Strobe"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "Zoomprofile 250W CCT 8bit",
+            "shortName": "PR250CCT",
+            "comment": "Fresnel 250W CCT in 8bit",
+            "physical": {
+                "dimensions": [500, 450, 30],
+                "weight": 9,
+                "power": 250
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "CCT": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 50],
+                            "name": "3000K",
+                            "center": true
+                        },
+                        {
+                            "range": [51, 100],
+                            "name": "3200K",
+                            "center": true
+                        },
+                        {
+                            "range": [101, 150],
+                            "name": "4000K",
+                            "center": true
+                        },
+                        {
+                            "range": [151, 200],
+                            "name": "5600K",
+                            "center": true
+                        },
+                        {
+                            "range": [201, 255],
+                            "name": "6500K",
+                            "center": true
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-channel Mode",
+                    "shortName": "3ch",
+                    "channels": [
+                        "Intensity",
+                        "CCT",
+                        "Strobe"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "Zoomprofile 250W CMYW  8bit",
+            "shortName": "PR250CYMW",
+            "comment": "Fresnel 250W RGBW in 8bit",
+            "physical": {
+                "dimensions": [500, 450, 30],
+                "weight": 9,
+                "power": 250
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "modes": [
+                {
+                    "name": "6-channel Mode",
+                    "shortName": "6ch",
+                    "channels": [
+                        "Intensity",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "White",
+                        "Strobe"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "Zoomprofile 250W HSI 8bit",
+            "shortName": "PR250HSI",
+            "comment": "Fresnel 250W HSI in 8bit",
+            "physical": {
+                "dimensions": [500, 450, 30],
+                "weight": 9,
+                "power": 250
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Hue": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Saturation": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "modes": [
+                {
+                    "name": "4-channel Mode",
+                    "shortName": "4ch",
+                    "channels": [
+                        "Intensity",
+                        "Hue",
+                        "Saturation",
+                        "Strobe"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "Zoomprofile 250W RGBW + CCT 8bit",
+            "shortName": "PR250RGBWC8",
+            "comment": "Zoomprofile250W RGBW in 8bit with CCT",
+            "physical": {
+                "dimensions": [500, 450, 30],
+                "weight": 14,
+                "power": 250
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "CCT": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 50],
+                            "name": "2900K",
+                            "center": true
+                        },
+                        {
+                            "range": [51, 100],
+                            "name": "3200K",
+                            "center": true
+                        },
+                        {
+                            "range": [101, 150],
+                            "name": "4000K",
+                            "center": true
+                        },
+                        {
+                            "range": [151, 200],
+                            "name": "5600K",
+                            "center": true
+                        },
+                        {
+                            "range": [201, 255],
+                            "name": "6500K",
+                            "center": true
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "modes": [
+                {
+                    "name": "7-channel Mode",
+                    "shortName": "7ch",
+                    "channels": [
+                        "Intensity",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "CCT",
+                        "Strobe"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "Zoomprofile 250W RGBW 16bit",
+            "shortName": "PR250RGBW",
+            "comment": "Fresnel 250W RGBW in 16bit",
+            "physical": {
+                "dimensions": [500, 450, 30],
+                "weight": 9,
+                "power": 250
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Red fine": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Green fine": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Blue fine": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "White fine": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Red",
+                    "Red fine"
+                ],
+                [
+                    "Green",
+                    "Green fine"
+                ],
+                [
+                    "Blue",
+                    "Blue fine"
+                ],
+                [
+                    "White",
+                    "White fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "10-channel Mode",
+                    "shortName": "10ch",
+                    "channels": [
+                        "Intensity",
+                        "Red",
+                        "Red fine",
+                        "Green",
+                        "Green fine",
+                        "Blue",
+                        "Blue fine",
+                        "White",
+                        "White fine",
+                        "Strobe"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Spotlight",
+            "name": "Zoomproflle 250W RGBW  8bit",
+            "shortName": "PR250RGBW8",
+            "comment": "Zoomprofile 250W RGBW in 8bit",
+            "physical": {
+                "dimensions": [500, 450, 30],
+                "weight": 14,
+                "power": 250
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Strobe": {
+                    "type": "Strobe"
+                }
+            },
+            "modes": [
+                {
+                    "name": "6-channel Mode",
+                    "shortName": "6ch",
+                    "channels": [
+                        "Intensity",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

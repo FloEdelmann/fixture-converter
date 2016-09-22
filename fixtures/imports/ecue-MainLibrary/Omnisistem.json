@@ -1,0 +1,314 @@
+{
+    "manufacturers": {
+        "Omnisistem": {
+            "name": "Omnisistem",
+            "website": "http://www.omnisistem.com/"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Omnisistem",
+            "name": "PyroFog",
+            "shortName": "PyroFog",
+            "comment": "Smoke maschine",
+            "physical": {
+                "dimensions": [430, 350, 300],
+                "weight": 9,
+                "power": 1500
+            },
+            "availableChannels": {
+                "N/A": {
+                    "type": "Intensity",
+                    "warning": "Please check type!"
+                },
+                "Fog": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Off",
+                            "center": true
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "ON",
+                            "center": true
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "2-channel Mode",
+                    "shortName": "2ch",
+                    "channels": [
+                        "N/A",
+                        "Fog"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Omnisistem",
+            "name": "Stinger",
+            "shortName": "Stinger",
+            "comment": "Laser",
+            "physical": {
+                "dimensions": [300, 270, 610]
+            },
+            "availableChannels": {
+                "Beam": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Off",
+                            "center": true
+                        },
+                        {
+                            "range": [11, 50],
+                            "name": "On",
+                            "center": true
+                        },
+                        {
+                            "range": [51, 90],
+                            "name": "GR/BL On",
+                            "center": true
+                        },
+                        {
+                            "range": [91, 130],
+                            "name": "Red",
+                            "color": "#ff0000",
+                            "center": true
+                        },
+                        {
+                            "range": [131, 170],
+                            "name": "Gr/Rd ON",
+                            "center": true
+                        },
+                        {
+                            "range": [171, 255],
+                            "name": "Off",
+                            "center": true
+                        }
+                    ]
+                },
+                "Clr Control": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true
+                },
+                "Pattern": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 8],
+                            "name": "Off",
+                            "center": true
+                        },
+                        {
+                            "range": [9, 17],
+                            "name": "Beam Chs 1",
+                            "center": true
+                        },
+                        {
+                            "range": [18, 26],
+                            "name": "Split Sky H",
+                            "center": true
+                        },
+                        {
+                            "range": [27, 35],
+                            "name": "Split Sky V",
+                            "center": true
+                        },
+                        {
+                            "range": [36, 44],
+                            "name": "Flat Beam Fan",
+                            "center": true
+                        },
+                        {
+                            "range": [45, 53],
+                            "name": "Beam Fan Rot",
+                            "center": true
+                        },
+                        {
+                            "range": [54, 62],
+                            "name": "2 Beam Fan R",
+                            "center": true
+                        },
+                        {
+                            "range": [63, 71],
+                            "name": "Tight Cone",
+                            "center": true
+                        },
+                        {
+                            "range": [72, 80],
+                            "name": "2 Beam Scan",
+                            "center": true
+                        },
+                        {
+                            "range": [81, 89],
+                            "name": "2 Sky",
+                            "center": true
+                        },
+                        {
+                            "range": [90, 98],
+                            "name": "Bounce Fan",
+                            "center": true
+                        },
+                        {
+                            "range": [99, 107],
+                            "name": "Box Tunnel",
+                            "center": true
+                        },
+                        {
+                            "range": [108, 115],
+                            "name": "Quad Tunnel",
+                            "center": true
+                        },
+                        {
+                            "range": [116, 125],
+                            "name": "Tri Tunnel",
+                            "center": true
+                        },
+                        {
+                            "range": [126, 134],
+                            "name": "V Sky",
+                            "center": true
+                        },
+                        {
+                            "range": [135, 143],
+                            "name": "2 Diag Fans1",
+                            "center": true
+                        },
+                        {
+                            "range": [144, 152],
+                            "name": "2 Diag Fans2",
+                            "center": true
+                        },
+                        {
+                            "range": [153, 161],
+                            "name": "Box Tunnel 2",
+                            "center": true
+                        },
+                        {
+                            "range": [161, 170],
+                            "name": "Quad Tunnel",
+                            "center": true
+                        },
+                        {
+                            "range": [171, 179],
+                            "name": "Rot Fans",
+                            "center": true
+                        },
+                        {
+                            "range": [180, 188],
+                            "name": "2 Cones",
+                            "center": true
+                        },
+                        {
+                            "range": [189, 197],
+                            "name": "Fan Rot",
+                            "center": true
+                        },
+                        {
+                            "range": [198, 206],
+                            "name": "2 Fans SM",
+                            "center": true
+                        },
+                        {
+                            "range": [207, 215],
+                            "name": "2 Fans",
+                            "center": true
+                        },
+                        {
+                            "range": [216, 224],
+                            "name": "Cone",
+                            "center": true
+                        },
+                        {
+                            "range": [225, 233],
+                            "name": "2 Square Rot",
+                            "center": true
+                        },
+                        {
+                            "range": [234, 242],
+                            "name": "Beams 2",
+                            "center": true
+                        },
+                        {
+                            "range": [243, 255],
+                            "name": "Beams 3",
+                            "center": true
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 230],
+                            "name": "Slw-Fst"
+                        },
+                        {
+                            "range": [231, 255],
+                            "name": "Hold",
+                            "center": true
+                        }
+                    ]
+                },
+                "X size": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Y size": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Y offset": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "New Range"
+                        },
+                        {
+                            "range": [14, 53],
+                            "name": "Lower"
+                        },
+                        {
+                            "range": [54, 127],
+                            "name": "Raise"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "255",
+                            "center": true
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "7-channel Mode",
+                    "shortName": "7ch",
+                    "channels": [
+                        "Beam",
+                        "Clr Control",
+                        "Pattern",
+                        "Speed",
+                        "X size",
+                        "Y size",
+                        "Y offset"
+                    ]
+                }
+            ]
+        }
+    ]
+}

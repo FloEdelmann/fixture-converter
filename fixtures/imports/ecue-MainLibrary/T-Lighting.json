@@ -1,0 +1,442 @@
+{
+    "manufacturers": {
+        "T-Lighting": {
+            "name": "T-Lighting",
+            "comment": "??",
+            "website": "http://www.tlighting.com"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "T-Lighting",
+            "name": "T-Lighting 251AR",
+            "shortName": "T251AR",
+            "comment": "Mode 1",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "PAN": {
+                    "type": "Pan",
+                    "defaultValue": 127,
+                    "highlightValue": 127,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "PAN fine": {
+                    "type": "Pan",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "TILT": {
+                    "type": "Tilt",
+                    "defaultValue": 127,
+                    "highlightValue": 127,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "TILT fine": {
+                    "type": "Tilt",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Speed p/t": {
+                    "type": "Speed",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Max. Speed"
+                        },
+                        {
+                            "range": [1, 249],
+                            "name": "speed vector"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "dbo move"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Beam",
+                    "defaultValue": 170,
+                    "highlightValue": 170,
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "fan speed"
+                        },
+                        {
+                            "range": [128, 139],
+                            "name": "reset"
+                        },
+                        {
+                            "range": [140, 229],
+                            "name": "nofunction"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Lamp off"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "no functions"
+                        }
+                    ]
+                },
+                "Colours": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "open white"
+                        },
+                        {
+                            "range": [10, 20],
+                            "name": "Turquoise",
+                            "color": "#40e0d0"
+                        },
+                        {
+                            "range": [21, 31],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [32, 41],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [42, 52],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [53, 63],
+                            "name": "Magenta",
+                            "color": "#ca1f7b"
+                        },
+                        {
+                            "range": [64, 73],
+                            "name": "Light Blue",
+                            "color": "#add8e6"
+                        },
+                        {
+                            "range": [74, 84],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [85, 95],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [96, 105],
+                            "name": "Pink",
+                            "color": "#ffc0cb"
+                        },
+                        {
+                            "range": [106, 116],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [117, 127],
+                            "name": "orange",
+                            "color": "#ff7f00"
+                        },
+                        {
+                            "range": [128, 189],
+                            "name": "rainbow for"
+                        },
+                        {
+                            "range": [190, 193],
+                            "name": "rainbow"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "rainbow back"
+                        }
+                    ]
+                },
+                "no function": {
+                    "type": "Beam"
+                },
+                "Eff. Wheel": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 95],
+                            "name": "open"
+                        },
+                        {
+                            "range": [96, 159],
+                            "name": "prism"
+                        },
+                        {
+                            "range": [160, 255],
+                            "name": "prism gobo"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Macro 1"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "Macro 2"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "Macro 3"
+                        },
+                        {
+                            "range": [184, 191],
+                            "name": "Macro 4"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "Macro 5"
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "Macro 6"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Macro 7"
+                        },
+                        {
+                            "range": [216, 228],
+                            "name": "Macro 8"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Macro 9"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Macro 10"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Macro 11"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Macro 12"
+                        }
+                    ]
+                },
+                "prism rot": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "no rotation"
+                        },
+                        {
+                            "range": [1, 126],
+                            "name": "foward"
+                        },
+                        {
+                            "range": [127, 128],
+                            "name": "no rotation"
+                        },
+                        {
+                            "range": [129, 255],
+                            "name": "backwards"
+                        }
+                    ]
+                },
+                "Gobo rot": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "open"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Rot gobo1"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Rot gobo2"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Rot gobo3"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Rot gobo4"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Rot gobo5"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Rot gobo6"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Rotation"
+                        }
+                    ]
+                },
+                "rot Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "index"
+                        },
+                        {
+                            "range": [128, 190],
+                            "name": "foward"
+                        },
+                        {
+                            "range": [191, 192],
+                            "name": "no rotation"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "backwards"
+                        }
+                    ]
+                },
+                "nofunction": {
+                    "type": "Beam"
+                },
+                "Focus": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "defaultValue": 40,
+                    "highlightValue": 40,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "open"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "strobe"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "open"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "pulse"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "random"
+                        },
+                        {
+                            "range": [224, 225],
+                            "name": "open"
+                        }
+                    ]
+                },
+                "intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "PAN",
+                    "PAN fine"
+                ],
+                [
+                    "TILT",
+                    "TILT fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "16-channel Mode",
+                    "shortName": "16ch",
+                    "channels": [
+                        "PAN",
+                        "TILT",
+                        "PAN fine",
+                        "TILT fine",
+                        "Speed p/t",
+                        "Control",
+                        "Colours",
+                        "no function",
+                        "Eff. Wheel",
+                        "prism rot",
+                        "Gobo rot",
+                        "rot Gobo",
+                        "nofunction",
+                        "Focus",
+                        "Shutter",
+                        "intensity"
+                    ]
+                }
+            ]
+        }
+    ]
+}

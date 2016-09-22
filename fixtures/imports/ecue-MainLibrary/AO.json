@@ -1,0 +1,540 @@
+{
+    "manufacturers": {
+        "AO": {
+            "name": "AO"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "AO",
+            "name": "Beam Color",
+            "shortName": "BeamCol",
+            "comment": "cd",
+            "physical": {
+                "dimensions": [800, 800, 1600]
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "highlightValue": 128,
+                    "crossfade": true
+                },
+                "Control": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 26],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [27, 77],
+                            "name": "lamp off"
+                        },
+                        {
+                            "range": [78, 127],
+                            "name": "lamp on"
+                        },
+                        {
+                            "range": [128, 199],
+                            "name": "reset"
+                        },
+                        {
+                            "range": [200, 255],
+                            "name": "fan"
+                        }
+                    ]
+                },
+                "Elec. Dimmer": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "open"
+                        },
+                        {
+                            "range": [21, 255],
+                            "name": "strobe"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Scroller": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "12-channel Mode",
+                    "shortName": "12ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Zoom",
+                        null,
+                        null,
+                        "Control",
+                        "Elec. Dimmer",
+                        "Strobe",
+                        "Intensity",
+                        "Scroller"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "AO",
+            "name": "Beam Flower",
+            "shortName": "BeamFlw",
+            "comment": "cd",
+            "physical": {
+                "dimensions": [800, 800, 1600]
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Flower rot.": {
+                    "type": "Beam",
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 100],
+                            "name": "<<"
+                        },
+                        {
+                            "range": [101, 155],
+                            "name": "stop"
+                        },
+                        {
+                            "range": [156, 255],
+                            "name": ">>"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 26],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [27, 77],
+                            "name": "lamp off"
+                        },
+                        {
+                            "range": [78, 127],
+                            "name": "lamp on"
+                        },
+                        {
+                            "range": [128, 199],
+                            "name": "reset"
+                        },
+                        {
+                            "range": [200, 255],
+                            "name": "fan"
+                        }
+                    ]
+                },
+                "Elec. Dimmer": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "open"
+                        },
+                        {
+                            "range": [21, 255],
+                            "name": "strobe"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Scroller": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "12-channel Mode",
+                    "shortName": "12ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        null,
+                        "Flower rot.",
+                        null,
+                        "Control",
+                        "Elec. Dimmer",
+                        "Strobe",
+                        "Intensity",
+                        "Scroller"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "AO",
+            "name": "Falcon ARC Color",
+            "shortName": "ARC Col",
+            "comment": "cd",
+            "physical": {
+                "dimensions": [800, 800, 1600]
+            },
+            "availableChannels": {
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "crossfade": true
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "crossfade": true
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "crossfade": true
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Control": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 26],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [27, 50],
+                            "name": "lamp off"
+                        },
+                        {
+                            "range": [78, 100],
+                            "name": "lamp on"
+                        },
+                        {
+                            "range": [128, 150],
+                            "name": "Reset"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "5-channel Mode",
+                    "shortName": "5ch",
+                    "channels": [
+                        "Cyan",
+                        "Yellow",
+                        "Magenta",
+                        "Intensity",
+                        "Control"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "AO",
+            "name": "Falcon LED",
+            "shortName": "Falcon LED",
+            "comment": "cd",
+            "physical": {
+                "dimensions": [400, 400, 300]
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                }
+            },
+            "modes": [
+                {
+                    "name": "4-channel Mode",
+                    "shortName": "4ch",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "AO",
+            "name": "Sperber mini",
+            "shortName": "Sperber",
+            "comment": "cd",
+            "physical": {
+                "dimensions": [400, 400, 900]
+            },
+            "availableChannels": {
+                "Rotation": {
+                    "type": "Beam",
+                    "highlightValue": 125,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 100],
+                            "name": "<<"
+                        },
+                        {
+                            "range": [101, 155],
+                            "name": "stop"
+                        },
+                        {
+                            "range": [156, 255],
+                            "name": ">>"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [27, 50],
+                            "name": "lamp off"
+                        },
+                        {
+                            "range": [51, 77],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [78, 100],
+                            "name": "lamp on"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "open"
+                        },
+                        {
+                            "range": [21, 255],
+                            "name": "strobe"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "4-channel Mode",
+                    "shortName": "4ch",
+                    "channels": [
+                        "Rotation",
+                        "Control",
+                        "Intensity",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}
