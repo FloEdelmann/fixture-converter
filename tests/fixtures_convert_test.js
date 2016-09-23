@@ -21,36 +21,42 @@ fs.mkdir(outputDir, (err) => {
         'ADJ Quad Phase HP',
         'qlcplus',
         path.join('fixtures', 'adj_quad_phase_hp.json'),
-        'American-DJ-Quad-Phase-HP.qxf'
+        'American-DJ-Quad-Phase-HP.qxf',
+        '%MANUFACTURER%-%FIXTURE%-qlcplus-export.qxf',
+        'American-DJ-Quad-Phase-HP-qlcplus-export.qxf'
     );
     test(
         'ADJ Quad Phase HP',
         'qlcplus',
         path.join('desired_out', 'qlcplus', 'American-DJ-Quad-Phase-HP.qxf'),
-        'American-DJ-Quad-Phase-HP.json'
+        'American-DJ-Quad-Phase-HP.json',
+        '%MANUFACTURER%-%FIXTURE%-qlcplus-import.json',
+        'American-DJ-Quad-Phase-HP-qlcplus-import.json'
     );
     test(
         'Eurolite LED KLS-801',
         'ecue',
         path.join('fixtures', 'eurolite_led_kls-801.json'),
         'Eurolite-LED-KLS-801.xml',
-        'UserLibrary.xml'
+        '%MANUFACTURER%-%FIXTURE%-ecue-export.xml',
+        'Eurolite-LED-KLS-801-ecue-export.xml'
     );
 });
 
 
-function test(name, format, inputFile, desiredOutputFile, outputFile) {
+function test(name, format, inputFile, desiredOutputFile, requestedOutputFile, expectedOutputFile) {
     cp.exec(
         'node ' + (useHarmonyFlag ? '--harmony-destructuring ' : '')
         + path.join(__dirname, '..', 'fixtures_convert.js')
         + ' -i ' + path.join(__dirname, inputFile)
-        + ` -f ${format} -d ` + path.join(outputDir, '%FORMAT%'),
+        + ` -f ${format}`
+        + ' -o ' + path.join(outputDir, '%FORMAT%', requestedOutputFile),
         (error, stdout, stderr) => {
             try {
                 console.log(`Testing: Convert ${name} with format ${format} from ${inputFile} ...`);
 
-                assert.strictEqual(error, null, error);
-                assert.strictEqual(stderr, '', stderr);
+                assert.strictEqual(error, null, `${stdout}\n${stderr}\n${error}`);
+                assert.strictEqual(stderr, '', `${stdout}\n${stderr}`);
 
                 const stdoutLines = stdout.split('\n');
                 const isImport = inputFile.endsWith('.json');
@@ -58,21 +64,19 @@ function test(name, format, inputFile, desiredOutputFile, outputFile) {
                 if (isImport)
                     assert.strictEqual(stdoutLines[0], `Handling ${format} formatting...`, stdout + '\nError: missing "Handling ..." message');
 
-                const outputtedFilePath = stdoutLines[0 + isImport].match(/File "([^"]*)" successfully written./);
-                assert.notStrictEqual(outputtedFilePath, null, `${stdout}\nError: outputted file path not found`);
-                assert.notStrictEqual(outputtedFilePath[1], undefined, `${stdout}\nError: outputted file path not found`);
+                const returnedFilePath = stdoutLines[0 + isImport].match(/File "([^"]*)" successfully written./);
+                assert.notStrictEqual(returnedFilePath, null, `${stdout}\nError: outputted file path not found`);
+                assert.notStrictEqual(returnedFilePath[1], undefined, `${stdout}\nError: outputted file path not found`);
 
-                let outFilePath;
+                const expectedOutFilePath = path.join(outputDir, format, expectedOutputFile);
+                assert.strictEqual(
+                    returnedFilePath[1],
+                    expectedOutFilePath,
+                    `Error: returned file path ${returnedFilePath[1]} doesn't match expected ${expectedOutFilePath}` // '
+                );
                 const desiredOutFilePath = path.join(__dirname, 'desired_out', format, desiredOutputFile);
-                if (outputFile !== undefined) {
-                    outFilePath = path.join(outputDir, format, outputFile);
-                    assert.strictEqual(outputtedFilePath[1], outFilePath, `Error: outputted file path ${outputtedFilePath[1]} doesn't match expected ${outFilePath}`); // '
-                }
-                else {
-                    outFilePath = outputtedFilePath[1];
-                }
 
-                let out = fs.readFileSync(outFilePath, 'utf8');
+                let out = fs.readFileSync(expectedOutFilePath, 'utf8');
                 let desiredOut = fs.readFileSync(desiredOutFilePath, 'utf8');
 
                 if (format == 'ecue') {
@@ -88,7 +92,7 @@ function test(name, format, inputFile, desiredOutputFile, outputFile) {
                     out,
                     desiredOut,
                     "Out file doesn't equal desired out.\n"
-                    + diff.createTwoFilesPatch(outFilePath, desiredOutFilePath, out, desiredOut)
+                    + diff.createTwoFilesPatch(expectedOutFilePath, desiredOutFilePath, out, desiredOut)
                 );
 
                 console.log('Test ok.')
