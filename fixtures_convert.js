@@ -109,6 +109,12 @@ function handleImport() {
     let fileContents = [];
     for (const file of options.input) {
         try {
+            if (fs.statSync(file).isDirectory()) {
+                fs.readdirSync(file).map(f => path.join(file, f)).forEach(f => {
+                    options.input.push(f);
+                });
+                continue;
+            }
             fileContents.push({
                 "name": file,
                 "contents": fs.readFileSync(file, 'utf8')
