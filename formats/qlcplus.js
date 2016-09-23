@@ -2,13 +2,17 @@
 
 const fs = require('fs');
 const path = require('path');
+const mkdirp = require('mkdirp');
 
 const defaults = require(path.join(__dirname, '..', 'fixtures_defaults.js'));
 
 module.exports.defaultFileName = '%MANUFACTURER%-%FIXTURE%.qxf';
 
-module.exports.export = function formatQLCplus(manufacturers, fixtures, localOutDir) {
+module.exports.export = function formatQLCplus(manufacturers, fixtures, optionOutput) {
     const allowedChannelTypes = ["Intensity", "Shutter", "Speed", "Gobo", "Prism", "Pan", "Tilt", "Beam", "Effect", "Maintenance", "Nothing"];
+
+    if (!optionOutput.includes('%FIXTURE%'))
+        die('qlcplus only allows one fixture per .qxf file, so please include "%FIXTURE%" in the output filename.');
 
 
     for (const fixture of fixtures) {
@@ -150,16 +154,20 @@ module.exports.export = function formatQLCplus(manufacturers, fixtures, localOut
 
         str += '</FixtureDefinition>';
 
-        const outFile = path.join(
-            localOutDir,
-            (manData.name + "-" + fixData.name).replace(/\s+/g, '-') + '.qxf'
-        );
+        const outFile = optionOutput
+            .replace(/%MANUFACTURER%/g, manData.name.replace(/\s+/g, '-'))
+            .replace(/%FIXTURE%/g, fixData.name.replace(/\s+/g, '-'));
 
-        fs.writeFile(outFile, str, (writeError) => {
-            if (writeError) {
-                die(`Error writing to file "${outFile}", exiting.`, writeError);
-            }
-            console.log(`File "${outFile}" successfully written.`);
+        mkdirp(path.dirname(outFile), (mkdirpError) => {
+            if (mkdirpError)
+                die(`Could not create directory "${path.dirname(outFile)}", exiting.`, mkdirpError);
+            
+            fs.writeFile(outFile, str, (writeError) => {
+                if (writeError)
+                    die(`Error writing to file "${outFile}", exiting.`, writeError);
+
+                console.log(`File "${outFile}" successfully written.`);
+            });
         });
     }
 }

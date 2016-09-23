@@ -14,7 +14,7 @@ const formats = fs.readdirSync(path.join(__dirname, 'formats')).map(file => file
 const {argv, options} = require('node-getopt').create([
     ['f' , 'format=ARG', `\t(required)\n\t\tSpecifies output format.\n\t\tPossible arguments: "${formats.join('", "')}"\n`],
     ['i' , 'input=ARG+', `\t(optional, may be specified multiple times)\n\t\tSpecifies input filenames. If the first is not a JSON file, import all using the format\n\t\tspecified in --format.\n\t\tDefault: "${filename}"\n`],
-    ['o' , 'output=ARG', `\t(optional)\n\t\tSpecifies the output directory and filename. The following placeholders will be replaced:\n\t\t  %FORMAT%        output format (-f parameter)\n\t\t  %MANUFACTURER%  manufacturer name (spaces replaced with dashes)\n\t\t  %FIXTURE%       fixture name (spaces replaced with dashes)\n\t\t  %TIMESTAMP%     the current timestamp\n\t\tDefault: "${outDir}${path.sep}[format dependent]"\n`],
+    ['o' , 'output=ARG', `\t(optional)\n\t\tSpecifies the output directory and filename. The following placeholders will be replaced:\n\t\t  %FORMAT%        output format (-f parameter)\n\t\t  %MANUFACTURER%  manufacturer name (spaces replaced with dashes)\n\t\t  %FIXTURE%       fixture name (spaces replaced with dashes)\n\t\t  %TIMESTAMP%     the current timestamp\n\t\tNot all combinations may make sense, e.g. qlcplus only allows one fixture per file.\n\t\tDefault: "${outDir}${path.sep}[format dependent]"\n`],
     ['h' , 'help', '\n\t\tDisplay this help.']
 ]).bindHelp().parseSystem();
 
@@ -95,7 +95,7 @@ function handleExport() {
 
 
     if (!options.output)
-        options.outdir = path.join(outDir, formatter.defaultFileName);
+        options.output = path.join(outDir, formatter.defaultFileName);
     options.output = options.output.replace(/%FORMAT%/g, options.format);
 
     console.log(`Handling ${options.format} formatting...`);
@@ -120,7 +120,7 @@ function handleImport() {
     }
 
     if (!options.output)
-        options.outdir = path.join(outDir, 'import_' + formatter.defaultFileName);
+        options.output = path.join(outDir, 'import_' + formatter.defaultFileName);
     options.output = options.output.replace(/%FORMAT%/g, options.format);
 
     const promises = fileContents.map((file) => formatter.import(file.contents, file.name));
@@ -138,27 +138,27 @@ function handleImport() {
         }
 
         let outputfiles = [];
-        if (options.output.includes('%MANUFACTURER%') && options.output.includes('%FIXTURE%')) {
-            for (let man in combinedObject.manufacturers) {
-                if (!combinedObject.manufacturers[man].name)
-                    combinedObject.manufacturers[man].name = man;
-
-                for (const fix of combinedObject.fixtures) {
-                    if (fix.manufacturer == man) {
-                        let obj = {
-                            "manufacturers": {},
-                            "fixtures": [fix]
-                        };
-                        obj.manufacturers[man] = combinedObject.manufacturers[man];
-
-                        outputfiles.push({
-                            "filename": options.output
-                                .replace(/%MANUFACTURER%/g, combinedObject.manufacturers[man].name)
-                                .replace(/%FIXTURE%/g, fix.name),
-                            "data": obj
-                        });
-                    }
+        if (options.output.includes('%FIXTURE%')) {
+            for (const fix of combinedObject.fixtures) {
+                if (!combinedObject.manufacturers[fix.manufacturer]) {
+                    combinedObject.manufacturers[fix.manufacturer] = {
+                        "name": fix.manufacturer
+                    };
                 }
+
+                let obj = {
+                    "manufacturers": {},
+                    "fixtures": [fix]
+                };
+
+                const filename = options.output
+                    .replace(/%MANUFACTURER%/g, combinedObject.manufacturers[fix.manufacturer].name.replace(/\s+/g, '-'))
+                    .replace(/%FIXTURE%/g, fix.name.replace(/\s+/g, '-'));
+                
+                outputfiles.push({
+                    "filename": filename,
+                    "data": obj
+                });
             }
         }
         else if (options.output.includes('%MANUFACTURER%')) {
@@ -178,23 +178,11 @@ function handleImport() {
                     }
                 }
 
+                const filename = options.output.replace(/%MANUFACTURER%/g,
+                    combinedObject.manufacturers[man].name.replace(/\s+/g, '-'));
+
                 outputfiles.push({
-                    "filename": options.output.replace(/%MANUFACTURER%/g, combinedObject.manufacturers[man].name),
-                    "data": obj
-                });
-            }
-        }
-        else if (options.output.includes('%FIXTURE%')) {
-            for (const fix of combinedObject.fixtures) {
-                let obj = {
-                    "manufacturers": {},
-                    "fixtures": [fix]
-                };
-                if (combinedObject.manufacturers[fix.manufacturer])
-                    obj.manufacturers[fix.manufacturer] = combinedObject.manufacturers[fix.manufacturer];
-                
-                outputfiles.push({
-                    "filename": options.output.replace(/%FIXTURE%/g, fix.name),
+                    "filename": filename,
                     "data": obj
                 });
             }

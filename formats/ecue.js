@@ -2,167 +2,248 @@
 
 const fs = require('fs');
 const path = require('path');
+const util = require('util');
+const mkdirp = require('mkdirp');
 
 const defaults = require(path.join(__dirname, '..', 'fixtures_defaults.js'));
 
 module.exports.defaultFileName = 'UserLibrary.xml';
 
-module.exports.export = function formatEcue(manufacturers, fixtures, localOutDir) {
+module.exports.export = function formatEcue(manufacturers, fixtures, optionsOutput) {
     const timestamp = new Date().toISOString().replace(/T/, '#').replace(/\..+/, '');
-    let str = '<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n';
-    str += `<Document Owner="user" TypeVersion="2" SaveTimeStamp="${timestamp}">\n`;
-    str += '    <Library>\n'
-    str += '        <Fixtures>\n';
 
-    const manufacturerShortNames = Object.keys(manufacturers).sort();
+    let outFixtures = [];
 
-    for (const manufacturer of manufacturerShortNames) {
-        const manData = Object.assign({}, defaults.manufacturers.shortName, manufacturers[manufacturer]);
+    for (const fixture of fixtures) {
+        let fixData = Object.assign({}, defaults.fixtures[0], fixture);
+        if (fixData.shortName == null) {
+            fixData.shortName = fixData.name;
+        }
 
-        str += `            <Manufacturer _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${manData.name}" Comment="${manData.comment}" Web="${manData.website}">\n`;
+        manufacturers[fixData.manufacturer] = Object.assign({}, defaults.manufacturers.shortName, manufacturers[fixData.manufacturer]);
+        if (!manufacturers[fixData.manufacturer].name)
+            manufacturers[fixData.manufacturer].name = fixData.manufacturer;
 
-        for (const fixture of fixtures) {
-            if (fixture.manufacturer != manufacturer) continue;
+        let str = '';
 
-            let fixData = Object.assign({}, defaults.fixtures[0], fixture);
-            if (fixData.shortName == null) {
-                fixData.shortName = fixData.name;
+        for (const mode of fixture.modes) {
+            let modeData = Object.assign({}, defaults.fixtures[0].modes[0], mode);
+            if (modeData.shortName == null) {
+                modeData.shortName = modeData.name;
             }
 
-            for (const mode of fixture.modes) {
-                let modeData = Object.assign({}, defaults.fixtures[0].modes[0], mode);
-                if (modeData.shortName == null) {
-                    modeData.shortName = modeData.name;
+            const useName = fixData.name + (fixture.modes.length == 1 ? '' : ` (${modeData.shortName})`);
+            const useComment = fixData.comment + (fixture.modes.length == 1 ? '' : ` (${modeData.name})`);
+
+            const physicalData = Object.assign({}, defaults.fixtures[0].physical, fixData.physical, modeData.physical);
+            const bulbData = Object.assign({}, defaults.fixtures[0].physical.bulb, physicalData.bulb);
+            const lensData = Object.assign({}, defaults.fixtures[0].physical.lens, physicalData.lens);
+            const focusData = Object.assign({}, defaults.fixtures[0].physical.focus, physicalData.focus);
+
+            str += `                <Fixture _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${useName}" NameShort="${fixData.shortName}" Comment="${useComment}" AllocateDmxChannels="${mode.channels.length}" Weight="${physicalData.weight}" Power="${physicalData.power}" DimWidth="${physicalData.dimensions[0]}" DimHeight="${physicalData.dimensions[1]}" DimDepth="${physicalData.dimensions[2]}">\n`;
+
+            let viewPosCount = 1;
+            for (const dmxCount in mode.channels) {
+                let chKey = mode.channels[dmxCount];
+
+                if (chKey === null) {
+                    // we already handled this as part of a 16-bit channel, so just skip
+                    continue;
                 }
 
-                const useName = fixData.name + (fixture.modes.length == 1 ? '' : ` (${modeData.shortName})`);
-                const useComment = fixData.comment + (fixture.modes.length == 1 ? '' : ` (${modeData.name})`);
-
-                const physicalData = Object.assign({}, defaults.fixtures[0].physical, fixData.physical, modeData.physical);
-                const bulbData = Object.assign({}, defaults.fixtures[0].physical.bulb, physicalData.bulb);
-                const lensData = Object.assign({}, defaults.fixtures[0].physical.lens, physicalData.lens);
-                const focusData = Object.assign({}, defaults.fixtures[0].physical.focus, physicalData.focus);
-
-                str += `                <Fixture _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${useName}" NameShort="${fixData.shortName}" Comment="${useComment}" AllocateDmxChannels="${mode.channels.length}" Weight="${physicalData.weight}" Power="${physicalData.power}" DimWidth="${physicalData.dimensions[0]}" DimHeight="${physicalData.dimensions[1]}" DimDepth="${physicalData.dimensions[2]}">\n`;
-
-                let viewPosCount = 1;
-                for (const dmxCount in mode.channels) {
-                    let chKey = mode.channels[dmxCount];
-
-                    if (chKey === null) {
-                        // we already handled this as part of a 16-bit channel, so just skip
-                        continue;
-                    }
-
-                    let doubleByte = false;
-                    const multiByteChannels = getCorrespondingMultiByteChannels(chKey, fixData);
-                    if (multiByteChannels != null
-                        && mode.channels.indexOf(multiByteChannels[0]) != -1
-                        && mode.channels.indexOf(multiByteChannels[1]) != -1) {
-                        // it is a 16-bit channel and both 8-bit parts are used in this mode
-                        chKey = multiByteChannels[0];
-                        doubleByte = true;
-                    }
-
-                    const channel = fixture.availableChannels[chKey];
-
-                    if (channel === undefined) {
-                        die(`Channel "${chKey}" not found in fixture "${fixData.name}", exiting.`);
-                    }
-
-                    let chData = Object.assign({}, defaults.fixtures[0].availableChannels["Unique channel name"], channel);
-
-                    if (!chData.name)
-                        chData.name = chKey;
-
-                    let chType = '';
-                    switch (chData.type) {
-                        case 'MultiColor':
-                        case 'SingleColor':
-                            chType = 'Color';
-                            break;
-                        case 'Beam':
-                        case 'Shutter':
-                        case 'Strobe':
-                        case 'Gobo':
-                        case 'Prism':
-                        case 'Effect':
-                        case 'Speed':
-                        case 'Maintenance':
-                        case 'Nothing':
-                            chType = 'Beam';
-                            break;
-                        case 'Pan':
-                        case 'Tilt':
-                            chType = 'Focus';
-                            break;
-                        case 'Intensity':
-                        default:
-                            chType = 'Intensity';
-                    }
-
-                    let dmxByteLow = dmxCount;
-                    let dmxByteHigh = -1;
-
-                    if (doubleByte) {
-                        const chKeyLsb = multiByteChannels[1];
-                        const channelLsb = fixture.availableChannels[chKeyLsb];
-
-                        if (channelLsb === undefined) {
-                            die(`Channel "${chKeyLsb}" not found in fixture "${fixData.name}", exiting.`);
-                        }
-                        const chDataLsb = Object.assign({}, defaults.fixtures[0].availableChannels["Unique channel name"], channelLsb);
-
-                        chData.defaultValue *= 256;
-                        chData.defaultValue += chDataLsb.defaultValue;
-
-                        chData.highlightValue *= 256;
-                        chData.highlightValue += chDataLsb.highlightValue;
-
-                        dmxByteLow = mode.channels.indexOf(chKeyLsb);
-                        dmxByteHigh = mode.channels.indexOf(chKey);
-
-                        // mark other part of 16-bit channel as already handled
-                        mode.channels[Math.max(dmxByteHigh, dmxByteLow)] = null;
-                    }
-
-                    const hasCapabilities = (channel.capabilities !== undefined);
-
-                    str += `                    <Channel${chType} Name="${chData.name}" DefaultValue="${chData.defaultValue}" Highlight="${chData.highlightValue}" Deflection="0" DmxByte0="${dmxByteHigh+1}" DmxByte1="${dmxByteLow+1}" Constant="${chData.constant ? 1 : 0}" Crossfade="${chData.crossfade ? 1 : 0}" Invert="${chData.invert ? 1 : 0}" Precedence="${chData.precendence}" ClassicPos="${viewPosCount++}"` + (hasCapabilities ? '' : ' /') + '>\n';
-
-                    if (hasCapabilities) {
-                        for (const cap of channel.capabilities) {
-                            const capData = Object.assign({}, defaults.fixtures[0].availableChannels["Unique channel name"].capabilities[0], cap);
-
-                            str += `                        <Range Name="${capData.name}" Start="${capData.range[0]}" End="${capData.range[1]}" AutoMenu="${capData.showInMenu ? 1 : 0}" Centre="${capData.center ? 1 : 0}" />\n`;
-                        }
-                        str += `                    </Channel${chType}>\n`;
-                    }
+                let doubleByte = false;
+                const multiByteChannels = getCorrespondingMultiByteChannels(chKey, fixData);
+                if (multiByteChannels != null
+                    && mode.channels.indexOf(multiByteChannels[0]) != -1
+                    && mode.channels.indexOf(multiByteChannels[1]) != -1) {
+                    // it is a 16-bit channel and both 8-bit parts are used in this mode
+                    chKey = multiByteChannels[0];
+                    doubleByte = true;
                 }
-                str += '                </Fixture>\n';
+
+                const channel = fixture.availableChannels[chKey];
+
+                if (channel === undefined) {
+                    die(`Channel "${chKey}" not found in fixture "${fixData.name}", exiting.`);
+                }
+
+                let chData = Object.assign({}, defaults.fixtures[0].availableChannels["Unique channel name"], channel);
+
+                if (!chData.name)
+                    chData.name = chKey;
+
+                let chType = '';
+                switch (chData.type) {
+                    case 'MultiColor':
+                    case 'SingleColor':
+                        chType = 'Color';
+                        break;
+                    case 'Beam':
+                    case 'Shutter':
+                    case 'Strobe':
+                    case 'Gobo':
+                    case 'Prism':
+                    case 'Effect':
+                    case 'Speed':
+                    case 'Maintenance':
+                    case 'Nothing':
+                        chType = 'Beam';
+                        break;
+                    case 'Pan':
+                    case 'Tilt':
+                        chType = 'Focus';
+                        break;
+                    case 'Intensity':
+                    default:
+                        chType = 'Intensity';
+                }
+
+                let dmxByteLow = dmxCount;
+                let dmxByteHigh = -1;
+
+                if (doubleByte) {
+                    const chKeyLsb = multiByteChannels[1];
+                    const channelLsb = fixture.availableChannels[chKeyLsb];
+
+                    if (channelLsb === undefined) {
+                        die(`Channel "${chKeyLsb}" not found in fixture "${fixData.name}", exiting.`);
+                    }
+                    const chDataLsb = Object.assign({}, defaults.fixtures[0].availableChannels["Unique channel name"], channelLsb);
+
+                    chData.defaultValue *= 256;
+                    chData.defaultValue += chDataLsb.defaultValue;
+
+                    chData.highlightValue *= 256;
+                    chData.highlightValue += chDataLsb.highlightValue;
+
+                    dmxByteLow = mode.channels.indexOf(chKeyLsb);
+                    dmxByteHigh = mode.channels.indexOf(chKey);
+
+                    // mark other part of 16-bit channel as already handled
+                    mode.channels[Math.max(dmxByteHigh, dmxByteLow)] = null;
+                }
+
+                const hasCapabilities = (channel.capabilities !== undefined);
+
+                str += `                    <Channel${chType} Name="${chData.name}" DefaultValue="${chData.defaultValue}" Highlight="${chData.highlightValue}" Deflection="0" DmxByte0="${dmxByteHigh+1}" DmxByte1="${dmxByteLow+1}" Constant="${chData.constant ? 1 : 0}" Crossfade="${chData.crossfade ? 1 : 0}" Invert="${chData.invert ? 1 : 0}" Precedence="${chData.precendence}" ClassicPos="${viewPosCount++}"` + (hasCapabilities ? '' : ' /') + '>\n';
+
+                if (hasCapabilities) {
+                    for (const cap of channel.capabilities) {
+                        const capData = Object.assign({}, defaults.fixtures[0].availableChannels["Unique channel name"].capabilities[0], cap);
+
+                        str += `                        <Range Name="${capData.name}" Start="${capData.range[0]}" End="${capData.range[1]}" AutoMenu="${capData.showInMenu ? 1 : 0}" Centre="${capData.center ? 1 : 0}" />\n`;
+                    }
+                    str += `                    </Channel${chType}>\n`;
+                }
+            }
+            str += '                </Fixture>\n';
+        }
+
+        outFixtures.push({
+            "manufacturer": fixData.manufacturer,
+            "name": fixData.name,
+            "str": str
+        });
+    }
+
+    let template = '<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n';
+    template += `<Document Owner="user" TypeVersion="2" SaveTimeStamp="${timestamp}">\n`;
+    template += '    <Library>\n'
+    template += '        <Fixtures>\n';
+    template += '%s';
+    template += '        </Fixtures>\n';
+    template += '        <Tiles>\n';
+    template += '%s';
+    template += '        </Tiles>\n';
+    template += '    </Library>\n'
+    template += '</Document>\n';
+
+    let outputfiles = [];
+
+    if (optionsOutput.includes('%FIXTURE%')) {
+        for (const fix of outFixtures) {
+            const manData = manufacturers[fix.manufacturer];
+            const filename = optionsOutput
+                .replace(/%FIXTURE%/g, fix.name.replace(/\s+/g, '-'))
+                .replace(/%MANUFACTURER%/g, manData.name.replace(/\s+/g, '-'));
+
+            const str = util.format(template,
+                `            <Manufacturer _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${manData.name}" Comment="${manData.comment}" Web="${manData.website}">\n` +
+                fix.str +
+                '            </Manufacturer>\n',
+                `            <Manufacturer _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${manData.name}" Comment="${manData.comment}" Web="${manData.website}" />\n`
+            );
+
+            outputfiles.push({
+                "filename": filename,
+                "str": str
+            });
+        }
+    }
+    else if (optionsOutput.includes('%MANUFACTURER%')) {
+        for (let man in manufacturers) {
+            const manData = manufacturers[man];
+            let str = `            <Manufacturer _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${manData.name}" Comment="${manData.comment}" Web="${manData.website}">\n`;
+
+            let i = 0;
+            for (const fix of outFixtures) {
+                if (fix.manufacturer == man) {
+                    str += fix.str;
+                    i++;
+                }
+            }
+
+            if (i > 0) {
+                outputfiles.push({
+                    "filename": optionsOutput.replace(/%MANUFACTURER%/g, manData.name.replace(/\s+/g, '-')),
+                    "str": util.format(template,
+                        str + '            </Manufacturer>\n',
+                        `            <Manufacturer _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${manData.name}" Comment="${manData.comment}" Web="${manData.website}" />\n`
+                    )
+                });
             }
         }
-        str += '            </Manufacturer>\n';
     }
-    str += '        </Fixtures>\n';
-    str += '        <Tiles>\n';
+    else {
+        let str = '';
+        let tilesStr = '';
+        for (let man in manufacturers) {
+            const manData = manufacturers[man];
+            let manStr = `            <Manufacturer _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${manData.name}" Comment="${manData.comment}" Web="${manData.website}">\n`;
 
-    for (const manufacturer of manufacturerShortNames) {
-        const manData = Object.assign({}, defaults.manufacturers.shortName, manufacturers[manufacturer]);
+            let i = 0;
+            for (const fix of outFixtures) {
+                if (fix.manufacturer == man) {
+                    manStr += fix.str;
+                    i++;
+                }
+            }
 
-        str += `            <Manufacturer _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${manData.name}" Comment="${manData.comment}" Web="${manData.website}" />\n`;
-    }
-    str += '        </Tiles>\n';
-    str += '    </Library>\n';
-    str += '</Document>\n';
-
-    const outFile = path.join(localOutDir, 'UserLibrary.xml');
-    fs.writeFile(outFile, str, (writeError) => {
-        if (writeError) {
-            die(`Error writing to file "${outFile}", exiting.`, writeError);
+            if (i > 0) {
+                str += manStr + '            </Manufacturer>\n';
+                tilesStr += `            <Manufacturer _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${manData.name}" Comment="${manData.comment}" Web="${manData.website}" />\n`;
+            }
         }
-        console.log(`File "${outFile}" successfully written.`);
-    });
+
+        outputfiles.push({
+            "filename": optionsOutput,
+            "str": util.format(template, str, tilesStr)
+        });
+    }
+
+    for (const outFile of outputfiles) {
+        mkdirp(path.dirname(outFile.filename), (mkdirpError) => {
+            if (mkdirpError)
+                die(`Could not create directory "${path.dirname(outFile.filename)}", exiting.`, mkdirpError);
+            
+            fs.writeFile(outFile.filename, outFile.str, (writeError) => {
+                if (writeError)
+                    die(`Error writing to file "${outFile.filename}", exiting.`, writeError);
+
+                console.log(`File "${outFile.filename}" successfully written.`);
+            });
+        });
+    }
 }
 
 module.exports.import = function importEcue(str, filename) {
