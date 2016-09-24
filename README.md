@@ -59,8 +59,8 @@ npm install node-getopt mkdirp xml2js color-names
 **Typical use:** `./fixtures_convert.js -f qlcplus`  
 formats `fixtures.json` as *QLC+* and writes the resulting fixture definition `.qxf` files to `out/qlcplus/`
 
-**Import:** `./fixtures_convert.js -i UserLibrary.xml -f ecue`  
-imports `UserLibrary.xml` as *e:cue* format and writes the resulting JSON file to `out/ecue/import_YYYY-MM-DD_hh:mm:ss.json`
+**Import:** `./fixtures_convert.js -i UserLibrary.xml -f ecue -o out/%FORMAT%/%MANUFACTURER%.json`  
+imports `UserLibrary.xml` as *e:cue* format and writes the resulting JSON files (separated by manufacturer) to `out/ecue/%MANUFACTURER%.json`
 
 
 ## Contributing
@@ -69,11 +69,19 @@ Feel free to add your own output formats and / or fixtures. Just create a pull r
 
 ### New formats
 
-Each format may implement two functions:
+Each format module may look like this:
 
 ```js
-module.exports.export = function(manufacturers, fixtures, localOutDir) { ... }
+// required
+module.exports.defaultFileName = '%MANUFACTURER%-%FIXTURE%.xml';
+
+// both functions are optional
+module.exports.export = function(manufacturers, fixtures, optionsOutput) {
+    // optionsOutput contains the -o command line parameter with %FORMAT% already replaced
+    ...
+}
 module.exports.import = function(str, filename) {
+    // str is the string to be parsed, filename is just for helpful error messages
     ...
     // use a promise to allow asynchronous return values
     return new Promise((resolve, reject) => {
@@ -81,6 +89,9 @@ module.exports.import = function(str, filename) {
         resolve(objectToConvertToJSON);
     });
 }
+
+// optional
+function privateHelperFunction() { ... }
 ```
 
 Those will get called from [fixtures_convert.js](fixtures_convert.js), so you won't have to bother with command line arguments.

@@ -1,0 +1,207 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet",
+            "website": "http://www.chauvetlighting.com/"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "Arena Hazer",
+            "shortName": "Arena Hazer",
+            "comment": "http://www.chauvetlighting.com/arena-hazer.html",
+            "physical": {
+                "dimensions": [500, 500, 500],
+                "weight": 35
+            },
+            "availableChannels": {
+                "Haze": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true
+                },
+                "Fan": {
+                    "type": "Intensity",
+                    "warning": "Please check type!"
+                },
+                "Blower": {
+                    "type": "Intensity",
+                    "warning": "Please check type!"
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-channel Mode",
+                    "shortName": "3ch",
+                    "channels": [
+                        "Haze",
+                        "Fan",
+                        "Blower"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Chauvet",
+            "name": "LED PAR 38",
+            "shortName": "PAR38",
+            "comment": "cd",
+            "physical": {
+                "dimensions": [235, 235, 300],
+                "weight": 1.5,
+                "power": 26
+            },
+            "availableChannels": {
+                "Strobe/Intensit": {
+                    "type": "Strobe",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "closed"
+                        },
+                        {
+                            "range": [2, 127],
+                            "name": "strobe"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "intensity"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true
+                }
+            },
+            "modes": [
+                {
+                    "name": "4-channel Mode",
+                    "shortName": "4ch",
+                    "channels": [
+                        "Strobe/Intensit",
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Chauvet",
+            "name": "LRG-55",
+            "shortName": "LRG55",
+            "comment": "cd http://www.chauvetlighting.com/scorpion-rg55.html",
+            "physical": {
+                "dimensions": [260, 130, 260],
+                "weight": 4.25,
+                "power": 25
+            },
+            "availableChannels": {
+                "Mode": {
+                    "type": "Beam",
+                    "highlightValue": 126,
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "closed"
+                        },
+                        {
+                            "range": [11, 120],
+                            "name": "dynamic"
+                        },
+                        {
+                            "range": [121, 250],
+                            "name": "static"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "audio"
+                        }
+                    ]
+                },
+                "Pattern": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "crossfade": true
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "crossfade": true
+                },
+                "P/T speed": {
+                    "type": "Speed",
+                    "defaultValue": 128,
+                    "crossfade": true
+                },
+                "Pattern speed": {
+                    "type": "Speed",
+                    "defaultValue": 128,
+                    "crossfade": true
+                },
+                "Pattern size": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "green & red"
+                        },
+                        {
+                            "range": [101, 200],
+                            "name": "green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [201, 255],
+                            "name": "red",
+                            "color": "#ff0000"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "8-channel Mode",
+                    "shortName": "8ch",
+                    "channels": [
+                        "Mode",
+                        "Pattern",
+                        "Pan",
+                        "Tilt",
+                        "P/T speed",
+                        "Pattern speed",
+                        "Pattern size",
+                        "Color"
+                    ]
+                }
+            ]
+        }
+    ]
+}

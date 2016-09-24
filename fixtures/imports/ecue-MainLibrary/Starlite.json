@@ -1,0 +1,570 @@
+{
+    "manufacturers": {
+        "Starlite": {
+            "name": "Starlite",
+            "website": "www.starlite.co.uk"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Starlite",
+            "name": "Starlite MK5",
+            "shortName": "StarL5",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 127,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 127,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Orange CTC"
+                        },
+                        {
+                            "range": [40, 63],
+                            "name": "Blue CTC"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "White",
+                            "color": "#ffffff",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Scr Blue",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Scr Green",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Scr Red",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Scr Organe CTC",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [104, 127],
+                            "name": "Scr Blue CTC",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Scroll Speed",
+                            "center": true
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Gobo 1<>": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Gobo1": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Bump Rot 1"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Bump Rot 2"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Bump Rot 3"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Bump Rot 4"
+                        },
+                        {
+                            "range": [40, 63],
+                            "name": "Bump Rot 5"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Open",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Scroll Rot 1",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Scroll Rot 2",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Scroll Rot 3",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Scroll Rot 4",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [104, 127],
+                            "name": "Scroll Rot 5",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Open",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "Bump Index 1",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "Bump Index 2",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Bump Index 3",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Bump Index 4",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [168, 191],
+                            "name": "Bump Index 5",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "Open",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "Scroll Index 1",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Scroll Index 2",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Scroll Index 3",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Scroll Index 4",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [232, 255],
+                            "name": "Scroll Index 5",
+                            "showInMenu": false
+                        }
+                    ]
+                },
+                "Gobo2<>": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Gobo2": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Bump Rot 1"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Bump Rot 2"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Bump Rot 3"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Bump Rot 4"
+                        },
+                        {
+                            "range": [40, 63],
+                            "name": "Bump Rot 5"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Open",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Scroll Rot 1",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Scroll Rot 2",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Scroll Rot 3",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Scroll Rot 4",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [104, 127],
+                            "name": "Scroll Rot 5",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Open",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "Bump Index 1",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "Bump Index 2",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Bump Index 3",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Bump Index 4",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [168, 191],
+                            "name": "Bump Index 5",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "Open",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "Scroll Index 1",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Scroll Index 2",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Scroll Index 3",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Scroll Index 4",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [232, 255],
+                            "name": "Scroll Index 5",
+                            "showInMenu": false
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Distance"
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [2, 122],
+                            "name": "Prism Rot Right",
+                            "showInMenu": false,
+                            "center": true
+                        },
+                        {
+                            "range": [123, 131],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [132, 255],
+                            "name": "Prism Rot Left",
+                            "showInMenu": false,
+                            "center": true
+                        }
+                    ]
+                },
+                "Frost": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "capabilities": [
+                        {
+                            "range": [0, 254],
+                            "name": "Closed",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [255, 14],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [15, 247],
+                            "name": "Strobe",
+                            "center": true
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "highlightValue": 255,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "19-channel Mode",
+                    "shortName": "19ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Colour",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "Gobo 1<>",
+                        "Gobo1",
+                        "Gobo2<>",
+                        "Gobo2",
+                        "Focus",
+                        "Iris",
+                        "Prism",
+                        "Frost",
+                        "Strobe",
+                        "Intensity",
+                        "Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

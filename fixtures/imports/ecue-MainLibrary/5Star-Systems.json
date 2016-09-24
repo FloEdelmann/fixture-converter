@@ -1,0 +1,377 @@
+{
+    "manufacturers": {
+        "5Star Systems": {
+            "name": "5Star Systems",
+            "website": "www.5star-systems.com"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "5Star Systems",
+            "name": "Spica 250M",
+            "shortName": "Spica250M",
+            "comment": "cd",
+            "physical": {
+                "dimensions": [400, 400, 494]
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 127,
+                    "highlightValue": 127,
+                    "crossfade": true
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 127,
+                    "highlightValue": 127,
+                    "crossfade": true
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "P/T Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "track"
+                        },
+                        {
+                            "range": [1, 249],
+                            "name": "speed"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "MIB"
+                        }
+                    ]
+                },
+                "Reset": {
+                    "type": "Beam",
+                    "defaultValue": 170,
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "fan speed"
+                        },
+                        {
+                            "range": [128, 139],
+                            "name": "lamp on"
+                        },
+                        {
+                            "range": [140, 179],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "reset"
+                        },
+                        {
+                            "range": [190, 229],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "lamp off"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "idle"
+                        }
+                    ]
+                },
+                "Colours": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 13],
+                            "name": "open"
+                        },
+                        {
+                            "range": [14, 27],
+                            "name": "yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [28, 41],
+                            "name": "orange",
+                            "color": "#ff7f00"
+                        },
+                        {
+                            "range": [42, 55],
+                            "name": "red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [56, 69],
+                            "name": "blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [70, 83],
+                            "name": "green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [84, 97],
+                            "name": "pink",
+                            "color": "#ffc0cb"
+                        },
+                        {
+                            "range": [98, 111],
+                            "name": "turquoise",
+                            "color": "#40e0d0"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "deep purple"
+                        },
+                        {
+                            "range": [128, 189],
+                            "name": ">>"
+                        },
+                        {
+                            "range": [190, 193],
+                            "name": "stop"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "<<"
+                        }
+                    ]
+                },
+                "Prisma": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 95],
+                            "name": "open"
+                        },
+                        {
+                            "range": [96, 159],
+                            "name": "prisma"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "macro1"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "macro2"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "macro3"
+                        },
+                        {
+                            "range": [184, 191],
+                            "name": "macro4"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "macro5"
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "macro6"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "macro7"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "macro8"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "macro9"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "macro10"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "macro11"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "macro12"
+                        }
+                    ]
+                },
+                "Prism rot.": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "stop"
+                        },
+                        {
+                            "range": [1, 126],
+                            "name": ">>"
+                        },
+                        {
+                            "range": [127, 128],
+                            "name": "stop"
+                        },
+                        {
+                            "range": [129, 255],
+                            "name": "<<"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "open"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "slot1"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "slot2"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "slot3"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "slot4"
+                        },
+                        {
+                            "range": [160, 223],
+                            "name": "slot5"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": ">>"
+                        }
+                    ]
+                },
+                "Gobo rot.": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "index"
+                        },
+                        {
+                            "range": [128, 190],
+                            "name": ">>"
+                        },
+                        {
+                            "range": [191, 192],
+                            "name": "stop"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "<<"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "strobe"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "pulse"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "random"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "idle"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "16-channel Mode",
+                    "shortName": "16ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "P/T Speed",
+                        "Reset",
+                        "Colours",
+                        null,
+                        "Prisma",
+                        "Prism rot.",
+                        "Gobo",
+                        "Gobo rot.",
+                        null,
+                        "Focus",
+                        "Shutter",
+                        "Intensity"
+                    ]
+                }
+            ]
+        }
+    ]
+}

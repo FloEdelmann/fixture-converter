@@ -1,0 +1,1580 @@
+{
+    "manufacturers": {
+        "Generic": {
+            "name": "Generic"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Generic",
+            "name": "2-ch Strobe",
+            "shortName": "2-ch Strobe",
+            "comment": "cd",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Speed": {
+                    "type": "Speed",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "2-channel Mode",
+                    "shortName": "2ch",
+                    "channels": [
+                        "Speed",
+                        "Intensity"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "CMY Fader",
+            "shortName": "CMY",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-channel Mode",
+                    "shortName": "3ch",
+                    "channels": [
+                        "Yellow",
+                        "Magenta",
+                        "Cyan"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "CMY Fader Dim",
+            "shortName": "CMYfdim",
+            "comment": "CMY Fader and Dimmer as Multipart Fixture",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "4-channel Mode",
+                    "shortName": "4ch",
+                    "channels": [
+                        "Intensity",
+                        "Yellow",
+                        "Magenta",
+                        "Cyan"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "Desk Channel",
+            "shortName": "Dskch",
+            "comment": "Standard Dimmer Channel ('Par Light' etc.)",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "1-channel Mode",
+                    "shortName": "1ch",
+                    "channels": [
+                        "Intensity"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "Desk Channel 16 bit",
+            "shortName": "Dskch16",
+            "comment": "Dimmer channel with 16 bit resolution",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "Intensity fine": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "defaultValue": null
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Intensity",
+                    "Intensity fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "2-channel Mode",
+                    "shortName": "2ch",
+                    "channels": [
+                        "Intensity",
+                        "Intensity fine"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "Desk Channel 16 bit HL",
+            "shortName": "Dskch16HL",
+            "comment": "Dimmer channel with 16 bit resolution",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Intensity fine": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Intensity",
+                    "Intensity fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "2-channel Mode",
+                    "shortName": "2ch",
+                    "channels": [
+                        "Intensity fine",
+                        "Intensity"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "DimRGB Fader",
+            "shortName": "DimRGBFader",
+            "comment": "RGB Fader and Dimmer as Multipart Fixture",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "4-channel Mode",
+                    "shortName": "4ch",
+                    "channels": [
+                        "Intensity",
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "DW 2CH",
+            "shortName": "DW 2CH",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Warm White": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Cool White": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                }
+            },
+            "modes": [
+                {
+                    "name": "2-channel Mode",
+                    "shortName": "2ch",
+                    "channels": [
+                        "Warm White",
+                        "Cool White"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "DW 3CH",
+            "shortName": "DW 3CH",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Warm White 1": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Cool White": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Warm White 2": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-channel Mode",
+                    "shortName": "3ch",
+                    "channels": [
+                        "Warm White 1",
+                        "Cool White",
+                        "Warm White 2"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "MountXY",
+            "shortName": "MountXY",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 127,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 127,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "2-channel Mode",
+                    "shortName": "2ch",
+                    "channels": [
+                        "Pan",
+                        "Tilt"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "MountXY16 bit",
+            "shortName": "MountXY16",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "4-channel Mode",
+                    "shortName": "4ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "Non Dimmable",
+            "shortName": "NoDim",
+            "comment": "Switching single channel.",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 254],
+                            "name": "off",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "on",
+                            "showInMenu": false
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "1-channel Mode",
+                    "shortName": "1ch",
+                    "channels": [
+                        "Intensity"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "RBGWFader",
+            "shortName": "RBGW",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "4-channel Mode",
+                    "shortName": "4ch",
+                    "channels": [
+                        "Red",
+                        "Blue",
+                        "Green",
+                        "White"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "RGB Fader",
+            "shortName": "RGBFader",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-channel Mode",
+                    "shortName": "3ch",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "RGB Par",
+            "shortName": "RGBPar",
+            "comment": "cd",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Macro": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "off"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "on"
+                        }
+                    ]
+                },
+                "Strobe/Speed": {
+                    "type": "Speed",
+                    "crossfade": true
+                },
+                "Mode": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "color"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "fade out"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "fade in"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "fade in/out"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "auto"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "RGB chase"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "7C chase"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "sound"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                }
+            },
+            "modes": [
+                {
+                    "name": "7-channel Mode",
+                    "shortName": "7ch",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Macro",
+                        "Strobe/Speed",
+                        "Mode",
+                        "Intensity"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "RGB16 bit",
+            "shortName": "RGB16",
+            "comment": "RGB Fader with 16 bit channels",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Red fine": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Green fine": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Blue fine": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Red",
+                    "Red fine"
+                ],
+                [
+                    "Green",
+                    "Green fine"
+                ],
+                [
+                    "Blue",
+                    "Blue fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "6-channel Mode",
+                    "shortName": "6ch",
+                    "channels": [
+                        "Red",
+                        "Red fine",
+                        "Green",
+                        "Green fine",
+                        "Blue",
+                        "Blue fine"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "RGB16 bit HL",
+            "shortName": "RGB16 HL",
+            "comment": "RGB Fader with 16 bit channels",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Red fine": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Green fine": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Blue fine": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Red",
+                    "Red fine"
+                ],
+                [
+                    "Green",
+                    "Green fine"
+                ],
+                [
+                    "Blue",
+                    "Blue fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "6-channel Mode",
+                    "shortName": "6ch",
+                    "channels": [
+                        "Red fine",
+                        "Red",
+                        "Green fine",
+                        "Green",
+                        "Blue fine",
+                        "Blue"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "RGBAWFader",
+            "shortName": "RGBAW",
+            "comment": "5 CH",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Amber": {
+                    "type": "SingleColor",
+                    "color": "Amber",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                }
+            },
+            "modes": [
+                {
+                    "name": "5-channel Mode",
+                    "shortName": "5ch",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Amber",
+                        "White"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "RGBDim Fader",
+            "shortName": "RGBDimFader",
+            "comment": "RGB Fader and Dimmer as Multipart Fixture",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "4-channel Mode",
+                    "shortName": "4ch",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Intensity"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "RGBWAFader",
+            "shortName": "RGBWA",
+            "comment": "5 CH",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Amber": {
+                    "type": "SingleColor",
+                    "color": "Amber",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                }
+            },
+            "modes": [
+                {
+                    "name": "5-channel Mode",
+                    "shortName": "5ch",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "RGBWFader",
+            "shortName": "RGBW",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "4-channel Mode",
+                    "shortName": "4ch",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "Scroller",
+            "shortName": "Scroller",
+            "comment": "Single Scroller (Single channel not affected by Grandmaster)",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Colour": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "1-channel Mode",
+                    "shortName": "1ch",
+                    "channels": [
+                        "Colour"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "Scroller 16 Bit",
+            "shortName": "Scroller16",
+            "comment": "16 Bit Deskchannel not affected by Grandmaster",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Colour": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Colour fine": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null,
+                    "highlightValue": null
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Colour",
+                    "Colour fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "2-channel Mode",
+                    "shortName": "2ch",
+                    "channels": [
+                        "Colour",
+                        "Colour fine"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "Scroller Dimmer",
+            "shortName": "Scrldim",
+            "comment": "Scroller and Dimmer (Multipart Fixture)",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Colour": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "2-channel Mode",
+                    "shortName": "2ch",
+                    "channels": [
+                        "Colour",
+                        "Intensity"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "SWA Fader",
+            "shortName": "SWAFader",
+            "comment": "(Smartwhite + Amber)",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Cold": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Warm": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Amber": {
+                    "type": "SingleColor",
+                    "color": "Amber",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-channel Mode",
+                    "shortName": "3ch",
+                    "channels": [
+                        "Cold",
+                        "Warm",
+                        "Amber"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "Switch",
+            "shortName": "Switch",
+            "comment": "Switching channel. No submaster influence.",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Set": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "OFF"
+                        },
+                        {
+                            "range": [1, 254],
+                            "name": "Middle"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "ON"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "1-channel Mode",
+                    "shortName": "1ch",
+                    "channels": [
+                        "Set"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Generic",
+            "name": "WW Fader",
+            "shortName": "WWFader",
+            "comment": "Dual White Fader",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Intensity A": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Intensity B": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "2-channel Mode",
+                    "shortName": "2ch",
+                    "channels": [
+                        "Intensity A",
+                        "Intensity B"
+                    ]
+                }
+            ]
+        }
+    ]
+}

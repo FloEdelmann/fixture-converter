@@ -1,0 +1,87 @@
+{
+    "manufacturers": {
+        "Teclumen": {
+            "name": "Teclumen",
+            "website": "www.ldde.com"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Teclumen",
+            "name": "FC6 8Ch",
+            "shortName": "FC6 8Ch",
+            "comment": "cd",
+            "physical": {
+                "dimensions": [130, 130, 155],
+                "weight": 1.6,
+                "power": 48
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Color": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "highlightValue": 255,
+                    "constant": true,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                }
+            },
+            "modes": [
+                {
+                    "name": "8-channel Mode",
+                    "shortName": "8ch",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        null,
+                        "Strobe",
+                        "Intensity",
+                        "Color"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,202 @@
+{
+    "manufacturers": {
+        "Geni": {
+            "name": "Geni",
+            "comment": "Geni Electronics Co. ",
+            "website": "http://geni.com.hk/"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Geni",
+            "name": "Shiva-250R",
+            "shortName": "Shiva-250R",
+            "comment": "http://www.bekafun.net/files/producten/jli-genishiva200r-manual.pdf",
+            "physical": {
+                "dimensions": [300, 180, 670],
+                "weight": 15,
+                "power": 300
+            },
+            "availableChannels": {
+                "Shutter": {
+                    "type": "Shutter",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 159],
+                            "name": "Dimmer"
+                        },
+                        {
+                            "range": [160, 253],
+                            "name": "Strobe 1..7fps"
+                        },
+                        {
+                            "range": [254, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Pink",
+                            "color": "#ffc0cb",
+                            "center": true
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Yellow",
+                            "color": "#ffff00",
+                            "center": true
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Light Blue",
+                            "color": "#add8e6",
+                            "center": true
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Green",
+                            "color": "#00ff00",
+                            "center": true
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Orange",
+                            "color": "#ff7f00",
+                            "center": true
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Purple",
+                            "color": "#800080",
+                            "center": true
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Red",
+                            "color": "#ff0000",
+                            "center": true
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Dark Blue",
+                            "color": "#00008b",
+                            "center": true
+                        },
+                        {
+                            "range": [144, 174],
+                            "name": "Indigo",
+                            "color": "#4b0082",
+                            "center": true
+                        },
+                        {
+                            "range": [175, 255],
+                            "name": "ColorRot sl..fs"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 42],
+                            "name": "Gobo1"
+                        },
+                        {
+                            "range": [43, 85],
+                            "name": "Gobo2",
+                            "center": true
+                        },
+                        {
+                            "range": [86, 127],
+                            "name": "Gobo3",
+                            "center": true
+                        },
+                        {
+                            "range": [128, 170],
+                            "name": "Gobo4",
+                            "center": true
+                        },
+                        {
+                            "range": [171, 213],
+                            "name": "Gobo5",
+                            "center": true
+                        },
+                        {
+                            "range": [214, 255],
+                            "name": "Gobo6",
+                            "center": true
+                        }
+                    ]
+                },
+                "Gobo Rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [8, 131],
+                            "name": "ccw"
+                        },
+                        {
+                            "range": [132, 255],
+                            "name": "cw"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 127,
+                    "highlightValue": 127,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0..170"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 127,
+                    "highlightValue": 127,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0..90"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "6-channel Mode",
+                    "shortName": "6ch",
+                    "channels": [
+                        "Shutter",
+                        "Color",
+                        "Gobo",
+                        "Gobo Rotation",
+                        "Pan",
+                        "Tilt"
+                    ]
+                }
+            ]
+        }
+    ]
+}

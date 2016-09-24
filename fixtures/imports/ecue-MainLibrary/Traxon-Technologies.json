@@ -1,0 +1,100 @@
+{
+    "manufacturers": {
+        "Traxon Technologies": {
+            "name": "Traxon Technologies",
+            "website": "http://www.traxontechnologies.eu/"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Traxon Technologies",
+            "name": "CW-Fixture",
+            "shortName": "CWFixture",
+            "comment": "Cold White Fixture",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Cold White": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-channel Mode",
+                    "shortName": "3ch",
+                    "channels": [
+                        null,
+                        "Cold White"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Traxon Technologies",
+            "name": "DW-Fixture",
+            "shortName": "DWFixture",
+            "comment": "Dynamic White Fixture",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Warm White": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Cold White": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-channel Mode",
+                    "shortName": "3ch",
+                    "channels": [
+                        "Warm White",
+                        "Cold White"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Traxon Technologies",
+            "name": "WW-Fixture",
+            "shortName": "WWFixture",
+            "comment": "Warm White Fixture",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Warm White": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-channel Mode",
+                    "shortName": "3ch",
+                    "channels": [
+                        "Warm White"
+                    ]
+                }
+            ]
+        }
+    ]
+}

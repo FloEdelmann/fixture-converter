@@ -1,0 +1,853 @@
+{
+    "manufacturers": {
+        "Studio Due": {
+            "name": "Studio Due"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Studio Due",
+            "name": "City Colour",
+            "shortName": "CityColor",
+            "physical": {
+                "dimensions": [780, 560, 740],
+                "weight": 67,
+                "power": 3000
+            },
+            "availableChannels": {
+                "Motor": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Slow"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Mid 2"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Mid 1"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Fast"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Magenta",
+                            "color": "#ca1f7b"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 25],
+                            "name": "Colour Mixing"
+                        },
+                        {
+                            "range": [26, 51],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [52, 77],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [78, 103],
+                            "name": "Magenta",
+                            "color": "#ca1f7b"
+                        },
+                        {
+                            "range": [104, 129],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [130, 150],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [165, 181],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [182, 207],
+                            "name": "ColorMix slow"
+                        },
+                        {
+                            "range": [208, 233],
+                            "name": "ColorMix mid"
+                        },
+                        {
+                            "range": [234, 255],
+                            "name": "ColorMix fast"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [128, 191],
+                            "name": "RESET"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Lamp OFF"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "7-channel Mode",
+                    "shortName": "7ch",
+                    "channels": [
+                        "Motor",
+                        "Cyan",
+                        "Yellow",
+                        "Magenta",
+                        "Dimmer",
+                        "Color",
+                        "Control"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Studio Due",
+            "name": "CityBeam",
+            "shortName": "CityBeam",
+            "physical": {
+                "dimensions": [780, 560, 740],
+                "weight": 51,
+                "power": 2000
+            },
+            "availableChannels": {
+                "Motor": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Slow"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Mid 2"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Mid 1"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Fast"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Magenta",
+                            "color": "#ca1f7b"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Beam": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Control": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [128, 191],
+                            "name": "RESET"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Lamp OFF"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "7-channel Mode",
+                    "shortName": "7ch",
+                    "channels": [
+                        "Motor",
+                        "Cyan",
+                        "Yellow",
+                        "Magenta",
+                        "Dimmer",
+                        "Beam",
+                        "Control"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Studio Due",
+            "name": "Excess 700",
+            "shortName": "Exc700",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Iris": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Color": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true
+                },
+                "New Channel": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-channel Mode",
+                    "shortName": "3ch",
+                    "channels": [
+                        "Iris",
+                        "Color",
+                        "New Channel"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Studio Due",
+            "name": "Hercule 800e",
+            "shortName": "Herc800",
+            "comment": "cd",
+            "physical": {
+                "dimensions": [675, 600, 830],
+                "weight": 59,
+                "power": 1000
+            },
+            "availableChannels": {
+                "Speed": {
+                    "type": "Speed",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "speed1 (min)"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "speed2"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "speed3"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "speed4"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "speed5"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "speed6"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "speed7"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "speed8 (max)"
+                        }
+                    ]
+                },
+                "Color1": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true
+                },
+                "Color2": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true
+                },
+                "Color3": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true
+                },
+                "Color4": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true
+                },
+                "Color5": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true
+                },
+                "Color6": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Reset": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "motor reset"
+                        },
+                        {
+                            "range": [192, 239],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [240, 250],
+                            "name": "lamp off"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "idle"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "10-channel Mode",
+                    "shortName": "10ch",
+                    "channels": [
+                        "Speed",
+                        "Color1",
+                        "Color2",
+                        "Color3",
+                        "Color4",
+                        "Color5",
+                        "Color6",
+                        "Intensity",
+                        "Focus",
+                        "Reset"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Studio Due",
+            "name": "Light Deflector",
+            "shortName": "Light Deflector",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 103,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 147,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Tilt Spin": {
+                    "type": "Tilt",
+                    "crossfade": true
+                },
+                "P/T Speed": {
+                    "type": "Speed",
+                    "defaultValue": 255,
+                    "crossfade": true
+                },
+                "Reset": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Park"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Home Pos"
+                        },
+                        {
+                            "range": [64, 255],
+                            "name": "Park"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "5-channel Mode",
+                    "shortName": "5ch",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Tilt Spin",
+                        "P/T Speed",
+                        "Reset"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Studio Due",
+            "name": "MiniCity 150",
+            "shortName": "MCity150",
+            "physical": {
+                "dimensions": [415, 360, 540],
+                "weight": 13,
+                "power": 250
+            },
+            "availableChannels": {
+                "Motor": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "slow"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "mid 2"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "mid 1"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "fast"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 25],
+                            "name": "mixing"
+                        },
+                        {
+                            "range": [26, 51],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [52, 77],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [78, 103],
+                            "name": "Magenta",
+                            "color": "#ca1f7b"
+                        },
+                        {
+                            "range": [104, 129],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [130, 155],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [156, 181],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [182, 207],
+                            "name": "sequence slow"
+                        },
+                        {
+                            "range": [208, 233],
+                            "name": "sequence mid"
+                        },
+                        {
+                            "range": [234, 255],
+                            "name": "sequence fast"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "6-channel Mode",
+                    "shortName": "6ch",
+                    "channels": [
+                        "Motor",
+                        "Cyan",
+                        "Yellow",
+                        "Magenta",
+                        "Intensity",
+                        "Color"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Studio Due",
+            "name": "NanoIC",
+            "shortName": "nano",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "crossfade": true
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "crossfade": true
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "crossfade": true
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 128],
+                            "name": "New Range"
+                        },
+                        {
+                            "range": [129, 255],
+                            "name": "New Range"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "crossfade": true,
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "crossfade": true,
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "crossfade": true,
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "crossfade": true,
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "New Range"
+                        },
+                        {
+                            "range": [32, 64],
+                            "name": "New Range"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "New Range"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "New Range"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "New Range"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "New Range"
+                        },
+                        {
+                            "range": [192, 233],
+                            "name": "New Range"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "New Range"
+                        }
+                    ]
+                },
+                "Led Fade time": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Reset Remote": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "New Range"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "New Range"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "New Range"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "12-channel Mode",
+                    "shortName": "12ch",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Strobe",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Dimmer",
+                        "Speed",
+                        "Led Fade time",
+                        "Reset Remote"
+                    ]
+                }
+            ]
+        }
+    ]
+}

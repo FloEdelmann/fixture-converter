@@ -1,0 +1,726 @@
+{
+    "manufacturers": {
+        "PR Lighting": {
+            "name": "PR Lighting",
+            "website": "www.pr-lighting.com"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "PR Lighting",
+            "name": "Design 150 Pro",
+            "shortName": "design150pro",
+            "comment": "cd",
+            "physical": {
+                "dimensions": [300, 300, 300]
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 16],
+                            "name": "open"
+                        },
+                        {
+                            "range": [17, 35],
+                            "name": "color1"
+                        },
+                        {
+                            "range": [36, 54],
+                            "name": "color2"
+                        },
+                        {
+                            "range": [55, 73],
+                            "name": "color3"
+                        },
+                        {
+                            "range": [74, 92],
+                            "name": "color4"
+                        },
+                        {
+                            "range": [93, 110],
+                            "name": "color5"
+                        },
+                        {
+                            "range": [111, 181],
+                            "name": "color6"
+                        },
+                        {
+                            "range": [182, 255],
+                            "name": "ColorMix"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "crossfade": true
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "crossfade": true
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "crossfade": true
+                },
+                "Color speed": {
+                    "type": "Speed",
+                    "crossfade": true
+                },
+                "Control": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 48],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [49, 80],
+                            "name": "reset"
+                        },
+                        {
+                            "range": [81, 112],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [113, 144],
+                            "name": "lamp off"
+                        },
+                        {
+                            "range": [145, 223],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "lamp on"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "7-channel Mode",
+                    "shortName": "7ch",
+                    "channels": [
+                        "Intensity",
+                        "Color",
+                        "Cyan",
+                        "Yellow",
+                        "Magenta",
+                        "Color speed",
+                        "Control"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "PR Lighting",
+            "name": "XLED-590 Extended Mode",
+            "shortName": "XLED-590 Ext. Mode",
+            "comment": "PR-8100",
+            "physical": {
+                "dimensions": [350, 350, 350],
+                "weight": 11,
+                "power": 480
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Dimmer fine": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "_CT Adjust": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Macro": {
+                    "type": "MultiColor",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 16],
+                            "name": "RGB Channel"
+                        },
+                        {
+                            "range": [17, 24],
+                            "name": "White-10000K"
+                        },
+                        {
+                            "range": [25, 32],
+                            "name": "White-7200K"
+                        },
+                        {
+                            "range": [33, 40],
+                            "name": "White-5600"
+                        },
+                        {
+                            "range": [41, 48],
+                            "name": "White-3200"
+                        },
+                        {
+                            "range": [49, 56],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [57, 64],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [65, 72],
+                            "name": "Magenta",
+                            "color": "#ca1f7b"
+                        },
+                        {
+                            "range": [73, 80],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [81, 88],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [89, 96],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [97, 104],
+                            "name": "Aqua"
+                        },
+                        {
+                            "range": [105, 112],
+                            "name": "Amber",
+                            "color": "#ffbf00"
+                        },
+                        {
+                            "range": [113, 120],
+                            "name": "Orange",
+                            "color": "#ff7f00"
+                        },
+                        {
+                            "range": [121, 128],
+                            "name": "Pink",
+                            "color": "#ffc0cb"
+                        },
+                        {
+                            "range": [129, 255],
+                            "name": "RGB Color Cycle"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Red fine": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Green fine": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Blue fine": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "defaultValue": null
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Strobe"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 127,
+                    "highlightValue": 127,
+                    "crossfade": true
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 127,
+                    "highlightValue": 127,
+                    "crossfade": true
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "P/T speed": {
+                    "type": "Speed",
+                    "crossfade": true
+                },
+                "Control": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 47],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [48, 80],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [81, 255],
+                            "name": "Reserved"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Dimmer",
+                    "Dimmer fine"
+                ],
+                [
+                    "Red",
+                    "Red fine"
+                ],
+                [
+                    "Green",
+                    "Green fine"
+                ],
+                [
+                    "Blue",
+                    "Blue fine"
+                ],
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "17-channel Mode",
+                    "shortName": "17ch",
+                    "channels": [
+                        "Dimmer",
+                        "Dimmer fine",
+                        "_CT Adjust",
+                        "Macro",
+                        "Red",
+                        "Red fine",
+                        "Green",
+                        "Green fine",
+                        "Blue",
+                        "Blue fine",
+                        "Strobe",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "P/T speed",
+                        "Control"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "PR Lighting",
+            "name": "XLED-590 Short Mode",
+            "shortName": "XLED-590 Sh. Mode",
+            "comment": "PR-8100",
+            "physical": {
+                "dimensions": [350, 350, 350],
+                "weight": 11,
+                "power": 480
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Strobe"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 32767,
+                    "highlightValue": 32767,
+                    "crossfade": true
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 32767,
+                    "highlightValue": 32767,
+                    "crossfade": true
+                },
+                "Control": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 47],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [48, 80],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [81, 255],
+                            "name": "Reserved"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "8-channel Mode",
+                    "shortName": "8ch",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Strobe",
+                        "Pan",
+                        "Tilt",
+                        "Control"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "PR Lighting",
+            "name": "XLED-590 Standard Mode",
+            "shortName": "XLED-590 Std. Mode",
+            "comment": "PR-8100",
+            "physical": {
+                "dimensions": [350, 350, 350],
+                "weight": 11,
+                "power": 480
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "_CT Adjust": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Macro": {
+                    "type": "MultiColor",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 16],
+                            "name": "RGB Channel"
+                        },
+                        {
+                            "range": [17, 24],
+                            "name": "White-10000K"
+                        },
+                        {
+                            "range": [25, 32],
+                            "name": "White-7200K"
+                        },
+                        {
+                            "range": [33, 40],
+                            "name": "White-5600"
+                        },
+                        {
+                            "range": [41, 48],
+                            "name": "White-3200"
+                        },
+                        {
+                            "range": [49, 56],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [57, 64],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [65, 72],
+                            "name": "Magenta",
+                            "color": "#ca1f7b"
+                        },
+                        {
+                            "range": [73, 80],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [81, 88],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [89, 96],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [97, 104],
+                            "name": "Aqua"
+                        },
+                        {
+                            "range": [105, 112],
+                            "name": "Amber",
+                            "color": "#ffbf00"
+                        },
+                        {
+                            "range": [113, 120],
+                            "name": "Orange",
+                            "color": "#ff7f00"
+                        },
+                        {
+                            "range": [121, 128],
+                            "name": "Pink",
+                            "color": "#ffc0cb"
+                        },
+                        {
+                            "range": [129, 255],
+                            "name": "RGB Color Cycle"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Strobe"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 127,
+                    "highlightValue": 127,
+                    "crossfade": true
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 127,
+                    "highlightValue": 127,
+                    "crossfade": true
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "P/T speed": {
+                    "type": "Speed",
+                    "defaultValue": 32767,
+                    "crossfade": true
+                },
+                "Control": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 47],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [48, 80],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [81, 255],
+                            "name": "Reserved"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "13-channel Mode",
+                    "shortName": "13ch",
+                    "channels": [
+                        "Dimmer",
+                        "_CT Adjust",
+                        "Macro",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Strobe",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "P/T speed",
+                        "Control"
+                    ]
+                }
+            ]
+        }
+    ]
+}

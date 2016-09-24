@@ -1,0 +1,82 @@
+{
+    "manufacturers": {
+        "Meteor-KLS": {
+            "name": "Meteor-KLS",
+            "website": "http://www.meteor-global.com"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Meteor-KLS",
+            "name": "HPL 575 Mover",
+            "shortName": "HPL Mover",
+            "physical": {
+                "dimensions": [300, 300, 1000],
+                "weight": 13,
+                "power": 700
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 127,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 127,
+                    "crossfade": true,
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "highlightValue": null
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "6-channel Mode",
+                    "shortName": "6ch",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe",
+                        "Pan",
+                        "Tilt",
+                        "Pan fine",
+                        "Tilt fine"
+                    ]
+                }
+            ]
+        }
+    ]
+}

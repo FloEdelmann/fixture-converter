@@ -1,0 +1,57 @@
+{
+    "manufacturers": {
+        "Antari": {
+            "name": "Antari",
+            "website": "www.antari.com"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Antari",
+            "name": "X-20II",
+            "shortName": "X-20II",
+            "physical": {
+                "dimensions": [500, 250, 200]
+            },
+            "availableChannels": {
+                "Fog": {
+                    "type": "Beam",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "off"
+                        },
+                        {
+                            "range": [6, 74],
+                            "name": "volume"
+                        },
+                        {
+                            "range": [75, 75],
+                            "name": "continous"
+                        },
+                        {
+                            "range": [76, 248],
+                            "name": "volume"
+                        },
+                        {
+                            "range": [249, 255],
+                            "name": "maximum"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "1-channel Mode",
+                    "shortName": "1ch",
+                    "channels": [
+                        "Fog"
+                    ]
+                }
+            ]
+        }
+    ]
+}

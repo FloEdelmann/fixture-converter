@@ -1,0 +1,386 @@
+{
+    "manufacturers": {
+        "Lux": {
+            "name": "Lux",
+            "website": "http://www.elationlighting.com/"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Lux",
+            "name": "Wash 575",
+            "shortName": "Wash 575",
+            "physical": {
+                "dimensions": [500, 500, 700],
+                "weight": 30,
+                "power": 700
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 127,
+                    "highlightValue": 127,
+                    "crossfade": true
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 127,
+                    "highlightValue": 127,
+                    "crossfade": true
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Scan Spd": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 249],
+                            "name": "speed"
+                        },
+                        {
+                            "range": [250, 252],
+                            "name": "black_change",
+                            "center": true
+                        },
+                        {
+                            "range": [253, 255],
+                            "name": "black_move",
+                            "center": true
+                        }
+                    ]
+                },
+                "Lamp": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "fan_speed"
+                        },
+                        {
+                            "range": [128, 139],
+                            "name": "lamp_on",
+                            "center": true
+                        },
+                        {
+                            "range": [140, 239],
+                            "name": "nofunction"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "lamp_off",
+                            "center": true
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "nofunction",
+                            "center": true
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 24],
+                            "name": "open"
+                        },
+                        {
+                            "range": [25, 49],
+                            "name": "red",
+                            "color": "#ff0000",
+                            "center": true
+                        },
+                        {
+                            "range": [50, 74],
+                            "name": "blue",
+                            "color": "#0000ff",
+                            "center": true
+                        },
+                        {
+                            "range": [75, 99],
+                            "name": "green",
+                            "color": "#00ff00",
+                            "center": true
+                        },
+                        {
+                            "range": [100, 124],
+                            "name": "orange",
+                            "color": "#ff7f00",
+                            "center": true
+                        },
+                        {
+                            "range": [125, 149],
+                            "name": "6000k",
+                            "center": true
+                        },
+                        {
+                            "range": [150, 174],
+                            "name": "3200k",
+                            "center": true
+                        },
+                        {
+                            "range": [175, 199],
+                            "name": "UV",
+                            "center": true
+                        },
+                        {
+                            "range": [200, 255],
+                            "name": "rainbow"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "CMY Spd": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Macro": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No Effect"
+                        },
+                        {
+                            "range": [8, 13],
+                            "name": "macro1",
+                            "center": true
+                        },
+                        {
+                            "range": [14, 28],
+                            "name": "macro2",
+                            "center": true
+                        },
+                        {
+                            "range": [29, 43],
+                            "name": "macro3",
+                            "center": true
+                        },
+                        {
+                            "range": [44, 58],
+                            "name": "macro4",
+                            "center": true
+                        },
+                        {
+                            "range": [59, 73],
+                            "name": "macro5",
+                            "center": true
+                        },
+                        {
+                            "range": [74, 88],
+                            "name": "macro6",
+                            "center": true
+                        },
+                        {
+                            "range": [89, 103],
+                            "name": "macro7",
+                            "center": true
+                        },
+                        {
+                            "range": [104, 118],
+                            "name": "macro8",
+                            "center": true
+                        },
+                        {
+                            "range": [119, 133],
+                            "name": "macro9",
+                            "center": true
+                        },
+                        {
+                            "range": [134, 148],
+                            "name": "macro10",
+                            "center": true
+                        },
+                        {
+                            "range": [149, 163],
+                            "name": "macro11",
+                            "center": true
+                        },
+                        {
+                            "range": [164, 178],
+                            "name": "macro12",
+                            "center": true
+                        },
+                        {
+                            "range": [179, 193],
+                            "name": "macro13",
+                            "center": true
+                        },
+                        {
+                            "range": [194, 208],
+                            "name": "macro14",
+                            "center": true
+                        },
+                        {
+                            "range": [209, 223],
+                            "name": "macro15",
+                            "center": true
+                        },
+                        {
+                            "range": [224, 238],
+                            "name": "macro16",
+                            "center": true
+                        },
+                        {
+                            "range": [239, 253],
+                            "name": "macro17",
+                            "center": true
+                        },
+                        {
+                            "range": [254, 255],
+                            "name": "macro18",
+                            "center": true
+                        }
+                    ]
+                },
+                "Beam Shape": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 49],
+                            "name": "circle"
+                        },
+                        {
+                            "range": [50, 255],
+                            "name": "shaper"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "defaultValue": 45,
+                    "highlightValue": 45,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "closed"
+                        },
+                        {
+                            "range": [10, 40],
+                            "name": "open",
+                            "center": true
+                        },
+                        {
+                            "range": [41, 250],
+                            "name": "strobe"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "open",
+                            "center": true
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "16-channel Mode",
+                    "shortName": "16ch",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan fine",
+                        "Tilt fine",
+                        "Scan Spd",
+                        "Lamp",
+                        "Color",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "CMY Spd",
+                        "Macro",
+                        "Beam Shape",
+                        "Zoom",
+                        "Shutter",
+                        "Intensity"
+                    ]
+                }
+            ]
+        }
+    ]
+}

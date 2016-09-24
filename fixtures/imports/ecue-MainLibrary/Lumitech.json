@@ -1,0 +1,174 @@
+{
+    "manufacturers": {
+        "Lumitech": {
+            "name": "Lumitech",
+            "website": "www.lumitech.at"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Lumitech",
+            "name": "Downlight E8 Mode 1-3",
+            "shortName": "Downlight E8 M1-3",
+            "physical": {
+                "dimensions": [100, 100, 100],
+                "weight": 0.36,
+                "power": 12
+            },
+            "availableChannels": {
+                "Operating Mode": {
+                    "type": "Beam",
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [101, 200],
+                            "name": "RPB-Mode",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [0, 100],
+                            "name": "CTC-Mode",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [201, 255],
+                            "name": "CIE-Mode",
+                            "showInMenu": false
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "ch3": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "ch4": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                }
+            },
+            "modes": [
+                {
+                    "name": "4-channel Mode",
+                    "shortName": "4ch",
+                    "channels": [
+                        "Operating Mode",
+                        "Intensity",
+                        "ch3",
+                        "ch4"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Lumitech",
+            "name": "Downlight E8 Mode CTC",
+            "shortName": "Downlight E8 M CTC",
+            "physical": {
+                "dimensions": [100, 100, 100],
+                "weight": 0.36,
+                "power": 12
+            },
+            "availableChannels": {
+                "Operating Mode": {
+                    "type": "Beam",
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [101, 200],
+                            "name": "RPB-Mode",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [0, 100],
+                            "name": "CTC-Mode",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [201, 255],
+                            "name": "CIE-Mode",
+                            "showInMenu": false
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Color Temp": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "2500 K",
+                            "showInMenu": false
+                        },
+                        {
+                            "range": [20, 20],
+                            "name": "3000 K"
+                        },
+                        {
+                            "range": [53, 53],
+                            "name": "3500 K"
+                        },
+                        {
+                            "range": [88, 88],
+                            "name": "4000 K"
+                        },
+                        {
+                            "range": [122, 122],
+                            "name": "4500 K"
+                        },
+                        {
+                            "range": [160, 160],
+                            "name": "5000 K"
+                        },
+                        {
+                            "range": [188, 188],
+                            "name": "5500 K"
+                        },
+                        {
+                            "range": [220, 220],
+                            "name": "6000 K"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "6500 K"
+                        }
+                    ]
+                },
+                "n a": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP"
+                }
+            },
+            "modes": [
+                {
+                    "name": "4-channel Mode",
+                    "shortName": "4ch",
+                    "channels": [
+                        "Operating Mode",
+                        "Intensity",
+                        "Color Temp",
+                        "n a"
+                    ]
+                }
+            ]
+        }
+    ]
+}

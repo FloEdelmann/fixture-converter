@@ -1,0 +1,1340 @@
+{
+    "manufacturers": {
+        "Philips": {
+            "name": "Philips"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Philips",
+            "name": "Selecon_PL3_16Bit",
+            "shortName": "Selecon_PL3",
+            "physical": {
+                "dimensions": [475, 475, 315]
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "Intensity fine": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "Red fine": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "Green fine": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "Blue fine": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "White fine": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "Pres Color sel": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Intensity Time": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Color Time": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Control"
+                        }
+                    ]
+                },
+                "Beam Time": {
+                    "type": "Beam",
+                    "defaultValue": 127,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Motor stop"
+                        },
+                        {
+                            "range": [16, 49],
+                            "name": "Motor rev fast"
+                        },
+                        {
+                            "range": [50, 84],
+                            "name": "Motor rev med"
+                        },
+                        {
+                            "range": [85, 119],
+                            "name": "Motor rev slow"
+                        },
+                        {
+                            "range": [120, 135],
+                            "name": "Motor stop"
+                        },
+                        {
+                            "range": [136, 170],
+                            "name": "Motor fwd slow"
+                        },
+                        {
+                            "range": [171, 204],
+                            "name": "Motor fwd med"
+                        },
+                        {
+                            "range": [205, 238],
+                            "name": "Motor fwd fast"
+                        },
+                        {
+                            "range": [239, 255],
+                            "name": "Motor stop"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Intensity",
+                    "Intensity fine"
+                ],
+                [
+                    "Red",
+                    "Red fine"
+                ],
+                [
+                    "Green",
+                    "Green fine"
+                ],
+                [
+                    "Blue",
+                    "Blue fine"
+                ],
+                [
+                    "White",
+                    "White fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "18-channel Mode",
+                    "shortName": "18ch",
+                    "channels": [
+                        "Intensity",
+                        "Intensity fine",
+                        "Red",
+                        "Red fine",
+                        "Green",
+                        "Green fine",
+                        "Blue",
+                        "Blue fine",
+                        "White",
+                        "White fine",
+                        "Pres Color sel",
+                        null,
+                        "Intensity Time",
+                        "Color Time",
+                        "Control",
+                        "Beam Time"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Philips",
+            "name": "SL Wash 180 16Bit",
+            "shortName": "SLWash180,16Bit",
+            "comment": "Version: SL WASH 180 RGBW, IP20\nOptics: 12 - 45 degree Zoom, 54 high power LEDs",
+            "physical": {
+                "dimensions": [280, 370, 212],
+                "weight": 8,
+                "power": 180
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true
+                },
+                "P+T Timing": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "Intensity fine": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "Red fine": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "Green fine": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "Blue fine": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "White fine": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null
+                },
+                "Pres Color": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Open",
+                            "center": true
+                        },
+                        {
+                            "range": [3, 5],
+                            "name": "Closed",
+                            "center": true
+                        },
+                        {
+                            "range": [6, 7],
+                            "name": "Slow RND"
+                        },
+                        {
+                            "range": [8, 10],
+                            "name": "Med RND",
+                            "center": true
+                        },
+                        {
+                            "range": [11, 12],
+                            "name": "Fast RND",
+                            "center": true
+                        },
+                        {
+                            "range": [13, 127],
+                            "name": "Strobe Range",
+                            "center": true
+                        },
+                        {
+                            "range": [128, 129],
+                            "name": "Pulse+slow RND",
+                            "center": true
+                        },
+                        {
+                            "range": [130, 131],
+                            "name": "Pulse+med RND",
+                            "center": true
+                        },
+                        {
+                            "range": [132, 133],
+                            "name": "Pulse+fast RND",
+                            "center": true
+                        },
+                        {
+                            "range": [134, 191],
+                            "name": "Pulse + Range",
+                            "center": true
+                        },
+                        {
+                            "range": [192, 193],
+                            "name": "Pulse-slow RND",
+                            "center": true
+                        },
+                        {
+                            "range": [194, 195],
+                            "name": "Pulse-med RND",
+                            "center": true
+                        },
+                        {
+                            "range": [196, 197],
+                            "name": "Pulse-fast RND",
+                            "center": true
+                        },
+                        {
+                            "range": [198, 255],
+                            "name": "Pulse - Range",
+                            "center": true
+                        }
+                    ]
+                },
+                "Strobe Duration": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Int+Col Timing": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Color Time": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Zoom Time": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Default"
+                        },
+                        {
+                            "range": [5, 9],
+                            "name": "DIM Res Norm"
+                        },
+                        {
+                            "range": [10, 14],
+                            "name": "DIM Res Incan"
+                        },
+                        {
+                            "range": [30, 34],
+                            "name": "DIM Cur Lin"
+                        },
+                        {
+                            "range": [35, 39],
+                            "name": "DIM Cur Squ"
+                        },
+                        {
+                            "range": [40, 44],
+                            "name": "DIM Cur S"
+                        },
+                        {
+                            "range": [45, 49],
+                            "name": "DIM Cur PL"
+                        },
+                        {
+                            "range": [70, 74],
+                            "name": "Calibr Off"
+                        },
+                        {
+                            "range": [75, 79],
+                            "name": "Calibr On"
+                        },
+                        {
+                            "range": [100, 104],
+                            "name": "Map RGBW 16Bit"
+                        },
+                        {
+                            "range": [105, 109],
+                            "name": "Map RGBW 8Bit"
+                        },
+                        {
+                            "range": [110, 114],
+                            "name": "Map HSIC"
+                        },
+                        {
+                            "range": [115, 255],
+                            "name": "Reserved"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ],
+                [
+                    "Intensity",
+                    "Intensity fine"
+                ],
+                [
+                    "Red",
+                    "Red fine"
+                ],
+                [
+                    "Green",
+                    "Green fine"
+                ],
+                [
+                    "Blue",
+                    "Blue fine"
+                ],
+                [
+                    "White",
+                    "White fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "23-channel Mode",
+                    "shortName": "23ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "P+T Timing",
+                        "Intensity",
+                        "Intensity fine",
+                        "Red",
+                        "Red fine",
+                        "Green",
+                        "Green fine",
+                        "Blue",
+                        "Blue fine",
+                        "White",
+                        "White fine",
+                        "Pres Color",
+                        "Strobe",
+                        "Strobe Duration",
+                        "Zoom",
+                        "Int+Col Timing",
+                        "Color Time",
+                        "Zoom Time",
+                        "Control"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Philips",
+            "name": "SL Wash 180 8Bit",
+            "shortName": "SLWash180,8Bit",
+            "comment": "Version: SL WASH 180 RGBW, IP20\nOptics: 12 - 45 degree Zoom, 54 high power LEDs",
+            "physical": {
+                "dimensions": [280, 370, 212],
+                "weight": 8,
+                "power": 180
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true
+                },
+                "P+T Timing": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Pres Color": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Open",
+                            "center": true
+                        },
+                        {
+                            "range": [3, 5],
+                            "name": "Closed",
+                            "center": true
+                        },
+                        {
+                            "range": [6, 7],
+                            "name": "Slow RND"
+                        },
+                        {
+                            "range": [8, 10],
+                            "name": "Med RND",
+                            "center": true
+                        },
+                        {
+                            "range": [11, 12],
+                            "name": "Fast RND",
+                            "center": true
+                        },
+                        {
+                            "range": [13, 127],
+                            "name": "Strobe Range",
+                            "center": true
+                        },
+                        {
+                            "range": [128, 129],
+                            "name": "Pulse+slow RND",
+                            "center": true
+                        },
+                        {
+                            "range": [130, 131],
+                            "name": "Pulse+med RND",
+                            "center": true
+                        },
+                        {
+                            "range": [132, 133],
+                            "name": "Pulse+fast RND",
+                            "center": true
+                        },
+                        {
+                            "range": [134, 191],
+                            "name": "Pulse + Range",
+                            "center": true
+                        },
+                        {
+                            "range": [192, 193],
+                            "name": "Pulse-slow RND",
+                            "center": true
+                        },
+                        {
+                            "range": [194, 195],
+                            "name": "Pulse-med RND",
+                            "center": true
+                        },
+                        {
+                            "range": [196, 197],
+                            "name": "Pulse-fast RND",
+                            "center": true
+                        },
+                        {
+                            "range": [198, 255],
+                            "name": "Pulse - Range",
+                            "center": true
+                        }
+                    ]
+                },
+                "Strobe Duration": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Int+Col Timing": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Default"
+                        },
+                        {
+                            "range": [5, 9],
+                            "name": "DIM Res Norm"
+                        },
+                        {
+                            "range": [10, 14],
+                            "name": "DIM Res Incan"
+                        },
+                        {
+                            "range": [30, 34],
+                            "name": "DIM Cur Lin"
+                        },
+                        {
+                            "range": [35, 39],
+                            "name": "DIM Cur Squ"
+                        },
+                        {
+                            "range": [40, 44],
+                            "name": "DIM Cur S"
+                        },
+                        {
+                            "range": [45, 49],
+                            "name": "DIM Cur PL"
+                        },
+                        {
+                            "range": [70, 74],
+                            "name": "Calibr Off"
+                        },
+                        {
+                            "range": [75, 79],
+                            "name": "Calibr On"
+                        },
+                        {
+                            "range": [100, 104],
+                            "name": "Map RGBW 16Bit"
+                        },
+                        {
+                            "range": [105, 109],
+                            "name": "Map RGBW 8Bit"
+                        },
+                        {
+                            "range": [110, 114],
+                            "name": "Map HSIC"
+                        },
+                        {
+                            "range": [115, 255],
+                            "name": "Reserved"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "16-channel Mode",
+                    "shortName": "16ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "P+T Timing",
+                        "Intensity",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Pres Color",
+                        "Strobe",
+                        "Strobe Duration",
+                        "Zoom",
+                        "Int+Col Timing",
+                        "Control"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Philips",
+            "name": "SL Wash 180 HSIC Mode",
+            "shortName": "SLWash180,HSIC",
+            "comment": "Version: SL WASH 180 RGBW, IP20\nOptics: 12 - 45 degree Zoom, 54 high power LEDs",
+            "physical": {
+                "dimensions": [280, 370, 212],
+                "weight": 8,
+                "power": 180
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true
+                },
+                "P+T Timing": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Hue High Low": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Hue High Low fine": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ],
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "Saturation": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Intensity 8Bit": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "CCT": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Open",
+                            "center": true
+                        },
+                        {
+                            "range": [3, 5],
+                            "name": "Closed",
+                            "center": true
+                        },
+                        {
+                            "range": [6, 7],
+                            "name": "Slow RND"
+                        },
+                        {
+                            "range": [8, 10],
+                            "name": "Med RND",
+                            "center": true
+                        },
+                        {
+                            "range": [11, 12],
+                            "name": "Fast RND",
+                            "center": true
+                        },
+                        {
+                            "range": [13, 127],
+                            "name": "Strobe Range",
+                            "center": true
+                        },
+                        {
+                            "range": [128, 129],
+                            "name": "Pulse+slow RND",
+                            "center": true
+                        },
+                        {
+                            "range": [130, 131],
+                            "name": "Pulse+med RND",
+                            "center": true
+                        },
+                        {
+                            "range": [132, 133],
+                            "name": "Pulse+fast RND",
+                            "center": true
+                        },
+                        {
+                            "range": [134, 191],
+                            "name": "Pulse + Range",
+                            "center": true
+                        },
+                        {
+                            "range": [192, 193],
+                            "name": "Pulse-slow RND",
+                            "center": true
+                        },
+                        {
+                            "range": [194, 195],
+                            "name": "Pulse-med RND",
+                            "center": true
+                        },
+                        {
+                            "range": [196, 197],
+                            "name": "Pulse-fast RND",
+                            "center": true
+                        },
+                        {
+                            "range": [198, 255],
+                            "name": "Pulse - Range",
+                            "center": true
+                        }
+                    ]
+                },
+                "Strobe Duration": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Int+Col Timing": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Default"
+                        },
+                        {
+                            "range": [5, 9],
+                            "name": "DIM Res Norm"
+                        },
+                        {
+                            "range": [10, 14],
+                            "name": "DIM Res Incan"
+                        },
+                        {
+                            "range": [30, 34],
+                            "name": "DIM Cur Lin"
+                        },
+                        {
+                            "range": [35, 39],
+                            "name": "DIM Cur Squ"
+                        },
+                        {
+                            "range": [40, 44],
+                            "name": "DIM Cur S"
+                        },
+                        {
+                            "range": [45, 49],
+                            "name": "DIM Cur PL"
+                        },
+                        {
+                            "range": [70, 74],
+                            "name": "Calibr Off"
+                        },
+                        {
+                            "range": [75, 79],
+                            "name": "Calibr On"
+                        },
+                        {
+                            "range": [100, 104],
+                            "name": "Map RGBW 16Bit"
+                        },
+                        {
+                            "range": [105, 109],
+                            "name": "Map RGBW 8Bit"
+                        },
+                        {
+                            "range": [110, 114],
+                            "name": "Map HSIC"
+                        },
+                        {
+                            "range": [115, 255],
+                            "name": "Reserved"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ],
+                [
+                    "Hue High Low",
+                    "Hue High Low fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "16-channel Mode",
+                    "shortName": "16ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "P+T Timing",
+                        "Intensity",
+                        "Hue High Low",
+                        "Hue High Low fine",
+                        "Saturation",
+                        "Intensity 8Bit",
+                        "CCT",
+                        "Strobe",
+                        "Strobe Duration",
+                        "Zoom",
+                        "Int+Col Timing",
+                        "Control"
+                    ]
+                }
+            ]
+        }
+    ]
+}

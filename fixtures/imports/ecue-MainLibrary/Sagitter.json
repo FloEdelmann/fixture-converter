@@ -1,0 +1,504 @@
+{
+    "manufacturers": {
+        "Sagitter": {
+            "name": "Sagitter",
+            "website": "www.sagitter.it"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Sagitter",
+            "name": "Sagitter Infinity Zoom 1200",
+            "shortName": "IZ1200",
+            "comment": "1200 W MSR",
+            "physical": {
+                "dimensions": [440, 1240, 420],
+                "weight": 47,
+                "power": 1700
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "highlightValue": 40,
+                    "capabilities": [
+                        {
+                            "range": [0, 22],
+                            "name": "closed"
+                        },
+                        {
+                            "range": [29, 50],
+                            "name": "open",
+                            "center": true
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "GoboStat.": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 21],
+                            "name": "ohne Gobo",
+                            "center": true
+                        },
+                        {
+                            "range": [35, 39],
+                            "name": "Gobo 1",
+                            "center": true
+                        },
+                        {
+                            "range": [60, 65],
+                            "name": "Gobo 2 Dichro",
+                            "center": true
+                        },
+                        {
+                            "range": [86, 90],
+                            "name": "Gobo 3",
+                            "center": true
+                        },
+                        {
+                            "range": [111, 115],
+                            "name": "Gobo 4",
+                            "center": true
+                        },
+                        {
+                            "range": [137, 140],
+                            "name": "Gobo 5",
+                            "center": true
+                        }
+                    ]
+                },
+                "RotGobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 45],
+                            "name": "Ohne Gobo",
+                            "center": true
+                        },
+                        {
+                            "range": [55, 102],
+                            "name": "GoboRot 1",
+                            "center": true
+                        },
+                        {
+                            "range": [107, 150],
+                            "name": "GoboRot 2",
+                            "center": true
+                        },
+                        {
+                            "range": [158, 202],
+                            "name": "GoboRot 3",
+                            "center": true
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "GoboRot 4",
+                            "center": true
+                        }
+                    ]
+                },
+                "RotatGobo": {
+                    "type": "Gobo",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 156],
+                            "name": "Index Posit."
+                        },
+                        {
+                            "range": [156, 198],
+                            "name": "V-schn.-lgs"
+                        },
+                        {
+                            "range": [212, 255],
+                            "name": "RW-lgs-schn"
+                        },
+                        {
+                            "range": [204, 204],
+                            "name": "Stop-Rotation"
+                        }
+                    ]
+                },
+                "Prismen": {
+                    "type": "Prism",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 60],
+                            "name": "Ohne Prisma",
+                            "center": true
+                        },
+                        {
+                            "range": [68, 124],
+                            "name": "Prisma 1",
+                            "center": true
+                        },
+                        {
+                            "range": [134, 188],
+                            "name": "Prisma 2",
+                            "center": true
+                        },
+                        {
+                            "range": [200, 255],
+                            "name": "Prisma 3",
+                            "center": true
+                        }
+                    ]
+                },
+                "RotatPrisma": {
+                    "type": "Prism",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 153],
+                            "name": "Index Posit."
+                        },
+                        {
+                            "range": [156, 198],
+                            "name": "V-schn.-lgs."
+                        },
+                        {
+                            "range": [204, 204],
+                            "name": "Stop-Rotation"
+                        },
+                        {
+                            "range": [212, 255],
+                            "name": "RW-lgs-schn"
+                        }
+                    ]
+                },
+                "Frost": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 45],
+                            "name": "Ohne Frost",
+                            "center": true
+                        },
+                        {
+                            "range": [55, 102],
+                            "name": "Frost 1",
+                            "center": true
+                        },
+                        {
+                            "range": [107, 150],
+                            "name": "Frost 2",
+                            "center": true
+                        },
+                        {
+                            "range": [158, 202],
+                            "name": "Leer",
+                            "center": true
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "Multiface Pr.",
+                            "center": true
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Weiss",
+                            "center": true
+                        },
+                        {
+                            "range": [14, 19],
+                            "name": "Weiss-Rot",
+                            "center": true
+                        },
+                        {
+                            "range": [24, 29],
+                            "name": "ROT",
+                            "center": true
+                        },
+                        {
+                            "range": [35, 39],
+                            "name": "Rot-Gelb",
+                            "center": true
+                        },
+                        {
+                            "range": [45, 50],
+                            "name": "GELB",
+                            "center": true
+                        },
+                        {
+                            "range": [55, 60],
+                            "name": "Gelb-Magenta",
+                            "center": true
+                        },
+                        {
+                            "range": [65, 70],
+                            "name": "MAGENTA",
+                            "color": "#ca1f7b",
+                            "center": true
+                        },
+                        {
+                            "range": [75, 80],
+                            "name": "Mag.-Gr"
+                        },
+                        {
+                            "range": [86, 90],
+                            "name": "Gr"
+                        },
+                        {
+                            "range": [96, 101],
+                            "name": "Gr"
+                        },
+                        {
+                            "range": [106, 111],
+                            "name": "ORANGE",
+                            "color": "#ff7f00",
+                            "center": true
+                        },
+                        {
+                            "range": [116, 120],
+                            "name": "Orange-Blau",
+                            "center": true
+                        },
+                        {
+                            "range": [126, 131],
+                            "name": "BLAU",
+                            "center": true
+                        },
+                        {
+                            "range": [137, 141],
+                            "name": "Blau-Pink",
+                            "center": true
+                        },
+                        {
+                            "range": [147, 152],
+                            "name": "PINK",
+                            "color": "#ffc0cb",
+                            "center": true
+                        },
+                        {
+                            "range": [157, 162],
+                            "name": "Pink-Weiss",
+                            "center": true
+                        },
+                        {
+                            "range": [166, 204],
+                            "name": "Vorw-Max-Min"
+                        },
+                        {
+                            "range": [208, 210],
+                            "name": "Stop-Rotation",
+                            "center": true
+                        },
+                        {
+                            "range": [215, 255],
+                            "name": "R"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Lamp/Reset": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "capabilities": [
+                        {
+                            "range": [0, 75],
+                            "name": "Lampe aus",
+                            "center": true
+                        },
+                        {
+                            "range": [81, 100],
+                            "name": "Selbst-Test",
+                            "center": true
+                        },
+                        {
+                            "range": [116, 139],
+                            "name": "RESET",
+                            "center": true
+                        },
+                        {
+                            "range": [190, 255],
+                            "name": "Lampe an!",
+                            "center": true
+                        }
+                    ]
+                },
+                "PAN": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "PAN fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "TILT": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "TILT fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "PAN",
+                    "PAN fine"
+                ],
+                [
+                    "TILT",
+                    "TILT fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "20-channel Mode",
+                    "shortName": "20ch",
+                    "channels": [
+                        "Dimmer",
+                        "Shutter",
+                        "Iris",
+                        "Zoom",
+                        "Focus",
+                        "GoboStat.",
+                        "RotGobo",
+                        "RotatGobo",
+                        "Prismen",
+                        "RotatPrisma",
+                        "Frost",
+                        "Color",
+                        "Cyan",
+                        "Yellow",
+                        "Magenta",
+                        "Lamp/Reset",
+                        "PAN",
+                        "PAN fine",
+                        "TILT",
+                        "TILT fine"
+                    ]
+                }
+            ]
+        }
+    ]
+}

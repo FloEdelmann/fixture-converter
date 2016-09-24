@@ -1,0 +1,65 @@
+{
+    "manufacturers": {
+        "TEC": {
+            "name": "TEC"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "TEC",
+            "name": "Punto Color 150",
+            "shortName": "Punto150",
+            "physical": {
+                "dimensions": [265, 445, 345],
+                "weight": 10.5,
+                "power": 300
+            },
+            "availableChannels": {
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-channel Mode",
+                    "shortName": "3ch",
+                    "channels": [
+                        "Cyan",
+                        "Magenta",
+                        "Yellow"
+                    ]
+                }
+            ]
+        }
+    ]
+}

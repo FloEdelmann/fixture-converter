@@ -1,0 +1,1769 @@
+{
+    "manufacturers": {
+        "Amptown": {
+            "name": "Amptown",
+            "website": "www.amptown-lichttechnik.de"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Amptown",
+            "name": "AmpMount",
+            "shortName": "AmpMount",
+            "physical": {
+                "dimensions": [100, 100, 100],
+                "weight": 15,
+                "power": 50
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true
+                },
+                "Reset": {
+                    "type": "Beam",
+                    "crossfade": true
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "5-channel Mode",
+                    "shortName": "5ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Reset"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Amptown",
+            "name": "Controlite PML zoom",
+            "shortName": "PMLzoom",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "closed"
+                        },
+                        {
+                            "range": [11, 210],
+                            "name": "strobe"
+                        },
+                        {
+                            "range": [211, 240],
+                            "name": "random"
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "open"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 127,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 127,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "highlightValue": null
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "CTO": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "600k"
+                        },
+                        {
+                            "range": [220, 220],
+                            "name": "3400k"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 43],
+                            "name": "open"
+                        },
+                        {
+                            "range": [44, 87],
+                            "name": "color 1"
+                        },
+                        {
+                            "range": [88, 131],
+                            "name": "color 2"
+                        },
+                        {
+                            "range": [132, 176],
+                            "name": "color 3"
+                        },
+                        {
+                            "range": [177, 219],
+                            "name": "color 4"
+                        },
+                        {
+                            "range": [220, 255],
+                            "name": "open"
+                        }
+                    ]
+                },
+                "Gobo 1": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "gobo 0-0"
+                        },
+                        {
+                            "range": [11, 19],
+                            "name": "gobo 0-90"
+                        },
+                        {
+                            "range": [20, 28],
+                            "name": "gobo 0-180"
+                        },
+                        {
+                            "range": [29, 37],
+                            "name": "gobo 0-270"
+                        },
+                        {
+                            "range": [38, 46],
+                            "name": "gobo 1-0"
+                        },
+                        {
+                            "range": [47, 55],
+                            "name": "gobo 1-90"
+                        },
+                        {
+                            "range": [56, 64],
+                            "name": "gobo 1-180"
+                        },
+                        {
+                            "range": [65, 73],
+                            "name": "gobo 1-270"
+                        },
+                        {
+                            "range": [74, 82],
+                            "name": "gobo 2-0"
+                        },
+                        {
+                            "range": [83, 91],
+                            "name": "gobo 2-90"
+                        },
+                        {
+                            "range": [92, 100],
+                            "name": "gobo 2-180"
+                        },
+                        {
+                            "range": [101, 109],
+                            "name": "gobo 2-270"
+                        },
+                        {
+                            "range": [110, 118],
+                            "name": "gobo 3-0"
+                        },
+                        {
+                            "range": [119, 127],
+                            "name": "gobo 3-90"
+                        },
+                        {
+                            "range": [128, 136],
+                            "name": "gobo 3-180"
+                        },
+                        {
+                            "range": [137, 145],
+                            "name": "gobo 3-270"
+                        },
+                        {
+                            "range": [146, 154],
+                            "name": "gobo 4-0"
+                        },
+                        {
+                            "range": [155, 163],
+                            "name": "gobo 4-90"
+                        },
+                        {
+                            "range": [164, 172],
+                            "name": "gobo 4-180"
+                        },
+                        {
+                            "range": [173, 181],
+                            "name": "gobo 4-270"
+                        },
+                        {
+                            "range": [182, 190],
+                            "name": "gobo 5-0"
+                        },
+                        {
+                            "range": [191, 199],
+                            "name": "gobo 5-90"
+                        },
+                        {
+                            "range": [200, 208],
+                            "name": "gobo 5-180"
+                        },
+                        {
+                            "range": [209, 217],
+                            "name": "gobo 5-270"
+                        },
+                        {
+                            "range": [218, 226],
+                            "name": "gobo 6-0"
+                        },
+                        {
+                            "range": [227, 235],
+                            "name": "gobo 6-90"
+                        },
+                        {
+                            "range": [236, 244],
+                            "name": "gobo 6-180"
+                        },
+                        {
+                            "range": [245, 255],
+                            "name": "gobo 6-270"
+                        }
+                    ]
+                },
+                "GIndex 1": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Gobo 2": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "gobo 0-0"
+                        },
+                        {
+                            "range": [11, 19],
+                            "name": "gobo 0-90"
+                        },
+                        {
+                            "range": [20, 28],
+                            "name": "gobo 0-180"
+                        },
+                        {
+                            "range": [29, 37],
+                            "name": "gobo 0-270"
+                        },
+                        {
+                            "range": [38, 46],
+                            "name": "gobo 1-0"
+                        },
+                        {
+                            "range": [47, 55],
+                            "name": "gobo 1-90"
+                        },
+                        {
+                            "range": [56, 64],
+                            "name": "gobo 1-180"
+                        },
+                        {
+                            "range": [65, 73],
+                            "name": "gobo 1-270"
+                        },
+                        {
+                            "range": [74, 82],
+                            "name": "gobo 2-0"
+                        },
+                        {
+                            "range": [83, 91],
+                            "name": "gobo 2-90"
+                        },
+                        {
+                            "range": [92, 100],
+                            "name": "gobo 2-180"
+                        },
+                        {
+                            "range": [101, 109],
+                            "name": "gobo 2-270"
+                        },
+                        {
+                            "range": [110, 118],
+                            "name": "gobo 3-0"
+                        },
+                        {
+                            "range": [119, 127],
+                            "name": "gobo 3-90"
+                        },
+                        {
+                            "range": [128, 136],
+                            "name": "gobo 3-180"
+                        },
+                        {
+                            "range": [137, 145],
+                            "name": "gobo 3-270"
+                        },
+                        {
+                            "range": [146, 154],
+                            "name": "gobo 4-0"
+                        },
+                        {
+                            "range": [155, 163],
+                            "name": "gobo 4-90"
+                        },
+                        {
+                            "range": [164, 172],
+                            "name": "gobo 4-180"
+                        },
+                        {
+                            "range": [173, 181],
+                            "name": "gobo 4-270"
+                        },
+                        {
+                            "range": [182, 190],
+                            "name": "gobo 5-0"
+                        },
+                        {
+                            "range": [191, 199],
+                            "name": "gobo 5-90"
+                        },
+                        {
+                            "range": [200, 208],
+                            "name": "gobo 5-180"
+                        },
+                        {
+                            "range": [209, 217],
+                            "name": "gobo 5-270"
+                        },
+                        {
+                            "range": [218, 226],
+                            "name": "gobo 6-0"
+                        },
+                        {
+                            "range": [227, 235],
+                            "name": "gobo 6-90"
+                        },
+                        {
+                            "range": [236, 244],
+                            "name": "gobo 6-180"
+                        },
+                        {
+                            "range": [245, 255],
+                            "name": "gobo 6-270"
+                        }
+                    ]
+                },
+                "GIndex 2": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Beam": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "prism 0-0"
+                        },
+                        {
+                            "range": [20, 31],
+                            "name": "prism 0-90"
+                        },
+                        {
+                            "range": [32, 43],
+                            "name": "prism 0-180"
+                        },
+                        {
+                            "range": [44, 55],
+                            "name": "prism 0-270"
+                        },
+                        {
+                            "range": [56, 67],
+                            "name": "prism 1-0"
+                        },
+                        {
+                            "range": [68, 79],
+                            "name": "prism 1-90"
+                        },
+                        {
+                            "range": [80, 91],
+                            "name": "prism 1-180"
+                        },
+                        {
+                            "range": [92, 103],
+                            "name": "prism 1-270"
+                        },
+                        {
+                            "range": [104, 115],
+                            "name": "prism 2-0"
+                        },
+                        {
+                            "range": [116, 127],
+                            "name": "prism 2-90"
+                        },
+                        {
+                            "range": [128, 139],
+                            "name": "prism 2-180"
+                        },
+                        {
+                            "range": [140, 151],
+                            "name": "prism 2-270"
+                        },
+                        {
+                            "range": [152, 163],
+                            "name": "prism 3-0"
+                        },
+                        {
+                            "range": [164, 175],
+                            "name": "prism 3-90"
+                        },
+                        {
+                            "range": [176, 187],
+                            "name": "prism 3-180"
+                        },
+                        {
+                            "range": [188, 199],
+                            "name": "prism 3-270"
+                        },
+                        {
+                            "range": [200, 211],
+                            "name": "prism 4-0"
+                        },
+                        {
+                            "range": [212, 223],
+                            "name": "prism 4-90"
+                        },
+                        {
+                            "range": [224, 235],
+                            "name": "prism 4-180"
+                        },
+                        {
+                            "range": [236, 255],
+                            "name": "prism 4-270"
+                        }
+                    ]
+                },
+                "PIndex": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Frost": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Picture": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 8],
+                            "name": "%"
+                        },
+                        {
+                            "range": [9, 84],
+                            "name": "Iris",
+                            "color": "#5a4fcf"
+                        },
+                        {
+                            "range": [85, 124],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [125, 254],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Wash"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [51, 100],
+                            "name": "Lamp on"
+                        },
+                        {
+                            "range": [101, 150],
+                            "name": "Lamp off"
+                        },
+                        {
+                            "range": [151, 175],
+                            "name": "Display on"
+                        },
+                        {
+                            "range": [176, 200],
+                            "name": "Display off"
+                        },
+                        {
+                            "range": [202, 202],
+                            "name": "reset servo"
+                        },
+                        {
+                            "range": [203, 203],
+                            "name": "reset servo-ste"
+                        },
+                        {
+                            "range": [204, 204],
+                            "name": "reset stepper"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "23-channel Mode",
+                    "shortName": "23ch",
+                    "channels": [
+                        "Intensity",
+                        "Shutter",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Yellow",
+                        "Magenta",
+                        "Cyan",
+                        "CTO",
+                        "Color",
+                        "Gobo 1",
+                        "GIndex 1",
+                        "Gobo 2",
+                        "GIndex 2",
+                        "Beam",
+                        "Prism",
+                        "PIndex",
+                        "Frost",
+                        "Picture",
+                        "Zoom",
+                        "Focus",
+                        "Control"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Amptown",
+            "name": "ControLite Washlight HP Squarcle",
+            "shortName": "CntroLWashHPsq",
+            "physical": {
+                "dimensions": [100, 100, 100],
+                "weight": 25,
+                "power": 900
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [15, 84],
+                            "name": "Speed"
+                        },
+                        {
+                            "range": [85, 164],
+                            "name": "Strobe(soft)"
+                        },
+                        {
+                            "range": [165, 254],
+                            "name": "Strobe(hard)"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "crossfade": true
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "crossfade": true
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "crossfade": true
+                },
+                "CTO": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true
+                },
+                "Lamp Ctrl": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "On"
+                        },
+                        {
+                            "range": [32, 201],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [202, 204],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [205, 255],
+                            "name": "Boost"
+                        }
+                    ]
+                },
+                "Barn door rot.": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "B. door 1/2": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Barn door 3": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Barn door 4": {
+                    "type": "Beam",
+                    "crossfade": true
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "16-channel Mode",
+                    "shortName": "16ch",
+                    "channels": [
+                        "Intensity",
+                        "Shutter",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Yellow",
+                        "Magenta",
+                        "Cyan",
+                        "CTO",
+                        "Focus",
+                        "Lamp Ctrl",
+                        "Barn door rot.",
+                        "B. door 1/2",
+                        "Barn door 3",
+                        "Barn door 4"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Amptown",
+            "name": "Light Mover",
+            "shortName": "LightMover",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Fokus": {
+                    "type": "Beam",
+                    "crossfade": true
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true
+                },
+                "Barn door rot.": {
+                    "type": "Beam",
+                    "defaultValue": 180,
+                    "highlightValue": 180,
+                    "crossfade": true
+                },
+                "Barn door 1": {
+                    "type": "Beam",
+                    "defaultValue": 1,
+                    "highlightValue": 1,
+                    "crossfade": true
+                },
+                "Barn door 2": {
+                    "type": "Beam",
+                    "defaultValue": 1,
+                    "highlightValue": 1,
+                    "crossfade": true
+                },
+                "Barn door 3": {
+                    "type": "Beam",
+                    "defaultValue": 1,
+                    "highlightValue": 1,
+                    "crossfade": true
+                },
+                "Barn door 4": {
+                    "type": "Beam",
+                    "defaultValue": 1,
+                    "highlightValue": 1,
+                    "crossfade": true
+                },
+                "Control": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 201],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [202, 202],
+                            "name": "reset servo",
+                            "center": true
+                        },
+                        {
+                            "range": [203, 203],
+                            "name": "reset all",
+                            "center": true
+                        },
+                        {
+                            "range": [204, 204],
+                            "name": "reset stepper",
+                            "center": true
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "12-channel Mode",
+                    "shortName": "12ch",
+                    "channels": [
+                        "Intensity",
+                        "Fokus",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Barn door rot.",
+                        "Barn door 1",
+                        "Barn door 2",
+                        "Barn door 3",
+                        "Barn door 4",
+                        "Control"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Amptown",
+            "name": "Moving 4-Lite",
+            "shortName": "4-Lite",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "crossfade": true
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "crossfade": true
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Scroller": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true
+                }
+            },
+            "modes": [
+                {
+                    "name": "4-channel Mode",
+                    "shortName": "4ch",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Intensity",
+                        "Scroller"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Amptown",
+            "name": "Moving Yoke",
+            "shortName": "MovingYoke",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "4-channel Mode",
+                    "shortName": "4ch",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Amptown",
+            "name": "Posi Fan",
+            "shortName": "PosiFan",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 127,
+                    "highlightValue": 127,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 127,
+                    "highlightValue": 127,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Fan": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-channel Mode",
+                    "shortName": "3ch",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Fan"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Amptown",
+            "name": "Posi Fog",
+            "shortName": "PosiFog",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Fog": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-channel Mode",
+                    "shortName": "3ch",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Fog"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Amptown",
+            "name": "Washlight HP Squarcle",
+            "shortName": "WashHPsq",
+            "physical": {
+                "dimensions": [400, 400, 600],
+                "weight": 25,
+                "power": 900
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [15, 84],
+                            "name": "Speed"
+                        },
+                        {
+                            "range": [85, 164],
+                            "name": "Strobe(soft)"
+                        },
+                        {
+                            "range": [165, 254],
+                            "name": "Strobe(hard)"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "CTO": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Distance"
+                        }
+                    ]
+                },
+                "Lamp Ctrl": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "On"
+                        },
+                        {
+                            "range": [32, 201],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [202, 204],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [205, 255],
+                            "name": "Boost"
+                        }
+                    ]
+                },
+                "Barn door rot.": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Rotation"
+                        }
+                    ]
+                },
+                "Barn door 1/2": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 254],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Closed"
+                        }
+                    ]
+                },
+                "Barn door 3": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 254],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Closed"
+                        }
+                    ]
+                },
+                "Barn door 4": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 254],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Closed"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "16-channel Mode",
+                    "shortName": "16ch",
+                    "channels": [
+                        "Intensity",
+                        "Shutter",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Yellow",
+                        "Magenta",
+                        "Cyan",
+                        "CTO",
+                        "Focus",
+                        "Lamp Ctrl",
+                        "Barn door rot.",
+                        "Barn door 1/2",
+                        "Barn door 3",
+                        "Barn door 4"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Amptown",
+            "name": "Washlight HX Squarcle",
+            "shortName": "WashHXsq",
+            "physical": {
+                "dimensions": [400, 400, 600],
+                "weight": 25,
+                "power": 900
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Distance"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "CTO": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Lamp Ctrl": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "On"
+                        },
+                        {
+                            "range": [32, 201],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [202, 204],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [205, 255],
+                            "name": "Boost"
+                        }
+                    ]
+                },
+                "Barn door rot.": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Rotation"
+                        }
+                    ]
+                },
+                "Barn door 1": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 254],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Closed"
+                        }
+                    ]
+                },
+                "Barn door 2": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 254],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Closed"
+                        }
+                    ]
+                },
+                "Barn door 3": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 254],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Closed"
+                        }
+                    ]
+                },
+                "Barn door 4": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 254],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Closed"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "16-channel Mode",
+                    "shortName": "16ch",
+                    "channels": [
+                        "Intensity",
+                        "Focus",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Yellow",
+                        "Magenta",
+                        "Cyan",
+                        "CTO",
+                        "Lamp Ctrl",
+                        "Barn door rot.",
+                        "Barn door 1",
+                        "Barn door 2",
+                        "Barn door 3",
+                        "Barn door 4"
+                    ]
+                }
+            ]
+        }
+    ]
+}

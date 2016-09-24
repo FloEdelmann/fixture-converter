@@ -1,0 +1,1200 @@
+{
+    "manufacturers": {
+        "ArKaos": {
+            "name": "ArKaos",
+            "website": "www.arkaos.net"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "ArKaos",
+            "name": "ArKaos Full",
+            "shortName": "ArKaos Full",
+            "comment": "43ch - LoopMode select on StartLoop and EndLoop       cd",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "VisType": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "pict"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "movie"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "cam"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "flash"
+                        }
+                    ]
+                },
+                "VisIndex": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "visual"
+                        }
+                    ]
+                },
+                "FxType": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "3D Fx"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "video"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "trans"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "artis"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "freeFr"
+                        }
+                    ]
+                },
+                "FxIndex": {
+                    "type": "Beam",
+                    "defaultValue": 1,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fx"
+                        }
+                    ]
+                },
+                "CopyMode": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "trans"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "addition"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "substraction"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "multiplication"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "minimum"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "maximum"
+                        }
+                    ]
+                },
+                "MaskMode": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "none"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "lum reject"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "lum pass"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "chr reject"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "chr pass"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "alpha"
+                        }
+                    ]
+                },
+                "L/C Center": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "cent"
+                        }
+                    ]
+                },
+                "L/C Width": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "defaultValue": 50,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "width"
+                        }
+                    ]
+                },
+                "L/C Smooth": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "defaultValue": 50,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Smooth"
+                        }
+                    ]
+                },
+                "MovieSpeed": {
+                    "type": "Speed",
+                    "defaultValue": 64,
+                    "crossfade": true
+                },
+                "Speed/Loop": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "speed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "for/back"
+                        },
+                        {
+                            "range": [64, 65],
+                            "name": "ping/pong"
+                        }
+                    ]
+                },
+                "LoopMode": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "play all"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "select"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "random1"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "random2"
+                        }
+                    ]
+                },
+                "StartLoop": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "image",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "StartLoop fine": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "image",
+                            "warning": "Out of range!"
+                        }
+                    ],
+                    "defaultValue": null,
+                    "highlightValue": null
+                },
+                "EndLoop": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "image",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "EndLoop fine": {
+                    "type": "Beam",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "image",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Pos X": {
+                    "type": "Intensity",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 32767],
+                            "name": "left",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [32768, 32768],
+                            "name": "32768",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [32769, 65535],
+                            "name": "right",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Pos X fine": {
+                    "type": "Intensity",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 32767],
+                            "name": "left",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [32768, 32768],
+                            "name": "32768",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [32769, 65535],
+                            "name": "right",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Pos Y": {
+                    "type": "Intensity",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 32767],
+                            "name": "top",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [32768, 32768],
+                            "name": "32768",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [32769, 65535],
+                            "name": "bottom",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Pos Y fine": {
+                    "type": "Intensity",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 32767],
+                            "name": "top",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [32768, 32768],
+                            "name": "32768",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [32769, 65535],
+                            "name": "bottom",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Pos Z": {
+                    "type": "Intensity",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 32767],
+                            "name": "near",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [32768, 32768],
+                            "name": "32768",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [32769, 65535],
+                            "name": "fare",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Pos Z fine": {
+                    "type": "Intensity",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 32767],
+                            "name": "near",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [32768, 32768],
+                            "name": "32768",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [32769, 65535],
+                            "name": "fare",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "HorzSize": {
+                    "type": "Intensity",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "HorzSize fine": {
+                    "type": "Intensity",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "VertSize": {
+                    "type": "Intensity",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "VertSize fine": {
+                    "type": "Intensity",
+                    "defaultValue": 255,
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Rot X HW": {
+                    "type": "Intensity",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Rot X HW fine": {
+                    "type": "Intensity",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Rot Y HW": {
+                    "type": "Intensity",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Rot Y HW fine": {
+                    "type": "Intensity",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Rot Z HW": {
+                    "type": "Intensity",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Rot Z HW fine": {
+                    "type": "Intensity",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Red HW": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Green HW": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Blue HW": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "TextIndex": {
+                    "type": "Intensity",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Text"
+                        }
+                    ]
+                },
+                "Fx1": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Fx2": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Fx3": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Fx4": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Fx5": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Fx6": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%",
+                            "showInMenu": false
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "StartLoop",
+                    "StartLoop fine"
+                ],
+                [
+                    "EndLoop",
+                    "EndLoop fine"
+                ],
+                [
+                    "Pos X",
+                    "Pos X fine"
+                ],
+                [
+                    "Pos Y",
+                    "Pos Y fine"
+                ],
+                [
+                    "Pos Z",
+                    "Pos Z fine"
+                ],
+                [
+                    "HorzSize",
+                    "HorzSize fine"
+                ],
+                [
+                    "VertSize",
+                    "VertSize fine"
+                ],
+                [
+                    "Rot X HW",
+                    "Rot X HW fine"
+                ],
+                [
+                    "Rot Y HW",
+                    "Rot Y HW fine"
+                ],
+                [
+                    "Rot Z HW",
+                    "Rot Z HW fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "43-channel Mode",
+                    "shortName": "43ch",
+                    "channels": [
+                        "Dimmer",
+                        "VisType",
+                        "VisIndex",
+                        "FxType",
+                        "FxIndex",
+                        "CopyMode",
+                        "MaskMode",
+                        "L/C Center",
+                        "L/C Width",
+                        "L/C Smooth",
+                        "MovieSpeed",
+                        "Speed/Loop",
+                        "LoopMode",
+                        "StartLoop",
+                        "StartLoop fine",
+                        "EndLoop",
+                        "EndLoop fine",
+                        "Pos X",
+                        "Pos X fine",
+                        "Pos Y",
+                        "Pos Y fine",
+                        "Pos Z",
+                        "Pos Z fine",
+                        "HorzSize",
+                        "HorzSize fine",
+                        "VertSize",
+                        "VertSize fine",
+                        "Rot X HW",
+                        "Rot X HW fine",
+                        "Rot Y HW",
+                        "Rot Y HW fine",
+                        "Rot Z HW",
+                        "Rot Z HW fine",
+                        "Red HW",
+                        "Green HW",
+                        "Blue HW",
+                        "TextIndex",
+                        "Fx1",
+                        "Fx2",
+                        "Fx3",
+                        "Fx4",
+                        "Fx5",
+                        "Fx6"
+                    ]
+                }
+            ]
+        },
+        {
+            "manufacturer": "ArKaos",
+            "name": "ArKaos Tiny",
+            "shortName": "ArKaos",
+            "comment": "43ch - LoopMode select on StartLoop and EndLoop       cd",
+            "physical": {
+                "dimensions": [100, 100, 100]
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "VisType": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "pict"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "movie"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "cam"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "flash"
+                        }
+                    ]
+                },
+                "VisIndex": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "visual"
+                        }
+                    ]
+                },
+                "FxType": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "3D Fx"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "video"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "trans"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "artis"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "freeFr"
+                        }
+                    ]
+                },
+                "FxIndex": {
+                    "type": "Beam",
+                    "defaultValue": 1,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fx"
+                        }
+                    ]
+                },
+                "CopyMode": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "trans"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "addition"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "substraction"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "multiplication"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "minimum"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "maximum"
+                        }
+                    ]
+                },
+                "MaskMode": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "none"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "lum reject"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "lum pass"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "chr reject"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "chr pass"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "alpha"
+                        }
+                    ]
+                },
+                "L/C Center": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "defaultValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "cent"
+                        }
+                    ]
+                },
+                "L/C Width": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "defaultValue": 50,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "width"
+                        }
+                    ]
+                },
+                "L/C Smooth": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "defaultValue": 50,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Smooth"
+                        }
+                    ]
+                },
+                "MovieSpeed": {
+                    "type": "Speed",
+                    "defaultValue": 64,
+                    "crossfade": true
+                },
+                "Speed/Loop": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "speed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "for/back"
+                        },
+                        {
+                            "range": [64, 65],
+                            "name": "ping/pong"
+                        }
+                    ]
+                },
+                "Pos X": {
+                    "type": "Intensity",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 32767],
+                            "name": "left",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [32768, 32768],
+                            "name": "32768",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [32769, 65535],
+                            "name": "right",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Pos X fine": {
+                    "type": "Intensity",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 32767],
+                            "name": "left",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [32768, 32768],
+                            "name": "32768",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [32769, 65535],
+                            "name": "right",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Pos Y": {
+                    "type": "Intensity",
+                    "defaultValue": 128,
+                    "highlightValue": 128,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 32767],
+                            "name": "top",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [32768, 32768],
+                            "name": "32768",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [32769, 65535],
+                            "name": "bottom",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "Pos Y fine": {
+                    "type": "Intensity",
+                    "defaultValue": 0,
+                    "highlightValue": 0,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 32767],
+                            "name": "top",
+                            "warning": "Out of range!"
+                        },
+                        {
+                            "range": [32768, 32768],
+                            "name": "32768",
+                            "warning": "Out of range!",
+                            "center": true
+                        },
+                        {
+                            "range": [32769, 65535],
+                            "name": "bottom",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "HorzSize": {
+                    "type": "Intensity",
+                    "defaultValue": 65535,
+                    "highlightValue": 65535,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "VertSize": {
+                    "type": "Intensity",
+                    "defaultValue": 65535,
+                    "highlightValue": 65535,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 65535],
+                            "name": "%",
+                            "warning": "Out of range!"
+                        }
+                    ]
+                },
+                "TextIndex": {
+                    "type": "Intensity",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Text"
+                        }
+                    ]
+                },
+                "Fx1": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Fx2": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Fx3": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Fx4": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Fx5": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%"
+                        }
+                    ]
+                },
+                "Fx6": {
+                    "type": "Beam",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "%",
+                            "showInMenu": false
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pos X",
+                    "Pos X fine"
+                ],
+                [
+                    "Pos Y",
+                    "Pos Y fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "25-channel Mode",
+                    "shortName": "25ch",
+                    "channels": [
+                        "Dimmer",
+                        "VisType",
+                        "VisIndex",
+                        "FxType",
+                        "FxIndex",
+                        "CopyMode",
+                        "MaskMode",
+                        "L/C Center",
+                        "L/C Width",
+                        "L/C Smooth",
+                        "MovieSpeed",
+                        "Speed/Loop",
+                        "Pos X",
+                        "Pos X fine",
+                        "Pos Y",
+                        "Pos Y fine",
+                        "HorzSize",
+                        "VertSize",
+                        "TextIndex",
+                        "Fx1",
+                        "Fx2",
+                        "Fx3",
+                        "Fx4",
+                        "Fx5",
+                        "Fx6"
+                    ]
+                }
+            ]
+        }
+    ]
+}
