@@ -204,18 +204,20 @@ module.exports.import = function importQLCplus(str, filename) {
                         "type": channel.Group[0]._
                     };
 
+                    if (ch.type == "Intensity") {
+                        ch.crossfade = true;
+                    }
+
                     if (ch.type == "Colour") {
-                        ch.type = (channel.Capability && channel.Capability.length > 1) ? "MultiColor" : "SingleColor";
+                        ch.type = "MultiColor";
+                    }
+                    else if (channel.Colour) {
+                        ch.type = "SingleColor";
+                        ch.color = channel.Colour[0];
                     }
                     else if (channel.$.Name.toLowerCase().includes("strob")) {
                         ch.type = "Strobe";
                     }
-
-                    if (channel.Colour)
-                        ch.color = channel.Colour[0];
-
-                    if (ch.type == "Intensity")
-                        ch.crossfade = true;
 
                     if (channel.Group[0].$.Byte == "1")
                         doubleByteChannels.push([channel.$.Name]);

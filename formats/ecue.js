@@ -123,9 +123,12 @@ module.exports.export = function formatEcue(manufacturers, fixtures, optionsOutp
                     mode.channels[Math.max(dmxByteHigh, dmxByteLow)] = null;
                 }
 
-                const hasCapabilities = (channel.capabilities !== undefined);
+                dmxByteLow++;
+                dmxByteHigh++;
 
-                str += `                    <Channel${chType} Name="${chData.name}" DefaultValue="${chData.defaultValue}" Highlight="${chData.highlightValue}" Deflection="0" DmxByte0="${dmxByteHigh+1}" DmxByte1="${dmxByteLow+1}" Constant="${chData.constant ? 1 : 0}" Crossfade="${chData.crossfade ? 1 : 0}" Invert="${chData.invert ? 1 : 0}" Precedence="${chData.precendence}" ClassicPos="${viewPosCount++}"` + (hasCapabilities ? '' : ' /') + '>\n';
+                const hasCapabilities = (channel.capabilities && true);
+
+                str += `                    <Channel${chType} Name="${chData.name}" DefaultValue="${chData.defaultValue}" Highlight="${chData.highlightValue}" Deflection="0" DmxByte0="${dmxByteLow}" DmxByte1="${dmxByteHigh}" Constant="${chData.constant ? 1 : 0}" Crossfade="${chData.crossfade ? 1 : 0}" Invert="${chData.invert ? 1 : 0}" Precedence="${chData.precendence}" ClassicPos="${viewPosCount++}"` + (hasCapabilities ? '' : ' /') + '>\n';
 
                 if (hasCapabilities) {
                     for (const cap of channel.capabilities) {
