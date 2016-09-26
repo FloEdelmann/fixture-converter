@@ -156,6 +156,7 @@ function handleImport() {
                     "manufacturers": {},
                     "fixtures": [fix]
                 };
+                obj.manufacturers[fix.manufacturer] = combinedObject.manufacturers[fix.manufacturer];
 
                 const filename = options.output
                     .replace(/%MANUFACTURER%/g, combinedObject.manufacturers[fix.manufacturer].name.replace(/\s+/g, '-'))
