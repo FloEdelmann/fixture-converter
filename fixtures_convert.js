@@ -143,19 +143,23 @@ function handleImport() {
             combinedObject.fixtures = combinedObject.fixtures.concat(obj.fixtures);
         }
 
+        // add manufacturers only referenced by fixtures
+        for (const fix of combinedObject.fixtures) {
+            if (!combinedObject.manufacturers[fix.manufacturer]) {
+                combinedObject.manufacturers[fix.manufacturer] = {
+                    "name": fix.manufacturer
+                };
+            }
+        }
+
         let outputfiles = [];
         if (options.output.includes('%FIXTURE%')) {
             for (const fix of combinedObject.fixtures) {
-                if (!combinedObject.manufacturers[fix.manufacturer]) {
-                    combinedObject.manufacturers[fix.manufacturer] = {
-                        "name": fix.manufacturer
-                    };
-                }
-
                 let obj = {
                     "manufacturers": {},
                     "fixtures": [fix]
                 };
+                obj.manufacturers[fix.manufacturer] = combinedObject.manufacturers[fix.manufacturer];
 
                 const filename = options.output
                     .replace(/%MANUFACTURER%/g, combinedObject.manufacturers[fix.manufacturer].name.replace(/\s+/g, '-'))

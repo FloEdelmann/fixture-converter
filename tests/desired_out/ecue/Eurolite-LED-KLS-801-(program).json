@@ -1,0 +1,128 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite",
+            "website": "http://eshop.steinigke.de/Eurolite/"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "LED KLS-801 (program)",
+            "shortName": "KLS801",
+            "comment": "Compact Light Set. When Program is active, Red 1 (ch4) controls running speed, Green 1 (ch5) controls fade time. (Program 5-channel Mode)",
+            "physical": {
+                "dimensions": [1200, 315, 65],
+                "weight": 9,
+                "power": 130
+            },
+            "availableChannels": {
+                "Program": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [10, 29],
+                            "name": "Program 1"
+                        },
+                        {
+                            "range": [30, 49],
+                            "name": "Program 2"
+                        },
+                        {
+                            "range": [50, 69],
+                            "name": "Program 3"
+                        },
+                        {
+                            "range": [70, 89],
+                            "name": "Program 4"
+                        },
+                        {
+                            "range": [90, 109],
+                            "name": "Program 5"
+                        },
+                        {
+                            "range": [110, 129],
+                            "name": "Program 6"
+                        },
+                        {
+                            "range": [130, 149],
+                            "name": "Program 7"
+                        },
+                        {
+                            "range": [150, 169],
+                            "name": "Program 8"
+                        },
+                        {
+                            "range": [170, 189],
+                            "name": "Program 9"
+                        },
+                        {
+                            "range": [190, 209],
+                            "name": "Program 10"
+                        },
+                        {
+                            "range": [210, 229],
+                            "name": "Program 11"
+                        },
+                        {
+                            "range": [230, 249],
+                            "name": "Automatic mode"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Sound control"
+                        }
+                    ]
+                },
+                "Master": {
+                    "type": "Intensity",
+                    "warning": "Please check type!",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "highlightValue": 220,
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Strobe off"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe slow-fast",
+                            "center": true
+                        }
+                    ]
+                },
+                "Running Speed": {
+                    "type": "Speed",
+                    "highlightValue": 255,
+                    "crossfade": true
+                },
+                "Fade time": {
+                    "type": "Beam",
+                    "highlightValue": 255,
+                    "crossfade": true
+                }
+            },
+            "modes": [
+                {
+                    "name": "5-channel Mode",
+                    "shortName": "5ch",
+                    "channels": [
+                        "Program",
+                        "Master",
+                        "Strobe",
+                        "Running Speed",
+                        "Fade time"
+                    ]
+                }
+            ]
+        }
+    ]
+}
