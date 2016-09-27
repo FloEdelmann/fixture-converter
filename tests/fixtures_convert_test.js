@@ -10,6 +10,30 @@ const assert = require('assert');
 
 const timestamp = new Date().toISOString().replace(/T/, '_').replace(/:/g, '-').replace(/\..+/, '');
 
+const formats = {
+    "ecue": {
+        fileEnding: ".xml",
+        replacers: [
+            [/\d\d\d\d\-\d\d\-\d\d#\d\d:\d\d:\d\d/g, '']
+        ],
+    },
+    "qlcplus": {
+        fileEnding: ".qxf",
+        replacers: [
+            [/<Author>[^<]*<\/Author>/g, '<Author></Author>']
+        ],
+    },
+};
+const defaultTest = {
+    format: null,
+    isImport: false,
+    files: {
+        'default': {
+            hasWarnings: false
+        }
+    }
+}
+
 const useHarmonyFlag = require('semver').lt(process.version, '6.0.0');
 console.log(`Using --harmony-destructuring flag? ${useHarmonyFlag}`);
 
@@ -17,83 +41,165 @@ const outputDir = path.join(__dirname, `out-${timestamp}`);
 fs.mkdir(outputDir, (err) => {
     if (err) throw err;
 
-    test(
-        'ADJ Quad Phase HP',
-        'qlcplus',
-        path.join('fixtures', 'adj_quad_phase_hp.json'),
-        'American-DJ-Quad-Phase-HP.qxf',
-        '%MANUFACTURER%-%FIXTURE%-qlcplus-export.qxf',
-        'American-DJ-Quad-Phase-HP-qlcplus-export.qxf'
-    );
-    test(
-        'ADJ Quad Phase HP',
-        'qlcplus',
-        path.join('desired_out', 'qlcplus', 'American-DJ-Quad-Phase-HP.qxf'),
-        'American-DJ-Quad-Phase-HP.json',
-        '%MANUFACTURER%-%FIXTURE%-qlcplus-import.json',
-        'American-DJ-Quad-Phase-HP-qlcplus-import.json'
-    );
-    test(
-        'Eurolite LED KLS-801',
-        'ecue',
-        path.join('fixtures', 'eurolite_led_kls-801.json'),
-        'Eurolite-LED-KLS-801.xml',
-        '%MANUFACTURER%-%FIXTURE%-ecue-export.xml',
-        'Eurolite-LED-KLS-801-ecue-export.xml'
-    );
+    testDevice('American-DJ-Quad-Phase-HP', [
+        {
+            format: "ecue",
+        },
+        {
+            format: "ecue",
+            isImport: true,
+        },
+        {
+            format: "qlcplus",
+        },
+        {
+            format: "qlcplus",
+            isImport: true,
+        },
+    ]);
+    testDevice('Eurolite-LED-KLS-801', [
+        {
+            format: "ecue",
+        },
+        {
+            format: "ecue",
+            isImport: true,
+            files: {
+                'Eurolite-LED-KLS-801-(control)': { hasWarnings: true, },
+                'Eurolite-LED-KLS-801-(program)': { hasWarnings: true, },
+                'Eurolite-LED-KLS-801-(combined)': { hasWarnings: true, },
+                'Eurolite-LED-KLS-801-(color)': { hasWarnings: true, },
+            }
+        },
+        {
+            format: "qlcplus",
+        },
+        {
+            format: "qlcplus",
+            isImport: true,
+        },
+    ]);
 });
 
 
-function test(name, format, inputFile, desiredOutputFile, requestedOutputFile, expectedOutputFile) {
-    cp.exec(
-        'node ' + (useHarmonyFlag ? '--harmony-destructuring ' : '')
+function testDevice(deviceName, tests) {
+    for (const testData of tests) {
+        test(deviceName, testData);
+    }
+}
+
+
+function test(deviceName, testData) {
+    const format = formats[testData.format];
+    const useDefaultFile = testData.files === undefined;
+    testData = Object.assign({}, defaultTest, testData);
+
+    const inputFileEnding = (testData.isImport ? format.fileEnding : '.json');
+    const outputFileEnding = (testData.isImport ? '.json' : format.fileEnding);
+
+    const inputFile = testData.isImport ?
+        path.join(
+            'desired_out',
+            testData.format,
+            deviceName + inputFileEnding
+        ) :
+        path.join(
+            'fixtures',
+            deviceName + inputFileEnding
+        );
+
+    const command = 'node ' + (useHarmonyFlag ? '--harmony-destructuring ' : '')
         + path.join(__dirname, '..', 'fixtures_convert.js')
         + ' -i ' + path.join(__dirname, inputFile)
-        + ` -f ${format}`
-        + ' -o ' + path.join(outputDir, '%FORMAT%', requestedOutputFile),
+        + ` -f ${testData.format}`
+        + ' -o ' + path.join(outputDir, '%FORMAT%', `%MANUFACTURER%-%FIXTURE%${outputFileEnding}`);
+    cp.exec(
+        command,
         (error, stdout, stderr) => {
             try {
-                console.log(`Testing: Convert ${name} with format ${format} from ${inputFile} ...`);
+                console.log(`Testing command: ${command} ...`);
 
                 assert.strictEqual(error, null, `${stdout}\n${stderr}\n${error}`);
                 assert.strictEqual(stderr, '', `${stdout}\n${stderr}`);
 
                 const stdoutLines = stdout.split('\n');
-                const isImport = inputFile.endsWith('.json');
-                assert.strictEqual(stdoutLines.length, 2+isImport, `${stdout}\nError: stdout has not ${2+isImport} lines`);
-                if (isImport)
-                    assert.strictEqual(stdoutLines[0], `Handling ${format} formatting...`, stdout + '\nError: missing "Handling ..." message');
-
-                const returnedFilePath = stdoutLines[0 + isImport].match(/File "([^"]*)" successfully written./);
-                assert.notStrictEqual(returnedFilePath, null, `${stdout}\nError: outputted file path not found`);
-                assert.notStrictEqual(returnedFilePath[1], undefined, `${stdout}\nError: outputted file path not found`);
-
-                const expectedOutFilePath = path.join(outputDir, format, expectedOutputFile);
-                assert.strictEqual(
-                    returnedFilePath[1],
-                    expectedOutFilePath,
-                    `Error: returned file path ${returnedFilePath[1]} doesn't match expected ${expectedOutFilePath}` // '
-                );
-                const desiredOutFilePath = path.join(__dirname, 'desired_out', format, desiredOutputFile);
-
-                let out = fs.readFileSync(expectedOutFilePath, 'utf8');
-                let desiredOut = fs.readFileSync(desiredOutFilePath, 'utf8');
-
-                if (format == 'ecue') {
-                    out = out.replace(/\d\d\d\d\-\d\d\-\d\d#\d\d:\d\d:\d\d/g, '');
-                    desiredOut = desiredOut.replace(/\d\d\d\d\-\d\d\-\d\d#\d\d:\d\d:\d\d/g, '');
+                // remove "Handling ..." message in the first line when exporting
+                if (!testData.isImport) {
+                    assert.strictEqual(stdoutLines.shift(), `Handling ${testData.format} formatting...`, stdout + '\nError: missing "Handling ..." message');
                 }
-                else if (format == 'qlcplus') {
-                    out = out.replace(/<Author>[^<]*<\/Author>/g, '<Author></Author>');
-                    desiredOut = desiredOut.replace(/<Author>[^<]*<\/Author>/g, '<Author></Author>');
-                }
+                // remove last (empty) line
+                assert.strictEqual(stdoutLines.pop(), '', stdout + '\nError: last line not empty');
 
-                assert.strictEqual(
-                    out,
-                    desiredOut,
-                    "Out file doesn't equal desired out.\n"
-                    + diff.createTwoFilesPatch(expectedOutFilePath, desiredOutFilePath, out, desiredOut)
-                );
+                let fileCount = 0;
+                for (let i = 0; i < stdoutLines.length; i++) {
+                    const line = stdoutLines[i];
+                    const returnedFile = line.match(/File "([^"]*)" successfully written./);
+                    let basename = path.basename(returnedFile[1], outputFileEnding);
+                    const errorMessage = `${stdout}\nError: outputted file path not found (file ${fileCount+1} in line ${i+1})`;
+                    assert.notStrictEqual(returnedFile, null, errorMessage);
+                    assert.notStrictEqual(returnedFile[1], undefined, errorMessage);
+
+                    // check if the returned file name was desired
+                    let desiredFile;
+                    if (useDefaultFile) {
+                        desiredFile = defaultTest.files.default;
+                    } else {
+                        desiredFile = testData.files[basename];
+                        assert.notStrictEqual(
+                            desiredFile,
+                            undefined,
+                            stdout + `\nError: unexpected file ${basename}`
+                        )
+                        desiredFile = Object.assign({}, defaultTest.files.default, desiredFile);
+                        delete testData.files[basename];
+                    }
+
+                    // check equality of returned and desired file contents
+                    let returnedFileContent = fs.readFileSync(
+                        returnedFile[1],
+                        'utf8'
+                    );
+                    const desiredContentFilePath = path.join(__dirname, 'desired_out', testData.format, basename + outputFileEnding);
+                    let desiredContent = fs.readFileSync(
+                        desiredContentFilePath,
+                        'utf8'
+                    );
+
+                    if (format.replacers !== undefined && format.replacers !== null) {
+                        for (const replacer of format.replacers) {
+                            returnedFileContent = returnedFileContent.replace(replacer[0], replacer[1]);
+                            desiredContent = desiredContent.replace(replacer[0], replacer[1]);
+                        }
+                    }
+
+                    assert.strictEqual(
+                        returnedFileContent,
+                        desiredContent,
+                        "Returned file content doesn't equal desired content.\n"
+                        + diff.createTwoFilesPatch(returnedFile[1], desiredContentFilePath, returnedFileContent, desiredContent)
+                    );
+
+                    // check if next line is a warning and if there should be a warning
+                    const nextLine = stdoutLines[i+1];
+                    if (desiredFile.hasWarnings) {
+                        assert.strictEqual(
+                            nextLine,
+                            "Please check for warnings using a text editor.",
+                            stdout + `\nError: warning expected in line ${i+2}`
+                        );
+                        // skip next line in this loop
+                        i++;
+                    }
+                    else {
+                        assert.notStrictEqual(
+                            nextLine,
+                            "Please check for warnings using a text editor.",
+                            stdout + `\nError: unexpected warning in line ${i+2}`
+                        );
+                    }
+
+                    fileCount++;
+                }
 
                 console.log('Test ok.')
             }
