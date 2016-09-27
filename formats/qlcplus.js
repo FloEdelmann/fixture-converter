@@ -331,7 +331,7 @@ module.exports.import = function importQLCplus(str, filename) {
                         mod.channels[parseInt(ch.$.Number)] = ch._;
                     }
 
-                    for (let i in mode.Head) {
+                    for (let i in mode.Head || []) {
                         let head = [];
 
                         for (const ch of mode.Head[i].Channel) {
