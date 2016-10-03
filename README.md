@@ -73,7 +73,10 @@ Each format module may look like this:
 
 ```js
 // required
+module.exports.defaultFileExt = 'xml';
 module.exports.defaultFileName = '%MANUFACTURER%-%FIXTURE%.xml';
+
+module.exports.formatName = 'e:cue'; // optional
 
 // both functions are optional
 module.exports.export = function(manufacturers, fixtures, optionsOutput) {
