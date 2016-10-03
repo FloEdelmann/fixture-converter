@@ -7,6 +7,8 @@ const mkdirp = require('mkdirp');
 
 const defaults = require(path.join(__dirname, '..', 'fixtures_defaults.js'));
 
+module.exports.formatName = 'e:cue';
+module.exports.defaultFileExt = 'xml';
 module.exports.defaultFileName = 'UserLibrary.xml';
 
 module.exports.export = function formatEcue(manufacturers, fixtures, optionsOutput) {

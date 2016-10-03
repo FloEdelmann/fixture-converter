@@ -1,0 +1,113 @@
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Ubuntu,Roboto,Cantarell,"Helvetica Neue",sans-serif;
+
+    background: linear-gradient(to bottom, #22376D, #2B2E3F);
+    color: #E2E2E2;
+    text-shadow: 0 0 2px #2B2E3F;
+    font-size: 18px;
+
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-flow: column;
+}
+
+
+/* Layout */
+
+h1, #buttons {
+    flex: 0;
+    padding: 10px;
+}
+
+#aside {
+    flex: 1;
+}
+
+#inputFiles, #options {
+    flex: 1 100%;
+    padding: 10px;
+}
+
+#inputFiles {
+    flex-basis: 45%;
+    min-height: 8em;
+}
+
+@media all and (min-width: 600px) {
+    #aside {
+        display: flex;
+        flex-flow: row;
+    }
+}
+
+
+/* Appearance */
+
+h1 {
+    margin: 0;
+    font-size: 1.4em;
+}
+
+h2 {
+    margin: 0 0 5px;
+    padding: 0;
+    font-size: 1em;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+label + label {
+    margin-left: 10px;
+}
+
+button, select, input {
+    font-family: inherit;
+}
+
+#output {
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 3px;
+    width: 100%;
+    border: 0;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    outline: 0;
+    margin: 3px 0;
+    transition: background 0.3s, border 0.3s;
+    color: #000;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+#output:focus {
+    background: #fff;
+    border-color: #fff;
+}
+
+#outputHint {
+    font-size: 0.8em;
+    font-style: italic;
+    display: block;
+}
+
+a {
+    color:  #e2e2e2;
+}
+a:hover {
+    color: #fff;
+}
+a:active {
+    color: #ccc;
+}
+
+#buttons {
+    text-align: right;
+    background: rgba(0, 0, 0, 0.3);
+}

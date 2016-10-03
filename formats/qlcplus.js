@@ -6,6 +6,8 @@ const mkdirp = require('mkdirp');
 
 const defaults = require(path.join(__dirname, '..', 'fixtures_defaults.js'));
 
+module.exports.formatName = 'QLC+';
+module.exports.defaultFileExt = 'qxf';
 module.exports.defaultFileName = '%MANUFACTURER%-%FIXTURE%.qxf';
 
 module.exports.export = function formatQLCplus(manufacturers, fixtures, optionOutput) {

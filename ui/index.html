@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DMX Fixture converter</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <h1>DMX Fixture converter</h1>
+
+        <div id="aside">
+            <div id="options">
+                <p>
+                    <label><input type="radio" name="mode" value="import" id="import" checked />Import</label>
+                    <label><input type="radio" name="mode" value="export" id="export" />Export</label>
+                </p>
+                <p><label>Format: <select id="format"></select></label></p>
+                <p>
+                    <label for="output">Output: </label>
+                    <input type="text" name="output" id="output" />
+                    <button id="outputBtn" title="Select output directory">Select directory</button>
+                    <span id="outputHint">Specify the output path and file name. You can use the placeholders <a href="#">%FORMAT%</a>, <a href="#">%MANUFACTURER%</a> and <a href="#">%FIXTURE%</a>. Directories will be created if necessary.</span>
+                </p>
+            </div>
+            <div id="inputFiles">
+                <h2>Input files</h2>
+                <button class="addFile" title="Add input file">Add input file</button>
+                <button class="addDir" title="Add input directory (all containing files)">Add input directory</button>
+            </div>
+        </div>
+
+        <div id="buttons">
+            <button id="convertBtn">Convert</button>
+        </div>
+
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
