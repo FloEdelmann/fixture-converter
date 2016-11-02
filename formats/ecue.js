@@ -30,8 +30,13 @@ module.exports.export = function formatEcue(manufacturers, fixtures, optionsOutp
 
         for (const mode of fixture.modes) {
             let modeData = Object.assign({}, defaults.fixtures[0].modes[0], mode);
+            let fixShortName = fixData.shortName;
+
             if (modeData.shortName == null) {
                 modeData.shortName = modeData.name;
+            }
+            else {
+                fixShortName += modeData.shortName;
             }
 
             const useName = fixData.name + (fixture.modes.length == 1 ? '' : ` (${modeData.shortName})`);
@@ -42,7 +47,7 @@ module.exports.export = function formatEcue(manufacturers, fixtures, optionsOutp
             const lensData = Object.assign({}, defaults.fixtures[0].physical.lens, physicalData.lens);
             const focusData = Object.assign({}, defaults.fixtures[0].physical.focus, physicalData.focus);
 
-            str += `                <Fixture _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${useName}" NameShort="${fixData.shortName}" Comment="${useComment}" AllocateDmxChannels="${mode.channels.length}" Weight="${physicalData.weight}" Power="${physicalData.power}" DimWidth="${physicalData.dimensions[0]}" DimHeight="${physicalData.dimensions[1]}" DimDepth="${physicalData.dimensions[2]}">\n`;
+            str += `                <Fixture _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${useName}" NameShort="${fixShortName}" Comment="${useComment}" AllocateDmxChannels="${mode.channels.length}" Weight="${physicalData.weight}" Power="${physicalData.power}" DimWidth="${physicalData.dimensions[0]}" DimHeight="${physicalData.dimensions[1]}" DimDepth="${physicalData.dimensions[2]}">\n`;
 
             let viewPosCount = 1;
             for (const dmxCount in mode.channels) {
