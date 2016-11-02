@@ -36,16 +36,17 @@ User Library: `~/.qlcplus/fixtures` (Linux)
 
 ## Dependencies
 
-* [Node.js](https://nodejs.org/en/) (I have version 6.6.0, but maybe it works with lower versions, too.)
+* [Node.js](https://nodejs.org/en/) (>= v4)
 
 **Node.js Modules:**
 * [node-getopt](https://www.npmjs.com/package/node-getopt)
 * [mkdirp](https://www.npmjs.com/package/mkdirp)
 * [xml2js](https://github.com/Leonidas-from-XIV/node-xml2js)
 * [color-names](https://www.npmjs.com/package/color-names)
+* [semver](https://www.npmjs.com/package/semver)
 
 ```
-npm install node-getopt mkdirp xml2js color-names
+npm install
 ```
 
 ## Usage
@@ -97,4 +98,4 @@ module.exports.import = function(str, filename) {
 function privateHelperFunction() { ... }
 ```
 
-Those will get called from [fixtures_convert.js](fixtures_convert.js), so you won't have to bother with command line arguments.
+Your format will automatically hook into the main [fixtures_convert.js](fixtures_convert.js), so you won't have to bother with command line arguments.
