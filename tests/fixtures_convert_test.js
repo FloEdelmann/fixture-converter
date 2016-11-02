@@ -79,6 +79,11 @@ fs.mkdir(outputDir, (err) => {
             isImport: true,
         },
     ]);
+    testDevice('Eurolite-LED-TMH-18', [ // especially for 16-bit channel testing
+        {
+            format: "ecue",
+        }
+    ]);
 });
 
 
@@ -176,6 +181,8 @@ function test(deviceName, testData) {
                         returnedFileContent,
                         desiredContent,
                         "Returned file content doesn't equal desired content.\n"
+                        + "--- returned output file\n"
+                        + "+++ desired output file\n"
                         + diff.createTwoFilesPatch(returnedFile[1], desiredContentFilePath, returnedFileContent, desiredContent)
                     );
 
