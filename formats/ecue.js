@@ -35,8 +35,9 @@ module.exports.export = function formatEcue(manufacturers, fixtures, optionsOutp
             if (modeData.shortName == null) {
                 modeData.shortName = modeData.name;
             }
-            else {
-                fixShortName += modeData.shortName;
+
+            if (fixture.modes.length > 1) {
+                fixShortName += '-' + modeData.shortName;
             }
 
             const useName = fixData.name + (fixture.modes.length == 1 ? '' : ` (${modeData.shortName})`);
@@ -50,7 +51,7 @@ module.exports.export = function formatEcue(manufacturers, fixtures, optionsOutp
             str += `                <Fixture _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${useName}" NameShort="${fixShortName}" Comment="${useComment}" AllocateDmxChannels="${mode.channels.length}" Weight="${physicalData.weight}" Power="${physicalData.power}" DimWidth="${physicalData.dimensions[0]}" DimHeight="${physicalData.dimensions[1]}" DimDepth="${physicalData.dimensions[2]}">\n`;
 
             let viewPosCount = 1;
-            for (const dmxCount in mode.channels) {
+            for (let dmxCount=0; dmxCount<mode.channels.length; dmxCount++) {
                 let chKey = mode.channels[dmxCount];
 
                 if (chKey === null) {
@@ -105,8 +106,8 @@ module.exports.export = function formatEcue(manufacturers, fixtures, optionsOutp
                         chType = 'Intensity';
                 }
 
-                let dmxByteLow = dmxCount;
-                let dmxByteHigh = -1;
+                let dmxByte0 = dmxCount;
+                let dmxByte1 = -1;
 
                 if (doubleByte) {
                     const chKeyLsb = multiByteChannels[1];
@@ -123,19 +124,19 @@ module.exports.export = function formatEcue(manufacturers, fixtures, optionsOutp
                     chData.highlightValue *= 256;
                     chData.highlightValue += chDataLsb.highlightValue;
 
-                    dmxByteLow = mode.channels.indexOf(chKeyLsb);
-                    dmxByteHigh = mode.channels.indexOf(chKey);
+                    dmxByte0 = mode.channels.indexOf(chKey);
+                    dmxByte1 = mode.channels.indexOf(chKeyLsb);
 
                     // mark other part of 16-bit channel as already handled
-                    mode.channels[Math.max(dmxByteHigh, dmxByteLow)] = null;
+                    mode.channels[Math.max(dmxByte1, dmxByte0)] = null;
                 }
 
-                dmxByteLow++;
-                dmxByteHigh++;
+                dmxByte0++;
+                dmxByte1++;
 
                 const hasCapabilities = (channel.capabilities && true);
 
-                str += `                    <Channel${chType} Name="${chData.name}" DefaultValue="${chData.defaultValue}" Highlight="${chData.highlightValue}" Deflection="0" DmxByte0="${dmxByteLow}" DmxByte1="${dmxByteHigh}" Constant="${chData.constant ? 1 : 0}" Crossfade="${chData.crossfade ? 1 : 0}" Invert="${chData.invert ? 1 : 0}" Precedence="${chData.precendence}" ClassicPos="${viewPosCount++}"` + (hasCapabilities ? '' : ' /') + '>\n';
+                str += `                    <Channel${chType} Name="${chData.name}" DefaultValue="${chData.defaultValue}" Highlight="${chData.highlightValue}" Deflection="0" DmxByte0="${dmxByte0}" DmxByte1="${dmxByte1}" Constant="${chData.constant ? 1 : 0}" Crossfade="${chData.crossfade ? 1 : 0}" Invert="${chData.invert ? 1 : 0}" Precedence="${chData.precendence}" ClassicPos="${viewPosCount++}"` + (hasCapabilities ? '' : ' /') + '>\n';
 
                 if (hasCapabilities) {
                     for (const cap of channel.capabilities) {
