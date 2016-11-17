@@ -8,6 +8,139 @@
     "fixtures": [
         {
             "manufacturer": "Martin",
+            "name": "Atomic 3000",
+            "shortName": "At3000",
+            "type": "Strobe",
+            "manualURL": "http://myinternal.martin.com/pdfgenerator/?printurl=http://martin.com/en-US/Products/PDF_ProductSheet/PDFProduct/Atomic-3000-DMX&filename=Atomic-3000-DMX.pdf",
+            "physical": {
+                "dimensions": [425, 240, 245],
+                "weight": 7.5,
+                "power": 3000,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "Xenon 3000W",
+                    "colorTemperature": 5600
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Strobe": {
+                    "type": "Speed",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [6, 249],
+                            "name": "0-100%"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Blind"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [6, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Flash Duration": {
+                    "type": "Speed",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-650ms"
+                        }
+                    ]
+                },
+                "Flash Rate": {
+                    "type": "Speed",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Single Flash"
+                        },
+                        {
+                            "range": [6, 255],
+                            "name": "0.5-25Hz"
+                        }
+                    ]
+                }
+                "Effects": {
+                    "type": "Effect",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "idle"
+                        },
+                        {
+                            "range": [6, 42],
+                            "name": "ramp up"
+                        },
+                        {
+                            "range": [43, 85],
+                            "name": "ramp down"
+                        },
+                        {
+                            "range": [86, 128],
+                            "name": "ramp up down"
+                        },
+                        {
+                            "range": [129, 171],
+                            "name": "random"
+                        },
+                        {
+                            "range": [172, 214],
+                            "name": "electrical Stor"
+                        },
+                        {
+                            "range": [215, 255],
+                            "name": "single flash"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "1-channel Mode",
+                    "shortName": "1ch",
+                    "channels": ["Strobe"]
+                },
+                {
+                    "name": "3-channel Mode",
+                    "shortName": "3ch",
+                    "channels": ["Intensity", "Flash Duration", "Flash Rate"]
+                },
+                {
+                    "name": "4-channel Mode",
+                    "shortName": "4ch",
+                    "channels": ["Intensity", "Flash Duration", "Flash Rate", "Effects"]
+                }
+            ]
+        },
+        {
+            "manufacturer": "Martin",
             "name": "RoboScan 812",
             "shortName": "Scan812",
             "type": "Scanner",
