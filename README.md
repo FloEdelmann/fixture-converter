@@ -68,6 +68,10 @@ imports `UserLibrary.xml` as *e:cue* format and writes the resulting JSON files 
 
 Feel free to add your own output formats and / or fixtures. Just create a pull request!
 
+### New fixtures
+
+Possibly, the best way is to create a fixture definition in QLC+'s fixture editor (try to fill in all possible information) and then import it using `./fixtures_convert.js -i myfile.qxf -f qlcplus`. The resulting JSON file in the *out* directory will probably contain some errors (especially when importing 16bit channels), so check it against the [fixtures_default.js](fixtures_default.js). Please also include a manual URL so that somebody can check your new fixture.
+
 ### New formats
 
 Each format module may look like this:
@@ -98,4 +102,4 @@ module.exports.import = function(str, filename) {
 function privateHelperFunction() { ... }
 ```
 
-Your format will automatically hook into the main [fixtures_convert.js](fixtures_convert.js), so you won't have to bother with command line arguments.
+Save it as `formats/[formatname].js`. Your module will automatically hook into the main [fixtures_convert.js](fixtures_convert.js), so you won't have to bother with command line arguments.
