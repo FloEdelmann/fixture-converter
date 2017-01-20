@@ -126,7 +126,7 @@ function handleImport() {
     }
 
     if (!options.output)
-        options.output = path.join(outDir, 'import_' + formatter.defaultFileName);
+        options.output = path.join(outDir, 'import_' + formatter.defaultFileName + '.json');
     options.output = options.output.replace(/%FORMAT%/g, options.format);
 
     const promises = fileContents.map((file) => formatter.import(file.contents, file.name));
