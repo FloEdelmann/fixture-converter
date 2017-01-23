@@ -162,8 +162,8 @@ function handleImport() {
                 obj.manufacturers[fix.manufacturer] = combinedObject.manufacturers[fix.manufacturer];
 
                 const filename = options.output
-                    .replace(/%MANUFACTURER%/g, combinedObject.manufacturers[fix.manufacturer].name.replace(/\s+/g, '-'))
-                    .replace(/%FIXTURE%/g, fix.name.replace(/\s+/g, '-'));
+                    .replace(/%MANUFACTURER%/g, combinedObject.manufacturers[fix.manufacturer].name.replace(/[^a-z0-9_]+/gi, '-'))
+                    .replace(/%FIXTURE%/g, fix.name.replace(/[^a-z0-9_]+/gi, '-'));
                 
                 outputfiles.push({
                     "filename": filename,
@@ -189,7 +189,7 @@ function handleImport() {
                 }
 
                 const filename = options.output.replace(/%MANUFACTURER%/g,
-                    combinedObject.manufacturers[man].name.replace(/\s+/g, '-'));
+                    combinedObject.manufacturers[man].name.replace(/[^a-z0-9_]+/gi, '-'));
 
                 outputfiles.push({
                     "filename": filename,
