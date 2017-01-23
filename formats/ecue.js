@@ -175,8 +175,8 @@ module.exports.export = function formatEcue(manufacturers, fixtures, optionsOutp
         for (const fix of outFixtures) {
             const manData = manufacturers[fix.manufacturer];
             const filename = optionsOutput
-                .replace(/%FIXTURE%/g, fix.name.replace(/[^a-z0-9_]+/gi, '-'))
-                .replace(/%MANUFACTURER%/g, manData.name.replace(/[^a-z0-9_]+/gi, '-'));
+                .replace(/%FIXTURE%/g, fix.name.replace(/[^a-z0-9_]+/gi, '-').replace(/^-|-$/g, ''))
+                .replace(/%MANUFACTURER%/g, manData.name.replace(/[^a-z0-9_]+/gi, '-').replace(/^-|-$/g, ''));
 
             const str = util.format(template,
                 `            <Manufacturer _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${manData.name}" Comment="${manData.comment}" Web="${manData.website}">\n` +
@@ -206,7 +206,7 @@ module.exports.export = function formatEcue(manufacturers, fixtures, optionsOutp
 
             if (i > 0) {
                 outputfiles.push({
-                    "filename": optionsOutput.replace(/%MANUFACTURER%/g, manData.name.replace(/[^a-z0-9_]+/gi, '-')),
+                    "filename": optionsOutput.replace(/%MANUFACTURER%/g, manData.name.replace(/[^a-z0-9_]+/gi, '-').replace(/^-|-$/g, '')),
                     "str": util.format(template,
                         str + '            </Manufacturer>\n',
                         `            <Manufacturer _CreationDate="${timestamp}" _ModifiedDate="${timestamp}" Header="" Name="${manData.name}" Comment="${manData.comment}" Web="${manData.website}" />\n`

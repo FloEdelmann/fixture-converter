@@ -157,8 +157,8 @@ module.exports.export = function formatQLCplus(manufacturers, fixtures, optionOu
         str += '</FixtureDefinition>';
 
         const outFile = optionOutput
-            .replace(/%MANUFACTURER%/g, manData.name.replace(/[^a-z0-9_]+/gi, '-'))
-            .replace(/%FIXTURE%/g, fixData.name.replace(/[^a-z0-9_]+/gi, '-'));
+            .replace(/%MANUFACTURER%/g, manData.name.replace(/[^a-z0-9_]+/gi, '-').replace(/^-|-$/g, ''))
+            .replace(/%FIXTURE%/g, fixData.name.replace(/[^a-z0-9_]+/gi, '-').replace(/^-|-$/g, ''));
 
         mkdirp(path.dirname(outFile), (mkdirpError) => {
             if (mkdirpError)
