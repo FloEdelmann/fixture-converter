@@ -65,10 +65,10 @@ fs.mkdir(outputDir, (err) => {
             format: "ecue",
             isImport: true,
             files: {
-                'Eurolite-LED-KLS-801-control': { hasWarnings: true, },
-                'Eurolite-LED-KLS-801-program': { hasWarnings: true, },
-                'Eurolite-LED-KLS-801-combined': { hasWarnings: true, },
-                'Eurolite-LED-KLS-801-color': { hasWarnings: true, },
+                'Eurolite-LED-KLS-801-control': { hasWarnings: false, },
+                'Eurolite-LED-KLS-801-program': { hasWarnings: false, },
+                'Eurolite-LED-KLS-801-combined': { hasWarnings: false, },
+                'Eurolite-LED-KLS-801-color': { hasWarnings: false, },
             }
         },
         {

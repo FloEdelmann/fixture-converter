@@ -413,7 +413,7 @@ module.exports.import = function importEcue(str, filename) {
                             else if (fixture.ChannelBeam && fixture.ChannelBeam.indexOf(channel) != -1) {
                                 ch.type = 'Beam';
                             }
-                            else if (!fixture.ChannelIntensity || fixture.ChannelIntensity.indexOf(channel) == -1) {
+                            else if (!testName.includes('intensity') && !testName.includes('master') && testName.includes('dimmer')) {
                                 // not even a default Intensity channel
                                 ch.warning = "Please check type!";
                             }
