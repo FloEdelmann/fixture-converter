@@ -1,0 +1,428 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "Intimidator Scan LED 200",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [355, 368, 168],
+                "weight": 3.4,
+                "power": 86,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 9000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [15, 15]
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 180,
+                    "tiltMax": 90
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0°~180°"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0°~90°"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Open (White)",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Dark Blue",
+                            "color": "#0000c0"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Pink",
+                            "color": "#ffc0ff"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Salmon Pink",
+                            "color": "#ffa883"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "White/Dark Blue",
+                            "color": "#ffffff",
+                            "color2": "#0000c0"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Dark Blue/Yellow",
+                            "color": "#0000c0",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Yellow/Pink",
+                            "color": "#ffff00",
+                            "color2": "#ffc0ff"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Pink/Green",
+                            "color": "#ffc0ff",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Green/Red",
+                            "color": "#00ff00",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "Red/Blue",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Blue/Salmon Pink",
+                            "color": "#0000ff",
+                            "color2": "#ffa883"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Salmon Pink/White",
+                            "color": "#ffa883",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Rotate clockwise (slow ~ fast)"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Rotate Counterclockwise (slow ~ fast)"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [4, 7],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [8, 215],
+                            "name": "Strobe (slow ~ fast)"
+                        },
+                        {
+                            "range": [216, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0%~100%"
+                        }
+                    ]
+                },
+                "Gobo, Gobo Shake, & Gobo Scroll": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Gobo 7 shake, fast to slow"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Gobo 6 shake, fast to slow"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Gobo 5 shake, fast to slow"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Gobo 4 shake, fast to slow"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Gobo 3 shake, fast to slow"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "Gobo 2 Shake shake, fast to slow"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Gobo 1 Shake shake, fast to slow"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Gobo ccroll: clockwise rotation"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Gobo scroll: Counterclockwise rotation"
+                        }
+                    ]
+                },
+                "Function": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Pan/tilt move-in-black"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Pan/tilt move-in-black (disabled)"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Colour wheel move-in-black"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Colour wheel move-in-black (disabled)"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Gobo wheel move-in-black"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Gobo wheel move-in-black (disabled)"
+                        },
+                        {
+                            "range": [56, 87],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "All movement move-in-black (disabled)"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Reset pan/tilt"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Reset color wheel"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Reset gobo wheel"
+                        },
+                        {
+                            "range": [128, 151],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Reset all"
+                        },
+                        {
+                            "range": [160, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Movement Macros": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [8, 23],
+                            "name": "Automatic 1"
+                        },
+                        {
+                            "range": [24, 39],
+                            "name": "Automatic 2"
+                        },
+                        {
+                            "range": [40, 55],
+                            "name": "Automatic 3"
+                        },
+                        {
+                            "range": [56, 71],
+                            "name": "Automatic 4"
+                        },
+                        {
+                            "range": [72, 87],
+                            "name": "Automatic 5"
+                        },
+                        {
+                            "range": [88, 103],
+                            "name": "Automatic 6"
+                        },
+                        {
+                            "range": [104, 119],
+                            "name": "Automatic 7"
+                        },
+                        {
+                            "range": [120, 135],
+                            "name": "Automatic 8"
+                        },
+                        {
+                            "range": [136, 151],
+                            "name": "Sound 1"
+                        },
+                        {
+                            "range": [152, 167],
+                            "name": "Sound 2"
+                        },
+                        {
+                            "range": [168, 183],
+                            "name": "Sound 3"
+                        },
+                        {
+                            "range": [184, 199],
+                            "name": "Sound 4"
+                        },
+                        {
+                            "range": [200, 215],
+                            "name": "Sound 5"
+                        },
+                        {
+                            "range": [216, 231],
+                            "name": "Sound 6"
+                        },
+                        {
+                            "range": [232, 247],
+                            "name": "Sound 7"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Sound 8"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "8-Channel",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Color",
+                        "Shutter",
+                        "Dimmer",
+                        "Gobo, Gobo Shake, & Gobo Scroll",
+                        "Function",
+                        "Movement Macros"
+                    ]
+                },
+                {
+                    "name": "5-Channel",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Color",
+                        "Shutter",
+                        "Gobo, Gobo Shake, & Gobo Scroll"
+                    ]
+                }
+            ]
+        }
+    ]
+}

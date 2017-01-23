@@ -1,0 +1,191 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "TS-255",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [285, 555, 270],
+                "weight": 8,
+                "power": 575,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 250W",
+                    "colorTemperature": 6500,
+                    "lumens": 18000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [18, 18]
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 180,
+                    "tiltMax": 90
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Violet",
+                            "color": "#aa00ff"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Orange",
+                            "color": "#ffaa00"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Blue",
+                            "color": "#0055ff"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Pink",
+                            "color": "#ff55ff"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Gobo 7"
+                        }
+                    ]
+                },
+                "Shutter, strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [15, 15],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [16, 250],
+                            "name": "Strobe slow to fast"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Gobo rotation": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Gobo indexing"
+                        },
+                        {
+                            "range": [5, 120],
+                            "name": "CW rotation fast to slow"
+                        },
+                        {
+                            "range": [121, 139],
+                            "name": "Rotation STOP"
+                        },
+                        {
+                            "range": [140, 255],
+                            "name": "CCW rotation slow to fast"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Colour",
+                        "Gobo",
+                        "Shutter, strobe",
+                        "Gobo rotation"
+                    ]
+                }
+            ]
+        }
+    ]
+}

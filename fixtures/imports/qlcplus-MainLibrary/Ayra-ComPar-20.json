@@ -1,0 +1,189 @@
+{
+    "manufacturers": {
+        "Ayra": {
+            "name": "Ayra"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Ayra",
+            "name": "ComPar 20",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [175, 180, 110],
+                "weight": 1.5,
+                "power": 25,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master Dimmer 0-100%"
+                        }
+                    ]
+                },
+                "Color Marco": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 36],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [37, 73],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [74, 110],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [111, 147],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [148, 184],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [185, 221],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [222, 255],
+                            "name": "White",
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red 0-100%",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green 0-100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue 0-100%"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [8, 255],
+                            "name": "Strobe slow to fast"
+                        }
+                    ]
+                },
+                "Effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [5, 80],
+                            "name": "Color Marco (Color 1 - Color 15)"
+                        },
+                        {
+                            "range": [81, 150],
+                            "name": "Color Jumping (slow to fast)"
+                        },
+                        {
+                            "range": [151, 220],
+                            "name": "Color Fading (slow to fast)"
+                        },
+                        {
+                            "range": [221, 255],
+                            "name": "Sound control (mic sens)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "2CH mode",
+                    "channels": [
+                        "Dimmer",
+                        "Color Marco"
+                    ]
+                },
+                {
+                    "name": "3CH mode 1",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "3CH mode 2",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe",
+                        "Effect"
+                    ]
+                },
+                {
+                    "name": "6CH mode",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Effect"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "manufacturers": {
+        "Pro-Lights": {
+            "name": "Pro-Lights"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Pro-Lights",
+            "name": "UVStrip18",
+            "type": "Dimmer",
+            "physical": {
+                "dimensions": [1065, 128, 65],
+                "weight": 2.35,
+                "power": 53,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [126, 126]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Slow to fast"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Sound": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "Sound Control"
+                        }
+                    ]
+                }
+            },
+            "heads": {
+                "3 Ch-head0": [
+                    "Strobe",
+                    "Dimmer",
+                    "Sound"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "3 Ch",
+                    "channels": [
+                        "Strobe",
+                        "Dimmer",
+                        "Sound"
+                    ]
+                }
+            ]
+        }
+    ]
+}

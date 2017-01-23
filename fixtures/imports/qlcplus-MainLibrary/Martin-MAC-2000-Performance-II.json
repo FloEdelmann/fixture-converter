@@ -1,0 +1,773 @@
+{
+    "manufacturers": {
+        "Martin": {
+            "name": "Martin"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Martin",
+            "name": "MAC 2000 Performance II",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [408, 490, 743],
+                "weight": 39.5,
+                "power": 1480,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "HMI 1200W",
+                    "lumens": 23000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [12, 29]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 267
+                }
+            },
+            "availableChannels": {
+                "Shutter, Strobe, Reset, Lamp On/Off": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [20, 49],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [50, 72],
+                            "name": "Strobe (fast > slow)"
+                        },
+                        {
+                            "range": [73, 79],
+                            "name": "Shutter open, lamp power reduced (MAC 2000 E only)"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Opening pulse (fast > slow)"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Closing pulse (fast > slow)"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [128, 147],
+                            "name": "Random strobe, fast"
+                        },
+                        {
+                            "range": [148, 167],
+                            "name": "Random strobe, medium"
+                        },
+                        {
+                            "range": [168, 187],
+                            "name": "Random strobe, slow"
+                        },
+                        {
+                            "range": [188, 190],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [191, 193],
+                            "name": "Random opening pulse, fast"
+                        },
+                        {
+                            "range": [194, 196],
+                            "name": "Random opening pulse, slow"
+                        },
+                        {
+                            "range": [197, 199],
+                            "name": "Random closing pulse, fast"
+                        },
+                        {
+                            "range": [200, 202],
+                            "name": "Random closing pulse, slow"
+                        },
+                        {
+                            "range": [203, 207],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [208, 217],
+                            "name": "RESET"
+                        },
+                        {
+                            "range": [218, 227],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [228, 237],
+                            "name": "Lamp power on "
+                        },
+                        {
+                            "range": [238, 247],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Lamp power off (hold 5 seconds)"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White > Cyan"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White > Magenta"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White > Yellow"
+                        }
+                    ]
+                },
+                "CTC": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Cold > Warm"
+                        }
+                    ]
+                },
+                "Gobo Wheel, Gobo & Function": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [10, 14],
+                            "name": "Indexed rotation Gobo 1 (Dot breakup)"
+                        },
+                        {
+                            "range": [15, 19],
+                            "name": "Indexed rotation Gobo 2 (Soft breakup)"
+                        },
+                        {
+                            "range": [20, 24],
+                            "name": "Indexed rotation Gobo 3 (Linear)"
+                        },
+                        {
+                            "range": [25, 29],
+                            "name": "Indexed rotation Gobo 4 (Water)"
+                        },
+                        {
+                            "range": [30, 34],
+                            "name": "Indexed rotation Gobo 5 (Flames)"
+                        },
+                        {
+                            "range": [35, 39],
+                            "name": "Continuous rotation Gobo 1"
+                        },
+                        {
+                            "range": [40, 44],
+                            "name": "Continuous rotation Gobo 2"
+                        },
+                        {
+                            "range": [45, 49],
+                            "name": "Continuous rotation Gobo 3"
+                        },
+                        {
+                            "range": [50, 54],
+                            "name": "Continuous rotation Gobo 4"
+                        },
+                        {
+                            "range": [55, 59],
+                            "name": "Continuous rotation Gobo 5"
+                        },
+                        {
+                            "range": [60, 74],
+                            "name": "Indexed shake Gobo 1 (slow > fast)"
+                        },
+                        {
+                            "range": [75, 89],
+                            "name": "Indexed shake Gobo 2 (slow > fast)"
+                        },
+                        {
+                            "range": [90, 104],
+                            "name": "Indexed shake Gobo 3 (slow > fast)"
+                        },
+                        {
+                            "range": [105, 119],
+                            "name": "Indexed shake Gobo 4 (slow > fast)"
+                        },
+                        {
+                            "range": [120, 134],
+                            "name": "Indexed shake Gobo 5 (slow > fast)"
+                        },
+                        {
+                            "range": [135, 149],
+                            "name": "Rotating shake Gobo 1 (slow > fast)"
+                        },
+                        {
+                            "range": [150, 164],
+                            "name": "Rotating shake Gobo 2 (slow > fast)"
+                        },
+                        {
+                            "range": [165, 179],
+                            "name": "Rotating shake Gobo 3 (slow > fast)"
+                        },
+                        {
+                            "range": [180, 194],
+                            "name": "Rotating shake Gobo 4 (slow > fast)"
+                        },
+                        {
+                            "range": [195, 209],
+                            "name": "Rotating shake Gobo 5 (slow > fast)"
+                        },
+                        {
+                            "range": [210, 232],
+                            "name": "Gobo wheel rotation CW (slow > fast)"
+                        },
+                        {
+                            "range": [233, 255],
+                            "name": "Gobo wheel rotation CCW (fast > slow)"
+                        }
+                    ]
+                },
+                "Gobo Wheel, Rotation Coarse": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [3, 127],
+                            "name": "CCW (slow > fast)"
+                        },
+                        {
+                            "range": [128, 252],
+                            "name": "CW (fast > slow)"
+                        }
+                    ]
+                },
+                "Gobo Wheel, Fine Position": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Position (LSB), Min < Max"
+                        }
+                    ]
+                },
+                "Gobo Animation wheel position": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Effect"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Vertical position – Indexing",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Horizontal position – Indexing",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Vertical position – Cont. Rotation",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Horizontal position – Cont. Rotation",
+                            "color": "#f0f0f0"
+                        },
+                        {
+                            "range": [50, 139],
+                            "name": "Animation wheel scroll position (Vertical → Horizontal) – Indexing",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [140, 229],
+                            "name": "Animation wheel scroll position (Horizontal → Vertical) – Cont. Rot."
+                        },
+                        {
+                            "range": [230, 235],
+                            "name": "No Effect"
+                        },
+                        {
+                            "range": [236, 239],
+                            "name": "Gobo Animation Macro 1"
+                        },
+                        {
+                            "range": [240, 243],
+                            "name": "Gobo Animation Macro 2"
+                        },
+                        {
+                            "range": [244, 247],
+                            "name": "Gobo Animation Macro 3"
+                        },
+                        {
+                            "range": [248, 251],
+                            "name": "Gobo Animation Macro 4"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Gobo Animation Macro 5"
+                        }
+                    ]
+                },
+                "Gobo Animation Wheel, Position/Velocity": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [3, 127],
+                            "name": "CCW (slow > fast)"
+                        },
+                        {
+                            "range": [128, 252],
+                            "name": "CW (fast > slow)"
+                        },
+                        {
+                            "range": [253, 255],
+                            "name": "No rotation"
+                        }
+                    ]
+                },
+                "Effect Wheel Selection": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [1, 234],
+                            "name": "Variable frost, 0 < 100%"
+                        },
+                        {
+                            "range": [235, 242],
+                            "name": "Effect 1"
+                        },
+                        {
+                            "range": [243, 250],
+                            "name": "Effect 2"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 199],
+                            "name": "Open > Closed"
+                        },
+                        {
+                            "range": [200, 215],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [216, 229],
+                            "name": "Pulse opening (fast > slow)"
+                        },
+                        {
+                            "range": [230, 243],
+                            "name": "Pulse closing, (fast > slow)"
+                        },
+                        {
+                            "range": [244, 246],
+                            "name": "Random pulse opening, fast"
+                        },
+                        {
+                            "range": [247, 249],
+                            "name": "Random pulse opening, slow"
+                        },
+                        {
+                            "range": [250, 252],
+                            "name": "Random pulse closing, fast"
+                        },
+                        {
+                            "range": [253, 255],
+                            "name": "Random pulse closing, slow"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Infinity > near"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Flood > spot"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan (0 - 540°)"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 < Max"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt (0 - 267°)"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 < Max"
+                        }
+                    ]
+                },
+                "Dimmer Speed and Gobo Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Tracking"
+                        },
+                        {
+                            "range": [3, 239],
+                            "name": "Fast > Slow"
+                        },
+                        {
+                            "range": [240, 242],
+                            "name": "Tracking, STUd = OFF (studio mode off)"
+                        },
+                        {
+                            "range": [243, 245],
+                            "name": "Tracking, STUd = ON (studio mode on)"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "Tracking, SCUT = OFF (shortcuts off)"
+                        },
+                        {
+                            "range": [249, 251],
+                            "name": "Tracking, SCUT = ON (shortcuts on)"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Fast. Blackout “speed” for color wheel "
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Tracking"
+                        },
+                        {
+                            "range": [3, 242],
+                            "name": "Fast > slow"
+                        },
+                        {
+                            "range": [243, 245],
+                            "name": "Tracking, PTSP = SLOW (slow pan/tilt speed)"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "Tracking, PTSP = NORM (normal pan/tilt speed) "
+                        },
+                        {
+                            "range": [249, 251],
+                            "name": "Tracking, PTSP = FAST (fast pan/tilt speed)"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Blackout"
+                        }
+                    ]
+                },
+                "Framing MACRO functions": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "No Macro"
+                        },
+                        {
+                            "range": [3, 255],
+                            "name": "Reserved For macros"
+                        }
+                    ]
+                },
+                "Framing shutter 1": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Out → In"
+                        }
+                    ]
+                },
+                "Framing shutter 1 Angle": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 126],
+                            "name": "Angle -"
+                        },
+                        {
+                            "range": [127, 128],
+                            "name": "Parallel"
+                        },
+                        {
+                            "range": [129, 255],
+                            "name": "Angle +"
+                        }
+                    ]
+                },
+                "Framing shutter 2": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Out → In"
+                        }
+                    ]
+                },
+                "Framing shutter 2 Angle": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 126],
+                            "name": "Angle -"
+                        },
+                        {
+                            "range": [127, 128],
+                            "name": "Parallel"
+                        },
+                        {
+                            "range": [129, 255],
+                            "name": "Angle +"
+                        }
+                    ]
+                },
+                "Framing shutter 3": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Out → In"
+                        }
+                    ]
+                },
+                "Framing shutter 3 Angle": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 126],
+                            "name": "Angle -"
+                        },
+                        {
+                            "range": [127, 128],
+                            "name": "Parallel"
+                        },
+                        {
+                            "range": [129, 255],
+                            "name": "Angle +"
+                        }
+                    ]
+                },
+                "Framing shutter 4": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Out → In"
+                        }
+                    ]
+                },
+                "Framing shutter 4 Angle": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 126],
+                            "name": "Angle -"
+                        },
+                        {
+                            "range": [127, 128],
+                            "name": "Parallel"
+                        },
+                        {
+                            "range": [129, 255],
+                            "name": "Angle +"
+                        }
+                    ]
+                },
+                "Rotate framing shutters": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Right → Center → Left"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Gobo Wheel, Rotation Coarse",
+                    "Gobo Wheel, Fine Position"
+                ],
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "31 Channel - 16 Bit",
+                    "channels": [
+                        "Shutter, Strobe, Reset, Lamp On/Off",
+                        "Dimmer",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "CTC",
+                        "Gobo Wheel, Gobo & Function",
+                        "Gobo Wheel, Rotation Coarse",
+                        "Gobo Wheel, Fine Position",
+                        "Gobo Animation wheel position",
+                        "Gobo Animation Wheel, Position/Velocity",
+                        "Effect Wheel Selection",
+                        "Iris",
+                        "Framing MACRO functions",
+                        "Focus",
+                        "Zoom",
+                        "Framing shutter 1",
+                        "Framing shutter 1 Angle",
+                        "Framing shutter 2",
+                        "Framing shutter 2 Angle",
+                        "Framing shutter 3",
+                        "Framing shutter 3 Angle",
+                        "Framing shutter 4",
+                        "Framing shutter 4 Angle",
+                        "Rotate framing shutters",
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed",
+                        "Dimmer Speed and Gobo Speed"
+                    ]
+                },
+                {
+                    "name": "28 Channel - 8 Bit",
+                    "channels": [
+                        "Shutter, Strobe, Reset, Lamp On/Off",
+                        "Dimmer",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "CTC",
+                        "Gobo Wheel, Gobo & Function",
+                        "Gobo Wheel, Rotation Coarse",
+                        "Gobo Animation wheel position",
+                        "Gobo Animation Wheel, Position/Velocity",
+                        "Effect Wheel Selection",
+                        "Iris",
+                        "Framing MACRO functions",
+                        "Focus",
+                        "Zoom",
+                        "Framing shutter 1",
+                        "Framing shutter 1 Angle",
+                        "Framing shutter 2",
+                        "Framing shutter 2 Angle",
+                        "Framing shutter 3",
+                        "Framing shutter 3 Angle",
+                        "Framing shutter 4",
+                        "Framing shutter 4 Angle",
+                        "Rotate framing shutters",
+                        "Tilt",
+                        "Pan",
+                        "Pan/Tilt Speed",
+                        "Dimmer Speed and Gobo Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

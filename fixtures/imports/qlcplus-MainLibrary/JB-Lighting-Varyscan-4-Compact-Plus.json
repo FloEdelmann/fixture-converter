@@ -1,0 +1,431 @@
+{
+    "manufacturers": {
+        "JB-Lighting": {
+            "name": "JB-Lighting"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "JB-Lighting",
+            "name": "Varyscan 4 Compact Plus",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [270, 650, 290],
+                "weight": 19,
+                "bulb": {
+                    "type": "HMI 575W"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 170,
+                    "tiltMax": 110
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [160, 254],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Reset"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Colour 1 White"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Colour 2"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Colour 3 Red"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Colour 4"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Colour 5 Yellow"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Colour 6"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Colour 7 Pink"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Colour 8"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Colour 9 Green"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Colour 10"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Colour 11 Orange"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Colour 12"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Colour 13 Blue"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "Colour 14"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Colour 15 Dark Green"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Colour 16"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Rainbow"
+                        }
+                    ]
+                },
+                "Dimmer/Shutter": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Dimmer intensity"
+                        },
+                        {
+                            "range": [128, 137],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [138, 139],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [140, 243],
+                            "name": "Strobe speed 1-11/sec"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Iris"
+                        }
+                    ]
+                },
+                "Gobo rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 191],
+                            "name": "0-540 degrees"
+                        },
+                        {
+                            "range": [192, 222],
+                            "name": "Rotation speed CCW"
+                        },
+                        {
+                            "range": [223, 224],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [225, 255],
+                            "name": "Rotation speed CW"
+                        }
+                    ]
+                },
+                "Effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Artificial light filter"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Daylight filter"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Prism"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Prism rotation speed slow to fast"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Floodfilter"
+                        },
+                        {
+                            "range": [160, 255],
+                            "name": "Flood to open"
+                        }
+                    ]
+                },
+                "Gobo & Effect": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 8],
+                            "name": "White"
+                        },
+                        {
+                            "range": [9, 17],
+                            "name": "Artificial light filter"
+                        },
+                        {
+                            "range": [18, 26],
+                            "name": "Daylight filter"
+                        },
+                        {
+                            "range": [27, 35],
+                            "name": "Prism"
+                        },
+                        {
+                            "range": [36, 44],
+                            "name": "Flood filter"
+                        },
+                        {
+                            "range": [45, 53],
+                            "name": "Gobo 1 White"
+                        },
+                        {
+                            "range": [54, 62],
+                            "name": "Gobo 1 Artificial light filter"
+                        },
+                        {
+                            "range": [63, 71],
+                            "name": "Gobo 1 Daylight filter"
+                        },
+                        {
+                            "range": [72, 80],
+                            "name": "Gobo 1 Prism"
+                        },
+                        {
+                            "range": [81, 89],
+                            "name": "Gobo 2 White"
+                        },
+                        {
+                            "range": [90, 98],
+                            "name": "Gobo 2 Artificial light filter"
+                        },
+                        {
+                            "range": [99, 107],
+                            "name": "Gobo 2 Daylight filter"
+                        },
+                        {
+                            "range": [108, 116],
+                            "name": "Gobo 2 Prism"
+                        },
+                        {
+                            "range": [117, 125],
+                            "name": "Gobo 3 white"
+                        },
+                        {
+                            "range": [126, 134],
+                            "name": "Gobo 3 Artificial light filter"
+                        },
+                        {
+                            "range": [135, 143],
+                            "name": "Gobo 3 Daylight filter"
+                        },
+                        {
+                            "range": [144, 152],
+                            "name": "Gobo 3 Prism"
+                        },
+                        {
+                            "range": [153, 161],
+                            "name": "Gobo 4 White"
+                        },
+                        {
+                            "range": [162, 170],
+                            "name": "Gobo 4 Artificial light filter"
+                        },
+                        {
+                            "range": [171, 179],
+                            "name": "Gobo 4 Daylight filter"
+                        },
+                        {
+                            "range": [180, 188],
+                            "name": "Gobo 4 Prism"
+                        },
+                        {
+                            "range": [189, 197],
+                            "name": "Gobo 5 White"
+                        },
+                        {
+                            "range": [198, 206],
+                            "name": "Gobo 5 Artificial light filter"
+                        },
+                        {
+                            "range": [207, 215],
+                            "name": "Gobo 5 Daylight filter"
+                        },
+                        {
+                            "range": [216, 254],
+                            "name": "Gobo 5 Prism"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Reset"
+                        }
+                    ]
+                },
+                "Iris & Gobo rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 64],
+                            "name": "Iris with gobo 1"
+                        },
+                        {
+                            "range": [65, 65],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [66, 66],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [106, 106],
+                            "name": "Gobo at 180 degrees"
+                        },
+                        {
+                            "range": [148, 148],
+                            "name": "Gobo at 360 degrees"
+                        },
+                        {
+                            "range": [191, 191],
+                            "name": "Gobo at 540 degrees"
+                        },
+                        {
+                            "range": [192, 222],
+                            "name": "Gobo CCW rotation fast to slow"
+                        },
+                        {
+                            "range": [223, 224],
+                            "name": "No gobo rotation"
+                        },
+                        {
+                            "range": [225, 255],
+                            "name": "Gobo CW rotation slow to fast"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Advanced",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Gobo",
+                        "Colour",
+                        "Dimmer/Shutter",
+                        "Iris",
+                        "Gobo rotation",
+                        "Effect"
+                    ]
+                },
+                {
+                    "name": "Simple",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Gobo & Effect",
+                        "Colour",
+                        "Dimmer/Shutter",
+                        "Iris & Gobo rotation"
+                    ]
+                },
+                {
+                    "name": "Clay Paky GS3",
+                    "channels": [
+                        "Iris & Gobo rotation",
+                        "Colour",
+                        "Gobo & Effect",
+                        "Dimmer/Shutter",
+                        "Pan",
+                        "Tilt"
+                    ]
+                }
+            ]
+        }
+    ]
+}

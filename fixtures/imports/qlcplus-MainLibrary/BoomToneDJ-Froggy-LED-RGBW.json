@@ -1,0 +1,175 @@
+{
+    "manufacturers": {
+        "BoomToneDJ": {
+            "name": "BoomToneDJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "BoomToneDJ",
+            "name": "Froggy LED RGBW",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [140, 250, 110],
+                "weight": 1.9,
+                "power": 30,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "colorTemperature": 7600
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0%-100%"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "From slow to fast"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0%-100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0%-100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0%-100%"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0%-100%"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0°-540°"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0°-270°"
+                        }
+                    ]
+                },
+                "Speed - Pan/Tilt": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "From slow to fast"
+                        }
+                    ]
+                },
+                "Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [1, 249],
+                            "name": "Auto"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Sound"
+                        }
+                    ]
+                },
+                "Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [255, 255],
+                            "name": "Reset"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "6 Ch Mode",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White"
+                    ]
+                },
+                {
+                    "name": "11 Ch Mode",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Pan",
+                        "Tilt",
+                        "Speed - Pan/Tilt",
+                        "Mode",
+                        "Reset"
+                    ]
+                }
+            ]
+        }
+    ]
+}

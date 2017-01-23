@@ -1,0 +1,207 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "DJ Spot 250",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [356, 495, 343],
+                "weight": 18,
+                "power": 250,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LL-EHJ 24v/250w",
+                    "colorTemperature": 6500,
+                    "lumens": 2500
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [15, 15]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 265
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan (0 to 540°)"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt (0 to 265°)"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 24],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [25, 49],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [50, 74],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [75, 99],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [100, 124],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [125, 149],
+                            "name": "Purple",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [150, 174],
+                            "name": "Orange",
+                            "color": "#ff8000"
+                        },
+                        {
+                            "range": [175, 199],
+                            "name": "Pink",
+                            "color": "#ffc0ff"
+                        },
+                        {
+                            "range": [200, 255],
+                            "name": "Rainbow Effect"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 16],
+                            "name": "none"
+                        },
+                        {
+                            "range": [17, 33],
+                            "name": "Spot"
+                        },
+                        {
+                            "range": [34, 50],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [51, 67],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [68, 84],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [85, 101],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [102, 118],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [119, 135],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [136, 152],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [153, 169],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [170, 186],
+                            "name": "Gobo 9"
+                        },
+                        {
+                            "range": [187, 199],
+                            "name": "Gobo 10"
+                        },
+                        {
+                            "range": [200, 255],
+                            "name": "Rainbow Effect"
+                        }
+                    ]
+                },
+                "Special Functions": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [16, 91],
+                            "name": "Gobo Strobe - Fast -> slow"
+                        },
+                        {
+                            "range": [92, 135],
+                            "name": "Color Strobe - Fast -> slow"
+                        },
+                        {
+                            "range": [136, 195],
+                            "name": "Gobo and Color Strobe - Fast -> slow"
+                        },
+                        {
+                            "range": [196, 255],
+                            "name": "Gobo Shake - Fast -> slow"
+                        }
+                    ]
+                },
+                "Pan and tilt speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan and tilt speed"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Color",
+                        "Gobo",
+                        "Special Functions",
+                        "Pan and tilt speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

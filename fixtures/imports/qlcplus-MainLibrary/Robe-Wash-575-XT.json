@@ -1,0 +1,475 @@
+{
+    "manufacturers": {
+        "Robe": {
+            "name": "Robe"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Robe",
+            "name": "Wash 575 XT",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [449, 583, 467],
+                "weight": 32,
+                "power": 575,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSR 575W",
+                    "colorTemperature": 5500,
+                    "lumens": 49000
+                },
+                "lens": {
+                    "name": "Fresnel",
+                    "degreesMinMax": [7, 28]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 530,
+                    "tiltMax": 280
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan coarse"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt coarse"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Speed P/T": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 249],
+                            "name": "Max to Min"
+                        },
+                        {
+                            "range": [250, 252],
+                            "name": "Max speed BO Moving/Color cc"
+                        },
+                        {
+                            "range": [253, 255],
+                            "name": "Max Speed Vector Mode BO Mov/Color"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Fan speed Max to Min"
+                        },
+                        {
+                            "range": [128, 139],
+                            "name": "Lamp ON Reset"
+                        },
+                        {
+                            "range": [140, 229],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Lamp OFF"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "No Function"
+                        }
+                    ]
+                },
+                "Colours": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [16, 16],
+                            "name": "Deep Red",
+                            "color": "#aa0000"
+                        },
+                        {
+                            "range": [32, 32],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [48, 48],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [64, 64],
+                            "name": "Orange",
+                            "color": "#ff8000"
+                        },
+                        {
+                            "range": [80, 80],
+                            "name": "3200 K",
+                            "color": "#ffdab4"
+                        },
+                        {
+                            "range": [96, 96],
+                            "name": "5600 K",
+                            "color": "#c6d8ff"
+                        },
+                        {
+                            "range": [112, 112],
+                            "name": "UV Filter",
+                            "color": "#7f00ff"
+                        },
+                        {
+                            "range": [128, 190],
+                            "name": "Rainbow Fast to Slow"
+                        },
+                        {
+                            "range": [191, 192],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "CCW Rainbow Slow to Fast"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Shutter Closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe >>"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Strobe Random >>"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer (0 - 100%)"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Cyan (0 - 100%)"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Magenta (0 - 100%)"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Yellow (0 - 100%)"
+                        }
+                    ]
+                },
+                "Speed CMY/Dimmer": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Max to Min"
+                        }
+                    ]
+                },
+                "Color Macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Macro 1"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Macro 2"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Macro 3"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Macro 4"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Macro 5"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Macro 6"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Macro 7"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Macro 8"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Macro 9"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Macro 10"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Macro 11"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Macro 12"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Macro 13"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "Macro 14"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Macro 15"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Macro 16"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Macro 17"
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "Macro 18"
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "Macro 19"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Macro 20"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Macro 21"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "Macro 22"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "Macro 23"
+                        },
+                        {
+                            "range": [184, 191],
+                            "name": "Macro 24"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "Macro 25"
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "Macro 26"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Macro 27"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Macro 28"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Macro 29"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Macro 30"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Macro 31"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Macro 32"
+                        }
+                    ]
+                },
+                "Beam": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 70],
+                            "name": "Full Beam"
+                        },
+                        {
+                            "range": [71, 180],
+                            "name": "Beam Shaper"
+                        },
+                        {
+                            "range": [181, 255],
+                            "name": "Frost"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "28°"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "7°"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 1/2",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan Fine",
+                        "Tilt Fine",
+                        "Speed P/T",
+                        "Control",
+                        "Colours",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "Speed CMY/Dimmer",
+                        "Color Macros",
+                        "Beam",
+                        "Zoom",
+                        "Shutter",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "8 Bits",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Speed P/T",
+                        "Control",
+                        "Colours",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "Speed CMY/Dimmer",
+                        "Color Macros",
+                        "Beam",
+                        "Zoom",
+                        "Shutter",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

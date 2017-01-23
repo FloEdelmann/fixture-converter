@@ -1,0 +1,66 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "LED PAR64 White",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [240, 340, 265],
+                "weight": 3,
+                "bulb": {
+                    "type": "LED",
+                    "colorTemperature": 6000
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer intensity"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [11, 20],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [21, 255],
+                            "name": "Strobe slow to fast"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

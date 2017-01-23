@@ -1,0 +1,152 @@
+{
+    "manufacturers": {
+        "Clay Paky": {
+            "name": "Clay Paky"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Clay Paky",
+            "name": "Tornado",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [1000, 1000, 500],
+                "weight": 35,
+                "power": 1500,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "HMI 575W",
+                    "colorTemperature": 6000,
+                    "lumens": 49000
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 150,
+                    "tiltMax": 110
+                }
+            },
+            "availableChannels": {
+                "Color Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Color Select"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Color Rotation slow -> fast"
+                        }
+                    ]
+                },
+                "Dimmer & Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Dimmer Min -> Max"
+                        },
+                        {
+                            "range": [128, 139],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [140, 241],
+                            "name": "Strobe 0.66Hz -> 5Hz"
+                        },
+                        {
+                            "range": [242, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Pan 1 - 4": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Tilt 1 - 4": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Pan 2 - 5": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Tilt 2 - 5": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Pan 3 - 6": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Tilt 3 - 6": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                }
+            },
+            "heads": {
+                "Standard-head0": [
+                    "Tilt 1 - 4",
+                    "Pan 1 - 4"
+                ],
+                "Standard-head1": [
+                    "Tilt 2 - 5",
+                    "Pan 2 - 5"
+                ],
+                "Standard-head2": [
+                    "Tilt 3 - 6",
+                    "Pan 3 - 6"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "Standard",
+                    "channels": [
+                        "Color Wheel",
+                        "Dimmer & Strobe",
+                        "Pan 1 - 4",
+                        "Tilt 1 - 4",
+                        "Pan 2 - 5",
+                        "Tilt 2 - 5",
+                        "Pan 3 - 6",
+                        "Tilt 3 - 6"
+                    ]
+                }
+            ]
+        }
+    ]
+}

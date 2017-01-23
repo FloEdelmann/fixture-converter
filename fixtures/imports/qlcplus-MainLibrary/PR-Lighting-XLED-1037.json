@@ -1,0 +1,488 @@
+{
+    "manufacturers": {
+        "PR Lighting": {
+            "name": "PR Lighting"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "PR Lighting",
+            "name": "XLED 1037",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [382, 466, 276],
+                "weight": 12.85,
+                "power": 450,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 15862
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [13, 52]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No strobe"
+                        },
+                        {
+                            "range": [16, 127],
+                            "name": "Pulse from slow to fast"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Strobe from slow to fast"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear dimming from dark to bright"
+                        }
+                    ]
+                },
+                "Dimmer Fine": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimming in 16 bit precision"
+                        }
+                    ]
+                },
+                "Color Temperature": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Linear color temperature adjustment from low to high"
+                        }
+                    ]
+                },
+                "Animation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Animation effects"
+                        }
+                    ]
+                },
+                "Color Macro": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No"
+                        },
+                        {
+                            "range": [1, 31],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Color 1 - yellow"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Color 2 - cyan"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Color 3 - purple"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Rainbow effects (speed from slow to fast)"
+                        }
+                    ]
+                },
+                "Area 1 Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear adjustment in Red from light to dark of Area 1"
+                        }
+                    ]
+                },
+                "Area 2 Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear adjustment in Red from light to dark of Area 2"
+                        }
+                    ]
+                },
+                "Area 3 Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear adjustment in Red from light to dark of Area 3"
+                        }
+                    ]
+                },
+                "Area 1 Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear adjustment in Green from light to dark of Area 1"
+                        }
+                    ]
+                },
+                "Area 2 Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear adjustment in Green from light to dark of Area 2"
+                        }
+                    ]
+                },
+                "Area 3 Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear adjustment in Green from light to dark of Area 3"
+                        }
+                    ]
+                },
+                "Area 1 Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear adjustment in Blue from light to dark of Area 1"
+                        }
+                    ]
+                },
+                "Area 2 Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear adjustment in Blue from light to dark of Area 2"
+                        }
+                    ]
+                },
+                "Area 3 Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear adjustment in Blue from light to dark of Area 3"
+                        }
+                    ]
+                },
+                "Area 1 White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear adjustment in White from light to dark of Area 1"
+                        }
+                    ]
+                },
+                "Area 2 White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear adjustment in White from light to dark of Area 2"
+                        }
+                    ]
+                },
+                "Area 3 White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear adjustment in White from light to dark of Area 3"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear zooming (0%~100%)"
+                        }
+                    ]
+                },
+                "Zoom fine": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Zooming in 16 bit precision"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan (0°~540°)"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan in 16 bit precision"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt (0°~270°)"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt in 16 bit precision"
+                        }
+                    ]
+                },
+                "Pan & Tilt speeds": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan and Tilt speeds from fast to slow"
+                        }
+                    ]
+                },
+                "Control Function": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 49],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [50, 255],
+                            "name": "Reset"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear adjustment in red from light to dark"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear adjustment in green from light to dark"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear adjustment in blue from light to dark"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear adjustment in white from light to dark"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Dimmer",
+                    "Dimmer Fine"
+                ],
+                [
+                    "Zoom",
+                    "Zoom fine"
+                ],
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "heads": {
+                "Extended Mode-head0": [
+                    "Area 1 Blue",
+                    "Area 1 White",
+                    "Area 1 Red",
+                    "Area 1 Green"
+                ],
+                "Extended Mode-head1": [
+                    "Area 2 Blue",
+                    "Area 2 White",
+                    "Area 2 Red",
+                    "Area 2 Green"
+                ],
+                "Extended Mode-head2": [
+                    "Area 3 Blue",
+                    "Area 3 White",
+                    "Area 3 Red",
+                    "Area 3 Green"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "Standard Mode",
+                    "channels": [
+                        "Strobe",
+                        "Dimmer",
+                        "Color Temperature",
+                        "Animation",
+                        "Color Macro",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Zoom",
+                        "Zoom fine",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Pan & Tilt speeds",
+                        "Control Function"
+                    ]
+                },
+                {
+                    "name": "Extended Mode",
+                    "channels": [
+                        "Strobe",
+                        "Dimmer",
+                        "Dimmer Fine",
+                        "Color Temperature",
+                        "Animation",
+                        "Color Macro",
+                        "Area 1 Red",
+                        "Area 2 Red",
+                        "Area 3 Red",
+                        "Area 1 Green",
+                        "Area 2 Green",
+                        "Area 3 Green",
+                        "Area 1 Blue",
+                        "Area 2 Blue",
+                        "Area 3 Blue",
+                        "Area 1 White",
+                        "Area 2 White",
+                        "Area 3 White",
+                        "Zoom",
+                        "Zoom fine",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Pan & Tilt speeds",
+                        "Control Function"
+                    ]
+                }
+            ]
+        }
+    ]
+}

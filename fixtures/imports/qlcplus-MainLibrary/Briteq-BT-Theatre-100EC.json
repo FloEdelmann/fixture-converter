@@ -1,0 +1,72 @@
+{
+    "manufacturers": {
+        "Briteq": {
+            "name": "Briteq"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Briteq",
+            "name": "BT Theatre 100EC",
+            "type": "Strobe",
+            "physical": {
+                "dimensions": [230, 280, 305],
+                "weight": 6,
+                "power": 120,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "LED",
+                    "colorTemperature": 3200,
+                    "lumens": 6800
+                },
+                "lens": {
+                    "name": "Fresnel",
+                    "degreesMinMax": [10, 50]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "dimmer"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "open"
+                        },
+                        {
+                            "range": [6, 255],
+                            "name": "strobe speed"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Dimmer+Strobe",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe"
+                    ]
+                },
+                {
+                    "name": "Dimmer",
+                    "channels": [
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

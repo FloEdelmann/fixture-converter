@@ -1,0 +1,261 @@
+{
+    "manufacturers": {
+        "Robe": {
+            "name": "Robe"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Robe",
+            "name": "ClubWash 250 CT",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [417, 520, 375],
+                "weight": 20.3,
+                "power": 410,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "Sylvania BA 250/2 SE"
+                },
+                "lens": {
+                    "name": "Fresnel",
+                    "degreesMinMax": [8, 0]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 530,
+                    "tiltMax": 280
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Tracking"
+                        },
+                        {
+                            "range": [1, 249],
+                            "name": "Vect Mode"
+                        },
+                        {
+                            "range": [250, 252],
+                            "name": "BO during Col"
+                        },
+                        {
+                            "range": [253, 255],
+                            "name": "BO during Pan/Tilt/Col"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Safe"
+                        },
+                        {
+                            "range": [128, 129],
+                            "name": "Lamp On, Reset"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Lamp Off"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [10, 10],
+                            "name": "Turquoise"
+                        },
+                        {
+                            "range": [21, 21],
+                            "name": "Deep Red"
+                        },
+                        {
+                            "range": [32, 32],
+                            "name": "Cyan"
+                        },
+                        {
+                            "range": [42, 42],
+                            "name": "UV"
+                        },
+                        {
+                            "range": [53, 53],
+                            "name": "Magenta"
+                        },
+                        {
+                            "range": [64, 64],
+                            "name": "Light Blue"
+                        },
+                        {
+                            "range": [74, 74],
+                            "name": "Yellow"
+                        },
+                        {
+                            "range": [85, 85],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [96, 96],
+                            "name": "Pink"
+                        },
+                        {
+                            "range": [106, 106],
+                            "name": "Blue"
+                        },
+                        {
+                            "range": [117, 117],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [190, 193],
+                            "name": "No Scroll"
+                        },
+                        {
+                            "range": [128, 189],
+                            "name": "Scroll CW"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Scroll CCW"
+                        }
+                    ]
+                },
+                "No Func": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Raw DMX"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe Speed"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Close Pulse"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "Open Pulse"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random Strobe"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "16bit",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Pan/Tilt Speed",
+                        "Control",
+                        "Colour",
+                        "No Func",
+                        "Shutter",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "8bit",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan/Tilt Speed",
+                        "Control",
+                        "Colour",
+                        "No Func",
+                        "Shutter",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

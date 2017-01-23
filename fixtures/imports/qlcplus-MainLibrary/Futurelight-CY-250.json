@@ -1,0 +1,214 @@
+{
+    "manufacturers": {
+        "Futurelight": {
+            "name": "Futurelight"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Futurelight",
+            "name": "CY-250",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [300, 525, 150],
+                "weight": 14,
+                "power": 500,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 250W",
+                    "colorTemperature": 8500
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [17, 17]
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 180,
+                    "tiltMax": 90
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Left to Right"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Down to Up"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 18],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [19, 35],
+                            "name": "Dark Blue",
+                            "color": "#00007f"
+                        },
+                        {
+                            "range": [36, 53],
+                            "name": "Pink",
+                            "color": "#ffaaff"
+                        },
+                        {
+                            "range": [54, 71],
+                            "name": "Light Green",
+                            "color": "#aaff7f"
+                        },
+                        {
+                            "range": [72, 89],
+                            "name": "Orange",
+                            "color": "#ffaa00"
+                        },
+                        {
+                            "range": [90, 107],
+                            "name": "Light Blue",
+                            "color": "#aaaaff"
+                        },
+                        {
+                            "range": [108, 126],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [127, 127],
+                            "name": "Cherry Red",
+                            "color": "#aa0000"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Forward Rainbow Speed"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Backward Rainbow Speed"
+                        }
+                    ]
+                },
+                "Gobo Selection": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Forward Gobo Change Speed"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Backward Gobo Change Speed"
+                        }
+                    ]
+                },
+                "Gobo Rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [16, 135],
+                            "name": "Forward Gobo Rotation Speed"
+                        },
+                        {
+                            "range": [136, 255],
+                            "name": "Backward Gobo Rotation Speed"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Shutter Closed"
+                        },
+                        {
+                            "range": [6, 128],
+                            "name": "Dimmer Control"
+                        },
+                        {
+                            "range": [129, 131],
+                            "name": "Reset after 3-5 seconds"
+                        },
+                        {
+                            "range": [132, 139],
+                            "name": "Shutter Open"
+                        },
+                        {
+                            "range": [140, 199],
+                            "name": "Strobe Effect Speed"
+                        },
+                        {
+                            "range": [200, 249],
+                            "name": "Random Strobe Speed"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Shutter Open"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Colour",
+                        "Gobo Selection",
+                        "Gobo Rotation",
+                        "Shutter"
+                    ]
+                }
+            ]
+        }
+    ]
+}

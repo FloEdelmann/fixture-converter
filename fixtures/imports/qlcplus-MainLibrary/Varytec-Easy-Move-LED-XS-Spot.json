@@ -1,0 +1,423 @@
+{
+    "manufacturers": {
+        "Varytec": {
+            "name": "Varytec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Varytec",
+            "name": "Easy Move LED XS Spot",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [173, 249, 173],
+                "weight": 4,
+                "power": 50,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 100
+                },
+                "lens": {
+                    "name": "PC",
+                    "degreesMinMax": [15, 15]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan coarse": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan coarse"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt coarse": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt coarse"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Vector speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Normal -> Slow"
+                        }
+                    ]
+                },
+                "Dimmer/Strobe": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [8, 134],
+                            "name": "Dimmer (100% - 0%)"
+                        },
+                        {
+                            "range": [135, 239],
+                            "name": "Strobe speed (slow -> fast)"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red mix"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green mix"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue mix"
+                        }
+                    ]
+                },
+                "Colour macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [8, 21],
+                            "name": "White"
+                        },
+                        {
+                            "range": [22, 35],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [36, 49],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [50, 63],
+                            "name": "Blue"
+                        },
+                        {
+                            "range": [64, 77],
+                            "name": "Cyan"
+                        },
+                        {
+                            "range": [78, 91],
+                            "name": "Magenta"
+                        },
+                        {
+                            "range": [92, 105],
+                            "name": "Yellow"
+                        },
+                        {
+                            "range": [106, 119],
+                            "name": "Purple"
+                        },
+                        {
+                            "range": [120, 133],
+                            "name": "Orange"
+                        },
+                        {
+                            "range": [134, 147],
+                            "name": "Chartreuse"
+                        },
+                        {
+                            "range": [148, 161],
+                            "name": "Pink"
+                        },
+                        {
+                            "range": [162, 175],
+                            "name": "Brown"
+                        },
+                        {
+                            "range": [176, 189],
+                            "name": "Gold"
+                        },
+                        {
+                            "range": [190, 203],
+                            "name": "Crimson"
+                        },
+                        {
+                            "range": [204, 217],
+                            "name": "Violet"
+                        },
+                        {
+                            "range": [218, 231],
+                            "name": "Crape"
+                        },
+                        {
+                            "range": [232, 255],
+                            "name": "Colour-Change Macro 1"
+                        }
+                    ]
+                },
+                "Colour speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Colour vector speed"
+                        }
+                    ]
+                },
+                "Movement macros": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [8, 22],
+                            "name": "Auto program 1"
+                        },
+                        {
+                            "range": [23, 37],
+                            "name": "Auto program 2"
+                        },
+                        {
+                            "range": [38, 52],
+                            "name": "Auto program 3"
+                        },
+                        {
+                            "range": [53, 67],
+                            "name": "Auto program 4"
+                        },
+                        {
+                            "range": [68, 82],
+                            "name": "Auto program 5"
+                        },
+                        {
+                            "range": [83, 97],
+                            "name": "Auto program 6"
+                        },
+                        {
+                            "range": [98, 112],
+                            "name": "Auto program 7"
+                        },
+                        {
+                            "range": [113, 127],
+                            "name": "Auto program 8"
+                        },
+                        {
+                            "range": [128, 142],
+                            "name": "Sound active 1"
+                        },
+                        {
+                            "range": [143, 157],
+                            "name": "Sound active 2"
+                        },
+                        {
+                            "range": [158, 172],
+                            "name": "Sound active 3"
+                        },
+                        {
+                            "range": [173, 187],
+                            "name": "Sound active 4"
+                        },
+                        {
+                            "range": [188, 202],
+                            "name": "Sound active 5"
+                        },
+                        {
+                            "range": [203, 217],
+                            "name": "Sound active 6"
+                        },
+                        {
+                            "range": [218, 232],
+                            "name": "Sound active 7"
+                        },
+                        {
+                            "range": [233, 255],
+                            "name": "Sound active 8"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Gobo 9"
+                        },
+                        {
+                            "range": [80, 94],
+                            "name": "Gobo 1 shake"
+                        },
+                        {
+                            "range": [95, 109],
+                            "name": "Gobo 2 shake"
+                        },
+                        {
+                            "range": [110, 124],
+                            "name": "Gobo 3 shake"
+                        },
+                        {
+                            "range": [125, 139],
+                            "name": "Gobo 4 shake"
+                        },
+                        {
+                            "range": [140, 154],
+                            "name": "Gobo 5 shake"
+                        },
+                        {
+                            "range": [155, 169],
+                            "name": "Gobo 6 shake"
+                        },
+                        {
+                            "range": [170, 184],
+                            "name": "Gobo 7 shake"
+                        },
+                        {
+                            "range": [185, 199],
+                            "name": "Gobo 8 shake"
+                        },
+                        {
+                            "range": [200, 214],
+                            "name": "Gobo 9 shake"
+                        },
+                        {
+                            "range": [215, 235],
+                            "name": "Rainbow forwards"
+                        },
+                        {
+                            "range": [236, 255],
+                            "name": "Rainbow backwards"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "13 channels",
+                    "channels": [
+                        "Pan coarse",
+                        "Pan fine",
+                        "Tilt coarse",
+                        "Tilt fine",
+                        "Vector speed",
+                        "Dimmer/Strobe",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Colour macros",
+                        "Colour speed",
+                        "Movement macros",
+                        "Gobo"
+                    ]
+                },
+                {
+                    "name": "5 channels",
+                    "channels": [
+                        "Pan coarse",
+                        "Tilt coarse",
+                        "Dimmer/Strobe",
+                        "Colour macros",
+                        "Gobo"
+                    ]
+                }
+            ]
+        }
+    ]
+}

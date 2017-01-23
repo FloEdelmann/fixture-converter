@@ -1,0 +1,422 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "LED Flood Panel 150",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [260, 210, 68],
+                "weight": 1.8,
+                "power": 18,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Master dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer (0 to 100%)"
+                        }
+                    ]
+                },
+                "Red/Colour preset/Speed (slow to fast)/Sensitivity (low to high)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 8],
+                            "name": "Red: 255",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [9, 17],
+                            "name": "Red: 255, Green: 50",
+                            "color": "#ff3200"
+                        },
+                        {
+                            "range": [18, 26],
+                            "name": "Red: 255, Green: 150",
+                            "color": "#ff9600"
+                        },
+                        {
+                            "range": [27, 35],
+                            "name": "Red: 255, Green: 255",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [36, 44],
+                            "name": "Red: 200, Green: 255",
+                            "color": "#c8ff00"
+                        },
+                        {
+                            "range": [45, 53],
+                            "name": "Red: 100, Green: 255",
+                            "color": "#64ff00"
+                        },
+                        {
+                            "range": [54, 62],
+                            "name": "Red: 40, Green: 255",
+                            "color": "#28ff00"
+                        },
+                        {
+                            "range": [63, 71],
+                            "name": "Green: 255",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [72, 80],
+                            "name": "Green: 255, Blue:50",
+                            "color": "#00ff32"
+                        },
+                        {
+                            "range": [81, 89],
+                            "name": "Green: 255, Blue: 150",
+                            "color": "#00ff96"
+                        },
+                        {
+                            "range": [90, 98],
+                            "name": "Green: 255, Blue: 255",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [99, 107],
+                            "name": "Green: 150, Blue: 255",
+                            "color": "#0096ff"
+                        },
+                        {
+                            "range": [108, 116],
+                            "name": "Green: 50, Blue: 255",
+                            "color": "#0032ff"
+                        },
+                        {
+                            "range": [117, 125],
+                            "name": "Blue: 255",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [126, 134],
+                            "name": "Red: 50, Blue: 255",
+                            "color": "#3200ff"
+                        },
+                        {
+                            "range": [135, 143],
+                            "name": "Red: 150, Blue: 255",
+                            "color": "#9600ff"
+                        },
+                        {
+                            "range": [144, 152],
+                            "name": "Red: 255, Blue: 255",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [153, 161],
+                            "name": "Red: 220, Blue: 255",
+                            "color": "#dc00ff"
+                        },
+                        {
+                            "range": [162, 170],
+                            "name": "Red: 150, Green: 50, Blue: 100",
+                            "color": "#963264"
+                        },
+                        {
+                            "range": [171, 179],
+                            "name": "Red: 50, Green: 180, Blue: 220",
+                            "color": "#32b4dc"
+                        },
+                        {
+                            "range": [180, 188],
+                            "name": "Red: 50, Green: 220, Blue: 100",
+                            "color": "#32dc64"
+                        },
+                        {
+                            "range": [189, 197],
+                            "name": "Red: 150, Green: 220",
+                            "color": "#96dcff"
+                        },
+                        {
+                            "range": [198, 206],
+                            "name": "Red: 150, Blue: 220",
+                            "color": "#9600dc"
+                        },
+                        {
+                            "range": [207, 215],
+                            "name": "Green: 180, Blue: 220",
+                            "color": "#00b4dc"
+                        },
+                        {
+                            "range": [216, 224],
+                            "name": "Green: 220, Blue: 50",
+                            "color": "#00dc32"
+                        },
+                        {
+                            "range": [225, 233],
+                            "name": "Red: 220, Green 180, Blue: 220",
+                            "color": "#dcb4dc"
+                        },
+                        {
+                            "range": [234, 242],
+                            "name": "Red: 220, Green: 200, Blue: 100",
+                            "color": "#dcc864"
+                        },
+                        {
+                            "range": [243, 251],
+                            "name": "Red: 255, Green: 200, Blue: 150",
+                            "color": "#ffc896"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Red: 255, Green: 255, Blue: 255",
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity of green (0 to 100%)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity of blue (0 to 100%)"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe (slow to fast)"
+                        }
+                    ]
+                },
+                "Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Static RGB mix as defined with channels 2, 3 and 4"
+                        },
+                        {
+                            "range": [1, 24],
+                            "name": "Static colour, as defined with channel 2"
+                        },
+                        {
+                            "range": [25, 49],
+                            "name": "Sets Pr02 (7-colour gradual change)"
+                        },
+                        {
+                            "range": [50, 74],
+                            "name": "Sets Pr03 (3-colour gradual change)"
+                        },
+                        {
+                            "range": [75, 99],
+                            "name": "Sets Pr04 (7-colour jumping change)"
+                        },
+                        {
+                            "range": [100, 124],
+                            "name": "Sets Pr05 (3-colour jumping change)"
+                        },
+                        {
+                            "range": [125, 149],
+                            "name": "Sets Pr06 (fantasy change 1)"
+                        },
+                        {
+                            "range": [150, 174],
+                            "name": "Sets Pr07 (fantasy change 2)"
+                        },
+                        {
+                            "range": [175, 199],
+                            "name": "Sets Pr08 (red gradual change)",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [200, 224],
+                            "name": "Sets Pr09 (green gradual change)",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [225, 249],
+                            "name": "Sets Pr10 (blue gradual change)",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Sets music trigger mode"
+                        }
+                    ]
+                },
+                "ID control": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "All IDs (ID1...ID66)"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "ID1"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "ID2"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "ID3"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "ID4"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "ID5"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "ID6"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "ID7"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "ID8"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "ID9"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "ID10"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "ID11"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "ID12"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "ID13"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "ID14"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "ID15"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "ID16"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "ID17"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "ID18"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "ID19"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "ID20"
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "ID21...ID66"
+                        }
+                    ]
+                },
+                "Fader response": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 250],
+                            "name": "Instant fader response for channel 1, 2, 3, 4"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Delayed fader response for channel 1, 2, 3, 4"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-channel",
+                    "channels": [
+                        "Red/Colour preset/Speed (slow to fast)/Sensitivity (low to high)",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "4-channel",
+                    "channels": [
+                        "Master dimmer",
+                        "Red/Colour preset/Speed (slow to fast)/Sensitivity (low to high)",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "8-channel",
+                    "channels": [
+                        "Master dimmer",
+                        "Red/Colour preset/Speed (slow to fast)/Sensitivity (low to high)",
+                        "Green",
+                        "Blue",
+                        "Strobe",
+                        "Mode",
+                        "ID control",
+                        "Fader response"
+                    ]
+                }
+            ]
+        }
+    ]
+}

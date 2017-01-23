@@ -1,0 +1,116 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "LED PAR 56 RGB DMX",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [205, 240, 165],
+                "weight": 1.5,
+                "power": 23,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [21, 21]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer intensity"
+                        }
+                    ]
+                },
+                "Effects": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "ON"
+                        },
+                        {
+                            "range": [1, 5],
+                            "name": "Sound control (7 colors)"
+                        },
+                        {
+                            "range": [6, 10],
+                            "name": "ON"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "Strobe (increasing)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3 Channels",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "5 Channels",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Dimmer",
+                        "Effects"
+                    ]
+                }
+            ]
+        }
+    ]
+}

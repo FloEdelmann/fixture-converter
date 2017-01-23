@@ -1,0 +1,214 @@
+{
+    "manufacturers": {
+        "Microh": {
+            "name": "Microh"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Microh",
+            "name": "Firefly RGY II",
+            "type": "Laser",
+            "physical": {
+                "dimensions": [240, 163, 365],
+                "weight": 3.5,
+                "power": 30,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Control mode": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 49],
+                            "name": "Sound Control"
+                        },
+                        {
+                            "range": [50, 99],
+                            "name": "Auto-beam"
+                        },
+                        {
+                            "range": [100, 149],
+                            "name": "Auto-animation"
+                        },
+                        {
+                            "range": [150, 255],
+                            "name": "Manual"
+                        }
+                    ]
+                },
+                "Color select": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Laser off"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Green, Red, Yellow"
+                        }
+                    ]
+                },
+                "Pattern Select": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Patterns"
+                        }
+                    ]
+                },
+                "Vertical Move": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Manual"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Down to Up (fast)"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Up to Down (fast)"
+                        }
+                    ]
+                },
+                "Horizontal Move": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Manual"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Right to Left"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Left to Right"
+                        }
+                    ]
+                },
+                "Vertical Rotate": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow-Fast"
+                        }
+                    ]
+                },
+                "Horizontal Rotate": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow-Fast"
+                        }
+                    ]
+                },
+                "Rotate": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Manual"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "CCW Rotate"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "CW Rotate"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Static"
+                        },
+                        {
+                            "range": [1, 85],
+                            "name": "Zoom In"
+                        },
+                        {
+                            "range": [86, 170],
+                            "name": "Zoom Out"
+                        },
+                        {
+                            "range": [171, 255],
+                            "name": "Auto Zoom"
+                        }
+                    ]
+                },
+                "Pattern Size": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Normal Size"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Small to Large"
+                        }
+                    ]
+                },
+                "Spot and Line": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Line to Spot"
+                        }
+                    ]
+                },
+                "Twinkle Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 22],
+                            "name": "Slow to Fast"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Generic",
+                    "channels": [
+                        "Control mode",
+                        "Color select",
+                        "Pattern Select",
+                        "Vertical Move",
+                        "Horizontal Move",
+                        "Vertical Rotate",
+                        "Horizontal Rotate",
+                        "Rotate",
+                        "Zoom",
+                        "Pattern Size",
+                        "Spot and Line",
+                        "Twinkle Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

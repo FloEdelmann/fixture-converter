@@ -1,0 +1,558 @@
+{
+    "manufacturers": {
+        "Martin": {
+            "name": "Martin"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Martin",
+            "name": "MAC 301 Wash",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [320, 388, 200],
+                "weight": 8.9,
+                "power": 350,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 430,
+                    "tiltMax": 300
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan 0 -> 430"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt 0 -> 300"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "General control": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Full LED output power"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "White balance 8500K"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "White balance 6500K"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "White balance"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Camera mode, 50Hz"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Camera mode, 60Hz"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Camera mode, FLEX"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Reset (after 1 second delay)"
+                        }
+                    ]
+                },
+                "Electronic shutter effect": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [16, 95],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [96, 110],
+                            "name": "Strobe effect >10 Hz (fast -> slow)"
+                        },
+                        {
+                            "range": [111, 111],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [112, 125],
+                            "name": "Dimmer fade time adjustment (slow -> fast)"
+                        },
+                        {
+                            "range": [126, 126],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [127, 127],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [128, 142],
+                            "name": "Strobe effect < 10Hz (fast -> slow)"
+                        },
+                        {
+                            "range": [143, 143],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [144, 158],
+                            "name": "Closing pulse (0.6 -> 4.8 seconds)"
+                        },
+                        {
+                            "range": [159, 159],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [160, 174],
+                            "name": "Shutter fade to 0% (0.6 -> 4.8 seconds)"
+                        },
+                        {
+                            "range": [175, 175],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [176, 190],
+                            "name": "Shutter fade to 100% (0.6 -> 4.8 seconds)"
+                        },
+                        {
+                            "range": [191, 191],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [192, 206],
+                            "name": "Random shutter 100% (0.6 -> 4.8 seconds)"
+                        },
+                        {
+                            "range": [207, 207],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [208, 222],
+                            "name": "Random shutter 0% (0.6 -> 4.8 seconds)"
+                        },
+                        {
+                            "range": [223, 223],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [224, 238],
+                            "name": "Random shutter fade to 0% (0.6 -> 4.8 seconds)"
+                        },
+                        {
+                            "range": [239, 239],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [240, 254],
+                            "name": "Random shutter fade to 100% (0.6 -> 4.8 seconds)"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Shutter open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer 0 -> 100%"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Zoom 12 -> 36deg"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red"
+                        }
+                    ]
+                },
+                "Red fine": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red fine"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green"
+                        }
+                    ]
+                },
+                "Green fine": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green fine"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue"
+                        }
+                    ]
+                },
+                "Blue fine": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue fine"
+                        }
+                    ]
+                },
+                "CTC": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "CTC 0 -> 100%"
+                        }
+                    ]
+                },
+                "Color wheel effect": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "Inactive"
+                        },
+                        {
+                            "range": [2, 3],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [4, 7],
+                            "name": "White -> Red",
+                            "color": "#ffffff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [8, 11],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [12, 15],
+                            "name": "Red -> Yellow",
+                            "color": "#ff0000",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [16, 19],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [20, 23],
+                            "name": "Yellow -> Magenta",
+                            "color": "#ffff00",
+                            "color2": "#ff00ff"
+                        },
+                        {
+                            "range": [24, 27],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [28, 31],
+                            "name": "Magenta -> Green",
+                            "color": "#ff00ff",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [32, 35],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [36, 39],
+                            "name": "Green -> Amber",
+                            "color": "#00ff00",
+                            "color2": "#ffaa00"
+                        },
+                        {
+                            "range": [40, 43],
+                            "name": "Amber",
+                            "color": "#ffaa00"
+                        },
+                        {
+                            "range": [44, 47],
+                            "name": "Amber -> Blue",
+                            "color": "#ffaa00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [48, 51],
+                            "name": "Blue",
+                            "color": "#5500ff"
+                        },
+                        {
+                            "range": [52, 55],
+                            "name": "Blue -> Cyan",
+                            "color": "#0000ff",
+                            "color2": "#00ffff"
+                        },
+                        {
+                            "range": [56, 59],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [60, 63],
+                            "name": "Cyan -> White",
+                            "color": "#00ffff",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [64, 191],
+                            "name": "Continuous color wheel positioning"
+                        },
+                        {
+                            "range": [192, 222],
+                            "name": "CW, fast -> slow"
+                        },
+                        {
+                            "range": [223, 224],
+                            "name": "Color wheel stop"
+                        },
+                        {
+                            "range": [225, 255],
+                            "name": "CCW, slow -> fast"
+                        }
+                    ]
+                },
+                "Pan/Tilt speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Moves in real time"
+                        },
+                        {
+                            "range": [4, 255],
+                            "name": "Delayed movement, fast -> slow"
+                        }
+                    ]
+                },
+                "Effects speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Moves in real time"
+                        },
+                        {
+                            "range": [4, 255],
+                            "name": "Delayed movement, fast -> slow"
+                        }
+                    ]
+                },
+                "Movement blackout": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [96, 127],
+                            "name": "Blackout during pan/tilt movement"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Blackout during color changes"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Blackout during pan/tile movement and color changes"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ],
+                [
+                    "Red",
+                    "Red fine"
+                ],
+                [
+                    "Green",
+                    "Green fine"
+                ],
+                [
+                    "Blue",
+                    "Blue fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Standard 8bit",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "General control",
+                        "Electronic shutter effect",
+                        "Dimmer",
+                        "Zoom",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "CTC",
+                        "Color wheel effect",
+                        "Pan/Tilt speed",
+                        "Effects speed",
+                        "Movement blackout"
+                    ]
+                },
+                {
+                    "name": "Standard 16bit",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "General control",
+                        "Electronic shutter effect",
+                        "Dimmer",
+                        "Zoom",
+                        "Red",
+                        "Red fine",
+                        "Green",
+                        "Green fine",
+                        "Blue",
+                        "Blue fine",
+                        "CTC",
+                        "Color wheel effect",
+                        "Pan/Tilt speed",
+                        "Effects speed",
+                        "Movement blackout"
+                    ]
+                },
+                {
+                    "name": "Compressed 8bit",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "General control",
+                        "Electronic shutter effect",
+                        "Dimmer",
+                        "Zoom",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "CTC"
+                    ]
+                },
+                {
+                    "name": "Compressed 16bit",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "General control",
+                        "Electronic shutter effect",
+                        "Dimmer",
+                        "Zoom",
+                        "Red",
+                        "Red fine",
+                        "Green",
+                        "Green fine",
+                        "Blue",
+                        "Blue fine",
+                        "CTC"
+                    ]
+                }
+            ]
+        }
+    ]
+}

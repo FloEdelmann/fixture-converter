@@ -1,0 +1,330 @@
+{
+    "manufacturers": {
+        "Cameo": {
+            "name": "Cameo"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Cameo",
+            "name": "Gobo Scanner 60",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [205, 150, 475],
+                "weight": 4.4,
+                "power": 90,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "CREE LED 60W"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 180,
+                    "tiltMax": 90
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan movement (180°)"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt movement (90°)"
+                        }
+                    ]
+                },
+                "Colour wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 13],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [14, 27],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [28, 41],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [42, 55],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [56, 69],
+                            "name": "Violet",
+                            "color": "#aa00ff"
+                        },
+                        {
+                            "range": [70, 83],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [84, 97],
+                            "name": "Bright green",
+                            "color": "#96ff00"
+                        },
+                        {
+                            "range": [98, 111],
+                            "name": "Amber",
+                            "color": "#ff9600"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Dark red",
+                            "color": "#aa0000"
+                        },
+                        {
+                            "range": [128, 190],
+                            "name": "Forwards rainbow effect (slow - fast)"
+                        },
+                        {
+                            "range": [191, 255],
+                            "name": "Backwards rainbow effect (slow - fast)"
+                        }
+                    ]
+                },
+                "Gobo wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Gobo 1 shake (speed)"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Gobo 2 shake (speed)"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Gobo 3 shake (speed)"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Gobo 4 shake (speed)"
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Gobo 5 shake (speed)"
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "Gobo 6 shake (speed)"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Gobo 7 shake (speed)"
+                        },
+                        {
+                            "range": [220, 255],
+                            "name": "Gobo wheel rotation (speed)"
+                        }
+                    ]
+                },
+                "Gobo rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Manual gobo rotation"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Forwards gobo rotation (slow - fast)"
+                        },
+                        {
+                            "range": [192, 195],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [196, 255],
+                            "name": "Backwards gobo rotation (slow - fast)"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Focus adjustment (near - far)"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [20, 127],
+                            "name": "Strobe effect 1 (slow - fast)"
+                        },
+                        {
+                            "range": [128, 137],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [138, 201],
+                            "name": "Strobe effect 2 (slow - fast)"
+                        },
+                        {
+                            "range": [202, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [4, 127],
+                            "name": "Prism"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Prism rotation (slow - fast)"
+                        }
+                    ]
+                },
+                "Function/program": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 59],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [60, 79],
+                            "name": "Reset colour/gobo wheel"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Reset all motors"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Program 1"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Program 2"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Program 3"
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Program 4"
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "Program 5"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Program 6"
+                        },
+                        {
+                            "range": [220, 239],
+                            "name": "Program 7"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Program 8"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "10 Channel",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Colour wheel",
+                        "Gobo wheel",
+                        "Gobo rotation",
+                        "Focus",
+                        "Strobe",
+                        "Dimmer",
+                        "Prism",
+                        "Function/program"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,382 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "Accu Spot 250 II",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [295, 451, 373],
+                "weight": 18,
+                "power": 350,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 250W"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 360,
+                    "tiltMax": 265
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 12],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [13, 25],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [26, 38],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [39, 51],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [52, 64],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [65, 77],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [78, 90],
+                            "name": "Orange",
+                            "color": "#ff8000"
+                        },
+                        {
+                            "range": [91, 103],
+                            "name": "Purple",
+                            "color": "#8000ff"
+                        },
+                        {
+                            "range": [104, 116],
+                            "name": "Pink",
+                            "color": "#ff66ff"
+                        },
+                        {
+                            "range": [117, 127],
+                            "name": "Light Blue",
+                            "color": "#66ccff"
+                        },
+                        {
+                            "range": [128, 187],
+                            "name": "Forward Rainbow Effect (Fast -> Slow)"
+                        },
+                        {
+                            "range": [188, 193],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Backward Rainbow Effect (Slow -> Fast)"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Spot"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Star Circle (Metal)"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Cross (Metal)"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Blue & White Web (Dichoric)"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Textured Glass (Glass)"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Donut (Metal)"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Triangle (Metal)"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Dot Line (Metal)"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Star Circle (Metal) Shake"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Cross (Metal) Shake"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Blue & White Web (Dichoric) Shake"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Textured Glass (Glass) Shake"
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Donut (Metal) Shake"
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "Triangle (Metal) Shake"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Dot Line (Metal) Shake"
+                        },
+                        {
+                            "range": [220, 255],
+                            "name": "Rotating Gobo Wheel (Slow -> Fast)"
+                        }
+                    ]
+                },
+                "Gobo Rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [8, 127],
+                            "name": "Forward Gobo Rotation (Fast -> Slow)"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [136, 255],
+                            "name": "Backward Gobo Rotation (Fast -> Slow)"
+                        }
+                    ]
+                },
+                "Shutter/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Shutter Closed"
+                        },
+                        {
+                            "range": [4, 63],
+                            "name": "Shutter Open"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe (Slow -> Fast)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Shutter Open"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse Effect"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Shutter Open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random Strobe (Slow -> Fast)"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Shutter Open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Lamp On/Off/Reset/Internal Programs": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Color Change Normal"
+                        },
+                        {
+                            "range": [20, 39],
+                            "name": "Color Change To Any Position"
+                        },
+                        {
+                            "range": [40, 59],
+                            "name": "Lamp On"
+                        },
+                        {
+                            "range": [60, 79],
+                            "name": "Lamp Switch Off"
+                        },
+                        {
+                            "range": [80, 84],
+                            "name": "All Motor Reset"
+                        },
+                        {
+                            "range": [85, 87],
+                            "name": "Scanner Motor Reset"
+                        },
+                        {
+                            "range": [88, 90],
+                            "name": "Color Wheel Motor Reset"
+                        },
+                        {
+                            "range": [91, 93],
+                            "name": "Gobo Wheel Motor Reset"
+                        },
+                        {
+                            "range": [94, 96],
+                            "name": "Shutter/Dimmer Motor Reset"
+                        },
+                        {
+                            "range": [97, 99],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Internal Program 1"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Internal Program 2"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Internal Program 3"
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Internal Program 4"
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "Internal Program 5"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Internal Program 6"
+                        },
+                        {
+                            "range": [220, 239],
+                            "name": "Internal Program 7"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Sound Active"
+                        }
+                    ]
+                },
+                "Movement Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 225],
+                            "name": "Max -> Min"
+                        },
+                        {
+                            "range": [226, 235],
+                            "name": "Blackout By Movement"
+                        },
+                        {
+                            "range": [236, 245],
+                            "name": "Blackout By Wheel Movement"
+                        },
+                        {
+                            "range": [246, 255],
+                            "name": "No Function"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "8 Channel Mode",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Color",
+                        "Gobo",
+                        "Gobo Rotation",
+                        "Shutter/Strobe",
+                        "Lamp On/Off/Reset/Internal Programs",
+                        "Movement Speed"
+                    ]
+                },
+                {
+                    "name": "9 Channel Mode",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Color",
+                        "Gobo",
+                        "Gobo Rotation",
+                        "Shutter/Strobe",
+                        "Dimmer",
+                        "Lamp On/Off/Reset/Internal Programs",
+                        "Movement Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,177 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "Galaxian Gem IR",
+            "type": "Laser",
+            "physical": {
+                "dimensions": [324, 201, 808],
+                "weight": 3.5,
+                "power": 19,
+                "DMXconnector": "3-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Laser 1": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Laser Off"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Laser On"
+                        },
+                        {
+                            "range": [16, 150],
+                            "name": "Laser Strobing Slow "
+                        },
+                        {
+                            "range": [151, 247],
+                            "name": "Laser Strobing Fast"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Laser On"
+                        }
+                    ]
+                },
+                "Laser Rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [10, 65],
+                            "name": "Clockwise Slow"
+                        },
+                        {
+                            "range": [66, 120],
+                            "name": "Clockwise Fast"
+                        },
+                        {
+                            "range": [121, 134],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [135, 190],
+                            "name": "Count-Clockwise Slow"
+                        },
+                        {
+                            "range": [191, 245],
+                            "name": "Count-Clockwise Fast"
+                        },
+                        {
+                            "range": [246, 255],
+                            "name": "No Rotation"
+                        }
+                    ]
+                },
+                "Led Chase": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [8, 37],
+                            "name": "Chase 1"
+                        },
+                        {
+                            "range": [38, 67],
+                            "name": "Chase 2"
+                        },
+                        {
+                            "range": [68, 97],
+                            "name": "Chase 3"
+                        },
+                        {
+                            "range": [98, 127],
+                            "name": "Chase 4"
+                        },
+                        {
+                            "range": [128, 157],
+                            "name": "Chase 5"
+                        },
+                        {
+                            "range": [158, 187],
+                            "name": "Chase 6"
+                        },
+                        {
+                            "range": [188, 217],
+                            "name": "Chase 7"
+                        },
+                        {
+                            "range": [218, 247],
+                            "name": "Chase 8"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Sound Active"
+                        }
+                    ]
+                },
+                "LED Chase Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 85],
+                            "name": "Slow"
+                        },
+                        {
+                            "range": [86, 170],
+                            "name": "Medium"
+                        },
+                        {
+                            "range": [171, 255],
+                            "name": "Fast"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [8, 247],
+                            "name": "Stobing Slow - Fast"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Sound Active Strobing"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "Laser 1",
+                        "Laser Rotation",
+                        "Led Chase",
+                        "LED Chase Speed",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,291 @@
+{
+    "manufacturers": {
+        "Dune Lighting": {
+            "name": "Dune Lighting"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Dune Lighting",
+            "name": "MOV-LED/60W",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [325, 401, 250],
+                "weight": 8.5,
+                "power": 150,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 18000
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Obturator": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Closed obturator"
+                        },
+                        {
+                            "range": [11, 39],
+                            "name": "Opened obturator"
+                        },
+                        {
+                            "range": [40, 240],
+                            "name": "Strobe (Slow to Fast)"
+                        },
+                        {
+                            "range": [241, 250],
+                            "name": "Reset (after ~ 10 sec)"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Opened obturator"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer [0 - 100%]"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 18],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [19, 37],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [38, 56],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [57, 75],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [76, 94],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [95, 113],
+                            "name": "Orange",
+                            "color": "#ffa500"
+                        },
+                        {
+                            "range": [114, 127],
+                            "name": "Violet",
+                            "color": "#ee82ee"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Colour change (Fast to Slow speed)"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Reverse colour change (Slow to Fast speed)"
+                        }
+                    ]
+                },
+                "Gobos": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Open (No gobo)"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Gobo change (Fast to Slow speed)"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Reverse gobo change (Slow to Fast speed)"
+                        }
+                    ]
+                },
+                "Gobos rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Angular gobo position"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Gobo rotation (Slow to Fast speed)"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Reverse gobo rotation (Slow to Fast speed)"
+                        }
+                    ]
+                },
+                "Focal": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Focal (110 cm > inf)"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No prism"
+                        },
+                        {
+                            "range": [5, 19],
+                            "name": "Prism"
+                        },
+                        {
+                            "range": [20, 139],
+                            "name": "Prism angular position"
+                        },
+                        {
+                            "range": [140, 197],
+                            "name": "Prism rotation (Fast to Slow speed)"
+                        },
+                        {
+                            "range": [198, 255],
+                            "name": "Reverse prism rotation (Slow to Fast speed)"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0° -> 540°"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0° -> 2°"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0° -> 270°"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0° -> 1°"
+                        }
+                    ]
+                },
+                "Pan & Tilt speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 251],
+                            "name": "Fast to Slow speed"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Vector mode (light off during move)"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "12 channels",
+                    "channels": [
+                        "Obturator",
+                        "Dimmer",
+                        "Colour",
+                        "Gobos",
+                        "Gobos rotation",
+                        "Focal",
+                        "Prism",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Pan & Tilt speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

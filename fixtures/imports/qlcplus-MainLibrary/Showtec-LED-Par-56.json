@@ -1,0 +1,119 @@
+{
+    "manufacturers": {
+        "Showtec": {
+            "name": "Showtec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Showtec",
+            "name": "LED Par 56",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [223, 215, 220],
+                "weight": 1.56,
+                "power": 15,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        }
+                    ]
+                },
+                "Full Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Colors"
+                        }
+                    ]
+                },
+                "Strobe and Speed": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Helligkeit"
+                        }
+                    ]
+                },
+                "Mode": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "RGB Control"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "7 Color Fade"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "7 color change"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "music controlled"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "6 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Full Color",
+                        "Strobe and Speed",
+                        "Mode"
+                    ]
+                }
+            ]
+        }
+    ]
+}

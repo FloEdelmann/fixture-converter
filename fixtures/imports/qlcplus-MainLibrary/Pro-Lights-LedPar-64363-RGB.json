@@ -1,0 +1,146 @@
+{
+    "manufacturers": {
+        "Pro-Lights": {
+            "name": "Pro-Lights"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Pro-Lights",
+            "name": "LedPar 64363 RGB",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [310, 230, 230],
+                "weight": 3,
+                "power": 125,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [30, 30]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobe: Slow > Fast"
+                        }
+                    ]
+                },
+                "Auto Programs": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 35],
+                            "name": "1 - Color Fading"
+                        },
+                        {
+                            "range": [36, 71],
+                            "name": "2 - Color Jump"
+                        },
+                        {
+                            "range": [72, 107],
+                            "name": "3 - Color Dreaming"
+                        },
+                        {
+                            "range": [108, 143],
+                            "name": "4 - Red Fading"
+                        },
+                        {
+                            "range": [144, 179],
+                            "name": "5 - Green Fading"
+                        },
+                        {
+                            "range": [180, 215],
+                            "name": "6 - Blue Fading"
+                        },
+                        {
+                            "range": [216, 255],
+                            "name": "Sound Active Mode"
+                        }
+                    ]
+                },
+                "Program Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Speed Control / Sound Sensitivity"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Mode 2 (5ch)",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Dimmer",
+                        "Strobe"
+                    ]
+                },
+                {
+                    "name": "Mode 1 (3ch)",
+                    "channels": [
+                        "Auto Programs",
+                        "Program Speed",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

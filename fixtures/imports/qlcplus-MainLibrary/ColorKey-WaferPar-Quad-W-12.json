@@ -1,0 +1,239 @@
+{
+    "manufacturers": {
+        "ColorKey": {
+            "name": "ColorKey"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "ColorKey",
+            "name": "WaferPar Quad-W 12",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [203, 203, 89],
+                "weight": 3.62,
+                "power": 120,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "PC",
+                    "degreesMinMax": [35, 35]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Macro": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [11, 50],
+                            "name": "Macro 1"
+                        },
+                        {
+                            "range": [51, 100],
+                            "name": "Macro 2"
+                        },
+                        {
+                            "range": [101, 150],
+                            "name": "Macro 3 "
+                        },
+                        {
+                            "range": [151, 200],
+                            "name": "Macro 4"
+                        },
+                        {
+                            "range": [201, 255],
+                            "name": "Macro 5"
+                        }
+                    ]
+                },
+                "Colors": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 39],
+                            "name": "All Colors"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Purple",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "Red + Green",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "Red + Blue",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "Red + White",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Green + Blue",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "Green + White",
+                            "color": "#00ff00",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "Blue + White",
+                            "color": "#0000ff",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "Red + Green + White"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "Red + Blue + White"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "Green + Blue + White"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Red + Green + Blue"
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "Red + Green + Blue + White"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Speed"
+                        }
+                    ]
+                },
+                "Master Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master Dimming"
+                        }
+                    ]
+                },
+                "Red Dimming": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Dimming"
+                        }
+                    ]
+                },
+                "Green Dimming": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Dimming"
+                        }
+                    ]
+                },
+                "Blue Dimming": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Dimming"
+                        }
+                    ]
+                },
+                "White Dimming": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White Dimming"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "8-Channel",
+                    "channels": [
+                        "Macro",
+                        "Colors",
+                        "Speed",
+                        "Master Dimmer",
+                        "Red Dimming",
+                        "Green Dimming",
+                        "Blue Dimming",
+                        "White Dimming"
+                    ]
+                }
+            ]
+        }
+    ]
+}

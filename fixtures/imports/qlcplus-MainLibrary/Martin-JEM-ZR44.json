@@ -1,0 +1,50 @@
+{
+    "manufacturers": {
+        "Martin": {
+            "name": "Martin"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Martin",
+            "name": "JEM ZR44",
+            "type": "Smoke",
+            "physical": {
+                "dimensions": [345, 225, 685],
+                "weight": 19,
+                "power": 1890,
+                "DMXconnector": "3-pin and 5-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 12],
+                            "name": "No fog"
+                        },
+                        {
+                            "range": [13, 255],
+                            "name": "Fog at variable density, (13=minimum, 255=maximum)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Intensity"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,392 @@
+{
+    "manufacturers": {
+        "Starway": {
+            "name": "Starway"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Starway",
+            "name": "MiniKolor",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [240, 210, 160],
+                "weight": 2.5,
+                "power": 35,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Color Macro": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [11, 35],
+                            "name": "RED 100% / GREEN UP / BLUE 0%"
+                        },
+                        {
+                            "range": [36, 60],
+                            "name": "RED DOWN / GREEN 100% / BLUE 0%"
+                        },
+                        {
+                            "range": [61, 85],
+                            "name": "RED 0% / GREEN 100% / BLUE UP"
+                        },
+                        {
+                            "range": [86, 110],
+                            "name": "RED 0% / GREEN DOWN / BLUE 100%"
+                        },
+                        {
+                            "range": [111, 135],
+                            "name": "RED UP / GREEN 0% / BLUE 100%"
+                        },
+                        {
+                            "range": [136, 160],
+                            "name": "RED 100% / GREEN 0% / BLUE DOWN"
+                        },
+                        {
+                            "range": [161, 185],
+                            "name": "RED 100% / GREEN UP / BLUE UP"
+                        },
+                        {
+                            "range": [186, 210],
+                            "name": "RED DOWN / GREEN DOWN / BLUE 100%"
+                        },
+                        {
+                            "range": [211, 215],
+                            "name": "White 3200K"
+                        },
+                        {
+                            "range": [216, 220],
+                            "name": "White 3400K"
+                        },
+                        {
+                            "range": [221, 225],
+                            "name": "White 4200K"
+                        },
+                        {
+                            "range": [226, 230],
+                            "name": "White 4900K"
+                        },
+                        {
+                            "range": [231, 235],
+                            "name": "White 5600K"
+                        },
+                        {
+                            "range": [236, 240],
+                            "name": "White 5900K"
+                        },
+                        {
+                            "range": [241, 245],
+                            "name": "White 6500K"
+                        },
+                        {
+                            "range": [246, 250],
+                            "name": "White 7200K"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "White 8500K"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "Strobe Min < Max"
+                        }
+                    ]
+                },
+                "Auto": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [21, 30],
+                            "name": "Auto 1"
+                        },
+                        {
+                            "range": [31, 40],
+                            "name": "Auto 2"
+                        },
+                        {
+                            "range": [41, 50],
+                            "name": "Auto 3"
+                        },
+                        {
+                            "range": [51, 60],
+                            "name": "Auto 4"
+                        },
+                        {
+                            "range": [61, 70],
+                            "name": "Auto 5"
+                        },
+                        {
+                            "range": [71, 80],
+                            "name": "Auto 6"
+                        },
+                        {
+                            "range": [81, 90],
+                            "name": "Auto 7"
+                        },
+                        {
+                            "range": [91, 100],
+                            "name": "Auto 8"
+                        },
+                        {
+                            "range": [101, 110],
+                            "name": "Auto 9"
+                        },
+                        {
+                            "range": [111, 120],
+                            "name": "Auto 10"
+                        },
+                        {
+                            "range": [121, 130],
+                            "name": "Custom 1"
+                        },
+                        {
+                            "range": [131, 140],
+                            "name": "Custom 2"
+                        },
+                        {
+                            "range": [141, 150],
+                            "name": "Custom 3"
+                        },
+                        {
+                            "range": [151, 160],
+                            "name": "Custom 4"
+                        },
+                        {
+                            "range": [161, 170],
+                            "name": "Custom 5"
+                        },
+                        {
+                            "range": [171, 180],
+                            "name": "Custom 6"
+                        },
+                        {
+                            "range": [181, 190],
+                            "name": "Custom 7"
+                        },
+                        {
+                            "range": [191, 200],
+                            "name": "Custom 8"
+                        },
+                        {
+                            "range": [201, 210],
+                            "name": "Custom 9"
+                        },
+                        {
+                            "range": [211, 220],
+                            "name": "Custom 10"
+                        },
+                        {
+                            "range": [221, 255],
+                            "name": "No Function"
+                        }
+                    ]
+                },
+                "Auto Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "ID Address": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "All Fixtures"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "ID 1"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "ID 2"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "ID 3"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "ID 4"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "ID 5"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "ID 6"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "ID 7"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "ID 8"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "ID 9"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "ID 10"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "ID 11"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "ID 12"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "ID 13"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "ID 14"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "ID 15"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "ID 16"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "ID 17"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "ID 18"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "ID 19"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "ID 20"
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "IDs 21 - 66"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Stage 1",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color Macro",
+                        "Strobe",
+                        "Auto",
+                        "Auto Speed",
+                        "ID Address"
+                    ]
+                },
+                {
+                    "name": "ARC 1",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "ARC 1+D",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

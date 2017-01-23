@@ -1,0 +1,89 @@
+{
+    "manufacturers": {
+        "Luxibel": {
+            "name": "Luxibel"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Luxibel",
+            "name": "LX161",
+            "type": "Strobe",
+            "physical": {
+                "dimensions": [250, 250, 370],
+                "weight": 3.8,
+                "power": 120,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "CW/WW COB LED 100W Epistar",
+                    "lumens": 3739
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [60, 60]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Cold White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Warm White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "Strobe with increasing speed"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "4 Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Cold White",
+                        "Warm White",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

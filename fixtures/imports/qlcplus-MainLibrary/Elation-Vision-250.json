@@ -1,0 +1,447 @@
+{
+    "manufacturers": {
+        "Elation": {
+            "name": "Elation"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Elation",
+            "name": "Vision 250",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [306, 215, 629],
+                "weight": 19,
+                "power": 400,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 250W",
+                    "colorTemperature": 8500
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [0, 15]
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 170,
+                    "tiltMax": 85
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan movement coarse control"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt movement coarse control"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine control of pan movement"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine control of tilt"
+                        }
+                    ]
+                },
+                "Speed of pan/tilt movement": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Max. speed (tracking mode)"
+                        },
+                        {
+                            "range": [1, 249],
+                            "name": "Min speed"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Max speed, vector mode, black-out while any change"
+                        }
+                    ]
+                },
+                "Lamp on/off, reset, fan speed control": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "From max to min fan speed"
+                        },
+                        {
+                            "range": [128, 139],
+                            "name": "Lamp on, reset"
+                        },
+                        {
+                            "range": [140, 229],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Lamp off after 3 sec"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Colours": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Open, white",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [10, 20],
+                            "name": "Turquoise",
+                            "color": "#55ffff"
+                        },
+                        {
+                            "range": [21, 31],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [32, 41],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [42, 52],
+                            "name": "Light green",
+                            "color": "#aaff7f"
+                        },
+                        {
+                            "range": [53, 63],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [64, 73],
+                            "name": "Light blue",
+                            "color": "#aaaaff"
+                        },
+                        {
+                            "range": [74, 84],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [85, 95],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [96, 105],
+                            "name": "Pink",
+                            "color": "#ffaaff"
+                        },
+                        {
+                            "range": [106, 116],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [117, 127],
+                            "name": "Orange",
+                            "color": "#ffaa00"
+                        },
+                        {
+                            "range": [128, 189],
+                            "name": "Forwards rainbow effect from fast to slow"
+                        },
+                        {
+                            "range": [190, 193],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Backwards rainbow effect from slow to fast"
+                        }
+                    ]
+                },
+                "No function": {
+                    "type": "Nothing",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Frost, correction filters, 3-facet prism, Macros": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 95],
+                            "name": "Open position (hole)"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Frost filter"
+                        },
+                        {
+                            "range": [104, 135],
+                            "name": "3-facet prism"
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "3200 K correction filter"
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "5600 K correction filter"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "UV filter"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Macro 1"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "Macro 2"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "Macro 3"
+                        },
+                        {
+                            "range": [184, 191],
+                            "name": "Macro 4"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "Macro 5"
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "Macro 6"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Macro 7"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Macro 8"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Macro 9"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Macro 10"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Macro 11"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Macro 12"
+                        }
+                    ]
+                },
+                "3-facet prism rotation control": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [1, 126],
+                            "name": "Forwards rotation from fast to slow"
+                        },
+                        {
+                            "range": [127, 128],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [129, 255],
+                            "name": "Backwards rotation from slow to fast"
+                        }
+                    ]
+                },
+                "Rotating gobos; continous rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Rotation gobo 1 (dichroic)"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Rotation gobo 2 (glass)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Rotation gobo 3 (metal)"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Rotation gobo 4 (metal)"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Rotation gobo 5 (metal)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Rotation gobo 6 (metal)"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Rotation gobo wheel, cont. rotation from slow to fast"
+                        }
+                    ]
+                },
+                "Rotating gobo indexing, rotating gobo rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Gobo indexing"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Forwards gobo rotation from fast to slow"
+                        },
+                        {
+                            "range": [192, 192],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "Backwards gobo rotation from slow to fast"
+                        }
+                    ]
+                },
+                "No function 2": {
+                    "type": "Nothing",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam"
+                },
+                "Shutter, strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "No function, shutter open"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe effect from slow to fast (max. 10 flashes/sec)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "No function, shutter open"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse effect in sequences"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "No function (shutter open)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random strobe effect from slow to fast"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "No function (shutter open)"
+                        }
+                    ]
+                },
+                "Dimmer intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment of the dimmer intensity from 0 to 100%"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan fine",
+                        "Tilt fine",
+                        "Speed of pan/tilt movement",
+                        "Lamp on/off, reset, fan speed control",
+                        "Colours",
+                        "No function",
+                        "Frost, correction filters, 3-facet prism, Macros",
+                        "3-facet prism rotation control",
+                        "Rotating gobos; continous rotation",
+                        "Rotating gobo indexing, rotating gobo rotation",
+                        "No function 2",
+                        "Focus",
+                        "Shutter, strobe",
+                        "Dimmer intensity"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,290 @@
+{
+    "manufacturers": {
+        "ETC": {
+            "name": "ETC"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "ETC",
+            "name": "Desire D40 Vivid",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [270, 338, 305],
+                "weight": 6.8,
+                "power": 115,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "LED",
+                    "colorTemperature": 3200
+                },
+                "lens": {
+                    "name": "Fresnel"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "1 RED": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "2 Orange": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Orange",
+                            "color": "#fe340f"
+                        }
+                    ]
+                },
+                "3 Amber": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber",
+                            "color": "#ff8000"
+                        }
+                    ]
+                },
+                "4 Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        }
+                    ]
+                },
+                "5 Cyan": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        }
+                    ]
+                },
+                "6 Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue",
+                            "color": "#0080ff"
+                        }
+                    ]
+                },
+                "7 Indigo": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Indigo",
+                            "color": "#152ac2"
+                        }
+                    ]
+                },
+                "8 Intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "9 Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Full on"
+                        },
+                        {
+                            "range": [1, 254],
+                            "name": "Variable rate from slow to fast"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Full on"
+                        }
+                    ]
+                },
+                "Hue (coarse)": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Hue (coarse)"
+                        }
+                    ]
+                },
+                "Hue (fine)": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Hue (fine)"
+                        }
+                    ]
+                },
+                "Saturation": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Saturation"
+                        }
+                    ]
+                },
+                "Color Point": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Color Point"
+                        }
+                    ]
+                },
+                "Plus 7 Control on/off": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [51, 255],
+                            "name": "Plus 7 Control on/off"
+                        }
+                    ]
+                },
+                "Tint": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tint"
+                        }
+                    ]
+                },
+                "Not Used (RGB Mode)": {
+                    "type": "Nothing",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Not Used (RGB Mode)"
+                        }
+                    ]
+                },
+                "Not Used 6 (plus 7 mode)": {
+                    "type": "Nothing",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Not Used 6 (plus 7 mode)"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Hue (coarse)",
+                    "Hue (fine)"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 1 Direct",
+                    "channels": [
+                        "1 RED",
+                        "2 Orange",
+                        "3 Amber",
+                        "4 Green",
+                        "5 Cyan",
+                        "6 Blue",
+                        "7 Indigo",
+                        "8 Intensity",
+                        "9 Strobe"
+                    ]
+                },
+                {
+                    "name": "Mode 2 Stage",
+                    "channels": [
+                        "Hue (coarse)",
+                        "Hue (fine)",
+                        "Saturation",
+                        "8 Intensity",
+                        "9 Strobe",
+                        "Not Used 6 (plus 7 mode)",
+                        "Plus 7 Control on/off",
+                        "1 RED",
+                        "2 Orange",
+                        "3 Amber",
+                        "4 Green",
+                        "5 Cyan",
+                        "6 Blue",
+                        "7 Indigo"
+                    ]
+                },
+                {
+                    "name": "Mode 3 XT Arch",
+                    "channels": [
+                        "8 Intensity",
+                        "9 Strobe",
+                        "Hue (coarse)",
+                        "Hue (fine)",
+                        "Saturation"
+                    ]
+                },
+                {
+                    "name": "Mode 4 RGB",
+                    "channels": [
+                        "1 RED",
+                        "4 Green",
+                        "6 Blue",
+                        "Not Used (RGB Mode)",
+                        "9 Strobe"
+                    ]
+                },
+                {
+                    "name": "Mode 5 Studio",
+                    "channels": [
+                        "8 Intensity",
+                        "Color Point",
+                        "Tint"
+                    ]
+                }
+            ]
+        }
+    ]
+}

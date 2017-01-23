@@ -1,0 +1,67 @@
+{
+    "manufacturers": {
+        "Antari": {
+            "name": "Antari"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Antari",
+            "name": "X-310 Pro Fazer",
+            "type": "Smoke",
+            "physical": {
+                "dimensions": [635, 281, 275],
+                "weight": 18,
+                "power": 1000,
+                "DMXconnector": "3-pin and 5-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Fan speed": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 85],
+                            "name": "Slow"
+                        },
+                        {
+                            "range": [86, 170],
+                            "name": "Medium"
+                        },
+                        {
+                            "range": [171, 255],
+                            "name": "Fast"
+                        }
+                    ]
+                },
+                "Volume control": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [6, 255],
+                            "name": "Volume control"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "2 Channel",
+                    "channels": [
+                        "Fan speed",
+                        "Volume control"
+                    ]
+                }
+            ]
+        }
+    ]
+}

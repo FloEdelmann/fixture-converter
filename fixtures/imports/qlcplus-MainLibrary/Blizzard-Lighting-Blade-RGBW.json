@@ -1,0 +1,457 @@
+{
+    "manufacturers": {
+        "Blizzard Lighting": {
+            "name": "Blizzard Lighting"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Blizzard Lighting",
+            "name": "Blade RGBW",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [240, 375, 340],
+                "weight": 5.2,
+                "power": 148,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Fresnel",
+                    "degreesMinMax": [1, 8]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 90
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan position"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt position"
+                        }
+                    ]
+                },
+                "X-Axis Trim": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine positioning"
+                        }
+                    ]
+                },
+                "Y-Axis Trim": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine positioning"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed (Fast-Slow)": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Damping of head movement"
+                        }
+                    ]
+                },
+                "Red Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red 0-100%"
+                        }
+                    ]
+                },
+                "Green Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green 0-100%"
+                        }
+                    ]
+                },
+                "Blue Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue 0-100%"
+                        }
+                    ]
+                },
+                "White Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White 0-100%"
+                        }
+                    ]
+                },
+                "Custom Color": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Color set on front panel, 0-100%"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "On (Slow-Fast)"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer 0-100%"
+                        }
+                    ]
+                },
+                "Programs": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 25],
+                            "name": "256-step linear dimmming"
+                        },
+                        {
+                            "range": [26, 50],
+                            "name": "Fade step increase"
+                        },
+                        {
+                            "range": [51, 90],
+                            "name": "Color macros, ch 14 chooses"
+                        },
+                        {
+                            "range": [91, 130],
+                            "name": "Color fade in/out, ch 14 speed"
+                        },
+                        {
+                            "range": [131, 170],
+                            "name": "Color snap, ch 14 speed"
+                        },
+                        {
+                            "range": [171, 210],
+                            "name": "Color fade, ch 14 speed"
+                        },
+                        {
+                            "range": [211, 250],
+                            "name": "Auto (front panel settings)"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Sound Active"
+                        }
+                    ]
+                },
+                "Effects": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "Red fade to Yellow",
+                            "color": "#ff0000",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [21, 40],
+                            "name": "Yellow fade to Green",
+                            "color": "#ffff00",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [41, 60],
+                            "name": "Green fade to Aqua",
+                            "color": "#80ff00",
+                            "color2": "#00ffff"
+                        },
+                        {
+                            "range": [61, 80],
+                            "name": "Aqua fade to Blue",
+                            "color": "#00ffff",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [81, 100],
+                            "name": "Blue fade to Magenta",
+                            "color": "#0000ff",
+                            "color2": "#ff00ff"
+                        },
+                        {
+                            "range": [101, 120],
+                            "name": "Magenta fade to Red",
+                            "color": "#ff00ff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [121, 140],
+                            "name": "Red fade to White",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [141, 160],
+                            "name": "White fade to Blue",
+                            "color": "#ffffff",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [161, 170],
+                            "name": "White effect",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [171, 200],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [201, 205],
+                            "name": "CTO - 3800K"
+                        },
+                        {
+                            "range": [206, 210],
+                            "name": "CTO - 4200K"
+                        },
+                        {
+                            "range": [211, 215],
+                            "name": "CTO - 4500K"
+                        },
+                        {
+                            "range": [216, 220],
+                            "name": "CTO - 4800K"
+                        },
+                        {
+                            "range": [221, 225],
+                            "name": "CTO - 5000K"
+                        },
+                        {
+                            "range": [226, 230],
+                            "name": "CTO - 5200K"
+                        },
+                        {
+                            "range": [231, 235],
+                            "name": "CTO - 5600K"
+                        },
+                        {
+                            "range": [236, 240],
+                            "name": "CTO - 5800K"
+                        },
+                        {
+                            "range": [241, 245],
+                            "name": "CTO - 6000K"
+                        },
+                        {
+                            "range": [246, 250],
+                            "name": "CTO - 6200K"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "CTO - 6500K"
+                        }
+                    ]
+                },
+                "Fixture ID": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Any Fixture"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Fixture ID 1"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Fixture ID 2"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Fixture ID 3"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Fixture ID 4"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Fixture ID 5"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Fixture ID 6"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Fixture ID 7"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Fixture ID 8"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Fixture ID 9"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Fixture ID 10"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "Fixture ID 11"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "Fixture ID 12"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "Fixture ID 13"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Fixture ID 14"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "Fixture ID 15"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "Fixture ID 16"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "Fixture ID 17"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "Fixture ID 18"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "Fixture ID 19"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Fixture ID 20"
+                        },
+                        {
+                            "range": [210, 219],
+                            "name": "Fixture ID 21"
+                        },
+                        {
+                            "range": [220, 229],
+                            "name": "Fixture ID 22"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Fixture ID 23"
+                        },
+                        {
+                            "range": [240, 249],
+                            "name": "Fixture ID 24"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Fixture ID 25"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "X-Axis Trim"
+                ],
+                [
+                    "Tilt",
+                    "Y-Axis Trim"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "15 Channel",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "X-Axis Trim",
+                        "Y-Axis Trim",
+                        "Pan/Tilt Speed (Fast-Slow)",
+                        "Red Intensity",
+                        "Green Intensity",
+                        "Blue Intensity",
+                        "White Intensity",
+                        "Custom Color",
+                        "Strobe",
+                        "Dimmer",
+                        "Programs",
+                        "Effects",
+                        "Fixture ID"
+                    ]
+                },
+                {
+                    "name": "11 Channel",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "X-Axis Trim",
+                        "Y-Axis Trim",
+                        "Pan/Tilt Speed (Fast-Slow)",
+                        "Red Intensity",
+                        "Green Intensity",
+                        "Blue Intensity",
+                        "White Intensity",
+                        "Dimmer",
+                        "Custom Color"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,368 @@
+{
+    "manufacturers": {
+        "Showtec": {
+            "name": "Showtec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Showtec",
+            "name": "Phantom 250 Wash",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [420, 420, 410],
+                "weight": 19.2,
+                "power": 500,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 250W",
+                    "colorTemperature": 5500,
+                    "lumens": 8000
+                },
+                "lens": {
+                    "name": "Fresnel"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Pan 16bit": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan 16bit"
+                        }
+                    ]
+                },
+                "Tilt 16bit": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt 16bit"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Speed Fast - Slow"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Cyan intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Magenta intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Yellow intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "CMY Macro": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Preset Colors"
+                        }
+                    ]
+                },
+                "CMY Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment color change speed (fast to slow)"
+                        }
+                    ]
+                },
+                "Shutter/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "Shutter closed / Blackout"
+                        },
+                        {
+                            "range": [15, 85],
+                            "name": "Dimmer 0-100%"
+                        },
+                        {
+                            "range": [86, 99],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [100, 140],
+                            "name": "Strobe, slow-fast"
+                        },
+                        {
+                            "range": [141, 151],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [152, 195],
+                            "name": "Pulse, slow-fast"
+                        },
+                        {
+                            "range": [196, 203],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [204, 244],
+                            "name": "Random strobe, slow-fast"
+                        },
+                        {
+                            "range": [245, 255],
+                            "name": "Shutter open"
+                        }
+                    ]
+                },
+                "Lamp Effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "no function"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "moving blackout"
+                        },
+                        {
+                            "range": [20, 99],
+                            "name": "no function"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "reset"
+                        },
+                        {
+                            "range": [110, 129],
+                            "name": "no function"
+                        },
+                        {
+                            "range": [130, 145],
+                            "name": "Auto Program 1"
+                        },
+                        {
+                            "range": [146, 161],
+                            "name": "Auto Program 2"
+                        },
+                        {
+                            "range": [162, 177],
+                            "name": "Auto Program 3"
+                        },
+                        {
+                            "range": [178, 193],
+                            "name": "Auto Program 4"
+                        },
+                        {
+                            "range": [194, 209],
+                            "name": "sound control 1"
+                        },
+                        {
+                            "range": [210, 225],
+                            "name": "sound control 2"
+                        },
+                        {
+                            "range": [226, 241],
+                            "name": "sound control 3"
+                        },
+                        {
+                            "range": [242, 255],
+                            "name": "sound contorl 4"
+                        }
+                    ]
+                },
+                "Effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "no function"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "effect1"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "effect2"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "effect3"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "effect4"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "effect5"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "effect6"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "effect7"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "effect8"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "effect9"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "effect10"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "effect11"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "effect12"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "effect13"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "effect14"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "effect15"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "effect16"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "effect17"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "effect18"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "effect19"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "effect20"
+                        },
+                        {
+                            "range": [210, 219],
+                            "name": "effect21"
+                        },
+                        {
+                            "range": [220, 229],
+                            "name": "effect22"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "effect23"
+                        },
+                        {
+                            "range": [240, 249],
+                            "name": "effect24"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "effect25"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan 16bit"
+                ],
+                [
+                    "Tilt",
+                    "Tilt 16bit"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan 16bit",
+                        "Tilt 16bit",
+                        "Speed",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "CMY Macro",
+                        "CMY Speed",
+                        "Shutter/Strobe",
+                        "Lamp Effect",
+                        "Effect"
+                    ]
+                }
+            ]
+        }
+    ]
+}

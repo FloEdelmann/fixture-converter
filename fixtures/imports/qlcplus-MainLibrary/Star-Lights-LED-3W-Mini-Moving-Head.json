@@ -1,0 +1,209 @@
+{
+    "manufacturers": {
+        "Star-Lights": {
+            "name": "Star-Lights"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Star-Lights",
+            "name": "LED 3W Mini Moving Head",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [350, 450, 350],
+                "weight": 6,
+                "power": 150,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 1600
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [45, 45]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 450,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan 0 - 450 °"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt 0 - 270 °"
+                        }
+                    ]
+                },
+                "Pan fine 16 bit": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255]
+                        }
+                    ]
+                },
+                "Tilt fine 16 bit": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255]
+                        }
+                    ]
+                },
+                "XY-Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "XY speed from Fast to Slow"
+                        }
+                    ]
+                },
+                "Flash": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [8, 215],
+                            "name": "Flash from Fast to Slow"
+                        },
+                        {
+                            "range": [216, 231],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [232, 247],
+                            "name": "Semi On"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "On"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer (0 - 100%)"
+                        }
+                    ]
+                },
+                "Color Mixing": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "R. G. B. color mixing"
+                        }
+                    ]
+                },
+                "Color Mixing Speed": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Speed Adjustable from Fast to Slow"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity (0 - 100%)",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity (0 - 100%)",
+                            "color": "#00c000"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Reset Channel": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 247],
+                            "name": "Without reposition"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Hold for 5 seconds to reset"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine 16 bit"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine 16 bit"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "13 channels",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan fine 16 bit",
+                        "Tilt fine 16 bit",
+                        "XY-Speed",
+                        "Flash",
+                        "Dimmer",
+                        "Color Mixing",
+                        "Color Mixing Speed",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Reset Channel"
+                    ]
+                }
+            ]
+        }
+    ]
+}

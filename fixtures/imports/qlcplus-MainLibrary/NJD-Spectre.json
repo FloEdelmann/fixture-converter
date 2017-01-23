@@ -1,0 +1,198 @@
+{
+    "manufacturers": {
+        "NJD": {
+            "name": "NJD"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "NJD",
+            "name": "Spectre",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [250, 250, 245],
+                "weight": 5.2,
+                "power": 1500,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "A1/244"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Brightness": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Brightness (0 to 100%)"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 42],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [43, 85],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [86, 127],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [128, 170],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [171, 213],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [214, 254],
+                            "name": "Magenta",
+                            "color": "#aa007f"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "Saturation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Full Colour [0] -> White [255]"
+                        }
+                    ]
+                },
+                "X-position (pan) or dish rotation": {
+                    "type": "Nothing",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "x-position (pan) or dish rotation"
+                        }
+                    ]
+                },
+                "Y-position (tilt)": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "y-position (tilt)"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Speed (0 to 100%)"
+                        }
+                    ]
+                },
+                "Gobo or Colour Saturation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gobo or Colour Saturation"
+                        }
+                    ]
+                },
+                "Strobe/Blackout": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Off [0] -> 10Hz [255]"
+                        }
+                    ]
+                },
+                "Colour + Colour Scrolling": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 42],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [43, 85],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [86, 127],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [128, 170],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [171, 213],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [214, 254],
+                            "name": "Magenta",
+                            "color": "#aa007f"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "DMX 3-channel",
+                    "channels": [
+                        "Brightness",
+                        "Colour",
+                        "Saturation"
+                    ]
+                },
+                {
+                    "name": "MX90",
+                    "channels": [
+                        "X-position (pan) or dish rotation",
+                        "Y-position (tilt)",
+                        "Colour + Colour Scrolling",
+                        "Gobo or Colour Saturation",
+                        "Speed",
+                        "Strobe/Blackout",
+                        "Brightness"
+                    ]
+                }
+            ]
+        }
+    ]
+}

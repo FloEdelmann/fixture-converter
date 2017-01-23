@@ -1,0 +1,108 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "LED PST-9W RGB",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [135, 165, 170],
+                "weight": 0.5,
+                "power": 26,
+                "DMXconnector": "3.5 mm stereo jack",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [6, 6]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "On"
+                        },
+                        {
+                            "range": [1, 5],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [6, 10],
+                            "name": "On"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "Strobe"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "5 ch",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Intensity",
+                        "Shutter"
+                    ]
+                }
+            ]
+        }
+    ]
+}

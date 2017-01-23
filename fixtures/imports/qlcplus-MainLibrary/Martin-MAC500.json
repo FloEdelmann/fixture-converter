@@ -1,0 +1,747 @@
+{
+    "manufacturers": {
+        "Martin": {
+            "name": "Martin"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Martin",
+            "name": "MAC500",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [481, 673, 356],
+                "weight": 32.8,
+                "power": 780,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "HTI 575W",
+                    "lumens": 9000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [17, 24]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 440,
+                    "tiltMax": 306
+                }
+            },
+            "availableChannels": {
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Solid Closed"
+                        },
+                        {
+                            "range": [20, 49],
+                            "name": "Solid Open"
+                        },
+                        {
+                            "range": [50, 72],
+                            "name": "Strobe"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Pulse Opening"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Pulse Closing"
+                        },
+                        {
+                            "range": [128, 147],
+                            "name": "Random Strobe Fast"
+                        },
+                        {
+                            "range": [148, 167],
+                            "name": "Random Strobe Medium"
+                        },
+                        {
+                            "range": [168, 187],
+                            "name": "Random Strobe Slow"
+                        },
+                        {
+                            "range": [191, 193],
+                            "name": "Random Pulse Opening Fast"
+                        },
+                        {
+                            "range": [194, 196],
+                            "name": "Random Pulse Opening Slow"
+                        },
+                        {
+                            "range": [197, 199],
+                            "name": "Random Pulse Closing Fast"
+                        },
+                        {
+                            "range": [200, 202],
+                            "name": "Random Pulse Closing Slow"
+                        },
+                        {
+                            "range": [208, 217],
+                            "name": "Reset To Home"
+                        },
+                        {
+                            "range": [228, 237],
+                            "name": "Power On"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Power Off"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% > 100%"
+                        }
+                    ]
+                },
+                "Color1": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "White"
+                        },
+                        {
+                            "range": [16, 16],
+                            "name": "Blue [#111]"
+                        },
+                        {
+                            "range": [32, 32],
+                            "name": "Red [#301]"
+                        },
+                        {
+                            "range": [48, 48],
+                            "name": "Magenta [#507]"
+                        },
+                        {
+                            "range": [64, 64],
+                            "name": "Green [#202]"
+                        },
+                        {
+                            "range": [80, 80],
+                            "name": "Yellow [#604]"
+                        },
+                        {
+                            "range": [96, 96],
+                            "name": "Blue [#101]"
+                        },
+                        {
+                            "range": [112, 112],
+                            "name": "Pink [#312]"
+                        },
+                        {
+                            "range": [145, 148],
+                            "name": "Cyan"
+                        },
+                        {
+                            "range": [149, 152],
+                            "name": "Pink"
+                        },
+                        {
+                            "range": [153, 156],
+                            "name": "Blue"
+                        },
+                        {
+                            "range": [157, 160],
+                            "name": "Purple"
+                        },
+                        {
+                            "range": [161, 164],
+                            "name": "Yellow"
+                        },
+                        {
+                            "range": [165, 168],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [169, 172],
+                            "name": "Magenta"
+                        },
+                        {
+                            "range": [173, 176],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [177, 180],
+                            "name": "Navy"
+                        },
+                        {
+                            "range": [181, 184],
+                            "name": "White"
+                        },
+                        {
+                            "range": [185, 215],
+                            "name": "CW [Fast > Slow]"
+                        },
+                        {
+                            "range": [216, 245],
+                            "name": "CCW [Slow > Fast]"
+                        },
+                        {
+                            "range": [246, 255],
+                            "name": "Other (For Manual On Color 2)"
+                        }
+                    ]
+                },
+                "Color2": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "White"
+                        },
+                        {
+                            "range": [16, 16],
+                            "name": "CTC 3200-4100"
+                        },
+                        {
+                            "range": [32, 32],
+                            "name": "CTC 3200-5600"
+                        },
+                        {
+                            "range": [48, 48],
+                            "name": "Blue [#104]"
+                        },
+                        {
+                            "range": [64, 64],
+                            "name": "Blue [#108]"
+                        },
+                        {
+                            "range": [80, 80],
+                            "name": "Green [#206]"
+                        },
+                        {
+                            "range": [96, 96],
+                            "name": "Red [#308]"
+                        },
+                        {
+                            "range": [112, 112],
+                            "name": "Yellow [#603]"
+                        },
+                        {
+                            "range": [128, 128],
+                            "name": "CTC 5500-2900"
+                        },
+                        {
+                            "range": [144, 144],
+                            "name": "CTC 5500-4200"
+                        },
+                        {
+                            "range": [145, 148],
+                            "name": "CTC 5500-4200"
+                        },
+                        {
+                            "range": [149, 152],
+                            "name": "CTC 5500-2900"
+                        },
+                        {
+                            "range": [153, 156],
+                            "name": "Yellow [#603]"
+                        },
+                        {
+                            "range": [157, 160],
+                            "name": "Red [#308\\]"
+                        },
+                        {
+                            "range": [161, 164],
+                            "name": "Green [#206]"
+                        },
+                        {
+                            "range": [165, 168],
+                            "name": "Blue [#108]"
+                        },
+                        {
+                            "range": [173, 176],
+                            "name": "CTC 3200-5600"
+                        },
+                        {
+                            "range": [177, 180],
+                            "name": "CTC 3200-4100"
+                        },
+                        {
+                            "range": [181, 184],
+                            "name": "White"
+                        },
+                        {
+                            "range": [185, 215],
+                            "name": "Chase1"
+                        },
+                        {
+                            "range": [216, 245],
+                            "name": "Chase2"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "Random Fast"
+                        },
+                        {
+                            "range": [249, 251],
+                            "name": "Random Medium"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Random Slow"
+                        }
+                    ]
+                },
+                "Gobo Selection/Rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 55],
+                            "name": "Open Gobo"
+                        },
+                        {
+                            "range": [56, 75],
+                            "name": "Gobo1 (Select On Ch6)"
+                        },
+                        {
+                            "range": [76, 95],
+                            "name": "Gobo2 (Select On Ch6)"
+                        },
+                        {
+                            "range": [96, 115],
+                            "name": "Gobo3 (Select On Ch6)"
+                        },
+                        {
+                            "range": [116, 135],
+                            "name": "Gobo4 (Select On Ch6)"
+                        },
+                        {
+                            "range": [136, 155],
+                            "name": "Gobo5 (Select On Ch6)"
+                        },
+                        {
+                            "range": [156, 175],
+                            "name": "Gobo 5 Rotation (Set Spd/Dir On Ch6)"
+                        },
+                        {
+                            "range": [176, 195],
+                            "name": "Gobo 4 Rotation (Set Spd/Dir On Ch6)"
+                        },
+                        {
+                            "range": [196, 215],
+                            "name": "Gobo 3 Rotation (Set Spd/Dir On Ch6)"
+                        },
+                        {
+                            "range": [216, 235],
+                            "name": "Gobo 2 Rotation (Set Spd/Dir On Ch6)"
+                        },
+                        {
+                            "range": [236, 255],
+                            "name": "Gobo 1 Rotation (Set Spd/Dir On Ch6)"
+                        }
+                    ]
+                },
+                "Gobo Index": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255]
+                        }
+                    ]
+                },
+                "Fixed Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [20, 20],
+                            "name": "Gobo1"
+                        },
+                        {
+                            "range": [40, 40],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [60, 60],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [80, 80],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [100, 100],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [120, 120],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [140, 140],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [160, 160],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [181, 183],
+                            "name": "Gobo 9 Shake"
+                        },
+                        {
+                            "range": [184, 186],
+                            "name": "Gobo 8 Shake"
+                        },
+                        {
+                            "range": [187, 189],
+                            "name": "Gobo 7 Shake"
+                        },
+                        {
+                            "range": [190, 192],
+                            "name": "Gobo 6 Shake"
+                        },
+                        {
+                            "range": [193, 195],
+                            "name": "Gobo  5 Shake"
+                        },
+                        {
+                            "range": [196, 198],
+                            "name": "Gobo 4 Shake"
+                        },
+                        {
+                            "range": [199, 201],
+                            "name": "Gobo 3 Shake"
+                        },
+                        {
+                            "range": [202, 204],
+                            "name": "Gobo 2 Shake"
+                        },
+                        {
+                            "range": [205, 207],
+                            "name": "Gobo 1 Shake"
+                        },
+                        {
+                            "range": [208, 231],
+                            "name": "Clock Wise [CW] Rotation"
+                        },
+                        {
+                            "range": [232, 255],
+                            "name": "Counter Clock Wise [CCW] Rotation"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Far > Near"
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 199],
+                            "name": "Open/Close"
+                        },
+                        {
+                            "range": [200, 215],
+                            "name": "Close"
+                        },
+                        {
+                            "range": [216, 229],
+                            "name": "Pulse Open"
+                        },
+                        {
+                            "range": [230, 243],
+                            "name": "Pulse Close"
+                        },
+                        {
+                            "range": [244, 246],
+                            "name": "Random Pulse Open Fast"
+                        },
+                        {
+                            "range": [247, 249],
+                            "name": "Random Pulse Open Slow"
+                        },
+                        {
+                            "range": [250, 252],
+                            "name": "Randm Pulse Close Fast"
+                        },
+                        {
+                            "range": [253, 255],
+                            "name": "Random Pulse Close Slow"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Prism On"
+                        },
+                        {
+                            "range": [20, 79],
+                            "name": "Prism Off"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Rotate [CW]"
+                        },
+                        {
+                            "range": [90, 149],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [150, 215],
+                            "name": "Rotate [CCW]"
+                        },
+                        {
+                            "range": [216, 220],
+                            "name": "Macro 1"
+                        },
+                        {
+                            "range": [221, 225],
+                            "name": "Macro 2"
+                        },
+                        {
+                            "range": [226, 230],
+                            "name": "Macro 3"
+                        },
+                        {
+                            "range": [231, 235],
+                            "name": "Macro 4"
+                        },
+                        {
+                            "range": [236, 240],
+                            "name": "Macro 5"
+                        },
+                        {
+                            "range": [241, 245],
+                            "name": "Macro 6"
+                        },
+                        {
+                            "range": [246, 250],
+                            "name": "Macro 7"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Macro 8"
+                        }
+                    ]
+                },
+                "Pan [Coarse]": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 126],
+                            "name": "Left"
+                        },
+                        {
+                            "range": [127, 127],
+                            "name": "Center"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Right"
+                        }
+                    ]
+                },
+                "Pan [Fine]": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 126],
+                            "name": "Left"
+                        },
+                        {
+                            "range": [127, 127],
+                            "name": "Center"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Right"
+                        }
+                    ]
+                },
+                "Tilt [Coarse]": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 126],
+                            "name": "Left"
+                        },
+                        {
+                            "range": [127, 127],
+                            "name": "Center"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Right"
+                        }
+                    ]
+                },
+                "Tilt [Fine]": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 126],
+                            "name": "Left"
+                        },
+                        {
+                            "range": [127, 127],
+                            "name": "Center"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Right"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Tracking"
+                        },
+                        {
+                            "range": [3, 245],
+                            "name": "Fast > Slow"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "Tracking Normal [Override]"
+                        },
+                        {
+                            "range": [249, 251],
+                            "name": "Tracking Fast [Override]"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Blackout While Moving"
+                        }
+                    ]
+                },
+                "Effects Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Tracking Fast > Slow"
+                        },
+                        {
+                            "range": [3, 245],
+                            "name": "SCUT ON [Override]"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "SCUT OFF [Override]"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "???????"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan [Fine]"
+                ],
+                [
+                    "Tilt",
+                    "Tilt [Fine]"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "DMX1",
+                    "channels": [
+                        "Shutter",
+                        "Intensity",
+                        "Color1",
+                        "Color2",
+                        "Gobo Selection/Rotation",
+                        "Gobo Index",
+                        "Fixed Gobo",
+                        "Focus",
+                        "Iris",
+                        "Prism",
+                        "Pan [Coarse]",
+                        "Tilt [Coarse]"
+                    ]
+                },
+                {
+                    "name": "DMX2",
+                    "channels": [
+                        "Shutter",
+                        "Intensity",
+                        "Color1",
+                        "Color2",
+                        "Gobo Selection/Rotation",
+                        "Gobo Index",
+                        "Fixed Gobo",
+                        "Focus",
+                        "Iris",
+                        "Prism",
+                        "Pan [Coarse]",
+                        "Pan [Fine]",
+                        "Tilt [Coarse]",
+                        "Tilt [Fine]"
+                    ]
+                },
+                {
+                    "name": "DMX3",
+                    "channels": [
+                        "Shutter",
+                        "Intensity",
+                        "Color1",
+                        "Color2",
+                        "Gobo Selection/Rotation",
+                        "Gobo Index",
+                        "Fixed Gobo",
+                        "Focus",
+                        "Iris",
+                        "Prism",
+                        "Pan [Coarse]",
+                        "Tilt [Coarse]",
+                        "Pan/Tilt Speed",
+                        "Effects Speed"
+                    ]
+                },
+                {
+                    "name": "DMX4",
+                    "channels": [
+                        "Shutter",
+                        "Intensity",
+                        "Color1",
+                        "Color2",
+                        "Gobo Selection/Rotation",
+                        "Gobo Index",
+                        "Fixed Gobo",
+                        "Focus",
+                        "Iris",
+                        "Prism",
+                        "Pan [Coarse]",
+                        "Pan [Fine]",
+                        "Tilt [Coarse]",
+                        "Tilt [Fine]",
+                        "Pan/Tilt Speed",
+                        "Effects Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,438 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "LED TMH-6",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [175, 170, 240],
+                "weight": 3.6,
+                "power": 60,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [11, 11]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 < 100%"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 < 100%"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 < 100%"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 < 100%"
+                        }
+                    ]
+                },
+                "Pan / Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Decreasing speed (vector mode)"
+                        }
+                    ]
+                },
+                "Dimmer/strobe": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Closed\r"
+                        },
+                        {
+                            "range": [8, 134],
+                            "name": "100 to 0 %"
+                        },
+                        {
+                            "range": [135, 239],
+                            "name": "Strobe- Min < Max"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Red 1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 < 100%"
+                        }
+                    ]
+                },
+                "Green 1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 < 100%"
+                        }
+                    ]
+                },
+                "Blue 1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 < 100%"
+                        }
+                    ]
+                },
+                "Color macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [8, 21],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [22, 35],
+                            "name": "Red\r",
+                            "color": "#aa0000"
+                        },
+                        {
+                            "range": [36, 49],
+                            "name": "Green\r",
+                            "color": "#00aa00"
+                        },
+                        {
+                            "range": [50, 63],
+                            "name": "Blue\r",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [64, 77],
+                            "name": "Cyan\r",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [78, 91],
+                            "name": "Magenta\r",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [92, 105],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [106, 119],
+                            "name": "Purple\r",
+                            "color": "#aa007f"
+                        },
+                        {
+                            "range": [120, 133],
+                            "name": "Orange\r",
+                            "color": "#ffaa00"
+                        },
+                        {
+                            "range": [134, 147],
+                            "name": "Green-Yellow",
+                            "color": "#7fff00"
+                        },
+                        {
+                            "range": [148, 161],
+                            "name": "Pink",
+                            "color": "#ffaaff"
+                        },
+                        {
+                            "range": [162, 175],
+                            "name": "Brown",
+                            "color": "#aa5500"
+                        },
+                        {
+                            "range": [176, 189],
+                            "name": "Gold",
+                            "color": "#aaaa00"
+                        },
+                        {
+                            "range": [190, 203],
+                            "name": "Crimson",
+                            "color": "#00557f"
+                        },
+                        {
+                            "range": [204, 217],
+                            "name": "Violet\r",
+                            "color": "#aa55ff"
+                        },
+                        {
+                            "range": [218, 231],
+                            "name": "Grape\r",
+                            "color": "#00007f"
+                        },
+                        {
+                            "range": [232, 255],
+                            "name": "Color Change Macro 1"
+                        }
+                    ]
+                },
+                "RGB speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Decreasing speed (vector mode)"
+                        }
+                    ]
+                },
+                "Motion macros": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [8, 22],
+                            "name": "Motion macro 1"
+                        },
+                        {
+                            "range": [23, 37],
+                            "name": "Motion macro 2"
+                        },
+                        {
+                            "range": [38, 52],
+                            "name": "Motion macro 3"
+                        },
+                        {
+                            "range": [53, 67],
+                            "name": "Motion macro 4"
+                        },
+                        {
+                            "range": [68, 82],
+                            "name": "Motion macro 5"
+                        },
+                        {
+                            "range": [83, 97],
+                            "name": "Motion macro 6"
+                        },
+                        {
+                            "range": [98, 112],
+                            "name": "Motion macro 7"
+                        },
+                        {
+                            "range": [113, 127],
+                            "name": "Motion macro 8"
+                        },
+                        {
+                            "range": [128, 142],
+                            "name": "Sound-controlled Motion macro 1"
+                        },
+                        {
+                            "range": [143, 157],
+                            "name": "Sound-controlled Motion macro 2"
+                        },
+                        {
+                            "range": [158, 172],
+                            "name": "Sound-controlled Motion macro 3"
+                        },
+                        {
+                            "range": [173, 187],
+                            "name": "Sound-controlled Motion macro 4"
+                        },
+                        {
+                            "range": [188, 202],
+                            "name": "Sound-controlled Motion macro 5"
+                        },
+                        {
+                            "range": [203, 217],
+                            "name": "Sound-controlled Motion macro 6"
+                        },
+                        {
+                            "range": [218, 232],
+                            "name": "Sound-controlled Motion macro 7"
+                        },
+                        {
+                            "range": [233, 255],
+                            "name": "Sound-controlled Motion macro 8"
+                        }
+                    ]
+                },
+                "Gobos": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Gobo 9"
+                        },
+                        {
+                            "range": [80, 94],
+                            "name": "Gobo shake 1"
+                        },
+                        {
+                            "range": [95, 109],
+                            "name": "Gobo shake 2"
+                        },
+                        {
+                            "range": [110, 124],
+                            "name": "Gobo shake 3"
+                        },
+                        {
+                            "range": [125, 139],
+                            "name": "Gobo shake 4"
+                        },
+                        {
+                            "range": [140, 154],
+                            "name": "Gobo shake 5"
+                        },
+                        {
+                            "range": [155, 169],
+                            "name": "Gobo shake 6"
+                        },
+                        {
+                            "range": [170, 184],
+                            "name": "Gobo shake 7"
+                        },
+                        {
+                            "range": [185, 199],
+                            "name": "Gobo shake 8"
+                        },
+                        {
+                            "range": [200, 214],
+                            "name": "Gobo shake 9"
+                        },
+                        {
+                            "range": [215, 235],
+                            "name": "Forwards rainbow effect with increasing speed"
+                        },
+                        {
+                            "range": [236, 255],
+                            "name": "Backwards rainbow effect with increasing speed"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "13 DMX channel mode",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Pan / Tilt Speed",
+                        "Dimmer/strobe",
+                        "Red 1",
+                        "Green 1",
+                        "Blue 1",
+                        "Color macros",
+                        "RGB speed",
+                        "Motion macros",
+                        "Gobos"
+                    ]
+                },
+                {
+                    "name": "5 DMX channel mode",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Dimmer/strobe",
+                        "Color macros",
+                        "Gobos"
+                    ]
+                }
+            ]
+        }
+    ]
+}

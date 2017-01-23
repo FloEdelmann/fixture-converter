@@ -1,0 +1,129 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "LED PAR64 RGBA",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [380, 260, 280],
+                "weight": 2.4,
+                "power": 27,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "PC",
+                    "degreesMinMax": [36, 36]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue"
+                        }
+                    ]
+                },
+                "Amber": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "None"
+                        },
+                        {
+                            "range": [1, 5],
+                            "name": "Music 15 colors"
+                        },
+                        {
+                            "range": [6, 10],
+                            "name": "On"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "Strobe slow to fast"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "4 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Amber"
+                    ]
+                },
+                {
+                    "name": "6 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Amber",
+                        "Dimmer",
+                        "Effect"
+                    ]
+                }
+            ]
+        }
+    ]
+}

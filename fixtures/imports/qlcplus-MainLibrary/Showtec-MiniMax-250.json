@@ -1,0 +1,248 @@
+{
+    "manufacturers": {
+        "Showtec": {
+            "name": "Showtec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Showtec",
+            "name": "MiniMax 250",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [220, 350, 220],
+                "weight": 6,
+                "power": 250,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "ELC 250W",
+                    "colorTemperature": 3400
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [17, 17]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 510,
+                    "tiltMax": 260
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Speed"
+                        }
+                    ]
+                },
+                "Colour Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Open/White"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [32, 43],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [44, 55],
+                            "name": "Blue"
+                        },
+                        {
+                            "range": [56, 67],
+                            "name": "Yellow"
+                        },
+                        {
+                            "range": [68, 79],
+                            "name": "Magenta"
+                        },
+                        {
+                            "range": [80, 91],
+                            "name": "Cyan"
+                        },
+                        {
+                            "range": [92, 107],
+                            "name": "Orange"
+                        },
+                        {
+                            "range": [108, 119],
+                            "name": "Pink"
+                        },
+                        {
+                            "range": [120, 135],
+                            "name": "Mix Red-Green"
+                        },
+                        {
+                            "range": [136, 151],
+                            "name": "Mix Green-Blue"
+                        },
+                        {
+                            "range": [152, 167],
+                            "name": "Mix Blue-Yellow"
+                        },
+                        {
+                            "range": [168, 183],
+                            "name": "Mix Yellow-Magenta"
+                        },
+                        {
+                            "range": [184, 199],
+                            "name": "Mix Magenta-Cyan"
+                        },
+                        {
+                            "range": [200, 215],
+                            "name": "Mix Cyan-Orange"
+                        },
+                        {
+                            "range": [216, 227],
+                            "name": "Mix Orange-Pink"
+                        },
+                        {
+                            "range": [228, 239],
+                            "name": "Mix Pink-White"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Rainbow"
+                        }
+                    ]
+                },
+                "Gobo Wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 23],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [24, 47],
+                            "name": "Gobo 1 (Stars)"
+                        },
+                        {
+                            "range": [48, 71],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [72, 95],
+                            "name": "Gobo 3 (Flowers)"
+                        },
+                        {
+                            "range": [96, 119],
+                            "name": "Gobo 4 (Stars & Spirals)"
+                        },
+                        {
+                            "range": [120, 143],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [144, 167],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [168, 191],
+                            "name": "Gobot 7"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Wheel rotation"
+                        }
+                    ]
+                },
+                "Strobe / Dimmer": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [16, 127],
+                            "name": "Intensity"
+                        },
+                        {
+                            "range": [128, 239],
+                            "name": "Strobe effect"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Lamp Control": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Lamp ON"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Reset after 5 seconds"
+                        },
+                        {
+                            "range": [192, 250],
+                            "name": "Lamp OFF"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Lamp OFF after 10 seconds"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Standard",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan/Tilt Speed",
+                        "Colour Wheel",
+                        "Gobo Wheel",
+                        "Strobe / Dimmer"
+                    ]
+                },
+                {
+                    "name": "Extended",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan/Tilt Speed",
+                        "Colour Wheel",
+                        "Gobo Wheel",
+                        "Strobe / Dimmer",
+                        "Lamp Control"
+                    ]
+                }
+            ]
+        }
+    ]
+}

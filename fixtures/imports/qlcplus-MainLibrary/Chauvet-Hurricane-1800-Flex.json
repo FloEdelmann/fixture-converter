@@ -1,0 +1,49 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "Hurricane 1800 Flex",
+            "type": "Smoke",
+            "physical": {
+                "dimensions": [347, 374, 585],
+                "weight": 13,
+                "power": 1364,
+                "DMXconnector": "3-pin and 5-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Fog Output": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [6, 255],
+                            "name": "Fog Output 0% -> 100%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "DMX Mode",
+                    "channels": [
+                        "Fog Output"
+                    ]
+                }
+            ]
+        }
+    ]
+}

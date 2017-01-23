@@ -1,0 +1,284 @@
+{
+    "manufacturers": {
+        "Pro-Lights": {
+            "name": "Pro-Lights"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Pro-Lights",
+            "name": "LumiPAR18QPRO",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [302, 239, 259],
+                "weight": 5,
+                "power": 200,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 3000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [33, 33]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master Dimmer"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Intensity"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Intensity"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Intensity"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White Intensity"
+                        }
+                    ]
+                },
+                "Color Macro": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [11, 30],
+                            "name": "R:100%/G:100%/B:0%"
+                        },
+                        {
+                            "range": [31, 50],
+                            "name": "R:0-100%/G:100%/B:0%"
+                        },
+                        {
+                            "range": [51, 70],
+                            "name": "R:0%/G:100%/B:0-100%"
+                        },
+                        {
+                            "range": [71, 90],
+                            "name": "R:0%/G:100-0%/B:100%"
+                        },
+                        {
+                            "range": [91, 110],
+                            "name": "R:0-100%/G:0%/B:100%"
+                        },
+                        {
+                            "range": [111, 130],
+                            "name": "R:100%/G:0%/B:100-0%"
+                        },
+                        {
+                            "range": [131, 150],
+                            "name": "R:100%/G:0-100%/B:0-100%"
+                        },
+                        {
+                            "range": [151, 170],
+                            "name": "R:100-0%/G:100-0%/B:100%"
+                        },
+                        {
+                            "range": [171, 200],
+                            "name": "R:100%/G:100%/B:100%"
+                        },
+                        {
+                            "range": [201, 205],
+                            "name": "Color Temp 1"
+                        },
+                        {
+                            "range": [206, 210],
+                            "name": "Color Temp 2"
+                        },
+                        {
+                            "range": [211, 215],
+                            "name": "Color Temp 3"
+                        },
+                        {
+                            "range": [216, 220],
+                            "name": "Color Temp 4"
+                        },
+                        {
+                            "range": [221, 225],
+                            "name": "Color Temp 5"
+                        },
+                        {
+                            "range": [226, 230],
+                            "name": "Color Temp 6"
+                        },
+                        {
+                            "range": [231, 235],
+                            "name": "Color Temp 7"
+                        },
+                        {
+                            "range": [236, 240],
+                            "name": "Color Temp 8"
+                        },
+                        {
+                            "range": [241, 245],
+                            "name": "Color Temp 9"
+                        },
+                        {
+                            "range": [246, 250],
+                            "name": "Color Temp 10"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Color Temp 11"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "1~20hz"
+                        }
+                    ]
+                },
+                "Auto Program": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 51],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [52, 101],
+                            "name": "Auto Program 1"
+                        },
+                        {
+                            "range": [102, 152],
+                            "name": "Auto Program 2"
+                        },
+                        {
+                            "range": [153, 203],
+                            "name": "Auto Program 3"
+                        },
+                        {
+                            "range": [204, 254],
+                            "name": "Auto Program 4"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Auto Program 5"
+                        }
+                    ]
+                },
+                "Auto Speed Adj": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow-Fast"
+                        }
+                    ]
+                },
+                "Dimmer Speed": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 51],
+                            "name": "Build-in Dimmer"
+                        },
+                        {
+                            "range": [52, 152],
+                            "name": "Non-Lin Dimmer 1"
+                        },
+                        {
+                            "range": [153, 203],
+                            "name": "Non-Lin Dimmer 2"
+                        },
+                        {
+                            "range": [204, 255],
+                            "name": "Non-Lin Dimmer 3"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "10 Ch Mode",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Color Macro",
+                        "Strobe",
+                        "Auto Program",
+                        "Auto Speed Adj",
+                        "Dimmer Speed"
+                    ]
+                },
+                {
+                    "name": "5 Ch Mode",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White"
+                    ]
+                },
+                {
+                    "name": "4 Ch Mode",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,217 @@
+{
+    "manufacturers": {
+        "Cameo": {
+            "name": "Cameo"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Cameo",
+            "name": "Flat PAR CAN TRI 3W",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [176, 180, 113],
+                "weight": 1.2,
+                "power": 25,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [30, 30]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Master dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Stroboscope rate": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [5, 15],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [16, 26],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [27, 37],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [38, 48],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [49, 59],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [60, 70],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [71, 80],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [81, 150],
+                            "name": "Colour change (rate)"
+                        },
+                        {
+                            "range": [151, 220],
+                            "name": "Colour blending (rate)"
+                        },
+                        {
+                            "range": [221, 255],
+                            "name": "Music control (microphone sensitivity)"
+                        }
+                    ]
+                },
+                "Colour macro": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 36],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [37, 73],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [74, 110],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [111, 147],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [148, 184],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [185, 221],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [222, 255],
+                            "name": "White",
+                            "color": "#ffffff"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "2-Channel Mode",
+                    "channels": [
+                        "Master dimmer",
+                        "Colour macro"
+                    ]
+                },
+                {
+                    "name": "3-Channel Mode 1",
+                    "channels": [
+                        "Master dimmer",
+                        "Stroboscope rate",
+                        "Mode"
+                    ]
+                },
+                {
+                    "name": "3-Channel Mode 2",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "6-Channel Mode",
+                    "channels": [
+                        "Master dimmer",
+                        "Stroboscope rate",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Mode"
+                    ]
+                }
+            ]
+        }
+    ]
+}

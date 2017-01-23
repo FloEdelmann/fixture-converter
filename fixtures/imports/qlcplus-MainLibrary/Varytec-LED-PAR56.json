@@ -1,0 +1,165 @@
+{
+    "manufacturers": {
+        "Varytec": {
+            "name": "Varytec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Varytec",
+            "name": "LED PAR56",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [210, 210, 300],
+                "weight": 1.2,
+                "power": 20,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [30, 30]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [1, 15],
+                            "name": "Dimmer/off (channel 6>31 and <128)"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Dimmer/on (channel 6>31 and <128)"
+                        }
+                    ]
+                },
+                "Macro": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Macro Off"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Macro On"
+                        }
+                    ]
+                },
+                "Speed/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Strobe off/Speed slow - fast (channel 6>31 and <224)"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Strobe with 16 adjustable speeds/Speed slow - fast (channel 6>31 and <224)"
+                        }
+                    ]
+                },
+                "Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Color Setting"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Lightness decreasing (Fade Out)"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Lightness increasing (Fade In)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Fade Out and In mode"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Mix color automatically"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "3-Color flash in turn (Chasing)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "7-Color flash in turn (Chasing)"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Sound Action"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [1, 15],
+                            "name": "Dimmer/off (channel 6>31 and <128)"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Dimmer/on (channel 6>31 and <128)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [1, 15],
+                            "name": "Dimmer/off (channel 6>31 and <128)"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Dimmer/on (channel 6>31 and <128)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "6 DMX channels",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Macro",
+                        "Speed/Strobe",
+                        "Mode"
+                    ]
+                }
+            ]
+        }
+    ]
+}

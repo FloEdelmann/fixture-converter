@@ -1,0 +1,280 @@
+{
+    "manufacturers": {
+        "JB Systems": {
+            "name": "JB Systems"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "JB Systems",
+            "name": "Dynaspot",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [175, 261, 141],
+                "weight": 2.8,
+                "power": 37,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "8-bit"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "16-bit"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "8-bit"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "16-bit"
+                        }
+                    ]
+                },
+                "Pan / Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "000 = fast ~ 255 = slow"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Strobe / Shutter Effect": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Closed (no output)"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [16, 131],
+                            "name": "1: (slow -> fast)"
+                        },
+                        {
+                            "range": [132, 139],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [140, 181],
+                            "name": "2: Slow open / instant close (slow -> fast)"
+                        },
+                        {
+                            "range": [182, 189],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [190, 231],
+                            "name": "3: Instant open / slow close (slow -> fast)"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "4: Random strobe"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Color Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "1: White (open)",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [15, 28],
+                            "name": "2: Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [29, 42],
+                            "name": "3: Orange",
+                            "color": "#ff8000"
+                        },
+                        {
+                            "range": [43, 56],
+                            "name": "4: Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [57, 70],
+                            "name": "5: Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [71, 84],
+                            "name": "6: Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [85, 98],
+                            "name": "7: Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [99, 112],
+                            "name": "8: Light blue",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [113, 255],
+                            "name": "Turning (slow -> fast)"
+                        }
+                    ]
+                },
+                "Gobo Wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "Open (no gobo)"
+                        },
+                        {
+                            "range": [15, 28],
+                            "name": "1"
+                        },
+                        {
+                            "range": [29, 42],
+                            "name": "2"
+                        },
+                        {
+                            "range": [43, 56],
+                            "name": "3"
+                        },
+                        {
+                            "range": [57, 70],
+                            "name": "4"
+                        },
+                        {
+                            "range": [71, 84],
+                            "name": "5"
+                        },
+                        {
+                            "range": [85, 98],
+                            "name": "6"
+                        },
+                        {
+                            "range": [99, 255],
+                            "name": "Turning (slow -> fast)"
+                        }
+                    ]
+                },
+                "Special Functions": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Normal DMX-mode"
+                        },
+                        {
+                            "range": [8, 10],
+                            "name": "Reset all (after 5 sec)"
+                        },
+                        {
+                            "range": [11, 247],
+                            "name": "Not used"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Random program (audio triggered)"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "8-Ch",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan / Tilt Speed",
+                        "Dimmer",
+                        "Strobe / Shutter Effect",
+                        "Color Wheel",
+                        "Gobo Wheel",
+                        "Special Functions"
+                    ]
+                },
+                {
+                    "name": "10-Ch",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Pan / Tilt Speed",
+                        "Dimmer",
+                        "Strobe / Shutter Effect",
+                        "Color Wheel",
+                        "Gobo Wheel",
+                        "Special Functions"
+                    ]
+                }
+            ]
+        }
+    ]
+}

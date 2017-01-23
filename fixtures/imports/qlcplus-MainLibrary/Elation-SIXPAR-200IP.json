@@ -1,0 +1,557 @@
+{
+    "manufacturers": {
+        "Elation": {
+            "name": "Elation"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Elation",
+            "name": "SIXPAR 200IP",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [157, 300, 313],
+                "weight": 5.7,
+                "power": 150,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 2100
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [15, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red (0-100%)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green (0-100%)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue (0-100%)"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White (0-100%)"
+                        }
+                    ]
+                },
+                "Amber": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber (0-100%)"
+                        }
+                    ]
+                },
+                "U.V.": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "U.V. (0-100%)"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer (0 - 100%)"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "LED OFF (NO STROE)"
+                        },
+                        {
+                            "range": [32, 95],
+                            "name": "Strobe Effect SLOW to FAST"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "LED ON (NO STROBE)"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Strobe Pulse Effect In Sequences SLOW to FAST"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "LED ON (NO STROBE)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random Strobe Effect SLOW to FAST"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "LED ON (NO STROBE)"
+                        }
+                    ]
+                },
+                "Color Macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "OFF"
+                        },
+                        {
+                            "range": [4, 7],
+                            "name": "RED",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [8, 11],
+                            "name": "GREEN",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [12, 15],
+                            "name": "BLUE",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [16, 19],
+                            "name": "WHITE",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [20, 23],
+                            "name": "AMBER",
+                            "color": "#ce8900"
+                        },
+                        {
+                            "range": [24, 27],
+                            "name": "U.V.",
+                            "color": "#7100aa"
+                        },
+                        {
+                            "range": [28, 31],
+                            "name": "RED+GREEN",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [32, 35],
+                            "name": "RED+BLUE",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [36, 39],
+                            "name": "RED+WHITE",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [40, 43],
+                            "name": "RED+AMBER",
+                            "color": "#ff0000",
+                            "color2": "#ce8900"
+                        },
+                        {
+                            "range": [44, 47],
+                            "name": "RED+U.V.",
+                            "color": "#ff0000",
+                            "color2": "#7100aa"
+                        },
+                        {
+                            "range": [48, 51],
+                            "name": "GREEN+BLUE",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [52, 55],
+                            "name": "GREEN+WHITE",
+                            "color": "#00ff00",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [56, 59],
+                            "name": "GREEN+AMBER",
+                            "color": "#00ff00",
+                            "color2": "#ce8900"
+                        },
+                        {
+                            "range": [60, 63],
+                            "name": "GREEN+U.V.",
+                            "color": "#00ff00",
+                            "color2": "#7100aa"
+                        },
+                        {
+                            "range": [64, 67],
+                            "name": "BLUE+WHITE",
+                            "color": "#0000ff",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [68, 71],
+                            "name": "BLUE+AMBER",
+                            "color": "#0000ff",
+                            "color2": "#ce8900"
+                        },
+                        {
+                            "range": [72, 75],
+                            "name": "BLUE+U.V.",
+                            "color": "#0000ff",
+                            "color2": "#7100aa"
+                        },
+                        {
+                            "range": [76, 79],
+                            "name": "WHITE+AMBER",
+                            "color": "#ffffff",
+                            "color2": "#ce8900"
+                        },
+                        {
+                            "range": [80, 83],
+                            "name": "WHITE+U.V.",
+                            "color": "#ffffff",
+                            "color2": "#7100aa"
+                        },
+                        {
+                            "range": [84, 87],
+                            "name": "AMBER+U.V.",
+                            "color": "#ce8900",
+                            "color2": "#7100aa"
+                        },
+                        {
+                            "range": [88, 91],
+                            "name": "RED+GREEN+BLUE"
+                        },
+                        {
+                            "range": [92, 95],
+                            "name": "RED+GREEN+WHITE"
+                        },
+                        {
+                            "range": [96, 99],
+                            "name": "RED+GREEN+AMBER"
+                        },
+                        {
+                            "range": [100, 103],
+                            "name": "RED+GREEN+U.V."
+                        },
+                        {
+                            "range": [104, 107],
+                            "name": "RED+BLUE+WHITE"
+                        },
+                        {
+                            "range": [108, 111],
+                            "name": "RED+BLUE+AMBER"
+                        },
+                        {
+                            "range": [112, 115],
+                            "name": "RED+BLUE+U.V."
+                        },
+                        {
+                            "range": [116, 119],
+                            "name": "RED+WHITE+AMBER"
+                        },
+                        {
+                            "range": [120, 123],
+                            "name": "RED+WHITE+U.V."
+                        },
+                        {
+                            "range": [124, 127],
+                            "name": "RED+AMBER+U.V."
+                        },
+                        {
+                            "range": [128, 131],
+                            "name": "GREEN+BLUE+WHITE"
+                        },
+                        {
+                            "range": [132, 135],
+                            "name": "GREEN+BLUE+AMBER"
+                        },
+                        {
+                            "range": [136, 139],
+                            "name": "GREEN+BLUE+U.V."
+                        },
+                        {
+                            "range": [140, 143],
+                            "name": "GREEN+WHITE+AMBER"
+                        },
+                        {
+                            "range": [144, 147],
+                            "name": "GREEN+WHITE+U.V."
+                        },
+                        {
+                            "range": [148, 151],
+                            "name": "GREEN+AMBER+U.V."
+                        },
+                        {
+                            "range": [152, 155],
+                            "name": "BLUE+WHITE+AMBER"
+                        },
+                        {
+                            "range": [156, 159],
+                            "name": "BLUE+WHITE+U.V."
+                        },
+                        {
+                            "range": [160, 163],
+                            "name": "BLUE+AMBER+U.V."
+                        },
+                        {
+                            "range": [164, 167],
+                            "name": "WHITE+AMBER+U.V."
+                        },
+                        {
+                            "range": [168, 171],
+                            "name": "RED+GREEN+BLUE+WHITE"
+                        },
+                        {
+                            "range": [172, 175],
+                            "name": "RED+GREEN+BLUE+AMBER"
+                        },
+                        {
+                            "range": [176, 179],
+                            "name": "RED+GREEN+BLUE+U.V."
+                        },
+                        {
+                            "range": [180, 183],
+                            "name": "RED+GREEN+WHITE+AMBER"
+                        },
+                        {
+                            "range": [184, 187],
+                            "name": "RED+GREEN+WHITE+U.V."
+                        },
+                        {
+                            "range": [188, 191],
+                            "name": "RED+GREEN+AMBER+U.V."
+                        },
+                        {
+                            "range": [192, 195],
+                            "name": "RED+BLUE+WHITE+AMBER"
+                        },
+                        {
+                            "range": [196, 199],
+                            "name": "RED+GREEN+WHITE+U.V."
+                        },
+                        {
+                            "range": [200, 203],
+                            "name": "RED+GREEN+AMBER+U.V."
+                        },
+                        {
+                            "range": [204, 207],
+                            "name": "RED+WHITE+AMBE+U.V."
+                        },
+                        {
+                            "range": [208, 211],
+                            "name": "GREEN+BLUE+WHITE+AMBER"
+                        },
+                        {
+                            "range": [212, 215],
+                            "name": "GREEN+BLUE+WHITE+U.V."
+                        },
+                        {
+                            "range": [216, 219],
+                            "name": "GREEN+BLUE+AMBER+U.V."
+                        },
+                        {
+                            "range": [220, 223],
+                            "name": "GREEN+WHITE+AMBER+U.V."
+                        },
+                        {
+                            "range": [224, 227],
+                            "name": "BLUE+WHITE+AMBER+U.V."
+                        },
+                        {
+                            "range": [228, 231],
+                            "name": "RED+GREEN+BLUE+WHITE+AMBER"
+                        },
+                        {
+                            "range": [232, 235],
+                            "name": "RED+GREEN+BLUE+WHITE+U.V."
+                        },
+                        {
+                            "range": [236, 239],
+                            "name": "RED+GREEN+BLUE+AMBER+U.V."
+                        },
+                        {
+                            "range": [240, 243],
+                            "name": "RED+GREEN+WHITE+AMBER+U.V."
+                        },
+                        {
+                            "range": [244, 247],
+                            "name": "RED+BLUE+WHITE+AMBER+U.V."
+                        },
+                        {
+                            "range": [248, 251],
+                            "name": "GREEN+BLUE+WHITE+AMBER+U.V."
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "RED+GREEN+BLUE+WHITE+AMBER+U.V."
+                        }
+                    ]
+                },
+                "Colour Chase Macros": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "NO Function"
+                        },
+                        {
+                            "range": [21, 40],
+                            "name": "30 Colour Chase"
+                        },
+                        {
+                            "range": [41, 60],
+                            "name": "6 Colour Chase"
+                        },
+                        {
+                            "range": [61, 80],
+                            "name": "Colour Fade Chase"
+                        },
+                        {
+                            "range": [81, 255],
+                            "name": "NO Function"
+                        }
+                    ]
+                },
+                "Colour Chase Macros Speed": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Chase Speed of CHANNEL 10 - SLOW to FAST"
+                        }
+                    ]
+                },
+                "Dimming Modes": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "Standard"
+                        },
+                        {
+                            "range": [21, 40],
+                            "name": "Stage"
+                        },
+                        {
+                            "range": [41, 60],
+                            "name": "TV"
+                        },
+                        {
+                            "range": [61, 80],
+                            "name": "Archictural"
+                        },
+                        {
+                            "range": [81, 100],
+                            "name": "Theater"
+                        },
+                        {
+                            "range": [101, 255],
+                            "name": "NO Function"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "12 channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "U.V.",
+                        "Dimmer",
+                        "Strobe",
+                        "Color Macros",
+                        "Colour Chase Macros",
+                        "Colour Chase Macros Speed",
+                        "Dimming Modes"
+                    ]
+                },
+                {
+                    "name": "8 channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "U.V.",
+                        "Dimmer",
+                        "Strobe"
+                    ]
+                },
+                {
+                    "name": "7 channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "U.V.",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "6 channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "U.V."
+                    ]
+                }
+            ]
+        }
+    ]
+}

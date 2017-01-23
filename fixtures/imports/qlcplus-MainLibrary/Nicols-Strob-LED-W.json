@@ -1,0 +1,65 @@
+{
+    "manufacturers": {
+        "Nicols": {
+            "name": "Nicols"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Nicols",
+            "name": "Strob LED W",
+            "type": "Effect",
+            "physical": {
+                "dimensions": [315, 181, 114],
+                "weight": 0.84,
+                "power": 18,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer / Strobe": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [8, 190],
+                            "name": "Dimmer"
+                        },
+                        {
+                            "range": [191, 200],
+                            "name": "Strobe"
+                        },
+                        {
+                            "range": [201, 247],
+                            "name": "Strobe Slow to Fast"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Open"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "DMX Mode",
+                    "channels": [
+                        "Dimmer / Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

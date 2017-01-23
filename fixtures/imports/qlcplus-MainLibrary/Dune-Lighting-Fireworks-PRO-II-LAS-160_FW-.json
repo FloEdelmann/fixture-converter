@@ -1,0 +1,215 @@
+{
+    "manufacturers": {
+        "Dune Lighting": {
+            "name": "Dune Lighting"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Dune Lighting",
+            "name": "Fireworks PRO II (LAS-160/FW)",
+            "type": "Laser",
+            "physical": {
+                "dimensions": [256, 102, 202],
+                "weight": 3,
+                "power": 20,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 120,
+                    "tiltMax": 120
+                }
+            },
+            "availableChannels": {
+                "Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Laser Black out"
+                        },
+                        {
+                            "range": [10, 60],
+                            "name": "ARA, Automatic Aleatory"
+                        },
+                        {
+                            "range": [61, 110],
+                            "name": "ASR, Effect Slow Moving"
+                        },
+                        {
+                            "range": [111, 160],
+                            "name": "SRA, Musical Aleatory"
+                        },
+                        {
+                            "range": [161, 255],
+                            "name": "DMX Mode (other channel active)"
+                        }
+                    ]
+                },
+                "Effects": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 25],
+                            "name": "Effect 1"
+                        },
+                        {
+                            "range": [26, 50],
+                            "name": "Effect 2"
+                        },
+                        {
+                            "range": [51, 75],
+                            "name": "Effect 3"
+                        },
+                        {
+                            "range": [76, 100],
+                            "name": "Effect 4"
+                        },
+                        {
+                            "range": [101, 125],
+                            "name": "Effect 5"
+                        },
+                        {
+                            "range": [126, 150],
+                            "name": "Effect 6"
+                        },
+                        {
+                            "range": [151, 175],
+                            "name": "Effect 7"
+                        },
+                        {
+                            "range": [176, 200],
+                            "name": "Effect 8"
+                        },
+                        {
+                            "range": [201, 225],
+                            "name": "Effect 9"
+                        },
+                        {
+                            "range": [226, 255],
+                            "name": "Effect 10"
+                        }
+                    ]
+                },
+                "Vibration": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow to fast"
+                        }
+                    ]
+                },
+                "Multiple Effects": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "OFF"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "ON"
+                        }
+                    ]
+                },
+                "Vibration 2": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow to Fast"
+                        }
+                    ]
+                },
+                "Timer": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Short to Long"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 36],
+                            "name": "Laser Black Out",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [37, 72],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [73, 108],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [109, 144],
+                            "name": "Alternately Strobe Red and Green",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [145, 180],
+                            "name": "Red on, Strobe Green",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [181, 216],
+                            "name": "Green On, Strobe Red",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [217, 255],
+                            "name": "Strobe Red and Green",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Strobe OFF"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Slow to Fast"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "8 channel",
+                    "channels": [
+                        "Mode",
+                        "Effects",
+                        "Vibration",
+                        "Multiple Effects",
+                        "Vibration 2",
+                        "Timer",
+                        "Color",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,222 @@
+{
+    "manufacturers": {
+        "Starway": {
+            "name": "Starway"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Starway",
+            "name": "MaxKolor 18",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [250, 220, 376],
+                "weight": 7,
+                "power": 102,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [23, 23]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 230
+                }
+            },
+            "availableChannels": {
+                "Macros": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 24],
+                            "name": "RGB Mode"
+                        },
+                        {
+                            "range": [25, 49],
+                            "name": "Macro 1"
+                        },
+                        {
+                            "range": [50, 74],
+                            "name": "Macro 2"
+                        },
+                        {
+                            "range": [75, 99],
+                            "name": "Macro 3"
+                        },
+                        {
+                            "range": [100, 124],
+                            "name": "Macro 4"
+                        },
+                        {
+                            "range": [125, 149],
+                            "name": "Macro 5"
+                        },
+                        {
+                            "range": [150, 174],
+                            "name": "Macro 6"
+                        },
+                        {
+                            "range": [175, 199],
+                            "name": "Macro 7"
+                        },
+                        {
+                            "range": [200, 224],
+                            "name": "Macro 8"
+                        },
+                        {
+                            "range": [225, 255],
+                            "name": "Macro 9"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 > max"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 > max"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 > max"
+                        }
+                    ]
+                },
+                "Strobe/Macro Speed": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "None/Macro speed"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Fast to slow/Macro speed"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "RGB mode only"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 > 540°"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 > 230°"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 > max"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 > max"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Max > 0"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "16 Bit",
+                    "channels": [
+                        "Macros",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Strobe/Macro Speed",
+                        "Dimmer",
+                        "Pan",
+                        "Tilt",
+                        "Pan/Tilt Speed",
+                        "Pan Fine",
+                        "Tilt Fine"
+                    ]
+                },
+                {
+                    "name": "8 Bit",
+                    "channels": [
+                        "Macros",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Strobe/Macro Speed",
+                        "Dimmer",
+                        "Pan",
+                        "Tilt",
+                        "Pan/Tilt Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

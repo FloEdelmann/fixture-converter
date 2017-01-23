@@ -1,0 +1,229 @@
+{
+    "manufacturers": {
+        "JB Systems": {
+            "name": "JB Systems"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "JB Systems",
+            "name": "The Winner II",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [200, 155, 500],
+                "weight": 10,
+                "power": 350,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "ELC 250W",
+                    "lumens": 1800
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [13, 13]
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 180,
+                    "tiltMax": 90
+                }
+            },
+            "availableChannels": {
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Stopped"
+                        },
+                        {
+                            "range": [10, 91],
+                            "name": "Cycle gobo+color - slow to fast"
+                        },
+                        {
+                            "range": [92, 173],
+                            "name": "Cycle color - slow to fast"
+                        },
+                        {
+                            "range": [174, 255],
+                            "name": "Cycle gobo - slow to fast"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [8, 8],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [16, 16],
+                            "name": "1 - Circle"
+                        },
+                        {
+                            "range": [24, 24],
+                            "name": "2 - Square outline"
+                        },
+                        {
+                            "range": [32, 32],
+                            "name": "3 - Circle outline"
+                        },
+                        {
+                            "range": [40, 40],
+                            "name": "4 - Circle dotted outline"
+                        },
+                        {
+                            "range": [48, 48],
+                            "name": "5 - Sunrise"
+                        },
+                        {
+                            "range": [56, 56],
+                            "name": "6 - Circle zoom"
+                        },
+                        {
+                            "range": [64, 64],
+                            "name": "7 - Four circles"
+                        },
+                        {
+                            "range": [72, 72],
+                            "name": "8 - Hand"
+                        },
+                        {
+                            "range": [80, 80],
+                            "name": "10 - Circle woods texture"
+                        },
+                        {
+                            "range": [88, 88],
+                            "name": "11 - Circle stripes"
+                        },
+                        {
+                            "range": [96, 96],
+                            "name": "11 - Circle tilted"
+                        },
+                        {
+                            "range": [104, 104],
+                            "name": "12 - Dots"
+                        },
+                        {
+                            "range": [112, 112],
+                            "name": "13 - Pinwheel"
+                        },
+                        {
+                            "range": [120, 120],
+                            "name": "14 - Twirl"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Cycle slow-fast"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [11, 11],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [22, 22],
+                            "name": "Orange",
+                            "color": "#ff7f00"
+                        },
+                        {
+                            "range": [33, 33],
+                            "name": "Light blue",
+                            "color": "#7f7fff"
+                        },
+                        {
+                            "range": [44, 44],
+                            "name": "Amber",
+                            "color": "#ffc000"
+                        },
+                        {
+                            "range": [55, 55],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [66, 66],
+                            "name": "Purple",
+                            "color": "#7f00ff"
+                        },
+                        {
+                            "range": [77, 77],
+                            "name": "Pink",
+                            "color": "#ffaaff"
+                        },
+                        {
+                            "range": [88, 88],
+                            "name": "Light green",
+                            "color": "#7fff7f"
+                        },
+                        {
+                            "range": [99, 99],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [110, 110],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [121, 121],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Cycle slow to fast"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Shutter",
+                        "Gobo",
+                        "Color",
+                        "Pan",
+                        "Tilt"
+                    ]
+                }
+            ]
+        }
+    ]
+}

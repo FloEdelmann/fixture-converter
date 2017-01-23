@@ -1,0 +1,92 @@
+{
+    "manufacturers": {
+        "Eliminator Lighting": {
+            "name": "Eliminator Lighting"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eliminator Lighting",
+            "name": "Electro 86",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [217, 168, 182],
+                "weight": 1.26,
+                "power": 10,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue"
+                        }
+                    ]
+                },
+                "Intensity and Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 189],
+                            "name": "Intensity"
+                        },
+                        {
+                            "range": [190, 250],
+                            "name": "Strobe (Slow->Fast)"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "No Function"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Intensity and Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

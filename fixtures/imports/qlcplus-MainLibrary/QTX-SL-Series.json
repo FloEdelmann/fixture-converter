@@ -1,0 +1,223 @@
+{
+    "manufacturers": {
+        "QTX": {
+            "name": "QTX"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "QTX",
+            "name": "SL Series",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [150, 160, 120],
+                "weight": 1.15,
+                "power": 10,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [135, 135]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255]
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255]
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255]
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255]
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255]
+                        }
+                    ]
+                },
+                "Effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 250],
+                            "name": "Strobe slow to fast"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Sound Activated"
+                        }
+                    ]
+                },
+                "Mode": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [8, 190],
+                            "name": "Dimming [0-100%]"
+                        },
+                        {
+                            "range": [191, 195],
+                            "name": "Sound to Light [Pulse]"
+                        },
+                        {
+                            "range": [196, 200],
+                            "name": "Sound to Light [Strobe]"
+                        },
+                        {
+                            "range": [201, 247],
+                            "name": "Strobe"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Open [100%]"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "SL-36",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Dimmer",
+                        "Effect"
+                    ]
+                },
+                {
+                    "name": "SL-64",
+                    "physical": {
+                        "dimensions": [270, 275, 70],
+                        "weight": 2.1,
+                        "power": 25,
+                        "lens": {
+                            "degreesMinMax": [25, 25]
+                        }
+                    },
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Dimmer",
+                        "Effect"
+                    ]
+                },
+                {
+                    "name": "SL-SW",
+                    "physical": {
+                        "dimensions": [270, 275, 70],
+                        "weight": 2.15,
+                        "power": 35
+                    },
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Dimmer",
+                        "Effect"
+                    ]
+                },
+                {
+                    "name": "SL-Q8",
+                    "physical": {
+                        "dimensions": [240, 240, 80],
+                        "weight": 2.85,
+                        "power": 100,
+                        "lens": {
+                            "degreesMinMax": [35, 35]
+                        }
+                    },
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Dimmer",
+                        "Effect"
+                    ]
+                },
+                {
+                    "name": "SL-Q12",
+                    "physical": {
+                        "dimensions": [270, 270, 90],
+                        "weight": 3.15,
+                        "power": 160,
+                        "lens": {
+                            "degreesMinMax": [35, 35]
+                        }
+                    },
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Dimmer",
+                        "Effect"
+                    ]
+                },
+                {
+                    "name": "SL-[153.778]",
+                    "physical": {
+                        "dimensions": [200, 280, 100],
+                        "weight": 1.8,
+                        "power": 30
+                    },
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Mode"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,226 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "HL-x9 Quad Color Flood 9x8W",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [300, 165, 125],
+                "weight": 4,
+                "power": 76,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [35, 35]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White"
+                        }
+                    ]
+                },
+                "Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Constant color, set with channels 2-5"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Automatic color change 7 colors"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Automatic color change 12 colors"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Automatic color change 4 colors"
+                        }
+                    ]
+                },
+                "Effect Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No automatic color change"
+                        },
+                        {
+                            "range": [11, 100],
+                            "name": "Automatic color change as set in channel 1 (fast to slow)"
+                        },
+                        {
+                            "range": [101, 150],
+                            "name": "No automatic color change"
+                        },
+                        {
+                            "range": [151, 255],
+                            "name": "Automatic color change as set in channel 1, speed random"
+                        }
+                    ]
+                },
+                "Color Pattern": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No color pattern"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "One of 31 color patterns (channels 6,7 disabled)"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No strobe"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Strobe (slow to fast), Channel 5 has to be 0-15"
+                        }
+                    ]
+                },
+                "Extended Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Constant color (defined by channels 1-4)"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Fade-out, speed controlled by channel 6, color defined by channels 2-5"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Fade-in, speed controlled by channel 6, color defined by channels 2-5"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Fade-in-out, speed controlled by channel 6, color defined by channels 2-5"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Auto-mix, speed controlled by channel 6, channels 1-5 without function"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Chase (4 colors), speed controlled by channel 6, channels 1-5 without function"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Chase (12 colors), speed controlled by channel 6, channels 1-5 without function"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Music controlled color change (12 colors)"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer (0% to 100%)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "4 Channels",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White"
+                    ]
+                },
+                {
+                    "name": "6 channels",
+                    "channels": [
+                        "Mode",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Effect Speed"
+                    ]
+                },
+                {
+                    "name": "8 channels",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Color Pattern",
+                        "Strobe",
+                        "Extended Mode",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

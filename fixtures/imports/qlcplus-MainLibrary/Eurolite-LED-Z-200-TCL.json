@@ -1,0 +1,139 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "LED Z-200 TCL",
+            "type": "Flower",
+            "physical": {
+                "dimensions": [280, 300, 360],
+                "weight": 3,
+                "power": 40,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Motor Rotation": {
+                    "type": "Nothing",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [21, 170],
+                            "name": "Step by step counter clockwise rotation"
+                        },
+                        {
+                            "range": [171, 255],
+                            "name": "Clockwise and counter clockwise rotation"
+                        }
+                    ]
+                },
+                "LED effects": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 35],
+                            "name": "All LEDs on"
+                        },
+                        {
+                            "range": [36, 70],
+                            "name": "Strobe-effect"
+                        },
+                        {
+                            "range": [71, 105],
+                            "name": "Fade"
+                        },
+                        {
+                            "range": [106, 140],
+                            "name": "Color-change"
+                        },
+                        {
+                            "range": [141, 175],
+                            "name": "Color-change + strobe"
+                        },
+                        {
+                            "range": [176, 210],
+                            "name": "Cross-fade"
+                        },
+                        {
+                            "range": [211, 255],
+                            "name": "Cross-fade + strobe"
+                        }
+                    ]
+                },
+                "Speed settings for control channel 2": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Increasing speed"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "6-channel",
+                    "channels": [
+                        "Motor Rotation",
+                        "LED effects",
+                        "Speed settings for control channel 2",
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

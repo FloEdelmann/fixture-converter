@@ -1,0 +1,244 @@
+{
+    "manufacturers": {
+        "Proel": {
+            "name": "Proel"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Proel",
+            "name": "Tarkus 575 Spot",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [467, 563, 362],
+                "weight": 27,
+                "power": 675,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "HMI 575W"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 280
+                }
+            },
+            "availableChannels": {
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Dimmer 0>100%"
+                        },
+                        {
+                            "range": [128, 247],
+                            "name": "Strobe (slow>fast)"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "White"
+                        }
+                    ]
+                },
+                "Colors": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Orange",
+                            "color": "#ff8000"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Purple",
+                            "color": "#c000c0"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Rainbow (slow>fast)"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "White"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Gobo 7"
+                        }
+                    ]
+                },
+                "RotoGobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Static"
+                        },
+                        {
+                            "range": [8, 131],
+                            "name": "Clockwise rotation (slow>fast)"
+                        },
+                        {
+                            "range": [132, 255],
+                            "name": "Counter clockwise rotation (slow>fast)"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Focus"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 27],
+                            "name": "No Prism"
+                        },
+                        {
+                            "range": [28, 105],
+                            "name": "Prism 1"
+                        },
+                        {
+                            "range": [106, 206],
+                            "name": "Prism 2"
+                        },
+                        {
+                            "range": [207, 255],
+                            "name": "Prism 3"
+                        }
+                    ]
+                },
+                "RotoPrism": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Static"
+                        },
+                        {
+                            "range": [64, 159],
+                            "name": "Clockwise rotation (slow>fast)"
+                        },
+                        {
+                            "range": [160, 255],
+                            "name": "Counter clockwise rotation (slow>fast)"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Control of fine movement"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan movement"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt movement"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Shutter",
+                        "Colors",
+                        "Gobo",
+                        "RotoGobo",
+                        "Focus",
+                        "Prism",
+                        "RotoPrism",
+                        "Speed",
+                        "Pan",
+                        "Tilt"
+                    ]
+                }
+            ]
+        }
+    ]
+}

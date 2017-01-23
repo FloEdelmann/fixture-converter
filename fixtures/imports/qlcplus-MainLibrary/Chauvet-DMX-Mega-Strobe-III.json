@@ -1,0 +1,67 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "DMX Mega Strobe III",
+            "type": "Strobe",
+            "physical": {
+                "dimensions": [330, 211, 147],
+                "weight": 4.2,
+                "power": 75,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "CH-750B"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Speed/Mode/Blinder Function": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 42],
+                            "name": "Slow <-> fast/No function"
+                        },
+                        {
+                            "range": [43, 211],
+                            "name": "Slow <-> fast/Blinder (requires ch. 2 to be at DMX value 000)"
+                        },
+                        {
+                            "range": [212, 255],
+                            "name": "Sound triggered/No function"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Low <-> high (0 for Blinder effect)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Standard",
+                    "channels": [
+                        "Speed/Mode/Blinder Function",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

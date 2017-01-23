@@ -1,0 +1,607 @@
+{
+    "manufacturers": {
+        "Clay Paky": {
+            "name": "Clay Paky"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Clay Paky",
+            "name": "Alpha Wash 700",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [385, 575, 405],
+                "weight": 20.6,
+                "power": 1050,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "MSR 700W",
+                    "colorTemperature": 7200,
+                    "lumens": 50000
+                },
+                "lens": {
+                    "name": "Fresnel"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 540,
+                    "tiltMax": 250
+                }
+            },
+            "availableChannels": {
+                "Cyan": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Colour inserted (0%) - colour excluded (100%)"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Colour inserted (0%) - colour excluded (100%)"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Colour inserted (0%) - colour excluded (100%)"
+                        }
+                    ]
+                },
+                "CTO": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Filter excluded (0%) - filter inserted (100%)"
+                        }
+                    ]
+                },
+                "Colour wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [8, 14],
+                            "name": "White + red",
+                            "color": "#ffffff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [15, 21],
+                            "name": "Red",
+                            "color": "#f62a2d"
+                        },
+                        {
+                            "range": [22, 29],
+                            "name": "Red + CTB",
+                            "color": "#f62a2d"
+                        },
+                        {
+                            "range": [30, 36],
+                            "name": "CTB",
+                            "color": "#9acdbe"
+                        },
+                        {
+                            "range": [37, 44],
+                            "name": "CTB + green",
+                            "color": "#9acdbe",
+                            "color2": "#03853f"
+                        },
+                        {
+                            "range": [45, 51],
+                            "name": "Green",
+                            "color": "#01883c"
+                        },
+                        {
+                            "range": [52, 59],
+                            "name": "Green + light green",
+                            "color": "#00873b",
+                            "color2": "#a0c635"
+                        },
+                        {
+                            "range": [60, 66],
+                            "name": "Light green",
+                            "color": "#a0c635"
+                        },
+                        {
+                            "range": [67, 74],
+                            "name": "Light green + lavender",
+                            "color": "#a0c635",
+                            "color2": "#8873b4"
+                        },
+                        {
+                            "range": [75, 81],
+                            "name": "Lavender",
+                            "color": "#8873b4"
+                        },
+                        {
+                            "range": [82, 89],
+                            "name": "Lavender + aquamarine",
+                            "color": "#e6e6fa",
+                            "color2": "#7cbf89"
+                        },
+                        {
+                            "range": [90, 96],
+                            "name": "Aquamarine",
+                            "color": "#7cbf89"
+                        },
+                        {
+                            "range": [97, 104],
+                            "name": "Aquamarine + orange",
+                            "color": "#00ffbf",
+                            "color2": "#ff7f00"
+                        },
+                        {
+                            "range": [105, 111],
+                            "name": "Orange",
+                            "color": "#e3651b"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Orange + blue",
+                            "color": "#e3651b",
+                            "color2": "#22378a"
+                        },
+                        {
+                            "range": [120, 126],
+                            "name": "Blue",
+                            "color": "#22378a"
+                        },
+                        {
+                            "range": [127, 127],
+                            "name": "Blue + white",
+                            "color": "#22378a"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Slow rotation (0.2 rpm) - Fast rotation (160 rpm)",
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                "Stop/strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [4, 103],
+                            "name": "Slow strobe (1 flash/s) - fast strobe (12 flash/s)"
+                        },
+                        {
+                            "range": [104, 107],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [108, 207],
+                            "name": "Slow pulsation - fast pulsation"
+                        },
+                        {
+                            "range": [208, 212],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [213, 225],
+                            "name": "Random slow strobe"
+                        },
+                        {
+                            "range": [226, 238],
+                            "name": "Random medium strobe"
+                        },
+                        {
+                            "range": [239, 251],
+                            "name": "Random fast strobe"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Dimmer fine": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Beam shaper insertion": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 84],
+                            "name": "White"
+                        },
+                        {
+                            "range": [85, 169],
+                            "name": "Shaper 1"
+                        },
+                        {
+                            "range": [170, 255],
+                            "name": "Shaper 2"
+                        }
+                    ]
+                },
+                "Beam shaper rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Position (0 - 540°)"
+                        },
+                        {
+                            "range": [128, 190],
+                            "name": "Fast rotation (120 rpm) - slow rotation (3 rph)"
+                        },
+                        {
+                            "range": [191, 192],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "Slow rotation (3 rph) - fast rotation (120 rpm)"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Narrow beam (0%) - wide beam (100%)"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Function": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 12],
+                            "name": "Unused range"
+                        },
+                        {
+                            "range": [13, 25],
+                            "name": "Fast speed (default) pan-tilt function"
+                        },
+                        {
+                            "range": [26, 38],
+                            "name": "Normal speed pan-tilt function"
+                        },
+                        {
+                            "range": [39, 50],
+                            "name": "Conventional dimmer curve function"
+                        },
+                        {
+                            "range": [51, 51],
+                            "name": "Linear (default) dimmer curve function"
+                        },
+                        {
+                            "range": [52, 255],
+                            "name": "Unused range"
+                        }
+                    ]
+                },
+                "Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 25],
+                            "name": "Unused range"
+                        },
+                        {
+                            "range": [26, 76],
+                            "name": "Effects reset"
+                        },
+                        {
+                            "range": [77, 127],
+                            "name": "Pan/tilt reset"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Complete reset"
+                        }
+                    ]
+                },
+                "Lamp control": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 25],
+                            "name": "Unused range"
+                        },
+                        {
+                            "range": [26, 100],
+                            "name": "Lamp off"
+                        },
+                        {
+                            "range": [101, 179],
+                            "name": "Lamp on (half power)"
+                        },
+                        {
+                            "range": [180, 255],
+                            "name": "Lamp on (full power)"
+                        }
+                    ]
+                },
+                "Pan - tilt time": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Full"
+                        },
+                        {
+                            "range": [1, 254],
+                            "name": "0.2s - 310s"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Follow data cue"
+                        }
+                    ]
+                },
+                "Colour time": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Full"
+                        },
+                        {
+                            "range": [1, 254],
+                            "name": "0.2s - 310s"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Follow cue data"
+                        }
+                    ]
+                },
+                "Beam time": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Full"
+                        },
+                        {
+                            "range": [1, 254],
+                            "name": "0.2s - 310s"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Follow cue data"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Colour excluded (0%) - colour inserted (100%)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Colour excluded (0%) - colour inserted (100%)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Colour excluded (0%) - colour inserted (100%)"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Dimmer",
+                    "Dimmer fine"
+                ],
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Standard - CMY",
+                    "channels": [
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "CTO",
+                        "Colour wheel",
+                        "Stop/strobe",
+                        "Dimmer",
+                        "Dimmer fine",
+                        "Beam shaper insertion",
+                        "Beam shaper rotation",
+                        "Zoom",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Function",
+                        "Reset",
+                        "Lamp control"
+                    ]
+                },
+                {
+                    "name": "Vector - CMY",
+                    "physical": {
+                        "power": 800,
+                        "DMXconnector": "5-pin",
+                        "lens": {
+                            "name": "Other"
+                        }
+                    },
+                    "channels": [
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "CTO",
+                        "Colour wheel",
+                        "Stop/strobe",
+                        "Dimmer",
+                        "Dimmer fine",
+                        "Beam shaper insertion",
+                        "Beam shaper rotation",
+                        "Zoom",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Function",
+                        "Reset",
+                        "Lamp control",
+                        "Pan - tilt time",
+                        "Colour time",
+                        "Beam time"
+                    ]
+                },
+                {
+                    "name": "Standard - RGB",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "CTO",
+                        "Colour wheel",
+                        "Stop/strobe",
+                        "Dimmer",
+                        "Dimmer fine",
+                        "Beam shaper insertion",
+                        "Beam shaper rotation",
+                        "Zoom",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Function",
+                        "Reset",
+                        "Lamp control"
+                    ]
+                },
+                {
+                    "name": "Vector - RGB",
+                    "physical": {
+                        "power": 800,
+                        "DMXconnector": "5-pin",
+                        "lens": {
+                            "name": "Other"
+                        }
+                    },
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "CTO",
+                        "Colour wheel",
+                        "Stop/strobe",
+                        "Dimmer",
+                        "Dimmer fine",
+                        "Beam shaper insertion",
+                        "Beam shaper rotation",
+                        "Zoom",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Function",
+                        "Reset",
+                        "Lamp control",
+                        "Pan - tilt time",
+                        "Colour time",
+                        "Beam time"
+                    ]
+                }
+            ]
+        }
+    ]
+}

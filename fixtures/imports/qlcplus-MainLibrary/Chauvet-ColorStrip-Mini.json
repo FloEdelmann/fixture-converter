@@ -1,0 +1,214 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "ColorStrip Mini",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [484, 130, 97],
+                "weight": 1.5,
+                "power": 23,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 820
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [33, 37]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Static Colors/Color Effects/RGB Color Mix/Sound-Active": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Blue"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Yellow"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Magenta"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Cyan"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "White"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Color change 1"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Color change 2"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Color change 3"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "Color change 4"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "Color change 5"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "Color change 6"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Color chase 1"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "Color chase 2"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "Color chase 3"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "Color chase 4"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "Color chase 5"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "Color chase 6"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Color chase 7"
+                        },
+                        {
+                            "range": [210, 219],
+                            "name": "RGB color mix"
+                        },
+                        {
+                            "range": [220, 229],
+                            "name": "Color fade"
+                        },
+                        {
+                            "range": [230, 255],
+                            "name": "Sound active (auto run)"
+                        }
+                    ]
+                },
+                "Run Speed/Sound Active/Red Intensity/Fade Speed": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Automatic/No function"
+                        },
+                        {
+                            "range": [128, 209],
+                            "name": "No function/Sound active/No function"
+                        },
+                        {
+                            "range": [210, 219],
+                            "name": "No function/Sound active/Red 0~100%/No function"
+                        },
+                        {
+                            "range": [220, 229],
+                            "name": "No function/Sound active/No function/Fade speed"
+                        },
+                        {
+                            "range": [230, 255],
+                            "name": "No function/Sound active/No function"
+                        }
+                    ]
+                },
+                "Strobe Speed/Sound Active/Green Intensity": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Strobe speed/No function"
+                        },
+                        {
+                            "range": [128, 209],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [210, 229],
+                            "name": "No function/Green 0~100%"
+                        },
+                        {
+                            "range": [230, 249],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "No function/Sound active/No function"
+                        }
+                    ]
+                },
+                "RGB Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 109],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [220, 229],
+                            "name": "0~100%"
+                        },
+                        {
+                            "range": [230, 255],
+                            "name": "No function"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Static Colors/Color Effects/RGB Color Mix/Sound-Active",
+                        "Run Speed/Sound Active/Red Intensity/Fade Speed",
+                        "Strobe Speed/Sound Active/Green Intensity",
+                        "RGB Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "UVLed Bar 16",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [320, 61, 175],
+                "weight": 2.2,
+                "power": 30,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer (0 to 100%)"
+                        }
+                    ]
+                },
+                "Program Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Speed (Slow to Fast)"
+                        }
+                    ]
+                },
+                "Programs": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 30],
+                            "name": "Dimming"
+                        },
+                        {
+                            "range": [31, 61],
+                            "name": "Strobe"
+                        },
+                        {
+                            "range": [62, 92],
+                            "name": "Increasing Intensity"
+                        },
+                        {
+                            "range": [93, 123],
+                            "name": "Decreasing Intensity"
+                        },
+                        {
+                            "range": [124, 154],
+                            "name": "increase - Decrease intensity"
+                        },
+                        {
+                            "range": [155, 185],
+                            "name": "Three Flash"
+                        },
+                        {
+                            "range": [186, 216],
+                            "name": "One and 2 Flash"
+                        },
+                        {
+                            "range": [217, 247],
+                            "name": "Flash"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Sound Active"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3 Channels",
+                    "channels": [
+                        "Dimmer",
+                        "Program Speed",
+                        "Programs"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,222 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "Comscan LED",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [160, 200, 344],
+                "weight": 3.6,
+                "power": 30,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [13, 13]
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 166,
+                    "tiltMax": 54
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [16, 131],
+                            "name": "Strobing low - fast"
+                        },
+                        {
+                            "range": [132, 139],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [140, 181],
+                            "name": "Slow open - fast close"
+                        },
+                        {
+                            "range": [182, 189],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [190, 231],
+                            "name": "Fast 0pen - slow close"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Random strobe"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Gobo Wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Open",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [8, 14],
+                            "name": "Gobo 1",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [15, 21],
+                            "name": "Gobo 2",
+                            "color": "#aa0000"
+                        },
+                        {
+                            "range": [22, 28],
+                            "name": "Gobo 3",
+                            "color": "#00aa00"
+                        },
+                        {
+                            "range": [29, 35],
+                            "name": "Gobo 4",
+                            "color": "#00aaff"
+                        },
+                        {
+                            "range": [36, 42],
+                            "name": "Gobo 5",
+                            "color": "#aa0000",
+                            "color2": "#00aaff"
+                        },
+                        {
+                            "range": [43, 49],
+                            "name": "Gobo 6",
+                            "color": "#ff007f"
+                        },
+                        {
+                            "range": [50, 56],
+                            "name": "Gobo 7",
+                            "color": "#aaffff"
+                        },
+                        {
+                            "range": [57, 63],
+                            "name": "Gobo 8",
+                            "color": "#ff007f",
+                            "color2": "#55aaff"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Open shake",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [72, 78],
+                            "name": "Gobo 1 Shake",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [79, 85],
+                            "name": "Gobo 2 Shake",
+                            "color": "#aa0000"
+                        },
+                        {
+                            "range": [86, 92],
+                            "name": "Gobo 3 Shake",
+                            "color": "#55aa00"
+                        },
+                        {
+                            "range": [93, 99],
+                            "name": "Gobo 4 Shake",
+                            "color": "#00aaff"
+                        },
+                        {
+                            "range": [100, 106],
+                            "name": "Gobo 5 Shake",
+                            "color": "#aa0000",
+                            "color2": "#00aa00"
+                        },
+                        {
+                            "range": [107, 113],
+                            "name": "Gobo 6 Shake",
+                            "color": "#ff007f"
+                        },
+                        {
+                            "range": [114, 120],
+                            "name": "Gobo 7 Shake",
+                            "color": "#aaffff"
+                        },
+                        {
+                            "range": [121, 127],
+                            "name": "Gobo 8 Shake",
+                            "color": "#ff007f",
+                            "color2": "#00ffff"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Gobo wheel rotation slow - fast"
+                        }
+                    ]
+                },
+                "Master Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "5 Channel",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Strobe",
+                        "Gobo Wheel",
+                        "Master Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

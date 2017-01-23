@@ -1,0 +1,492 @@
+{
+    "manufacturers": {
+        "Color Imagination": {
+            "name": "Color Imagination"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Color Imagination",
+            "name": "LedSpot 90 (SI-052)",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [301, 471, 291],
+                "weight": 12,
+                "power": 170,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 2700
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [15, 15]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 630,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan movement"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine control of pan movement"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt movement"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine control of tilt movement"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Open/White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Color 1"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Color 2"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Color 3"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Color 4"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Color 5"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Color 6"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Color 7"
+                        },
+                        {
+                            "range": [128, 189],
+                            "name": "Forwards rainbow effect from fast to slow"
+                        },
+                        {
+                            "range": [190, 193],
+                            "name": "Color rotation stop"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Backwards rainbow effect from slow to fast"
+                        }
+                    ]
+                },
+                "Gobo 1": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Gobo 1 shake from slow to fast"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Gobo 2 shake from slow to fast"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Gobo 7 shake from slow to fast"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Gobo 4 shake from slow to fast"
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Gobo 4 shake from slow to fast"
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "Gobo 4 shake from slow to fast"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Gobo 4 shake from slow to fast"
+                        },
+                        {
+                            "range": [220, 255],
+                            "name": "Continuous wheel rotation slow to fast"
+                        }
+                    ]
+                },
+                "Gobo 1 Rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [4, 127],
+                            "name": "Forwards from fast to slow"
+                        },
+                        {
+                            "range": [128, 131],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [132, 255],
+                            "name": "Backwards from slow to fast"
+                        }
+                    ]
+                },
+                "Gobo 2": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Open/hole"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Gobo 9"
+                        },
+                        {
+                            "range": [100, 111],
+                            "name": "Gobo 1 shake from slow to fast"
+                        },
+                        {
+                            "range": [112, 123],
+                            "name": "Gobo 2 shake from slow to fast"
+                        },
+                        {
+                            "range": [124, 135],
+                            "name": "Gobo 3 shake from slow to fast"
+                        },
+                        {
+                            "range": [136, 147],
+                            "name": "Gobo 4 shake from slow to fast"
+                        },
+                        {
+                            "range": [148, 159],
+                            "name": "Gobo 5 shake from slow to fast"
+                        },
+                        {
+                            "range": [160, 171],
+                            "name": "Gobo 6 shake from slow to fast"
+                        },
+                        {
+                            "range": [172, 183],
+                            "name": "Gobo 7 shake from slow to fast"
+                        },
+                        {
+                            "range": [184, 195],
+                            "name": "Gobo 8 shake from slow to fast"
+                        },
+                        {
+                            "range": [196, 207],
+                            "name": "Gobo 9 shake from slow to fast"
+                        },
+                        {
+                            "range": [208, 255],
+                            "name": "Wheel rotation from slow to fast"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe effect slow to fast"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse effect in sequences"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random strobe effect slow to fast"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer 0-100%"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "In (near) to out (far)"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Swing out"
+                        },
+                        {
+                            "range": [6, 127],
+                            "name": "Swing in"
+                        },
+                        {
+                            "range": [128, 189],
+                            "name": "Forward rotation fast to slow"
+                        },
+                        {
+                            "range": [190, 193],
+                            "name": "Rotation stop"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Backwards rotation from slow to fast"
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 191],
+                            "name": "Max. diameter to min. diameter"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Pulse opening fast to slow"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Pulse closing slow to fast"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Max. to mix. speed for pan/tilt"
+                        }
+                    ]
+                },
+                "Special": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Color change normal"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Color change to any position"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Color & gobo change to any position"
+                        },
+                        {
+                            "range": [40, 79],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Motor reset"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Internal program 1"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Internal program 2"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Internal program 3"
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Internal program 4"
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "Internal program 5"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Internal program 6"
+                        },
+                        {
+                            "range": [220, 239],
+                            "name": "Internal program 7"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Internal program 8"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "15 Channel",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Color",
+                        "Gobo 1",
+                        "Gobo 1 Rotation",
+                        "Gobo 2",
+                        "Shutter",
+                        "Dimmer",
+                        "Focus",
+                        "Prism",
+                        "Iris",
+                        "Speed",
+                        "Special"
+                    ]
+                }
+            ]
+        }
+    ]
+}

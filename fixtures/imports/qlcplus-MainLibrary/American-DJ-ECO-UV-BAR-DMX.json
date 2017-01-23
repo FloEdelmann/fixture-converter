@@ -1,0 +1,92 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "ECO UV BAR DMX",
+            "type": "Other",
+            "physical": {
+                "dimensions": [1000, 115, 60],
+                "weight": 2.3,
+                "power": 52,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [120, 120]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Strobing": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobing (slow -> fast)"
+                        }
+                    ]
+                },
+                "Dimmer curve": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "No dimmer curve"
+                        },
+                        {
+                            "range": [21, 40],
+                            "name": "Dimmer curve 1"
+                        },
+                        {
+                            "range": [41, 60],
+                            "name": "Dimmer curve 2"
+                        },
+                        {
+                            "range": [61, 80],
+                            "name": "Dimmer curve 3"
+                        },
+                        {
+                            "range": [81, 100],
+                            "name": "Dimmer curve 4"
+                        },
+                        {
+                            "range": [101, 255],
+                            "name": "Delay mode control"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3 Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Strobing",
+                        "Dimmer curve"
+                    ]
+                }
+            ]
+        }
+    ]
+}

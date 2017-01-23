@@ -1,0 +1,98 @@
+{
+    "manufacturers": {
+        "Griven": {
+            "name": "Griven"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Griven",
+            "name": "Kolorado 2500",
+            "type": "Other",
+            "physical": {
+                "dimensions": [620, 821, 623],
+                "weight": 43.5,
+                "power": 2500,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "HMI 2500W"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [0, 62]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Lamp": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Lamp (to turn off, 255 for 3 sec)"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Magenta"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Lamp",
+                        "Dimmer",
+                        "Yellow",
+                        "Cyan",
+                        "Magenta"
+                    ]
+                }
+            ]
+        }
+    ]
+}

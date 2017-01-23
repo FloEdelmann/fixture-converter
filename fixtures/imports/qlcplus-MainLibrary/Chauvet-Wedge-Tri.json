@@ -1,0 +1,181 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "Wedge Tri",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [108, 108, 104],
+                "weight": 0.6,
+                "power": 23,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0%-100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0%-100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0%-100%"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Color macros"
+                        }
+                    ]
+                },
+                "Shutter / Speed": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobe (slow -> fast) or Auto programs speed (slow -> fast)"
+                        }
+                    ]
+                },
+                "Auto programs": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "0 - 100%"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "100% - 0"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "100% - 0 - 100%"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Color fade"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "3-color snap"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "7-color snap"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Sound active"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer (0 - 100%)"
+                        }
+                    ]
+                },
+                "Dimmer mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 51],
+                            "name": "Dimmer mode manually set in Menu Options"
+                        },
+                        {
+                            "range": [52, 101],
+                            "name": "Dimmer mode off"
+                        },
+                        {
+                            "range": [102, 152],
+                            "name": "Dimmer mode 1, (fast speed)"
+                        },
+                        {
+                            "range": [153, 203],
+                            "name": "Dimmer mode 2, (medium speed)"
+                        },
+                        {
+                            "range": [204, 255],
+                            "name": "Dimmer mode 3, (slow speed)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "DMX 3 Channels",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "DMX 7 Channels",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color",
+                        "Shutter / Speed",
+                        "Auto programs",
+                        "Dimmer",
+                        "Dimmer mode"
+                    ]
+                }
+            ]
+        }
+    ]
+}

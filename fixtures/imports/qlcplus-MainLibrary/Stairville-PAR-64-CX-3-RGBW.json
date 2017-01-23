@@ -1,0 +1,204 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "PAR 64 CX-3 RGBW",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [270, 270, 330],
+                "weight": 3.4,
+                "power": 152,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity Red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity Green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity Blue"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity White"
+                        }
+                    ]
+                },
+                "Fixed Color Pattern": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "31 Preprogrammed color macro"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No Effect"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Strobe Speed"
+                        }
+                    ]
+                },
+                "Operating mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Constant Color"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Fade-out effect (Speed ch 6)"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Fade-in effect (Speed ch 6)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Fade-in-out effect (Speed ch 6)"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Auto-mix effect (speed ch 6)"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Chase 4 colors (Speed Ch6)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Chase 12 colors (speed ch 6)"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Sound-Control"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer (0 to 100%)"
+                        }
+                    ]
+                },
+                "Operating Mode 2": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Constant color"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "7 Automatic colors change"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "12 Automatic colors change"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "4 Automatic colors change"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "8ch",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Fixed Color Pattern",
+                        "Strobe",
+                        "Operating mode",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "4ch",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White"
+                    ]
+                },
+                {
+                    "name": "6ch",
+                    "channels": [
+                        "Operating Mode 2",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

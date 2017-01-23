@@ -1,0 +1,552 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "MH-X60th LED Spot",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [325, 435, 290],
+                "weight": 10.4,
+                "power": 170,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 1019
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Rotation": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0° up to the maximum value of the pan area: 180°, 270° or 540°"
+                        }
+                    ]
+                },
+                "Fine Adjustment Rotation": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Inclination": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0° up to the maximum value of the tilt area: 90°, 180° or 270°"
+                        }
+                    ]
+                },
+                "Fine Adjustment Inclination": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Response Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Response speed"
+                        }
+                    ]
+                },
+                "Colour Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 6],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [7, 13],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [14, 20],
+                            "name": "Pink",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [21, 27],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [28, 34],
+                            "name": "Peachblow",
+                            "color": "#d76aed"
+                        },
+                        {
+                            "range": [35, 41],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [42, 48],
+                            "name": "Kelly-green",
+                            "color": "#4cbb17"
+                        },
+                        {
+                            "range": [49, 55],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Dark blue",
+                            "color": "#00008b"
+                        },
+                        {
+                            "range": [64, 70],
+                            "name": "White + yellow",
+                            "color": "#ffffff",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [71, 77],
+                            "name": "Yellow + pink",
+                            "color": "#ffff00",
+                            "color2": "#ff00ff"
+                        },
+                        {
+                            "range": [78, 84],
+                            "name": "Pink + green",
+                            "color": "#ff00ff",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [85, 91],
+                            "name": "Green + peachblow",
+                            "color": "#00ff00",
+                            "color2": "#d76aed"
+                        },
+                        {
+                            "range": [92, 98],
+                            "name": "Peachblow + blue",
+                            "color": "#d76aed",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [99, 105],
+                            "name": "Blue + kelly-green",
+                            "color": "#0000ff",
+                            "color2": "#4cbb17"
+                        },
+                        {
+                            "range": [106, 112],
+                            "name": "Kelly-green + red",
+                            "color": "#4cbb17",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [113, 119],
+                            "name": "Red + dark blue",
+                            "color": "#ff0000",
+                            "color2": "#00008b"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Dark blue + white",
+                            "color": "#00008b",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Rainbow effect in positive sense of direction, increasing speed"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Rainbow effect in negative sense direction, increasing speed"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Closed (black out)"
+                        },
+                        {
+                            "range": [4, 7],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [8, 76],
+                            "name": "Strobe light, increasing speed"
+                        },
+                        {
+                            "range": [77, 145],
+                            "name": "Triple strobe, increasing speed"
+                        },
+                        {
+                            "range": [146, 215],
+                            "name": "Random strobe light, incresing speed"
+                        },
+                        {
+                            "range": [216, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Electronic Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Gobo Wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Gobo 8 shake, increasing speed"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Gobo 7 shake, increasing speed"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Gobo 6 shake, increasing speed"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Gobo 5 shake, increasing speed"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Gobo 4 shake, increasing speed"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "Gobo 3 shake, increasing speed"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Gobo 2 shake, increasing speed"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Rotation of the gobo wheel counterclockwise, increasing speed"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Rotation of the gobo wheel clockwise, increasing speed"
+                        }
+                    ]
+                },
+                "Gobo Rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Fixed"
+                        },
+                        {
+                            "range": [64, 147],
+                            "name": "Rotation clockwise, increasing speed"
+                        },
+                        {
+                            "range": [148, 231],
+                            "name": "Rotation counterclockwise, increasing speed"
+                        },
+                        {
+                            "range": [232, 255],
+                            "name": "Bouncing"
+                        }
+                    ]
+                },
+                "Special Functions": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Unused"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Blackout during pan or tilt movement"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Blackout during colour wheel movement"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Blackout during Gobo wheel movement"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "No blackout during pan or tilt movement and colour wheel movement"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "No blackout during pan or tilt movement and gobo wheel movement"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "No blackout during pan or tilt movement, colour wheel movement and Gobo wheel movement"
+                        },
+                        {
+                            "range": [56, 95],
+                            "name": "Unused"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Pan reset"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "Tilt reset"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Colour wheel reset"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Gobo wheel reset"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Gobo rotation reset"
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "Prism reset"
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "Sharpness reset"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "All channels reset"
+                        },
+                        {
+                            "range": [160, 255],
+                            "name": "Unused"
+                        }
+                    ]
+                },
+                "Built in Programmes": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Unused"
+                        },
+                        {
+                            "range": [8, 23],
+                            "name": "Programme 1"
+                        },
+                        {
+                            "range": [24, 39],
+                            "name": "Programme 2"
+                        },
+                        {
+                            "range": [40, 55],
+                            "name": "Programme 3"
+                        },
+                        {
+                            "range": [56, 71],
+                            "name": "Programme 4"
+                        },
+                        {
+                            "range": [72, 87],
+                            "name": "Programme 5"
+                        },
+                        {
+                            "range": [88, 103],
+                            "name": "Programme 6"
+                        },
+                        {
+                            "range": [104, 119],
+                            "name": "Programme 7"
+                        },
+                        {
+                            "range": [120, 135],
+                            "name": "Programme 8"
+                        },
+                        {
+                            "range": [136, 151],
+                            "name": "Sound-control 1"
+                        },
+                        {
+                            "range": [152, 167],
+                            "name": "Sound-control 2"
+                        },
+                        {
+                            "range": [168, 183],
+                            "name": "Sound-control 3"
+                        },
+                        {
+                            "range": [184, 199],
+                            "name": "Sound-control 4"
+                        },
+                        {
+                            "range": [200, 215],
+                            "name": "Sound-control 5"
+                        },
+                        {
+                            "range": [216, 231],
+                            "name": "Sound-control 6"
+                        },
+                        {
+                            "range": [232, 247],
+                            "name": "Sound-control 7"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Sound-control 8"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "White"
+                        },
+                        {
+                            "range": [8, 12],
+                            "name": "Static"
+                        },
+                        {
+                            "range": [13, 130],
+                            "name": "Clockwise rotating, increasing speed"
+                        },
+                        {
+                            "range": [131, 247],
+                            "name": "Counterclockwise rotating, increasing speed"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Static"
+                        }
+                    ]
+                },
+                "Sharpness": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Sharpness"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Rotation",
+                    "Fine Adjustment Rotation"
+                ],
+                [
+                    "Inclination",
+                    "Fine Adjustment Inclination"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "14 ch mode",
+                    "channels": [
+                        "Rotation",
+                        "Inclination",
+                        "Fine Adjustment Rotation",
+                        "Fine Adjustment Inclination",
+                        "Response Speed",
+                        "Colour Wheel",
+                        "Shutter",
+                        "Electronic Dimmer",
+                        "Gobo Wheel",
+                        "Gobo Rotation",
+                        "Special Functions",
+                        "Built in Programmes",
+                        "Prism",
+                        "Sharpness"
+                    ]
+                },
+                {
+                    "name": "8 ch mode",
+                    "channels": [
+                        "Rotation",
+                        "Inclination",
+                        "Colour Wheel",
+                        "Shutter",
+                        "Gobo Wheel",
+                        "Gobo Rotation",
+                        "Prism",
+                        "Sharpness"
+                    ]
+                }
+            ]
+        }
+    ]
+}

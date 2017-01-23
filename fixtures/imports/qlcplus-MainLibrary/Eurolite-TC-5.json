@@ -1,0 +1,125 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "TC-5",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [280, 280, 320],
+                "weight": 9,
+                "power": 300,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "ELC 250W",
+                    "colorTemperature": 3200,
+                    "lumens": 5000
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [10, 20],
+                            "name": "White"
+                        },
+                        {
+                            "range": [21, 31],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [32, 41],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [42, 52],
+                            "name": "Cyan"
+                        },
+                        {
+                            "range": [53, 63],
+                            "name": "Bright green"
+                        },
+                        {
+                            "range": [64, 73],
+                            "name": "Magenta"
+                        },
+                        {
+                            "range": [74, 84],
+                            "name": "Bright blue"
+                        },
+                        {
+                            "range": [85, 95],
+                            "name": "Yellow"
+                        },
+                        {
+                            "range": [96, 105],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [106, 116],
+                            "name": "Deep rose"
+                        },
+                        {
+                            "range": [117, 128],
+                            "name": "Blue"
+                        },
+                        {
+                            "range": [129, 190],
+                            "name": "Scroll"
+                        },
+                        {
+                            "range": [191, 193],
+                            "name": "Sound-controlled"
+                        },
+                        {
+                            "range": [194, 223],
+                            "name": "CW rotation fast to slow"
+                        },
+                        {
+                            "range": [224, 225],
+                            "name": "Rotation STOP"
+                        },
+                        {
+                            "range": [226, 255],
+                            "name": "CCW rotation slow to fast"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer intensity"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "Colour",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

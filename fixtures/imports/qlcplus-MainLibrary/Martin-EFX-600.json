@@ -1,0 +1,389 @@
+{
+    "manufacturers": {
+        "Martin": {
+            "name": "Martin"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Martin",
+            "name": "EFX-600",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [500, 230, 410],
+                "weight": 15,
+                "power": 204,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "HTI 150W",
+                    "colorTemperature": 5000,
+                    "lumens": 9500
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Barrel",
+                    "panMax": 180,
+                    "tiltMax": 360
+                }
+            },
+            "availableChannels": {
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [5, 122],
+                            "name": "Dimmer intensity, lamp on"
+                        },
+                        {
+                            "range": [123, 129],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [130, 189],
+                            "name": "Strobe fast to slow"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Random strobe"
+                        },
+                        {
+                            "range": [210, 219],
+                            "name": "Remote stand-alone auto trig"
+                        },
+                        {
+                            "range": [220, 239],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [240, 249],
+                            "name": "RESET (5sec)"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Lamp OFF (5sec)"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Gobo 9"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Gobo 10"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Gobo 11"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "Gobo 12"
+                        },
+                        {
+                            "range": [120, 175],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [176, 207],
+                            "name": "CW rotation fast to slow"
+                        },
+                        {
+                            "range": [208, 239],
+                            "name": "CCW rotation slow to fast"
+                        },
+                        {
+                            "range": [240, 244],
+                            "name": "Music trigger fast"
+                        },
+                        {
+                            "range": [245, 249],
+                            "name": "Music trigger slow"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Music trigger dynamic"
+                        }
+                    ]
+                },
+                "Gobo shake": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [2, 128],
+                            "name": "Narrow shake slow to fast"
+                        },
+                        {
+                            "range": [129, 255],
+                            "name": "Wide shake slow to fast"
+                        }
+                    ]
+                },
+                "Mirror dish rotation": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "STOP"
+                        },
+                        {
+                            "range": [2, 65],
+                            "name": "CCW rotation fast to slow"
+                        },
+                        {
+                            "range": [66, 129],
+                            "name": "CW rotation slow to fast"
+                        },
+                        {
+                            "range": [130, 192],
+                            "name": "Shake (various)"
+                        },
+                        {
+                            "range": [193, 208],
+                            "name": "Random shake"
+                        },
+                        {
+                            "range": [209, 239],
+                            "name": "STOP"
+                        },
+                        {
+                            "range": [240, 244],
+                            "name": "Music trigger fast"
+                        },
+                        {
+                            "range": [245, 249],
+                            "name": "Music trigger slow"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Music trigger dynamic"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Pan left to right"
+                        },
+                        {
+                            "range": [128, 182],
+                            "name": "Narrow shake slow to fast"
+                        },
+                        {
+                            "range": [183, 239],
+                            "name": "Wide shake slow to fast"
+                        },
+                        {
+                            "range": [240, 244],
+                            "name": "Music trigger fast"
+                        },
+                        {
+                            "range": [245, 249],
+                            "name": "Music trigger slow"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Music trigger dynamic"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "STOP"
+                        },
+                        {
+                            "range": [2, 63],
+                            "name": "CW rotation slow to fast"
+                        },
+                        {
+                            "range": [64, 65],
+                            "name": "STOP"
+                        },
+                        {
+                            "range": [66, 127],
+                            "name": "CCW rotation fast to slow"
+                        },
+                        {
+                            "range": [128, 129],
+                            "name": "STOP"
+                        },
+                        {
+                            "range": [130, 184],
+                            "name": "Narrow shake slow to fast"
+                        },
+                        {
+                            "range": [185, 239],
+                            "name": "Wide shake slow to fast"
+                        },
+                        {
+                            "range": [240, 244],
+                            "name": "Music trigger fast"
+                        },
+                        {
+                            "range": [245, 249],
+                            "name": "Music trigger slow"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Music trigger dynamic"
+                        }
+                    ]
+                },
+                "Macro": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No macro"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Macro 1"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Macro 2"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Macro 3"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Macro 4"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Macro 5"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Macro 6"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Macro 7"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Macro 8"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "Macro 9"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "Macro 10"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "Macro 11"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "Macro 12"
+                        },
+                        {
+                            "range": [208, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Effects speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "Tracking"
+                        },
+                        {
+                            "range": [2, 255],
+                            "name": "Vector fast to slow"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "Strobe",
+                        "Gobo",
+                        "Gobo shake",
+                        "Mirror dish rotation",
+                        "Pan",
+                        "Tilt"
+                    ]
+                },
+                {
+                    "name": "Extended",
+                    "channels": [
+                        "Strobe",
+                        "Gobo",
+                        "Gobo shake",
+                        "Mirror dish rotation",
+                        "Pan",
+                        "Tilt",
+                        "Macro",
+                        "Effects speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

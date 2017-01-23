@@ -1,0 +1,172 @@
+{
+    "manufacturers": {
+        "Contest": {
+            "name": "Contest"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Contest",
+            "name": "LedColor",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [420, 366, 255],
+                "weight": 5.7,
+                "power": 63,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Mode": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 29],
+                            "name": "RGB & B & F (ch2=Red, ch3=green, ch4=blue, ch5=strobe)"
+                        },
+                        {
+                            "range": [30, 94],
+                            "name": "Auto"
+                        },
+                        {
+                            "range": [95, 159],
+                            "name": "Sound impulsions"
+                        },
+                        {
+                            "range": [160, 184],
+                            "name": "Snake"
+                        },
+                        {
+                            "range": [185, 209],
+                            "name": "Sequencer"
+                        },
+                        {
+                            "range": [210, 234],
+                            "name": "Automatic sequencer (40 colours)"
+                        },
+                        {
+                            "range": [235, 255],
+                            "name": "Automatic sequencer time synchronized (40 colours)"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer intensity"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Colour"
+                        }
+                    ]
+                },
+                "Flash": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Flash speed"
+                        }
+                    ]
+                },
+                "Fade": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fade"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobe speed"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "C & B",
+                    "channels": [
+                        "Colour",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "RGB & B",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "RGB & B & F",
+                    "channels": [
+                        "Mode",
+                        "Dimmer",
+                        "Fade",
+                        "Flash",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

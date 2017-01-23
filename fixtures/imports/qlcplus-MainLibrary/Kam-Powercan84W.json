@@ -1,0 +1,174 @@
+{
+    "manufacturers": {
+        "Kam": {
+            "name": "Kam"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Kam",
+            "name": "Powercan84W",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [214, 211, 100],
+                "weight": 0.8,
+                "power": 85,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [0, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Master Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master Dimmer 0 - 100%"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Amber": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "UV": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "UV intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255]
+                        }
+                    ]
+                },
+                "Effects": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [11, 240],
+                            "name": "Single effect built-in program in Auto mode"
+                        },
+                        {
+                            "range": [241, 250],
+                            "name": "Built-in program in Sound-to-Light mode"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Mixed effect built-in programs in Auto mode"
+                        }
+                    ]
+                },
+                "Effect speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Auto speed"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "6 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "UV"
+                    ]
+                },
+                {
+                    "name": "10 Channel",
+                    "channels": [
+                        "Master Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "UV",
+                        "Strobe",
+                        "Effects",
+                        "Effect speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

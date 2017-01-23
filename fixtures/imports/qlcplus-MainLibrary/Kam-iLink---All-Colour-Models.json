@@ -1,0 +1,661 @@
+{
+    "manufacturers": {
+        "Kam": {
+            "name": "Kam"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Kam",
+            "name": "iLink - All Colour Models",
+            "type": "Laser",
+            "physical": {
+                "dimensions": [165, 80, 145],
+                "weight": 1.5,
+                "power": 12,
+                "DMXconnector": "3-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 90,
+                    "tiltMax": 90
+                }
+            },
+            "availableChannels": {
+                "Mode - Single Colour": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Laser black out",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Auto show"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Sound activated show (music)"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "DMX mode (other channels activated)"
+                        }
+                    ]
+                },
+                "Patterns": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Circle"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Circle with Edges"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Triangle"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Square"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Dashed Square"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Double Square"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Cross"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Circular Saw"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Tetris Block"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Bow Tie"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Spiral"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Double C's"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Swirl"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "Double Curves"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Double Triangles"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Zig Zag"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Chevron"
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "Letter W"
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "Saw Wave"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Solid Line"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Dashed Line"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "Solid Line with Dashes"
+                        },
+                        {
+                            "range": [176, 181],
+                            "name": "Double Solid Lines"
+                        },
+                        {
+                            "range": [182, 189],
+                            "name": "Crossed Lines"
+                        },
+                        {
+                            "range": [190, 197],
+                            "name": "Double Small Lines"
+                        },
+                        {
+                            "range": [198, 205],
+                            "name": "Broken Diamond"
+                        },
+                        {
+                            "range": [206, 213],
+                            "name": "Dice 2"
+                        },
+                        {
+                            "range": [214, 221],
+                            "name": "Dice 4"
+                        },
+                        {
+                            "range": [222, 229],
+                            "name": "Small Circle"
+                        },
+                        {
+                            "range": [230, 237],
+                            "name": "Dotted Line"
+                        },
+                        {
+                            "range": [238, 245],
+                            "name": "Dotted Arc"
+                        },
+                        {
+                            "range": [246, 255],
+                            "name": "Random Dots"
+                        }
+                    ]
+                },
+                "Zooming": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "100%-5% size"
+                        },
+                        {
+                            "range": [128, 169],
+                            "name": "Zooming in"
+                        },
+                        {
+                            "range": [170, 209],
+                            "name": "Zooming out"
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "Zooming in and out"
+                        }
+                    ]
+                },
+                "Y-axis rolling": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "0-359 degree fixed Y axis rolled"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Clockwise rolling"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Anticlockwise rolling"
+                        }
+                    ]
+                },
+                "X-axis rolling": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "0-359 degree fixed X axis rolled"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Clockwise rolling"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Anticlockwise rolling"
+                        }
+                    ]
+                },
+                "Z-axis rotating": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "0-359 degree fixed Z axis rotate"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Clockwise rotating"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Anticlockwise rotating"
+                        }
+                    ]
+                },
+                "X-axis moving": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 128],
+                            "name": "128 different fixed positions on X"
+                        },
+                        {
+                            "range": [129, 191],
+                            "name": "Clockwise moving"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Anticlockwise moving"
+                        }
+                    ]
+                },
+                "Y-axis moving": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "128 different fixed positions on Y"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Clockwise moving"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Anticlockwise moving"
+                        }
+                    ]
+                },
+                "Mode - red, blue, purple (RBP)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 29],
+                            "name": "Automatic show with original preprogrammed colour"
+                        },
+                        {
+                            "range": [30, 59],
+                            "name": "Auto show with red (colour 1)",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [60, 89],
+                            "name": "Auto show with blue (colour 2)",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [90, 119],
+                            "name": "Auto show with purple (colour 3)",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [120, 149],
+                            "name": "Sound activated show with original preprogrammed colour"
+                        },
+                        {
+                            "range": [150, 179],
+                            "name": "Sound activated show with red (colour 1)"
+                        },
+                        {
+                            "range": [180, 209],
+                            "name": "Sound activated show with blue (colour 2)"
+                        },
+                        {
+                            "range": [210, 239],
+                            "name": "Sound activated show with purple (colour 3)"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "DMX mode"
+                        }
+                    ]
+                },
+                "Colour - red, blue, purple (RBP)": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 24],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [25, 49],
+                            "name": "Original preprogrammed colour"
+                        },
+                        {
+                            "range": [50, 74],
+                            "name": "Red (colour 1)",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [75, 99],
+                            "name": "Blue (colour 2)",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [100, 124],
+                            "name": "Purple (colour 3)",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [125, 149],
+                            "name": "Alternate red (colour 1) and blue (colour 2)",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [150, 174],
+                            "name": "Alternate blue (colour 2) and purple (colour 3)",
+                            "color": "#0000ff",
+                            "color2": "#ff00ff"
+                        },
+                        {
+                            "range": [175, 199],
+                            "name": "Alternate red (colour 1) and purple (colour 3)",
+                            "color": "#ff0000",
+                            "color2": "#ff00ff"
+                        },
+                        {
+                            "range": [200, 224],
+                            "name": "Alternate red (colour 1), blue (colour 2) and purple (colour 3)"
+                        },
+                        {
+                            "range": [225, 255],
+                            "name": "Colour rolling"
+                        }
+                    ]
+                },
+                "Colour speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [5, 255],
+                            "name": "Slow to fast"
+                        }
+                    ]
+                },
+                "Mode - red, green, yellow (RGY)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 29],
+                            "name": "Automatic show with original preprogrammed colour"
+                        },
+                        {
+                            "range": [30, 59],
+                            "name": "Auto show with red (colour 1)",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [60, 89],
+                            "name": "Auto show with green (colour 2)",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [90, 119],
+                            "name": "Auto show with yellow (colour 3)",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [120, 149],
+                            "name": "Sound activated show with original preprogrammed colour"
+                        },
+                        {
+                            "range": [150, 179],
+                            "name": "Sound activated show with red (colour 1)"
+                        },
+                        {
+                            "range": [180, 209],
+                            "name": "Sound activated show with green (colour 2)"
+                        },
+                        {
+                            "range": [210, 239],
+                            "name": "Sound activated show with yellow (colour 3)"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "DMX mode"
+                        }
+                    ]
+                },
+                "Colour - red, green, yellow (RGY)": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 24],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [25, 49],
+                            "name": "Original preprogrammed colour"
+                        },
+                        {
+                            "range": [50, 74],
+                            "name": "Red (colour 1)",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [75, 99],
+                            "name": "Green (colour 2)",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [100, 124],
+                            "name": "Yellow (colour 3)",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [125, 149],
+                            "name": "Alternate red (colour 1) and green (colour 2)",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [150, 174],
+                            "name": "Alternate green (colour 2) and yellow (colour 3)",
+                            "color": "#00ff00",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [175, 199],
+                            "name": "Alternate red (colour 1) and yellow (colour 3)",
+                            "color": "#ff0000",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [200, 224],
+                            "name": "Alternate red (colour 1), green (colour 2) and yellow (colour 3)"
+                        },
+                        {
+                            "range": [225, 255],
+                            "name": "Colour rolling"
+                        }
+                    ]
+                },
+                "Mode - green, blue, cyan (GBC)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 29],
+                            "name": "Automatic show with original preprogrammed colour"
+                        },
+                        {
+                            "range": [30, 59],
+                            "name": "Auto show with green (colour 1)",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [60, 89],
+                            "name": "Auto show with blue (colour 2)",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [90, 119],
+                            "name": "Auto show with cyan (colour 3)",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [120, 149],
+                            "name": "Sound activated show with original preprogrammed colour"
+                        },
+                        {
+                            "range": [150, 179],
+                            "name": "Sound activated show with green (colour 1)"
+                        },
+                        {
+                            "range": [180, 209],
+                            "name": "Sound activated show with blue (colour 2)"
+                        },
+                        {
+                            "range": [210, 239],
+                            "name": "Sound activated show with cyan (colour 3)"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "DMX mode"
+                        }
+                    ]
+                },
+                "Colour - green, blue, cyan (GBC)": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 24],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [25, 49],
+                            "name": "Original preprogrammed colour"
+                        },
+                        {
+                            "range": [50, 74],
+                            "name": "Green (colour 1)",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [75, 99],
+                            "name": "Blue (colour 2)",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [100, 124],
+                            "name": "Cyan (colour 3)",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [125, 149],
+                            "name": "Alternate green (colour 1) and blue (colour 2)",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [150, 174],
+                            "name": "Alternate blue (colour 2) and cyan (colour 3)",
+                            "color": "#0000ff",
+                            "color2": "#00ffff"
+                        },
+                        {
+                            "range": [175, 199],
+                            "name": "Alternate green (colour 1) and cyan (colour 3)",
+                            "color": "#00ff00",
+                            "color2": "#00ffff"
+                        },
+                        {
+                            "range": [200, 224],
+                            "name": "Alternate green (colour 1), blue (colour 2) and cyan (colour 3)"
+                        },
+                        {
+                            "range": [225, 255],
+                            "name": "Colour rolling"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Single colour",
+                    "channels": [
+                        "Mode - Single Colour",
+                        "Patterns",
+                        "Zooming",
+                        "Y-axis rolling",
+                        "X-axis rolling",
+                        "Z-axis rotating",
+                        "X-axis moving",
+                        "Y-axis moving"
+                    ]
+                },
+                {
+                    "name": "Multi-colour - red, blue, purple (RBP)",
+                    "channels": [
+                        "Mode - red, blue, purple (RBP)",
+                        "Patterns",
+                        "Colour - red, blue, purple (RBP)",
+                        "Colour speed",
+                        "Zooming",
+                        "X-axis moving",
+                        "Y-axis moving",
+                        "Y-axis rolling",
+                        "X-axis rolling",
+                        "Z-axis rotating"
+                    ]
+                },
+                {
+                    "name": "Multi-colour - green, blue, cyan (GBC)",
+                    "channels": [
+                        "Mode - green, blue, cyan (GBC)",
+                        "Patterns",
+                        "Colour - green, blue, cyan (GBC)",
+                        "Colour speed",
+                        "Zooming",
+                        "X-axis moving",
+                        "Y-axis moving",
+                        "Y-axis rolling",
+                        "X-axis rolling",
+                        "Z-axis rotating"
+                    ]
+                },
+                {
+                    "name": "Multi-colour - red, green, yellow (RGY)",
+                    "channels": [
+                        "Mode - red, green, yellow (RGY)",
+                        "Patterns",
+                        "Colour - red, green, yellow (RGY)",
+                        "Colour speed",
+                        "Zooming",
+                        "X-axis moving",
+                        "Y-axis moving",
+                        "Y-axis rolling",
+                        "X-axis rolling",
+                        "Z-axis rotating"
+                    ]
+                }
+            ]
+        }
+    ]
+}

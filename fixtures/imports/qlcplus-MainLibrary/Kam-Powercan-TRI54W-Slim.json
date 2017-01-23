@@ -1,0 +1,351 @@
+{
+    "manufacturers": {
+        "Kam": {
+            "name": "Kam"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Kam",
+            "name": "Powercan TRI54W Slim",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [220, 340, 60],
+                "weight": 3,
+                "power": 60,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Master dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer 0-100%"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red 0-100% (step time when playing CUS 01-10)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green 0-100% (fade time playing CUS 01-10)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue 0-100%"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [11, 30],
+                            "name": "Red 100%, green up, blue 0%",
+                            "color": "#ff0000",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [31, 50],
+                            "name": "Red down, green 100%, blue 0%",
+                            "color": "#ffff00",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [51, 70],
+                            "name": "Red 0%, green 100%, blue up",
+                            "color": "#00ff00",
+                            "color2": "#00ffff"
+                        },
+                        {
+                            "range": [71, 90],
+                            "name": "Red 0%, green down, blue 100%",
+                            "color": "#00ffff",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [91, 110],
+                            "name": "Red up, green 0%, blue 100%",
+                            "color": "#0000ff",
+                            "color2": "#ff00ff"
+                        },
+                        {
+                            "range": [111, 130],
+                            "name": "Red 100%, green 0%, blue down",
+                            "color": "#ff00ff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [131, 150],
+                            "name": "Red 100%, green up, blue up",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [151, 170],
+                            "name": "Red down, green down, blue 100%",
+                            "color": "#ffffff",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [171, 200],
+                            "name": "Red 100%, green 100%, blue 100%",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [201, 205],
+                            "name": "White 1: 3200k",
+                            "color": "#ffbb78"
+                        },
+                        {
+                            "range": [206, 210],
+                            "name": "White 2: 3400k",
+                            "color": "#ffc184"
+                        },
+                        {
+                            "range": [211, 215],
+                            "name": "White 3: 4200k",
+                            "color": "#ffd5ad"
+                        },
+                        {
+                            "range": [216, 220],
+                            "name": "White 4: 4900k",
+                            "color": "#ffe3ca"
+                        },
+                        {
+                            "range": [221, 225],
+                            "name": "White 5: 5600k",
+                            "color": "#ffeee3"
+                        },
+                        {
+                            "range": [226, 230],
+                            "name": "White 6: 5900k",
+                            "color": "#fff2ec"
+                        },
+                        {
+                            "range": [231, 235],
+                            "name": "White 7: 6500k",
+                            "color": "#fff9fd"
+                        },
+                        {
+                            "range": [236, 240],
+                            "name": "White 8: 7200k",
+                            "color": "#f0f1ff"
+                        },
+                        {
+                            "range": [241, 245],
+                            "name": "White 9: 8000k",
+                            "color": "#e3e9ff"
+                        },
+                        {
+                            "range": [246, 250],
+                            "name": "White 10: 8500k",
+                            "color": "#dce5ff"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "White 11: 10000k",
+                            "color": "#ccdbff"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Strobe off"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe 0-20Hz (slow-fast)"
+                        }
+                    ]
+                },
+                "Program": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 23],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [24, 47],
+                            "name": "Auto program 1"
+                        },
+                        {
+                            "range": [48, 71],
+                            "name": "Auto program 2"
+                        },
+                        {
+                            "range": [72, 95],
+                            "name": "Auto program 3"
+                        },
+                        {
+                            "range": [96, 119],
+                            "name": "Auto program 4"
+                        },
+                        {
+                            "range": [120, 143],
+                            "name": "Auto program 5"
+                        },
+                        {
+                            "range": [144, 167],
+                            "name": "Auto program 6"
+                        },
+                        {
+                            "range": [168, 191],
+                            "name": "Auto program 7"
+                        },
+                        {
+                            "range": [192, 215],
+                            "name": "Auto program 8"
+                        },
+                        {
+                            "range": [216, 239],
+                            "name": "Auto program 9"
+                        },
+                        {
+                            "range": [240, 249],
+                            "name": "Auto program 10 (loop of above programs)"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Sound activated"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Speed of auto programs: slow-fast"
+                        }
+                    ]
+                },
+                "Dimmer mode": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 250],
+                            "name": "Linear dimmer"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Non-linear dimmer"
+                        }
+                    ]
+                },
+                "Hue": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "H: hue (colour tone)"
+                        }
+                    ]
+                },
+                "Saturation": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "S: saturation of colour"
+                        }
+                    ]
+                },
+                "Luminance": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "V: luminance"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "9 channel mode",
+                    "channels": [
+                        "Master dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Colour",
+                        "Strobe",
+                        "Program",
+                        "Speed",
+                        "Dimmer mode"
+                    ]
+                },
+                {
+                    "name": "3 channel mode",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "4 channel mode",
+                    "channels": [
+                        "Master dimmer",
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "HSV mode",
+                    "channels": [
+                        "Hue",
+                        "Saturation",
+                        "Luminance"
+                    ]
+                }
+            ]
+        }
+    ]
+}

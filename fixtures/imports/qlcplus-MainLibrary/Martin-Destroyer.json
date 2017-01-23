@@ -1,0 +1,215 @@
+{
+    "manufacturers": {
+        "Martin": {
+            "name": "Martin"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Martin",
+            "name": "Destroyer",
+            "type": "Flower",
+            "physical": {
+                "dimensions": [265, 303, 340],
+                "weight": 7,
+                "power": 270,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "EHJ/EVC 24V/250W"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Lamp On/Off": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 11],
+                            "name": "Lamp off"
+                        },
+                        {
+                            "range": [12, 193],
+                            "name": "Lamp on"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Gobo strobe slow -> fast"
+                        }
+                    ]
+                },
+                "Trigger Mode": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 11],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [12, 127],
+                            "name": "Music triggered"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Controller triggered - triggers when DMX level crosses 195"
+                        }
+                    ]
+                },
+                "Parabol Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 91],
+                            "name": "Rotation CW, fast -> slow"
+                        },
+                        {
+                            "range": [92, 98],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [99, 189],
+                            "name": "Rotation CCW, slow -> fast"
+                        },
+                        {
+                            "range": [190, 231],
+                            "name": "Random CW/CCW slow (music/controller triggered)"
+                        },
+                        {
+                            "range": [232, 255],
+                            "name": "Random CW/CCW fast (music/controller triggered)"
+                        }
+                    ]
+                },
+                "Trigger Decay": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "0 seconds"
+                        },
+                        {
+                            "range": [5, 252],
+                            "name": "0.2 to 9.9 seconds"
+                        },
+                        {
+                            "range": [253, 255],
+                            "name": "Random (music/controller triggered)"
+                        }
+                    ]
+                },
+                "Colour/Gobo Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [6, 20],
+                            "name": "Position 1"
+                        },
+                        {
+                            "range": [21, 36],
+                            "name": "Position 2"
+                        },
+                        {
+                            "range": [37, 52],
+                            "name": "Position 3"
+                        },
+                        {
+                            "range": [53, 68],
+                            "name": "Position 4"
+                        },
+                        {
+                            "range": [69, 84],
+                            "name": "Position 5"
+                        },
+                        {
+                            "range": [85, 100],
+                            "name": "Position 6"
+                        },
+                        {
+                            "range": [101, 116],
+                            "name": "Position 7"
+                        },
+                        {
+                            "range": [117, 132],
+                            "name": "Position 8"
+                        },
+                        {
+                            "range": [133, 148],
+                            "name": "Position 9"
+                        },
+                        {
+                            "range": [149, 164],
+                            "name": "Position 10"
+                        },
+                        {
+                            "range": [165, 180],
+                            "name": "Position 11"
+                        },
+                        {
+                            "range": [181, 196],
+                            "name": "Position 12"
+                        },
+                        {
+                            "range": [197, 244],
+                            "name": "No effect"
+                        },
+                        {
+                            "range": [245, 255],
+                            "name": "Random (music/controller triggered)"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 50],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [51, 101],
+                            "name": "Slow random action"
+                        },
+                        {
+                            "range": [102, 152],
+                            "name": "Medium random action"
+                        },
+                        {
+                            "range": [153, 203],
+                            "name": "Fast random action"
+                        },
+                        {
+                            "range": [204, 255],
+                            "name": "Random speed and action"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "Lamp On/Off",
+                        "Trigger Mode",
+                        "Parabol Speed",
+                        "Trigger Decay",
+                        "Colour/Gobo Wheel"
+                    ]
+                },
+                {
+                    "name": "Single",
+                    "channels": [
+                        "Control"
+                    ]
+                }
+            ]
+        }
+    ]
+}

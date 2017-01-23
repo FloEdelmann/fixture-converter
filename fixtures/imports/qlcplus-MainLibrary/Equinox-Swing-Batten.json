@@ -1,0 +1,890 @@
+{
+    "manufacturers": {
+        "Equinox": {
+            "name": "Equinox"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Equinox",
+            "name": "Swing Batten",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [1065, 160, 80],
+                "weight": 7.5,
+                "power": 100,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master Dimmer (0-100%)"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [8, 255],
+                            "name": "Strobe (Slow To Fast)"
+                        }
+                    ]
+                },
+                "Shows": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [8, 49],
+                            "name": "Show 1"
+                        },
+                        {
+                            "range": [50, 91],
+                            "name": "Show 2"
+                        },
+                        {
+                            "range": [92, 133],
+                            "name": "Show 3"
+                        },
+                        {
+                            "range": [134, 175],
+                            "name": "Show 4"
+                        },
+                        {
+                            "range": [176, 217],
+                            "name": "Show 5"
+                        },
+                        {
+                            "range": [218, 247],
+                            "name": "Show 6"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Sound Active"
+                        }
+                    ]
+                },
+                "Colour Macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [6, 9],
+                            "name": "R",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [10, 13],
+                            "name": "G",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [14, 17],
+                            "name": "B",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [18, 21],
+                            "name": "W",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [22, 25],
+                            "name": "RG",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [26, 29],
+                            "name": "RB",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [30, 33],
+                            "name": "RW",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [34, 37],
+                            "name": "GB",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [38, 41],
+                            "name": "GW",
+                            "color": "#00ff00",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [42, 45],
+                            "name": "BW",
+                            "color": "#0000ff",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [46, 49],
+                            "name": "RGB"
+                        },
+                        {
+                            "range": [50, 53],
+                            "name": "RGW"
+                        },
+                        {
+                            "range": [54, 57],
+                            "name": "RBW"
+                        },
+                        {
+                            "range": [58, 61],
+                            "name": "GBW"
+                        },
+                        {
+                            "range": [62, 63],
+                            "name": "RGBW"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Colour Chase 1"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Colour Chase 2"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Colour Chase 3"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Colour Chase 4"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Colour Chase 5"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "Colour Chase 6"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "Colour Chase 7"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "Colour Chase 8"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "Colour Chase 9"
+                        },
+                        {
+                            "range": [208, 223],
+                            "name": "Colour Chase 10"
+                        },
+                        {
+                            "range": [224, 239],
+                            "name": "Colour Chase 11"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Colour Chase 12"
+                        }
+                    ]
+                },
+                "Colour Chase Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Colour Chase Speed (Slow-Fast)"
+                        }
+                    ]
+                },
+                "Show Mode Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Show Mode Speed (Slow - Fast)"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt (0°-270°)"
+                        }
+                    ]
+                },
+                "Tilt Movement Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Movement Speed"
+                        }
+                    ]
+                },
+                "LED 1 Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 8],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [9, 24],
+                            "name": "LED 1 - R"
+                        },
+                        {
+                            "range": [25, 41],
+                            "name": "LED 1 - G"
+                        },
+                        {
+                            "range": [42, 57],
+                            "name": "LED 1 - B"
+                        },
+                        {
+                            "range": [58, 74],
+                            "name": "LED 1 - W"
+                        },
+                        {
+                            "range": [75, 90],
+                            "name": "LED 1 - RG"
+                        },
+                        {
+                            "range": [91, 107],
+                            "name": "LED 1 - RB"
+                        },
+                        {
+                            "range": [108, 123],
+                            "name": "LED 1 - RW"
+                        },
+                        {
+                            "range": [124, 140],
+                            "name": "LED 1 - GB"
+                        },
+                        {
+                            "range": [141, 156],
+                            "name": "LED 1 - GW"
+                        },
+                        {
+                            "range": [157, 173],
+                            "name": "LED 1 - BW"
+                        },
+                        {
+                            "range": [174, 189],
+                            "name": "LED 1 - RGB"
+                        },
+                        {
+                            "range": [190, 206],
+                            "name": "LED 1 - RGW"
+                        },
+                        {
+                            "range": [207, 222],
+                            "name": "LED 1 - RBW"
+                        },
+                        {
+                            "range": [223, 239],
+                            "name": "LED 1 - GBW"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "LED 1 - RGBW"
+                        }
+                    ]
+                },
+                "LED 2 Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 8],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [9, 24],
+                            "name": "LED 2 - R"
+                        },
+                        {
+                            "range": [25, 41],
+                            "name": "LED 2 - G"
+                        },
+                        {
+                            "range": [42, 57],
+                            "name": "LED 2 - B"
+                        },
+                        {
+                            "range": [58, 74],
+                            "name": "LED 2 - W"
+                        },
+                        {
+                            "range": [75, 90],
+                            "name": "LED 2 - RG"
+                        },
+                        {
+                            "range": [91, 107],
+                            "name": "LED 2 - RB"
+                        },
+                        {
+                            "range": [108, 123],
+                            "name": "LED 2 - RW"
+                        },
+                        {
+                            "range": [124, 140],
+                            "name": "LED 2 - GB"
+                        },
+                        {
+                            "range": [141, 156],
+                            "name": "LED 2 - GW"
+                        },
+                        {
+                            "range": [157, 173],
+                            "name": "LED 2 - BW"
+                        },
+                        {
+                            "range": [174, 189],
+                            "name": "LED 2 - RGB"
+                        },
+                        {
+                            "range": [190, 206],
+                            "name": "LED 2 - RGW"
+                        },
+                        {
+                            "range": [207, 222],
+                            "name": "LED 2 - RBW"
+                        },
+                        {
+                            "range": [223, 239],
+                            "name": "LED 2 - GBW"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "LED 2 - RGBW"
+                        }
+                    ]
+                },
+                "LED 3 Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 8],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [9, 24],
+                            "name": "LED 3 - R"
+                        },
+                        {
+                            "range": [25, 41],
+                            "name": "LED 3 - G"
+                        },
+                        {
+                            "range": [42, 57],
+                            "name": "LED 3 - B"
+                        },
+                        {
+                            "range": [58, 74],
+                            "name": "LED 3 - W"
+                        },
+                        {
+                            "range": [75, 90],
+                            "name": "LED 3 - RG"
+                        },
+                        {
+                            "range": [91, 107],
+                            "name": "LED 3 - RB"
+                        },
+                        {
+                            "range": [108, 123],
+                            "name": "LED 3 - RW"
+                        },
+                        {
+                            "range": [124, 140],
+                            "name": "LED 3 - GB"
+                        },
+                        {
+                            "range": [141, 156],
+                            "name": "LED 3 - GW"
+                        },
+                        {
+                            "range": [157, 173],
+                            "name": "LED 3 - BW"
+                        },
+                        {
+                            "range": [174, 189],
+                            "name": "LED 3 - RGB"
+                        },
+                        {
+                            "range": [190, 206],
+                            "name": "LED 3 - RGW"
+                        },
+                        {
+                            "range": [207, 222],
+                            "name": "LED 3 - RBW"
+                        },
+                        {
+                            "range": [223, 239],
+                            "name": "LED 3 - GBW"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "LED 3 - RGBW"
+                        }
+                    ]
+                },
+                "LED 4 Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 8],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [9, 24],
+                            "name": "LED 4 - R"
+                        },
+                        {
+                            "range": [25, 41],
+                            "name": "LED 4 - G"
+                        },
+                        {
+                            "range": [42, 57],
+                            "name": "LED 4 - B"
+                        },
+                        {
+                            "range": [58, 74],
+                            "name": "LED 4 - W"
+                        },
+                        {
+                            "range": [75, 90],
+                            "name": "LED 4 - RG"
+                        },
+                        {
+                            "range": [91, 107],
+                            "name": "LED 4 - RB"
+                        },
+                        {
+                            "range": [108, 123],
+                            "name": "LED 4 - RW"
+                        },
+                        {
+                            "range": [124, 140],
+                            "name": "LED 4 - GB"
+                        },
+                        {
+                            "range": [141, 156],
+                            "name": "LED 4 - GW"
+                        },
+                        {
+                            "range": [157, 173],
+                            "name": "LED 4 - BW"
+                        },
+                        {
+                            "range": [174, 189],
+                            "name": "LED 4 - RGB"
+                        },
+                        {
+                            "range": [190, 206],
+                            "name": "LED 4 - RGW"
+                        },
+                        {
+                            "range": [207, 222],
+                            "name": "LED 4 - RBW"
+                        },
+                        {
+                            "range": [223, 239],
+                            "name": "LED 4 - GBW"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "LED 4 - RGBW"
+                        }
+                    ]
+                },
+                "LED 5 Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 8],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [9, 24],
+                            "name": "LED 5 - R"
+                        },
+                        {
+                            "range": [25, 41],
+                            "name": "LED 5 - G"
+                        },
+                        {
+                            "range": [42, 57],
+                            "name": "LED 5 - B"
+                        },
+                        {
+                            "range": [58, 74],
+                            "name": "LED 5 - W"
+                        },
+                        {
+                            "range": [75, 90],
+                            "name": "LED 5 - RG"
+                        },
+                        {
+                            "range": [91, 107],
+                            "name": "LED 5 - RB"
+                        },
+                        {
+                            "range": [108, 123],
+                            "name": "LED 5 - RW"
+                        },
+                        {
+                            "range": [124, 140],
+                            "name": "LED 5 - GB"
+                        },
+                        {
+                            "range": [141, 156],
+                            "name": "LED 5 - GW"
+                        },
+                        {
+                            "range": [157, 173],
+                            "name": "LED 5 - BW"
+                        },
+                        {
+                            "range": [174, 189],
+                            "name": "LED 5 - RGB"
+                        },
+                        {
+                            "range": [190, 206],
+                            "name": "LED 5 - RGW"
+                        },
+                        {
+                            "range": [207, 222],
+                            "name": "LED 5 - RBW"
+                        },
+                        {
+                            "range": [223, 239],
+                            "name": "LED 5 - GBW"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "LED 5 - RGBW"
+                        }
+                    ]
+                },
+                "LED 6 Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 8],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [9, 24],
+                            "name": "LED 6 - R"
+                        },
+                        {
+                            "range": [25, 41],
+                            "name": "LED 6 - G"
+                        },
+                        {
+                            "range": [42, 57],
+                            "name": "LED 6 - B"
+                        },
+                        {
+                            "range": [58, 74],
+                            "name": "LED 6 - W"
+                        },
+                        {
+                            "range": [75, 90],
+                            "name": "LED 6 - RG"
+                        },
+                        {
+                            "range": [91, 107],
+                            "name": "LED 6 - RB"
+                        },
+                        {
+                            "range": [108, 123],
+                            "name": "LED 6 - RW"
+                        },
+                        {
+                            "range": [124, 140],
+                            "name": "LED 6 - GB"
+                        },
+                        {
+                            "range": [141, 156],
+                            "name": "LED 6 - GW"
+                        },
+                        {
+                            "range": [157, 173],
+                            "name": "LED 6 - BW"
+                        },
+                        {
+                            "range": [174, 189],
+                            "name": "LED 6 - RGB"
+                        },
+                        {
+                            "range": [190, 206],
+                            "name": "LED 6 - RGW"
+                        },
+                        {
+                            "range": [207, 222],
+                            "name": "LED 6 - RBW"
+                        },
+                        {
+                            "range": [223, 239],
+                            "name": "LED 6 - GBW"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "LED 6 - RGBW"
+                        }
+                    ]
+                },
+                "LED 7 Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 8],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [9, 24],
+                            "name": "LED 7 - R"
+                        },
+                        {
+                            "range": [25, 41],
+                            "name": "LED 7 - G"
+                        },
+                        {
+                            "range": [42, 57],
+                            "name": "LED 7 - B"
+                        },
+                        {
+                            "range": [58, 74],
+                            "name": "LED 7 - W"
+                        },
+                        {
+                            "range": [75, 90],
+                            "name": "LED 7 - RG"
+                        },
+                        {
+                            "range": [91, 107],
+                            "name": "LED 7 - RB"
+                        },
+                        {
+                            "range": [108, 123],
+                            "name": "LED 7 - RW"
+                        },
+                        {
+                            "range": [124, 140],
+                            "name": "LED 7 - GB"
+                        },
+                        {
+                            "range": [141, 156],
+                            "name": "LED 7 - GW"
+                        },
+                        {
+                            "range": [157, 173],
+                            "name": "LED 7 - BW"
+                        },
+                        {
+                            "range": [174, 189],
+                            "name": "LED 7 - RGB"
+                        },
+                        {
+                            "range": [190, 206],
+                            "name": "LED 7 - RGW"
+                        },
+                        {
+                            "range": [207, 222],
+                            "name": "LED 7 - RBW"
+                        },
+                        {
+                            "range": [223, 239],
+                            "name": "LED 7 - GBW"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "LED 7 - RGBW"
+                        }
+                    ]
+                },
+                "LED 8 Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 8],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [9, 24],
+                            "name": "LED 8 - R"
+                        },
+                        {
+                            "range": [25, 41],
+                            "name": "LED 8 - G"
+                        },
+                        {
+                            "range": [42, 57],
+                            "name": "LED 8 - B"
+                        },
+                        {
+                            "range": [58, 74],
+                            "name": "LED 8 - W"
+                        },
+                        {
+                            "range": [75, 90],
+                            "name": "LED 8 - RG"
+                        },
+                        {
+                            "range": [91, 107],
+                            "name": "LED 8 - RB"
+                        },
+                        {
+                            "range": [108, 123],
+                            "name": "LED 8 - RW"
+                        },
+                        {
+                            "range": [124, 140],
+                            "name": "LED 8 - GB"
+                        },
+                        {
+                            "range": [141, 156],
+                            "name": "LED 8 - GW"
+                        },
+                        {
+                            "range": [157, 173],
+                            "name": "LED 8 - BW"
+                        },
+                        {
+                            "range": [174, 189],
+                            "name": "LED 8 - RGB"
+                        },
+                        {
+                            "range": [190, 206],
+                            "name": "LED 8 - RGW"
+                        },
+                        {
+                            "range": [207, 222],
+                            "name": "LED 8 - RBW"
+                        },
+                        {
+                            "range": [223, 239],
+                            "name": "LED 8 - GBW"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "LED 8 - RGBW"
+                        }
+                    ]
+                }
+            },
+            "heads": {
+                "12 Channel-head0": [
+                    "LED 1 Colour"
+                ],
+                "12 Channel-head1": [
+                    "LED 2 Colour"
+                ],
+                "12 Channel-head2": [
+                    "LED 3 Colour"
+                ],
+                "12 Channel-head3": [
+                    "LED 4 Colour"
+                ],
+                "12 Channel-head4": [
+                    "LED 5 Colour"
+                ],
+                "12 Channel-head5": [
+                    "LED 6 Colour"
+                ],
+                "12 Channel-head6": [
+                    "LED 7 Colour"
+                ],
+                "12 Channel-head7": [
+                    "LED 8 Colour"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "6 Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe",
+                        "Shows",
+                        "Show Mode Speed",
+                        "Colour Macros",
+                        "Colour Chase Speed"
+                    ]
+                },
+                {
+                    "name": "12 Channel",
+                    "channels": [
+                        "Tilt",
+                        "Tilt Movement Speed",
+                        "Dimmer",
+                        "Strobe",
+                        "LED 1 Colour",
+                        "LED 2 Colour",
+                        "LED 3 Colour",
+                        "LED 4 Colour",
+                        "LED 5 Colour",
+                        "LED 6 Colour",
+                        "LED 7 Colour",
+                        "LED 8 Colour"
+                    ]
+                },
+                {
+                    "name": "16 Channel",
+                    "channels": [
+                        "Tilt",
+                        "Tilt Movement Speed",
+                        "Dimmer",
+                        "Strobe",
+                        "LED 1 Colour",
+                        "LED 2 Colour",
+                        "LED 3 Colour",
+                        "LED 4 Colour",
+                        "LED 5 Colour",
+                        "LED 6 Colour",
+                        "LED 7 Colour",
+                        "LED 8 Colour",
+                        "Shows",
+                        "Show Mode Speed",
+                        "Colour Macros",
+                        "Colour Chase Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

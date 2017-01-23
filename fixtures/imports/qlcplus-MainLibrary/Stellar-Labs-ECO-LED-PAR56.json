@@ -1,0 +1,126 @@
+{
+    "manufacturers": {
+        "Stellar Labs": {
+            "name": "Stellar Labs"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stellar Labs",
+            "name": "ECO LED PAR56",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [201, 201, 266],
+                "weight": 1.6,
+                "power": 20,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "RGB control, ch2=red, ch3=green, ch4=blue"
+                        },
+                        {
+                            "range": [100, 100],
+                            "name": "7 colour fade, ch5=speed control"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "7 colour change, ch5=speed control"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "3 colour change, ch5=speed control"
+                        }
+                    ]
+                },
+                "Red Colour": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Green Colour": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Blue Colour": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No function - no speed"
+                        },
+                        {
+                            "range": [11, 100],
+                            "name": "Fast to slow"
+                        },
+                        {
+                            "range": [101, 150],
+                            "name": "No function - no speed"
+                        },
+                        {
+                            "range": [151, 255],
+                            "name": "Speed control by unit, by music or potentiometer"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "5 Channel",
+                    "channels": [
+                        "Mode",
+                        "Red Colour",
+                        "Green Colour",
+                        "Blue Colour",
+                        "Speed"
+                    ]
+                },
+                {
+                    "name": "3 Channel",
+                    "channels": [
+                        "Red Colour",
+                        "Green Colour",
+                        "Blue Colour"
+                    ]
+                }
+            ]
+        }
+    ]
+}

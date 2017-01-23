@@ -1,0 +1,119 @@
+{
+    "manufacturers": {
+        "Cameo": {
+            "name": "Cameo"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Cameo",
+            "name": "LED RGB PAR56 9x3W",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [250, 230, 250],
+                "weight": 2.1,
+                "power": 40,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Master Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobing (Slow-->Fast)"
+                        }
+                    ]
+                },
+                "RED": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "GREEN": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green"
+                        }
+                    ]
+                },
+                "BLUE": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue"
+                        }
+                    ]
+                },
+                "Color Change": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [5, 84],
+                            "name": "Color micro"
+                        },
+                        {
+                            "range": [85, 169],
+                            "name": "Color jump"
+                        },
+                        {
+                            "range": [170, 255],
+                            "name": "Color fade"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "6-Channel Mode",
+                    "channels": [
+                        "Master Dimmer",
+                        "RED",
+                        "GREEN",
+                        "BLUE",
+                        "Color Change",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,155 @@
+{
+    "manufacturers": {
+        "Cameo": {
+            "name": "Cameo"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Cameo",
+            "name": "LED RGB PAR56 Can",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [210, 213, 169],
+                "weight": 1.4,
+                "power": 35,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED 5mm, 25W"
+                },
+                "lens": {
+                    "name": "PC",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue"
+                        }
+                    ]
+                },
+                "Master": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master Dimmer"
+                        }
+                    ]
+                },
+                "Strobe / Speed Adjust / Sensitivity Adjust": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 16],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [17, 255],
+                            "name": "Strobe / Speed Adjust / Sensitivity Adjust"
+                        }
+                    ]
+                },
+                "Effect": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [32, 95],
+                            "name": "Colour Mixing"
+                        },
+                        {
+                            "range": [96, 159],
+                            "name": "RGB Colour Change"
+                        },
+                        {
+                            "range": [160, 233],
+                            "name": "7 Colour Change"
+                        },
+                        {
+                            "range": [234, 243],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [244, 255],
+                            "name": "Sound Activation"
+                        }
+                    ]
+                }
+            },
+            "heads": {
+                "4-Channel Mode (Red Dot)-head0": [
+                    "Red",
+                    "Green",
+                    "Blue",
+                    "Master"
+                ],
+                "6-Channel Mode (No Dot)-head0": [
+                    "Red",
+                    "Green",
+                    "Blue",
+                    "Master",
+                    "Strobe / Speed Adjust / Sensitivity Adjust",
+                    "Effect"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "4-Channel Mode (Red Dot)",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Master"
+                    ]
+                },
+                {
+                    "name": "6-Channel Mode (No Dot)",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Master",
+                        "Strobe / Speed Adjust / Sensitivity Adjust",
+                        "Effect"
+                    ]
+                }
+            ]
+        }
+    ]
+}

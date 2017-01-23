@@ -1,0 +1,275 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "Quad Par Profile RGBW 5x8W",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [164, 164, 105],
+                "weight": 2.1,
+                "power": 48,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 9000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Macro": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "manual mode"
+                        },
+                        {
+                            "range": [1, 24],
+                            "name": "constant color controled by Ch. 7"
+                        },
+                        {
+                            "range": [25, 49],
+                            "name": "automatic show 1"
+                        },
+                        {
+                            "range": [50, 74],
+                            "name": "automatic show 2"
+                        },
+                        {
+                            "range": [75, 99],
+                            "name": "automatic show 3"
+                        },
+                        {
+                            "range": [100, 124],
+                            "name": "automatic show 4"
+                        },
+                        {
+                            "range": [125, 149],
+                            "name": "automatic show 5"
+                        },
+                        {
+                            "range": [150, 174],
+                            "name": "automatic show 6"
+                        },
+                        {
+                            "range": [175, 199],
+                            "name": "automatic show 7"
+                        },
+                        {
+                            "range": [200, 224],
+                            "name": "automatic show 8"
+                        },
+                        {
+                            "range": [225, 249],
+                            "name": "automatic show 9"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "sound show"
+                        }
+                    ]
+                },
+                "Constant Color/Chasespeed Ch. 6": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 18],
+                            "name": "black",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [19, 37],
+                            "name": "red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [38, 56],
+                            "name": "orange",
+                            "color": "#ff8600"
+                        },
+                        {
+                            "range": [57, 75],
+                            "name": "yellow",
+                            "color": "#ffff14"
+                        },
+                        {
+                            "range": [76, 94],
+                            "name": "green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [95, 113],
+                            "name": "light blue",
+                            "color": "#5ecdff"
+                        },
+                        {
+                            "range": [114, 132],
+                            "name": "blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [133, 151],
+                            "name": "violet",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [152, 170],
+                            "name": "pink",
+                            "color": "#ff3270"
+                        },
+                        {
+                            "range": [171, 189],
+                            "name": "white",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [190, 208],
+                            "name": "red + white",
+                            "color": "#ffb0b2"
+                        },
+                        {
+                            "range": [209, 227],
+                            "name": "green + white",
+                            "color": "#9dffa8"
+                        },
+                        {
+                            "range": [228, 246],
+                            "name": "blue + white",
+                            "color": "#85d0ff"
+                        },
+                        {
+                            "range": [247, 255],
+                            "name": "red + green + blue + white",
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                "Strobo": {
+                    "type": "Strobe"
+                }
+            },
+            "heads": {
+                "4ch-head0": [
+                    "Red",
+                    "Green",
+                    "Blue",
+                    "White"
+                ],
+                "6ch-head0": [
+                    "Red",
+                    "Green",
+                    "Blue",
+                    "White",
+                    "Dimmer"
+                ],
+                "8ch-head0": [
+                    "Dimmer",
+                    "Red",
+                    "Green",
+                    "Blue",
+                    "White"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "4ch",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White"
+                    ]
+                },
+                {
+                    "name": "6ch",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Dimmer",
+                        "Strobo"
+                    ]
+                },
+                {
+                    "name": "8ch",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Macro",
+                        "Constant Color/Chasespeed Ch. 6",
+                        "Strobo"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "manufacturers": {
+        "Pro-Lights": {
+            "name": "Pro-Lights"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Pro-Lights",
+            "name": "GoboMix",
+            "type": "Flower",
+            "physical": {
+                "dimensions": [236, 108, 205],
+                "weight": 2.5,
+                "power": 30,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 1200
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master Dimmer (0-100%)"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "Strobe (Slow to Fast)"
+                        }
+                    ]
+                },
+                "Gobo Rotating": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Gobos rotating, mirror dish rotating"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Gobos rotating, mirror dish static"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Gobos static, mirror dish rotating"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Gobo static, mirror dish static"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe",
+                        "Gobo Rotating"
+                    ]
+                }
+            ]
+        }
+    ]
+}

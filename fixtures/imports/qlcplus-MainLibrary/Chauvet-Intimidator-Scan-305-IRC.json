@@ -1,0 +1,508 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "Intimidator Scan 305 IRC",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [255, 147, 430],
+                "weight": 4.6,
+                "power": 104,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 1984
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [15, 15]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 180,
+                    "tiltMax": 90
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-180°"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-90°"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 6],
+                            "name": "Open (white)",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [7, 13],
+                            "name": "Yellow",
+                            "color": "#ffe504"
+                        },
+                        {
+                            "range": [14, 20],
+                            "name": "Purple",
+                            "color": "#55007f"
+                        },
+                        {
+                            "range": [21, 27],
+                            "name": "Green",
+                            "color": "#19af20"
+                        },
+                        {
+                            "range": [28, 34],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [35, 41],
+                            "name": "Light blue",
+                            "color": "#7f7fff"
+                        },
+                        {
+                            "range": [42, 48],
+                            "name": "Kelly green",
+                            "color": "#4cbb17"
+                        },
+                        {
+                            "range": [49, 55],
+                            "name": "Orange",
+                            "color": "#ff7f00"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Dark blue",
+                            "color": "#00007f"
+                        },
+                        {
+                            "range": [64, 70],
+                            "name": "White/yellow (split colors)",
+                            "color": "#ffffff",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [71, 77],
+                            "name": "Yellow/purple (split colors)",
+                            "color": "#ffff00",
+                            "color2": "#55007f"
+                        },
+                        {
+                            "range": [78, 84],
+                            "name": "Purple/green (split colors)",
+                            "color": "#55007f",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [85, 91],
+                            "name": "Green/Red (split colors)",
+                            "color": "#00ff00",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [92, 98],
+                            "name": "Red/light blue (split colors)",
+                            "color": "#ff0000",
+                            "color2": "#7f7fff"
+                        },
+                        {
+                            "range": [99, 105],
+                            "name": "Light blue/Kelly green (split colors)",
+                            "color": "#7f7fff",
+                            "color2": "#4cbb17"
+                        },
+                        {
+                            "range": [106, 112],
+                            "name": "Kelly green/orange (split colors)",
+                            "color": "#4cbb17",
+                            "color2": "#ff7f00"
+                        },
+                        {
+                            "range": [113, 119],
+                            "name": "Orange/dark blue (split colors)",
+                            "color": "#ff7f00",
+                            "color2": "#00007f"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Dark blue/white (split colors)",
+                            "color": "#00007f",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Rotate counter-clockwise (slow to fast)"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Rotate clockwise (slow to fast)"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [4, 7],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [8, 76],
+                            "name": "Synchronized (slow to fast)"
+                        },
+                        {
+                            "range": [77, 145],
+                            "name": "Pulse (slow to fast)"
+                        },
+                        {
+                            "range": [146, 215],
+                            "name": "Random (slow to fast)"
+                        },
+                        {
+                            "range": [216, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Gobo Wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Gobo 1 (glass)"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Gobo 2 (glass)"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Gobo 7 shake, fast to slow"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Gobo 6 shake, fast to slow"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Gobo 5 shake, fast to slow"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Gobo 4 shake, fast to slow"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Gobo 3 shake, fast to slow"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "Gobo 2 shake, fast to slow"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Gobo 1 shake, fast to slow"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Gobo scroll: counter-clockwise rotation"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Gobo scroll: clockwise rotation"
+                        }
+                    ]
+                },
+                "Gobo Rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Gobo indexing counter-clockwise"
+                        },
+                        {
+                            "range": [64, 147],
+                            "name": "Rotate (slow to fast)"
+                        },
+                        {
+                            "range": [148, 231],
+                            "name": "Rotate opposite (slow to fast)"
+                        },
+                        {
+                            "range": [232, 255],
+                            "name": "Gobo bounce"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [8, 255],
+                            "name": "Stop, static prism effect"
+                        }
+                    ]
+                },
+                "Function": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Pan/tilt move-in-black"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Pan/tilt move-in-black (disable)"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Color wheel move-in-black"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Gobo wheel move-in-black (disable)"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Gobo wheel move-in-black"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Color wheel and gobo wheel move-in-black (disable)"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Fast movement"
+                        },
+                        {
+                            "range": [64, 87],
+                            "name": "Fast movement (disable)"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "All movement move-in-black (disable)"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Reset pan/tilt"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Reset color wheel"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Reset gobo wheel"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "Reset prism"
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Reset all"
+                        },
+                        {
+                            "range": [160, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Movement Macros": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [8, 23],
+                            "name": "Automatic 1"
+                        },
+                        {
+                            "range": [24, 39],
+                            "name": "Automatic 2"
+                        },
+                        {
+                            "range": [40, 55],
+                            "name": "Automatic 3"
+                        },
+                        {
+                            "range": [56, 71],
+                            "name": "Automatic 4"
+                        },
+                        {
+                            "range": [72, 87],
+                            "name": "Automatic 5"
+                        },
+                        {
+                            "range": [88, 103],
+                            "name": "Automatic 6"
+                        },
+                        {
+                            "range": [104, 119],
+                            "name": "Automatic 7"
+                        },
+                        {
+                            "range": [120, 135],
+                            "name": "Automatic 8"
+                        },
+                        {
+                            "range": [136, 151],
+                            "name": "Sound 1"
+                        },
+                        {
+                            "range": [152, 167],
+                            "name": "Sound 2"
+                        },
+                        {
+                            "range": [168, 183],
+                            "name": "Sound 3"
+                        },
+                        {
+                            "range": [184, 199],
+                            "name": "Sound 4"
+                        },
+                        {
+                            "range": [200, 215],
+                            "name": "Sound 5"
+                        },
+                        {
+                            "range": [216, 231],
+                            "name": "Sound 6"
+                        },
+                        {
+                            "range": [232, 247],
+                            "name": "Sound 7"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Sound 8"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "11-Channel",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan/Tilt Speed",
+                        "Color",
+                        "Shutter",
+                        "Dimmer",
+                        "Gobo Wheel",
+                        "Gobo Rotation",
+                        "Prism",
+                        "Function",
+                        "Movement Macros"
+                    ]
+                },
+                {
+                    "name": "7-Channel",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Color",
+                        "Shutter",
+                        "Gobo Wheel",
+                        "Gobo Rotation",
+                        "Prism"
+                    ]
+                }
+            ]
+        }
+    ]
+}

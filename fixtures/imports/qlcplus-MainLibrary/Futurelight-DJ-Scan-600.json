@@ -1,0 +1,286 @@
+{
+    "manufacturers": {
+        "Futurelight": {
+            "name": "Futurelight"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Futurelight",
+            "name": "DJ-Scan 600",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [340, 760, 340],
+                "weight": 24,
+                "power": 1035,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "HMI 575W",
+                    "colorTemperature": 6000,
+                    "lumens": 49000
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 180,
+                    "tiltMax": 75
+                }
+            },
+            "availableChannels": {
+                "Horizontal movement (Pan)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Horizontal movement (pan)"
+                        }
+                    ]
+                },
+                "Vertical movement (Tilt)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Vertical movement (tilt)"
+                        }
+                    ]
+                },
+                "Colour-Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Open/white",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Light blue",
+                            "color": "#4b83ff"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Pink",
+                            "color": "#ff64e6"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "UV",
+                            "color": "#453eff"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Forwards rainbow effect with increasing speed"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Backwards rainbow effect with increasing speed"
+                        }
+                    ]
+                },
+                "Rotating Gobo-Wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Open/white"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Rot. gobo 1"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Rot. gobo 2"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Rot. gobo 3"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Rot. gobo 4"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Rot. gobo 5"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Rot. gobo 6"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Rot. gobo 7"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Forwards gobo-change with increasing speed"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Backwards gobo-change with increasing speed"
+                        }
+                    ]
+                },
+                "Gobo Rotation": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [4, 135],
+                            "name": "Forwards gobo rotation with increasing speed"
+                        },
+                        {
+                            "range": [136, 255],
+                            "name": "Backwards gobo rotation with increasing speed"
+                        }
+                    ]
+                },
+                "Shutter, Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [1, 128],
+                            "name": "Gradual adjustment of the dimmer intensity from 0 to 100 %"
+                        },
+                        {
+                            "range": [129, 133],
+                            "name": "No function (Shutter open)"
+                        },
+                        {
+                            "range": [134, 243],
+                            "name": "Random strobe effect with decreasing speed"
+                        },
+                        {
+                            "range": [244, 249],
+                            "name": "Reset (after 3-5 seconds)"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "No function (Shutter open)"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Continuous adjustment from near to far"
+                        }
+                    ]
+                },
+                "Effect-wheel": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 47],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [48, 48],
+                            "name": "3-facet-prism"
+                        },
+                        {
+                            "range": [49, 66],
+                            "name": "Forwards rotation 3-facet-prism with increasing speed"
+                        },
+                        {
+                            "range": [67, 85],
+                            "name": "Backwards rotation 3-facet-prism with increasing speed"
+                        },
+                        {
+                            "range": [86, 86],
+                            "name": "4-facet-prism"
+                        },
+                        {
+                            "range": [87, 104],
+                            "name": "Forwards rotation 4-facet-prism with increasing speed"
+                        },
+                        {
+                            "range": [105, 123],
+                            "name": "Backwards rotation 4-facet-prism with increasing speed"
+                        },
+                        {
+                            "range": [124, 124],
+                            "name": "3D-prism"
+                        },
+                        {
+                            "range": [125, 142],
+                            "name": "Forwards rotation 3D-prism with increasing speed"
+                        },
+                        {
+                            "range": [143, 161],
+                            "name": "Backwards rotation 3D-prism with increasing speed"
+                        },
+                        {
+                            "range": [162, 162],
+                            "name": "9-facet-prism"
+                        },
+                        {
+                            "range": [163, 180],
+                            "name": "Forwards rotation 9-facet-prism with increasing speed"
+                        },
+                        {
+                            "range": [181, 199],
+                            "name": "Backwards rotation 9-facet-prism with increasing speed"
+                        },
+                        {
+                            "range": [200, 223],
+                            "name": "9-facet-prism"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Rainbow effect with increasing speed"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "8 Channels",
+                    "channels": [
+                        "Horizontal movement (Pan)",
+                        "Vertical movement (Tilt)",
+                        "Colour-Wheel",
+                        "Rotating Gobo-Wheel",
+                        "Gobo Rotation",
+                        "Shutter, Strobe",
+                        "Focus",
+                        "Effect-wheel"
+                    ]
+                }
+            ]
+        }
+    ]
+}

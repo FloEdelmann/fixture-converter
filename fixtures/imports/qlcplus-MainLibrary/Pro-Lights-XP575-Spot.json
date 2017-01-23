@@ -1,0 +1,430 @@
+{
+    "manufacturers": {
+        "Pro-Lights": {
+            "name": "Pro-Lights"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Pro-Lights",
+            "name": "XP575 Spot",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [400, 540, 380],
+                "weight": 28.5,
+                "power": 800,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "HTI 575W",
+                    "colorTemperature": 5600
+                },
+                "lens": {
+                    "name": "PC"
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 570,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer intensity"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [8, 255],
+                            "name": "Strobe from slow to fast"
+                        }
+                    ]
+                },
+                "Colour 1": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 13],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [14, 27],
+                            "name": "Steel Blue",
+                            "color": "#007dc2"
+                        },
+                        {
+                            "range": [28, 41],
+                            "name": "Orange",
+                            "color": "#e87845"
+                        },
+                        {
+                            "range": [42, 55],
+                            "name": "Green Blue",
+                            "color": "#85c226"
+                        },
+                        {
+                            "range": [56, 69],
+                            "name": "Bright Blue",
+                            "color": "#bab3d6"
+                        },
+                        {
+                            "range": [70, 83],
+                            "name": "Bright Pink",
+                            "color": "#f09ca1"
+                        },
+                        {
+                            "range": [84, 97],
+                            "name": "Red",
+                            "color": "#d9261c"
+                        },
+                        {
+                            "range": [98, 111],
+                            "name": "Deep Blue",
+                            "color": "#291770"
+                        },
+                        {
+                            "range": [112, 125],
+                            "name": "Yellow",
+                            "color": "#fff500"
+                        },
+                        {
+                            "range": [126, 139],
+                            "name": "Dark Pink",
+                            "color": "#964578"
+                        },
+                        {
+                            "range": [140, 153],
+                            "name": "Moss Green",
+                            "color": "#009140"
+                        },
+                        {
+                            "range": [154, 167],
+                            "name": "Light Blue",
+                            "color": "#75c4f0"
+                        },
+                        {
+                            "range": [168, 255],
+                            "name": "Roation slow to fast"
+                        }
+                    ]
+                },
+                "Colour 2": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 13],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [14, 27],
+                            "name": "Steel Blue",
+                            "color": "#75c4f0"
+                        },
+                        {
+                            "range": [28, 41],
+                            "name": "Rose Pink",
+                            "color": "#f09ca1"
+                        },
+                        {
+                            "range": [42, 55],
+                            "name": "Yellow",
+                            "color": "#fff500"
+                        },
+                        {
+                            "range": [56, 69],
+                            "name": "Pale Blue",
+                            "color": "#b5dec7"
+                        },
+                        {
+                            "range": [70, 83],
+                            "name": "Central Orange",
+                            "color": "#fffa9c"
+                        },
+                        {
+                            "range": [84, 97],
+                            "name": "Pale Blue - Central Orange",
+                            "color": "#b5dec7",
+                            "color2": "#fffa9c"
+                        },
+                        {
+                            "range": [98, 111],
+                            "name": "Steel Blue - Orange",
+                            "color": "#75c4f0",
+                            "color2": "#e87817"
+                        },
+                        {
+                            "range": [112, 125],
+                            "name": "Green - Yellow",
+                            "color": "#009140",
+                            "color2": "#fff500"
+                        },
+                        {
+                            "range": [126, 139],
+                            "name": "Rose Pink - Moss Green",
+                            "color": "#f09ca1",
+                            "color2": "#85c226"
+                        },
+                        {
+                            "range": [140, 153],
+                            "name": "Rose Pink- Yellow - Steel Blue - Green"
+                        },
+                        {
+                            "range": [154, 167],
+                            "name": "Yellow - Moss Green - Orange - Steel Blue"
+                        },
+                        {
+                            "range": [168, 255],
+                            "name": "Rotation slow to fast"
+                        }
+                    ]
+                },
+                "Fixed Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No Gobo"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "Gobo 9"
+                        },
+                        {
+                            "range": [160, 255],
+                            "name": "Change Gobos"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 23],
+                            "name": "No Gobo"
+                        },
+                        {
+                            "range": [24, 47],
+                            "name": "Gobo1 (Colours)"
+                        },
+                        {
+                            "range": [48, 71],
+                            "name": "Gobo2 (Bars)"
+                        },
+                        {
+                            "range": [72, 95],
+                            "name": "Gobo3 (Atomic)"
+                        },
+                        {
+                            "range": [96, 119],
+                            "name": "Gobo4 (Ring)"
+                        },
+                        {
+                            "range": [120, 143],
+                            "name": "Gobo5 (Moon)"
+                        },
+                        {
+                            "range": [144, 167],
+                            "name": "Gobo6 (Sun)"
+                        },
+                        {
+                            "range": [168, 255],
+                            "name": "Gobo Rotation"
+                        }
+                    ]
+                },
+                "Gobo Rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Gobo Angle"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Rotate Right - Slow To Fast"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Rotate Left - Fast To Slow"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [2, 7],
+                            "name": "Triple Prism Static"
+                        },
+                        {
+                            "range": [8, 132],
+                            "name": "Forward Rotation From Fast To Slow"
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [1, 159],
+                            "name": "Min. To Max. Diameter"
+                        },
+                        {
+                            "range": [160, 207],
+                            "name": "Iris-In Slow To Fast"
+                        },
+                        {
+                            "range": [208, 253],
+                            "name": "Iris-Out Fast To Slow"
+                        },
+                        {
+                            "range": [254, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Focus"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Normal State"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Mechanical Reset & Re-Start After 3 Seconds"
+                        }
+                    ]
+                },
+                "Lamp Switch": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 47],
+                            "name": "Standby"
+                        },
+                        {
+                            "range": [48, 95],
+                            "name": "Lamp On 3 Seconds Later"
+                        },
+                        {
+                            "range": [96, 159],
+                            "name": "Standby"
+                        },
+                        {
+                            "range": [160, 207],
+                            "name": "Lamp Off 3 Seconds Later"
+                        },
+                        {
+                            "range": [208, 255],
+                            "name": "Standby"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "XP575-Spot",
+                    "channels": [
+                        "Dimmer",
+                        "Shutter",
+                        "Colour 1",
+                        "Colour 2",
+                        "Fixed Gobo",
+                        "Gobo",
+                        "Gobo Rotation",
+                        "Prism",
+                        "Iris",
+                        "Focus",
+                        "Pan",
+                        "Tilt",
+                        "Reset",
+                        "Lamp Switch"
+                    ]
+                }
+            ]
+        }
+    ]
+}

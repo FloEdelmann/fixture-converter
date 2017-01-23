@@ -1,0 +1,1606 @@
+{
+    "manufacturers": {
+        "Robe": {
+            "name": "Robe"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Robe",
+            "name": "Robin MiniMe",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [250, 345, 190],
+                "weight": 5.7,
+                "power": 100,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [16, 16]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 450,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Movement by 450°"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine control of movement"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Movement by 270°"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine control of movement"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed, Pan/Tilt Time": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Standard mode"
+                        },
+                        {
+                            "range": [1, 1],
+                            "name": "Max. speed mode"
+                        },
+                        {
+                            "range": [2, 255],
+                            "name": "Speed from max. to min./Time from 0.2s. to 25.5s."
+                        }
+                    ]
+                },
+                "Special Functions": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 49],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Pan/tilt speed mode"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Pan/tilt time mode"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Blackout while pan/tilt moving"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Disabled while pan/tilt moving"
+                        },
+                        {
+                            "range": [90, 94],
+                            "name": "Ceiling projection on"
+                        },
+                        {
+                            "range": [95, 99],
+                            "name": "Ceiling projection off"
+                        },
+                        {
+                            "range": [100, 104],
+                            "name": "Rear projection on"
+                        },
+                        {
+                            "range": [105, 109],
+                            "name": "Rear projection off"
+                        },
+                        {
+                            "range": [110, 129],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [130, 134],
+                            "name": "Keep aspect ratio on"
+                        },
+                        {
+                            "range": [135, 139],
+                            "name": "Keep aspect ratio off"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Pan/tilt reset"
+                        },
+                        {
+                            "range": [150, 179],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "Focus reset"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "Graphic engine reset (software update executing)"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Total reset"
+                        },
+                        {
+                            "range": [210, 219],
+                            "name": "Internal HDMI"
+                        },
+                        {
+                            "range": [220, 229],
+                            "name": "External HDMI"
+                        },
+                        {
+                            "range": [230, 234],
+                            "name": "Save AutoKeystoning"
+                        },
+                        {
+                            "range": [235, 255],
+                            "name": "Reserved"
+                        }
+                    ]
+                },
+                "Digital Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Zoom from min. --> real size"
+                        },
+                        {
+                            "range": [128, 128],
+                            "name": "Real size (default)"
+                        },
+                        {
+                            "range": [129, 255],
+                            "name": "Zoom from real size --> max."
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Continuous adjustment from far to near"
+                        }
+                    ]
+                },
+                "Keystoning Vertical": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "128 default"
+                        }
+                    ]
+                },
+                "Keystoning Horizontal": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "128 default"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "white --> full cyan"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "white --> full magenta"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "white --> full yellow"
+                        }
+                    ]
+                },
+                "Virtual Colour Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "White (8000K)",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [16, 16],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [17, 55],
+                            "name": "Blue --> cyan",
+                            "color": "#0000ff",
+                            "color2": "#00ffff"
+                        },
+                        {
+                            "range": [56, 56],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [57, 95],
+                            "name": "Cyan --> green",
+                            "color": "#00ffff",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [96, 96],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [97, 134],
+                            "name": "Green --> yellow",
+                            "color": "#00ff00",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [135, 135],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [136, 174],
+                            "name": "Yellow --> red",
+                            "color": "#ffff00",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [175, 175],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [176, 214],
+                            "name": "Red --> magenta",
+                            "color": "#ff0000",
+                            "color2": "#ff00ff"
+                        },
+                        {
+                            "range": [215, 215],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [216, 246],
+                            "name": "Magenta --> blue",
+                            "color": "#ff00ff",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [247, 247],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Reserved"
+                        }
+                    ]
+                },
+                "Colour Effect Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [1, 1],
+                            "name": "Horizontal linear shade, white --> black"
+                        },
+                        {
+                            "range": [3, 3],
+                            "name": "Vertical linear shade, black --> white"
+                        },
+                        {
+                            "range": [4, 4],
+                            "name": "Vertical linear shade, white --> black"
+                        },
+                        {
+                            "range": [5, 5],
+                            "name": "Diagonal shade, white --> black"
+                        },
+                        {
+                            "range": [6, 6],
+                            "name": "Diagonal shade, black --> white"
+                        },
+                        {
+                            "range": [7, 7],
+                            "name": "Horizontal linear shade, white --> red"
+                        },
+                        {
+                            "range": [8, 8],
+                            "name": "Horizontal linear shade, red --> white"
+                        },
+                        {
+                            "range": [9, 9],
+                            "name": "Vertical linear shade, red --> white"
+                        },
+                        {
+                            "range": [10, 10],
+                            "name": "Vertical linear shade, white --> red"
+                        },
+                        {
+                            "range": [11, 11],
+                            "name": "Diagonal shade, white --> red"
+                        },
+                        {
+                            "range": [12, 12],
+                            "name": "Diagonal shade, red --> white"
+                        },
+                        {
+                            "range": [13, 13],
+                            "name": "Horizontal linear shade, white --> green"
+                        },
+                        {
+                            "range": [14, 14],
+                            "name": "Horizontal linear shade, green --> white"
+                        },
+                        {
+                            "range": [15, 15],
+                            "name": "Vertical linear shade, green --> white"
+                        },
+                        {
+                            "range": [16, 16],
+                            "name": "Vertical linear shade, white --> green"
+                        },
+                        {
+                            "range": [17, 17],
+                            "name": "Diagonal shade, white --> green"
+                        },
+                        {
+                            "range": [18, 18],
+                            "name": "Diagonal shade, green --> white"
+                        },
+                        {
+                            "range": [19, 19],
+                            "name": "Horizontal linear shade, white --> blue"
+                        },
+                        {
+                            "range": [20, 20],
+                            "name": "Horizontal linear shade, blue --> white"
+                        },
+                        {
+                            "range": [21, 21],
+                            "name": "Vertical linear shade, blue --> white"
+                        },
+                        {
+                            "range": [22, 22],
+                            "name": "Vertical linear shade, white --> blue"
+                        },
+                        {
+                            "range": [23, 23],
+                            "name": "Diagonal shade, white --> blue"
+                        },
+                        {
+                            "range": [24, 24],
+                            "name": "Diagonal shade, blue --> white"
+                        },
+                        {
+                            "range": [25, 25],
+                            "name": "Horizontal linear shade, white --> cyan"
+                        },
+                        {
+                            "range": [26, 26],
+                            "name": "Horizontal linear shade, cyan --> white"
+                        },
+                        {
+                            "range": [27, 27],
+                            "name": "Vertical linear shade, cyan --> white"
+                        },
+                        {
+                            "range": [28, 28],
+                            "name": "Vertical linear shade, white --> cyan"
+                        },
+                        {
+                            "range": [29, 29],
+                            "name": "Diagonal shade, white --> cyan"
+                        },
+                        {
+                            "range": [30, 30],
+                            "name": "Diagonal shade, cyan --> white"
+                        },
+                        {
+                            "range": [31, 31],
+                            "name": "Horizontal linear shade, white --> magenta"
+                        },
+                        {
+                            "range": [32, 32],
+                            "name": "Horizontal linear shade, magent --> white"
+                        },
+                        {
+                            "range": [33, 33],
+                            "name": "Vertical linear shade, magenta --> white"
+                        },
+                        {
+                            "range": [34, 34],
+                            "name": "Vertical linear shade, white --> magenta"
+                        },
+                        {
+                            "range": [35, 35],
+                            "name": "Diagonal shade, white --> magenta"
+                        },
+                        {
+                            "range": [36, 36],
+                            "name": "Diagonal shade, magenta --> white"
+                        },
+                        {
+                            "range": [37, 37],
+                            "name": "Horizontal linear shade, white --> yellow"
+                        },
+                        {
+                            "range": [38, 38],
+                            "name": "Horizontal linear shade, yellow --> white"
+                        },
+                        {
+                            "range": [39, 39],
+                            "name": "Vertical linear shade, white --> yellow"
+                        },
+                        {
+                            "range": [40, 40],
+                            "name": "Vertical linear shade, white --> yellow"
+                        },
+                        {
+                            "range": [41, 41],
+                            "name": "Diagonal shade, white --> yellow"
+                        },
+                        {
+                            "range": [42, 42],
+                            "name": "Diagonal shade, yellow --> white"
+                        },
+                        {
+                            "range": [43, 43],
+                            "name": "RGBW shades"
+                        },
+                        {
+                            "range": [44, 44],
+                            "name": "CMYW shades"
+                        },
+                        {
+                            "range": [45, 45],
+                            "name": "RGBY shades"
+                        },
+                        {
+                            "range": [46, 46],
+                            "name": "RMBG shades"
+                        },
+                        {
+                            "range": [47, 49],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [50, 50],
+                            "name": "Colour changing black --> white, slowly"
+                        },
+                        {
+                            "range": [51, 51],
+                            "name": "Colour changing black --> white, fast"
+                        },
+                        {
+                            "range": [52, 52],
+                            "name": "Colour changing red --> white, slowly"
+                        },
+                        {
+                            "range": [53, 53],
+                            "name": "Colour changing red --> white, fast"
+                        },
+                        {
+                            "range": [54, 54],
+                            "name": "Colour changing green --> white, slowly"
+                        },
+                        {
+                            "range": [55, 55],
+                            "name": "Colour changing green --> white, fast"
+                        },
+                        {
+                            "range": [56, 56],
+                            "name": "Colour changing blue --> white, slowly"
+                        },
+                        {
+                            "range": [57, 57],
+                            "name": "Colour changing blue --> white, fast"
+                        },
+                        {
+                            "range": [58, 58],
+                            "name": "Colour changing yellow --> white, slowly"
+                        },
+                        {
+                            "range": [59, 59],
+                            "name": "Colour changing yellow --> white, fast"
+                        },
+                        {
+                            "range": [60, 60],
+                            "name": "Colour changing magenta --> white, slowly"
+                        },
+                        {
+                            "range": [61, 61],
+                            "name": "Colour changing magenta --> white, fast"
+                        },
+                        {
+                            "range": [62, 62],
+                            "name": "Colour changing cyan --> white, slowly"
+                        },
+                        {
+                            "range": [63, 63],
+                            "name": "Colour changing cyan --> white, fast"
+                        },
+                        {
+                            "range": [64, 64],
+                            "name": "Colour changing  (slow) red --> green --> blue --> yellow"
+                        },
+                        {
+                            "range": [65, 65],
+                            "name": "Colour changing (fast) red --> green --> blue --> yellow"
+                        },
+                        {
+                            "range": [66, 66],
+                            "name": "Colour changing (fastest) red --> green --> blue --> yellow"
+                        },
+                        {
+                            "range": [67, 69],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [70, 70],
+                            "name": "Horizontal linear shade, white --> black and vice versa, slowly"
+                        },
+                        {
+                            "range": [71, 71],
+                            "name": "Horizontal linear shade, white --> black and vice versa, fast"
+                        },
+                        {
+                            "range": [72, 72],
+                            "name": "Vertical linear shade, white --> black and vice versa, slowly"
+                        },
+                        {
+                            "range": [73, 73],
+                            "name": "Vertical linear shade, white --> black and vice versa, fast"
+                        },
+                        {
+                            "range": [74, 74],
+                            "name": "Diagonal shade, white --> black and vice versa, slowly"
+                        },
+                        {
+                            "range": [75, 75],
+                            "name": "Diagonal shade, white --> black and vice versa, fast"
+                        },
+                        {
+                            "range": [76, 76],
+                            "name": "Shade black --> white, slow rotation, clockwise"
+                        },
+                        {
+                            "range": [77, 77],
+                            "name": "Shade black --> white, fast rotation, clockwise"
+                        },
+                        {
+                            "range": [78, 78],
+                            "name": "Shade black --> white, slow rotation, anticlockwise"
+                        },
+                        {
+                            "range": [79, 79],
+                            "name": "Shade black --> white, fast rotation, anticlockwise"
+                        },
+                        {
+                            "range": [80, 80],
+                            "name": "Horizontal linear shade, white --> red and vice versa, slowly"
+                        },
+                        {
+                            "range": [81, 81],
+                            "name": "Horizontal linear shade, white --> red and vice versa, fast"
+                        },
+                        {
+                            "range": [82, 82],
+                            "name": "Vertical linear shade, white --> red and vice versa, slowly"
+                        },
+                        {
+                            "range": [83, 83],
+                            "name": "Vertical linear shade, white --> red and vice versa, fast"
+                        },
+                        {
+                            "range": [84, 84],
+                            "name": "Diagonal shade, white --> red and vice versa, slowly"
+                        },
+                        {
+                            "range": [85, 85],
+                            "name": "Diagonal shade, white --> red and vice versa, fast"
+                        },
+                        {
+                            "range": [86, 86],
+                            "name": "Shade red --> white, slow rotation, clockwise"
+                        },
+                        {
+                            "range": [87, 87],
+                            "name": "Shade red --> white, fast rotation, clockwise"
+                        },
+                        {
+                            "range": [88, 88],
+                            "name": "Shade red --> white, slow rotation, anticlockwise"
+                        },
+                        {
+                            "range": [89, 89],
+                            "name": "Shade red --> white, fast rotation, anticlockwise"
+                        },
+                        {
+                            "range": [90, 90],
+                            "name": "Horizontal linear shade, white --> green and vice versa, slowly"
+                        },
+                        {
+                            "range": [91, 91],
+                            "name": "Horizontal linear shade, white --> green and vice versa, fast"
+                        },
+                        {
+                            "range": [92, 92],
+                            "name": "Vertical linear shade, white --> green and vice versa, slowly"
+                        },
+                        {
+                            "range": [93, 93],
+                            "name": "Vertical linear shade, white --> green and vice versa, fast"
+                        },
+                        {
+                            "range": [94, 94],
+                            "name": "Diagonal shade, white --> green and vice versa, slowly"
+                        },
+                        {
+                            "range": [95, 95],
+                            "name": "Diagonal shade, white --> green and vice versa, fast"
+                        },
+                        {
+                            "range": [96, 96],
+                            "name": "Shade green --> white, slow rotation, clockwise"
+                        },
+                        {
+                            "range": [97, 97],
+                            "name": "Shade green --> white, fast rotation, clockwise"
+                        },
+                        {
+                            "range": [98, 98],
+                            "name": "Shade green --> white, slow rotation, anticlockwise"
+                        },
+                        {
+                            "range": [99, 99],
+                            "name": "Shade green --> white, fast rotation, anticlockwise"
+                        },
+                        {
+                            "range": [100, 100],
+                            "name": "Horizontal linear shade, white --> blue and vice versa, slowly"
+                        },
+                        {
+                            "range": [101, 101],
+                            "name": "Horizontal linear shade, white --> blue and vice versa, fast"
+                        },
+                        {
+                            "range": [102, 102],
+                            "name": "Vertical linear shade, white --> blue and vice versa, slowly"
+                        },
+                        {
+                            "range": [103, 103],
+                            "name": "Vertical linear shade, white --> blue and vice versa, fast"
+                        },
+                        {
+                            "range": [104, 104],
+                            "name": "Diagonal shade, white --> blue and vice versa, slowly"
+                        },
+                        {
+                            "range": [105, 105],
+                            "name": "Diagonal shade, white --> blue and vice versa, fast"
+                        },
+                        {
+                            "range": [106, 106],
+                            "name": "Shade blue --> white, slow rotation, clockwise"
+                        },
+                        {
+                            "range": [107, 107],
+                            "name": "Shade blue --> white, fast rotation, clockwise"
+                        },
+                        {
+                            "range": [108, 108],
+                            "name": "Shade blue --> white, slow rotation, anticlockwise"
+                        },
+                        {
+                            "range": [109, 109],
+                            "name": "Shade blue --> white, fast rotation, anticlockwise"
+                        },
+                        {
+                            "range": [110, 110],
+                            "name": "Horizontal linear shade, white --> cyan and vice versa, slowly"
+                        },
+                        {
+                            "range": [111, 111],
+                            "name": "Horizontal linear shade, white --> cyan and vice versa, fast"
+                        },
+                        {
+                            "range": [112, 112],
+                            "name": "Vertical linear shade, white --> cyan and vice versa, slowly"
+                        },
+                        {
+                            "range": [113, 113],
+                            "name": "Vertical linear shade, white --> cyan and vice versa, fast"
+                        },
+                        {
+                            "range": [114, 114],
+                            "name": "Diagonal shade, white --> cyan and vice versa, slowly"
+                        },
+                        {
+                            "range": [115, 115],
+                            "name": "Diagonal shade, white --> cyan and vice versa, fast"
+                        },
+                        {
+                            "range": [116, 116],
+                            "name": "Shade cyan --> white, slow rotation, clockwise"
+                        },
+                        {
+                            "range": [117, 117],
+                            "name": "Shade cyan --> white, fast rotation, clockwise"
+                        },
+                        {
+                            "range": [118, 118],
+                            "name": "Shade cyan --> white, slow rotation, anticlockwise"
+                        },
+                        {
+                            "range": [119, 119],
+                            "name": "Shade cyan --> white, fast rotation, anticlockwise"
+                        },
+                        {
+                            "range": [120, 120],
+                            "name": "Horizontal linear shade, white --> magenta and vice versa, slowly"
+                        },
+                        {
+                            "range": [121, 121],
+                            "name": "Horizontal linear shade, white --> magenta and vice versa, fast"
+                        },
+                        {
+                            "range": [122, 122],
+                            "name": "Vertical linear shade, white --> magenta and vice versa, slowly"
+                        },
+                        {
+                            "range": [123, 123],
+                            "name": "Vertical linear shade, white --> magenta and vice versa, fast"
+                        },
+                        {
+                            "range": [124, 124],
+                            "name": "Diagonal shade, white --> magenta and vice versa, slowly"
+                        },
+                        {
+                            "range": [125, 125],
+                            "name": "Diagonal shade, white --> magenta and vice versa, fast"
+                        },
+                        {
+                            "range": [126, 126],
+                            "name": "Shade magenta --> white, slow rotation, clockwise"
+                        },
+                        {
+                            "range": [127, 127],
+                            "name": "Shade magenta --> white, fast rotation, clockwise"
+                        },
+                        {
+                            "range": [128, 128],
+                            "name": "Shade magenta --> white, slow rotation, anticlockwise"
+                        },
+                        {
+                            "range": [129, 129],
+                            "name": "Shade magenta --> white, fast rotation, anticlockwise"
+                        },
+                        {
+                            "range": [130, 130],
+                            "name": "Horizontal linear shade, white --> yellow and vice versa, slowly"
+                        },
+                        {
+                            "range": [131, 131],
+                            "name": "Horizontal linear shade, white --> yellow and vice versa, fast"
+                        },
+                        {
+                            "range": [132, 132],
+                            "name": "Vertical linear shade, white --> yellow and vice versa, slowly"
+                        },
+                        {
+                            "range": [133, 133],
+                            "name": "Vertical linear shade, white --> yellow and vice versa, fast"
+                        },
+                        {
+                            "range": [134, 134],
+                            "name": "Diagonal shade, white --> yellow and vice versa, slowly"
+                        },
+                        {
+                            "range": [135, 135],
+                            "name": "Diagonal shade, white --> yellow and vice versa, fast"
+                        },
+                        {
+                            "range": [136, 136],
+                            "name": "Shade yellow --> white, slow rotation, clockwise"
+                        },
+                        {
+                            "range": [137, 137],
+                            "name": "Shade yellow --> white, fast rotation, clockwise"
+                        },
+                        {
+                            "range": [138, 138],
+                            "name": "Shade yellow --> white, slow rotation, anticlockwise"
+                        },
+                        {
+                            "range": [139, 139],
+                            "name": "Shade yellow --> white, fast rotation, anticlockwise"
+                        },
+                        {
+                            "range": [140, 140],
+                            "name": "RGBW shades, slow rotation, clockwise"
+                        },
+                        {
+                            "range": [141, 141],
+                            "name": "RGBW shades, fast rotation, clockwise"
+                        },
+                        {
+                            "range": [142, 142],
+                            "name": "RGBW shades, slow rotation, anticlockwise"
+                        },
+                        {
+                            "range": [143, 143],
+                            "name": "RGBW shades, fast rotation, anticlockwise"
+                        },
+                        {
+                            "range": [144, 144],
+                            "name": "Random colours, slowly, black between colours"
+                        },
+                        {
+                            "range": [145, 145],
+                            "name": "Random colours, fast, black between colours"
+                        },
+                        {
+                            "range": [146, 146],
+                            "name": "Random colours, slowly, white between colours"
+                        },
+                        {
+                            "range": [147, 147],
+                            "name": "Random colours, fast, white between colours"
+                        },
+                        {
+                            "range": [148, 148],
+                            "name": "Random colours slowly"
+                        },
+                        {
+                            "range": [149, 149],
+                            "name": "Random colours fast"
+                        },
+                        {
+                            "range": [150, 150],
+                            "name": "Horizontal black shade --> random colour, slowly"
+                        },
+                        {
+                            "range": [151, 151],
+                            "name": "Horizontal black shade --> random colour, fast"
+                        },
+                        {
+                            "range": [152, 152],
+                            "name": "Vertical black shade --> random colour, slowly"
+                        },
+                        {
+                            "range": [153, 153],
+                            "name": "Vertical black shade --> random colour, fast"
+                        },
+                        {
+                            "range": [154, 154],
+                            "name": "Diagonal black shade --> random colour, slowly"
+                        },
+                        {
+                            "range": [155, 155],
+                            "name": "Diagonal black shade --> random colour, fast"
+                        },
+                        {
+                            "range": [156, 156],
+                            "name": "Black shade --> random colour, slow rotation, clockwise"
+                        },
+                        {
+                            "range": [157, 157],
+                            "name": "Black shade --> random colour, fast rotation, clockwise"
+                        },
+                        {
+                            "range": [158, 158],
+                            "name": "Black shade --> random colour, slow rotation, anticlockwise"
+                        },
+                        {
+                            "range": [159, 159],
+                            "name": "Black shade --> random colour, fast rotation, anticlockwise"
+                        },
+                        {
+                            "range": [160, 160],
+                            "name": "Random colour in two corners, slow rotation, clockwise"
+                        },
+                        {
+                            "range": [161, 161],
+                            "name": "Random colour in two corners, fast rotation, clockwise"
+                        },
+                        {
+                            "range": [162, 162],
+                            "name": "Random colour in two corners, slow rotation, anticlockwise"
+                        },
+                        {
+                            "range": [163, 163],
+                            "name": "Random colour in two corners, fast rotation, anticlockwise"
+                        },
+                        {
+                            "range": [164, 164],
+                            "name": "Random colour in four corners, slow rotation, clockwise"
+                        },
+                        {
+                            "range": [165, 165],
+                            "name": "Random colour in four corners, fast rotation, clockwise"
+                        },
+                        {
+                            "range": [166, 166],
+                            "name": "Random colour in four corners, slow rotation, anticlockwise"
+                        },
+                        {
+                            "range": [167, 167],
+                            "name": "Random colour in four corners, fast rotation, anticlockwise"
+                        },
+                        {
+                            "range": [168, 168],
+                            "name": "Horizontal colour transition, slowly, random"
+                        },
+                        {
+                            "range": [169, 169],
+                            "name": "Horizontal colour transition, fast, random"
+                        },
+                        {
+                            "range": [170, 170],
+                            "name": "Vertical colour transition, slowly, random"
+                        },
+                        {
+                            "range": [171, 171],
+                            "name": "Vertical colour transition, fast, random"
+                        },
+                        {
+                            "range": [172, 172],
+                            "name": "Diagonal colour transition, slowly"
+                        },
+                        {
+                            "range": [173, 173],
+                            "name": "Diagonal colour transition, fast"
+                        },
+                        {
+                            "range": [174, 174],
+                            "name": "Horizontal/vertical/diagonal colour transition, slowly"
+                        },
+                        {
+                            "range": [175, 175],
+                            "name": "Horizontal/vertical/diagonal colour transition, fast"
+                        },
+                        {
+                            "range": [176, 255],
+                            "name": "Reserved"
+                        }
+                    ]
+                },
+                "Digital Gobo Wheel Selection": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Default factory digital gobo wheel"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Internal custom digital gobo wheel"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "External custom digital gobo wheel (USB memory stick)"
+                        },
+                        {
+                            "range": [96, 255],
+                            "name": "Reserved (for future functions)"
+                        }
+                    ]
+                },
+                "Digital Gobo Wheel - Gobos/Videos (By One DMX value: 1, 2, 3...250)": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [1, 59],
+                            "name": "Black and white gobos (by one DMX value: 1, 2, 3...59) - factory gobos only"
+                        },
+                        {
+                            "range": [60, 202],
+                            "name": "Colour pictures (by one DMX value: 60, 61, 62...202) - factory pictures only"
+                        },
+                        {
+                            "range": [203, 216],
+                            "name": "Animations (by one DMX value: 203, 203, 205...216) - factory animations only"
+                        },
+                        {
+                            "range": [217, 250],
+                            "name": "Gobos/videos (by one DMX value: 1, 2, 3...250)"
+                        },
+                        {
+                            "range": [251, 251],
+                            "name": "Gobos presentation (gobos selected randomly)"
+                        },
+                        {
+                            "range": [252, 252],
+                            "name": "Gobos presentation (gobos selected in alphabetic order)"
+                        },
+                        {
+                            "range": [253, 255],
+                            "name": "Reserved"
+                        }
+                    ]
+                },
+                "Video Speed Control": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Original speed"
+                        },
+                        {
+                            "range": [1, 1],
+                            "name": "Pause"
+                        },
+                        {
+                            "range": [2, 127],
+                            "name": "Speed from min. (1/4 of original speed) to original speed"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Speed from original to max. (4x original speed)"
+                        }
+                    ]
+                },
+                "Digital Gobo Indexing and Rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Gobo indexing"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Forwards gobo rotation from fast to slow"
+                        },
+                        {
+                            "range": [192, 193],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Backwards gobo rotation from slow to fast"
+                        }
+                    ]
+                },
+                "Digital Gobo Indexing and Rotation Fine": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine indexing (rotation)"
+                        }
+                    ]
+                },
+                "Effect wheel": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Open position (hole)"
+                        },
+                        {
+                            "range": [1, 1],
+                            "name": "Random transition"
+                        },
+                        {
+                            "range": [2, 2],
+                            "name": "Transition with blending"
+                        },
+                        {
+                            "range": [3, 3],
+                            "name": "Transition from left --> right, horizontally"
+                        },
+                        {
+                            "range": [4, 4],
+                            "name": "Transition from right --> left, horizontally"
+                        },
+                        {
+                            "range": [5, 5],
+                            "name": "Stripe transition from left --> right, horizontally"
+                        },
+                        {
+                            "range": [6, 6],
+                            "name": "Stripe transition from right --> left, horizontally"
+                        },
+                        {
+                            "range": [7, 7],
+                            "name": "3-stripe transition from left --> right, horizontally"
+                        },
+                        {
+                            "range": [8, 8],
+                            "name": "3-stripe transition from right --> left, horizontally"
+                        },
+                        {
+                            "range": [9, 9],
+                            "name": "6-stripe transition from left --> right, horizontally"
+                        },
+                        {
+                            "range": [10, 10],
+                            "name": "6-stripe transition from right --> left, horizontally"
+                        },
+                        {
+                            "range": [11, 11],
+                            "name": "Transition up --> down, vertically"
+                        },
+                        {
+                            "range": [12, 12],
+                            "name": "Transition down --> up, vertically"
+                        },
+                        {
+                            "range": [13, 13],
+                            "name": "Stripe transition up --> down, vertically"
+                        },
+                        {
+                            "range": [14, 14],
+                            "name": "Stripe transition down --> up, vertically"
+                        },
+                        {
+                            "range": [15, 15],
+                            "name": "3-stripe transition up- --> down, vertically"
+                        },
+                        {
+                            "range": [16, 16],
+                            "name": "3-stripe transition down --> up, vertically"
+                        },
+                        {
+                            "range": [17, 17],
+                            "name": "6-stripe transition up --> down, vertically"
+                        },
+                        {
+                            "range": [18, 18],
+                            "name": "6-stripe transition down --> up, vertically"
+                        },
+                        {
+                            "range": [19, 19],
+                            "name": "Transition 2 from left --> right, vertically (diffusion edge)"
+                        },
+                        {
+                            "range": [20, 20],
+                            "name": "Transition 2 from right --> left, horizontally (diffusion edge)"
+                        },
+                        {
+                            "range": [21, 21],
+                            "name": "Transition 2 up --> down, vertically (diffusion edge)"
+                        },
+                        {
+                            "range": [22, 22],
+                            "name": "Transition 2  down --> up, vertically (diffusion edge)"
+                        },
+                        {
+                            "range": [23, 23],
+                            "name": "Iris transition out -->in"
+                        },
+                        {
+                            "range": [24, 24],
+                            "name": "Iris transition in --> out"
+                        },
+                        {
+                            "range": [25, 25],
+                            "name": "Iris transition out --> in (diffusion edge)"
+                        },
+                        {
+                            "range": [26, 26],
+                            "name": "Iris transition in --> out (diffusion edge)"
+                        },
+                        {
+                            "range": [27, 27],
+                            "name": "Iris transition 3 out --> in (more diffusion edge)"
+                        },
+                        {
+                            "range": [28, 28],
+                            "name": "Iris transition 3 in --> out (more diffusion edge)"
+                        },
+                        {
+                            "range": [29, 29],
+                            "name": "Moving transition from left --> right"
+                        },
+                        {
+                            "range": [30, 30],
+                            "name": "Moving transition from right --> left"
+                        },
+                        {
+                            "range": [31, 31],
+                            "name": "Moving transition from up --> down"
+                        },
+                        {
+                            "range": [32, 32],
+                            "name": "Moving transition from down --> up"
+                        },
+                        {
+                            "range": [33, 33],
+                            "name": "Drop transition"
+                        },
+                        {
+                            "range": [34, 34],
+                            "name": "Simple transition"
+                        },
+                        {
+                            "range": [35, 35],
+                            "name": "Pixel transition"
+                        },
+                        {
+                            "range": [36, 36],
+                            "name": "Transition via blending"
+                        },
+                        {
+                            "range": [37, 37],
+                            "name": "Transition with white output"
+                        },
+                        {
+                            "range": [38, 38],
+                            "name": "Crossing transition"
+                        },
+                        {
+                            "range": [39, 39],
+                            "name": "Picture in picture in transition"
+                        },
+                        {
+                            "range": [40, 40],
+                            "name": "Direct transition"
+                        },
+                        {
+                            "range": [41, 41],
+                            "name": "Transition with vertical rotation"
+                        },
+                        {
+                            "range": [42, 42],
+                            "name": "Transition with horizontal rotation"
+                        },
+                        {
+                            "range": [43, 43],
+                            "name": "Transition with diagonal rotation"
+                        },
+                        {
+                            "range": [44, 44],
+                            "name": "Transition with diagonal rotation-opposite direction"
+                        },
+                        {
+                            "range": [45, 45],
+                            "name": "Zoom out transition"
+                        },
+                        {
+                            "range": [46, 46],
+                            "name": "Zoom in transition"
+                        },
+                        {
+                            "range": [47, 47],
+                            "name": "Zoom transition in horizontal direction"
+                        },
+                        {
+                            "range": [48, 48],
+                            "name": "Zoom transition in vertical direction"
+                        },
+                        {
+                            "range": [49, 79],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [80, 80],
+                            "name": "Kaleidoscope 1"
+                        },
+                        {
+                            "range": [81, 81],
+                            "name": "Kaleidoscope 2"
+                        },
+                        {
+                            "range": [82, 82],
+                            "name": "Kaleidoscope 3"
+                        },
+                        {
+                            "range": [83, 83],
+                            "name": "Kaleidoscope 4"
+                        },
+                        {
+                            "range": [84, 84],
+                            "name": "Kaleidoscope 5"
+                        },
+                        {
+                            "range": [85, 85],
+                            "name": "Sunflower kaleidoscope (coarse)"
+                        },
+                        {
+                            "range": [86, 86],
+                            "name": "Sunflower kaleidoscope (soft)"
+                        },
+                        {
+                            "range": [87, 87],
+                            "name": "Sunflower kaleidoscope (slow)"
+                        },
+                        {
+                            "range": [88, 88],
+                            "name": "Sunflower kaleidoscope (faster)"
+                        },
+                        {
+                            "range": [89, 89],
+                            "name": "Sunflower kaleidoscope (fastest)"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [100, 100],
+                            "name": "Circle iris in/out"
+                        },
+                        {
+                            "range": [101, 101],
+                            "name": "Circle iris in/out (diffusion edge)"
+                        },
+                        {
+                            "range": [102, 102],
+                            "name": "Vertical ellipse iris in/out"
+                        },
+                        {
+                            "range": [103, 103],
+                            "name": "Horizontal ellipse iris in/out"
+                        },
+                        {
+                            "range": [104, 104],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [105, 105],
+                            "name": "Positive/negative (black and white)"
+                        },
+                        {
+                            "range": [106, 106],
+                            "name": "White/negative (black and white)"
+                        },
+                        {
+                            "range": [107, 107],
+                            "name": "Positive/negative (coloured)"
+                        },
+                        {
+                            "range": [108, 108],
+                            "name": "Pixeling"
+                        },
+                        {
+                            "range": [109, 179],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [180, 180],
+                            "name": "Circular iris"
+                        },
+                        {
+                            "range": [181, 181],
+                            "name": "Elliptical iris-vertical"
+                        },
+                        {
+                            "range": [182, 182],
+                            "name": "Elliptical iris-horizontal"
+                        },
+                        {
+                            "range": [183, 183],
+                            "name": "Black mask"
+                        },
+                        {
+                            "range": [184, 184],
+                            "name": "Inverse black mask"
+                        },
+                        {
+                            "range": [185, 185],
+                            "name": "White mask"
+                        },
+                        {
+                            "range": [186, 186],
+                            "name": "Inverse white mask"
+                        },
+                        {
+                            "range": [187, 187],
+                            "name": "Gobo/video movement in horizontal (X) axis"
+                        },
+                        {
+                            "range": [188, 188],
+                            "name": "Gobo/video movement in vertical (Y) axis"
+                        },
+                        {
+                            "range": [189, 189],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [190, 190],
+                            "name": "Crossfade"
+                        },
+                        {
+                            "range": [191, 191],
+                            "name": "Addition"
+                        },
+                        {
+                            "range": [192, 192],
+                            "name": "Subtraction"
+                        },
+                        {
+                            "range": [193, 193],
+                            "name": "Multiplication"
+                        },
+                        {
+                            "range": [194, 194],
+                            "name": "Minimum"
+                        },
+                        {
+                            "range": [195, 195],
+                            "name": "Maximum"
+                        },
+                        {
+                            "range": [196, 255],
+                            "name": "Reserved"
+                        }
+                    ]
+                },
+                "Effect Speed/Time": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Presentation/open/continuous effect changing"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Speed/time settings depending on type of effect (1-8)"
+                        }
+                    ]
+                },
+                "Shutter/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe effect from slow to fast"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Opening pulse in sequences from slow to fast"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "Closing pulse in sequences from fast to slow"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random strobe effect from slow to fast"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "From 0% to 100%"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ],
+                [
+                    "Digital Gobo Indexing and Rotation",
+                    "Digital Gobo Indexing and Rotation Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "24-channel",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed, Pan/Tilt Time",
+                        "Special Functions",
+                        "Digital Zoom",
+                        "Focus",
+                        "Keystoning Vertical",
+                        "Keystoning Horizontal",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "Virtual Colour Wheel",
+                        "Colour Effect Wheel",
+                        "Digital Gobo Wheel Selection",
+                        "Digital Gobo Wheel - Gobos/Videos (By One DMX value: 1, 2, 3...250)",
+                        "Video Speed Control",
+                        "Digital Gobo Indexing and Rotation",
+                        "Digital Gobo Indexing and Rotation Fine",
+                        "Effect wheel",
+                        "Effect Speed/Time",
+                        "Shutter/Strobe",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

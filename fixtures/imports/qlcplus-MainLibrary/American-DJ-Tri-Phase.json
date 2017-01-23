@@ -1,0 +1,104 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "Tri Phase",
+            "type": "Flower",
+            "physical": {
+                "dimensions": [306, 334, 189],
+                "weight": 3.8,
+                "power": 23,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [65, 65]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [10, 120],
+                            "name": "Clockwise Fast - Slow"
+                        },
+                        {
+                            "range": [121, 134],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [135, 245],
+                            "name": "Counter Clockwise Slow - Fast"
+                        },
+                        {
+                            "range": [246, 249],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Sound Active"
+                        }
+                    ]
+                },
+                "Strobing": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Strobing Slow - Fast"
+                        }
+                    ]
+                },
+                "Color selection": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Color selection"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "4 Channel",
+                    "channels": [
+                        "Color selection",
+                        "Rotation",
+                        "Strobing",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

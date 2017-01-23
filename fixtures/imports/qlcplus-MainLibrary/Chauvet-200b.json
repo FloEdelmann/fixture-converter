@@ -1,0 +1,117 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "200b",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [132, 249, 236],
+                "weight": 2,
+                "power": 19,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 930
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Function": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 29],
+                            "name": "RGB"
+                        },
+                        {
+                            "range": [30, 199],
+                            "name": "Pulse"
+                        },
+                        {
+                            "range": [210, 239],
+                            "name": "Colour change with fade"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Sound"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobe"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "All",
+                    "channels": [
+                        "Function",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Strobe",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

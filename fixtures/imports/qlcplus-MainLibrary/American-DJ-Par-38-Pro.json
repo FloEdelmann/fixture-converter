@@ -1,0 +1,170 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "Par 38 Pro",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [216, 216, 184],
+                "weight": 1.4,
+                "power": 9,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% -> 100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% -> 100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% -> 100%"
+                        }
+                    ]
+                },
+                "Color Macro": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Nothing"
+                        },
+                        {
+                            "range": [8, 255],
+                            "name": "Color Macros"
+                        }
+                    ]
+                },
+                "Color Changes": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Nothing"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Dim -> Bright"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Bright -> Dim"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Dim -> Bright -> Dim"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "RGB Color Mixing"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "3 Color Change"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "7 Color Change"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Sound Active Mode"
+                        }
+                    ]
+                },
+                "Strobe Speed": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Black Out"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Speed Slow -> Fast"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% -> 100%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3 Channel [Default] (RGB)",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "6 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color Macro",
+                        "Strobe Speed",
+                        "Color Changes"
+                    ]
+                },
+                {
+                    "name": "7 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color Macro",
+                        "Strobe Speed",
+                        "Color Changes",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

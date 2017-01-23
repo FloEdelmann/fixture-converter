@@ -1,0 +1,276 @@
+{
+    "manufacturers": {
+        "Martin": {
+            "name": "Martin"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Martin",
+            "name": "Robocolor Pro 400",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [337, 282, 306],
+                "weight": 11,
+                "power": 270,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 200W"
+                },
+                "lens": {
+                    "name": "PC",
+                    "degreesMinMax": [15, 33]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Strobe off"
+                        },
+                        {
+                            "range": [4, 7],
+                            "name": "Strobe off / Fan low"
+                        },
+                        {
+                            "range": [8, 199],
+                            "name": "Strobe fast to slow"
+                        },
+                        {
+                            "range": [200, 218],
+                            "name": "Remote music trigger"
+                        },
+                        {
+                            "range": [219, 238],
+                            "name": "Remote auto trigger"
+                        },
+                        {
+                            "range": [239, 248],
+                            "name": "RESET"
+                        },
+                        {
+                            "range": [249, 252],
+                            "name": "Lamp ON"
+                        },
+                        {
+                            "range": [253, 255],
+                            "name": "Lamp OFF (mode 3)"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Light off"
+                        },
+                        {
+                            "range": [11, 237],
+                            "name": "Dimmer intensity"
+                        },
+                        {
+                            "range": [238, 255],
+                            "name": "Light ON"
+                        }
+                    ]
+                },
+                "Colour 1": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 25],
+                            "name": "White (scroll)"
+                        },
+                        {
+                            "range": [26, 51],
+                            "name": "Yellow (scroll)"
+                        },
+                        {
+                            "range": [52, 77],
+                            "name": "Fern green (scroll)"
+                        },
+                        {
+                            "range": [78, 103],
+                            "name": "Flame red (scroll)"
+                        },
+                        {
+                            "range": [104, 129],
+                            "name": "Cyan (scroll)"
+                        },
+                        {
+                            "range": [130, 155],
+                            "name": "Turquoise (scroll)"
+                        },
+                        {
+                            "range": [156, 156],
+                            "name": "Purple (scroll)"
+                        },
+                        {
+                            "range": [157, 171],
+                            "name": "Purple (fixed)"
+                        },
+                        {
+                            "range": [172, 185],
+                            "name": "Turquoise (fixed)"
+                        },
+                        {
+                            "range": [186, 199],
+                            "name": "Cyan (fixed)"
+                        },
+                        {
+                            "range": [200, 214],
+                            "name": "Flame red (fixed)"
+                        },
+                        {
+                            "range": [215, 227],
+                            "name": "Fern green (fixed)"
+                        },
+                        {
+                            "range": [228, 241],
+                            "name": "Yellow (fixed)"
+                        },
+                        {
+                            "range": [242, 255],
+                            "name": "White (fixed)"
+                        }
+                    ]
+                },
+                "Colour 2": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 25],
+                            "name": "White (scroll)"
+                        },
+                        {
+                            "range": [26, 51],
+                            "name": "Pink  (scroll)"
+                        },
+                        {
+                            "range": [52, 77],
+                            "name": "Light green (scroll)"
+                        },
+                        {
+                            "range": [78, 103],
+                            "name": "Magenta (scroll)"
+                        },
+                        {
+                            "range": [104, 129],
+                            "name": "Dark lavender (scroll)"
+                        },
+                        {
+                            "range": [130, 155],
+                            "name": "CC 5500-3400 (scroll)"
+                        },
+                        {
+                            "range": [156, 156],
+                            "name": "CC 3500-5600 (scroll)"
+                        },
+                        {
+                            "range": [157, 171],
+                            "name": "CC 3500-5600 (fixed)"
+                        },
+                        {
+                            "range": [172, 185],
+                            "name": "CC 5500-3400 (fixed)"
+                        },
+                        {
+                            "range": [186, 199],
+                            "name": "Dark lavender (fixed)"
+                        },
+                        {
+                            "range": [200, 214],
+                            "name": "Magenta (fixed)"
+                        },
+                        {
+                            "range": [215, 227],
+                            "name": "Light green (fixed)"
+                        },
+                        {
+                            "range": [228, 241],
+                            "name": "Pink (fixed)"
+                        },
+                        {
+                            "range": [242, 255],
+                            "name": "White (fixed)"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 50],
+                            "name": "Wash"
+                        },
+                        {
+                            "range": [51, 101],
+                            "name": "Wide beam"
+                        },
+                        {
+                            "range": [102, 152],
+                            "name": "Medium beam"
+                        },
+                        {
+                            "range": [153, 203],
+                            "name": "Narrow beam"
+                        },
+                        {
+                            "range": [204, 255],
+                            "name": "Blackout"
+                        }
+                    ]
+                },
+                "Color speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow"
+                        }
+                    ]
+                },
+                "Dimmer speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Mode 1 (Tracking)",
+                    "channels": [
+                        "Strobe",
+                        "Dimmer",
+                        "Colour 1",
+                        "Colour 2",
+                        "Gobo"
+                    ]
+                },
+                {
+                    "name": "Mode 2 (Vector)",
+                    "channels": [
+                        "Strobe",
+                        "Dimmer",
+                        "Colour 1",
+                        "Colour 2",
+                        "Gobo",
+                        "Color speed",
+                        "Dimmer speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

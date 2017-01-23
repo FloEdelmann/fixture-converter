@@ -1,0 +1,94 @@
+{
+    "manufacturers": {
+        "Electroconcept": {
+            "name": "Electroconcept"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Electroconcept",
+            "name": "PAR 56 LED Full RGB 18x3W",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [240, 192, 260],
+                "weight": 1.8,
+                "power": 40,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 126],
+                            "name": "Intensity"
+                        },
+                        {
+                            "range": [127, 249],
+                            "name": "Strobe"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Light ON"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Default mode",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

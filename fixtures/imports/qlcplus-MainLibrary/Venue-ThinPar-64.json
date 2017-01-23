@@ -1,0 +1,155 @@
+{
+    "manufacturers": {
+        "Venue": {
+            "name": "Venue"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Venue",
+            "name": "ThinPar 64",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [282, 246, 63],
+                "weight": 1.3,
+                "power": 18,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity (0-100%)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity (0-100%)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity (0-100%)"
+                        }
+                    ]
+                },
+                "Color Macros": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "no function"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Color Macros"
+                        }
+                    ]
+                },
+                "Speed / Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "slow to fast 16-255 strobe"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity (RGB Mode)"
+                        }
+                    ]
+                },
+                "Mode": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "RGB Mode"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Pulse Effect 0% - 100% (using RGB faders)"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Pulse Effect 100% - 0% (using RGB faders)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Pulse Effect 100% - 0% - 100% (using RGB faders)"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Auto fade transition"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Auto snap Transition (3 Colors)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Auto snap transition (7 colors)"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Sound triggering mode"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "7 channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color Macros",
+                        "Speed / Strobe",
+                        "Mode",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "3 channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

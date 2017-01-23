@@ -1,0 +1,319 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "TMH-10",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [250, 320, 280],
+                "weight": 7.5,
+                "power": 170,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 585,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan (0 - 585°)"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt (0 - 270°)"
+                        }
+                    ]
+                },
+                "Pan/Tilt-speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Decreasing speed"
+                        }
+                    ]
+                },
+                "Colour wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Open/white",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "White/Purple",
+                            "color": "#ffffff",
+                            "color2": "#ff00ff"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Purple",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Purple/green",
+                            "color": "#ff00ff",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Green/light blue",
+                            "color": "#00ff00",
+                            "color2": "#00ffff"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Light blue",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Light blue/yellow",
+                            "color": "#00ffff",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Yellow/dark green",
+                            "color": "#ffff00",
+                            "color2": "#005500"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Dark green",
+                            "color": "#005500"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Dark green/dark blue",
+                            "color": "#005500",
+                            "color2": "#0055ff"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Dark blue",
+                            "color": "#0055ff"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "Dark blue/orange ",
+                            "color": "#0055ff",
+                            "color2": "#ffaa00"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Orange",
+                            "color": "#ffaa00"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Orange/white",
+                            "color": "#ffaa00",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [128, 192],
+                            "name": "Forwards rainbow effect with decreasing speed"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "Backwards rainbow effect with increasing speed"
+                        }
+                    ]
+                },
+                "Rotating gobo wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 17],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [18, 36],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [37, 55],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [56, 74],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [75, 93],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [94, 112],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [113, 127],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [128, 192],
+                            "name": "Forwards gobo-wheel rotation with decreasing speed"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "Backwards gobo-wheel rotation with increasing speed"
+                        }
+                    ]
+                },
+                "Gobo rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [1, 127],
+                            "name": "Forwards gobo rotation with decreasing speed"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Backwards gobo rotation with increasing speed"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Strobe-effect with increasing speed"
+                        }
+                    ]
+                },
+                "Dimmer intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment of the dimmer intensity from 0 to 100 %"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "3-facet prism "
+                        }
+                    ]
+                },
+                "Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 149],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [150, 200],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [201, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Pan 16 bit": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan 16 bit"
+                        }
+                    ]
+                },
+                "Tilt 16 bit": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt 16 bit"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan 16 bit"
+                ],
+                [
+                    "Tilt",
+                    "Tilt 16 bit"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "default",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan/Tilt-speed",
+                        "Colour wheel",
+                        "Rotating gobo wheel",
+                        "Gobo rotation",
+                        "Strobe",
+                        "Dimmer intensity",
+                        "Prism",
+                        "Reset",
+                        "Pan 16 bit",
+                        "Tilt 16 bit"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,248 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "SC250H",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [270, 555, 285],
+                "weight": 10,
+                "power": 300,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "ELC 250W",
+                    "colorTemperature": 3200,
+                    "lumens": 800
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [18, 18]
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 180,
+                    "tiltMax": 90
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Shutter/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Shutter on"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Shutter off"
+                        },
+                        {
+                            "range": [16, 131],
+                            "name": "Strobe"
+                        },
+                        {
+                            "range": [132, 247],
+                            "name": "Shake"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 8],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [9, 17],
+                            "name": "Gobo 01"
+                        },
+                        {
+                            "range": [18, 25],
+                            "name": "Gobo 02"
+                        },
+                        {
+                            "range": [26, 34],
+                            "name": "Gobo 03"
+                        },
+                        {
+                            "range": [35, 43],
+                            "name": "Gobo 04"
+                        },
+                        {
+                            "range": [44, 51],
+                            "name": "Gobo 05"
+                        },
+                        {
+                            "range": [52, 59],
+                            "name": "Gobo 06"
+                        },
+                        {
+                            "range": [60, 68],
+                            "name": "Gobo 07"
+                        },
+                        {
+                            "range": [69, 76],
+                            "name": "Gobo 08"
+                        },
+                        {
+                            "range": [77, 85],
+                            "name": "Gobo 09"
+                        },
+                        {
+                            "range": [86, 93],
+                            "name": "Gobo 10"
+                        },
+                        {
+                            "range": [94, 102],
+                            "name": "Gobo 11"
+                        },
+                        {
+                            "range": [103, 110],
+                            "name": "Gobo 12"
+                        },
+                        {
+                            "range": [111, 119],
+                            "name": "Gobo 13"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Gobo 14"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Rotate"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "White"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [16, 22],
+                            "name": "Green/Magenta"
+                        },
+                        {
+                            "range": [23, 30],
+                            "name": "Magenta"
+                        },
+                        {
+                            "range": [31, 37],
+                            "name": "Light blue"
+                        },
+                        {
+                            "range": [38, 45],
+                            "name": "Amber"
+                        },
+                        {
+                            "range": [46, 52],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [53, 60],
+                            "name": "Red/Blue"
+                        },
+                        {
+                            "range": [61, 67],
+                            "name": "Blue"
+                        },
+                        {
+                            "range": [68, 75],
+                            "name": "UV"
+                        },
+                        {
+                            "range": [76, 82],
+                            "name": "Light green"
+                        },
+                        {
+                            "range": [83, 90],
+                            "name": "Light green/Orange"
+                        },
+                        {
+                            "range": [91, 97],
+                            "name": "Orange"
+                        },
+                        {
+                            "range": [98, 105],
+                            "name": "Orange/Yellow"
+                        },
+                        {
+                            "range": [106, 112],
+                            "name": "Yellow"
+                        },
+                        {
+                            "range": [113, 120],
+                            "name": "Yellow/Pink"
+                        },
+                        {
+                            "range": [121, 127],
+                            "name": "Pink"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Rainbow"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "No function": {
+                    "type": "Nothing"
+                }
+            },
+            "modes": [
+                {
+                    "name": "7ch colour split",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Shutter/Strobe",
+                        "Gobo",
+                        "Colour",
+                        "No function",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,320 @@
+{
+    "manufacturers": {
+        "Pro-Lights": {
+            "name": "Pro-Lights"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Pro-Lights",
+            "name": "XP250",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [400, 540, 380],
+                "weight": 30,
+                "power": 480,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 250W",
+                    "colorTemperature": 5500
+                },
+                "lens": {
+                    "name": "PC",
+                    "degreesMinMax": [17, 35]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 570,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Shutter Closed"
+                        },
+                        {
+                            "range": [8, 255],
+                            "name": "Strobe Slow-Fast"
+                        }
+                    ]
+                },
+                "Colours": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 13],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [14, 27],
+                            "name": "Steel Blue",
+                            "color": "#007dc2"
+                        },
+                        {
+                            "range": [28, 41],
+                            "name": "Orange",
+                            "color": "#e87845"
+                        },
+                        {
+                            "range": [42, 55],
+                            "name": "Green Blue",
+                            "color": "#85c226"
+                        },
+                        {
+                            "range": [56, 69],
+                            "name": "Bright Blue",
+                            "color": "#bab3d6"
+                        },
+                        {
+                            "range": [70, 83],
+                            "name": "Bright Pink",
+                            "color": "#f09ca1"
+                        },
+                        {
+                            "range": [84, 97],
+                            "name": "Red",
+                            "color": "#d9261c"
+                        },
+                        {
+                            "range": [98, 111],
+                            "name": "Deep Blue",
+                            "color": "#291770"
+                        },
+                        {
+                            "range": [112, 125],
+                            "name": "Yellow",
+                            "color": "#fff500"
+                        },
+                        {
+                            "range": [126, 139],
+                            "name": "Dark Pink",
+                            "color": "#964578"
+                        },
+                        {
+                            "range": [140, 153],
+                            "name": "Moss Green",
+                            "color": "#009140"
+                        },
+                        {
+                            "range": [154, 167],
+                            "name": "Light Blue",
+                            "color": "#75c4f0"
+                        },
+                        {
+                            "range": [168, 255],
+                            "name": "Colour Rotation Slow-Fast"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 23],
+                            "name": "No Gobo"
+                        },
+                        {
+                            "range": [24, 47],
+                            "name": "Gobo1 (Colours)"
+                        },
+                        {
+                            "range": [48, 71],
+                            "name": "Gobo2 (Bars)"
+                        },
+                        {
+                            "range": [72, 95],
+                            "name": "Gobo3 (Atomic)"
+                        },
+                        {
+                            "range": [96, 119],
+                            "name": "Gobo4 (Ring)"
+                        },
+                        {
+                            "range": [120, 143],
+                            "name": "Gobo5 (Moon)"
+                        },
+                        {
+                            "range": [144, 167],
+                            "name": "Gobo6 (Sun)"
+                        },
+                        {
+                            "range": [168, 255],
+                            "name": "Gobo Rotation"
+                        }
+                    ]
+                },
+                "Gobo Rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Rotation Adjustment From 0 To 360"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Forwards Rotation Fast-Slow"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Backwards Rotation Slow-Fast"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [2, 7],
+                            "name": "Triple Prism Static"
+                        },
+                        {
+                            "range": [8, 132],
+                            "name": "Forwards Rotation Fast-Slow"
+                        },
+                        {
+                            "range": [133, 253],
+                            "name": "Backwards Rotation Slow-Fast"
+                        },
+                        {
+                            "range": [254, 255],
+                            "name": "Triple Prism Static"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Focus Near-Far"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine"
+                        }
+                    ]
+                },
+                "Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Normal State"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Mechanical Reset"
+                        }
+                    ]
+                },
+                "Lamp Switch": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 47],
+                            "name": "Standby"
+                        },
+                        {
+                            "range": [48, 95],
+                            "name": "Lamp On 3 Seconds Later"
+                        },
+                        {
+                            "range": [96, 159],
+                            "name": "Standby"
+                        },
+                        {
+                            "range": [160, 207],
+                            "name": "Lamp Off 3 Seconds Later"
+                        },
+                        {
+                            "range": [208, 255],
+                            "name": "Standby"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "XP250 Scanner",
+                    "channels": [
+                        "Dimmer",
+                        "Shutter",
+                        "Colours",
+                        "Gobo",
+                        "Gobo Rotation",
+                        "Prism",
+                        "Focus",
+                        "Pan",
+                        "Tilt",
+                        "Pan Fine",
+                        "Tilt Fine",
+                        "Reset",
+                        "Lamp Switch"
+                    ]
+                }
+            ]
+        }
+    ]
+}

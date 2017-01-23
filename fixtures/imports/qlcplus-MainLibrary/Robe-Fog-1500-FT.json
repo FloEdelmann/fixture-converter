@@ -1,0 +1,56 @@
+{
+    "manufacturers": {
+        "Robe": {
+            "name": "Robe"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Robe",
+            "name": "Fog 1500 FT",
+            "type": "Smoke",
+            "physical": {
+                "dimensions": [240, 190, 646],
+                "weight": 15.5,
+                "power": 1500,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "Fogger"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Fog Volume Control": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Fog Off"
+                        },
+                        {
+                            "range": [6, 249],
+                            "name": "Volume 5% - 95%"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Max Volume 100%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "1 Channel",
+                    "channels": [
+                        "Fog Volume Control"
+                    ]
+                }
+            ]
+        }
+    ]
+}

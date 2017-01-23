@@ -1,0 +1,402 @@
+{
+    "manufacturers": {
+        "Martin": {
+            "name": "Martin"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Martin",
+            "name": "MAC 600 E",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [481, 356, 652],
+                "weight": 31,
+                "power": 700,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSR 575W",
+                    "colorTemperature": 7200,
+                    "lumens": 8500
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [18, 35]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 270,
+                    "tiltMax": 265
+                }
+            },
+            "availableChannels": {
+                "Shutter, strobe, reset, lamp": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [20, 49],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [50, 112],
+                            "name": "Strobe on (fast->slow)"
+                        },
+                        {
+                            "range": [113, 115],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [116, 122],
+                            "name": "Shutter open (Reduced lamp power w/electronic ballast)"
+                        },
+                        {
+                            "range": [123, 127],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [128, 147],
+                            "name": "Random strobe, fast"
+                        },
+                        {
+                            "range": [148, 167],
+                            "name": "Random strobe, medium"
+                        },
+                        {
+                            "range": [168, 187],
+                            "name": "Random strobe, slow"
+                        },
+                        {
+                            "range": [188, 207],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [208, 217],
+                            "name": "Reset fixture"
+                        },
+                        {
+                            "range": [218, 227],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [228, 237],
+                            "name": "Lamp power on"
+                        },
+                        {
+                            "range": [238, 247],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Lamp power off Note: T ≥ 5 seconds"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer intensity"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White > Cyan"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White > Magenta"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White > Yellow"
+                        }
+                    ]
+                },
+                "Color Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 40],
+                            "name": "White > Color 1 (Continuous scroll)"
+                        },
+                        {
+                            "range": [41, 80],
+                            "name": "Color 1 > Color 2 (Continuous scroll)"
+                        },
+                        {
+                            "range": [81, 120],
+                            "name": "Color 2 > Color 3 (Continuous scroll)"
+                        },
+                        {
+                            "range": [121, 160],
+                            "name": "Color 3 > Color 4 (Continuous scroll)"
+                        },
+                        {
+                            "range": [161, 165],
+                            "name": "Color 4 (Stepped scroll)"
+                        },
+                        {
+                            "range": [166, 170],
+                            "name": "Color 3 (Stepped scroll)"
+                        },
+                        {
+                            "range": [171, 175],
+                            "name": "Color 2 (Stepped scroll)"
+                        },
+                        {
+                            "range": [176, 180],
+                            "name": "Color 1 (Stepped scroll)"
+                        },
+                        {
+                            "range": [181, 185],
+                            "name": "White (Stepped scroll)",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [186, 214],
+                            "name": "CW, fast > slow (Continuous rotation)"
+                        },
+                        {
+                            "range": [215, 243],
+                            "name": "CCW, slow < fast  (Continuous rotation)"
+                        },
+                        {
+                            "range": [244, 247],
+                            "name": "Random color, fast (Random CMY color)"
+                        },
+                        {
+                            "range": [248, 251],
+                            "name": "Random color, medium (Random CMY color)"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Random color, slow (Random CMY color)"
+                        }
+                    ]
+                },
+                "Frost": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [3, 170],
+                            "name": "Beam Shaper left -> right"
+                        },
+                        {
+                            "range": [171, 255],
+                            "name": "No Frost > Full Frost"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Pan/tilt speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Tracking mode"
+                        },
+                        {
+                            "range": [3, 245],
+                            "name": "Fast -> slow"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "Tracking, PTSP NORM"
+                        },
+                        {
+                            "range": [249, 251],
+                            "name": "Tracking, PTSP FAST"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Blackout while moving"
+                        }
+                    ]
+                },
+                "Effect speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Tracking mode"
+                        },
+                        {
+                            "range": [3, 245],
+                            "name": "Fast -> slow"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "Tracking, SCUT OFF"
+                        },
+                        {
+                            "range": [249, 251],
+                            "name": "Tracking, SCUT ON"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Blackout while moving"
+                        }
+                    ]
+                },
+                "Beam Shaper": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Beam shaper left > right"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Shutter, strobe, reset, lamp",
+                        "Dimmer",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "Color Wheel",
+                        "Beam Shaper",
+                        "Frost",
+                        "Pan",
+                        "Tilt"
+                    ]
+                },
+                {
+                    "name": "Mode 2",
+                    "channels": [
+                        "Shutter, strobe, reset, lamp",
+                        "Dimmer",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "Color Wheel",
+                        "Beam Shaper",
+                        "Frost",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine"
+                    ]
+                },
+                {
+                    "name": "Mode 3",
+                    "channels": [
+                        "Shutter, strobe, reset, lamp",
+                        "Dimmer",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "Color Wheel",
+                        "Beam Shaper",
+                        "Frost",
+                        "Pan",
+                        "Tilt",
+                        "Pan/tilt speed",
+                        "Effect speed"
+                    ]
+                },
+                {
+                    "name": "Mode 4",
+                    "channels": [
+                        "Shutter, strobe, reset, lamp",
+                        "Dimmer",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "Color Wheel",
+                        "Beam Shaper",
+                        "Frost",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Pan/tilt speed",
+                        "Effect speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

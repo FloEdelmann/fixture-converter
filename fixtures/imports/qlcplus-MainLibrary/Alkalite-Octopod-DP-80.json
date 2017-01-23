@@ -1,0 +1,147 @@
+{
+    "manufacturers": {
+        "Alkalite": {
+            "name": "Alkalite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Alkalite",
+            "name": "Octopod DP-80",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [175, 139, 163],
+                "weight": 11.5,
+                "power": 12,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Rainbow": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Rainbow"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green",
+                            "color": "#1dff00"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue",
+                            "color": "#001dff"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "Strobe"
+                        }
+                    ]
+                },
+                "Programs": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [1, 30],
+                            "name": "Chase 1"
+                        },
+                        {
+                            "range": [31, 60],
+                            "name": "Chase 2"
+                        },
+                        {
+                            "range": [61, 90],
+                            "name": "Chase 3"
+                        },
+                        {
+                            "range": [91, 120],
+                            "name": "Chase 4"
+                        },
+                        {
+                            "range": [121, 150],
+                            "name": "Chase 5"
+                        },
+                        {
+                            "range": [151, 180],
+                            "name": "Chase 6"
+                        },
+                        {
+                            "range": [181, 210],
+                            "name": "Chase 7"
+                        },
+                        {
+                            "range": [211, 240],
+                            "name": "Chase 8"
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "Sound Active"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "6 Channel Mode",
+                    "channels": [
+                        "Rainbow",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Strobe",
+                        "Programs"
+                    ]
+                },
+                {
+                    "name": "3 Channel Mode",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

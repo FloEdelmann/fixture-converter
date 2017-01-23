@@ -1,0 +1,164 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "GKF-60",
+            "type": "Flower",
+            "physical": {
+                "dimensions": [235, 210, 370],
+                "weight": 4,
+                "power": 82,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [30, 30]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Home"
+                        },
+                        {
+                            "range": [8, 8],
+                            "name": "Index-Position 1"
+                        },
+                        {
+                            "range": [9, 9],
+                            "name": "Index-Position 2"
+                        },
+                        {
+                            "range": [10, 10],
+                            "name": "Index-Position 3"
+                        },
+                        {
+                            "range": [11, 11],
+                            "name": "Index-Position 4"
+                        },
+                        {
+                            "range": [12, 12],
+                            "name": "Index-Position 5"
+                        },
+                        {
+                            "range": [13, 13],
+                            "name": "Index-Position 6"
+                        },
+                        {
+                            "range": [14, 14],
+                            "name": "Index-Position 7"
+                        },
+                        {
+                            "range": [15, 15],
+                            "name": "Index-Position 8"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Rainbow effect, increasing speed"
+                        }
+                    ]
+                },
+                "Effect Wheel": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [8, 127],
+                            "name": "Forward rotation with increasing speed"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [136, 255],
+                            "name": "Backward rotation with increasing speed"
+                        }
+                    ]
+                },
+                "Shutter/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Shutter Open"
+                        },
+                        {
+                            "range": [16, 131],
+                            "name": "Strobe-Effect with increasing speed"
+                        },
+                        {
+                            "range": [132, 139],
+                            "name": "Shutter Open"
+                        },
+                        {
+                            "range": [140, 180],
+                            "name": "Pulse opening with decreasing speed"
+                        },
+                        {
+                            "range": [181, 189],
+                            "name": "Shutter Open"
+                        },
+                        {
+                            "range": [190, 231],
+                            "name": "Pulse closing with decreasing speed"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Reset after 3-5 seconds"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Random strobe-effect"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Shutter Open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment of the dimmer intensity, 0 to 100%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "4 Channel",
+                    "channels": [
+                        "Gobo",
+                        "Effect Wheel",
+                        "Shutter/Strobe",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

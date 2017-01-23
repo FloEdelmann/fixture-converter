@@ -1,0 +1,110 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "Hypnotic RGB",
+            "type": "Laser",
+            "physical": {
+                "dimensions": [235, 121, 268],
+                "weight": 3.4,
+                "power": 13,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Colors": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [8, 37],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [38, 67],
+                            "name": "Red+Green"
+                        },
+                        {
+                            "range": [68, 97],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [98, 127],
+                            "name": "Green+Blue"
+                        },
+                        {
+                            "range": [128, 157],
+                            "name": "Blue"
+                        },
+                        {
+                            "range": [158, 187],
+                            "name": "Red+Blue"
+                        },
+                        {
+                            "range": [188, 217],
+                            "name": "Red+Green+Blue"
+                        },
+                        {
+                            "range": [218, 247],
+                            "name": "All Random"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Sound Active"
+                        }
+                    ]
+                },
+                "Rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [10, 120],
+                            "name": "Counter-Clockwise Fast -> Slow"
+                        },
+                        {
+                            "range": [121, 134],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [135, 245],
+                            "name": "Clockwise Slow -> Fast"
+                        },
+                        {
+                            "range": [246, 255],
+                            "name": "No rotation"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "DMX",
+                    "channels": [
+                        "Colors",
+                        "Rotation"
+                    ]
+                }
+            ]
+        }
+    ]
+}

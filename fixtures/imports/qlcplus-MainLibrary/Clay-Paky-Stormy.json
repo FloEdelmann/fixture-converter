@@ -1,0 +1,122 @@
+{
+    "manufacturers": {
+        "Clay Paky": {
+            "name": "Clay Paky"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Clay Paky",
+            "name": "Stormy",
+            "type": "Strobe",
+            "physical": {
+                "dimensions": [482, 305, 182],
+                "weight": 7.5,
+                "power": 800,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "LED",
+                    "colorTemperature": 5700,
+                    "lumens": 80000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [42, 130]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Light Off"
+                        },
+                        {
+                            "range": [6, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Duration": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Rate": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Light Off"
+                        },
+                        {
+                            "range": [6, 255],
+                            "name": "Low < Fast"
+                        }
+                    ]
+                },
+                "Macro": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Macro Off"
+                        },
+                        {
+                            "range": [6, 42],
+                            "name": "Macro 1 - Up ramp"
+                        },
+                        {
+                            "range": [43, 85],
+                            "name": "Macro 2 - Down ramp"
+                        },
+                        {
+                            "range": [86, 128],
+                            "name": "Macro 3 - Up < > Down ramp"
+                        },
+                        {
+                            "range": [129, 171],
+                            "name": "Macro 4 - Random"
+                        },
+                        {
+                            "range": [172, 214],
+                            "name": "Macro 5 - Lighting"
+                        },
+                        {
+                            "range": [215, 255],
+                            "name": "Macro 6 - Spikes"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Xenon",
+                    "channels": [
+                        "Dimmer",
+                        "Duration",
+                        "Rate",
+                        "Macro"
+                    ]
+                },
+                {
+                    "name": "Standard",
+                    "channels": [
+                        "Dimmer",
+                        "Duration",
+                        "Rate"
+                    ]
+                }
+            ]
+        }
+    ]
+}

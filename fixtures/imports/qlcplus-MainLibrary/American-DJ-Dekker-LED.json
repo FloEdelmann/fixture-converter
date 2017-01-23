@@ -1,0 +1,194 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "Dekker LED",
+            "type": "Flower",
+            "physical": {
+                "dimensions": [279, 260, 249],
+                "weight": 3.85,
+                "power": 25,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "1 Motor Function": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [1, 127],
+                            "name": "Clockwise Slow-Fast"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Counter Clockwise Fast-Slow"
+                        }
+                    ]
+                },
+                "2 Red Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Intensity"
+                        }
+                    ]
+                },
+                "3 Green Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Intensity"
+                        }
+                    ]
+                },
+                "4 Blue Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Intensity"
+                        }
+                    ]
+                },
+                "5 White Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White Intensity"
+                        }
+                    ]
+                },
+                "6 Master Intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master Intensity"
+                        }
+                    ]
+                },
+                "7 Programs": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No Program"
+                        },
+                        {
+                            "range": [1, 26],
+                            "name": "4 Color Fade Change"
+                        },
+                        {
+                            "range": [27, 51],
+                            "name": "9 Color Fade Change"
+                        },
+                        {
+                            "range": [52, 76],
+                            "name": "4 Color Loop Change"
+                        },
+                        {
+                            "range": [77, 101],
+                            "name": "9 Color Loop Change"
+                        },
+                        {
+                            "range": [102, 126],
+                            "name": "Strobe 1 Dim-Bright"
+                        },
+                        {
+                            "range": [127, 151],
+                            "name": "Strobe 2 Bright-Dim"
+                        },
+                        {
+                            "range": [152, 176],
+                            "name": "Strobe 3 Dim-Bright-Dim"
+                        },
+                        {
+                            "range": [177, 201],
+                            "name": "Strobe 4 W/O Dim Effect"
+                        },
+                        {
+                            "range": [202, 226],
+                            "name": "Strobe 5 With 9 Color"
+                        },
+                        {
+                            "range": [227, 254],
+                            "name": "Strobe 6 With Gradual Dim"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "All Programs Will Cycle"
+                        }
+                    ]
+                },
+                "8 Program Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No Program"
+                        },
+                        {
+                            "range": [1, 254],
+                            "name": "Slow-Fast"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Sound Active"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "DMX 8CH",
+                    "channels": [
+                        "1 Motor Function",
+                        "2 Red Intensity",
+                        "3 Green Intensity",
+                        "4 Blue Intensity",
+                        "5 White Intensity",
+                        "6 Master Intensity",
+                        "7 Programs",
+                        "8 Program Speed"
+                    ]
+                },
+                {
+                    "name": "DMX 2CH",
+                    "channels": [
+                        "7 Programs",
+                        "8 Program Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "LED Techno Strobe RGB",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [247, 165, 20],
+                "weight": 2.2,
+                "power": 24,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "colorTemperature": 2000,
+                    "lumens": 192
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 24],
+                            "name": "RGB control"
+                        },
+                        {
+                            "range": [25, 49],
+                            "name": "prog 1"
+                        },
+                        {
+                            "range": [50, 74],
+                            "name": "prog 2"
+                        },
+                        {
+                            "range": [75, 99],
+                            "name": "prog 3"
+                        },
+                        {
+                            "range": [100, 124],
+                            "name": "prog 4"
+                        },
+                        {
+                            "range": [125, 149],
+                            "name": "prog 5"
+                        },
+                        {
+                            "range": [150, 174],
+                            "name": "prog 6"
+                        },
+                        {
+                            "range": [175, 199],
+                            "name": "prog 7"
+                        },
+                        {
+                            "range": [200, 224],
+                            "name": "prog 8"
+                        },
+                        {
+                            "range": [225, 255],
+                            "name": "sound activation"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 > 100"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 > 100"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 > 100"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "fast to slow"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "100 > 0"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "6 channel",
+                    "channels": [
+                        "Mode",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Speed",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

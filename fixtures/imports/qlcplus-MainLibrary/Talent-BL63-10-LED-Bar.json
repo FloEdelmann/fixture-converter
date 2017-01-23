@@ -1,0 +1,215 @@
+{
+    "manufacturers": {
+        "Talent": {
+            "name": "Talent"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Talent",
+            "name": "BL63 10\" LED Bar",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [326, 120, 150],
+                "weight": 2.25,
+                "power": 12,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [20, 40]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red Dimmer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "Green Dimmer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "Blue Dimmer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "Master Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 6],
+                            "name": "Dimmer mode"
+                        },
+                        {
+                            "range": [7, 65],
+                            "name": "Strobe from slow to fast"
+                        },
+                        {
+                            "range": [66, 69],
+                            "name": "None"
+                        },
+                        {
+                            "range": [70, 128],
+                            "name": "Pulse strobe from slow to fast"
+                        },
+                        {
+                            "range": [129, 132],
+                            "name": "None"
+                        },
+                        {
+                            "range": [133, 191],
+                            "name": "Strobe fading in from slow to fast"
+                        },
+                        {
+                            "range": [192, 195],
+                            "name": "None"
+                        },
+                        {
+                            "range": [196, 255],
+                            "name": "Strobe fading out from slow to fast"
+                        }
+                    ]
+                },
+                "Static Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Selection"
+                        }
+                    ]
+                },
+                "Function": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 59],
+                            "name": "Dimmer mode"
+                        },
+                        {
+                            "range": [60, 119],
+                            "name": "Static color mode"
+                        },
+                        {
+                            "range": [120, 179],
+                            "name": "Color jump change mode"
+                        },
+                        {
+                            "range": [180, 239],
+                            "name": "Color gradual change mode"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Sound active mode"
+                        }
+                    ]
+                },
+                "Strobe/Sound Active Speed/Running Speed": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 6],
+                            "name": "Dimmer mode/Speed"
+                        },
+                        {
+                            "range": [7, 65],
+                            "name": "Strobe from slow to fast/Speed"
+                        },
+                        {
+                            "range": [66, 69],
+                            "name": "None/Speed"
+                        },
+                        {
+                            "range": [70, 128],
+                            "name": "Pulse strobe from slow to fast/Speed"
+                        },
+                        {
+                            "range": [129, 132],
+                            "name": "None/Speed"
+                        },
+                        {
+                            "range": [133, 191],
+                            "name": "Strobe fading in from slow to fast/Speed"
+                        },
+                        {
+                            "range": [192, 195],
+                            "name": "None/Speed"
+                        },
+                        {
+                            "range": [196, 255],
+                            "name": "Strobe fading out from slow to fast/Speed"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3 Channel",
+                    "channels": [
+                        "Red Dimmer",
+                        "Green Dimmer",
+                        "Blue Dimmer"
+                    ]
+                },
+                {
+                    "name": "5 Channel",
+                    "channels": [
+                        "Red Dimmer",
+                        "Green Dimmer",
+                        "Blue Dimmer",
+                        "Master Dimmer",
+                        "Strobe"
+                    ]
+                },
+                {
+                    "name": "7 Channel",
+                    "channels": [
+                        "Red Dimmer",
+                        "Green Dimmer",
+                        "Blue Dimmer",
+                        "Master Dimmer",
+                        "Strobe/Sound Active Speed/Running Speed",
+                        "Static Color",
+                        "Function"
+                    ]
+                }
+            ]
+        }
+    ]
+}

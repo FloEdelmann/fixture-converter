@@ -1,0 +1,188 @@
+{
+    "manufacturers": {
+        "JB Systems": {
+            "name": "JB Systems"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "JB Systems",
+            "name": "Super Solar RGBW",
+            "type": "Dimmer",
+            "physical": {
+                "dimensions": [220, 180, 214],
+                "weight": 1.8,
+                "power": 27,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Function": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [15, 124],
+                            "name": "Clockwise rotation - fast to slow"
+                        },
+                        {
+                            "range": [125, 139],
+                            "name": "Stop rotation"
+                        },
+                        {
+                            "range": [140, 249],
+                            "name": "Anticlockwise rotation - slow to fast"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Music mode"
+                        }
+                    ]
+                },
+                "Dimmer/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [8, 199],
+                            "name": "Dimmer - 0% to 100%"
+                        },
+                        {
+                            "range": [200, 247],
+                            "name": "Strobe - fast to slow"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Shutter open"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 16],
+                            "name": "01"
+                        },
+                        {
+                            "range": [17, 33],
+                            "name": "02"
+                        },
+                        {
+                            "range": [34, 50],
+                            "name": "03"
+                        },
+                        {
+                            "range": [51, 67],
+                            "name": "04"
+                        },
+                        {
+                            "range": [68, 84],
+                            "name": "05"
+                        },
+                        {
+                            "range": [85, 101],
+                            "name": "06"
+                        },
+                        {
+                            "range": [102, 118],
+                            "name": "07"
+                        },
+                        {
+                            "range": [119, 135],
+                            "name": "08"
+                        },
+                        {
+                            "range": [136, 152],
+                            "name": "09"
+                        },
+                        {
+                            "range": [153, 169],
+                            "name": "10"
+                        },
+                        {
+                            "range": [170, 186],
+                            "name": "11"
+                        },
+                        {
+                            "range": [187, 203],
+                            "name": "12"
+                        },
+                        {
+                            "range": [204, 220],
+                            "name": "13"
+                        },
+                        {
+                            "range": [221, 237],
+                            "name": "14"
+                        },
+                        {
+                            "range": [238, 255],
+                            "name": "15"
+                        }
+                    ]
+                },
+                "Rotation/Sound Active": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [10, 120],
+                            "name": "Clockwise - fast to slow"
+                        },
+                        {
+                            "range": [121, 134],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [135, 245],
+                            "name": "Anticlockwise - slow to fast"
+                        },
+                        {
+                            "range": [246, 249],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Sound active"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "1-Channel",
+                    "channels": [
+                        "Function"
+                    ]
+                },
+                {
+                    "name": "3-Channel",
+                    "channels": [
+                        "Dimmer/Strobe",
+                        "Color",
+                        "Rotation/Sound Active"
+                    ]
+                }
+            ]
+        }
+    ]
+}

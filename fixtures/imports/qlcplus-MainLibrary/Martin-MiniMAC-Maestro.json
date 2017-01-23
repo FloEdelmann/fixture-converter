@@ -1,0 +1,316 @@
+{
+    "manufacturers": {
+        "Martin": {
+            "name": "Martin"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Martin",
+            "name": "MiniMAC Maestro",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [316, 390, 415],
+                "weight": 14,
+                "power": 255,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "CDM 150W",
+                    "lumens": 1000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [18, 18]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Shutter, strobe, reset, lamp": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [20, 49],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [50, 112],
+                            "name": "Strobe, fast to slow"
+                        },
+                        {
+                            "range": [113, 127],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [128, 157],
+                            "name": "Random strobe speed"
+                        },
+                        {
+                            "range": [158, 207],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [208, 217],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [218, 227],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [228, 237],
+                            "name": "Lamp on"
+                        },
+                        {
+                            "range": [238, 247],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Lamp off"
+                        }
+                    ]
+                },
+                "Image selection": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Image 1, indexed rotation"
+                        },
+                        {
+                            "range": [20, 39],
+                            "name": "Image 2, indexed rotation"
+                        },
+                        {
+                            "range": [40, 59],
+                            "name": "Image 3, indexed rotation"
+                        },
+                        {
+                            "range": [60, 79],
+                            "name": "Image 4, indexed rotation"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Image 1, continuous rotation"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Image 2, continuous rotation"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Image 3, continuous rotation"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Image 4, continuous rotation"
+                        },
+                        {
+                            "range": [160, 198],
+                            "name": "Clockwise rainbow speed"
+                        },
+                        {
+                            "range": [199, 255],
+                            "name": "Counterclockwise rainbow speed"
+                        }
+                    ]
+                },
+                "Image rotation": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [3, 127],
+                            "name": "Clockwise rotation speed"
+                        },
+                        {
+                            "range": [128, 252],
+                            "name": "Counterclockwise rotation speed"
+                        },
+                        {
+                            "range": [253, 255],
+                            "name": "No rotation"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Infinity -> near"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Image rotation fine": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine position index"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Image and focus speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Tracking mode"
+                        },
+                        {
+                            "range": [3, 251],
+                            "name": "Fast to slow"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Blackout while moving"
+                        }
+                    ]
+                },
+                "Pan/tilt speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Tracking mode"
+                        },
+                        {
+                            "range": [3, 245],
+                            "name": "Fast to slow"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "Tracking mode, slow"
+                        },
+                        {
+                            "range": [249, 251],
+                            "name": "Tracking mode, fast"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Blackout while moving"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Image rotation",
+                    "Image rotation fine"
+                ],
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Shutter, strobe, reset, lamp",
+                        "Image selection",
+                        "Image rotation",
+                        "Focus",
+                        "Pan",
+                        "Tilt"
+                    ]
+                },
+                {
+                    "name": "Mode 2",
+                    "channels": [
+                        "Shutter, strobe, reset, lamp",
+                        "Image selection",
+                        "Image rotation",
+                        "Image rotation fine",
+                        "Focus",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine"
+                    ]
+                },
+                {
+                    "name": "Mode 3",
+                    "channels": [
+                        "Shutter, strobe, reset, lamp",
+                        "Image selection",
+                        "Image rotation",
+                        "Focus",
+                        "Pan",
+                        "Tilt",
+                        "Pan/tilt speed",
+                        "Image and focus speed"
+                    ]
+                },
+                {
+                    "name": "Mode 4",
+                    "channels": [
+                        "Shutter, strobe, reset, lamp",
+                        "Image selection",
+                        "Image rotation",
+                        "Image rotation fine",
+                        "Focus",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Pan/tilt speed",
+                        "Image and focus speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

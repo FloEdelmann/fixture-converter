@@ -1,0 +1,454 @@
+{
+    "manufacturers": {
+        "DTS": {
+            "name": "DTS"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "DTS",
+            "name": "Nick NRG1201",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [369, 497, 218],
+                "weight": 10.5,
+                "power": 340,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [8, 50]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 360,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan Coarse": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan 0° - 360°"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine"
+                        }
+                    ]
+                },
+                "Tilt Coarse": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt 0° - 270°"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine"
+                        }
+                    ]
+                },
+                "Speed Move": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Standard"
+                        },
+                        {
+                            "range": [11, 25],
+                            "name": "Fast Move"
+                        },
+                        {
+                            "range": [26, 127],
+                            "name": "Vector Mode Fast to Slow"
+                        },
+                        {
+                            "range": [128, 247],
+                            "name": "Variable Reaction"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Slow Reaction"
+                        }
+                    ]
+                },
+                "Pan FPR": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Standard"
+                        },
+                        {
+                            "range": [11, 20],
+                            "name": "1 turn"
+                        },
+                        {
+                            "range": [21, 30],
+                            "name": "2 turn"
+                        },
+                        {
+                            "range": [31, 40],
+                            "name": "3 turn"
+                        },
+                        {
+                            "range": [41, 50],
+                            "name": "4 turn"
+                        },
+                        {
+                            "range": [51, 60],
+                            "name": "5 turn"
+                        },
+                        {
+                            "range": [61, 70],
+                            "name": "6 turn"
+                        },
+                        {
+                            "range": [71, 80],
+                            "name": "7 turn"
+                        },
+                        {
+                            "range": [81, 90],
+                            "name": "8 turn"
+                        },
+                        {
+                            "range": [91, 100],
+                            "name": "9 turn"
+                        },
+                        {
+                            "range": [101, 110],
+                            "name": "10 turn"
+                        },
+                        {
+                            "range": [111, 120],
+                            "name": "Smart path"
+                        },
+                        {
+                            "range": [121, 182],
+                            "name": "Forward Spin"
+                        },
+                        {
+                            "range": [183, 193],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Reverse Spin"
+                        }
+                    ]
+                },
+                "No function": {
+                    "type": "Nothing"
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [30, 119],
+                            "name": "Strobe"
+                        },
+                        {
+                            "range": [120, 149],
+                            "name": "Pulse up"
+                        },
+                        {
+                            "range": [150, 179],
+                            "name": "Pulse down"
+                        },
+                        {
+                            "range": [180, 204],
+                            "name": "Random Strobe"
+                        },
+                        {
+                            "range": [205, 229],
+                            "name": "Full Random Strobe"
+                        },
+                        {
+                            "range": [230, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White intensity"
+                        }
+                    ]
+                },
+                "White Preprogrammed": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 55],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [56, 105],
+                            "name": "Full RGB"
+                        },
+                        {
+                            "range": [106, 155],
+                            "name": "White DTS"
+                        },
+                        {
+                            "range": [156, 205],
+                            "name": "Custom White Create"
+                        },
+                        {
+                            "range": [206, 255],
+                            "name": "White CTC"
+                        }
+                    ]
+                },
+                "CTC": {
+                    "type": "MultiColor"
+                },
+                "Macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [15, 29],
+                            "name": "Macro 1"
+                        },
+                        {
+                            "range": [30, 44],
+                            "name": "Macro 2"
+                        },
+                        {
+                            "range": [45, 59],
+                            "name": "Macro 3"
+                        },
+                        {
+                            "range": [60, 74],
+                            "name": "Macro 4"
+                        },
+                        {
+                            "range": [75, 89],
+                            "name": "Macro 5"
+                        },
+                        {
+                            "range": [90, 104],
+                            "name": "Macro 6"
+                        },
+                        {
+                            "range": [105, 119],
+                            "name": "Macro 7"
+                        },
+                        {
+                            "range": [120, 134],
+                            "name": "Macro 8"
+                        },
+                        {
+                            "range": [135, 149],
+                            "name": "Macro 9"
+                        },
+                        {
+                            "range": [150, 164],
+                            "name": "Macro 10"
+                        },
+                        {
+                            "range": [165, 179],
+                            "name": "Macro 11"
+                        },
+                        {
+                            "range": [180, 194],
+                            "name": "Macro 12"
+                        },
+                        {
+                            "range": [195, 209],
+                            "name": "Macro 13"
+                        },
+                        {
+                            "range": [210, 225],
+                            "name": "Macro 14"
+                        },
+                        {
+                            "range": [226, 239],
+                            "name": "Macro 15"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Macro 16"
+                        }
+                    ]
+                },
+                "Custom White": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 79],
+                            "name": "CW Recall"
+                        },
+                        {
+                            "range": [80, 160],
+                            "name": "CW Create"
+                        },
+                        {
+                            "range": [161, 255],
+                            "name": "CW Store"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam"
+                },
+                "No function2": {
+                    "type": "Nothing"
+                },
+                "Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Total Reset"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "heads": {
+                "20ch-head0": [
+                    "Shutter",
+                    "Speed Move",
+                    "Pan FPR",
+                    "Reset",
+                    "Custom White",
+                    "Zoom",
+                    "Green",
+                    "Blue",
+                    "Dimmer",
+                    "Red",
+                    "CTC",
+                    "Macros",
+                    "White",
+                    "White Preprogrammed",
+                    "Tilt Coarse",
+                    "Tilt Fine",
+                    "Pan Coarse",
+                    "Pan Fine"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "20ch",
+                    "channels": [
+                        "Pan Coarse",
+                        "Pan Fine",
+                        "Tilt Coarse",
+                        "Tilt Fine",
+                        "Speed Move",
+                        "Pan FPR",
+                        "No function",
+                        "Shutter",
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "White Preprogrammed",
+                        "CTC",
+                        "Macros",
+                        "Custom White",
+                        "Zoom",
+                        "No function2",
+                        "Reset"
+                    ]
+                }
+            ]
+        }
+    ]
+}

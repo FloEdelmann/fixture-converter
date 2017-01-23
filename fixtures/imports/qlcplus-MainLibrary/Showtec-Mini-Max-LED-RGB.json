@@ -1,0 +1,208 @@
+{
+    "manufacturers": {
+        "Showtec": {
+            "name": "Showtec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Showtec",
+            "name": "Mini Max LED RGB",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [260, 350, 220],
+                "weight": 5.68,
+                "power": 160,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [9, 0]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 540,
+                    "tiltMax": 230
+                }
+            },
+            "availableChannels": {
+                "Pan coarse": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0° - 540°"
+                        }
+                    ]
+                },
+                "Tilt coarse": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0° - 230°"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast - slow"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dark - Deep red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dark - Deep green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dark - Deep blue"
+                        }
+                    ]
+                },
+                "RGB Control Mode": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 24],
+                            "name": "RGB"
+                        },
+                        {
+                            "range": [25, 49],
+                            "name": "Auto Pro 1"
+                        },
+                        {
+                            "range": [50, 74],
+                            "name": "Auto Pro 2"
+                        },
+                        {
+                            "range": [75, 99],
+                            "name": "Auto Pro 3"
+                        },
+                        {
+                            "range": [100, 124],
+                            "name": "Auto Pro 4"
+                        },
+                        {
+                            "range": [125, 149],
+                            "name": "Auto Pro 5 No Pan/Tilt"
+                        },
+                        {
+                            "range": [150, 174],
+                            "name": "Auto Pro 6 No Pan/Tilt"
+                        },
+                        {
+                            "range": [175, 199],
+                            "name": "Auto Pro 7 No Pan/Tilt"
+                        },
+                        {
+                            "range": [200, 224],
+                            "name": "Auto Pro 8 No Pan/Tilt"
+                        },
+                        {
+                            "range": [225, 255],
+                            "name": "Sound-active"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "black to bright"
+                        }
+                    ]
+                },
+                "Strobe / Auto speed": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Full on"
+                        },
+                        {
+                            "range": [8, 255],
+                            "name": "Strobe, from slow to fast"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "PAN Adjust 0° - 2,4°"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Adjust 0° - 2,4°"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan coarse",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt coarse",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Pan coarse",
+                        "Tilt coarse",
+                        "Speed",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "RGB Control Mode",
+                        "Dimmer",
+                        "Strobe / Auto speed",
+                        "Pan Fine",
+                        "Tilt Fine"
+                    ]
+                }
+            ]
+        }
+    ]
+}

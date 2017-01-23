@@ -1,0 +1,214 @@
+{
+    "manufacturers": {
+        "BoomToneDJ": {
+            "name": "BoomToneDJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "BoomToneDJ",
+            "name": "Slim PAR 7x3W LED RGB",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [241, 247, 92],
+                "weight": 2.2,
+                "power": 30,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 6],
+                            "name": "Dimmer Mode"
+                        },
+                        {
+                            "range": [7, 65],
+                            "name": "Strobe (Slow > Fast)"
+                        },
+                        {
+                            "range": [66, 69],
+                            "name": "None"
+                        },
+                        {
+                            "range": [70, 128],
+                            "name": "Pulse Strobe (Slow > Fast)"
+                        },
+                        {
+                            "range": [129, 132],
+                            "name": "None"
+                        },
+                        {
+                            "range": [133, 191],
+                            "name": "Strobe Fadding In (Slow > Fast)"
+                        },
+                        {
+                            "range": [192, 195],
+                            "name": "None"
+                        },
+                        {
+                            "range": [196, 255],
+                            "name": "Strobe Fadding Out (Slow > Fast)"
+                        }
+                    ]
+                },
+                "Strobe (7 Ch Mode)": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 6],
+                            "name": "Dimmer Mode (If Ch7>=60 Program Running Speed from Slow to Fast)"
+                        },
+                        {
+                            "range": [7, 65],
+                            "name": "Strobe (Slow > Fast)"
+                        },
+                        {
+                            "range": [66, 69],
+                            "name": "None"
+                        },
+                        {
+                            "range": [70, 128],
+                            "name": "Pulse Strobe (Slow > Fast)"
+                        },
+                        {
+                            "range": [129, 132],
+                            "name": "None"
+                        },
+                        {
+                            "range": [133, 191],
+                            "name": "Strobe Fadding In (Slow > Fast)"
+                        },
+                        {
+                            "range": [192, 195],
+                            "name": "None"
+                        },
+                        {
+                            "range": [196, 255],
+                            "name": "Strobe Fadding Out (Slow > Fast)"
+                        }
+                    ]
+                },
+                "Static Color Select (if Ch7 60-119) or Strobe Slow to Fast (if Ch7 120-179)": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Static Color Select (if Ch7 60-119) or Strobe Slow to Fast (if Ch7 120-179)"
+                        }
+                    ]
+                },
+                "Function Mode": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 59],
+                            "name": "Dimmer Mode"
+                        },
+                        {
+                            "range": [60, 119],
+                            "name": "Static Color Mode"
+                        },
+                        {
+                            "range": [120, 179],
+                            "name": "Hop Change Mode"
+                        },
+                        {
+                            "range": [180, 239],
+                            "name": "Gradual Change Mode"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Sound Active Mode"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3 Ch Mode",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "5 Ch Mode",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Dimmer",
+                        "Strobe"
+                    ]
+                },
+                {
+                    "name": "7 Ch Mode",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Dimmer",
+                        "Strobe (7 Ch Mode)",
+                        "Static Color Select (if Ch7 60-119) or Strobe Slow to Fast (if Ch7 120-179)",
+                        "Function Mode"
+                    ]
+                }
+            ]
+        }
+    ]
+}

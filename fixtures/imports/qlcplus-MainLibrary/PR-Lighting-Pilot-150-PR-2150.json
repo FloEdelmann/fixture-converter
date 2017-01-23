@@ -1,0 +1,246 @@
+{
+    "manufacturers": {
+        "PR Lighting": {
+            "name": "PR Lighting"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "PR Lighting",
+            "name": "Pilot 150 (PR-2150)",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [340, 470, 380],
+                "weight": 12,
+                "power": 280,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "HTI 150W",
+                    "colorTemperature": 6500,
+                    "lumens": 10000
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 370,
+                    "tiltMax": 265
+                }
+            },
+            "availableChannels": {
+                "Gobo Wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Open/Clear"
+                        },
+                        {
+                            "range": [5, 7],
+                            "name": "Hold for 3 secs, the unit will reset and restart"
+                        },
+                        {
+                            "range": [8, 33],
+                            "name": "Open/Clear"
+                        },
+                        {
+                            "range": [34, 66],
+                            "name": "GOBO 1 (Swirl)"
+                        },
+                        {
+                            "range": [67, 99],
+                            "name": "GOBO 2 (Tri-ring)"
+                        },
+                        {
+                            "range": [100, 132],
+                            "name": "GOBO 3 (Windmill)"
+                        },
+                        {
+                            "range": [133, 165],
+                            "name": "GOBO 4 (Multi-circle)"
+                        },
+                        {
+                            "range": [166, 199],
+                            "name": "GOBO 5 (Stars)"
+                        },
+                        {
+                            "range": [200, 232],
+                            "name": "GOBO 6 (Ring)"
+                        },
+                        {
+                            "range": [233, 255],
+                            "name": "GOBO 7 (Three-prong)"
+                        }
+                    ]
+                },
+                "Gobo Rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 8],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [9, 163],
+                            "name": "Orientation from 0° to 360°"
+                        },
+                        {
+                            "range": [164, 205],
+                            "name": "Rotate from slow to fast"
+                        },
+                        {
+                            "range": [206, 213],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [214, 255],
+                            "name": "Rotate in opposite direction from slow to fast"
+                        }
+                    ]
+                },
+                "Colour Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 27],
+                            "name": "Open (White)",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [28, 55],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [56, 83],
+                            "name": "Yellow",
+                            "color": "#ffff7f"
+                        },
+                        {
+                            "range": [84, 111],
+                            "name": "Light green (Lime)",
+                            "color": "#aaff7f"
+                        },
+                        {
+                            "range": [112, 139],
+                            "name": "Pink",
+                            "color": "#ffaaff"
+                        },
+                        {
+                            "range": [140, 167],
+                            "name": "Ultraviolet colour",
+                            "color": "#5555ff"
+                        },
+                        {
+                            "range": [168, 195],
+                            "name": "Cyan (Aqua)",
+                            "color": "#55ffff"
+                        },
+                        {
+                            "range": [196, 223],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [224, 251],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Orange",
+                            "color": "#ffaa00"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 21],
+                            "name": "Black-out"
+                        },
+                        {
+                            "range": [22, 110],
+                            "name": "Open gradually from black to full open (dimming)"
+                        },
+                        {
+                            "range": [111, 135],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [136, 247],
+                            "name": "Strobe adjust from slow to fast (1-7 flashes/sec)"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan movement from 0° to 370°"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt movement from 0° to 265°"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "16 Bit pan movement (High Res)"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "16 Bit tilt movement (High res)"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Gobo Wheel",
+                        "Gobo Rotation",
+                        "Colour Wheel",
+                        "Strobe",
+                        "Pan",
+                        "Tilt",
+                        "Pan Fine",
+                        "Tilt Fine"
+                    ]
+                }
+            ]
+        }
+    ]
+}

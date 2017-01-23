@@ -1,0 +1,895 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "LED Matrix Blinder 5x5",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [638, 664, 114],
+                "weight": 10.2,
+                "power": 96,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "25 × 3 W LEDs (warm white)"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [55, 55]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%, for all LEDs together"
+                        }
+                    ]
+                },
+                "Operating-Mode (28-Channel Mode)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "LEDs off"
+                        },
+                        {
+                            "range": [1, 9],
+                            "name": "All LEDs on"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Letter display, to be selected with channel 28"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Number display, to be selected with channel 28"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Preprogrammed automatic show no. 1"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Preprogrammed automatic show no. 2"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Preprogrammed automatic show no. 3"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Preprogrammed automatic show no. 4"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Preprogrammed automatic show no. 5"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Preprogrammed automatic show no. 6"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Preprogrammed automatic show no. 7"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Preprogrammed automatic show no. 8"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "Preprogrammed automatic show no. 9"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "Preprogrammed automatic show no. 10"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "Preprogrammed automatic show no. 11"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Preprogrammed automatic show no. 12"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "Preprogrammed automatic show no. 13"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "Preprogrammed automatic show no. 14"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "Preprogrammed automatic show no. 15"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "Preprogrammed automatic show no. 16"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "Preprogrammed automatic show no. 17"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Preprogrammed automatic show no. 18"
+                        },
+                        {
+                            "range": [210, 219],
+                            "name": "Preprogrammed automatic show no. 19"
+                        },
+                        {
+                            "range": [220, 229],
+                            "name": "Preprogrammed automatic show no. 20"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Preprogrammed automatic show no. 21"
+                        },
+                        {
+                            "range": [253, 255],
+                            "name": "Sound-controlled show"
+                        }
+                    ]
+                },
+                "Letter/Number/Speed Adjustment (Increasing Speed 0..255)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Letter 'A'/Number '0'"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Letter 'B'/Number '0'"
+                        },
+                        {
+                            "range": [20, 27],
+                            "name": "Letter 'C'/Number '0'"
+                        },
+                        {
+                            "range": [28, 29],
+                            "name": "Letter 'C'/Number '1'"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Letter 'D'/Number '1'"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Letter 'E'/Number '1'"
+                        },
+                        {
+                            "range": [50, 55],
+                            "name": "Letter 'F'/Number '1'"
+                        },
+                        {
+                            "range": [56, 59],
+                            "name": "Letter 'F'/Number '2'"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Letter 'G'/Number '2'"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Letter 'H'/Number '2'"
+                        },
+                        {
+                            "range": [80, 83],
+                            "name": "Letter 'I'/Number '2'"
+                        },
+                        {
+                            "range": [84, 89],
+                            "name": "Letter 'I'/Number '3'"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Letter 'J'/Number '3'"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Letter 'K'/Number '3'"
+                        },
+                        {
+                            "range": [110, 111],
+                            "name": "Letter 'L'/Number '3'"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Letter 'L'/Number '4'"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "Letter 'M'/Number '4'"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "Letter 'N'/Number '4'"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Letter 'O'/Number '5'"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "Letter 'P'/Number '5'"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Letter 'Q'/Number '5'"
+                        },
+                        {
+                            "range": [168, 169],
+                            "name": "Letter 'Q'/Number '6'"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "Letter 'R'/Number '6'"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "Letter 'S'/Number '6'"
+                        },
+                        {
+                            "range": [190, 195],
+                            "name": "Letter 'T'/Number '6'"
+                        },
+                        {
+                            "range": [196, 199],
+                            "name": "Letter 'T'/Number '7'"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Letter 'U'/Number '7'"
+                        },
+                        {
+                            "range": [210, 219],
+                            "name": "Letter 'V'/Number '7'"
+                        },
+                        {
+                            "range": [220, 224],
+                            "name": "Letter 'W'/Number '7'"
+                        },
+                        {
+                            "range": [225, 229],
+                            "name": "Letter 'W'/Number '8'"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Letter 'X'/Number '8'"
+                        },
+                        {
+                            "range": [240, 249],
+                            "name": "Letter 'Y'/Number '8'"
+                        },
+                        {
+                            "range": [250, 251],
+                            "name": "Letter 'Z'/Number '8'"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Letter 'Z'/Number '9'"
+                        }
+                    ]
+                },
+                "Speed Adjustment (chan 27=30...255)": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Increasing speed"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 1": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 2": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 3": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 4": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 5": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 6": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 7": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 8": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 9": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 10": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 11": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 12": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 13": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 14": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 15": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 16": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 17": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 18": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 19": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 20": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 21": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 22": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 23": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 24": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer for LED No. 25": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Operating Mode (4-Channel Mode)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [1, 11],
+                            "name": "Preprogrammed automatic show no. 1"
+                        },
+                        {
+                            "range": [12, 23],
+                            "name": "Preprogrammed automatic show no. 2"
+                        },
+                        {
+                            "range": [24, 35],
+                            "name": "Preprogrammed automatic show no. 3"
+                        },
+                        {
+                            "range": [36, 47],
+                            "name": "Preprogrammed automatic show no. 4"
+                        },
+                        {
+                            "range": [48, 59],
+                            "name": "Preprogrammed automatic show no. 5"
+                        },
+                        {
+                            "range": [60, 71],
+                            "name": "Preprogrammed automatic show no. 6"
+                        },
+                        {
+                            "range": [72, 83],
+                            "name": "Preprogrammed automatic show no. 7"
+                        },
+                        {
+                            "range": [84, 95],
+                            "name": "Preprogrammed automatic show no. 8"
+                        },
+                        {
+                            "range": [96, 107],
+                            "name": "Preprogrammed automatic show no. 9"
+                        },
+                        {
+                            "range": [108, 119],
+                            "name": "Preprogrammed automatic show no. 10"
+                        },
+                        {
+                            "range": [120, 131],
+                            "name": "Preprogrammed automatic show no. 11"
+                        },
+                        {
+                            "range": [132, 143],
+                            "name": "Preprogrammed automatic show no. 12"
+                        },
+                        {
+                            "range": [144, 155],
+                            "name": "Preprogrammed automatic show no. 13"
+                        },
+                        {
+                            "range": [156, 167],
+                            "name": "Preprogrammed automatic show no. 14"
+                        },
+                        {
+                            "range": [168, 179],
+                            "name": "Preprogrammed automatic show no. 15"
+                        },
+                        {
+                            "range": [180, 191],
+                            "name": "Preprogrammed automatic show no. 16"
+                        },
+                        {
+                            "range": [192, 203],
+                            "name": "Preprogrammed automatic show no. 17"
+                        },
+                        {
+                            "range": [204, 215],
+                            "name": "Preprogrammed automatic show no. 18"
+                        },
+                        {
+                            "range": [216, 227],
+                            "name": "Preprogrammed automatic show no. 19"
+                        },
+                        {
+                            "range": [228, 239],
+                            "name": "Preprogrammed automatic show no. 20"
+                        },
+                        {
+                            "range": [240, 251],
+                            "name": "Preprogrammed automatic show no. 21"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Sound-controlled show"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Increasing"
+                        }
+                    ]
+                },
+                "Strobe Effect": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Increasing speed"
+                        }
+                    ]
+                }
+            },
+            "heads": {
+                "26-Channel-head0": [
+                    "Dimmer for LED No. 1"
+                ],
+                "26-Channel-head1": [
+                    "Dimmer for LED No. 2"
+                ],
+                "26-Channel-head2": [
+                    "Dimmer for LED No. 3"
+                ],
+                "26-Channel-head3": [
+                    "Dimmer for LED No. 4"
+                ],
+                "26-Channel-head4": [
+                    "Dimmer for LED No. 5"
+                ],
+                "26-Channel-head5": [
+                    "Dimmer for LED No. 6"
+                ],
+                "26-Channel-head6": [
+                    "Dimmer for LED No. 7"
+                ],
+                "26-Channel-head7": [
+                    "Dimmer for LED No. 8"
+                ],
+                "26-Channel-head8": [
+                    "Dimmer for LED No. 9"
+                ],
+                "26-Channel-head9": [
+                    "Dimmer for LED No. 10"
+                ],
+                "26-Channel-head10": [
+                    "Dimmer for LED No. 11"
+                ],
+                "26-Channel-head11": [
+                    "Dimmer for LED No. 12"
+                ],
+                "26-Channel-head12": [
+                    "Dimmer for LED No. 13"
+                ],
+                "26-Channel-head13": [
+                    "Dimmer for LED No. 14"
+                ],
+                "26-Channel-head14": [
+                    "Dimmer for LED No. 15"
+                ],
+                "26-Channel-head15": [
+                    "Dimmer for LED No. 16"
+                ],
+                "26-Channel-head16": [
+                    "Dimmer for LED No. 17"
+                ],
+                "26-Channel-head17": [
+                    "Dimmer for LED No. 18"
+                ],
+                "26-Channel-head18": [
+                    "Dimmer for LED No. 19"
+                ],
+                "26-Channel-head19": [
+                    "Dimmer for LED No. 20"
+                ],
+                "26-Channel-head20": [
+                    "Dimmer for LED No. 21"
+                ],
+                "26-Channel-head21": [
+                    "Dimmer for LED No. 22"
+                ],
+                "26-Channel-head22": [
+                    "Dimmer for LED No. 23"
+                ],
+                "26-Channel-head23": [
+                    "Dimmer for LED No. 24"
+                ],
+                "26-Channel-head24": [
+                    "Dimmer for LED No. 25"
+                ],
+                "28-Channel-head0": [
+                    "Dimmer for LED No. 1"
+                ],
+                "28-Channel-head1": [
+                    "Dimmer for LED No. 2"
+                ],
+                "28-Channel-head2": [
+                    "Dimmer for LED No. 3"
+                ],
+                "28-Channel-head3": [
+                    "Dimmer for LED No. 4"
+                ],
+                "28-Channel-head4": [
+                    "Dimmer for LED No. 5"
+                ],
+                "28-Channel-head5": [
+                    "Dimmer for LED No. 6"
+                ],
+                "28-Channel-head6": [
+                    "Dimmer for LED No. 7"
+                ],
+                "28-Channel-head7": [
+                    "Dimmer for LED No. 8"
+                ],
+                "28-Channel-head8": [
+                    "Dimmer for LED No. 9"
+                ],
+                "28-Channel-head9": [
+                    "Dimmer for LED No. 10"
+                ],
+                "28-Channel-head10": [
+                    "Dimmer for LED No. 11"
+                ],
+                "28-Channel-head11": [
+                    "Dimmer for LED No. 12"
+                ],
+                "28-Channel-head12": [
+                    "Dimmer for LED No. 13"
+                ],
+                "28-Channel-head13": [
+                    "Dimmer for LED No. 14"
+                ],
+                "28-Channel-head14": [
+                    "Dimmer for LED No. 15"
+                ],
+                "28-Channel-head15": [
+                    "Dimmer for LED No. 16"
+                ],
+                "28-Channel-head16": [
+                    "Dimmer for LED No. 17"
+                ],
+                "28-Channel-head17": [
+                    "Dimmer for LED No. 18"
+                ],
+                "28-Channel-head18": [
+                    "Dimmer for LED No. 19"
+                ],
+                "28-Channel-head19": [
+                    "Dimmer for LED No. 20"
+                ],
+                "28-Channel-head20": [
+                    "Dimmer for LED No. 21"
+                ],
+                "28-Channel-head21": [
+                    "Dimmer for LED No. 22"
+                ],
+                "28-Channel-head22": [
+                    "Dimmer for LED No. 23"
+                ],
+                "28-Channel-head23": [
+                    "Dimmer for LED No. 24"
+                ],
+                "28-Channel-head24": [
+                    "Dimmer for LED No. 25"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "1-Channel",
+                    "channels": [
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "26-Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Dimmer for LED No. 1",
+                        "Dimmer for LED No. 2",
+                        "Dimmer for LED No. 3",
+                        "Dimmer for LED No. 4",
+                        "Dimmer for LED No. 5",
+                        "Dimmer for LED No. 6",
+                        "Dimmer for LED No. 7",
+                        "Dimmer for LED No. 8",
+                        "Dimmer for LED No. 9",
+                        "Dimmer for LED No. 10",
+                        "Dimmer for LED No. 11",
+                        "Dimmer for LED No. 12",
+                        "Dimmer for LED No. 13",
+                        "Dimmer for LED No. 14",
+                        "Dimmer for LED No. 15",
+                        "Dimmer for LED No. 16",
+                        "Dimmer for LED No. 17",
+                        "Dimmer for LED No. 18",
+                        "Dimmer for LED No. 19",
+                        "Dimmer for LED No. 20",
+                        "Dimmer for LED No. 21",
+                        "Dimmer for LED No. 22",
+                        "Dimmer for LED No. 23",
+                        "Dimmer for LED No. 24",
+                        "Dimmer for LED No. 25"
+                    ]
+                },
+                {
+                    "name": "28-Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Dimmer for LED No. 1",
+                        "Dimmer for LED No. 2",
+                        "Dimmer for LED No. 3",
+                        "Dimmer for LED No. 4",
+                        "Dimmer for LED No. 5",
+                        "Dimmer for LED No. 6",
+                        "Dimmer for LED No. 7",
+                        "Dimmer for LED No. 8",
+                        "Dimmer for LED No. 9",
+                        "Dimmer for LED No. 10",
+                        "Dimmer for LED No. 11",
+                        "Dimmer for LED No. 12",
+                        "Dimmer for LED No. 13",
+                        "Dimmer for LED No. 14",
+                        "Dimmer for LED No. 15",
+                        "Dimmer for LED No. 16",
+                        "Dimmer for LED No. 17",
+                        "Dimmer for LED No. 18",
+                        "Dimmer for LED No. 19",
+                        "Dimmer for LED No. 20",
+                        "Dimmer for LED No. 21",
+                        "Dimmer for LED No. 22",
+                        "Dimmer for LED No. 23",
+                        "Dimmer for LED No. 24",
+                        "Dimmer for LED No. 25",
+                        "Operating-Mode (28-Channel Mode)",
+                        "Letter/Number/Speed Adjustment (Increasing Speed 0..255)"
+                    ]
+                },
+                {
+                    "name": "4-Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Operating Mode (4-Channel Mode)",
+                        "Speed",
+                        "Strobe Effect"
+                    ]
+                }
+            ]
+        }
+    ]
+}

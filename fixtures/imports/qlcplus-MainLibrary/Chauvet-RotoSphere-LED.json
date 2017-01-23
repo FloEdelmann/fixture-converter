@@ -1,0 +1,142 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "RotoSphere LED",
+            "type": "Flower",
+            "physical": {
+                "dimensions": [307, 441, 307],
+                "weight": 3.2,
+                "power": 35,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [360, 360]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Motor Rotation": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [10, 127],
+                            "name": "Counter clockwise rotation (slow to fast)."
+                        },
+                        {
+                            "range": [128, 137],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [138, 255],
+                            "name": "Clockwise rotation (slow to fast)."
+                        }
+                    ]
+                },
+                "Colors": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "No Function",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Red + green",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Red + blue",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Green + blue",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Red + green + blue",
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe effect (slow to fast)."
+                        }
+                    ]
+                },
+                "Modes": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [11, 249],
+                            "name": "Automatic programs"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Sound-activated mode"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "4 Channel",
+                    "channels": [
+                        "Motor Rotation",
+                        "Colors",
+                        "Strobe",
+                        "Modes"
+                    ]
+                }
+            ]
+        }
+    ]
+}

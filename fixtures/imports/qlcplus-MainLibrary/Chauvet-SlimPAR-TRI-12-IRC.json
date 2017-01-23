@@ -1,0 +1,156 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "SlimPAR TRI 12 IRC",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [235, 292, 115],
+                "weight": 2.6,
+                "power": 67,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [33, 34]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Color Macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Color Macros"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow to fast"
+                        }
+                    ]
+                },
+                "Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "RGB Mode"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Pulse effect 0-100%"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Pulse effect 100%-0"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Pulse effect 100%-0-100%"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Auto fade transition"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Auto snap transition (3 colors)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Auto snap transition (7 colors)"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Sound-Active mode"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "7-CH",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color Macros",
+                        "Speed",
+                        "Mode",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "3-CH",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

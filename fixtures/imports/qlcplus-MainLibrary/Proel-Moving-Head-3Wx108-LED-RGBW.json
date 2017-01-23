@@ -1,0 +1,270 @@
+{
+    "manufacturers": {
+        "Proel": {
+            "name": "Proel"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Proel",
+            "name": "Moving Head 3Wx108 LED RGBW",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [300, 430, 210],
+                "weight": 7.8,
+                "power": 330,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [3, 125],
+                            "name": "Random strobe"
+                        },
+                        {
+                            "range": [126, 255],
+                            "name": "Pulsing strobe"
+                        }
+                    ]
+                },
+                "Colour change": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [3, 255],
+                            "name": "Color change (Slow to fast)"
+                        }
+                    ]
+                },
+                "Colours Macro": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [3, 41],
+                            "name": "Red to Yellow",
+                            "color": "#ff0000",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [42, 83],
+                            "name": "Yellow to Green",
+                            "color": "#ffff00",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [84, 125],
+                            "name": "Green to Cyan",
+                            "color": "#00ff00",
+                            "color2": "#00ffff"
+                        },
+                        {
+                            "range": [126, 167],
+                            "name": "Cyan to Blue",
+                            "color": "#00ffff",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [168, 209],
+                            "name": "Blue to Magenta",
+                            "color": "#0000ff",
+                            "color2": "#ff00ff"
+                        },
+                        {
+                            "range": [210, 251],
+                            "name": "Magenta to White",
+                            "color": "#ff00ff",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "White",
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                "Automatic Colours Macro": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [3, 255],
+                            "name": "Automatic colour mix (Slow to fast)"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 540 degrees"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 270 degrees"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Pan Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Tilt Speed"
+                        }
+                    ]
+                },
+                "Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Reset after 3 seconds"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Strobe",
+                        "Colour change",
+                        "Colours Macro",
+                        "Automatic Colours Macro",
+                        "Pan",
+                        "Tilt",
+                        "Pan Fine",
+                        "Tilt Fine",
+                        "Pan Tilt Speed",
+                        "Reset"
+                    ]
+                }
+            ]
+        }
+    ]
+}

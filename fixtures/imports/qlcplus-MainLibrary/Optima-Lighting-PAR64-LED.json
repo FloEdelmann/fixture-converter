@@ -1,0 +1,99 @@
+{
+    "manufacturers": {
+        "Optima Lighting": {
+            "name": "Optima Lighting"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Optima Lighting",
+            "name": "PAR64 LED",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [216, 279, 216],
+                "weight": 1.3,
+                "power": 12,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red brightness (0 to 100%)",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green brightness (0 to 100%)",
+                            "color": "#00ff00"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue brightness (0 to 100%)",
+                            "color": "#0000ff"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master intensity"
+                        }
+                    ]
+                },
+                "Strobe Rate": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobe speed"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Intensity",
+                        "Strobe Rate"
+                    ]
+                }
+            ]
+        }
+    ]
+}

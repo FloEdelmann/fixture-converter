@@ -1,0 +1,706 @@
+{
+    "manufacturers": {
+        "Briteq": {
+            "name": "Briteq"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Briteq",
+            "name": "Pro Beamer Zoom",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [290, 190, 240],
+                "weight": 4.8,
+                "power": 85,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [8, 40]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Master Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "red or step time when ch.8 is activated"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "green or fade time when ch.8 is activated"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "blue"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "white"
+                        }
+                    ]
+                },
+                "Color Macro": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "no function"
+                        },
+                        {
+                            "range": [11, 30],
+                            "name": "red 100 / green up / blue 0",
+                            "color": "#ff0000",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [31, 50],
+                            "name": "red down / green 100 / blue 0",
+                            "color": "#ffff00",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [51, 70],
+                            "name": "red 0 / green 100 / blue up",
+                            "color": "#00ff00",
+                            "color2": "#00ffff"
+                        },
+                        {
+                            "range": [71, 90],
+                            "name": "red 0 / green down / blue 100",
+                            "color": "#00ffff",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [91, 110],
+                            "name": "red up / green 0 / blue 100",
+                            "color": "#0000ff",
+                            "color2": "#ff00ff"
+                        },
+                        {
+                            "range": [111, 130],
+                            "name": "red 100 / green 0 / blue down",
+                            "color": "#ff00ff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [131, 150],
+                            "name": "red 100 / green up / blue up",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [151, 170],
+                            "name": "red down / green down / blue 100",
+                            "color": "#ffffff",
+                            "color2": "#5500ff"
+                        },
+                        {
+                            "range": [171, 200],
+                            "name": "red 100 / green 100 / blue 100 / white 100",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [201, 205],
+                            "name": "white 1 - 3200 K"
+                        },
+                        {
+                            "range": [206, 210],
+                            "name": "white 2 - 3400 K"
+                        },
+                        {
+                            "range": [211, 215],
+                            "name": "white 3 - 4200 K"
+                        },
+                        {
+                            "range": [216, 220],
+                            "name": "white 4 - 4900 K"
+                        },
+                        {
+                            "range": [221, 225],
+                            "name": "white 5 - 5600 K"
+                        },
+                        {
+                            "range": [226, 230],
+                            "name": "white 6 - 5900 K"
+                        },
+                        {
+                            "range": [231, 235],
+                            "name": "white 7 - 6500 K"
+                        },
+                        {
+                            "range": [236, 240],
+                            "name": "white 8 - 7200 K"
+                        },
+                        {
+                            "range": [241, 245],
+                            "name": "white 9 - 8000 K"
+                        },
+                        {
+                            "range": [246, 250],
+                            "name": "white 10 - 8500 K"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "white 11  - 9000 K"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "no function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "1-20 Hz"
+                        }
+                    ]
+                },
+                "Auto": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 40],
+                            "name": "no function"
+                        },
+                        {
+                            "range": [41, 50],
+                            "name": "auto 1"
+                        },
+                        {
+                            "range": [51, 60],
+                            "name": "auto 2"
+                        },
+                        {
+                            "range": [61, 70],
+                            "name": "auto 3"
+                        },
+                        {
+                            "range": [71, 80],
+                            "name": "auto 4"
+                        },
+                        {
+                            "range": [81, 90],
+                            "name": "auto 5"
+                        },
+                        {
+                            "range": [91, 100],
+                            "name": "auto 6"
+                        },
+                        {
+                            "range": [101, 110],
+                            "name": "auto 7"
+                        },
+                        {
+                            "range": [111, 120],
+                            "name": "auto 8"
+                        },
+                        {
+                            "range": [121, 130],
+                            "name": "auto 9"
+                        },
+                        {
+                            "range": [131, 140],
+                            "name": "auto 10"
+                        },
+                        {
+                            "range": [141, 150],
+                            "name": "PR.1"
+                        },
+                        {
+                            "range": [151, 160],
+                            "name": "PR.2"
+                        },
+                        {
+                            "range": [161, 170],
+                            "name": "PR.3"
+                        },
+                        {
+                            "range": [171, 180],
+                            "name": "PR.4"
+                        },
+                        {
+                            "range": [181, 190],
+                            "name": "PR.5"
+                        },
+                        {
+                            "range": [191, 200],
+                            "name": "PR.6"
+                        },
+                        {
+                            "range": [201, 210],
+                            "name": "PR.7"
+                        },
+                        {
+                            "range": [211, 220],
+                            "name": "PR.8"
+                        },
+                        {
+                            "range": [221, 230],
+                            "name": "PR.9"
+                        },
+                        {
+                            "range": [231, 255],
+                            "name": "PR.10"
+                        }
+                    ]
+                },
+                "Auto Speed Adjustment": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "speed adjustment"
+                        }
+                    ]
+                },
+                "Dimmer Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "preset dimmer speed from display menu"
+                        },
+                        {
+                            "range": [10, 29],
+                            "name": "linear dimmer"
+                        },
+                        {
+                            "range": [30, 69],
+                            "name": "non linear dimmer 1 (fastest)"
+                        },
+                        {
+                            "range": [70, 129],
+                            "name": "non linear dimmer 2"
+                        },
+                        {
+                            "range": [130, 189],
+                            "name": "non linear dimmer 3"
+                        },
+                        {
+                            "range": [190, 255],
+                            "name": "non linear dimmer 4 (slowest)"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "zoom to wide"
+                        }
+                    ]
+                },
+                "Zoom Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 200],
+                            "name": "no function"
+                        },
+                        {
+                            "range": [201, 220],
+                            "name": "zoom reset"
+                        },
+                        {
+                            "range": [221, 255],
+                            "name": "no function"
+                        }
+                    ]
+                },
+                "Master Dimmer Fine": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master Dimmer Fine"
+                        }
+                    ]
+                },
+                "Red Fine": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Fine"
+                        }
+                    ]
+                },
+                "Green Fine": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Fine"
+                        }
+                    ]
+                },
+                "Blue Fine": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Fine"
+                        }
+                    ]
+                },
+                "White Fine": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White Fine"
+                        }
+                    ]
+                },
+                "Hue": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Hue (0 - 100%)"
+                        }
+                    ]
+                },
+                "Saturation": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Saturation (0 - 100%)"
+                        }
+                    ]
+                },
+                "Value": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Value (0 - 100%)"
+                        }
+                    ]
+                },
+                "Red 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red2 Intensity"
+                        }
+                    ]
+                },
+                "Red Fine 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Fine 2 Intensity"
+                        }
+                    ]
+                },
+                "Green 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green 2 Intensity"
+                        }
+                    ]
+                },
+                "Green Fine 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Fine 2 Intensity"
+                        }
+                    ]
+                },
+                "Blue 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue 2 Intensity"
+                        }
+                    ]
+                },
+                "Blue Fine 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Fine 2 Intensity"
+                        }
+                    ]
+                },
+                "White 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White 2 Intensity"
+                        }
+                    ]
+                },
+                "White Fine 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White Fine 2 Intensity"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Master Dimmer",
+                    "Master Dimmer Fine"
+                ],
+                [
+                    "Red",
+                    "Red Fine"
+                ],
+                [
+                    "Green",
+                    "Green Fine"
+                ],
+                [
+                    "Blue",
+                    "Blue Fine"
+                ],
+                [
+                    "White",
+                    "White Fine"
+                ],
+                [
+                    "Red 2",
+                    "Red Fine 2"
+                ],
+                [
+                    "Green 2",
+                    "Green Fine 2"
+                ],
+                [
+                    "Blue 2",
+                    "Blue Fine 2"
+                ],
+                [
+                    "White 2",
+                    "White Fine 2"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Tour",
+                    "channels": [
+                        "Master Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Color Macro",
+                        "Strobe",
+                        "Auto",
+                        "Auto Speed Adjustment",
+                        "Dimmer Speed",
+                        "Zoom",
+                        "Zoom Reset"
+                    ]
+                },
+                {
+                    "name": "AR2.Z",
+                    "channels": [
+                        "Master Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Zoom",
+                        "Zoom Reset"
+                    ]
+                },
+                {
+                    "name": "AR2.S",
+                    "channels": [
+                        "Master Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Strobe"
+                    ]
+                },
+                {
+                    "name": "TR16",
+                    "channels": [
+                        "Master Dimmer",
+                        "Master Dimmer Fine",
+                        "Red",
+                        "Red Fine",
+                        "Green",
+                        "Green Fine",
+                        "Blue",
+                        "Blue Fine",
+                        "White",
+                        "White Fine",
+                        "Color Macro",
+                        "Strobe",
+                        "Auto",
+                        "Auto Speed Adjustment",
+                        "Dimmer Speed",
+                        "Zoom",
+                        "Zoom Reset"
+                    ]
+                },
+                {
+                    "name": "ARC.1",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "AR1.D",
+                    "channels": [
+                        "Master Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "ARC.2",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White"
+                    ]
+                },
+                {
+                    "name": "AR2.D",
+                    "channels": [
+                        "Master Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White"
+                    ]
+                },
+                {
+                    "name": "HSV",
+                    "channels": [
+                        "Hue",
+                        "Saturation",
+                        "Value"
+                    ]
+                },
+                {
+                    "name": "Full",
+                    "channels": [
+                        "Master Dimmer",
+                        "Master Dimmer Fine",
+                        "Red",
+                        "Red Fine",
+                        "Green",
+                        "Green Fine",
+                        "Blue",
+                        "Blue Fine",
+                        "White",
+                        "White Fine",
+                        "Red 2",
+                        "Red Fine 2",
+                        "Green 2",
+                        "Green Fine 2",
+                        "Blue 2",
+                        "Blue Fine 2",
+                        "White 2",
+                        "White Fine 2",
+                        "Color Macro",
+                        "Strobe",
+                        "Auto",
+                        "Auto Speed Adjustment",
+                        "Dimmer Speed",
+                        "Zoom",
+                        "Zoom Reset"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,548 @@
+{
+    "manufacturers": {
+        "Martin": {
+            "name": "Martin"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Martin",
+            "name": "MAC 250 Wash",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [393, 538, 375],
+                "weight": 22,
+                "power": 326,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "MSD 250W",
+                    "colorTemperature": 8500,
+                    "lumens": 7700
+                },
+                "lens": {
+                    "name": "PC",
+                    "degreesMinMax": [25.9, 25.9]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Shutter, Strobe, Reset, Lamp On/Off": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [20, 49],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [50, 72],
+                            "name": "Strobe, fast -> slow"
+                        },
+                        {
+                            "range": [73, 79],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Opening pulse, fast -> slow"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Closing pulse, fast -> slow"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [128, 147],
+                            "name": "Random strobe, fast"
+                        },
+                        {
+                            "range": [148, 167],
+                            "name": "Random strobe, medium"
+                        },
+                        {
+                            "range": [168, 187],
+                            "name": "Random strobe, slow"
+                        },
+                        {
+                            "range": [188, 190],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [191, 193],
+                            "name": "Random opening pulse, fast"
+                        },
+                        {
+                            "range": [194, 196],
+                            "name": "Random opening pulse, slow"
+                        },
+                        {
+                            "range": [197, 199],
+                            "name": "Random closing pulse, fast"
+                        },
+                        {
+                            "range": [200, 202],
+                            "name": "Random closing pulse, slow"
+                        },
+                        {
+                            "range": [203, 207],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [208, 217],
+                            "name": "Reset fixture"
+                        },
+                        {
+                            "range": [218, 227],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [228, 237],
+                            "name": "Lamp on"
+                        },
+                        {
+                            "range": [238, 247],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Lamp off"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Closed -> open"
+                        }
+                    ]
+                },
+                "Color Wheel Scrolling and Rotation, Random CMY": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "White (open)",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [1, 26],
+                            "name": "White -> CTC 5500-2900K",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [27, 51],
+                            "name": "CTC 5500-2900K -> pink 312",
+                            "color": "#ffffff",
+                            "color2": "#ffaaff"
+                        },
+                        {
+                            "range": [52, 77],
+                            "name": "Pink 312 -> UV",
+                            "color": "#ffaaff",
+                            "color2": "#55007f"
+                        },
+                        {
+                            "range": [78, 102],
+                            "name": "UV -> red 308",
+                            "color": "#55007f",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [103, 128],
+                            "name": "Red 308 -> green 206",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [129, 152],
+                            "name": "Green 206 -> blue 108",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [153, 179],
+                            "name": "Blue 108 -> white (open)",
+                            "color": "#0000ff",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [180, 183],
+                            "name": "Blue 108",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [184, 187],
+                            "name": "Green 206",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [188, 191],
+                            "name": "Red 308",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [192, 195],
+                            "name": "UV",
+                            "color": "#55007f"
+                        },
+                        {
+                            "range": [196, 199],
+                            "name": "Pink 312",
+                            "color": "#ffaaff"
+                        },
+                        {
+                            "range": [200, 203],
+                            "name": "CTC 5500-2900K",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [204, 207],
+                            "name": "White (open)",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [208, 226],
+                            "name": "Continuous rotation CW, fast -> slow"
+                        },
+                        {
+                            "range": [227, 245],
+                            "name": "Continuous rotation CCW, slow -> fast"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "Random color, fast"
+                        },
+                        {
+                            "range": [249, 251],
+                            "name": "Random color, medium"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Random color, slow"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Left -> right"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Up -> down"
+                        }
+                    ]
+                },
+                "Pan Fine (Least Significant Bit)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Tilt Fine (Least Significant Bit)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Pan/tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Tracking"
+                        },
+                        {
+                            "range": [3, 242],
+                            "name": "Fast -> slow"
+                        },
+                        {
+                            "range": [243, 245],
+                            "name": "Tracking, PTSP = SLOW (overrides control menu)"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "Tracking, PTSP = NORM (overrides control menu)"
+                        },
+                        {
+                            "range": [249, 251],
+                            "name": "Tracking, PTSP = FAST (overrides control menu)"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Blackout while moving"
+                        }
+                    ]
+                },
+                "Effects Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Tracking mode"
+                        },
+                        {
+                            "range": [3, 245],
+                            "name": "Vector speed fast -> slow"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "Tracking, SCUT OFF (overrides control menu)/Tracking"
+                        },
+                        {
+                            "range": [249, 251],
+                            "name": "Tracking, SCUT ON (overrides control menu)/Tracking"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Vector speed, fast/Blackout while moving"
+                        }
+                    ]
+                },
+                "Dimmer fine (Least Significant Byte)": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Closed -> open"
+                        }
+                    ]
+                },
+                "Color Fine (Least Significant Byte)": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Cyan/Random CMY": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "White -> full cyan/Normal"
+                        },
+                        {
+                            "range": [1, 127],
+                            "name": "White -> full cyan/Minimum cyan setting"
+                        },
+                        {
+                            "range": [128, 254],
+                            "name": "White -> full cyan/Maximum cyan setting"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "White -> full cyan/Normal"
+                        }
+                    ]
+                },
+                "Cyan Fine": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Least significant bit"
+                        }
+                    ]
+                },
+                "Magenta/Random CMY": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "White -> full magenta/Normal"
+                        },
+                        {
+                            "range": [1, 127],
+                            "name": "White -> full magenta/Minimum magenta setting"
+                        },
+                        {
+                            "range": [128, 254],
+                            "name": "White -> full magenta/Maximum magenta setting"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "White -> full magenta/Normal"
+                        }
+                    ]
+                },
+                "Magenta Fine": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Least significant bit"
+                        }
+                    ]
+                },
+                "Yellow/Random CMY": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "White -> full yellow/Normal"
+                        },
+                        {
+                            "range": [1, 127],
+                            "name": "White -> full yellow/Minimum yellow setting"
+                        },
+                        {
+                            "range": [128, 254],
+                            "name": "White -> full yellow/Maximum yellow setting"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "White -> full yellow/Normal"
+                        }
+                    ]
+                },
+                "Yellow Fine": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Least significant bit"
+                        }
+                    ]
+                },
+                "Frost Filter": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Open (off) -> full"
+                        }
+                    ]
+                },
+                "Frost Filter Fine (Least Significant Bit)": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine (Least Significant Bit)"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine (Least Significant Bit)"
+                ],
+                [
+                    "Dimmer",
+                    "Dimmer fine (Least Significant Byte)"
+                ],
+                [
+                    "Color Wheel Scrolling and Rotation, Random CMY",
+                    "Color Fine (Least Significant Byte)"
+                ],
+                [
+                    "Cyan/Random CMY",
+                    "Cyan Fine"
+                ],
+                [
+                    "Magenta/Random CMY",
+                    "Magenta Fine"
+                ],
+                [
+                    "Yellow/Random CMY",
+                    "Yellow Fine"
+                ],
+                [
+                    "Frost Filter",
+                    "Frost Filter Fine (Least Significant Bit)"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "16 Bt (16 Bit Mode)",
+                    "channels": [
+                        "Shutter, Strobe, Reset, Lamp On/Off",
+                        "Dimmer",
+                        "Cyan/Random CMY",
+                        "Magenta/Random CMY",
+                        "Yellow/Random CMY",
+                        "Color Wheel Scrolling and Rotation, Random CMY",
+                        "Frost Filter",
+                        "Pan",
+                        "Pan Fine (Least Significant Bit)",
+                        "Tilt",
+                        "Tilt Fine (Least Significant Bit)",
+                        "Pan/tilt Speed",
+                        "Effects Speed"
+                    ]
+                },
+                {
+                    "name": "16 Ex (16 Bit Extended)",
+                    "channels": [
+                        "Shutter, Strobe, Reset, Lamp On/Off",
+                        "Dimmer",
+                        "Dimmer fine (Least Significant Byte)",
+                        "Cyan/Random CMY",
+                        "Cyan Fine",
+                        "Magenta/Random CMY",
+                        "Magenta Fine",
+                        "Yellow/Random CMY",
+                        "Yellow Fine",
+                        "Color Wheel Scrolling and Rotation, Random CMY",
+                        "Color Fine (Least Significant Byte)",
+                        "Frost Filter",
+                        "Frost Filter Fine (Least Significant Bit)",
+                        "Pan",
+                        "Pan Fine (Least Significant Bit)",
+                        "Tilt",
+                        "Tilt Fine (Least Significant Bit)",
+                        "Pan/tilt Speed",
+                        "Effects Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

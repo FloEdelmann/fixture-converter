@@ -1,0 +1,46 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "AF-40 DMX",
+            "type": "Hazer",
+            "physical": {
+                "dimensions": [280, 190, 150],
+                "weight": 2.1,
+                "power": 400,
+                "DMXconnector": "3-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Fog amount": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fog output (0 - 100%)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "Fog amount"
+                    ]
+                }
+            ]
+        }
+    ]
+}

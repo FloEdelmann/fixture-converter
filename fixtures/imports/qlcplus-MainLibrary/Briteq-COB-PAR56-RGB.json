@@ -1,0 +1,148 @@
+{
+    "manufacturers": {
+        "Briteq": {
+            "name": "Briteq"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Briteq",
+            "name": "COB PAR56 RGB",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [240, 240, 400],
+                "weight": 2.9,
+                "power": 120,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer"
+                        }
+                    ]
+                },
+                "Effect-5CH": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "ON"
+                        },
+                        {
+                            "range": [5, 24],
+                            "name": "Sound Control (7 colors)"
+                        },
+                        {
+                            "range": [25, 34],
+                            "name": "ON"
+                        },
+                        {
+                            "range": [35, 255],
+                            "name": "Strobe (increasing)"
+                        }
+                    ]
+                },
+                "Effect-4CH": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 190],
+                            "name": "Master Dimmer"
+                        },
+                        {
+                            "range": [191, 200],
+                            "name": "Sound Control (7 colors)"
+                        },
+                        {
+                            "range": [201, 247],
+                            "name": "Strobe (increasing)"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Master Dimmer"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "5-Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Dimmer",
+                        "Effect-5CH"
+                    ]
+                },
+                {
+                    "name": "3-Channel",
+                    "physical": {
+                        "dimensions": [240, 2400, 400]
+                    },
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "4-Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Effect-4CH"
+                    ]
+                }
+            ]
+        }
+    ]
+}

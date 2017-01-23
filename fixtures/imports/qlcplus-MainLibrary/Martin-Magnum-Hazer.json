@@ -1,0 +1,73 @@
+{
+    "manufacturers": {
+        "Martin": {
+            "name": "Martin"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Martin",
+            "name": "Magnum Hazer",
+            "type": "Smoke",
+            "physical": {
+                "dimensions": [420, 246, 303],
+                "weight": 11,
+                "power": 975,
+                "DMXconnector": "3-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Fog Level": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Zero Output"
+                        },
+                        {
+                            "range": [20, 220],
+                            "name": "Proportional output level control Step 20"
+                        },
+                        {
+                            "range": [221, 255],
+                            "name": "Prime Function"
+                        }
+                    ]
+                },
+                "Fan Speed": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [20, 219],
+                            "name": "Proportional speed control step 20"
+                        },
+                        {
+                            "range": [220, 230],
+                            "name": "Auto fan mode"
+                        },
+                        {
+                            "range": [245, 255],
+                            "name": "Machine shutdown, all off"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Fog Level",
+                        "Fan Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

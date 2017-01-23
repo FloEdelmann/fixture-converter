@@ -1,0 +1,170 @@
+{
+    "manufacturers": {
+        "Laserworld": {
+            "name": "Laserworld"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Laserworld",
+            "name": "EL-200RGY",
+            "type": "Laser",
+            "physical": {
+                "dimensions": [265, 125, 192],
+                "weight": 3.8,
+                "power": 40,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Mode": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 69],
+                            "name": "Laser Off"
+                        },
+                        {
+                            "range": [70, 209],
+                            "name": "Sound Mode"
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "DMX Mode"
+                        }
+                    ]
+                },
+                "Pattern": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pattern"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobe"
+                        }
+                    ]
+                },
+                "Point Speed": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Point Speed"
+                        }
+                    ]
+                },
+                "Horizontal movement": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "X"
+                        }
+                    ]
+                },
+                "Vertical movement": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Y"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Zoom"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 39],
+                            "name": "Yellow"
+                        },
+                        {
+                            "range": [40, 79],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [80, 119],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [120, 159],
+                            "name": "Original Pattern"
+                        },
+                        {
+                            "range": [160, 199],
+                            "name": "Pattern Colours are Changed"
+                        }
+                    ]
+                },
+                "Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "(Above 200 Shortly)"
+                        }
+                    ]
+                },
+                "Colour Effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 79],
+                            "name": "draw (increasing) part of the pattern"
+                        },
+                        {
+                            "range": [80, 119],
+                            "name": "Increase Speed"
+                        },
+                        {
+                            "range": [120, 255],
+                            "name": "Change Colours"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Mode",
+                        "Pattern",
+                        "Strobe",
+                        "Point Speed",
+                        "Horizontal movement",
+                        "Vertical movement",
+                        "Zoom",
+                        "Colour",
+                        "Reset",
+                        "Colour Effect"
+                    ]
+                }
+            ]
+        }
+    ]
+}

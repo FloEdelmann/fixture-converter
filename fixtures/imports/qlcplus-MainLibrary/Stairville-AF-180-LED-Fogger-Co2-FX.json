@@ -1,0 +1,166 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "AF-180 LED Fogger Co2 FX",
+            "type": "Smoke",
+            "physical": {
+                "dimensions": [190, 300, 340],
+                "weight": 8.9,
+                "power": 850,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Amount of Fog": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No fog output (0%)"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Fog output (100%)"
+                        }
+                    ]
+                },
+                "Brightness of All LEDs": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "LEDs off to maximum brightness"
+                        }
+                    ]
+                },
+                "Colour effect": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "All LEDs off"
+                        },
+                        {
+                            "range": [21, 35],
+                            "name": "Red steady light",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [36, 50],
+                            "name": "Green steady light",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [51, 65],
+                            "name": "Blue steady light",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [66, 80],
+                            "name": "Red / green steady light",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [81, 95],
+                            "name": "Red / blue steady light",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [96, 110],
+                            "name": "Blue / green steady light",
+                            "color": "#0000ff",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [111, 127],
+                            "name": "Red / green / blue steady light",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Automatic colour change, all LEDs, increasing speed"
+                        }
+                    ]
+                },
+                "Stroboscope Effect": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Stroboscope effect off"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Stroboscope effect from slow to fast"
+                        }
+                    ]
+                },
+                "Intensity Colour Effect Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red LEDs off to maximum brightness when channel 3 ≤ 20"
+                        }
+                    ]
+                },
+                "Intensity Colour Effect Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green LEDs off to maximum brightness when channel 3 ≤ 20"
+                        }
+                    ]
+                },
+                "Intensity Colour Effect Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue LEDs off to maximum brightness when channel 3 ≤ 20"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "7 Channel",
+                    "channels": [
+                        "Amount of Fog",
+                        "Brightness of All LEDs",
+                        "Colour effect",
+                        "Stroboscope Effect",
+                        "Intensity Colour Effect Red",
+                        "Intensity Colour Effect Green",
+                        "Intensity Colour Effect Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

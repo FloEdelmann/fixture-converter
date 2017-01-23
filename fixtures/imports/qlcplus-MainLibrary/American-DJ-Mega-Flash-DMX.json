@@ -1,0 +1,59 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "Mega Flash DMX",
+            "type": "Strobe",
+            "physical": {
+                "dimensions": [394, 216, 102],
+                "weight": 2.2,
+                "power": 800,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "ZB-800"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Strobe Speed": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow -> Fast"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Low -> High"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "DMX",
+                    "channels": [
+                        "Strobe Speed",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

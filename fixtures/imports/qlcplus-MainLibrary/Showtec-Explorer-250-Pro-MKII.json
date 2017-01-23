@@ -1,0 +1,479 @@
+{
+    "manufacturers": {
+        "Showtec": {
+            "name": "Showtec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Showtec",
+            "name": "Explorer 250 Pro MKII",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [350, 470, 380],
+                "weight": 28.2,
+                "power": 350,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 250W",
+                    "lumens": 6700
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [15, 26]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 530,
+                    "tiltMax": 280
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Horizontal movement (0-530°)"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Vertical movement (0-280°)"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "16 bit"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "16 bit"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "From max. speed (0) to min. speed (255) in vector mode"
+                        }
+                    ]
+                },
+                "Lamp On, Off & Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [128, 139],
+                            "name": "Lamp on after 3 seconds, reset"
+                        },
+                        {
+                            "range": [140, 229],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Lamp off after 3 seconds"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Colourwheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Open / white",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Orange",
+                            "color": "#ff8000"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Blue",
+                            "color": "#ff0080"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Pink",
+                            "color": "#ffaaff"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Forwards rainbow effect from fast to slow"
+                        }
+                    ]
+                },
+                "Prism + Lambency": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [128, 187],
+                            "name": "3-facet prism"
+                        },
+                        {
+                            "range": [188, 255],
+                            "name": "Lambency"
+                        }
+                    ]
+                },
+                "Prism Rotating Control": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [5, 127],
+                            "name": "Backwards rotation from slow to fast"
+                        },
+                        {
+                            "range": [128, 132],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [133, 255],
+                            "name": "Forwards rotation from slow to fast"
+                        }
+                    ]
+                },
+                "Gobowheel 1 + Gobo Shake": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Open / white"
+                        },
+                        {
+                            "range": [32, 57],
+                            "name": "1 (metal)",
+                            "color": "#00aaff"
+                        },
+                        {
+                            "range": [58, 73],
+                            "name": "Shaking 1",
+                            "color": "#00aaff"
+                        },
+                        {
+                            "range": [74, 94],
+                            "name": "2 (metal)",
+                            "color": "#ff7f7f"
+                        },
+                        {
+                            "range": [95, 110],
+                            "name": "Shaking 2",
+                            "color": "#ff7f7f"
+                        },
+                        {
+                            "range": [111, 131],
+                            "name": "3 (glass)",
+                            "color": "#dcc17a"
+                        },
+                        {
+                            "range": [132, 147],
+                            "name": "Shaking 3",
+                            "color": "#dcc17a"
+                        },
+                        {
+                            "range": [148, 168],
+                            "name": "4 (glass)"
+                        },
+                        {
+                            "range": [169, 184],
+                            "name": "Shaking 4"
+                        },
+                        {
+                            "range": [185, 205],
+                            "name": "5 (glass)"
+                        },
+                        {
+                            "range": [206, 221],
+                            "name": "Shaking 5"
+                        },
+                        {
+                            "range": [222, 242],
+                            "name": "6 (glass)"
+                        },
+                        {
+                            "range": [243, 255],
+                            "name": "Shaking 6"
+                        }
+                    ]
+                },
+                "Gobowheel 2 + Gobo Shake": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Open / white"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "1 (glass)"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Shaking 1"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "2 (glass)"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Shaking 2"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "3 (glass)"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Shaking 3"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "4 (metal)"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "Shaking 4"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "5 (metal)"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "Shaking 5"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "No"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Continuous rotation from slow to fast"
+                        }
+                    ]
+                },
+                "Gobowheel 2 Rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 60],
+                            "name": "Indexing"
+                        },
+                        {
+                            "range": [61, 158],
+                            "name": "Forwards rotation from fast to slow"
+                        },
+                        {
+                            "range": [159, 255],
+                            "name": "Backwards rotation from slow to fast"
+                        }
+                    ]
+                },
+                "Zoom, Frost, UV Filter": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Zoom 15° (without focus correction)"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Zoom 18° (without focus correction)"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Zoom 21° (without focus correction)"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Zoom 24° (without focus correction)"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Zoom 26° (without focus correction)"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Frost"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "UV-filter"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Zoom 15° (with focus correction)"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "Zoom 18° (with focus correction)"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "Zoom 21° (with focus correction)"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "Zoom 24° (with focus correction)"
+                        },
+                        {
+                            "range": [208, 223],
+                            "name": "Zoom 26° (with focus correction)"
+                        },
+                        {
+                            "range": [224, 239],
+                            "name": "224-239 Frost°"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "UV-filter"
+                        }
+                    ]
+                },
+                "From Far Distance to Close Distance": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "From far distance to close distance"
+                        }
+                    ]
+                },
+                "Shutter / Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Shutter closed / blackout"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe effect, from slow to fast (0-10 flashes/sec.)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse-effect 1, in sequences from slow to fast"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random strobe effect, from slow to fast "
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Shutter open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "From black to brightest"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "16 Channels",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan Fine",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed",
+                        "Lamp On, Off & Reset",
+                        "Colourwheel",
+                        "Prism + Lambency",
+                        "Prism Rotating Control",
+                        "Gobowheel 1 + Gobo Shake",
+                        "Gobowheel 2 + Gobo Shake",
+                        "Gobowheel 2 Rotation",
+                        "Zoom, Frost, UV Filter",
+                        "From Far Distance to Close Distance",
+                        "Shutter / Strobe",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

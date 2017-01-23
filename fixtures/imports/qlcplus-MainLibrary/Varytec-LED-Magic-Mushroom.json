@@ -1,0 +1,85 @@
+{
+    "manufacturers": {
+        "Varytec": {
+            "name": "Varytec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Varytec",
+            "name": "LED Magic Mushroom",
+            "type": "Effect",
+            "physical": {
+                "dimensions": [406, 279, 279],
+                "weight": 5,
+                "power": 30,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [70, 70]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Stroboscope rate": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 Hz - 20 Hz"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "4-Channel Mode",
+                    "channels": [
+                        "Blue",
+                        "Red",
+                        "Green",
+                        "Stroboscope rate"
+                    ]
+                }
+            ]
+        }
+    ]
+}

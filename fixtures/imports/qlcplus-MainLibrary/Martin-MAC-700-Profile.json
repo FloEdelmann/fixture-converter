@@ -1,0 +1,993 @@
+{
+    "manufacturers": {
+        "Martin": {
+            "name": "Martin"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Martin",
+            "name": "MAC 700 Profile",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [365, 636, 450],
+                "weight": 34.5,
+                "power": 1019,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "HTI 700W",
+                    "colorTemperature": 7500,
+                    "lumens": 16700
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 246
+                }
+            },
+            "availableChannels": {
+                "Shutter, Strobe, Functions": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Shutter closed (lamp switches to 400 W mode after 10 seconds while shutter is closed)"
+                        },
+                        {
+                            "range": [20, 49],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [50, 72],
+                            "name": "Strobe, fast -> slow"
+                        },
+                        {
+                            "range": [73, 79],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Opening pulse, fast -> slow"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Closing pulse, fast -> slow"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [128, 147],
+                            "name": "Random strobe, fast"
+                        },
+                        {
+                            "range": [148, 167],
+                            "name": "Random strobe, medium"
+                        },
+                        {
+                            "range": [168, 187],
+                            "name": "Random strobe, slow"
+                        },
+                        {
+                            "range": [188, 190],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [191, 193],
+                            "name": "Random opening pulse, fast"
+                        },
+                        {
+                            "range": [194, 196],
+                            "name": "Random open pulse, slow"
+                        },
+                        {
+                            "range": [197, 199],
+                            "name": "Random closing pulse, fast"
+                        },
+                        {
+                            "range": [200, 202],
+                            "name": "Random closing pulse, slow"
+                        },
+                        {
+                            "range": [203, 207],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [208, 217],
+                            "name": "Reset fixture"
+                        },
+                        {
+                            "range": [218, 227],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [228, 237],
+                            "name": "Lamp on"
+                        },
+                        {
+                            "range": [238, 242],
+                            "name": "400 W mode (active until 700 W value is selected)"
+                        },
+                        {
+                            "range": [243, 247],
+                            "name": "700 W mode"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Lamp off"
+                        }
+                    ]
+                },
+                "Dimmer (MSB)": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Closed -> open"
+                        }
+                    ]
+                },
+                "Dimmer, fine (LSB)": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255]
+                        }
+                    ]
+                },
+                "Cyan (MSB)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White -> Full Cyan"
+                        }
+                    ]
+                },
+                "Cyan, fine (LSB)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Cyan fine"
+                        }
+                    ]
+                },
+                "Magenta (MSB)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White -> Full Magenta"
+                        }
+                    ]
+                },
+                "Magenta, fine (LSB)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Magenta fine"
+                        }
+                    ]
+                },
+                "Yellow (MSB)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White -> Full Yellow"
+                        }
+                    ]
+                },
+                "Yellow, fine (LSB)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Yellow fine"
+                        }
+                    ]
+                },
+                "Color Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Open",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [1, 16],
+                            "name": "Open -> slot 1"
+                        },
+                        {
+                            "range": [17, 17],
+                            "name": "Slot 1 (Blue 110)",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [18, 33],
+                            "name": "Slot 1 -> Slot 2"
+                        },
+                        {
+                            "range": [34, 34],
+                            "name": "Slot 2 (Green 206 IAD)",
+                            "color": "#00bd52"
+                        },
+                        {
+                            "range": [35, 50],
+                            "name": "Slot 2 -> Slot 3"
+                        },
+                        {
+                            "range": [51, 51],
+                            "name": "Slot 3 (Pink 312)",
+                            "color": "#ee63e6"
+                        },
+                        {
+                            "range": [52, 67],
+                            "name": "Slot 3 -> Slot 4"
+                        },
+                        {
+                            "range": [68, 68],
+                            "name": "Slot 4 (Orange 306M)",
+                            "color": "#ff964a"
+                        },
+                        {
+                            "range": [69, 84],
+                            "name": "Slot 4 -> Slot 5"
+                        },
+                        {
+                            "range": [85, 85],
+                            "name": "Slot 5 (Half minus green)",
+                            "color": "#eedefe"
+                        },
+                        {
+                            "range": [86, 101],
+                            "name": "Slot 5 -> Slot 6"
+                        },
+                        {
+                            "range": [102, 102],
+                            "name": "Slot 6 (CTC 3200 - 4100K)",
+                            "color": "#cedefe"
+                        },
+                        {
+                            "range": [103, 118],
+                            "name": "Slot 6 -> slot 7"
+                        },
+                        {
+                            "range": [119, 119],
+                            "name": "Slot 7 (CTC 5500 - 2800K)",
+                            "color": "#fed6b5"
+                        },
+                        {
+                            "range": [120, 135],
+                            "name": "Slot 7 -> Slot 8"
+                        },
+                        {
+                            "range": [136, 136],
+                            "name": "Slot 8 (Red 308)",
+                            "color": "#a50039"
+                        },
+                        {
+                            "range": [137, 152],
+                            "name": "Slot 8 -> Open"
+                        },
+                        {
+                            "range": [153, 153],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [154, 158],
+                            "name": "Slot 8 (Red 308) - Stepped Scroll"
+                        },
+                        {
+                            "range": [159, 163],
+                            "name": "Slot 7 (CTC 5500-2800K)"
+                        },
+                        {
+                            "range": [164, 168],
+                            "name": "Slot 6 (CTC 3200-4100K)"
+                        },
+                        {
+                            "range": [169, 173],
+                            "name": "Slot 5 (Half minus green)"
+                        },
+                        {
+                            "range": [174, 178],
+                            "name": "Slot 4 (Orange 306M)",
+                            "color": "#fe9900"
+                        },
+                        {
+                            "range": [179, 183],
+                            "name": "Slot 3 (Pink 312)"
+                        },
+                        {
+                            "range": [184, 188],
+                            "name": "Slot 2 (Green 206 IAD)"
+                        },
+                        {
+                            "range": [189, 193],
+                            "name": "Slot 1 (Blue 110)"
+                        },
+                        {
+                            "range": [194, 198],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [199, 219],
+                            "name": "CW, fast -> slow"
+                        },
+                        {
+                            "range": [220, 240],
+                            "name": "CCW, slow -> fast"
+                        },
+                        {
+                            "range": [241, 245],
+                            "name": "Random Fast"
+                        },
+                        {
+                            "range": [246, 250],
+                            "name": "Random Medium"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Random Slow"
+                        }
+                    ]
+                },
+                "Color Wheel, Fine": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Color wheel fine"
+                        }
+                    ]
+                },
+                "Gobo1": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 11],
+                            "name": "Open - Indexed"
+                        },
+                        {
+                            "range": [12, 15],
+                            "name": "Gobo 1 (Spiral)  - Indexed"
+                        },
+                        {
+                            "range": [16, 19],
+                            "name": "Gobo 2 (Radial Circles) - Indexed"
+                        },
+                        {
+                            "range": [20, 23],
+                            "name": "Gobo 3 (Fused Dicro Red/Yellow) - Indexed"
+                        },
+                        {
+                            "range": [24, 27],
+                            "name": "Gobo 4 (Milky Way)"
+                        },
+                        {
+                            "range": [28, 31],
+                            "name": "Gobo 5 (Water) - Indexed"
+                        },
+                        {
+                            "range": [32, 35],
+                            "name": "Gobo 6 (Flames) - Indexed"
+                        },
+                        {
+                            "range": [36, 39],
+                            "name": "Gobo 1 (Spiral) - Continuous Rotation"
+                        },
+                        {
+                            "range": [40, 43],
+                            "name": "Gobo 2 (Radial Circles) - Continuous Rotation"
+                        },
+                        {
+                            "range": [44, 47],
+                            "name": "Gobo 3 (Fused Dichro Red/Yellow) - Continuous Rotation"
+                        },
+                        {
+                            "range": [48, 51],
+                            "name": "Gobo 4 (Milky Way) - Continuous Rotation"
+                        },
+                        {
+                            "range": [52, 55],
+                            "name": "Gobo 5 (Water) - Continuous Rotation"
+                        },
+                        {
+                            "range": [56, 59],
+                            "name": "Gobo 6 (Flames) - Continuous Rotation"
+                        },
+                        {
+                            "range": [60, 71],
+                            "name": "Gobo 1, slow -> fast - Indexed Shake"
+                        },
+                        {
+                            "range": [72, 83],
+                            "name": "Gobo 2, slow -> fast - Indexed Shake"
+                        },
+                        {
+                            "range": [84, 95],
+                            "name": "Gobo 3, slow -> fast - Indexed Shake"
+                        },
+                        {
+                            "range": [96, 107],
+                            "name": "Gobo 4, slow -> fast - Indexed Shake"
+                        },
+                        {
+                            "range": [108, 119],
+                            "name": "Gobo 5, slow -> fast - Indexed Shake"
+                        },
+                        {
+                            "range": [120, 131],
+                            "name": "Gobo 6, slow -> fast - Indexed Shake"
+                        },
+                        {
+                            "range": [132, 143],
+                            "name": "Gobo 6, slow -> fast - Cont. Rotate and Shake"
+                        },
+                        {
+                            "range": [144, 155],
+                            "name": "Gobo 5, slow -> fast - Cont. Rotate and Shake"
+                        },
+                        {
+                            "range": [156, 167],
+                            "name": "Gobo 4, slow -> fast - Cont. Rotate and Shake"
+                        },
+                        {
+                            "range": [168, 179],
+                            "name": "Gobo 3, slow ->fast - Cont. Rotate and Shake"
+                        },
+                        {
+                            "range": [180, 191],
+                            "name": "Gobo 2, slow -> fast - Cont. Rotate and Shake"
+                        },
+                        {
+                            "range": [192, 203],
+                            "name": "Gobo 1, slow -> fast - Cont. Rotate and Shake"
+                        },
+                        {
+                            "range": [204, 229],
+                            "name": "CW scroll, slow -> fast"
+                        },
+                        {
+                            "range": [230, 255],
+                            "name": "CCW scroll, fast-> slow"
+                        }
+                    ]
+                },
+                "Rotating Gobo: Indexing, speed": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [3, 127],
+                            "name": "CW, slow -> fast"
+                        },
+                        {
+                            "range": [128, 252],
+                            "name": "CCW, fast -> slow"
+                        },
+                        {
+                            "range": [253, 255],
+                            "name": "No rotation"
+                        }
+                    ]
+                },
+                "Rotating Gobo, fine indexing": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Rotating gobo, fine indexing"
+                        }
+                    ]
+                },
+                "Gobo2": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [1, 10],
+                            "name": "Open -> slot 1"
+                        },
+                        {
+                            "range": [11, 11],
+                            "name": "Slot 1 (Crackle)"
+                        },
+                        {
+                            "range": [12, 21],
+                            "name": "Slot 1 -> Slot 2"
+                        },
+                        {
+                            "range": [22, 22],
+                            "name": "Slot 2 (Triangles Small)"
+                        },
+                        {
+                            "range": [23, 32],
+                            "name": "Slot 2 -> Slot 3"
+                        },
+                        {
+                            "range": [33, 33],
+                            "name": "Slot 3 (Tye Dye)"
+                        },
+                        {
+                            "range": [34, 43],
+                            "name": "Slot 3 -> Slot 4"
+                        },
+                        {
+                            "range": [44, 44],
+                            "name": "Slot 4 (Globo)"
+                        },
+                        {
+                            "range": [45, 54],
+                            "name": "Slot 4 -> Slot 5"
+                        },
+                        {
+                            "range": [55, 55],
+                            "name": "Slot 5 (Worms)"
+                        },
+                        {
+                            "range": [56, 65],
+                            "name": "Slot 5 -> Slot 6"
+                        },
+                        {
+                            "range": [66, 66],
+                            "name": "Slot 6 (Bio)"
+                        },
+                        {
+                            "range": [67, 76],
+                            "name": "Slot 6 -> Slot 7"
+                        },
+                        {
+                            "range": [77, 77],
+                            "name": "Slot 7 (Leaf Breakup)"
+                        },
+                        {
+                            "range": [78, 87],
+                            "name": "Slot 7 -> Slot 8"
+                        },
+                        {
+                            "range": [88, 88],
+                            "name": "Slot 8 (\"Les Mis\" Whirl Pool)"
+                        },
+                        {
+                            "range": [89, 98],
+                            "name": "Slot 8 -> Slot 9"
+                        },
+                        {
+                            "range": [99, 99],
+                            "name": "Slot 9 (Two Tone)"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Slot 9 -> Open"
+                        },
+                        {
+                            "range": [110, 112],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [113, 121],
+                            "name": "Slot 9 (Tow Tone)"
+                        },
+                        {
+                            "range": [122, 130],
+                            "name": "Slot 8 (\"Les Mis\" Whirl Pool)"
+                        },
+                        {
+                            "range": [131, 139],
+                            "name": "Slot 7 (Leaf Breakup)"
+                        },
+                        {
+                            "range": [140, 148],
+                            "name": "Slot 6 (Bio)"
+                        },
+                        {
+                            "range": [149, 157],
+                            "name": "Slot 5 (Worms)"
+                        },
+                        {
+                            "range": [158, 166],
+                            "name": "Slot 4 (Globo)"
+                        },
+                        {
+                            "range": [167, 175],
+                            "name": "Slot 3 (Tye Dye)"
+                        },
+                        {
+                            "range": [176, 184],
+                            "name": "Slot 2 (Triangles Small)"
+                        },
+                        {
+                            "range": [185, 193],
+                            "name": "Slot 1 (Crackle)"
+                        },
+                        {
+                            "range": [194, 202],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [203, 221],
+                            "name": "CW, fast->slow"
+                        },
+                        {
+                            "range": [222, 240],
+                            "name": "CCW, slow->fast"
+                        },
+                        {
+                            "range": [241, 245],
+                            "name": "Random Fast"
+                        },
+                        {
+                            "range": [246, 250],
+                            "name": "Random Medium"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Random Slow"
+                        }
+                    ]
+                },
+                "Gobo/Color Macros": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No macro"
+                        },
+                        {
+                            "range": [16, 55],
+                            "name": "Static gobo wheel shake, slow->fast"
+                        },
+                        {
+                            "range": [56, 95],
+                            "name": "Color wheel shake, slow->fast"
+                        },
+                        {
+                            "range": [96, 135],
+                            "name": "Static gobo & color shake, slow->fast"
+                        },
+                        {
+                            "range": [136, 175],
+                            "name": "Random CMY Fast"
+                        },
+                        {
+                            "range": [176, 215],
+                            "name": "Random CMY Medium"
+                        },
+                        {
+                            "range": [216, 255],
+                            "name": "Random CMY Slow"
+                        }
+                    ]
+                },
+                "Gobo animation wheel: position and function": {
+                    "type": "Gobo"
+                },
+                "Gobo animation wheel: indexed angled position, rotation, direction and speed": {
+                    "type": "Gobo"
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Prism Off"
+                        },
+                        {
+                            "range": [20, 79],
+                            "name": "Prism on, CCW rotation, fast->slow"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Prism on, No rotation"
+                        },
+                        {
+                            "range": [90, 149],
+                            "name": "Prism on, CW rotation, slow->fast"
+                        },
+                        {
+                            "range": [150, 255],
+                            "name": "Prism Off"
+                        }
+                    ]
+                },
+                "Iris (MSB)": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 199],
+                            "name": "Open -> Closed"
+                        },
+                        {
+                            "range": [200, 215],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [216, 229],
+                            "name": "Opening pulse, fast->slow"
+                        },
+                        {
+                            "range": [230, 243],
+                            "name": "Closing pulse, fast->slow"
+                        },
+                        {
+                            "range": [244, 246],
+                            "name": "Random opening pulse, fast"
+                        },
+                        {
+                            "range": [247, 249],
+                            "name": "Random opening pulse, slow"
+                        },
+                        {
+                            "range": [250, 252],
+                            "name": "Random closing pulse, fast"
+                        },
+                        {
+                            "range": [253, 255],
+                            "name": "Random closing pulse, slow"
+                        }
+                    ]
+                },
+                "Iris, fine (LSB)": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Iris fine"
+                        }
+                    ]
+                },
+                "Focus (MSB)": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Infinity->near"
+                        }
+                    ]
+                },
+                "Focus, fine (LSB)": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Focus fine"
+                        }
+                    ]
+                },
+                "Zoom (MSB)": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Flood->Spot"
+                        }
+                    ]
+                },
+                "Zoom, fine (LSB)": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Zoom fine"
+                        }
+                    ]
+                },
+                "Pan (MSB)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan coarse"
+                        }
+                    ]
+                },
+                "Pan, fine (LSB)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt (MSB)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt coarse"
+                        }
+                    ]
+                },
+                "Tilt, fine (LSB)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Pan/tilt speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Tracking"
+                        },
+                        {
+                            "range": [3, 242],
+                            "name": "Fast->slow (vector control)"
+                        },
+                        {
+                            "range": [243, 245],
+                            "name": "Tracking, PTSP = SLOW (menu override)"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "Tracking, PTSP = NORM (menu override)"
+                        },
+                        {
+                            "range": [249, 251],
+                            "name": "Tracking, PTSP = FAST (menu override)"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Blackout while moving"
+                        }
+                    ]
+                },
+                "Effects Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "See Manual"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Dimmer (MSB)",
+                    "Dimmer, fine (LSB)"
+                ],
+                [
+                    "Cyan (MSB)",
+                    "Cyan, fine (LSB)"
+                ],
+                [
+                    "Magenta (MSB)",
+                    "Magenta, fine (LSB)"
+                ],
+                [
+                    "Yellow (MSB)",
+                    "Yellow, fine (LSB)"
+                ],
+                [
+                    "Color Wheel", 
+                    "Color Wheel, Fine"
+                ],
+                [
+                    "Rotating Gobo, Indexing, speed",
+                    "Rotating Gobo, fine indexing"
+                ],
+                [
+                    "Iris (MSB)",
+                    "Iris, fine (LSB)"
+                ],
+                [
+                    "Focus (MSB)",
+                    "Focus, fine (LSB)"
+                ],
+                [
+                    "Zoom (MSB)",
+                    "Zoom, fine (LSB)"
+                ],
+                [
+                    "Pan (MSB)",
+                    "Pan, fine (LSB)"
+                ],
+                [
+                    "Tilt (MSB)",
+                    "Tilt, fine (LSB)"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "16-bit Basic",
+                    "channels": [
+                        "Shutter, Strobe, Functions",
+                        "Dimmer (MSB)",
+                        "Cyan (MSB)",
+                        "Magenta (MSB)",
+                        "Yellow (MSB)",
+                        "Color Wheel",
+                        "Gobo1",
+                        "Rotating Gobo: Indexing, speed",
+                        "Rotating Gobo, fine indexing",
+                        "Gobo2",
+                        "Gobo/Color Macros",
+                        "Gobo animation wheel: position and function",
+                        "Gobo animation wheel: indexed angled position, rotation, direction and speed",
+                        "Prism",
+                        "Iris (MSB)",
+                        "Focus (MSB)",
+                        "Zoom (MSB)",
+                        "Pan (MSB)",
+                        "Pan, fine (LSB)",
+                        "Tilt (MSB)",
+                        "Tilt, fine (LSB)",
+                        "Pan/tilt speed",
+                        "Effects Speed"
+                    ]
+                },
+                {
+                    "name": "16-bit Extended Mode",
+                    "channels": [
+                        "Shutter, Strobe, Functions",
+                        "Dimmer (MSB)",
+                        "Dimmer, fine (LSB)",
+                        "Cyan (MSB)",
+                        "Cyan, fine (LSB)",
+                        "Magenta (MSB)",
+                        "Magenta, fine (LSB)",
+                        "Yellow (MSB)",
+                        "Yellow, fine (LSB)",
+                        "Color Wheel",
+                        "Color Wheel, Fine",
+                        "Gobo1",
+                        "Rotating Gobo: Indexing, speed",
+                        "Rotating Gobo, fine indexing",
+                        "Gobo2",
+                        "Gobo/Color Macros",
+                        "Gobo animation wheel: position and function",
+                        "Gobo animation wheel: indexed angled position, rotation, direction and speed",
+                        "Prism",
+                        "Iris (MSB)",
+                        "Iris, fine (LSB)",
+                        "Focus (MSB)",
+                        "Focus, fine (LSB)",
+                        "Zoom (MSB)",
+                        "Zoom, fine (LSB)",
+                        "Pan (MSB)",
+                        "Pan, fine (LSB)",
+                        "Tilt (MSB)",
+                        "Tilt, fine (LSB)",
+                        "Pan/tilt speed",
+                        "Effects Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

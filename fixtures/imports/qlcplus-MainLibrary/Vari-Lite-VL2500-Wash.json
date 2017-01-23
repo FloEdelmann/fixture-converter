@@ -1,0 +1,249 @@
+{
+    "manufacturers": {
+        "Vari-Lite": {
+            "name": "Vari-Lite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Vari-Lite",
+            "name": "VL2500 Wash",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [478, 480, 650],
+                "weight": 26.1,
+                "power": 900,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "HMI 700W",
+                    "colorTemperature": 5600
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [14, 55.5]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer (0 to 100%)"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan (0 to 540°)"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine 0.3°"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt (0 to 270°)"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine 0.3°"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Cyan intensity"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Yellow intensity"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Magenta intensity"
+                        }
+                    ]
+                },
+                "Color Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 216],
+                            "name": "Index"
+                        },
+                        {
+                            "range": [217, 255],
+                            "name": "Spins"
+                        }
+                    ]
+                },
+                "Beam Diffuser": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 < Max"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Open/Closed"
+                        },
+                        {
+                            "range": [6, 12],
+                            "name": "Random"
+                        },
+                        {
+                            "range": [13, 255],
+                            "name": "Speed Range"
+                        }
+                    ]
+                },
+                "F Time": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 < Max"
+                        }
+                    ]
+                },
+                "C Time": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 < Max"
+                        }
+                    ]
+                },
+                "B Time": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 < Max"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [2, 4],
+                            "name": "Display On"
+                        },
+                        {
+                            "range": [5, 80],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [81, 87],
+                            "name": "Luminaire Reset"
+                        },
+                        {
+                            "range": [88, 164],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [165, 171],
+                            "name": "Lamp Off"
+                        },
+                        {
+                            "range": [172, 248],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [249, 255],
+                            "name": "Lamp On"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Normal Mode",
+                    "channels": [
+                        "Dimmer",
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Cyan",
+                        "Yellow",
+                        "Magenta",
+                        "Color Wheel",
+                        "Beam Diffuser",
+                        "Strobe",
+                        "F Time",
+                        "C Time",
+                        "B Time",
+                        "Control"
+                    ]
+                }
+            ]
+        }
+    ]
+}

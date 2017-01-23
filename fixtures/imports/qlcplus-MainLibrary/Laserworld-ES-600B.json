@@ -1,0 +1,212 @@
+{
+    "manufacturers": {
+        "Laserworld": {
+            "name": "Laserworld"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Laserworld",
+            "name": "ES-600B",
+            "type": "Laser",
+            "physical": {
+                "dimensions": [270, 160, 230],
+                "weight": 4.5,
+                "power": 40,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "Laser"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 69],
+                            "name": "Laser off"
+                        },
+                        {
+                            "range": [70, 139],
+                            "name": "Sound mode"
+                        },
+                        {
+                            "range": [140, 209],
+                            "name": "Automatic mode"
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "DMX mode"
+                        }
+                    ]
+                },
+                "Patterns/Animations": {
+                    "type": "Effect"
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "With increasing speed"
+                        }
+                    ]
+                },
+                "Point Speed": {
+                    "type": "Effect"
+                },
+                "Movement X": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 160],
+                            "name": "Manual"
+                        },
+                        {
+                            "range": [161, 189],
+                            "name": "Auto right to left"
+                        },
+                        {
+                            "range": [190, 219],
+                            "name": "Auto left to right"
+                        },
+                        {
+                            "range": [220, 255],
+                            "name": "Auto changing"
+                        }
+                    ]
+                },
+                "Movement Y": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 160],
+                            "name": "Manual"
+                        },
+                        {
+                            "range": [161, 189],
+                            "name": "Auto top to bottom"
+                        },
+                        {
+                            "range": [190, 219],
+                            "name": "Auto bottom to top"
+                        },
+                        {
+                            "range": [220, 255],
+                            "name": "Auto changing"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No effect"
+                        },
+                        {
+                            "range": [11, 92],
+                            "name": "Increasing size"
+                        },
+                        {
+                            "range": [93, 146],
+                            "name": "Automatic small to large"
+                        },
+                        {
+                            "range": [147, 200],
+                            "name": "Automatic large to small"
+                        },
+                        {
+                            "range": [201, 255],
+                            "name": "Automatic small to large to small..."
+                        }
+                    ]
+                },
+                "No Function": {
+                    "type": "Nothing"
+                },
+                "Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 199],
+                            "name": "no function"
+                        },
+                        {
+                            "range": [200, 255],
+                            "name": "Reset over 200"
+                        }
+                    ]
+                },
+                "Rotation Y (Height)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 150],
+                            "name": "manual"
+                        },
+                        {
+                            "range": [151, 255],
+                            "name": "auto"
+                        }
+                    ]
+                },
+                "Rotation Z": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 180],
+                            "name": "manual"
+                        },
+                        {
+                            "range": [181, 217],
+                            "name": "auto CW"
+                        },
+                        {
+                            "range": [218, 255],
+                            "name": "auto CCW"
+                        }
+                    ]
+                },
+                "Rotation X (Width)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 150],
+                            "name": "Static rotation"
+                        },
+                        {
+                            "range": [151, 255],
+                            "name": "Automatic rotation"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "std",
+                    "channels": [
+                        "Mode",
+                        "Patterns/Animations",
+                        "Strobe",
+                        "Point Speed",
+                        "Movement X",
+                        "Movement Y",
+                        "Zoom",
+                        "No Function",
+                        "Reset",
+                        "Rotation X (Width)",
+                        "Rotation Y (Height)",
+                        "Rotation Z"
+                    ]
+                }
+            ]
+        }
+    ]
+}

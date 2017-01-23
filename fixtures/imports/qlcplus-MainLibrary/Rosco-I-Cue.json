@@ -1,0 +1,94 @@
+{
+    "manufacturers": {
+        "Rosco": {
+            "name": "Rosco"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Rosco",
+            "name": "I-Cue",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [160, 260, 265],
+                "weight": 1.6,
+                "power": 17,
+                "DMXconnector": "3-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 230,
+                    "tiltMax": 57
+                }
+            },
+            "availableChannels": {
+                "Pan - coarse": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan- coarse"
+                        }
+                    ]
+                },
+                "Pan - fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan - fine"
+                        }
+                    ]
+                },
+                "Tilt - coarse": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt - coarse"
+                        }
+                    ]
+                },
+                "Tilt - fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt - fine"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan - coarse",
+                    "Pan - fine"
+                ],
+                [
+                    "Tilt - coarse",
+                    "Tilt - fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "2 channel",
+                    "channels": [
+                        "Pan - coarse",
+                        "Tilt - coarse"
+                    ]
+                },
+                {
+                    "name": "4 channel",
+                    "channels": [
+                        "Pan - coarse",
+                        "Pan - fine",
+                        "Tilt - coarse",
+                        "Tilt - fine"
+                    ]
+                }
+            ]
+        }
+    ]
+}

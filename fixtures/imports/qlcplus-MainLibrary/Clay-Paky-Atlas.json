@@ -1,0 +1,67 @@
+{
+    "manufacturers": {
+        "Clay Paky": {
+            "name": "Clay Paky"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Clay Paky",
+            "name": "Atlas",
+            "type": "Flower",
+            "physical": {
+                "dimensions": [725, 400, 600],
+                "weight": 27,
+                "power": 575,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "HTI 575W",
+                    "colorTemperature": 5600,
+                    "lumens": 49000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [1, 1]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 6],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [7, 64],
+                            "name": "Bands opened progressively (right to left)"
+                        },
+                        {
+                            "range": [65, 139],
+                            "name": "Bands obscured progressively (right to left)"
+                        },
+                        {
+                            "range": [140, 243],
+                            "name": "Strobe (slow to fast)"
+                        },
+                        {
+                            "range": [244, 255],
+                            "name": "Open"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

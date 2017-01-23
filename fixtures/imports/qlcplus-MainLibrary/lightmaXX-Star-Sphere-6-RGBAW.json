@@ -1,0 +1,159 @@
+{
+    "manufacturers": {
+        "lightmaXX": {
+            "name": "lightmaXX"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "lightmaXX",
+            "name": "Star Sphere 6 RGBAW",
+            "type": "Effect",
+            "physical": {
+                "dimensions": [175, 150, 175],
+                "weight": 1,
+                "power": 10,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [180, 180]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Program Selection": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [20, 39],
+                            "name": "Red & pink - speed from slow to fast",
+                            "color": "#ff0000",
+                            "color2": "#ff00ff"
+                        },
+                        {
+                            "range": [40, 59],
+                            "name": "Green & amber - speed from slow to fast",
+                            "color": "#00aa00",
+                            "color2": "#ffaa00"
+                        },
+                        {
+                            "range": [60, 79],
+                            "name": "Blue & white - speed from slow to fast",
+                            "color": "#0000ff",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "3-color jump - speed from slow to fast"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "7-color jump - speed from slow to fast"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "7-color fade - speed from slow to fast"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Strobe mode - speed from slow to fast"
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Sound activated 1 - OFF without sound"
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "Sound activated 2 - ON without sound"
+                        },
+                        {
+                            "range": [200, 255],
+                            "name": "Full control with channels 2-6"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No strobe"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe - from fast to slow"
+                        }
+                    ]
+                },
+                "Red & Pink": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Brightness from min to max"
+                        }
+                    ]
+                },
+                "Green & Amber": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Brightness from min to max"
+                        }
+                    ]
+                },
+                "Blue & White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Brightness from min to max"
+                        }
+                    ]
+                },
+                "Motor": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Indexed static position"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Swing back and forth - from slow to fast"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "6 channel mode",
+                    "channels": [
+                        "Program Selection",
+                        "Strobe",
+                        "Red & Pink",
+                        "Green & Amber",
+                        "Blue & White",
+                        "Motor"
+                    ]
+                }
+            ]
+        }
+    ]
+}

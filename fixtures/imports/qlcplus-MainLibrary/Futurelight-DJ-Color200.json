@@ -1,0 +1,212 @@
+{
+    "manufacturers": {
+        "Futurelight": {
+            "name": "Futurelight"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Futurelight",
+            "name": "DJ-Color200",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [300, 390, 290],
+                "weight": 11,
+                "power": 440,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 250W",
+                    "colorTemperature": 8500
+                },
+                "lens": {
+                    "name": "PC"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "White"
+                        },
+                        {
+                            "range": [11, 21],
+                            "name": "Light blue"
+                        },
+                        {
+                            "range": [22, 32],
+                            "name": "Light green"
+                        },
+                        {
+                            "range": [33, 43],
+                            "name": "Orange"
+                        },
+                        {
+                            "range": [44, 54],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [55, 65],
+                            "name": "Sky blue"
+                        },
+                        {
+                            "range": [66, 76],
+                            "name": "Pink"
+                        },
+                        {
+                            "range": [77, 87],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [88, 98],
+                            "name": "Yellow"
+                        },
+                        {
+                            "range": [99, 109],
+                            "name": "Dark blue"
+                        },
+                        {
+                            "range": [110, 120],
+                            "name": "Dark green"
+                        },
+                        {
+                            "range": [121, 127],
+                            "name": "Peach"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Forwards rainbow speed"
+                        }
+                    ]
+                },
+                "Effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "Circle 1"
+                        },
+                        {
+                            "range": [21, 42],
+                            "name": "3200K correction filter"
+                        },
+                        {
+                            "range": [43, 63],
+                            "name": "6500K correction filter"
+                        },
+                        {
+                            "range": [64, 84],
+                            "name": "Magenta"
+                        },
+                        {
+                            "range": [85, 106],
+                            "name": "Cyan"
+                        },
+                        {
+                            "range": [107, 127],
+                            "name": "Yellow"
+                        },
+                        {
+                            "range": [128, 148],
+                            "name": "UV like"
+                        },
+                        {
+                            "range": [149, 170],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [171, 191],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [192, 212],
+                            "name": "Circle 4"
+                        },
+                        {
+                            "range": [213, 234],
+                            "name": "Circle 3"
+                        },
+                        {
+                            "range": [235, 255],
+                            "name": "Circle 2"
+                        }
+                    ]
+                },
+                "Shutter, strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [1, 139],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Reset after 3 seconds"
+                        },
+                        {
+                            "range": [150, 219],
+                            "name": "Strobe speed"
+                        },
+                        {
+                            "range": [220, 229],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Random strobe"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Shutter open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [1, 128],
+                            "name": "Spot intensity 0 to 100"
+                        },
+                        {
+                            "range": [129, 186],
+                            "name": "Spot intensity 100 to 0"
+                        },
+                        {
+                            "range": [187, 194],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [195, 255],
+                            "name": "Wash intensity 0 to 100"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Colour",
+                        "Effect",
+                        "Shutter, strobe",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

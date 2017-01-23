@@ -1,0 +1,680 @@
+{
+    "manufacturers": {
+        "Ledj": {
+            "name": "Ledj"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Ledj",
+            "name": "Stage Color 24",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [445, 179, 144],
+                "weight": 5,
+                "power": 100,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [40, 40]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Colour and Programmes": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [11, 21],
+                            "name": "RGB mode"
+                        },
+                        {
+                            "range": [22, 32],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [33, 43],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [44, 54],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [55, 65],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [66, 76],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [77, 87],
+                            "name": "Purple",
+                            "color": "#800080"
+                        },
+                        {
+                            "range": [88, 98],
+                            "name": "White",
+                            "color": "#ffffff",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [99, 109],
+                            "name": "Dream: Seven colour fade"
+                        },
+                        {
+                            "range": [110, 120],
+                            "name": "Meteor: Seven colour flow"
+                        },
+                        {
+                            "range": [121, 131],
+                            "name": "Fade: Seven colour fade in, fade out"
+                        },
+                        {
+                            "range": [132, 142],
+                            "name": "Change: Seven colour change"
+                        },
+                        {
+                            "range": [143, 153],
+                            "name": "Flow 1: Seven colour chase (forward)"
+                        },
+                        {
+                            "range": [154, 164],
+                            "name": "Flow 2: Seven colour chase (forward & reverse)"
+                        },
+                        {
+                            "range": [165, 175],
+                            "name": "Flow 3: Seven colour fade chase in relay pattern (forward)"
+                        },
+                        {
+                            "range": [176, 186],
+                            "name": "Flow 4: Seven colour fade chase in relay pattern (forward & reverse)"
+                        },
+                        {
+                            "range": [187, 197],
+                            "name": "Flow 5: Seven colour chase from sides to centre"
+                        },
+                        {
+                            "range": [198, 208],
+                            "name": "Flow 6: Seven colour chase from centre to sides"
+                        },
+                        {
+                            "range": [209, 219],
+                            "name": "Flow 7: Seven colour rotating chase"
+                        },
+                        {
+                            "range": [220, 230],
+                            "name": "Flow 8: Two colour chase (forward)"
+                        },
+                        {
+                            "range": [231, 241],
+                            "name": "Flow 9: Two colour chase (forward & reverse)"
+                        },
+                        {
+                            "range": [242, 255],
+                            "name": "Sound active"
+                        }
+                    ]
+                },
+                "Master Dimmer (11<=Ch1<=21) Speed (Ch1>=99)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer or speed"
+                        }
+                    ]
+                },
+                "Flash": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Flash"
+                        }
+                    ]
+                },
+                "All Red/Colour Select": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity/Colour select (220<=ch2<=241)"
+                        }
+                    ]
+                },
+                "All Green/Colour Select": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity/Colour select (220<=ch2<=241)"
+                        }
+                    ]
+                },
+                "All Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity"
+                        }
+                    ]
+                },
+                "Red 1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red 1 intensity"
+                        }
+                    ]
+                },
+                "Green 1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green 1 intensity"
+                        }
+                    ]
+                },
+                "Blue 1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue 1 intensity"
+                        }
+                    ]
+                },
+                "Red 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red 2 intensity"
+                        }
+                    ]
+                },
+                "Green 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green 2 intensity"
+                        }
+                    ]
+                },
+                "Blue 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue 2 intensity"
+                        }
+                    ]
+                },
+                "Red 3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red 3 intensity"
+                        }
+                    ]
+                },
+                "Green 3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green 3  intensity"
+                        }
+                    ]
+                },
+                "Blue 3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue 3 intensity"
+                        }
+                    ]
+                },
+                "Red 4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red 4 intensity"
+                        }
+                    ]
+                },
+                "Green 4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green 4 intensity"
+                        }
+                    ]
+                },
+                "Blue 4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue 4 intensity"
+                        }
+                    ]
+                },
+                "Red 5": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red 5 intensity"
+                        }
+                    ]
+                },
+                "Green 5": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green 5 intensity"
+                        }
+                    ]
+                },
+                "Blue 5": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue 5 intensity"
+                        }
+                    ]
+                },
+                "Red 6": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red 6 intensity"
+                        }
+                    ]
+                },
+                "Green 6": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green 6 intensity"
+                        }
+                    ]
+                },
+                "Blue 6": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue 6 intensity"
+                        }
+                    ]
+                },
+                "Red 7": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red 7 intensity"
+                        }
+                    ]
+                },
+                "Green 7": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green 7 intensity"
+                        }
+                    ]
+                },
+                "Blue 7": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue 7 intensity"
+                        }
+                    ]
+                },
+                "Red 8": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red 8 intensity"
+                        }
+                    ]
+                },
+                "Green 8": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green 8 intensity"
+                        }
+                    ]
+                },
+                "Blue 8": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue 8 intensity"
+                        }
+                    ]
+                },
+                "Red 1 Top Row": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Top row red intensity"
+                        }
+                    ]
+                },
+                "Green 1 Top Row": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Top row green intensity"
+                        }
+                    ]
+                },
+                "Blue 1 Top Row": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Top row blue intensity"
+                        }
+                    ]
+                },
+                "Red 2 Bottom Row": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Botttom row red intensity"
+                        }
+                    ]
+                },
+                "Green 2 Bottom Row": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Bottom row green intensity"
+                        }
+                    ]
+                },
+                "Blue 2 Bottom Row": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Bottom row blue intensity"
+                        }
+                    ]
+                },
+                "Master Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer"
+                        }
+                    ]
+                }
+            },
+            "heads": {
+                "9 channel-head0": [
+                    "Red 1 Top Row",
+                    "Green 1 Top Row",
+                    "Blue 1 Top Row"
+                ],
+                "9 channel-head1": [
+                    "Blue 2 Bottom Row",
+                    "Red 2 Bottom Row",
+                    "Green 2 Bottom Row"
+                ],
+                "15 channel-head0": [
+                    "Red 1",
+                    "Green 1",
+                    "Blue 1"
+                ],
+                "15 channel-head1": [
+                    "Blue 2",
+                    "Red 2",
+                    "Green 2"
+                ],
+                "15 channel-head2": [
+                    "Red 3",
+                    "Green 3",
+                    "Blue 3"
+                ],
+                "15 channel-head3": [
+                    "Red 4",
+                    "Green 4",
+                    "Blue 4"
+                ],
+                "27 channel-head0": [
+                    "Red 1",
+                    "Green 1",
+                    "Blue 1"
+                ],
+                "27 channel-head1": [
+                    "Blue 2",
+                    "Red 2",
+                    "Green 2"
+                ],
+                "27 channel-head2": [
+                    "Red 3",
+                    "Green 3",
+                    "Blue 3"
+                ],
+                "27 channel-head3": [
+                    "Red 4",
+                    "Green 4",
+                    "Blue 4"
+                ],
+                "27 channel-head4": [
+                    "Green 5",
+                    "Blue 5",
+                    "Red 5"
+                ],
+                "27 channel-head5": [
+                    "Red 6",
+                    "Green 6",
+                    "Blue 6"
+                ],
+                "27 channel-head6": [
+                    "Red 7",
+                    "Green 7",
+                    "Blue 7"
+                ],
+                "27 channel-head7": [
+                    "Red 8",
+                    "Green 8",
+                    "Blue 8"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "6 channel",
+                    "channels": [
+                        "Colour and Programmes",
+                        "Master Dimmer (11<=Ch1<=21) Speed (Ch1>=99)",
+                        "Flash",
+                        "All Red/Colour Select",
+                        "All Green/Colour Select",
+                        "All Blue"
+                    ]
+                },
+                {
+                    "name": "9 channel",
+                    "channels": [
+                        "Colour and Programmes",
+                        "Master Dimmer (11<=Ch1<=21) Speed (Ch1>=99)",
+                        "Flash",
+                        "Red 1 Top Row",
+                        "Green 1 Top Row",
+                        "Blue 1 Top Row",
+                        "Red 2 Bottom Row",
+                        "Green 2 Bottom Row",
+                        "Blue 2 Bottom Row"
+                    ]
+                },
+                {
+                    "name": "15 channel",
+                    "channels": [
+                        "Colour and Programmes",
+                        "Master Dimmer (11<=Ch1<=21) Speed (Ch1>=99)",
+                        "Flash",
+                        "Red 1",
+                        "Green 1",
+                        "Blue 1",
+                        "Red 2",
+                        "Green 2",
+                        "Blue 2",
+                        "Red 3",
+                        "Green 3",
+                        "Blue 3",
+                        "Red 4",
+                        "Green 4",
+                        "Blue 4"
+                    ]
+                },
+                {
+                    "name": "27 channel",
+                    "channels": [
+                        "Colour and Programmes",
+                        "Master Dimmer (11<=Ch1<=21) Speed (Ch1>=99)",
+                        "Flash",
+                        "Red 1",
+                        "Green 1",
+                        "Blue 1",
+                        "Red 2",
+                        "Green 2",
+                        "Blue 2",
+                        "Red 3",
+                        "Green 3",
+                        "Blue 3",
+                        "Red 4",
+                        "Green 4",
+                        "Blue 4",
+                        "Red 5",
+                        "Green 5",
+                        "Blue 5",
+                        "Red 6",
+                        "Green 6",
+                        "Blue 6",
+                        "Red 7",
+                        "Green 7",
+                        "Blue 7",
+                        "Red 8",
+                        "Green 8",
+                        "Blue 8"
+                    ]
+                }
+            ]
+        }
+    ]
+}

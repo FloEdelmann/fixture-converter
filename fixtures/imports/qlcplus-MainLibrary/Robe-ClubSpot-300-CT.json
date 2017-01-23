@@ -1,0 +1,480 @@
+{
+    "manufacturers": {
+        "Robe": {
+            "name": "Robe"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Robe",
+            "name": "ClubSpot 300 CT",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [417, 478, 398],
+                "weight": 20.5,
+                "power": 450,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "HSD 250W"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [15, 15]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 530,
+                    "tiltMax": 280
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan movement"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine movement"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt movement"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine movement"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Max. speed (tracking mode)"
+                        },
+                        {
+                            "range": [1, 249],
+                            "name": "From max.speed to min.speed (vector mode)"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Max.speed (tracking mode),black-out while colour\nchanging or pan/tilt moving"
+                        }
+                    ]
+                },
+                "Lamp On/Off, Reset, Speed control of fan": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "From max.speed of fans to min. speed of fans"
+                        },
+                        {
+                            "range": [128, 139],
+                            "name": "Lamp On,reset"
+                        },
+                        {
+                            "range": [140, 229],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Lamp Off after 3 sec."
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Colours": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Open/White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [10, 20],
+                            "name": "Turquoise",
+                            "color": "#34c0fe"
+                        },
+                        {
+                            "range": [21, 31],
+                            "name": "Deep red",
+                            "color": "#ff2019"
+                        },
+                        {
+                            "range": [32, 41],
+                            "name": "Cyan",
+                            "color": "#20eeff"
+                        },
+                        {
+                            "range": [42, 52],
+                            "name": "UV filter",
+                            "color": "#c021f7"
+                        },
+                        {
+                            "range": [53, 63],
+                            "name": "Magenta\n",
+                            "color": "#c021f7"
+                        },
+                        {
+                            "range": [64, 73],
+                            "name": "Light blue",
+                            "color": "#327dce"
+                        },
+                        {
+                            "range": [74, 84],
+                            "name": "Yellow",
+                            "color": "#ffff21"
+                        },
+                        {
+                            "range": [85, 95],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [96, 105],
+                            "name": "Pink",
+                            "color": "#ff6160"
+                        },
+                        {
+                            "range": [106, 116],
+                            "name": "Blue",
+                            "color": "#327dce"
+                        },
+                        {
+                            "range": [117, 127],
+                            "name": "Red",
+                            "color": "#ff2019"
+                        },
+                        {
+                            "range": [128, 189],
+                            "name": "Forwards rainbow effect from fast to slow"
+                        },
+                        {
+                            "range": [190, 193],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Backwards rainbow effect from slow to fast"
+                        }
+                    ]
+                },
+                "No function": {
+                    "type": "Nothing",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Effect wheel": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 95],
+                            "name": "Open position (hole)"
+                        },
+                        {
+                            "range": [96, 159],
+                            "name": "3-facet rotating prism\n"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Macro 1"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "Macro 2"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "Macro 3"
+                        },
+                        {
+                            "range": [184, 191],
+                            "name": "Macro 4"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "Macro 5"
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "Macro 6"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Macro 7"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Macro 8"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Macro 9"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Macro 10"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Macro 11"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Macro 12"
+                        }
+                    ]
+                },
+                "3-facet prism rotation control": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [1, 126],
+                            "name": "Forward rotation from fast to slow"
+                        },
+                        {
+                            "range": [127, 128],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [129, 255],
+                            "name": "Backward rotation from slow to fast"
+                        }
+                    ]
+                },
+                "Rotating gobo selection": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Forward gobo wheel rotation from slow to fast"
+                        }
+                    ]
+                },
+                "Gobo indexing and rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Gobo indexing"
+                        },
+                        {
+                            "range": [128, 190],
+                            "name": "Forwards gobo rotation from fast to slow"
+                        },
+                        {
+                            "range": [191, 192],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "Backwards gobo rotation from slow to fast"
+                        }
+                    ]
+                },
+                "No function 2": {
+                    "type": "Nothing",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Continuous adjustment from far to near"
+                        }
+                    ]
+                },
+                "Shutter, Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Shutter closed\n"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe-effect from slow to fast"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Closing pulses from slow to fast"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "Opening pulses from fast to slow"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random strobe effects from slow to fast"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Shutter open"
+                        }
+                    ]
+                },
+                "Dimmer intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer from closed to 100% light output"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan Fine",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed",
+                        "Lamp On/Off, Reset, Speed control of fan",
+                        "Colours",
+                        "No function",
+                        "Effect wheel",
+                        "3-facet prism rotation control",
+                        "Rotating gobo selection",
+                        "Gobo indexing and rotation",
+                        "No function 2",
+                        "Focus",
+                        "Shutter, Strobe",
+                        "Dimmer intensity"
+                    ]
+                },
+                {
+                    "name": "Mode 2",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed",
+                        "Lamp On/Off, Reset, Speed control of fan",
+                        "Colours",
+                        "No function",
+                        "Effect wheel",
+                        "3-facet prism rotation control",
+                        "Rotating gobo selection",
+                        "Gobo indexing and rotation",
+                        "No function 2",
+                        "Focus",
+                        "Shutter, Strobe",
+                        "Dimmer intensity"
+                    ]
+                },
+                {
+                    "name": "8 Bit",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan/Tilt Speed",
+                        "Lamp On/Off, Reset, Speed control of fan",
+                        "Colours",
+                        "No function",
+                        "Effect wheel",
+                        "3-facet prism rotation control",
+                        "Rotating gobo selection",
+                        "Gobo indexing and rotation",
+                        "No function 2",
+                        "Focus",
+                        "Shutter, Strobe",
+                        "Dimmer intensity"
+                    ]
+                }
+            ]
+        }
+    ]
+}

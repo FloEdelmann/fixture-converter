@@ -1,0 +1,335 @@
+{
+    "manufacturers": {
+        "Proel": {
+            "name": "Proel"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Proel",
+            "name": "Dreamlight 250 Eclipse Spot",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [380, 510, 315],
+                "weight": 25,
+                "power": 400,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "HSD 250W",
+                    "colorTemperature": 7200,
+                    "lumens": 17000
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 530,
+                    "tiltMax": 280
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 530 degrees"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 280 degrees"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 249],
+                            "name": "Pan Tilt Speed (Fast to slow)"
+                        },
+                        {
+                            "range": [250, 252],
+                            "name": "Max speed"
+                        },
+                        {
+                            "range": [253, 255],
+                            "name": "Blackout during movement"
+                        }
+                    ]
+                },
+                "Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 199],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [200, 210],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [211, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Colour Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 12],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [13, 25],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [26, 38],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [39, 51],
+                            "name": "Purple",
+                            "color": "#c000c0"
+                        },
+                        {
+                            "range": [52, 64],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [65, 77],
+                            "name": "Orange",
+                            "color": "#ff8000"
+                        },
+                        {
+                            "range": [78, 90],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [91, 103],
+                            "name": "Pink",
+                            "color": "#ffc0ff"
+                        },
+                        {
+                            "range": [104, 116],
+                            "name": "Deep Blue",
+                            "color": "#000080"
+                        },
+                        {
+                            "range": [117, 127],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Rainbow effect (Slow to fast)"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Rainbow effect (Slow to fast)"
+                        }
+                    ]
+                },
+                "Gobo Wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 17],
+                            "name": "No gobo"
+                        },
+                        {
+                            "range": [18, 35],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [36, 53],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [54, 71],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [72, 89],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [90, 107],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [108, 125],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [127, 191],
+                            "name": "Rainbow effect (Slow to fast)"
+                        },
+                        {
+                            "range": [192, 192],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "Rainbow effect (Slow to fast)"
+                        }
+                    ]
+                },
+                "Gobo rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Steady"
+                        },
+                        {
+                            "range": [16, 135],
+                            "name": "Clockwise rotation (Slow to fast)"
+                        },
+                        {
+                            "range": [136, 255],
+                            "name": "Counterclockwise rotation (Slow to fast)"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 13],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [14, 214],
+                            "name": "Strobe effect (Slow to fast)"
+                        },
+                        {
+                            "range": [215, 249],
+                            "name": "Progressive strobe"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Blackout"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Close"
+                        },
+                        {
+                            "range": [6, 59],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [60, 255],
+                            "name": "Dimmer (0 to 100%)"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [128, 255],
+                            "name": "Prism"
+                        }
+                    ]
+                },
+                "Prism rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [16, 135],
+                            "name": "Clockwise rotation (Slow to fast)"
+                        },
+                        {
+                            "range": [136, 255],
+                            "name": "Counterclockwise rotation (Slow to fast)"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Focus"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan Fine",
+                        "Tilt Fine",
+                        "Speed",
+                        "Reset",
+                        "Colour Wheel",
+                        "Gobo Wheel",
+                        "Gobo rotation",
+                        "Shutter",
+                        "Dimmer",
+                        "Prism",
+                        "Prism rotation",
+                        "Focus"
+                    ]
+                }
+            ]
+        }
+    ]
+}

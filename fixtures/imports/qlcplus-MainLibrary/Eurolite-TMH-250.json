@@ -1,0 +1,238 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "TMH-250",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [300, 420, 300],
+                "weight": 13,
+                "power": 335,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "ELC 250W",
+                    "colorTemperature": 3200
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 360,
+                    "tiltMax": 250
+                }
+            },
+            "availableChannels": {
+                "Pan coarse": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan coarse"
+                        }
+                    ]
+                },
+                "Tilt coarse": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt coarse"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 16],
+                            "name": "White"
+                        },
+                        {
+                            "range": [17, 33],
+                            "name": "Pink"
+                        },
+                        {
+                            "range": [34, 50],
+                            "name": "Blue"
+                        },
+                        {
+                            "range": [51, 67],
+                            "name": "Orange"
+                        },
+                        {
+                            "range": [68, 84],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [85, 101],
+                            "name": "Violet"
+                        },
+                        {
+                            "range": [102, 118],
+                            "name": "Yellow"
+                        },
+                        {
+                            "range": [119, 135],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [136, 255],
+                            "name": "Rainbow slow to fast"
+                        }
+                    ]
+                },
+                "Gobo rotation": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [5, 120],
+                            "name": "CW rotation slow to fast"
+                        },
+                        {
+                            "range": [121, 139],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [140, 255],
+                            "name": "CCW rotation slow to fast"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Gobo 8"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [3, 29],
+                            "name": "Dimmer control (shutter open)"
+                        },
+                        {
+                            "range": [30, 250],
+                            "name": "Strobe slow to fast"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Shutter open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer intensity"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan coarse",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt coarse",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "8bit",
+                    "channels": [
+                        "Pan coarse",
+                        "Tilt coarse",
+                        "Colour",
+                        "Gobo rotation",
+                        "Gobo",
+                        "Shutter",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "16bit",
+                    "channels": [
+                        "Pan coarse",
+                        "Tilt coarse",
+                        "Colour",
+                        "Gobo rotation",
+                        "Gobo",
+                        "Shutter",
+                        "Dimmer",
+                        "Pan fine",
+                        "Tilt fine"
+                    ]
+                }
+            ]
+        }
+    ]
+}

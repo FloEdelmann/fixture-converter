@@ -1,0 +1,250 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "MH-360",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [260, 285, 317],
+                "weight": 9,
+                "power": 300,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "colorTemperature": 3200,
+                    "lumens": 800
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [15, 45]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 540,
+                    "tiltMax": 220
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "fast -> slow"
+                        }
+                    ]
+                },
+                "Special": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 69],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Enable BlackOut while Pan or Tilt move"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Disable BlackOut while Pan or Tilt move"
+                        },
+                        {
+                            "range": [90, 199],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Stand-Alone"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [16, 131],
+                            "name": "Fast strobe -> Slow strobe"
+                        },
+                        {
+                            "range": [132, 139],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [140, 181],
+                            "name": "Fast close -> Slow open"
+                        },
+                        {
+                            "range": [182, 189],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [190, 231],
+                            "name": "Slow close -> Fast open"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Strobe"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue"
+                        }
+                    ]
+                },
+                "Color/Chase/Fade": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [8, 127],
+                            "name": "Color 1"
+                        },
+                        {
+                            "range": [191, 191],
+                            "name": "Chase"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Color Fades"
+                        }
+                    ]
+                },
+                "Chase/Fade Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "slow -> fast"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Pan/Tilt Speed",
+                        "Special",
+                        "Dimmer",
+                        "Strobe",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color/Chase/Fade",
+                        "Chase/Fade Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

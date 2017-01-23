@@ -1,0 +1,184 @@
+{
+    "manufacturers": {
+        "Showtec": {
+            "name": "Showtec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Showtec",
+            "name": "XB-Wave",
+            "type": "Flower",
+            "physical": {
+                "dimensions": [325, 143, 305],
+                "weight": 2.4,
+                "power": 30,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Colors 1": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [20, 39],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [40, 59],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [60, 79],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Green+Blue",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Red+Blue",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Red+Green",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Red+Green+Blue",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "3 Color Chase + Rotation",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [180, 255],
+                            "name": "7 Color Chase + Rotation",
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                "Colors 2": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [5, 28],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [29, 56],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [57, 84],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [85, 112],
+                            "name": "Green+Blue",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [113, 140],
+                            "name": "Red+Blue",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [141, 168],
+                            "name": "Red+Green",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [169, 197],
+                            "name": "Red+Green+Blue",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [198, 224],
+                            "name": "3 Color Chase + Rotation",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [225, 255],
+                            "name": "7 Color Chase + Rotation",
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Static"
+                        },
+                        {
+                            "range": [5, 255],
+                            "name": "Strobe slow to fast"
+                        }
+                    ]
+                },
+                "Rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Indexing (Position)"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Rotation slow to fast"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "4 Channels",
+                    "channels": [
+                        "Colors 1",
+                        "Colors 2",
+                        "Strobe",
+                        "Rotation"
+                    ]
+                }
+            ]
+        }
+    ]
+}

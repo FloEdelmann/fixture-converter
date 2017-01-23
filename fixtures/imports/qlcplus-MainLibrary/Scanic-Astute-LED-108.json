@@ -1,0 +1,209 @@
+{
+    "manufacturers": {
+        "Scanic": {
+            "name": "Scanic"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Scanic",
+            "name": "Astute LED 108",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [250, 220, 376],
+                "weight": 7,
+                "power": 150,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "colorTemperature": 7000,
+                    "lumens": 1000
+                },
+                "lens": {
+                    "name": "PC"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 540,
+                    "tiltMax": 230
+                }
+            },
+            "availableChannels": {
+                "RGB Control Mode": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 24],
+                            "name": "RGB"
+                        },
+                        {
+                            "range": [25, 49],
+                            "name": "Auto Pro 1"
+                        },
+                        {
+                            "range": [50, 74],
+                            "name": "Auto Pro 2"
+                        },
+                        {
+                            "range": [75, 99],
+                            "name": "Auto Pro 3"
+                        },
+                        {
+                            "range": [100, 124],
+                            "name": "Auto Pro 4"
+                        },
+                        {
+                            "range": [125, 149],
+                            "name": "Auto Pro 5"
+                        },
+                        {
+                            "range": [150, 174],
+                            "name": "Auto Pro 6"
+                        },
+                        {
+                            "range": [175, 199],
+                            "name": "Auto Pro 7"
+                        },
+                        {
+                            "range": [200, 224],
+                            "name": "Auto Pro 8"
+                        },
+                        {
+                            "range": [225, 255],
+                            "name": "Auto Pro"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dark - Deep red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dark - Deep green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dark - Deep blue"
+                        }
+                    ]
+                },
+                "Schutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 24],
+                            "name": "Strobe speed"
+                        },
+                        {
+                            "range": [25, 255],
+                            "name": "Auto speed"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "bright to black"
+                        }
+                    ]
+                },
+                "Tilt coarse": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0° - 230°"
+                        }
+                    ]
+                },
+                "Pan coarse": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0° - 540°"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast - slow"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "PAN Adjust 0° - 2,4°"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Adjust 0° - 2,4°"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan coarse",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt coarse",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "RGB Control Mode",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Schutter",
+                        "Dimmer",
+                        "Tilt coarse",
+                        "Pan coarse",
+                        "Speed",
+                        "Pan Fine",
+                        "Tilt Fine"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,505 @@
+{
+    "manufacturers": {
+        "Futurelight": {
+            "name": "Futurelight"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Futurelight",
+            "name": "PHW-700",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [530, 5700, 530],
+                "weight": 37,
+                "power": 1300,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSR 700W"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [7, 28]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 630,
+                    "tiltMax": 265
+                }
+            },
+            "availableChannels": {
+                "Horizontal Movement (Pan)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0° to 630°"
+                        }
+                    ]
+                },
+                "Vertical Movement (Tilt)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0° to 265°"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "Maximum speed"
+                        },
+                        {
+                            "range": [15, 225],
+                            "name": "Decreading speed"
+                        },
+                        {
+                            "range": [226, 235],
+                            "name": "Blackout with pan/tilt movement"
+                        },
+                        {
+                            "range": [236, 245],
+                            "name": "Blackout with colour-change"
+                        },
+                        {
+                            "range": [246, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Open/hite"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Deep red",
+                            "color": "#7f0000"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Orange",
+                            "color": "#ff7f00"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Correction filter 3,200 K",
+                            "color": "#ffbc76"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Correction filter 5,600 K",
+                            "color": "#fff1ea"
+                        },
+                        {
+                            "range": [112, 117],
+                            "name": "UV filter",
+                            "color": "#cdffaf"
+                        },
+                        {
+                            "range": [128, 190],
+                            "name": "Forwards rainbow effect with decreasing speed"
+                        },
+                        {
+                            "range": [191, 192],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "Backward rainbow effect with increasing speed"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0=white, 255=cyan"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0=white, 255=magenta"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0=white, 255=yellow"
+                        }
+                    ]
+                },
+                "CMY and Dimmer Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Adjustment max to min"
+                        }
+                    ]
+                },
+                "Colour Macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "1"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "2"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "3"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "4"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "5"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "6"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "7"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "8"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "9"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "10"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "11"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "12"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "13"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "14"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "15"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "16"
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "17"
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "18"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "19"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "20"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "21"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "22"
+                        },
+                        {
+                            "range": [184, 191],
+                            "name": "23"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "24"
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "25"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "26"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "27"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "28"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "29"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "30"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Random CMY"
+                        }
+                    ]
+                },
+                "Effect-Wheel": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 70],
+                            "name": "Full beam"
+                        },
+                        {
+                            "range": [71, 230],
+                            "name": "Beam shaper"
+                        },
+                        {
+                            "range": [231, 255],
+                            "name": "Frost filter"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "28° - 7°"
+                        }
+                    ]
+                },
+                "Shutter, Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "No function (shutter open)"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe effect with increasing speed (max. 10 flashes/sec.)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "No function (shutter open)"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse effect in sequences"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "No function (shutter open)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random strobe effect with increasing speed"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Shutter permanently open (no dimmer control)"
+                        }
+                    ]
+                },
+                "Dimmer Intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual control from 100% to 0%"
+                        }
+                    ]
+                },
+                "Lamp switch, reset, fan speed": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Normal colour change, search position via shortest distance"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Normal colour change, search position clockwise"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Colour change at every position, search position via shortest distance"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Colour change at every position, search position clockwise"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Lamp on"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Internal program 1"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Internal program 2"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Internal program 3"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "Internal program 4"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "Internal program 5"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "Internal program 6"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "Internal program 7"
+                        },
+                        {
+                            "range": [208, 223],
+                            "name": "Internal program 8"
+                        },
+                        {
+                            "range": [224, 239],
+                            "name": "Lamp off"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "16 bit resolution"
+                        }
+                    ]
+                },
+                "Tilt file": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "16 bit resolution"
+                        }
+                    ]
+                },
+                "Not Occupied": {
+                    "type": "Nothing"
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Horizontal Movement (Pan)",
+                    "Pan fine"
+                ],
+                [
+                    "Vertical Movement (Tilt)",
+                    "Tilt file"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Horizontal Movement (Pan)",
+                        "Vertical Movement (Tilt)",
+                        "Pan/Tilt Speed",
+                        "Colour",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "CMY and Dimmer Speed",
+                        "Colour Macros",
+                        "Effect-Wheel",
+                        "Zoom",
+                        "Not Occupied",
+                        "Shutter, Strobe",
+                        "Dimmer Intensity",
+                        "Lamp switch, reset, fan speed",
+                        "Pan Fine",
+                        "Tilt file"
+                    ]
+                }
+            ]
+        }
+    ]
+}

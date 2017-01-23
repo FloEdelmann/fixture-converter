@@ -1,0 +1,368 @@
+{
+    "manufacturers": {
+        "Monacor": {
+            "name": "Monacor"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Monacor",
+            "name": "LSX-142SRGY",
+            "type": "Laser",
+            "physical": {
+                "dimensions": [190, 80, 170],
+                "weight": 1.5,
+                "power": 15,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [20, 20]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 20,
+                    "tiltMax": 20
+                }
+            },
+            "availableChannels": {
+                "Mode": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [21, 40],
+                            "name": "Auto show with RGY colours"
+                        },
+                        {
+                            "range": [41, 60],
+                            "name": "Auto show with red colour",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [61, 80],
+                            "name": "Auto show with green colour",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [81, 100],
+                            "name": "Auto show with yellow colour",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [101, 120],
+                            "name": "Sound show with RGY colours"
+                        },
+                        {
+                            "range": [121, 140],
+                            "name": "Sound show with red colour",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [141, 160],
+                            "name": "Sound show with green colour",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [161, 180],
+                            "name": "Sound show with yellow colour",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [181, 200],
+                            "name": "Auto pattern show"
+                        },
+                        {
+                            "range": [201, 220],
+                            "name": "Sound pattern show"
+                        },
+                        {
+                            "range": [221, 255],
+                            "name": "DMX mode"
+                        }
+                    ]
+                },
+                "Pattern group": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 51],
+                            "name": "Group 1 patterns"
+                        },
+                        {
+                            "range": [52, 103],
+                            "name": "Group 2 patterns"
+                        },
+                        {
+                            "range": [104, 155],
+                            "name": "Group 3 patterns"
+                        },
+                        {
+                            "range": [156, 207],
+                            "name": "Group 4 patterns"
+                        },
+                        {
+                            "range": [208, 255],
+                            "name": "Group 5 patterns"
+                        }
+                    ]
+                },
+                "Pattern": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Patterns"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Original"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [64, 111],
+                            "name": "Colour rolling"
+                        },
+                        {
+                            "range": [112, 159],
+                            "name": "Colour jumping"
+                        },
+                        {
+                            "range": [160, 207],
+                            "name": "Colour moving"
+                        },
+                        {
+                            "range": [208, 255],
+                            "name": "strobing/speed"
+                        }
+                    ]
+                },
+                "Clipping": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No clipping"
+                        },
+                        {
+                            "range": [1, 127],
+                            "name": "0-99% clipped"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Speed"
+                        }
+                    ]
+                },
+                "Zooming": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "100-5% zoomed"
+                        },
+                        {
+                            "range": [128, 169],
+                            "name": "Zooming in"
+                        },
+                        {
+                            "range": [170, 209],
+                            "name": "Zooming out"
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "Alternate zooming"
+                        }
+                    ]
+                },
+                "Zoom speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow"
+                        }
+                    ]
+                },
+                "Y-axis rolling": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "0-359 degree Y-axis rolling"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Clockwise rolling"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Anticlockwise rolling"
+                        }
+                    ]
+                },
+                "Y-axis roll speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow"
+                        }
+                    ]
+                },
+                "X-axis rolling": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "0-359 degree X-axis rolling"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Clockwise rolling"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Anticlockwise rolling"
+                        }
+                    ]
+                },
+                "X-axis roll speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow"
+                        }
+                    ]
+                },
+                "Z-axis rolling": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "0-359 degree Z-axis rolling"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Clockwise rolling"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Anticlockwise rolling"
+                        }
+                    ]
+                },
+                "Z-axis roll speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow"
+                        }
+                    ]
+                },
+                "X-axis moving": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "X-axis position"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Clockwise moving"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Anticlockwise moving"
+                        }
+                    ]
+                },
+                "X-axis move speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow"
+                        }
+                    ]
+                },
+                "Y-axis moving": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Y-axis position"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Clockwise moving"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Anticlockwise moving"
+                        }
+                    ]
+                },
+                "Y-axis move speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Mode",
+                        "Pattern group",
+                        "Pattern",
+                        "Colour",
+                        "Clipping",
+                        "Zooming",
+                        "Zoom speed",
+                        "Y-axis rolling",
+                        "Y-axis roll speed",
+                        "X-axis rolling",
+                        "X-axis roll speed",
+                        "Z-axis rolling",
+                        "Z-axis roll speed",
+                        "X-axis moving",
+                        "X-axis move speed",
+                        "Y-axis moving",
+                        "Y-axis move speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

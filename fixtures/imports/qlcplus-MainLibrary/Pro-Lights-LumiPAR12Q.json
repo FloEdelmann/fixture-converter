@@ -1,0 +1,174 @@
+{
+    "manufacturers": {
+        "Pro-Lights": {
+            "name": "Pro-Lights"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Pro-Lights",
+            "name": "LumiPAR12Q",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [270, 205, 210],
+                "weight": 2.4,
+                "power": 132,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 3000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [34, 34]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master Dimmer"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Intensity"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Intensity"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Intensity"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White Intensity"
+                        }
+                    ]
+                },
+                "Color Macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Color macros"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Strobe Speed (Slow - Fast)"
+                        }
+                    ]
+                },
+                "Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Fading 0% - 100%"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Fading 100% - 0%"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Fading 100% - 0% - 100%"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Auto fading"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Auto RGBW 4 colors switching"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Auto 15 colors switching"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "15 colors switching by sound"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "8 Ch Mode",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Color Macros",
+                        "Strobe",
+                        "Mode",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "4 Ch Mode",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White"
+                    ]
+                }
+            ]
+        }
+    ]
+}

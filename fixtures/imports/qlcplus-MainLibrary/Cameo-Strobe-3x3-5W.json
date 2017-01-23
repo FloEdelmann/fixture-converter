@@ -1,0 +1,60 @@
+{
+    "manufacturers": {
+        "Cameo": {
+            "name": "Cameo"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Cameo",
+            "name": "Strobe 3x3.5W",
+            "type": "Strobe",
+            "physical": {
+                "dimensions": [380, 95, 165],
+                "weight": 2.3,
+                "power": 30,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [80, 80]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Flash Frequency": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Flash frequency (0-20Hz)"
+                        }
+                    ]
+                },
+                "Brightness": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Brightness (0-100%)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "2-Channel Mode",
+                    "channels": [
+                        "Flash Frequency",
+                        "Brightness"
+                    ]
+                }
+            ]
+        }
+    ]
+}
