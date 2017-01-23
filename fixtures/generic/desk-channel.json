@@ -1,0 +1,109 @@
+{
+    "manufacturers": {},
+    "fixtures": [
+        {
+            "manufacturer": "Generic",
+            "name": "Desk Channel",
+            "shortName": "GenDskCh",
+            "type": "Other",
+            "comment": "Desk Channels can be influenced by master sliders, Scrollers and Switches won't be.",
+            "physical": {
+                "dimensions": [250, 250, 250],
+                "weight": 3,
+                "power": 30
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Intensity fine": {
+                    "type": "Intensity",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Scroller": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Scroller fine": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Switch": {
+                    "type": "SingleColor",
+                    "color": "Generic",
+                    "highlightValue": 255,
+                    "crossfade": false,
+                    "precendence": "HTP",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "off"
+                        },
+                        {
+                            "range": [1, 254],
+                            "name": "middle"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "on"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                ["Intensity", "Intensity fine"],
+                ["Scroller", "Scroller fine"]
+            ],
+            "modes": [
+                {
+                    "name": "Desk Channel",
+                    "shortName": "DskCh",
+                    "channels": [
+                        "Intensity"
+                    ]
+                },
+                {
+                    "name": "Desk Channel 16bit",
+                    "shortName": "DskCh16bit",
+                    "channels": [
+                        "Intensity",
+                        "Intensity fine"
+                    ]
+                },
+                {
+                    "name": "Scroller",
+                    "shortName": "Scrll",
+                    "channels": [
+                        "Scroller"
+                    ]
+                },
+                {
+                    "name": "Scroller 16bit",
+                    "shortName": "Scrll16bit",
+                    "channels": [
+                        "Scroller",
+                        "Scroller fine"
+                    ]
+                },
+                {
+                    "name": "Switch",
+                    "shortName": "Switch",
+                    "channels": [
+                        "Switch"
+                    ]
+                }
+            ]
+        }
+    ]
+}

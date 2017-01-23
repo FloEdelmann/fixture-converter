@@ -1,0 +1,58 @@
+{
+    "manufacturers": {},
+    "fixtures": [
+        {
+            "manufacturer": "Generic",
+            "name": "Pan / Tilt",
+            "shortName": "GenPanTlt",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [250, 250, 250],
+                "weight": 3,
+                "power": 30
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "defaultValue": 127
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "defaultValue": 127
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "defaultValue": 127
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "defaultValue": 127
+                }
+            },
+            "multiByteChannels": [
+                ["Pan", "Pan fine"],
+                ["Tilt", "Tilt fine"]
+            ],
+            "modes": [
+                {
+                    "name": "Pan / Tilt",
+                    "shortName": "PanTlt",
+                    "channels": [
+                        "Pan",
+                        "Tilt"
+                    ]
+                },
+                {
+                    "name": "Pan / Tilt 16bit",
+                    "shortName": "PanTlt16bit",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine"
+                    ]
+                }
+            ]
+        }
+    ]
+}

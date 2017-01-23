@@ -1,0 +1,69 @@
+{
+    "manufacturers": {},
+    "fixtures": [
+        {
+            "manufacturer": "Generic",
+            "name": "CMY",
+            "shortName": "GenCMY",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [250, 250, 250],
+                "weight": 3,
+                "power": 30
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "highlightValue": 255,
+                    "crossfade": true,
+                    "precendence": "HTP"
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "color": "Yellow",
+                    "crossfade": true
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "color": "Magenta",
+                    "crossfade": true
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "color": "Cyan",
+                    "crossfade": true
+                }
+            },
+            "modes": [
+                {
+                    "name": "CMY",
+                    "channels": [
+                        "Cyan",
+                        "Magenta",
+                        "Yellow"
+                    ]
+                },
+                {
+                    "name": "CMY Dimmer",
+                    "shortName": "CMYD",
+                    "channels": [
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "Dimmer CMY",
+                    "shortName": "DCMY",
+                    "channels": [
+                        "Dimmer",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow"
+                    ]
+                }
+            ]
+        }
+    ]
+}
