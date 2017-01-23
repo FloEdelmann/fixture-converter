@@ -1,0 +1,554 @@
+{
+    "manufacturers": {
+        "MARQ": {
+            "name": "MARQ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "MARQ",
+            "name": "Gamut PAR H7",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [310, 255, 121],
+                "weight": 3,
+                "power": 71,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 1598
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Master Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dark to bright"
+                        }
+                    ]
+                },
+                "Red Dimmer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear, dark to bright"
+                        }
+                    ]
+                },
+                "Green Dimmer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear, dark to bright"
+                        }
+                    ]
+                },
+                "Blue Dimmer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear, dark to bright"
+                        }
+                    ]
+                },
+                "Amber Dimmer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear, dark to bright"
+                        }
+                    ]
+                },
+                "White Dimmer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear, dark to bright"
+                        }
+                    ]
+                },
+                "UV Dimmer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear, dark to bright"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Off (no function)"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Slow to fast"
+                        }
+                    ]
+                },
+                "Color Presets": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Off (no function)"
+                        },
+                        {
+                            "range": [4, 7],
+                            "name": "C-01: R (red)",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [8, 11],
+                            "name": "C-02: G (green)",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [12, 15],
+                            "name": "C-03: B (blue)",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [16, 19],
+                            "name": "C-04: A (amber)",
+                            "color": "#ffbf00"
+                        },
+                        {
+                            "range": [20, 23],
+                            "name": "C-05: W (white)",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [24, 27],
+                            "name": "C-06: UV (ultraviolet)",
+                            "color": "#7200ff"
+                        },
+                        {
+                            "range": [28, 31],
+                            "name": "C-07: R+G",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [32, 35],
+                            "name": "C-08: R+B",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [36, 39],
+                            "name": "C-09: R+A",
+                            "color": "#ff6000"
+                        },
+                        {
+                            "range": [40, 43],
+                            "name": "C-10: R+W",
+                            "color": "#ff8080"
+                        },
+                        {
+                            "range": [44, 47],
+                            "name": "C-11: R+UV",
+                            "color": "#ff009a"
+                        },
+                        {
+                            "range": [48, 51],
+                            "name": "C-12: G+B",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [52, 55],
+                            "name": "C-13: G+A",
+                            "color": "#92ff00"
+                        },
+                        {
+                            "range": [56, 59],
+                            "name": "C-14: G+W",
+                            "color": "#80ff80"
+                        },
+                        {
+                            "range": [60, 63],
+                            "name": "C-15: G+UV",
+                            "color": "#5effd4"
+                        },
+                        {
+                            "range": [64, 67],
+                            "name": "C-16: B+A",
+                            "color": "#ffbfff"
+                        },
+                        {
+                            "range": [68, 71],
+                            "name": "C-17: B+W",
+                            "color": "#8080ff"
+                        },
+                        {
+                            "range": [72, 75],
+                            "name": "C-18: B+UV",
+                            "color": "#3400ff"
+                        },
+                        {
+                            "range": [76, 79],
+                            "name": "C-19: A+W",
+                            "color": "#ffdf80"
+                        },
+                        {
+                            "range": [80, 83],
+                            "name": "C-20: A+UV",
+                            "color": "#ff8c9a"
+                        },
+                        {
+                            "range": [84, 87],
+                            "name": "C-21: W+UV",
+                            "color": "#bf8bff"
+                        },
+                        {
+                            "range": [88, 91],
+                            "name": "C-22: R+G+B",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [92, 95],
+                            "name": "C-23: R+G+A",
+                            "color": "#ffdf00"
+                        },
+                        {
+                            "range": [96, 99],
+                            "name": "C-24: R+G+W",
+                            "color": "#ffff80"
+                        },
+                        {
+                            "range": [100, 103],
+                            "name": "C-25: R+G+UV",
+                            "color": "#ffba9a"
+                        },
+                        {
+                            "range": [104, 107],
+                            "name": "C-26: R+B+A",
+                            "color": "#ff6080"
+                        },
+                        {
+                            "range": [108, 111],
+                            "name": "C-27: R+B+W",
+                            "color": "#ff80ff"
+                        },
+                        {
+                            "range": [112, 115],
+                            "name": "C-28: R+B+UV",
+                            "color": "#bf00ff"
+                        },
+                        {
+                            "range": [116, 119],
+                            "name": "C-29: R+A+W",
+                            "color": "#ff848a"
+                        },
+                        {
+                            "range": [120, 123],
+                            "name": "C-30: R+A+UV",
+                            "color": "#ff5159"
+                        },
+                        {
+                            "range": [124, 127],
+                            "name": "C-31: R+W+UV",
+                            "color": "#ff6cc5"
+                        },
+                        {
+                            "range": [128, 131],
+                            "name": "C-32: G+B+A",
+                            "color": "#92ff92"
+                        },
+                        {
+                            "range": [132, 135],
+                            "name": "C-33: G+B+W",
+                            "color": "#80ffff"
+                        },
+                        {
+                            "range": [136, 139],
+                            "name": "C-34: G+B+UV",
+                            "color": "#348bff"
+                        },
+                        {
+                            "range": [140, 143],
+                            "name": "C-35: G+W+UV",
+                            "color": "#afffe9"
+                        },
+                        {
+                            "range": [144, 147],
+                            "name": "C-36: G+A+UV",
+                            "color": "#c8ff79"
+                        },
+                        {
+                            "range": [148, 151],
+                            "name": "C-37: G+W+UV",
+                            "color": "#afffe9"
+                        },
+                        {
+                            "range": [152, 155],
+                            "name": "C-38: B+A+W",
+                            "color": "#ffdfff"
+                        },
+                        {
+                            "range": [156, 159],
+                            "name": "C-39: B+A+UV",
+                            "color": "#bf69ff"
+                        },
+                        {
+                            "range": [160, 163],
+                            "name": "C-40: B+W+UV",
+                            "color": "#7b5aff"
+                        },
+                        {
+                            "range": [164, 167],
+                            "name": "C-41: A+W+UV",
+                            "color": "#ffbcc5"
+                        },
+                        {
+                            "range": [168, 171],
+                            "name": "C-42: R+G+B+A",
+                            "color": "#ffdf80"
+                        },
+                        {
+                            "range": [172, 175],
+                            "name": "C-43: R+G+B+W",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [176, 179],
+                            "name": "C-44: R+G+B+UV",
+                            "color": "#bf8bff"
+                        },
+                        {
+                            "range": [180, 183],
+                            "name": "C-45: R+G+A+W",
+                            "color": "#ffea55"
+                        },
+                        {
+                            "range": [184, 187],
+                            "name": "C-46: R+G+A+UV",
+                            "color": "#ffbc59"
+                        },
+                        {
+                            "range": [188, 191],
+                            "name": "C-47: R+G+W+UV",
+                            "color": "#ffd7c5"
+                        },
+                        {
+                            "range": [192, 195],
+                            "name": "C-48: R+B+A+W",
+                            "color": "#ff95aa"
+                        },
+                        {
+                            "range": [196, 199],
+                            "name": "C-49: R+B+A+UV",
+                            "color": "#ff51c5"
+                        },
+                        {
+                            "range": [200, 203],
+                            "name": "C-50: R+B+W+UV",
+                            "color": "#d65aff"
+                        },
+                        {
+                            "range": [204, 207],
+                            "name": "C-51: R+A+W+UV",
+                            "color": "#ff848a"
+                        },
+                        {
+                            "range": [208, 211],
+                            "name": "C-52: G+B+A+W",
+                            "color": "#b9ffb9"
+                        },
+                        {
+                            "range": [212, 215],
+                            "name": "C-53: G+B+A+UV",
+                            "color": "#bff4ff"
+                        },
+                        {
+                            "range": [216, 219],
+                            "name": "C-54: G+B+W+UV",
+                            "color": "#7bb4ff"
+                        },
+                        {
+                            "range": [220, 223],
+                            "name": "C-55: G+A+W+UV",
+                            "color": "#dcffaa"
+                        },
+                        {
+                            "range": [224, 227],
+                            "name": "C-56: B+A+W+UV",
+                            "color": "#d69eff"
+                        },
+                        {
+                            "range": [228, 231],
+                            "name": "C-57: R+G+B+A+W",
+                            "color": "#ffeaaa"
+                        },
+                        {
+                            "range": [232, 235],
+                            "name": "C-58: R+G+B+A+UV",
+                            "color": "#ffbcc5"
+                        },
+                        {
+                            "range": [236, 239],
+                            "name": "C-59: R+G+B+W+UV",
+                            "color": "#d6b4ff"
+                        },
+                        {
+                            "range": [240, 243],
+                            "name": "C-60: R+G+A+W+UV",
+                            "color": "#ffd08a"
+                        },
+                        {
+                            "range": [244, 247],
+                            "name": "C-61: R+B+A+W+UV",
+                            "color": "#ff84d6"
+                        },
+                        {
+                            "range": [248, 251],
+                            "name": "C-62: G+B+A+W+UV",
+                            "color": "#d6f8ff"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "C-63: R+G+B+A+W+UV",
+                            "color": "#ffd0d6"
+                        }
+                    ]
+                },
+                "Programs": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Off (no function)"
+                        },
+                        {
+                            "range": [16, 35],
+                            "name": "Snap 1: R > G > B > W"
+                        },
+                        {
+                            "range": [36, 55],
+                            "name": "Snap 2: R+G > G+B > B+W > W+R"
+                        },
+                        {
+                            "range": [56, 75],
+                            "name": "Snap 3: R+G+B > G+B+W > B+W+R > W+R+G"
+                        },
+                        {
+                            "range": [76, 95],
+                            "name": "Snap 4: R+B > B+G > G+W > W+R"
+                        },
+                        {
+                            "range": [96, 115],
+                            "name": "Fade 1: R > G > B > W"
+                        },
+                        {
+                            "range": [116, 135],
+                            "name": "Fade 2: R+G > G+B > B+W > W+R"
+                        },
+                        {
+                            "range": [136, 155],
+                            "name": "Fade 3: R+G+B > G+B+W > B+W+R > W+R+G"
+                        },
+                        {
+                            "range": [156, 175],
+                            "name": "Fade 4: R+B > B+G > G+W > W+R"
+                        },
+                        {
+                            "range": [176, 195],
+                            "name": "Sound 1: R > G > B > W"
+                        },
+                        {
+                            "range": [196, 215],
+                            "name": "Sound 2: R+G > G+B > B+W > W+R"
+                        },
+                        {
+                            "range": [216, 235],
+                            "name": "Sound 3: R+G+B > G+B+W > B+W+R > W+R+G"
+                        },
+                        {
+                            "range": [236, 255],
+                            "name": "Sound 4:  R+B > B+G > G+W  > W+R"
+                        }
+                    ]
+                },
+                "Program Speed/Sensitivity": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Program speed (slow to fast)/Sensitivity (low to high)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "11 Channel",
+                    "channels": [
+                        "Master Dimmer",
+                        "Red Dimmer",
+                        "Green Dimmer",
+                        "Blue Dimmer",
+                        "Amber Dimmer",
+                        "White Dimmer",
+                        "UV Dimmer",
+                        "Strobe",
+                        "Color Presets",
+                        "Programs",
+                        "Program Speed/Sensitivity"
+                    ]
+                },
+                {
+                    "name": "8 Channel",
+                    "channels": [
+                        "Master Dimmer",
+                        "Red Dimmer",
+                        "Green Dimmer",
+                        "Blue Dimmer",
+                        "Amber Dimmer",
+                        "White Dimmer",
+                        "UV Dimmer",
+                        "Strobe"
+                    ]
+                },
+                {
+                    "name": "6 Channel",
+                    "channels": [
+                        "Red Dimmer",
+                        "Green Dimmer",
+                        "Blue Dimmer",
+                        "Amber Dimmer",
+                        "White Dimmer",
+                        "UV Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

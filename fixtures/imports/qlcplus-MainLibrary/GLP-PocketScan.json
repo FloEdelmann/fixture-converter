@@ -1,0 +1,285 @@
+{
+    "manufacturers": {
+        "GLP": {
+            "name": "GLP"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "GLP",
+            "name": "PocketScan",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [155, 135, 295],
+                "weight": 4,
+                "power": 150,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "EFP 100W"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 170,
+                    "tiltMax": 110
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Left to right"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Up to down"
+                        }
+                    ]
+                },
+                "Colors": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [8, 11],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [16, 19],
+                            "name": "Orange",
+                            "color": "#ffaa00"
+                        },
+                        {
+                            "range": [24, 27],
+                            "name": "Blue 101",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [32, 35],
+                            "name": "Yellow 603",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [40, 43],
+                            "name": "Pink 310",
+                            "color": "#ffaaff"
+                        },
+                        {
+                            "range": [48, 51],
+                            "name": "Turques 208",
+                            "color": "#55ffff"
+                        },
+                        {
+                            "range": [56, 59],
+                            "name": "Red 304",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [64, 67],
+                            "name": "Cyan 104",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [72, 75],
+                            "name": "Magenta 507",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [80, 83],
+                            "name": "Magenta 501",
+                            "color": "#ff007f"
+                        },
+                        {
+                            "range": [88, 91],
+                            "name": "UV Blue 108",
+                            "color": "#aa55ff"
+                        },
+                        {
+                            "range": [96, 99],
+                            "name": "Yellow 601",
+                            "color": "#ffff7f"
+                        },
+                        {
+                            "range": [104, 107],
+                            "name": "Green 204",
+                            "color": "#aaff7f"
+                        },
+                        {
+                            "range": [112, 115],
+                            "name": "Orange 306",
+                            "color": "#ffaa7f"
+                        },
+                        {
+                            "range": [120, 123],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Rotation, clockwise, slow to fast"
+                        },
+                        {
+                            "range": [192, 253],
+                            "name": "Rotation, counterclockwise, slow to fast"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Rotation controlled by music"
+                        }
+                    ]
+                },
+                "Gobos": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Ring"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Narrow spot"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Triangle"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Holes, rectangle"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Star"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "AL"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Corel wheel"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Four squares"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Wheel of squares"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Puzzle"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Spiral"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Three wheel"
+                        },
+                        {
+                            "range": [104, 127],
+                            "name": "Shark tooth"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Rotation, slow - fast, CW"
+                        },
+                        {
+                            "range": [192, 253],
+                            "name": "Rotation, slow - fast, CCW"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Gobo change by music"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [16, 239],
+                            "name": "Shutter speed, slow to fast"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Shutter open"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Pan/Tilt, relative"
+                        },
+                        {
+                            "range": [16, 250],
+                            "name": "Pan/Tilt, slow -fast"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Pan/Tilt controlled by music"
+                        }
+                    ]
+                },
+                "Laser": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Laser OFF"
+                        },
+                        {
+                            "range": [16, 27],
+                            "name": "Laser flashing, speed"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Laser ON"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Colors",
+                        "Gobos",
+                        "Shutter",
+                        "Speed",
+                        "Laser"
+                    ]
+                }
+            ]
+        }
+    ]
+}

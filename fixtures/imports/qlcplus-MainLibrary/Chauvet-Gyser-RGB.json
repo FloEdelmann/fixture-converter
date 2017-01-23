@@ -1,0 +1,158 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "Gyser RGB",
+            "type": "Smoke",
+            "physical": {
+                "dimensions": [375, 250, 510],
+                "weight": 9.6,
+                "power": 1500,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 4870
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Fog": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Fog"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Color Mixing": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Color Mixing"
+                        }
+                    ]
+                },
+                "Auto Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Slow -> Fast"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Slow -> Fast"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "8 Channel",
+                    "channels": [
+                        "Fog",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color Mixing",
+                        "Auto Speed",
+                        "Strobe",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,227 @@
+{
+    "manufacturers": {
+        "Sagitter": {
+            "name": "Sagitter"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Sagitter",
+            "name": "Miniscan 2001",
+            "type": "Scanner",
+            "physical": {
+                "power": 300,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 250W",
+                    "colorTemperature": 1700
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 130,
+                    "tiltMax": 130
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "130 Degree Angle"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "130 Degree Angle"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "White"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Greenish"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Blueish"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Purple"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Blue"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Yellow"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Dark Green"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Pink"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Dark Blue"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Orange"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Dark Purple"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "Red/Blue"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Yellow/Green"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Blue/Pink"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Rainbow Forward"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Rainbow Backward"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 23],
+                            "name": "Blank"
+                        },
+                        {
+                            "range": [24, 47],
+                            "name": "Crosslines"
+                        },
+                        {
+                            "range": [48, 79],
+                            "name": "Flower"
+                        },
+                        {
+                            "range": [80, 103],
+                            "name": "Starcircles"
+                        },
+                        {
+                            "range": [104, 127],
+                            "name": "Bubbles"
+                        },
+                        {
+                            "range": [128, 151],
+                            "name": "Sun"
+                        },
+                        {
+                            "range": [152, 175],
+                            "name": "Ring of Spots"
+                        },
+                        {
+                            "range": [176, 207],
+                            "name": "Fine Sun"
+                        },
+                        {
+                            "range": [208, 231],
+                            "name": "Stars"
+                        },
+                        {
+                            "range": [232, 255],
+                            "name": "Spiral"
+                        }
+                    ]
+                },
+                "Gobo Rotation": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Rotation 0-360"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Rotation Forward Fast -> Slow"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Rotation Backward slow -> fast"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 95],
+                            "name": "Shutter Closed -> Open"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Strobe"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Pulse fast -> Slow -> Fast"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Strobe Patterns"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Full"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Colour",
+                        "Gobo",
+                        "Gobo Rotation",
+                        "Shutter"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "P64 LED Plus",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [292, 267, 343],
+                "weight": 2.2,
+                "power": 1,
+                "DMXconnector": "3-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Colour Macro": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [8, 255],
+                            "name": "Color macro"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Nothing"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Strobing"
+                        }
+                    ]
+                },
+                "Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Nothing"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Dim -> Bright"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Bright -> Dim"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Dim -> Bright -> Dim"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Color Mixing"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "3 Color Change"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "7 Color Change"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Sound Active"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Full",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Colour Macro",
+                        "Strobe",
+                        "Mode"
+                    ]
+                },
+                {
+                    "name": "Simple",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "manufacturers": {
+        "Monacor": {
+            "name": "Monacor"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Monacor",
+            "name": "CPL-3DMX",
+            "type": "Dimmer",
+            "physical": {
+                "dimensions": [193, 40, 72],
+                "weight": 0.46,
+                "power": 108,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Proportion of red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "brightness of red"
+                        }
+                    ]
+                },
+                "Proportion of green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "brightness of green"
+                        }
+                    ]
+                },
+                "Proportion of blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "brightness of blue"
+                        }
+                    ]
+                },
+                "Dimmer / music control / stroboscope": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "light off"
+                        },
+                        {
+                            "range": [8, 190],
+                            "name": "dimmer: dark → bright"
+                        },
+                        {
+                            "range": [191, 200],
+                            "name": "music-controlled change of colour\nvia integrated microphone"
+                        },
+                        {
+                            "range": [201, 247],
+                            "name": "stroboscope: slow → fast"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "maximum brightness"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Default mode",
+                    "channels": [
+                        "Proportion of red",
+                        "Proportion of green",
+                        "Proportion of blue",
+                        "Dimmer / music control / stroboscope"
+                    ]
+                }
+            ]
+        }
+    ]
+}

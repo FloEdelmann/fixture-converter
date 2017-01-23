@@ -1,0 +1,177 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "EZPar 64 RGBA",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [276, 275, 66],
+                "weight": 1.9,
+                "power": 33,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 1325
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%",
+                            "color": "#10ff00"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%",
+                            "color": "#0500ff"
+                        }
+                    ]
+                },
+                "Amber": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%",
+                            "color": "#ffa304"
+                        }
+                    ]
+                },
+                "Color Macros": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No funciton"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Color macros"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Slow to fast"
+                        }
+                    ]
+                },
+                "Mode": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Pulse effect 0-100%"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Pulse effect 100%-0"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Pulse effect 100%-0-100%"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Auto fade transition"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Auto snap transition (4 colors)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Auto snap transition (15 colors)"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Sound-Active mode"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "8 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Amber",
+                        "Color Macros",
+                        "Speed",
+                        "Mode",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "4 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Amber"
+                    ]
+                }
+            ]
+        }
+    ]
+}

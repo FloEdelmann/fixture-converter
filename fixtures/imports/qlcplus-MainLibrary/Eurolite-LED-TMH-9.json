@@ -1,0 +1,285 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "LED TMH-9",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [175, 245, 175],
+                "weight": 3,
+                "power": 80,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 540,
+                    "tiltMax": 180
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Decreasing speed"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": " Red intensity",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity",
+                            "color": "#00ff00"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity",
+                            "color": "#0000ff"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White intensity",
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                "Colour macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Red/Green",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Red/Blue",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Red/White",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Green/Blue",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "Green/White",
+                            "color": "#00ff00",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "Blue/White",
+                            "color": "#0000ff",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "Red/Green/Blue"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "Red/Green/White"
+                        },
+                        {
+                            "range": [208, 223],
+                            "name": "Green/Blue/White"
+                        },
+                        {
+                            "range": [224, 239],
+                            "name": "Blue/Red/White"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Red/Blue/Green/White"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "Neutral"
+                        },
+                        {
+                            "range": [21, 30],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [31, 200],
+                            "name": "Strobe effect with increasing speed"
+                        },
+                        {
+                            "range": [201, 250],
+                            "name": "Random strobe effect with increasing speed"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer Intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment of the dimmer intensity from 0 to 100%"
+                        }
+                    ]
+                },
+                "Pan 16 bit": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan movement with 16 bit resolution"
+                        }
+                    ]
+                },
+                "Tilt 16 bit": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt movement with 16 bit resolution"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan 16 bit"
+                ],
+                [
+                    "Tilt",
+                    "Tilt 16 bit"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "4 channel",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Colour macros",
+                        "Strobe"
+                    ]
+                },
+                {
+                    "name": "12 channel",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan/Tilt Speed",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Colour macros",
+                        "Strobe",
+                        "Dimmer Intensity",
+                        "Pan 16 bit",
+                        "Tilt 16 bit"
+                    ]
+                }
+            ]
+        }
+    ]
+}

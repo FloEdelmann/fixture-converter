@@ -1,0 +1,936 @@
+{
+    "manufacturers": {
+        "Robe": {
+            "name": "Robe"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Robe",
+            "name": "Robin 600 LED Wash",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [343, 444, 203],
+                "weight": 10.6,
+                "power": 415,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 37000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [15, 60]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 450,
+                    "tiltMax": 300
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Coarse"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Coarse"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine"
+                        }
+                    ]
+                },
+                "P/T Speed - P/T Time": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Max Speed (Tracking Mode)"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Speed Max to Min (Vector Mode)"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 49],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "P/T speed mode"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "P/T Time Mode"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "BO P/T moving"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Disable BO P/T moving"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Theatre Mode ON"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Theatre Mode OFF"
+                        },
+                        {
+                            "range": [110, 139],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "P/T Reset"
+                        },
+                        {
+                            "range": [150, 179],
+                            "name": "Reseved"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "Zoom Reset"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Total Reset"
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "Reserved"
+                        }
+                    ]
+                },
+                "Red (All Zones)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "Green (All Zones)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "Blue (All Zones)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "CTC": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "CTB -> CTO"
+                        }
+                    ]
+                },
+                "Colours": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [1, 2],
+                            "name": "2700K White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [3, 3],
+                            "name": "2700K White (Halogen)",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [4, 5],
+                            "name": "3200K White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [6, 6],
+                            "name": "3200K White (Halogen)",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [7, 9],
+                            "name": "4200K White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [10, 12],
+                            "name": "5600K White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [13, 15],
+                            "name": "8000K White"
+                        },
+                        {
+                            "range": [16, 16],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [17, 55],
+                            "name": "Blue -> Cyan"
+                        },
+                        {
+                            "range": [56, 56],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [57, 95],
+                            "name": "Cyan -> Green"
+                        },
+                        {
+                            "range": [96, 96],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [97, 134],
+                            "name": "Green -> Yellow"
+                        },
+                        {
+                            "range": [135, 135],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [136, 174],
+                            "name": "Yellow -> Red"
+                        },
+                        {
+                            "range": [175, 175],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [176, 214],
+                            "name": "Red -> Magenta"
+                        },
+                        {
+                            "range": [215, 215],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [216, 246],
+                            "name": "Magenta -> Blue"
+                        },
+                        {
+                            "range": [247, 247],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [248, 248],
+                            "name": "Rainbow (Fade)"
+                        },
+                        {
+                            "range": [249, 249],
+                            "name": "Rainbow"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Zone Effect"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min to Max"
+                        }
+                    ]
+                },
+                "Zoom Fine": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Zooming"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Strobe >> (Z3)"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe >> (All Zones)"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Effects >>"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Effects <<"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Opening Pulse >"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "Closing Pulse <"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "Rnd Strobe >> (Rndm Zone)"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "Random Strobe >> (Rndm Strb+Zone)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random Strobe >> (All Zones)"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer 0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer Fine": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Dimming"
+                        }
+                    ]
+                },
+                "White (All Zones)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "Red Fine (All Zones)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "Green Fine (All Zones)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "Blue Fine (All Zones)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "White Fine (All Zones)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "Red (Z1)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "Green (Z1)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "Blue (Z1)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "White (Z1)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "Red Fine (Z1)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "Green Fine (Z1)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "Blue Fine (Z1)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "White Fine (Z1)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "Red (Z2)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "Green (Z2)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "Blue (Z2)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "White (Z2)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "Red Fine (Z2)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "Green Fine (Z2)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "Blue Fine (Z2)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "White Fine (Z2)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "Red (Z3)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "Green (Z3)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "Blue (Z3)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "White (Z3)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "Red Fine (Z3)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "Green Fine (Z3)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "Blue Fine (Z3)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "White Fine (Z3)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ],
+                [
+                    "Zoom",
+                    "Zoom Fine"
+                ],
+                [
+                    "Dimmer",
+                    "Dimmer Fine"
+                ],
+                [
+                    "Red (All Zones)",
+                    "Red Fine (All Zones)"
+                ],
+                [
+                    "Green (All Zones)",
+                    "Green Fine (All Zones)"
+                ],
+                [
+                    "Blue (All Zones)",
+                    "Blue Fine (All Zones)"
+                ],
+                [
+                    "White (All Zones)",
+                    "White Fine (All Zones)"
+                ],
+                [
+                    "Red (Z1)",
+                    "Red Fine (Z1)"
+                ],
+                [
+                    "Green (Z1)",
+                    "Green Fine (Z1)"
+                ],
+                [
+                    "Blue (Z1)",
+                    "Blue Fine (Z1)"
+                ],
+                [
+                    "White (Z1)",
+                    "White Fine (Z1)"
+                ],
+                [
+                    "Red (Z2)",
+                    "Red Fine (Z2)"
+                ],
+                [
+                    "Green (Z2)",
+                    "Green Fine (Z2)"
+                ],
+                [
+                    "Blue (Z2)",
+                    "Blue Fine (Z2)"
+                ],
+                [
+                    "White (Z2)",
+                    "White Fine (Z2)"
+                ],
+                [
+                    "Red (Z3)",
+                    "Red Fine (Z3)"
+                ],
+                [
+                    "Green (Z3)",
+                    "Green Fine (Z3)"
+                ],
+                [
+                    "Blue (Z3)",
+                    "Blue Fine (Z3)"
+                ],
+                [
+                    "White (Z3)",
+                    "White Fine (Z3)"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "P/T Speed - P/T Time",
+                        "Control",
+                        "Red (Z1)",
+                        "Red Fine (Z1)",
+                        "Green (Z1)",
+                        "Green Fine (Z1)",
+                        "Blue (Z1)",
+                        "Blue Fine (Z1)",
+                        "White (Z1)",
+                        "White Fine (Z1)",
+                        "Red (Z2)",
+                        "Red Fine (Z2)",
+                        "Green (Z2)",
+                        "Green Fine (Z2)",
+                        "Blue (Z2)",
+                        "Blue Fine (Z2)",
+                        "White (Z2)",
+                        "White Fine (Z2)",
+                        "Red (Z3)",
+                        "Red Fine (Z3)",
+                        "Green (Z3)",
+                        "Green Fine (Z3)",
+                        "Blue (Z3)",
+                        "Blue Fine (Z3)",
+                        "White (Z3)",
+                        "White Fine (Z3)",
+                        "CTC",
+                        "Colours",
+                        "Zoom",
+                        "Zoom Fine",
+                        "Shutter",
+                        "Dimmer",
+                        "Dimmer Fine"
+                    ]
+                },
+                {
+                    "name": "Mode 2",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "P/T Speed - P/T Time",
+                        "Control",
+                        "Red (All Zones)",
+                        "Red Fine (All Zones)",
+                        "Green (All Zones)",
+                        "Green Fine (All Zones)",
+                        "Blue (All Zones)",
+                        "Blue Fine (All Zones)",
+                        "White (All Zones)",
+                        "White Fine (All Zones)",
+                        "CTC",
+                        "Colours",
+                        "Zoom",
+                        "Zoom Fine",
+                        "Shutter",
+                        "Dimmer",
+                        "Dimmer Fine"
+                    ]
+                },
+                {
+                    "name": "Mode 3",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "P/T Speed - P/T Time",
+                        "Control",
+                        "Red (All Zones)",
+                        "Green (All Zones)",
+                        "Blue (All Zones)",
+                        "White (All Zones)",
+                        "CTC",
+                        "Colours",
+                        "Zoom",
+                        "Shutter",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "Mode 4",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "P/T Speed - P/T Time",
+                        "Control",
+                        "Colours",
+                        "Zoom",
+                        "Shutter",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "Mode 5",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "P/T Speed - P/T Time",
+                        "Control",
+                        "Zoom",
+                        "Zoom Fine",
+                        "Shutter",
+                        "Dimmer",
+                        "Dimmer Fine",
+                        "CTC",
+                        "Colours",
+                        "Red (Z1)",
+                        "Red Fine (Z1)",
+                        "Green (Z1)",
+                        "Green Fine (Z1)",
+                        "Blue (Z1)",
+                        "Blue Fine (Z1)",
+                        "White (Z1)",
+                        "White Fine (Z1)",
+                        "Red (Z2)",
+                        "Red Fine (Z2)",
+                        "Green (Z2)",
+                        "Green Fine (Z2)",
+                        "Blue (Z2)",
+                        "Blue Fine (Z2)",
+                        "White (Z2)",
+                        "White Fine (Z2)",
+                        "Red (Z3)",
+                        "Red Fine (Z3)",
+                        "Green (Z3)",
+                        "Green Fine (Z3)",
+                        "Blue (Z3)",
+                        "Blue Fine (Z3)",
+                        "White (Z3)",
+                        "White Fine (Z3)"
+                    ]
+                }
+            ]
+        }
+    ]
+}

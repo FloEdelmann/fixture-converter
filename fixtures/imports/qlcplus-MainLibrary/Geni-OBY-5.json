@@ -1,0 +1,560 @@
+{
+    "manufacturers": {
+        "Geni": {
+            "name": "Geni"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Geni",
+            "name": "OBY 5",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [400, 280, 540],
+                "weight": 26,
+                "power": 800,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "HTI 575W",
+                    "colorTemperature": 6000
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 570,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan 0-570°"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt 0-270°"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 > 100%"
+                        }
+                    ]
+                },
+                "Shutter / Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [1, 7],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [8, 63],
+                            "name": "Strobe slow to fast"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [72, 127],
+                            "name": "Shutter from narrow to wide"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [136, 191],
+                            "name": "Shutter from wide to narrow"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [200, 253],
+                            "name": "Random shutter from slow to fast"
+                        },
+                        {
+                            "range": [254, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Color 1": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 13],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [14, 27],
+                            "name": "Steel Blue",
+                            "color": "#75c5f0"
+                        },
+                        {
+                            "range": [28, 41],
+                            "name": "Orange",
+                            "color": "#ff6600"
+                        },
+                        {
+                            "range": [42, 55],
+                            "name": "Green Blue",
+                            "color": "#85c226"
+                        },
+                        {
+                            "range": [56, 69],
+                            "name": "Bright Blue",
+                            "color": "#281770"
+                        },
+                        {
+                            "range": [70, 83],
+                            "name": "Bright Pink",
+                            "color": "#974578"
+                        },
+                        {
+                            "range": [84, 97],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [98, 111],
+                            "name": "Deep Blue",
+                            "color": "#bab3d7"
+                        },
+                        {
+                            "range": [112, 125],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [126, 139],
+                            "name": "Rose",
+                            "color": "#f09ca1"
+                        },
+                        {
+                            "range": [140, 153],
+                            "name": "Light Green",
+                            "color": "#009140"
+                        },
+                        {
+                            "range": [154, 167],
+                            "name": "Turquoise",
+                            "color": "#007dc2"
+                        },
+                        {
+                            "range": [168, 255],
+                            "name": "Color rotation from slow to fast"
+                        }
+                    ]
+                },
+                "Color 2": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 13],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [14, 27],
+                            "name": "Steel Blue",
+                            "color": "#75c5f0"
+                        },
+                        {
+                            "range": [28, 41],
+                            "name": "Rose Pink",
+                            "color": "#f89ca1"
+                        },
+                        {
+                            "range": [42, 55],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [56, 69],
+                            "name": "Pale Blue",
+                            "color": "#b5dec7",
+                            "color2": "#fffa9c"
+                        },
+                        {
+                            "range": [70, 83],
+                            "name": "C.T Orange",
+                            "color": "#fffa9c"
+                        },
+                        {
+                            "range": [84, 97],
+                            "name": "Pale Blue / C. T Orange"
+                        },
+                        {
+                            "range": [98, 111],
+                            "name": "Steel Blue / Orange",
+                            "color": "#75c5f0",
+                            "color2": "#ffaa00"
+                        },
+                        {
+                            "range": [112, 125],
+                            "name": "Green / Yellow",
+                            "color": "#00ff00",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [126, 139],
+                            "name": "Rose Pink / Moss Green",
+                            "color": "#bab3d7",
+                            "color2": "#85c226"
+                        },
+                        {
+                            "range": [140, 153],
+                            "name": "Rose Pink / Yellow / Steel Blue / Green"
+                        },
+                        {
+                            "range": [154, 167],
+                            "name": "Yellow / Moss Green / Orange / Steel Blue"
+                        },
+                        {
+                            "range": [168, 255],
+                            "name": "Color rotation from slow to fast"
+                        }
+                    ]
+                },
+                "Gobo 1": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Gobo 9"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "Gobo 10"
+                        },
+                        {
+                            "range": [160, 255],
+                            "name": "Gobo wheel rotation from slow to fast"
+                        }
+                    ]
+                },
+                "Gobo 2": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 23],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [24, 47],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [48, 71],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [72, 95],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [96, 119],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [120, 143],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [144, 167],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [168, 255],
+                            "name": "Gobo rotation from fast to slow"
+                        }
+                    ]
+                },
+                "Prism Rotation": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "Simple"
+                        },
+                        {
+                            "range": [2, 7],
+                            "name": "Triple Prism Static"
+                        },
+                        {
+                            "range": [8, 132],
+                            "name": "Rotate Clockwise from fast to slow"
+                        },
+                        {
+                            "range": [133, 253],
+                            "name": "Rotate Counter Clockwise from slow to fast"
+                        },
+                        {
+                            "range": [254, 255],
+                            "name": "Triple Prisme Static"
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [1, 159],
+                            "name": "Diameter from min to max"
+                        },
+                        {
+                            "range": [160, 207],
+                            "name": "Iris in from slow to fast"
+                        },
+                        {
+                            "range": [208, 253],
+                            "name": "Iris out from fast to slow"
+                        },
+                        {
+                            "range": [254, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "from far to near"
+                        }
+                    ]
+                },
+                "Lamp switch": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 47],
+                            "name": "Standby"
+                        },
+                        {
+                            "range": [48, 95],
+                            "name": "Lamp on after 3s"
+                        },
+                        {
+                            "range": [96, 159],
+                            "name": "Standy"
+                        },
+                        {
+                            "range": [160, 207],
+                            "name": "Lamp off after 3s"
+                        },
+                        {
+                            "range": [208, 255],
+                            "name": "Standby"
+                        }
+                    ]
+                },
+                "Gobo 2 Rotate": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Angle adjustment from 0 to 360°"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Rotate Clockwise from fast to slow"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Rotate Counter Clockwise from slow to fast"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Slow moving in short distance"
+                        },
+                        {
+                            "range": [8, 63],
+                            "name": "Fast moving in short distance"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Fast auto reset after 3s"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "14 Channe (CH1 On / 16bit Off)",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Dimmer",
+                        "Shutter / Strobe",
+                        "Color 1",
+                        "Color 2",
+                        "Gobo 1",
+                        "Gobo 2",
+                        "Gobo 2 Rotate",
+                        "Prism Rotation",
+                        "Iris",
+                        "Focus",
+                        "Control",
+                        "Lamp switch"
+                    ]
+                },
+                {
+                    "name": "16 Channel (CH1 On / 16bit On)",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan fine",
+                        "Tilt fine",
+                        "Dimmer",
+                        "Shutter / Strobe",
+                        "Color 1",
+                        "Color 2",
+                        "Gobo 1",
+                        "Gobo 2",
+                        "Gobo 2 Rotate",
+                        "Prism Rotation",
+                        "Iris",
+                        "Focus",
+                        "Control",
+                        "Lamp switch"
+                    ]
+                },
+                {
+                    "name": "16 Channel (CH1 Off / 16bit On)",
+                    "channels": [
+                        "Dimmer",
+                        "Shutter / Strobe",
+                        "Color 1",
+                        "Color 2",
+                        "Gobo 1",
+                        "Gobo 2",
+                        "Gobo 2 Rotate",
+                        "Prism Rotation",
+                        "Iris",
+                        "Focus",
+                        "Pan",
+                        "Tilt",
+                        "Pan fine",
+                        "Tilt fine",
+                        "Control",
+                        "Lamp switch"
+                    ]
+                },
+                {
+                    "name": "14 Channel (CH1 Off / 16bit Off)",
+                    "channels": [
+                        "Dimmer",
+                        "Shutter / Strobe",
+                        "Color 1",
+                        "Color 2",
+                        "Gobo 1",
+                        "Gobo 2",
+                        "Gobo 2 Rotate",
+                        "Prism Rotation",
+                        "Iris",
+                        "Focus",
+                        "Pan",
+                        "Tilt",
+                        "Control",
+                        "Lamp switch"
+                    ]
+                }
+            ]
+        }
+    ]
+}

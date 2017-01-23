@@ -1,0 +1,153 @@
+{
+    "manufacturers": {
+        "Ledj": {
+            "name": "Ledj"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Ledj",
+            "name": "Performer 18 Quad",
+            "type": "Other",
+            "physical": {
+                "dimensions": [297, 255, 325],
+                "weight": 2.6,
+                "power": 160,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [40, 40]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Master dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer"
+                        }
+                    ]
+                },
+                "Strobe speed": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Stobe speed"
+                        }
+                    ]
+                },
+                "Programme": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 49],
+                            "name": "DMX control"
+                        },
+                        {
+                            "range": [50, 99],
+                            "name": "Colour change"
+                        },
+                        {
+                            "range": [100, 149],
+                            "name": "Colour fade"
+                        },
+                        {
+                            "range": [150, 199],
+                            "name": "Colour fade in/out"
+                        },
+                        {
+                            "range": [200, 255],
+                            "name": "Sound activated"
+                        }
+                    ]
+                },
+                "Chase / fade speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Chase / fade speed"
+                        }
+                    ]
+                },
+                "Red intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity"
+                        }
+                    ]
+                },
+                "Green intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green ntensity"
+                        }
+                    ]
+                },
+                "Blue intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue ntensity"
+                        }
+                    ]
+                },
+                "White intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White ntensity"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "8 channel",
+                    "channels": [
+                        "Master dimmer",
+                        "Strobe speed",
+                        "Programme",
+                        "Chase / fade speed",
+                        "Red intensity",
+                        "Green intensity",
+                        "Blue intensity",
+                        "White intensity"
+                    ]
+                },
+                {
+                    "name": "4 channel",
+                    "channels": [
+                        "Red intensity",
+                        "Green intensity",
+                        "Blue intensity",
+                        "White intensity"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "manufacturers": {
+        "Pulse": {
+            "name": "Pulse"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Pulse",
+            "name": "ECO LED PAR56",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [201, 201, 266],
+                "weight": 1.6,
+                "power": 20,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Mode Control": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "RGB Control CH2 = Red, CH3 = Green, CH4 = Blue"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "7 Colour Fade, CH5 = Speed"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "7 Colour Change, CH5 = Speed"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "3 Colour Change, CH5 = Speed"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Speed Control": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "no function - no speed"
+                        },
+                        {
+                            "range": [11, 100],
+                            "name": "Speed (fast to slow)"
+                        },
+                        {
+                            "range": [101, 150],
+                            "name": "no function - no speed"
+                        },
+                        {
+                            "range": [151, 255],
+                            "name": "Speed control by unit, music [DipSW4 = 0] or potentiometer [DipSW4 = 1]"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "5 Channel",
+                    "channels": [
+                        "Mode Control",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Speed Control"
+                    ]
+                },
+                {
+                    "name": "3 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

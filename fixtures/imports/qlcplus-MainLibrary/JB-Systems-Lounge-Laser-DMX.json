@@ -1,0 +1,218 @@
+{
+    "manufacturers": {
+        "JB Systems": {
+            "name": "JB Systems"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "JB Systems",
+            "name": "Lounge Laser DMX",
+            "type": "Dimmer",
+            "physical": {
+                "dimensions": [233, 86, 160],
+                "weight": 1.6,
+                "power": 15,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "Laser/LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "1-Channel Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Laser off (blackout)",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [8, 100],
+                            "name": "ArA, automatic random play"
+                        },
+                        {
+                            "range": [101, 170],
+                            "name": "SrA, slow random play"
+                        },
+                        {
+                            "range": [171, 255],
+                            "name": "Sou, sound activated random play"
+                        }
+                    ]
+                },
+                "Mode Select": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 51],
+                            "name": "Laser off (blackout)",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [52, 102],
+                            "name": "ArA, automatic random play"
+                        },
+                        {
+                            "range": [103, 154],
+                            "name": "SrA, slow random play"
+                        },
+                        {
+                            "range": [155, 206],
+                            "name": "Sou, sound activated random play"
+                        },
+                        {
+                            "range": [207, 255],
+                            "name": "Laser in DMX mode"
+                        }
+                    ]
+                },
+                "Red Laser Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [5, 127],
+                            "name": "Laser on"
+                        },
+                        {
+                            "range": [128, 254],
+                            "name": "Frequency from fast to slow"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Sound controlled"
+                        }
+                    ]
+                },
+                "Green Laser Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [5, 127],
+                            "name": "Laser on"
+                        },
+                        {
+                            "range": [128, 254],
+                            "name": "Frequency from fast to slow"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Sound controlled"
+                        }
+                    ]
+                },
+                "Rotation Laser Dots": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No"
+                        },
+                        {
+                            "range": [5, 127],
+                            "name": "Clockwise from slow to fast"
+                        },
+                        {
+                            "range": [128, 133],
+                            "name": "No"
+                        },
+                        {
+                            "range": [134, 255],
+                            "name": "Counterclockwise from slow to fast"
+                        }
+                    ]
+                },
+                "Rotation LED Effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No"
+                        },
+                        {
+                            "range": [5, 127],
+                            "name": "Clockwise from slow to fast"
+                        },
+                        {
+                            "range": [128, 133],
+                            "name": "No"
+                        },
+                        {
+                            "range": [134, 255],
+                            "name": "Counterclockwise from slow to fast"
+                        }
+                    ]
+                },
+                "Dimmer LED": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [5, 255],
+                            "name": "Level from low to high"
+                        }
+                    ]
+                },
+                "LED Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [5, 127],
+                            "name": "LED on"
+                        },
+                        {
+                            "range": [128, 254],
+                            "name": "Frequency from fast to slow"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Sound controlled"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "1-Channel",
+                    "channels": [
+                        "1-Channel Mode"
+                    ]
+                },
+                {
+                    "name": "7-Channel",
+                    "channels": [
+                        "Mode Select",
+                        "Red Laser Strobe",
+                        "Green Laser Strobe",
+                        "Rotation Laser Dots",
+                        "Rotation LED Effect",
+                        "Dimmer LED",
+                        "LED Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

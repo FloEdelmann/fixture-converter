@@ -1,0 +1,160 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "Mini Kinta",
+            "type": "Flower",
+            "physical": {
+                "dimensions": [258, 182, 190],
+                "weight": 2,
+                "power": 25,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [135, 135]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Control/Operating Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [6, 20],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [21, 35],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [36, 50],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [51, 65],
+                            "name": "White"
+                        },
+                        {
+                            "range": [66, 80],
+                            "name": "Red/Green",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [81, 95],
+                            "name": "Red/Blue",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [96, 110],
+                            "name": "Red/White",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [111, 125],
+                            "name": "Green/Blue",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [126, 140],
+                            "name": "Green/White",
+                            "color": "#00ff00",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [141, 155],
+                            "name": "Blue/White",
+                            "color": "#0000ff",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [156, 170],
+                            "name": "Red/Green/Blue"
+                        },
+                        {
+                            "range": [171, 185],
+                            "name": "Red/Green/White"
+                        },
+                        {
+                            "range": [186, 200],
+                            "name": "Green/Blue/White"
+                        },
+                        {
+                            "range": [201, 215],
+                            "name": "Red/Green/Blue/White"
+                        },
+                        {
+                            "range": [216, 230],
+                            "name": "Automatic (4 color chase)"
+                        },
+                        {
+                            "range": [231, 255],
+                            "name": "Automatic (7 color chase)"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "No strobe"
+                        },
+                        {
+                            "range": [6, 255],
+                            "name": "Slow -> fast"
+                        }
+                    ]
+                },
+                "Motor Rotation": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [1, 127],
+                            "name": "Motor indexing"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Motor speed (bi-directional)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-Channel",
+                    "channels": [
+                        "Control/Operating Mode",
+                        "Strobe",
+                        "Motor Rotation"
+                    ]
+                }
+            ]
+        }
+    ]
+}

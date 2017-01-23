@@ -1,0 +1,104 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "UV COB Cannon",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [320, 200, 278],
+                "weight": 4.98,
+                "power": 120,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [33, 33]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimming": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimming (0 - 100%)"
+                        }
+                    ]
+                },
+                "Strobing": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobing (Slow to Fast)"
+                        }
+                    ]
+                },
+                "Dimmer Curves": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "Standard"
+                        },
+                        {
+                            "range": [21, 40],
+                            "name": "Stage"
+                        },
+                        {
+                            "range": [41, 60],
+                            "name": "TV"
+                        },
+                        {
+                            "range": [61, 80],
+                            "name": "Architectural"
+                        },
+                        {
+                            "range": [81, 100],
+                            "name": "Theatre"
+                        },
+                        {
+                            "range": [101, 255],
+                            "name": "Delay Mode Control"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "1 Channel",
+                    "channels": [
+                        "Dimming"
+                    ]
+                },
+                {
+                    "name": "2 Channel",
+                    "channels": [
+                        "Dimming",
+                        "Strobing"
+                    ]
+                },
+                {
+                    "name": "3 Channel",
+                    "channels": [
+                        "Dimming",
+                        "Strobing",
+                        "Dimmer Curves"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,157 @@
+{
+    "manufacturers": {
+        "Ayra": {
+            "name": "Ayra"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Ayra",
+            "name": "TDC Agaricus",
+            "type": "Effect",
+            "physical": {
+                "dimensions": [280, 280, 310],
+                "weight": 3,
+                "power": 25,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Black out"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Red Dimmer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Black out"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Red dimmer"
+                        }
+                    ]
+                },
+                "Green dimmer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Black out"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Green dimmer"
+                        }
+                    ]
+                },
+                "Blue dimmer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Black out"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Blue dimmer"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Black out"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Strobe, slow to fast"
+                        }
+                    ]
+                },
+                "RGB color mixation": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Black out"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "RGB color mixation"
+                        }
+                    ]
+                },
+                "Motor": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Adjust motor"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Motor move forward and back, slow to fast"
+                        }
+                    ]
+                },
+                "Sound Controlled": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Sound Off"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Sound On"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "8 Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Red Dimmer",
+                        "Green dimmer",
+                        "Blue dimmer",
+                        "Strobe",
+                        "RGB color mixation",
+                        "Motor",
+                        "Sound Controlled"
+                    ]
+                }
+            ]
+        }
+    ]
+}

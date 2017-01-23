@@ -1,0 +1,185 @@
+{
+    "manufacturers": {
+        "Pro-Lights": {
+            "name": "Pro-Lights"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Pro-Lights",
+            "name": "Explo 3000D",
+            "type": "Strobe",
+            "physical": {
+                "dimensions": [472, 255, 152],
+                "weight": 6.7,
+                "power": 3000,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "colorTemperature": 5600
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Flash Intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [6, 255],
+                            "name": "Flash Intensity Min. > Max."
+                        }
+                    ]
+                },
+                "Flash Duration (0-650 ms @ 50Hz or 0-530 ms @ 60Hz)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Flash Duration 1"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Flash Duration 2"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Flash Duration 3"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Flash Duration 4"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Flash Duration 5"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Flash Duration 6"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Flash Duration 7"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Flash Duration 8"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Flash Duration 9"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "Flash Duration 10"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "Flash Duration 11"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "Flash Duration 12"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "Flash Duration 13"
+                        },
+                        {
+                            "range": [208, 223],
+                            "name": "Flash Duration 14"
+                        },
+                        {
+                            "range": [224, 239],
+                            "name": "Flash Duration 15"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Flash Duration 16"
+                        }
+                    ]
+                },
+                "Flash Rate": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "No flash (single flash with ch.1)"
+                        },
+                        {
+                            "range": [6, 255],
+                            "name": "Flash Rate (0,5-17 Hz @ 50 Hz or 0,6-20 Hz @ 60 Hz)"
+                        }
+                    ]
+                },
+                "Build-In Effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "No effect"
+                        },
+                        {
+                            "range": [6, 42],
+                            "name": "Ramp Up"
+                        },
+                        {
+                            "range": [43, 85],
+                            "name": "Ramp Down"
+                        },
+                        {
+                            "range": [86, 128],
+                            "name": "Ramp Up-Down"
+                        },
+                        {
+                            "range": [129, 171],
+                            "name": "Lightning"
+                        },
+                        {
+                            "range": [172, 214],
+                            "name": "Random"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Spikes"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Ch3 Mode",
+                    "channels": [
+                        "Flash Intensity",
+                        "Flash Duration (0-650 ms @ 50Hz or 0-530 ms @ 60Hz)",
+                        "Flash Rate"
+                    ]
+                },
+                {
+                    "name": "Ch4 Mode",
+                    "channels": [
+                        "Flash Intensity",
+                        "Flash Duration (0-650 ms @ 50Hz or 0-530 ms @ 60Hz)",
+                        "Flash Rate",
+                        "Build-In Effect"
+                    ]
+                },
+                {
+                    "name": "Ch1 Mode",
+                    "channels": [
+                        "Flash Rate"
+                    ]
+                }
+            ]
+        }
+    ]
+}

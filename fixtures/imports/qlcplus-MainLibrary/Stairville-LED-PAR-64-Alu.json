@@ -1,0 +1,118 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "LED PAR 64 Alu",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [260, 260, 290],
+                "weight": 2.12,
+                "power": 16,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "RGB Control"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "7 Colour Fades"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "7 Colour Changes"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "3 Colour Changes"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dim"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dim"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dim"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Speed"
+                        },
+                        {
+                            "range": [11, 100],
+                            "name": "high to low"
+                        },
+                        {
+                            "range": [101, 150],
+                            "name": "Speed"
+                        },
+                        {
+                            "range": [151, 255],
+                            "name": "Speed control by the device, via music or controller"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Mode",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

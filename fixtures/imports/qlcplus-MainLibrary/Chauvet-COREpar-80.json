@@ -1,0 +1,190 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "COREpar 80",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [200, 253, 143],
+                "weight": 2,
+                "power": 72,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [40, 90]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Color Macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Color macros"
+                        }
+                    ]
+                },
+                "Strobe/Speed/Sound Sensivity": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No function/slow to fast/off"
+                        },
+                        {
+                            "range": [11, 15],
+                            "name": "No function/slow to fast/control the sound sensitivity level"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Slow to fast/slow to fast/control the sound sensitivity level"
+                        }
+                    ]
+                },
+                "Programs": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Pulse effect 0-100%"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Pulse effect 100%-0"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Pulse effect 100%-0-100%"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Auto fade transition"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Auto snap transition (7 colors)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Auto snap transition (18 colors)"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Sound-active mode"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Dimmer Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 51],
+                            "name": "Default set from menu"
+                        },
+                        {
+                            "range": [52, 101],
+                            "name": "Dimmer speed mode off"
+                        },
+                        {
+                            "range": [102, 152],
+                            "name": "Mode 1 (fast)"
+                        },
+                        {
+                            "range": [153, 203],
+                            "name": "Mode 2 (medium)"
+                        },
+                        {
+                            "range": [204, 255],
+                            "name": "Mode 3 (slow)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "8-CH",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color Macros",
+                        "Strobe/Speed/Sound Sensivity",
+                        "Programs",
+                        "Dimmer",
+                        "Dimmer Speed"
+                    ]
+                },
+                {
+                    "name": "3-CH",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

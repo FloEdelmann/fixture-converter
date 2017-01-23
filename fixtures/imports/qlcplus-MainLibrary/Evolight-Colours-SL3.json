@@ -1,0 +1,131 @@
+{
+    "manufacturers": {
+        "Evolight": {
+            "name": "Evolight"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Evolight",
+            "name": "Colours SL3",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [190, 230, 145],
+                "weight": 2.1,
+                "power": 20,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "LED",
+                    "colorTemperature": 5500
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [7, 12]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 350,
+                    "tiltMax": 105
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Speed: Fast > Slow"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Shutter Closed"
+                        },
+                        {
+                            "range": [11, 128],
+                            "name": "Strobe"
+                        },
+                        {
+                            "range": [129, 150],
+                            "name": "Shutter Open"
+                        },
+                        {
+                            "range": [151, 200],
+                            "name": "Strobe Random"
+                        },
+                        {
+                            "range": [201, 255],
+                            "name": "Shutter Open"
+                        }
+                    ]
+                },
+                "Special Function (Reset / DMX Record)": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 119],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [120, 130],
+                            "name": "RESET (After 6 sec.)"
+                        },
+                        {
+                            "range": [131, 250],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "DMX Record (After 6 sec.)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "6 Channel",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Speed",
+                        "Dimmer",
+                        "Shutter",
+                        "Special Function (Reset / DMX Record)"
+                    ]
+                }
+            ]
+        }
+    ]
+}

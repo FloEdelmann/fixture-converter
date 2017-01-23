@@ -1,0 +1,364 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "Scorpion Storm FX RGB",
+            "type": "Laser",
+            "physical": {
+                "dimensions": [232, 191, 194],
+                "weight": 1.7,
+                "power": 31,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 100,
+                    "tiltMax": 100
+                }
+            },
+            "availableChannels": {
+                "Control Functions": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 50],
+                            "name": "DMX Mode"
+                        },
+                        {
+                            "range": [51, 100],
+                            "name": "Auto program, fast"
+                        },
+                        {
+                            "range": [101, 150],
+                            "name": "Auto program, slow"
+                        },
+                        {
+                            "range": [151, 200],
+                            "name": "Sound-Active program"
+                        },
+                        {
+                            "range": [201, 255],
+                            "name": "Random program"
+                        }
+                    ]
+                },
+                "Color (Ch. 1 = 000-050)": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [5, 15],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [16, 25],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [26, 35],
+                            "name": "Blue",
+                            "color": "#00aaff"
+                        },
+                        {
+                            "range": [36, 45],
+                            "name": "Red + Green",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [46, 55],
+                            "name": "Green + Blue",
+                            "color": "#00ff00",
+                            "color2": "#00aaff"
+                        },
+                        {
+                            "range": [56, 65],
+                            "name": "Red + Blue",
+                            "color": "#ff0000",
+                            "color2": "#00aaff"
+                        },
+                        {
+                            "range": [66, 75],
+                            "name": "Red + Green, Blue"
+                        },
+                        {
+                            "range": [76, 85],
+                            "name": "Red on, Green Strobing",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [86, 95],
+                            "name": "Green on, Blue strobing",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [96, 105],
+                            "name": "Blue on, Red strobing",
+                            "color": "#0000ff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [106, 115],
+                            "name": "Red + Green, alternate strobing",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [116, 125],
+                            "name": "Green + Blue, alternate strobing",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [126, 135],
+                            "name": "Blue + Red, alternate strobing",
+                            "color": "#0000ff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [136, 145],
+                            "name": "Red + Green on, Blue strobing",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [146, 155],
+                            "name": "Blue + Green on, Red strobing",
+                            "color": "#0000ff",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [156, 165],
+                            "name": "Red + Blue on, Green strobing",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [166, 175],
+                            "name": "Blue on, Green + Red strobing"
+                        },
+                        {
+                            "range": [176, 185],
+                            "name": "Red on, Green + Blue strobing"
+                        },
+                        {
+                            "range": [186, 195],
+                            "name": "Green on, Red + Blue strobing"
+                        },
+                        {
+                            "range": [196, 205],
+                            "name": "Blue on, Red + Green alternate strobing"
+                        },
+                        {
+                            "range": [206, 215],
+                            "name": "Red on, Green + Blue alternate strobing"
+                        },
+                        {
+                            "range": [216, 225],
+                            "name": "Green on, Red + Blue alternate strobing"
+                        },
+                        {
+                            "range": [226, 255],
+                            "name": "Red + Green + Blue alternate strobing"
+                        }
+                    ]
+                },
+                "Color selection (Ch. 1 = 051-200)": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 36],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [37, 72],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [73, 108],
+                            "name": "Blue",
+                            "color": "#00aaff"
+                        },
+                        {
+                            "range": [109, 144],
+                            "name": "Red + Green",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [145, 180],
+                            "name": "Green + Blue",
+                            "color": "#00ff00",
+                            "color2": "#00aaff"
+                        },
+                        {
+                            "range": [181, 216],
+                            "name": "Blue + Red",
+                            "color": "#00aaff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [217, 255],
+                            "name": "Red + Green + Blue"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [5, 254],
+                            "name": "Strobe, Slow to fast"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Sound-Active Strobe"
+                        }
+                    ]
+                },
+                "Rotation (motor 1)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [5, 127],
+                            "name": "Clockwise rotation, slow to fast"
+                        },
+                        {
+                            "range": [128, 133],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [134, 255],
+                            "name": "Counter-clockwise rotation, slow to fast"
+                        }
+                    ]
+                },
+                "Stutter (motor 1)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [5, 56],
+                            "name": "Mode 1, slow to fast (when ch. 4 is on)"
+                        },
+                        {
+                            "range": [57, 112],
+                            "name": "Mode 2, Slow to fast (when Ch. 4 is on)"
+                        },
+                        {
+                            "range": [113, 168],
+                            "name": "Mode 3, slow to fast"
+                        },
+                        {
+                            "range": [169, 255],
+                            "name": "Mode 4, slow to fast"
+                        }
+                    ]
+                },
+                "Rotation (motor 2)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [5, 127],
+                            "name": "Clockwise rotation, slow to fast"
+                        },
+                        {
+                            "range": [128, 133],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [134, 255],
+                            "name": "Counter clockwise rotation, slow to fast"
+                        }
+                    ]
+                },
+                "Stutter (motor 2)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [5, 56],
+                            "name": "Mode 1, slow to fast (when Ch. 6 is on)"
+                        },
+                        {
+                            "range": [57, 112],
+                            "name": "Mode 2, slow to fast (when Ch. 6 is on)"
+                        },
+                        {
+                            "range": [113, 168],
+                            "name": "Mode 3, slow to fast"
+                        },
+                        {
+                            "range": [169, 255],
+                            "name": "Mode 4, slow to fast"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "7 Channel (Ch. 1 = 000-050)",
+                    "channels": [
+                        "Control Functions",
+                        "Color (Ch. 1 = 000-050)",
+                        "Strobe",
+                        "Rotation (motor 1)",
+                        "Stutter (motor 1)",
+                        "Rotation (motor 2)",
+                        "Stutter (motor 2)"
+                    ]
+                },
+                {
+                    "name": "7 Channel (Ch. 1 = 051-200)",
+                    "channels": [
+                        "Control Functions",
+                        "Color selection (Ch. 1 = 051-200)",
+                        "Strobe",
+                        "Rotation (motor 1)",
+                        "Stutter (motor 1)",
+                        "Rotation (motor 2)",
+                        "Stutter (motor 2)"
+                    ]
+                }
+            ]
+        }
+    ]
+}

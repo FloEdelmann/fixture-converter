@@ -1,0 +1,823 @@
+{
+    "manufacturers": {
+        "GLP": {
+            "name": "GLP"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "GLP",
+            "name": "Volkslicht",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [285, 356, 242],
+                "weight": 7.8,
+                "power": 180,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [10, 10]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 660,
+                    "tiltMax": 300
+                }
+            },
+            "availableChannels": {
+                "Pan coarse": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan coarse"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt coarse": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt coarse"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "RGB mix"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Amber",
+                            "color": "#ffaa00"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Warm Yellow",
+                            "color": "#ffaf00"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Yellow",
+                            "color": "#ffd400"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Turquoise",
+                            "color": "#00ff92"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Lavender",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Mauve",
+                            "color": "#ff00a1"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Magenta",
+                            "color": "#ff008a"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Pink",
+                            "color": "#ff355e"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "White CTO",
+                            "color": "#ffd175"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "White",
+                            "color": "#ffd57a"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "White CTB",
+                            "color": "#ffffc8"
+                        },
+                        {
+                            "range": [128, 128],
+                            "name": "Rainbow effect stop"
+                        },
+                        {
+                            "range": [129, 223],
+                            "name": "Rainbow effect slow-fast"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Rainbow effect, random colors, slow-fast"
+                        }
+                    ]
+                },
+                "Red coarse": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red mix"
+                        }
+                    ]
+                },
+                "Green coarse": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green mix"
+                        }
+                    ]
+                },
+                "Blue coarse": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue mix"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [16, 47],
+                            "name": "Random pulse effect, slow to fast"
+                        },
+                        {
+                            "range": [48, 79],
+                            "name": "Up-dimming then Shutter closing, slow to fast"
+                        },
+                        {
+                            "range": [80, 111],
+                            "name": "Shutter open then down-dimming, slow to fast"
+                        },
+                        {
+                            "range": [112, 143],
+                            "name": "Up-dimming then down-dimming, slow to fast"
+                        },
+                        {
+                            "range": [144, 199],
+                            "name": "Strobe effect pause, 5 s-1 s"
+                        },
+                        {
+                            "range": [200, 239],
+                            "name": "Strobe, slow to fast (1 Hz-10 Hz)"
+                        },
+                        {
+                            "range": [240, 240],
+                            "name": "Strobe 25 Hz"
+                        },
+                        {
+                            "range": [241, 241],
+                            "name": "Strobe 50 Hz"
+                        },
+                        {
+                            "range": [242, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer coarse": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "Special": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [250, 255],
+                            "name": "RESET"
+                        }
+                    ]
+                },
+                "Movement": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No movement"
+                        },
+                        {
+                            "range": [1, 1],
+                            "name": "PAN Size=1 Phase=0"
+                        },
+                        {
+                            "range": [2, 3],
+                            "name": "PAN Size=1 Phase=90"
+                        },
+                        {
+                            "range": [4, 5],
+                            "name": "PAN Size=1 Phase=180"
+                        },
+                        {
+                            "range": [6, 7],
+                            "name": "PAN Size=1 Phase=270"
+                        },
+                        {
+                            "range": [8, 9],
+                            "name": "PAN Size=2 Phase=0"
+                        },
+                        {
+                            "range": [10, 11],
+                            "name": "PAN Size=2 Phase=90"
+                        },
+                        {
+                            "range": [12, 13],
+                            "name": "PAN Size=2 Phase=180"
+                        },
+                        {
+                            "range": [14, 15],
+                            "name": "PAN Size=2 Phase=270"
+                        },
+                        {
+                            "range": [16, 17],
+                            "name": "PAN Size=3 Phase=0"
+                        },
+                        {
+                            "range": [18, 19],
+                            "name": "PAN Size=3 Phase=90"
+                        },
+                        {
+                            "range": [20, 21],
+                            "name": "PAN Size=3 Phase=180"
+                        },
+                        {
+                            "range": [22, 23],
+                            "name": "PAN Size=3 Phase=270"
+                        },
+                        {
+                            "range": [24, 25],
+                            "name": "PAN Size=4 Phase=0"
+                        },
+                        {
+                            "range": [26, 27],
+                            "name": "PAN Size=4 Phase=90"
+                        },
+                        {
+                            "range": [28, 29],
+                            "name": "PAN Size=4 Phase=180"
+                        },
+                        {
+                            "range": [30, 31],
+                            "name": "PAN Size=4 Phase=270"
+                        },
+                        {
+                            "range": [32, 33],
+                            "name": "TILT Size=1 Phase=0"
+                        },
+                        {
+                            "range": [34, 35],
+                            "name": "TILT Size=1 Phase=90"
+                        },
+                        {
+                            "range": [36, 37],
+                            "name": "TILT Size=1 Phase=180"
+                        },
+                        {
+                            "range": [38, 39],
+                            "name": "TILT Size=1 Phase=270"
+                        },
+                        {
+                            "range": [40, 41],
+                            "name": "TILT Size=2 Phase=0"
+                        },
+                        {
+                            "range": [42, 43],
+                            "name": "TILT Size=2 Phase=90"
+                        },
+                        {
+                            "range": [44, 45],
+                            "name": "TILT Size=2 Phase=180"
+                        },
+                        {
+                            "range": [46, 47],
+                            "name": "TILT Size=2 Phase=270"
+                        },
+                        {
+                            "range": [48, 49],
+                            "name": "TILT Size=3 Phase=0"
+                        },
+                        {
+                            "range": [50, 51],
+                            "name": "TILT Size=3 Phase=90"
+                        },
+                        {
+                            "range": [52, 53],
+                            "name": "TILT Size=3 Phase=180"
+                        },
+                        {
+                            "range": [54, 55],
+                            "name": "TILT Size=3 Phase=270"
+                        },
+                        {
+                            "range": [56, 57],
+                            "name": "TILT Size=4 Phase=0"
+                        },
+                        {
+                            "range": [58, 59],
+                            "name": "TILT Size=4 Phase=90"
+                        },
+                        {
+                            "range": [60, 61],
+                            "name": "TILT Size=4 Phase=180"
+                        },
+                        {
+                            "range": [62, 63],
+                            "name": "TILT Size=4 Phase=270"
+                        },
+                        {
+                            "range": [64, 65],
+                            "name": "PAN/TILT Size=1 Phase=0"
+                        },
+                        {
+                            "range": [66, 67],
+                            "name": "PAN/TILT Size=1 Phase=90"
+                        },
+                        {
+                            "range": [68, 69],
+                            "name": "PAN/TILT Size=1 Phase=180"
+                        },
+                        {
+                            "range": [70, 71],
+                            "name": "PAN/TILT Size=1 Phase=270"
+                        },
+                        {
+                            "range": [72, 73],
+                            "name": "PAN/TILT Size=2 Phase=0"
+                        },
+                        {
+                            "range": [74, 75],
+                            "name": "PAN/TILT Size=2 Phase=90"
+                        },
+                        {
+                            "range": [76, 77],
+                            "name": "PAN/TILT Size=2 Phase=180"
+                        },
+                        {
+                            "range": [78, 79],
+                            "name": "PAN/TILT Size=2 Phase=270"
+                        },
+                        {
+                            "range": [80, 81],
+                            "name": "PAN/TILT Size=3 Phase=0"
+                        },
+                        {
+                            "range": [82, 83],
+                            "name": "PAN/TILT Size=3 Phase=90"
+                        },
+                        {
+                            "range": [84, 85],
+                            "name": "PAN/TILT Size=3 Phase=180"
+                        },
+                        {
+                            "range": [86, 87],
+                            "name": "PAN/TILT Size=3 Phase=270"
+                        },
+                        {
+                            "range": [88, 89],
+                            "name": "PAN/TILT Size=4 Phase=0"
+                        },
+                        {
+                            "range": [90, 91],
+                            "name": "PAN/TILT Size=4 Phase=90"
+                        },
+                        {
+                            "range": [92, 93],
+                            "name": "PAN/TILT Size=4 Phase=180"
+                        },
+                        {
+                            "range": [94, 95],
+                            "name": "PAN/TILT Size=4 Phase=270"
+                        },
+                        {
+                            "range": [96, 97],
+                            "name": "PAN/TILT inverse Size=1 Phase=0"
+                        },
+                        {
+                            "range": [98, 99],
+                            "name": "PAN/TILT inverse Size=1 Phase=90"
+                        },
+                        {
+                            "range": [100, 101],
+                            "name": "PAN/TILT inverse Size=1 Phase=180"
+                        },
+                        {
+                            "range": [102, 103],
+                            "name": "PAN/TILT inverse Size=1 Phase=270"
+                        },
+                        {
+                            "range": [104, 105],
+                            "name": "PAN/TILT inverse Size=2 Phase=0"
+                        },
+                        {
+                            "range": [106, 107],
+                            "name": "PAN/TILT inverse Size=2 Phase=90"
+                        },
+                        {
+                            "range": [108, 109],
+                            "name": "PAN/TILT inverse Size=2 Phase=180"
+                        },
+                        {
+                            "range": [110, 111],
+                            "name": "PAN/TILT inverse Size=2 Phase=270"
+                        },
+                        {
+                            "range": [112, 113],
+                            "name": "PAN/TILT inverse Size=3 Phase=0"
+                        },
+                        {
+                            "range": [114, 115],
+                            "name": "PAN/TILT inverse Size=3 Phase=90"
+                        },
+                        {
+                            "range": [116, 117],
+                            "name": "PAN/TILT inverse Size=3 Phase=180"
+                        },
+                        {
+                            "range": [118, 119],
+                            "name": "PAN/TILT inverse Size=3 Phase=270"
+                        },
+                        {
+                            "range": [120, 121],
+                            "name": "PAN/TILT inverse Size=4 Phase=0"
+                        },
+                        {
+                            "range": [122, 123],
+                            "name": "PAN/TILT inverse Size=4 Phase=90"
+                        },
+                        {
+                            "range": [124, 125],
+                            "name": "PAN/TILT inverse Size=4 Phase=180"
+                        },
+                        {
+                            "range": [126, 127],
+                            "name": "PAN/TILT inverse Size=4 Phase=270"
+                        },
+                        {
+                            "range": [128, 129],
+                            "name": "CIRCLE Size=1 Phase=0"
+                        },
+                        {
+                            "range": [130, 131],
+                            "name": "CIRCLE Size=1 Phase=90"
+                        },
+                        {
+                            "range": [132, 133],
+                            "name": "CIRCLE Size=1 Phase=180"
+                        },
+                        {
+                            "range": [134, 135],
+                            "name": "CIRCLE Size=1 Phase=270"
+                        },
+                        {
+                            "range": [136, 137],
+                            "name": "CIRCLE Size=2 Phase=0"
+                        },
+                        {
+                            "range": [138, 139],
+                            "name": "CIRCLE Size=2 Phase=90"
+                        },
+                        {
+                            "range": [140, 141],
+                            "name": "CIRCLE Size=2 Phase=180"
+                        },
+                        {
+                            "range": [142, 143],
+                            "name": "CIRCLE Size=2 Phase=270"
+                        },
+                        {
+                            "range": [144, 145],
+                            "name": "CIRCLE Size=3 Phase=0"
+                        },
+                        {
+                            "range": [146, 147],
+                            "name": "CIRCLE Size=3 Phase=90"
+                        },
+                        {
+                            "range": [148, 149],
+                            "name": "CIRCLE Size=3 Phase=180"
+                        },
+                        {
+                            "range": [150, 151],
+                            "name": "CIRCLE Size=3 Phase=270"
+                        },
+                        {
+                            "range": [152, 153],
+                            "name": "CIRCLE Size=4 Phase=0"
+                        },
+                        {
+                            "range": [154, 155],
+                            "name": "CIRCLE Size=4 Phase=90"
+                        },
+                        {
+                            "range": [156, 157],
+                            "name": "CIRCLE Size=4 Phase=180"
+                        },
+                        {
+                            "range": [158, 159],
+                            "name": "CIRCLE Size=4 Phase=270"
+                        },
+                        {
+                            "range": [160, 161],
+                            "name": "CIRCLE inverse Size=1 Phase=0"
+                        },
+                        {
+                            "range": [162, 163],
+                            "name": "CIRCLE inverse Size=1 Phase=90"
+                        },
+                        {
+                            "range": [164, 165],
+                            "name": "CIRCLE inverse Size=1 Phase=180"
+                        },
+                        {
+                            "range": [166, 167],
+                            "name": "CIRCLE inverse Size=1 Phase=270"
+                        },
+                        {
+                            "range": [168, 169],
+                            "name": "CIRCLE inverse Size=2 Phase=0"
+                        },
+                        {
+                            "range": [170, 171],
+                            "name": "CIRCLE inverse Size=2 Phase=90"
+                        },
+                        {
+                            "range": [172, 173],
+                            "name": "CIRCLE inverse Size=2 Phase=180"
+                        },
+                        {
+                            "range": [174, 175],
+                            "name": "CIRCLE inverse Size=2 Phase=270"
+                        },
+                        {
+                            "range": [176, 177],
+                            "name": "CIRCLE inverse Size=3 Phase=0"
+                        },
+                        {
+                            "range": [178, 179],
+                            "name": "CIRCLE inverse Size=3 Phase=90"
+                        },
+                        {
+                            "range": [180, 181],
+                            "name": "CIRCLE inverse Size=3 Phase=180"
+                        },
+                        {
+                            "range": [182, 183],
+                            "name": "CIRCLE inverse Size=3 Phase=270"
+                        },
+                        {
+                            "range": [184, 185],
+                            "name": "CIRCLE inverse Size=4 Phase=0"
+                        },
+                        {
+                            "range": [186, 187],
+                            "name": "CIRCLE inverse Size=4 Phase=90"
+                        },
+                        {
+                            "range": [188, 189],
+                            "name": "CIRCLE inverse Size=4 Phase=180"
+                        },
+                        {
+                            "range": [190, 191],
+                            "name": "CIRCLE inverse Size=4 Phase=270"
+                        },
+                        {
+                            "range": [192, 193],
+                            "name": "LYING EIGHT Size=1 Phase=0"
+                        },
+                        {
+                            "range": [194, 195],
+                            "name": "LYING EIGHT Size=1 Phase=90"
+                        },
+                        {
+                            "range": [196, 197],
+                            "name": "LYING EIGHT Size=1 Phase=180"
+                        },
+                        {
+                            "range": [198, 199],
+                            "name": "LYING EIGHT Size=1 Phase=270"
+                        },
+                        {
+                            "range": [200, 201],
+                            "name": "LYING EIGHT Size=2 Phase=0"
+                        },
+                        {
+                            "range": [202, 203],
+                            "name": "LYING EIGHT Size=2 Phase=90"
+                        },
+                        {
+                            "range": [204, 205],
+                            "name": "LYING EIGHT Size=2 Phase=180"
+                        },
+                        {
+                            "range": [206, 207],
+                            "name": "LYING EIGHT Size=2 Phase=270"
+                        },
+                        {
+                            "range": [208, 209],
+                            "name": "LYING EIGHT Size=3 Phase=0"
+                        },
+                        {
+                            "range": [210, 211],
+                            "name": "LYING EIGHT Size=3 Phase=90"
+                        },
+                        {
+                            "range": [212, 213],
+                            "name": "LYING EIGHT Size=3 Phase=180"
+                        },
+                        {
+                            "range": [214, 215],
+                            "name": "LYING EIGHT Size=3 Phase=270"
+                        },
+                        {
+                            "range": [216, 217],
+                            "name": "LYING EIGHT Size=4 Phase=0"
+                        },
+                        {
+                            "range": [218, 219],
+                            "name": "LYING EIGHT Size=4 Phase=90"
+                        },
+                        {
+                            "range": [220, 221],
+                            "name": "LYING EIGHT Size=4 Phase=180"
+                        },
+                        {
+                            "range": [222, 223],
+                            "name": "LYING EIGHT Size=4 Phase=270"
+                        },
+                        {
+                            "range": [224, 225],
+                            "name": "RANDOM Size=1 Phase=0"
+                        },
+                        {
+                            "range": [226, 227],
+                            "name": "RANDOM Size=1 Phase=90"
+                        },
+                        {
+                            "range": [228, 229],
+                            "name": "RANDOM Size=1 Phase=180"
+                        },
+                        {
+                            "range": [230, 231],
+                            "name": "RANDOM Size=1 Phase=270"
+                        },
+                        {
+                            "range": [232, 233],
+                            "name": "RANDOM Size=2 Phase=0"
+                        },
+                        {
+                            "range": [234, 235],
+                            "name": "RANDOM Size=2 Phase=90"
+                        },
+                        {
+                            "range": [236, 237],
+                            "name": "RANDOM Size=2 Phase=180"
+                        },
+                        {
+                            "range": [238, 239],
+                            "name": "RANDOM Size=2 Phase=270"
+                        },
+                        {
+                            "range": [240, 241],
+                            "name": "RANDOM Size=3 Phase=0"
+                        },
+                        {
+                            "range": [242, 243],
+                            "name": "RANDOM Size=3 Phase=90"
+                        },
+                        {
+                            "range": [244, 245],
+                            "name": "RANDOM Size=3 Phase=180"
+                        },
+                        {
+                            "range": [246, 247],
+                            "name": "RANDOM Size=3 Phase=270"
+                        },
+                        {
+                            "range": [248, 249],
+                            "name": "RANDOM Size=4 Phase=0"
+                        },
+                        {
+                            "range": [250, 251],
+                            "name": "RANDOM Size=4 Phase=90"
+                        },
+                        {
+                            "range": [252, 253],
+                            "name": "RANDOM Size=4 Phase=180"
+                        },
+                        {
+                            "range": [254, 255],
+                            "name": "RANDOM Size=4 Phase=270"
+                        }
+                    ]
+                },
+                "Movement speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow to fast"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan coarse",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt coarse",
+                    "Tilt file"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "Pan coarse",
+                        "Pan fine",
+                        "Tilt coarse",
+                        "Tilt fine",
+                        "Colour",
+                        "Red coarse",
+                        "Green coarse",
+                        "Blue coarse",
+                        "Shutter",
+                        "Dimmer coarse",
+                        "Special",
+                        "Movement",
+                        "Movement speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

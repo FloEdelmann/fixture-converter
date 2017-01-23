@@ -1,0 +1,95 @@
+{
+    "manufacturers": {
+        "Showtec": {
+            "name": "Showtec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Showtec",
+            "name": "Stage Blinder Series",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [475, 515, 70],
+                "weight": 6.72,
+                "power": 2600,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MFL 650W",
+                    "colorTemperature": 3200,
+                    "lumens": 48000
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer Spot 1": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer Spot 1 (0 - 100%)"
+                        }
+                    ]
+                },
+                "Dimmer Spot 2": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer Spot 2 (0 - 100%)"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer (0 - 100%)"
+                        }
+                    ]
+                }
+            },
+            "heads": {
+                "4 DMX-head0": [
+                    "Dimmer Spot 1"
+                ],
+                "4 DMX-head1": [
+                    "Dimmer Spot 2"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "4 DMX",
+                    "channels": [
+                        "Dimmer Spot 1",
+                        "Dimmer Spot 2"
+                    ]
+                },
+                {
+                    "name": "2 DMX",
+                    "physical": {
+                        "dimensions": [350, 150, 235],
+                        "weight": 2.96,
+                        "power": 650,
+                        "bulb": {
+                            "type": "DWE PAR36 120V 650W",
+                            "lumens": 240000
+                        }
+                    },
+                    "channels": [
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,261 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "SlimPAR Pro H USB",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [253, 98, 290],
+                "weight": 3.3,
+                "power": 99,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED 10W"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [24, 24]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "UV": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Color Macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No funtion"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Color macros"
+                        }
+                    ]
+                },
+                "Speed/Sensitivity": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Slow to fast/Off"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "Slow to fast/Control the level"
+                        }
+                    ]
+                },
+                "Mode": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Pulse effect 0-100%"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Pulse effect 100%-0"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Pulse effect 100%-0-100%"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Auto fade transition"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Auto snap transition (6 colors)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Auto snap transition (32 colors)"
+                        },
+                        {
+                            "range": [224, 249],
+                            "name": "Sound-active (6 colors)"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Sound-active (32 colors)"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Dimmer Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 51],
+                            "name": "Default set from menu"
+                        },
+                        {
+                            "range": [52, 101],
+                            "name": "Mode off"
+                        },
+                        {
+                            "range": [102, 152],
+                            "name": "Mode 1 (fast speed)"
+                        },
+                        {
+                            "range": [153, 203],
+                            "name": "Mode 2 (medium speed)"
+                        },
+                        {
+                            "range": [204, 255],
+                            "name": "Mode 3 (slow speed)"
+                        }
+                    ]
+                },
+                "Amber": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No Effect"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Slow to fast"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "6 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Amber",
+                        "White",
+                        "UV"
+                    ]
+                },
+                {
+                    "name": "7 Channel",
+                    "physical": {
+                        "dimensions": [253, 290, 98],
+                        "bulb": {
+                            "lumens": 1827
+                        }
+                    },
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Amber",
+                        "White",
+                        "UV"
+                    ]
+                },
+                {
+                    "name": "12 Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Amber",
+                        "White",
+                        "UV",
+                        "Strobe",
+                        "Color Macros",
+                        "Mode",
+                        "Speed/Sensitivity",
+                        "Dimmer Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

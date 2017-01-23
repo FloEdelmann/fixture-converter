@@ -1,0 +1,250 @@
+{
+    "manufacturers": {
+        "Blizzard Lighting": {
+            "name": "Blizzard Lighting"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Blizzard Lighting",
+            "name": "LB-Par Hex",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [215, 215, 116],
+                "weight": 2.3,
+                "power": 42,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 1235
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <--> 100%"
+                        }
+                    ]
+                },
+                "Red Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <--> 100%"
+                        }
+                    ]
+                },
+                "Green Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <--> 100%"
+                        }
+                    ]
+                },
+                "Blue Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <--> 100%"
+                        }
+                    ]
+                },
+                "Amber Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <--> 100%"
+                        }
+                    ]
+                },
+                "White Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <--> 100%"
+                        }
+                    ]
+                },
+                "UV Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <--> 100%"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow <--> fast"
+                        }
+                    ]
+                },
+                "Programs, Auto and Sound Active": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Dimmer speed"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Program 1 (R/G/B jump)"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Program 2 (R/G/B fade-in/out)"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Program 3 (R/G/B fade)"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Program 4 (R/G/B/A/W/UV jump)"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Program 5 (R/G/B/A/W/UV fade-in/out)"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Program 6 (R/G/B/A/W/UV fade)"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Program 7 (7-color jump)"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Program 8 (7-color fade-in/out)"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Program 9 (7-color fade)"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Program 10 (multicolor jump)"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "Program 11 (multicolor fade-in/out)"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "Program 12 (multicolor fade)"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "Auto mode (loop all programs)"
+                        },
+                        {
+                            "range": [140, 255],
+                            "name": "Sound active mode"
+                        }
+                    ]
+                },
+                "Auto Program Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fade speed (slow <--> fast)"
+                        }
+                    ]
+                },
+                "32-Bit Dimmer": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "As set in the control menu display"
+                        },
+                        {
+                            "range": [6, 55],
+                            "name": "Mode 0 = 8-bit, 256 dimming steps"
+                        },
+                        {
+                            "range": [56, 105],
+                            "name": "Mode 1 = 32-bit, 0-25% intensity range"
+                        },
+                        {
+                            "range": [106, 155],
+                            "name": "Mode 2 = 32-bit, 0-50% intensity range"
+                        },
+                        {
+                            "range": [156, 205],
+                            "name": "Mode 3 = 32-bit, 0-75% intensity range"
+                        },
+                        {
+                            "range": [206, 255],
+                            "name": "Mode 4 = 32-bit, full intensity dimming"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "6-Channel",
+                    "channels": [
+                        "Red Intensity",
+                        "Green Intensity",
+                        "Blue Intensity",
+                        "Amber Intensity",
+                        "White Intensity",
+                        "UV Intensity"
+                    ]
+                },
+                {
+                    "name": "11-Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Red Intensity",
+                        "Green Intensity",
+                        "Blue Intensity",
+                        "Amber Intensity",
+                        "White Intensity",
+                        "UV Intensity",
+                        "Strobe",
+                        "Programs, Auto and Sound Active",
+                        "Auto Program Speed",
+                        "32-Bit Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

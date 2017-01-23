@@ -1,0 +1,334 @@
+{
+    "manufacturers": {
+        "Futurelight": {
+            "name": "Futurelight"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Futurelight",
+            "name": "Genesis 575",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [280, 700, 190],
+                "weight": 27,
+                "power": 750,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "HMI 575W",
+                    "colorTemperature": 5600
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 180,
+                    "tiltMax": 90
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Colours": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [1, 15],
+                            "name": "White+Green",
+                            "color": "#ffffff",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [16, 16],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [17, 31],
+                            "name": "Green+Red",
+                            "color": "#00ff00",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [32, 32],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [33, 47],
+                            "name": "Red+Cyan",
+                            "color": "#ff0000",
+                            "color2": "#00ffff"
+                        },
+                        {
+                            "range": [48, 48],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [49, 63],
+                            "name": "Cyan+Violet",
+                            "color": "#00ffff",
+                            "color2": "#aa00ff"
+                        },
+                        {
+                            "range": [64, 64],
+                            "name": "Violet",
+                            "color": "#aa00ff"
+                        },
+                        {
+                            "range": [65, 79],
+                            "name": "Violet+Yellow",
+                            "color": "#aa00ff",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [80, 80],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [81, 95],
+                            "name": "Yellow+Blue",
+                            "color": "#ffff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [96, 96],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [97, 111],
+                            "name": "Blue+Orange",
+                            "color": "#0000ff",
+                            "color2": "#ffaa00"
+                        },
+                        {
+                            "range": [112, 112],
+                            "name": "Orange",
+                            "color": "#ffaa00"
+                        },
+                        {
+                            "range": [113, 126],
+                            "name": "Orange+White",
+                            "color": "#ffaa00",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [127, 127],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Rainbow"
+                        }
+                    ]
+                },
+                "Gobowheel 1": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Full circle"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Gobo 1 rotating"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Gobo 1 static"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Gobo 2 rotating"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Gobo 2 static"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Gobo 3 rotating"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Gobo 3 static"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Gobo 4 rotating"
+                        }
+                    ]
+                },
+                "Rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Static"
+                        },
+                        {
+                            "range": [1, 127],
+                            "name": "Rotation to 270°"
+                        },
+                        {
+                            "range": [128, 190],
+                            "name": "Clockwise rotation with decreasing speed\n(128 = Vmax)"
+                        },
+                        {
+                            "range": [191, 192],
+                            "name": "Static"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "Counterclockwise rotation with increasing speed\n(255 = Vmax)"
+                        }
+                    ]
+                },
+                "Gobowheel 2": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [33, 33],
+                            "name": "Beam Reducer 1"
+                        },
+                        {
+                            "range": [65, 65],
+                            "name": "Beam Reducer 2"
+                        },
+                        {
+                            "range": [97, 97],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [129, 129],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [161, 161],
+                            "name": "Multi-color-Gobo"
+                        },
+                        {
+                            "range": [193, 193],
+                            "name": "Dichro-Gobo 1"
+                        },
+                        {
+                            "range": [225, 225],
+                            "name": "Dichro-Gobo 2"
+                        }
+                    ]
+                },
+                "Dimmer/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Shutter Closed"
+                        },
+                        {
+                            "range": [1, 129],
+                            "name": "Dimmer"
+                        },
+                        {
+                            "range": [130, 140],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [141, 150],
+                            "name": "Shutter Closed"
+                        },
+                        {
+                            "range": [151, 240],
+                            "name": "Strobe: 1-6 flashes per second"
+                        },
+                        {
+                            "range": [241, 245],
+                            "name": "Completely open"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "Blackout (Reset)"
+                        },
+                        {
+                            "range": [249, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Special effects": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 49],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [50, 99],
+                            "name": "Correction filter 5600° K"
+                        },
+                        {
+                            "range": [100, 149],
+                            "name": "Correction filter 3200° K"
+                        },
+                        {
+                            "range": [150, 199],
+                            "name": "Frostfilter"
+                        },
+                        {
+                            "range": [200, 249],
+                            "name": "UV-Filter"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Prisma"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "8 Channel DMX",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Colours",
+                        "Gobowheel 1",
+                        "Rotation",
+                        "Gobowheel 2",
+                        "Dimmer/Strobe",
+                        "Special effects"
+                    ]
+                }
+            ]
+        }
+    ]
+}

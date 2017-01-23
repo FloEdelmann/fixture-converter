@@ -1,0 +1,181 @@
+{
+    "manufacturers": {
+        "Litecraft": {
+            "name": "Litecraft"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Litecraft",
+            "name": "LED PAR 64 AT3",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [274, 268, 433],
+                "weight": 3.5,
+                "power": 69,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Strobe/Speed": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No strobe"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "16 speed values"
+                        }
+                    ]
+                },
+                "Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 35],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [36, 71],
+                            "name": "Automatic ramp up"
+                        },
+                        {
+                            "range": [72, 107],
+                            "name": "Automatic ramp down"
+                        },
+                        {
+                            "range": [108, 143],
+                            "name": "Automatic ramp up/down"
+                        },
+                        {
+                            "range": [144, 179],
+                            "name": "Automatic color mix mode"
+                        },
+                        {
+                            "range": [180, 215],
+                            "name": "Random 3-colors"
+                        },
+                        {
+                            "range": [216, 251],
+                            "name": "Random 7-colors"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Audio"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Color Macro Mode (1/2-Channel Mode)": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "35 colors + black"
+                        }
+                    ]
+                },
+                "Color Macro Mode (7-Channel Mode)": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 13],
+                            "name": "No macro"
+                        },
+                        {
+                            "range": [14, 255],
+                            "name": "Pre-programmed colors"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "1 Channel",
+                    "channels": [
+                        "Color Macro Mode (1/2-Channel Mode)"
+                    ]
+                },
+                {
+                    "name": "2-Channel",
+                    "channels": [
+                        "Color Macro Mode (1/2-Channel Mode)",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "3-Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "7-Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color Macro Mode (7-Channel Mode)",
+                        "Strobe/Speed",
+                        "Mode",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

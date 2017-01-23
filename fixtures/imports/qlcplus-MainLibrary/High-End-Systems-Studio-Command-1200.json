@@ -1,0 +1,336 @@
+{
+    "manufacturers": {
+        "High End Systems": {
+            "name": "High End Systems"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "High End Systems",
+            "name": "Studio Command 1200",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [352, 544, 526],
+                "weight": 24.9,
+                "power": 1400,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "MSR 1200W",
+                    "colorTemperature": 5900,
+                    "lumens": 15000
+                },
+                "lens": {
+                    "name": "Fresnel",
+                    "degreesMinMax": [8, 32]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 540,
+                    "tiltMax": 240
+                }
+            },
+            "availableChannels": {
+                "Pan (coarse)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan, Coarse Adjustment"
+                        }
+                    ]
+                },
+                "Pan (fine)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan, fine adjustment"
+                        }
+                    ]
+                },
+                "Tilt (Coarse)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt, Coarse Adjustment"
+                        }
+                    ]
+                },
+                "Tilt (Fine)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt, Fine Adjustment"
+                        }
+                    ]
+                },
+                "Color Function": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Full Speed, Continuous"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Full Speed, Cycle (Speed is set by the Cyan Channel)"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Full Speed, Random (Speed is set by the Cyan Channel)"
+                        },
+                        {
+                            "range": [48, 127],
+                            "name": "TBD"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "MSpeed, Continuous"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "MSpeed, Cycle (Speed is set by the Cyan Channel)"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "MSpeed, Random (Speed is set by the Cyan Channel)"
+                        },
+                        {
+                            "range": [176, 255],
+                            "name": "TBD"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Cyan"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Magenta"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Yellow"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Zoom (Narrow -> Wide)"
+                        }
+                    ]
+                },
+                "Shutter Function": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 23],
+                            "name": "Close"
+                        },
+                        {
+                            "range": [24, 27],
+                            "name": "Periodic Strobe (Mechanical from 1-4Hz operation)"
+                        },
+                        {
+                            "range": [28, 49],
+                            "name": "Periodic Strobe (Electronic from 5-33Hz operation)"
+                        },
+                        {
+                            "range": [50, 75],
+                            "name": "Random Random Strobe"
+                        },
+                        {
+                            "range": [76, 101],
+                            "name": "Synchronous Random Strobe"
+                        },
+                        {
+                            "range": [102, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "MSpeed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Disable"
+                        },
+                        {
+                            "range": [4, 255],
+                            "name": "Duration (252.7sec - 0.15sec)"
+                        }
+                    ]
+                },
+                "Macro": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Macro Off"
+                        },
+                        {
+                            "range": [6, 62],
+                            "name": "Pan sweep, small to large angle"
+                        },
+                        {
+                            "range": [63, 65],
+                            "name": "Macro Off"
+                        },
+                        {
+                            "range": [66, 122],
+                            "name": "Tilt sweep, small to large angle"
+                        },
+                        {
+                            "range": [123, 125],
+                            "name": "Macro Off"
+                        },
+                        {
+                            "range": [126, 160],
+                            "name": "Clockwise circle, small to large"
+                        },
+                        {
+                            "range": [161, 163],
+                            "name": "Macro Off"
+                        },
+                        {
+                            "range": [164, 198],
+                            "name": "Counterclockwise circle, small to large"
+                        },
+                        {
+                            "range": [199, 255],
+                            "name": "Reserved"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Safe (Disables all Control settings)"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Pan & Tilt MSpeed off"
+                        },
+                        {
+                            "range": [20, 28],
+                            "name": "Display Off"
+                        },
+                        {
+                            "range": [30, 38],
+                            "name": "Display Dim"
+                        },
+                        {
+                            "range": [40, 48],
+                            "name": "Display Bright"
+                        },
+                        {
+                            "range": [60, 68],
+                            "name": "Home"
+                        },
+                        {
+                            "range": [80, 88],
+                            "name": "Lamp On"
+                        },
+                        {
+                            "range": [90, 98],
+                            "name": "Lamp Off"
+                        },
+                        {
+                            "range": [120, 130],
+                            "name": "Shutdown (send for 5 secs)"
+                        },
+                        {
+                            "range": [134, 137],
+                            "name": "Lamp Assisted Strobes"
+                        },
+                        {
+                            "range": [138, 141],
+                            "name": "Lamp Functions (modifies the shutter channel)"
+                        },
+                        {
+                            "range": [142, 145],
+                            "name": "Lamp/mechanical dimming"
+                        },
+                        {
+                            "range": [146, 149],
+                            "name": "Lamp only dimming"
+                        },
+                        {
+                            "range": [150, 255],
+                            "name": "TBD"
+                        }
+                    ]
+                },
+                "Dim": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Close - Open"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan (coarse)",
+                    "Pan (fine)"
+                ],
+                [
+                    "Tilt (Coarse)",
+                    "Tilt (Fine)"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "16-Bit Mode",
+                    "channels": [
+                        "Pan (coarse)",
+                        "Pan (fine)",
+                        "Tilt (Coarse)",
+                        "Tilt (Fine)",
+                        "Color Function",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "Zoom",
+                        "Shutter Function",
+                        "Dim",
+                        "MSpeed",
+                        "Macro",
+                        "Control"
+                    ]
+                }
+            ]
+        }
+    ]
+}

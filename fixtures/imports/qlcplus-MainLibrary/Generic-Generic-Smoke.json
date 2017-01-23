@@ -1,0 +1,57 @@
+{
+    "manufacturers": {
+        "Generic": {
+            "name": "Generic"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Generic",
+            "name": "Generic Smoke",
+            "type": "Smoke",
+            "physical": {
+                "dimensions": [250, 250, 400],
+                "weight": 10,
+                "power": 500,
+                "DMXconnector": "5-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Pump": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Fan": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "Pump",
+                        "Fan"
+                    ]
+                }
+            ]
+        }
+    ]
+}

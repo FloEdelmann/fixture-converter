@@ -1,0 +1,118 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "LED PAR56",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [220, 220, 210],
+                "weight": 1.4,
+                "power": 16,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Mode": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "RGB control"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "7 colour fades"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "7 colour changes"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "3 colour changes"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Speed control": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [11, 100],
+                            "name": "High to slow"
+                        },
+                        {
+                            "range": [101, 150],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [151, 255],
+                            "name": "Speed control by the device or controller"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Mode",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Speed control"
+                    ]
+                }
+            ]
+        }
+    ]
+}

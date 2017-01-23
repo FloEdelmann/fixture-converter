@@ -1,0 +1,151 @@
+{
+    "manufacturers": {
+        "HQ Power": {
+            "name": "HQ Power"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "HQ Power",
+            "name": "VDPL110CC LED Tri Spot",
+            "type": "Dimmer",
+            "physical": {
+                "dimensions": [100, 100, 260],
+                "weight": 1,
+                "power": 11,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "10W LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red Dimmer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% ~ 100%"
+                        }
+                    ]
+                },
+                "Green Dimmer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% ~ 100%"
+                        }
+                    ]
+                },
+                "Blue Dimmer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% ~ 100%"
+                        }
+                    ]
+                },
+                "Colour Macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Colour macros"
+                        }
+                    ]
+                },
+                "Speed/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Slow ~ fast/No function"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Slow ~ fast/Slow ~ fast strobe"
+                        }
+                    ]
+                },
+                "Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "RGB mode"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Pulse 0% ~ 100%"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Pulse 100% ~ 0%"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Pulse 100% ~ 0% ~ 100%"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Auto fade transition"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Auto snap transition - 3 colours"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Auto snap transition - 7 colours"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Sound triggering mode"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% ~ 100%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "7-Channels",
+                    "channels": [
+                        "Red Dimmer",
+                        "Green Dimmer",
+                        "Blue Dimmer",
+                        "Colour Macros",
+                        "Speed/Strobe",
+                        "Mode",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

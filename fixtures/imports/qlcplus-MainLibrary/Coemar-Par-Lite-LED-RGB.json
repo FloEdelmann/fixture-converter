@@ -1,0 +1,163 @@
+{
+    "manufacturers": {
+        "Coemar": {
+            "name": "Coemar"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Coemar",
+            "name": "Par Lite LED RGB",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [212, 268, 184],
+                "weight": 3.6,
+                "power": 46,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [12, 12]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Master Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Red/Fade Speed": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%/1 second to 1 minute"
+                        }
+                    ]
+                },
+                "Green/Pause Time": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%/1 second to 3.30 minutes"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Strobe Effect": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No effect"
+                        },
+                        {
+                            "range": [10, 57],
+                            "name": "Variable speed, from slow to fast"
+                        },
+                        {
+                            "range": [58, 59],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [60, 108],
+                            "name": "Sequenced pulse effect, slow closing, fast opening"
+                        },
+                        {
+                            "range": [109, 110],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [111, 159],
+                            "name": "Sequenced pulse effect, fast closing, slow opening"
+                        },
+                        {
+                            "range": [160, 161],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [162, 207],
+                            "name": "Random effect from slow to fast with synchronised colours"
+                        },
+                        {
+                            "range": [208, 209],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "Random effect from slow to fast with non-synchronised colours"
+                        }
+                    ]
+                },
+                "Automated Functions": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No effect"
+                        },
+                        {
+                            "range": [10, 50],
+                            "name": "Automated program 1"
+                        },
+                        {
+                            "range": [51, 91],
+                            "name": "Automated program 2"
+                        },
+                        {
+                            "range": [92, 132],
+                            "name": "Automated program 3"
+                        },
+                        {
+                            "range": [133, 173],
+                            "name": "Automated program 4"
+                        },
+                        {
+                            "range": [174, 214],
+                            "name": "Random program repeat"
+                        },
+                        {
+                            "range": [215, 255],
+                            "name": "Repeat programs in sequence"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Master Dimmer",
+                        "Red/Fade Speed",
+                        "Green/Pause Time",
+                        "Blue",
+                        "Strobe Effect",
+                        "Automated Functions"
+                    ]
+                }
+            ]
+        }
+    ]
+}

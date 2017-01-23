@@ -1,0 +1,126 @@
+{
+    "manufacturers": {
+        "Stellar Labs": {
+            "name": "Stellar Labs"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stellar Labs",
+            "name": "LED PAR38 RGB (555-11410)",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [200, 170, 295],
+                "weight": 1,
+                "power": 15,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Modes": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "RGB"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "7 Color Fade"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "7 Color Change"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "3 Color Change"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [11, 100],
+                            "name": "Fast > Slow"
+                        },
+                        {
+                            "range": [101, 150],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [151, 255],
+                            "name": "Speed set by unit - Mic (sw4=1), Pot (sw4=0)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "5 Channel - 4 way dip switch set to 011",
+                    "channels": [
+                        "Modes",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Speed"
+                    ]
+                },
+                {
+                    "name": "3 Channel - 4 way dip switch set to 101",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,445 @@
+{
+    "manufacturers": {
+        "Contest": {
+            "name": "Contest"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Contest",
+            "name": "Oz-37x15QC",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [498, 594, 330],
+                "weight": 22.5,
+                "power": 650,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 265
+                }
+            },
+            "availableChannels": {
+                "PAN movement": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "PAN movement"
+                        }
+                    ]
+                },
+                "TILT movement": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "TILT movement"
+                        }
+                    ]
+                },
+                "PAN/TILT movement speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 225],
+                            "name": "Fast to slow speed settings"
+                        },
+                        {
+                            "range": [226, 235],
+                            "name": "Black out during movements"
+                        },
+                        {
+                            "range": [236, 255],
+                            "name": "No function, max speed"
+                        }
+                    ]
+                },
+                "Shutter & Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "LEDs off"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "No function, LEDs on"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Slow to fast strobe"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "No function, LEDs on"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Slow to fast pulse effect"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "No function, LEDs on"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Slow to fast random strobe"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "No function, LEDs off"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "All LEDs Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "All LEDs Red",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "All LEDs Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "All LEDs Green"
+                        }
+                    ]
+                },
+                "All LEDs Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "All LEDs Blue"
+                        }
+                    ]
+                },
+                "All LEDs White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "All LEDs White"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Zoom"
+                        }
+                    ]
+                },
+                "Colour macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [8, 39],
+                            "name": "From red to yellow",
+                            "color": "#ff0000",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [40, 71],
+                            "name": "From yellow to green",
+                            "color": "#ffff00",
+                            "color2": "#55ff00"
+                        },
+                        {
+                            "range": [72, 103],
+                            "name": "From green to cyan",
+                            "color": "#55ff00",
+                            "color2": "#55ffff"
+                        },
+                        {
+                            "range": [104, 135],
+                            "name": "From cyan to blue",
+                            "color": "#55ffff",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [136, 167],
+                            "name": "From blue to magenta",
+                            "color": "#0000ff",
+                            "color2": "#ff00ff"
+                        },
+                        {
+                            "range": [168, 199],
+                            "name": "From magenta to red",
+                            "color": "#ff00ff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [200, 231],
+                            "name": "From red to white",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [232, 255],
+                            "name": "Slow to fast rainbow effect"
+                        }
+                    ]
+                },
+                "Preset colours": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [5, 9],
+                            "name": "White 2700K"
+                        },
+                        {
+                            "range": [10, 14],
+                            "name": "White 3200K"
+                        },
+                        {
+                            "range": [15, 19],
+                            "name": "White 4300K"
+                        },
+                        {
+                            "range": [20, 24],
+                            "name": "White 5600K"
+                        },
+                        {
+                            "range": [25, 29],
+                            "name": "White 6500K"
+                        },
+                        {
+                            "range": [30, 34],
+                            "name": "White 8000K"
+                        },
+                        {
+                            "range": [35, 39],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [40, 44],
+                            "name": "Green",
+                            "color": "#55ff00"
+                        },
+                        {
+                            "range": [45, 49],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [50, 54],
+                            "name": "Cold white"
+                        },
+                        {
+                            "range": [55, 59],
+                            "name": "Warm white"
+                        },
+                        {
+                            "range": [60, 64],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [65, 69],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [70, 75],
+                            "name": "Cyan",
+                            "color": "#55ffff"
+                        },
+                        {
+                            "range": [76, 114],
+                            "name": "Colour palette"
+                        },
+                        {
+                            "range": [115, 119],
+                            "name": "Red/White",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [120, 124],
+                            "name": "Green/White",
+                            "color": "#ffffff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [125, 129],
+                            "name": "Blue/Red",
+                            "color": "#0000ff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [130, 134],
+                            "name": "White/Red",
+                            "color": "#ffffff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [135, 139],
+                            "name": "White/Pink",
+                            "color": "#ffffff",
+                            "color2": "#ffaaff"
+                        },
+                        {
+                            "range": [150, 255],
+                            "name": "Slow to fast rainbow effect"
+                        }
+                    ]
+                },
+                "Preset colour dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "100% - 0%"
+                        }
+                    ]
+                },
+                "Patterns sequencing": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [15, 255],
+                            "name": "Sequences"
+                        }
+                    ]
+                },
+                "Patterns sequencing speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 125],
+                            "name": "From fast to slow"
+                        },
+                        {
+                            "range": [126, 130],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [131, 255],
+                            "name": "From slow to fast"
+                        }
+                    ]
+                },
+                "Patterns sequencing fader": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow fader"
+                        }
+                    ]
+                },
+                "White balance": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 189],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [190, 254],
+                            "name": "New white balance"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Save new balance"
+                        }
+                    ]
+                },
+                "Internal programs and options": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 79],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Resets"
+                        },
+                        {
+                            "range": [100, 230],
+                            "name": "Internal program 1-7"
+                        },
+                        {
+                            "range": [231, 255],
+                            "name": "Music sensitive program"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "18 Ch Basic mode",
+                    "channels": [
+                        "PAN movement",
+                        "TILT movement",
+                        "PAN/TILT movement speed",
+                        "Shutter & Strobe",
+                        "Dimmer",
+                        "All LEDs Red",
+                        "All LEDs Green",
+                        "All LEDs Blue",
+                        "All LEDs White",
+                        "Zoom",
+                        "Colour macros",
+                        "Preset colours",
+                        "Preset colour dimmer",
+                        "Patterns sequencing",
+                        "Patterns sequencing speed",
+                        "Patterns sequencing fader",
+                        "White balance",
+                        "Internal programs and options"
+                    ]
+                }
+            ]
+        }
+    ]
+}

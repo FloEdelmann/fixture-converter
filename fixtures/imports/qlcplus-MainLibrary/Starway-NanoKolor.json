@@ -1,0 +1,328 @@
+{
+    "manufacturers": {
+        "Starway": {
+            "name": "Starway"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Starway",
+            "name": "NanoKolor",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [153, 65, 108],
+                "weight": 0.8,
+                "power": 10,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 > Max"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 > Max",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 > Max",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 > Max",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 > Max",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "Color Macro": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "None"
+                        },
+                        {
+                            "range": [11, 35],
+                            "name": "Red 100% / Green Up / Blue 0%",
+                            "color": "#ff0000",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [36, 60],
+                            "name": "Red Down / Green 100% / Blue Up",
+                            "color": "#ffff00",
+                            "color2": "#00ffff"
+                        },
+                        {
+                            "range": [61, 85],
+                            "name": "Red 0% / Green 100% / Blue Up",
+                            "color": "#00ff00",
+                            "color2": "#00ffff"
+                        },
+                        {
+                            "range": [86, 110],
+                            "name": "Red 0% / Green Down / Blue 100%",
+                            "color": "#00ffff",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [111, 130],
+                            "name": "Red Up / Green 0% / Blue 100%",
+                            "color": "#0000ff",
+                            "color2": "#ff00ff"
+                        },
+                        {
+                            "range": [131, 150],
+                            "name": "Red 100 % / Green 0% / Blue Down",
+                            "color": "#ff00ff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [151, 170],
+                            "name": "Red 100% / Green Up / Blue Up",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [171, 190],
+                            "name": "Red Down / Green Down / Blue 100%",
+                            "color": "#ffffff",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [191, 200],
+                            "name": "Red 100% / Green  100% / Blue  100% / White  100%"
+                        },
+                        {
+                            "range": [201, 205],
+                            "name": "White 1 : 3200K",
+                            "color": "#ffff7f"
+                        },
+                        {
+                            "range": [206, 210],
+                            "name": "White 2 : 3400K"
+                        },
+                        {
+                            "range": [211, 215],
+                            "name": "White 3 : 4200K",
+                            "color": "#c9fffc"
+                        },
+                        {
+                            "range": [216, 220],
+                            "name": "White 4 : 4900K"
+                        },
+                        {
+                            "range": [221, 225],
+                            "name": "White 5 : 5600K",
+                            "color": "#ffcaff"
+                        },
+                        {
+                            "range": [226, 230],
+                            "name": "White 6 : 5900K"
+                        },
+                        {
+                            "range": [231, 235],
+                            "name": "White 7 : 6500K"
+                        },
+                        {
+                            "range": [236, 240],
+                            "name": "White 8 : 7200K"
+                        },
+                        {
+                            "range": [241, 245],
+                            "name": "White 9 : 8000K"
+                        },
+                        {
+                            "range": [246, 250],
+                            "name": "White 10 : 8500K"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "White 11 : 10000K"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "None"
+                        },
+                        {
+                            "range": [5, 255],
+                            "name": "0 > Max"
+                        }
+                    ]
+                },
+                "Auto": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "None"
+                        },
+                        {
+                            "range": [21, 30],
+                            "name": "Auto 1"
+                        },
+                        {
+                            "range": [31, 40],
+                            "name": "Auto 2"
+                        },
+                        {
+                            "range": [41, 50],
+                            "name": "Auto 3"
+                        },
+                        {
+                            "range": [51, 60],
+                            "name": "Auto 4"
+                        },
+                        {
+                            "range": [61, 70],
+                            "name": "Auto 5"
+                        },
+                        {
+                            "range": [71, 80],
+                            "name": "Auto 6"
+                        },
+                        {
+                            "range": [81, 90],
+                            "name": "Auto 7"
+                        },
+                        {
+                            "range": [91, 100],
+                            "name": "Auto 8"
+                        },
+                        {
+                            "range": [101, 110],
+                            "name": "Auto 9"
+                        },
+                        {
+                            "range": [111, 120],
+                            "name": "Auto 10"
+                        },
+                        {
+                            "range": [121, 130],
+                            "name": "Custom 1"
+                        },
+                        {
+                            "range": [131, 140],
+                            "name": "Custom 2"
+                        },
+                        {
+                            "range": [141, 150],
+                            "name": "Custom 3"
+                        },
+                        {
+                            "range": [151, 160],
+                            "name": "Custom 4"
+                        },
+                        {
+                            "range": [161, 170],
+                            "name": "Custom 5"
+                        },
+                        {
+                            "range": [171, 180],
+                            "name": "Custom 6"
+                        },
+                        {
+                            "range": [181, 190],
+                            "name": "Custom 7"
+                        },
+                        {
+                            "range": [191, 200],
+                            "name": "Custom 8"
+                        },
+                        {
+                            "range": [201, 210],
+                            "name": "Custom 9"
+                        },
+                        {
+                            "range": [211, 220],
+                            "name": "Custom 10"
+                        },
+                        {
+                            "range": [221, 255],
+                            "name": "None"
+                        }
+                    ]
+                },
+                "Auto Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 > Max"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Stage 9 Channels",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Color Macro",
+                        "Strobe",
+                        "Auto",
+                        "Auto Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

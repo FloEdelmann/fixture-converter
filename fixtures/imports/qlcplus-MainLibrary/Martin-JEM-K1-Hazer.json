@@ -1,0 +1,73 @@
+{
+    "manufacturers": {
+        "Martin": {
+            "name": "Martin"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Martin",
+            "name": "JEM K1 Hazer",
+            "type": "Smoke",
+            "physical": {
+                "dimensions": [544, 459, 344],
+                "weight": 21,
+                "power": 675,
+                "DMXconnector": "3-pin and 5-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Haze Density": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Standby"
+                        },
+                        {
+                            "range": [20, 219],
+                            "name": "Proportional output level control"
+                        },
+                        {
+                            "range": [220, 255],
+                            "name": "Prime"
+                        }
+                    ]
+                },
+                "Fan Speed": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 219],
+                            "name": "0-100%, heaters on"
+                        },
+                        {
+                            "range": [220, 244],
+                            "name": "Auto fan mode"
+                        },
+                        {
+                            "range": [245, 255],
+                            "name": "Machine shutdown, heaters off"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Haze Density",
+                        "Fan Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

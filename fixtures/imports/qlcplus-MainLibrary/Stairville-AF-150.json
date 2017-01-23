@@ -1,0 +1,46 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "AF-150",
+            "type": "Smoke",
+            "physical": {
+                "dimensions": [290, 265, 450],
+                "weight": 5.5,
+                "power": 800,
+                "DMXconnector": "3-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Pump": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pump"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "1ch",
+                    "channels": [
+                        "Pump"
+                    ]
+                }
+            ]
+        }
+    ]
+}

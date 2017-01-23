@@ -1,0 +1,55 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "Hurricane Haze 2",
+            "type": "Hazer",
+            "physical": {
+                "dimensions": [267, 350, 285],
+                "weight": 8.5,
+                "power": 533,
+                "DMXconnector": "3-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Blower Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blower Speed"
+                        }
+                    ]
+                },
+                "Haze Volume": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Haze Volume"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Generic",
+                    "channels": [
+                        "Blower Speed",
+                        "Haze Volume"
+                    ]
+                }
+            ]
+        }
+    ]
+}

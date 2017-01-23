@@ -1,0 +1,160 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "LED PAR 64 Tri-B",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [251, 302, 383],
+                "weight": 2.9,
+                "power": 60,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [22, 22]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer: 0%~100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer: 0%~100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer: 0%~100%"
+                        }
+                    ]
+                },
+                "Color Macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Color macros"
+                        }
+                    ]
+                },
+                "Speed/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Slow~fast/No function"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Slow~fast/Slow~fast (6Hz ~ 18Hz)"
+                        }
+                    ]
+                },
+                "Operating Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "RGB"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Pulse effect 0%~100% (using RGB faders)"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Pulse effect 100%~0% (using RGB faders)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Pulse effect 100%~0%~100% (using RGB faders)"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Auto fade transition"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Auto snap transition (3 colors)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Auto snap transition (7 colors)"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Sound triggering"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity (RGB/macro modes): 0%~100%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "7-Channel Personality",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color Macros",
+                        "Speed/Strobe",
+                        "Operating Mode",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "3-Channel Personality",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

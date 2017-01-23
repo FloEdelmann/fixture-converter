@@ -1,0 +1,317 @@
+{
+    "manufacturers": {
+        "Pro-Lights": {
+            "name": "Pro-Lights"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Pro-Lights",
+            "name": "SmartBat",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [138, 184, 145],
+                "weight": 3.4,
+                "power": 45,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "colorTemperature": 10000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [15, 0]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0~100%"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0~100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0~100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0~100%"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0~100%"
+                        }
+                    ]
+                },
+                "Color + Color Temperature": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [11, 30],
+                            "name": "R 100%  G 0-100%   B 0",
+                            "color": "#ff0000",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [31, 50],
+                            "name": "R 100%~0  G 100%  B 0",
+                            "color": "#ffff00",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [51, 70],
+                            "name": "R 0  G 100%  B 0~100%",
+                            "color": "#00ff00",
+                            "color2": "#00ffff"
+                        },
+                        {
+                            "range": [71, 90],
+                            "name": "R 0  G 100%~0  B 100%",
+                            "color": "#00ffff",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [91, 110],
+                            "name": "R 0~100%  G 0  B 100%",
+                            "color": "#0000ff",
+                            "color2": "#ff00ff"
+                        },
+                        {
+                            "range": [111, 130],
+                            "name": "R 100%  G 0  B 100%~0",
+                            "color": "#ff00ff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [131, 150],
+                            "name": "R: 100% / G: Up / B: Up",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [151, 170],
+                            "name": "R 100%  G 100%~0  B 100%",
+                            "color": "#ffffff",
+                            "color2": "#ff00ff"
+                        },
+                        {
+                            "range": [171, 200],
+                            "name": "R 100%  G 100%  B 100%  W 100%",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [201, 205],
+                            "name": "Colot temperature 1: 3200K",
+                            "color": "#ffc076"
+                        },
+                        {
+                            "range": [206, 210],
+                            "name": "Color temperature 2: 3400K",
+                            "color": "#ffc61e"
+                        },
+                        {
+                            "range": [211, 215],
+                            "name": "Color temperature 3: 4200K",
+                            "color": "#ffd9ab"
+                        },
+                        {
+                            "range": [216, 220],
+                            "name": "Color temperature 4: 4900K",
+                            "color": "#ffe5c8"
+                        },
+                        {
+                            "range": [221, 225],
+                            "name": "Color temperature 5: 5600K",
+                            "color": "#ffefe1"
+                        },
+                        {
+                            "range": [226, 230],
+                            "name": "Color temperature 6: 5900K",
+                            "color": "#fff3ea"
+                        },
+                        {
+                            "range": [231, 235],
+                            "name": "Color temperature 7: 6500K",
+                            "color": "#fff9fb"
+                        },
+                        {
+                            "range": [236, 240],
+                            "name": "Color temperature 8: 7200K",
+                            "color": "#f3f3ff"
+                        },
+                        {
+                            "range": [241, 245],
+                            "name": "Color temperature 9: 8000K",
+                            "color": "#e5e9ff"
+                        },
+                        {
+                            "range": [246, 250],
+                            "name": "Color temperature 10: 8500K",
+                            "color": "#dfe5ff"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Color temperature 11: 10000K",
+                            "color": "#cfdaff"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "Strobe slow to fast"
+                        }
+                    ]
+                },
+                "Auto/Sound Programs": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [11, 60],
+                            "name": "Auto program 1"
+                        },
+                        {
+                            "range": [61, 120],
+                            "name": "Auto program 2"
+                        },
+                        {
+                            "range": [121, 180],
+                            "name": "Auto program 3"
+                        },
+                        {
+                            "range": [181, 240],
+                            "name": "Auto program 4"
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "Sound show"
+                        }
+                    ]
+                },
+                "Auto Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Speed slow to fast"
+                        }
+                    ]
+                },
+                "Dim Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 51],
+                            "name": "Preset dimmer speed from display menu"
+                        },
+                        {
+                            "range": [52, 101],
+                            "name": "Dimmer speed mode off"
+                        },
+                        {
+                            "range": [102, 152],
+                            "name": "Dimmer speed mode 1 (fast speed)"
+                        },
+                        {
+                            "range": [153, 203],
+                            "name": "Dimmer speed mode 2 (middle speed)"
+                        },
+                        {
+                            "range": [204, 255],
+                            "name": "Dimmer speed mode 3 (slow speed)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "10 Ch Mode",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Color + Color Temperature",
+                        "Strobe",
+                        "Auto/Sound Programs",
+                        "Auto Speed",
+                        "Dim Mode"
+                    ]
+                },
+                {
+                    "name": "4 Ch Mode",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White"
+                    ]
+                },
+                {
+                    "name": "6 Ch Mode",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

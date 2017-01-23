@@ -1,0 +1,192 @@
+{
+    "manufacturers": {
+        "Clay Paky": {
+            "name": "Clay Paky"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Clay Paky",
+            "name": "Stage Color 300 AE",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [434, 225, 1229],
+                "weight": 22.4,
+                "power": 300,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "HTI 300W",
+                    "colorTemperature": 6500,
+                    "lumens": 22000
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 360,
+                    "tiltMax": 252
+                }
+            },
+            "availableChannels": {
+                "Cyan": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Cyan intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Magenta intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Yellow intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Stopper/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 25],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [26, 230],
+                            "name": "Strobe (Slow to fast)"
+                        },
+                        {
+                            "range": [231, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan ( 0 to 360°)"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine (0.007°)"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt (0 to 252°)"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine (0.004°)"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer (0 - 100%)"
+                        }
+                    ]
+                },
+                "Frost": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Frost (0 - 100%)"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Option Stnd",
+                    "channels": [
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "Stopper/Strobe",
+                        "Pan",
+                        "Tilt",
+                        "Dimmer",
+                        "Frost"
+                    ]
+                },
+                {
+                    "name": "Option 16 b",
+                    "channels": [
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "Stopper/Strobe",
+                        "Pan",
+                        "Tilt",
+                        "Dimmer",
+                        "Frost",
+                        "Pan Fine",
+                        "Tilt Fine"
+                    ]
+                },
+                {
+                    "name": " Option Extn",
+                    "channels": [
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "Stopper/Strobe",
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Dimmer",
+                        "Frost"
+                    ]
+                }
+            ]
+        }
+    ]
+}

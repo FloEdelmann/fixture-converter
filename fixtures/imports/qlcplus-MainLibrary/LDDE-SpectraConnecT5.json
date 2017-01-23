@@ -1,0 +1,115 @@
+{
+    "manufacturers": {
+        "LDDE": {
+            "name": "LDDE"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "LDDE",
+            "name": "SpectraConnecT5",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [1488, 116, 80],
+                "weight": 8.6,
+                "power": 175,
+                "DMXconnector": "Other",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer (0 - 100%)"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White intensity"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 25],
+                            "name": "No strobe"
+                        },
+                        {
+                            "range": [26, 228],
+                            "name": "Strobe speed"
+                        },
+                        {
+                            "range": [229, 255],
+                            "name": "No strobe"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Spectra",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

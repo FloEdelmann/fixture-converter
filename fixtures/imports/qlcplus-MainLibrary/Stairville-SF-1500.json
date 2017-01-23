@@ -1,0 +1,179 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "SF-1500",
+            "type": "Smoke",
+            "physical": {
+                "dimensions": [300, 210, 620],
+                "weight": 15,
+                "power": 1500,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "None"
+                },
+                "lens": {
+                    "name": "None"
+                },
+                "focus": {
+                    "type": "None"
+                }
+            },
+            "availableChannels": {
+                "On-Off": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 13],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [14, 127],
+                            "name": "Continuos CH2"
+                        },
+                        {
+                            "range": [128, 231],
+                            "name": "Timer-Controlled CH2,3,4"
+                        },
+                        {
+                            "range": [232, 255],
+                            "name": "Continuos to MAX"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity (0% to 100%)"
+                        }
+                    ]
+                },
+                "Fog Duration": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Duration 1s"
+                        },
+                        {
+                            "range": [5, 29],
+                            "name": "Duration 13s"
+                        },
+                        {
+                            "range": [30, 54],
+                            "name": "Duration 33s"
+                        },
+                        {
+                            "range": [55, 79],
+                            "name": "Duration 53s"
+                        },
+                        {
+                            "range": [80, 104],
+                            "name": "Duration 73s"
+                        },
+                        {
+                            "range": [105, 129],
+                            "name": "Duration 92s"
+                        },
+                        {
+                            "range": [130, 154],
+                            "name": "Duration 112s"
+                        },
+                        {
+                            "range": [155, 179],
+                            "name": "Duration 131s"
+                        },
+                        {
+                            "range": [180, 204],
+                            "name": "Duration 151s"
+                        },
+                        {
+                            "range": [205, 229],
+                            "name": "Duration 107s"
+                        },
+                        {
+                            "range": [230, 254],
+                            "name": "Duration 190s"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Duration 200s"
+                        }
+                    ]
+                },
+                "Time interval": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Interval 1s"
+                        },
+                        {
+                            "range": [5, 29],
+                            "name": "Interval 13s"
+                        },
+                        {
+                            "range": [30, 54],
+                            "name": "Interval33s"
+                        },
+                        {
+                            "range": [55, 79],
+                            "name": "Interval 53s"
+                        },
+                        {
+                            "range": [80, 104],
+                            "name": "Interval 73s"
+                        },
+                        {
+                            "range": [105, 129],
+                            "name": "Interval 92s"
+                        },
+                        {
+                            "range": [130, 154],
+                            "name": "Interval 112s"
+                        },
+                        {
+                            "range": [155, 179],
+                            "name": "Interval 131s"
+                        },
+                        {
+                            "range": [180, 204],
+                            "name": "Interval 151s"
+                        },
+                        {
+                            "range": [205, 229],
+                            "name": "Interval 107s"
+                        },
+                        {
+                            "range": [230, 254],
+                            "name": "Interval 190s"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Interval 200s"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "On-Off",
+                        "Intensity",
+                        "Fog Duration",
+                        "Time interval"
+                    ]
+                }
+            ]
+        }
+    ]
+}

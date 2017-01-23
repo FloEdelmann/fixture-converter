@@ -1,0 +1,116 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "TC-200",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [280, 300, 290],
+                "weight": 7,
+                "power": 320,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "HTI 150W",
+                    "colorTemperature": 4500,
+                    "lumens": 9500
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [18, 18]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 16],
+                            "name": "White"
+                        },
+                        {
+                            "range": [17, 33],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [34, 50],
+                            "name": "Yellow"
+                        },
+                        {
+                            "range": [51, 67],
+                            "name": "Magenta"
+                        },
+                        {
+                            "range": [68, 84],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [85, 101],
+                            "name": "Orange"
+                        },
+                        {
+                            "range": [102, 118],
+                            "name": "Blue"
+                        },
+                        {
+                            "range": [119, 135],
+                            "name": "Pink"
+                        },
+                        {
+                            "range": [136, 255],
+                            "name": "Rainbow slow to fast"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer intensity"
+                        }
+                    ]
+                },
+                "Shutter, strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [15, 29],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [30, 250],
+                            "name": "Strobe slow to fast"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Open"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "Colour",
+                        "Dimmer",
+                        "Shutter, strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

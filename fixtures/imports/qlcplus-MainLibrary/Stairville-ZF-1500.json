@@ -1,0 +1,75 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "ZF-1500",
+            "type": "Smoke",
+            "physical": {
+                "dimensions": [300, 210, 620],
+                "weight": 15,
+                "power": 1500,
+                "DMXconnector": "5-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "On-Off": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "On-off"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity (0% to 100%)"
+                        }
+                    ]
+                },
+                "Sleep interval": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Sleep interval (1s to 200s)"
+                        }
+                    ]
+                },
+                "Spraying duration": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Spraying duration (1s to 200s)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "On-Off",
+                        "Intensity",
+                        "Sleep interval",
+                        "Spraying duration"
+                    ]
+                }
+            ]
+        }
+    ]
+}

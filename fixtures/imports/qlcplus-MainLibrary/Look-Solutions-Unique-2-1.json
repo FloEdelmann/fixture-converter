@@ -1,0 +1,55 @@
+{
+    "manufacturers": {
+        "Look Solutions": {
+            "name": "Look Solutions"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Look Solutions",
+            "name": "Unique 2.1",
+            "type": "Hazer",
+            "physical": {
+                "dimensions": [250, 250, 470],
+                "weight": 8.7,
+                "power": 1500,
+                "DMXconnector": "5-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Pump": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pump output"
+                        }
+                    ]
+                },
+                "Fan": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fan speed"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Standard",
+                    "channels": [
+                        "Pump",
+                        "Fan"
+                    ]
+                }
+            ]
+        }
+    ]
+}

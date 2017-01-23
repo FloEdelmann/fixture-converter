@@ -1,0 +1,493 @@
+{
+    "manufacturers": {
+        "Contest": {
+            "name": "Contest"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Contest",
+            "name": "PSC-930",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [242, 677, 212],
+                "weight": 23,
+                "power": 400,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 250W"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 156,
+                    "tiltMax": 45
+                }
+            },
+            "availableChannels": {
+                "Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 13],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [14, 27],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [28, 41],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [42, 55],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [56, 69],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [70, 83],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [84, 97],
+                            "name": "Orange",
+                            "color": "#ff5500"
+                        },
+                        {
+                            "range": [98, 111],
+                            "name": "Purple",
+                            "color": "#aa00ff"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Pink",
+                            "color": "#ff557f"
+                        },
+                        {
+                            "range": [128, 187],
+                            "name": "Rainbow CW"
+                        },
+                        {
+                            "range": [188, 193],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Rainbow CCW"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Dot"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Dots"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Turbine"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Lines"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Triangle"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Cross"
+                        },
+                        {
+                            "range": [70, 89],
+                            "name": "Dot Shake"
+                        },
+                        {
+                            "range": [90, 109],
+                            "name": "Dots Shake"
+                        },
+                        {
+                            "range": [110, 129],
+                            "name": "Turbine Shake"
+                        },
+                        {
+                            "range": [130, 149],
+                            "name": "Lines Shake"
+                        },
+                        {
+                            "range": [150, 169],
+                            "name": "Triangle Shake"
+                        },
+                        {
+                            "range": [170, 189],
+                            "name": "Cross Shake"
+                        },
+                        {
+                            "range": [190, 255],
+                            "name": "Gobo rainbow"
+                        }
+                    ]
+                },
+                "Gobo rotation": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Index"
+                        },
+                        {
+                            "range": [128, 187],
+                            "name": "Clockwise"
+                        },
+                        {
+                            "range": [188, 193],
+                            "name": "Stationary"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Counter Clockwise"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Dimmer"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random Strobe"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan (0 to 146°)"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt (0 to 45°)"
+                        }
+                    ]
+                },
+                "Movement Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "Max"
+                        },
+                        {
+                            "range": [15, 225],
+                            "name": "Speed index"
+                        },
+                        {
+                            "range": [226, 235],
+                            "name": "Black Out / Movement"
+                        },
+                        {
+                            "range": [236, 245],
+                            "name": "Black Out / Gobo & Color"
+                        },
+                        {
+                            "range": [246, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Effects": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "UV Filter"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "3200 °K Filter"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "5600 °K Filter"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Frost Filter"
+                        },
+                        {
+                            "range": [50, 127],
+                            "name": "3 sides Prism"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Macro 1"
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "Macro 2"
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "Macro 3"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Macro 4"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Macro 5"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "Macro 6"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "Macro 7"
+                        },
+                        {
+                            "range": [184, 191],
+                            "name": "Macro 8"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "Macro 9"
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "Macro 10"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Macro 11"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Macro 12"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Macro 13"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Macro 14"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Macro 15"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Macro 16"
+                        }
+                    ]
+                },
+                "Prism Rotation Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Stationary"
+                        },
+                        {
+                            "range": [8, 127],
+                            "name": "Clockwise"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Stationary"
+                        },
+                        {
+                            "range": [136, 255],
+                            "name": "Counter Clockwise"
+                        }
+                    ]
+                },
+                "Prog": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Std Color"
+                        },
+                        {
+                            "range": [20, 39],
+                            "name": "Near Color"
+                        },
+                        {
+                            "range": [40, 59],
+                            "name": "Lamp Power ON"
+                        },
+                        {
+                            "range": [60, 79],
+                            "name": "Lamp Power OFF"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Prog 1"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Prog 2"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Prog 3"
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Prog 4"
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "Prog 5"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Prog 6"
+                        },
+                        {
+                            "range": [220, 239],
+                            "name": "Prog 7"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Prog 8"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Movement 8 bits",
+                    "channels": [
+                        "Color",
+                        "Gobo",
+                        "Gobo rotation",
+                        "Shutter",
+                        "Pan",
+                        "Tilt",
+                        "Movement Speed",
+                        "Effects",
+                        "Prism Rotation Speed",
+                        "Prog"
+                    ]
+                },
+                {
+                    "name": "Movement 16 bits",
+                    "physical": {
+                        "dimensions": [677, 242, 212]
+                    },
+                    "channels": [
+                        "Color",
+                        "Gobo",
+                        "Gobo rotation",
+                        "Shutter",
+                        "Pan",
+                        "Tilt",
+                        "Movement Speed",
+                        "Effects",
+                        "Prism Rotation Speed",
+                        "Prog",
+                        "Pan Fine",
+                        "Tilt Fine"
+                    ]
+                }
+            ]
+        }
+    ]
+}

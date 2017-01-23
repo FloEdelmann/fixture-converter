@@ -1,0 +1,121 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "Abyss USB",
+            "type": "Flower",
+            "physical": {
+                "dimensions": [228, 246, 195],
+                "weight": 2.7,
+                "power": 38,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 2876
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [59, 59]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Color Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 21],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [22, 42],
+                            "name": "Purple",
+                            "color": "#55007f"
+                        },
+                        {
+                            "range": [43, 63],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [64, 84],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [85, 105],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [106, 127],
+                            "name": "Orange",
+                            "color": "#ff7f00"
+                        },
+                        {
+                            "range": [128, 188],
+                            "name": "Left rotation (fast to slow)"
+                        },
+                        {
+                            "range": [189, 194],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [195, 255],
+                            "name": "Right rotation (slow to fast)"
+                        }
+                    ]
+                },
+                "Wave Effect Wheel": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [1, 122],
+                            "name": "Left rotation (slow to fast)"
+                        },
+                        {
+                            "range": [123, 133],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [134, 255],
+                            "name": "Right rotation (fast to slow)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3-Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Color Wheel",
+                        "Wave Effect Wheel"
+                    ]
+                }
+            ]
+        }
+    ]
+}

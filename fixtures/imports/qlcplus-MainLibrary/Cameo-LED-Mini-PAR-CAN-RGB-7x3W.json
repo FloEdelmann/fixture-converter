@@ -1,0 +1,118 @@
+{
+    "manufacturers": {
+        "Cameo": {
+            "name": "Cameo"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Cameo",
+            "name": "LED Mini PAR CAN RGB 7x3W",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [168, 183, 186],
+                "weight": 2,
+                "power": 30,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue"
+                        }
+                    ]
+                },
+                "Master": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master Dimmer"
+                        }
+                    ]
+                },
+                "Stroboscope": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Stroboscope"
+                        }
+                    ]
+                },
+                "Color Macro": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [5, 84],
+                            "name": "Color Sound Control"
+                        },
+                        {
+                            "range": [85, 169],
+                            "name": "Color Jumping Speed"
+                        },
+                        {
+                            "range": [170, 255],
+                            "name": "Color Fading Speed"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "6-Channel",
+                    "channels": [
+                        "Master",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color Macro",
+                        "Stroboscope"
+                    ]
+                }
+            ]
+        }
+    ]
+}

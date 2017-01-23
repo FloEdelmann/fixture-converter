@@ -1,0 +1,967 @@
+{
+    "manufacturers": {
+        "Coemar": {
+            "name": "Coemar"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Coemar",
+            "name": "Stage Lite LED",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [609, 211, 182],
+                "weight": 12,
+                "power": 230,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "tiltMax": 180
+                }
+            },
+            "availableChannels": {
+                "Master Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Strobe Effect": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No effect"
+                        },
+                        {
+                            "range": [10, 57],
+                            "name": "Variable speed strobe, from slow to fast"
+                        },
+                        {
+                            "range": [58, 59],
+                            "name": "Stop strobe"
+                        },
+                        {
+                            "range": [60, 108],
+                            "name": "Sequenced pulse effect, slow closing, fast opening, from slow to fast"
+                        },
+                        {
+                            "range": [109, 110],
+                            "name": "Stop strobe"
+                        },
+                        {
+                            "range": [111, 159],
+                            "name": "Sequenced pulse effect, fast closing, slow opening, from slow to fast"
+                        },
+                        {
+                            "range": [160, 161],
+                            "name": "Stop strobe"
+                        },
+                        {
+                            "range": [162, 207],
+                            "name": "Random strobe effect with variable speed from slow to fast and synchronised colours"
+                        },
+                        {
+                            "range": [208, 209],
+                            "name": "Stop strobe"
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "Random strobe effect with variable speed from slow to fast and non-synchronised colours"
+                        }
+                    ]
+                },
+                "LED line 1": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Proportional movement of lower LED line in 180º"
+                        }
+                    ]
+                },
+                "LED line 2": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Proportional movement of central LED line in 180º"
+                        }
+                    ]
+                },
+                "LED line 3": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Proportional movement of upper LED line in 180º"
+                        }
+                    ]
+                },
+                "Automated Functions and Fade Speed": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No effect"
+                        },
+                        {
+                            "range": [10, 40],
+                            "name": "Automated colours program 1: fade speed between colours from fast to slow"
+                        },
+                        {
+                            "range": [41, 71],
+                            "name": "Automated colours program 2: fade speed between colours from fast to slow"
+                        },
+                        {
+                            "range": [72, 102],
+                            "name": "Automated colours program 3: fade speed between colours from fast to slow"
+                        },
+                        {
+                            "range": [103, 133],
+                            "name": "Automated colours program 4: fade speed between colours from fast to slow (colours selected from channels 2 to 5)"
+                        },
+                        {
+                            "range": [134, 164],
+                            "name": "Automated colours program 5: fade speed between colours from fast to slow (colours selected from channels 2 to 5)"
+                        },
+                        {
+                            "range": [165, 195],
+                            "name": "Automated colours program 6: fade speed between colours from fast to slow (colours selected from channels 2 to 5)"
+                        },
+                        {
+                            "range": [196, 225],
+                            "name": "Automated colours program 7: fade speed between colours from fast to slow (colours selected from channels 2 to 5)"
+                        },
+                        {
+                            "range": [226, 255],
+                            "name": "Automated colours program 8: fade speed between colours from fast to slow (colours selected from channels 2 to 5)"
+                        }
+                    ]
+                },
+                "Effects movement": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No effect"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Position 1"
+                        },
+                        {
+                            "range": [20, 39],
+                            "name": "Position 2"
+                        },
+                        {
+                            "range": [40, 59],
+                            "name": "Position 3"
+                        },
+                        {
+                            "range": [60, 79],
+                            "name": "Position 4"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Position 5"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Position 6"
+                        },
+                        {
+                            "range": [120, 146],
+                            "name": "Automated movement program 1 with proportional control over increasing speed"
+                        },
+                        {
+                            "range": [147, 173],
+                            "name": "Automated movement program 2 with proportional control over increasing speed"
+                        },
+                        {
+                            "range": [174, 200],
+                            "name": "Automated movement program 3 with proportional control over increasing speed"
+                        },
+                        {
+                            "range": [201, 227],
+                            "name": "Automated movement program 4 with proportional control over increasing speed"
+                        },
+                        {
+                            "range": [228, 255],
+                            "name": "Automated movement program 5 with proportional control over increasing speed"
+                        }
+                    ]
+                },
+                "Motors reset / special functions": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No effect"
+                        },
+                        {
+                            "range": [10, 135],
+                            "name": "Control of the pause time between colours of the program selected from channel 10"
+                        },
+                        {
+                            "range": [136, 170],
+                            "name": "Motors reset"
+                        },
+                        {
+                            "range": [171, 179],
+                            "name": "Park, no functions"
+                        },
+                        {
+                            "range": [180, 188],
+                            "name": "LED control frequency tuning 1000 Hz"
+                        },
+                        {
+                            "range": [189, 197],
+                            "name": "LED control frequency tuning 1500 Hz"
+                        },
+                        {
+                            "range": [198, 206],
+                            "name": "LED control frequency tuning 2000 Hz"
+                        },
+                        {
+                            "range": [207, 215],
+                            "name": "LED control frequency tuning 2500 Hz"
+                        },
+                        {
+                            "range": [216, 224],
+                            "name": "LED control frequency tuning 3000 Hz"
+                        },
+                        {
+                            "range": [225, 233],
+                            "name": "LED control frequency tuning 3500 Hz"
+                        },
+                        {
+                            "range": [234, 242],
+                            "name": "LED control frequency tuning 4000 Hz"
+                        },
+                        {
+                            "range": [243, 251],
+                            "name": "LED control frequency tuning 4500 Hz"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "LED control frequency tuning 5000 Hz"
+                        }
+                    ]
+                },
+                "Zone 1 Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Zone 1 Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Zone 1 Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Zone 1 White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Zone 2 Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Zone 2 Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Zone 2 Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Zone 2 White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Line 1 Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Line 1 Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Line 1 Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Line 1 White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Line 2 Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Line 2 Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Line 2 Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Line 2 White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Line 3 Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Line 3 Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Line 3 Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Line 3 White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 1 Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 1 Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 1 Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 1 White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 2 Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 2 Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 2 Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 2 White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 3 Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 3 Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 3 Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 3 White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 4 Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 4 Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 4 Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 4 White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 5 Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 5 Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 5 Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 5 White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 6 Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 6 Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 6 Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Frame 6 White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                }
+            },
+            "heads": {
+                "Zone-head0": [
+                    "Zone 1 Red",
+                    "Zone 1 Green",
+                    "Zone 1 Blue",
+                    "Zone 1 White"
+                ],
+                "Zone-head1": [
+                    "Zone 2 Red",
+                    "Zone 2 Green",
+                    "Zone 2 Blue",
+                    "Zone 2 White"
+                ],
+                "Line-head0": [
+                    "LED line 1",
+                    "Line 1 Red",
+                    "Line 1 Green",
+                    "Line 1 Blue",
+                    "Line 1 White"
+                ],
+                "Line-head1": [
+                    "LED line 2",
+                    "Line 2 Red",
+                    "Line 2 Green",
+                    "Line 2 Blue",
+                    "Line 2 White"
+                ],
+                "Line-head2": [
+                    "Line 3 Blue",
+                    "Line 3 White",
+                    "LED line 3",
+                    "Line 3 Red",
+                    "Line 3 Green"
+                ],
+                "Frames-head0": [
+                    "Frame 1 Red",
+                    "Frame 1 Green",
+                    "Frame 1 Blue",
+                    "Frame 1 White"
+                ],
+                "Frames-head1": [
+                    "Frame 2 Red",
+                    "Frame 2 Green",
+                    "Frame 2 Blue",
+                    "Frame 2 White"
+                ],
+                "Frames-head2": [
+                    "Frame 3 Blue",
+                    "Frame 3 White",
+                    "Frame 3 Red",
+                    "Frame 3 Green"
+                ],
+                "Frames-head3": [
+                    "Frame 4 Red",
+                    "Frame 4 Green",
+                    "Frame 4 Blue",
+                    "Frame 4 White"
+                ],
+                "Frames-head4": [
+                    "Frame 5 Red",
+                    "Frame 5 Green",
+                    "Frame 5 Blue",
+                    "Frame 5 White"
+                ],
+                "Frames-head5": [
+                    "Frame 6 Red",
+                    "Frame 6 Green",
+                    "Frame 6 Blue",
+                    "Frame 6 White"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "Global",
+                    "channels": [
+                        "Master Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Strobe Effect",
+                        "LED line 1",
+                        "LED line 2",
+                        "LED line 3",
+                        "Automated Functions and Fade Speed",
+                        "Effects movement",
+                        "Motors reset / special functions"
+                    ]
+                },
+                {
+                    "name": "Zone",
+                    "channels": [
+                        "Master Dimmer",
+                        "Zone 1 Red",
+                        "Zone 1 Green",
+                        "Zone 1 Blue",
+                        "Zone 1 White",
+                        "Zone 2 Red",
+                        "Zone 2 Green",
+                        "Zone 2 Blue",
+                        "Zone 2 White",
+                        "Strobe Effect",
+                        "LED line 1",
+                        "LED line 2",
+                        "LED line 3",
+                        "Automated Functions and Fade Speed",
+                        "Effects movement",
+                        "Motors reset / special functions"
+                    ]
+                },
+                {
+                    "name": "Line",
+                    "channels": [
+                        "Master Dimmer",
+                        "Line 1 Red",
+                        "Line 1 Green",
+                        "Line 1 Blue",
+                        "Line 1 White",
+                        "Line 2 Red",
+                        "Line 2 Green",
+                        "Line 2 Blue",
+                        "Line 2 White",
+                        "Line 3 Red",
+                        "Line 3 Green",
+                        "Line 3 Blue",
+                        "Line 3 White",
+                        "Strobe Effect",
+                        "LED line 1",
+                        "LED line 2",
+                        "LED line 3",
+                        "Automated Functions and Fade Speed",
+                        "Effects movement",
+                        "Motors reset / special functions"
+                    ]
+                },
+                {
+                    "name": "Frames",
+                    "channels": [
+                        "Master Dimmer",
+                        "Frame 1 Red",
+                        "Frame 1 Green",
+                        "Frame 1 Blue",
+                        "Frame 1 White",
+                        "Frame 2 Red",
+                        "Frame 2 Green",
+                        "Frame 2 Blue",
+                        "Frame 2 White",
+                        "Frame 3 Red",
+                        "Frame 3 Green",
+                        "Frame 3 Blue",
+                        "Frame 3 White",
+                        "Frame 4 Red",
+                        "Frame 4 Green",
+                        "Frame 4 Blue",
+                        "Frame 4 White",
+                        "Frame 5 Red",
+                        "Frame 5 Green",
+                        "Frame 5 Blue",
+                        "Frame 5 White",
+                        "Frame 6 Red",
+                        "Frame 6 Green",
+                        "Frame 6 Blue",
+                        "Frame 6 White",
+                        "Strobe Effect",
+                        "LED line 1",
+                        "LED line 2",
+                        "LED line 3",
+                        "Automated Functions and Fade Speed",
+                        "Effects movement",
+                        "Motors reset / special functions"
+                    ]
+                }
+            ]
+        }
+    ]
+}

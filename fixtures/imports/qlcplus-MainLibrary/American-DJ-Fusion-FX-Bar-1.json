@@ -1,0 +1,122 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "Fusion FX Bar 1",
+            "type": "Effect",
+            "physical": {
+                "dimensions": [538, 263, 143],
+                "weight": 3.7,
+                "power": 25,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [1, 255],
+                            "name": "Red 0 > 100% (Off - On)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [1, 255],
+                            "name": "Green 0 > 100% (Off - On)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [1, 255],
+                            "name": "Blue 0 > 100% (Off - On)"
+                        }
+                    ]
+                },
+                "Dimmer/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 190],
+                            "name": "Master Dimmer 0 > 100% (Off - On)"
+                        },
+                        {
+                            "range": [191, 200],
+                            "name": "Sound Active"
+                        },
+                        {
+                            "range": [201, 247],
+                            "name": "Strobing (Slow - Fast)"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Full On"
+                        }
+                    ]
+                },
+                "Moon Flower Rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [10, 120],
+                            "name": "Clockwise Rotation (Fast - Slow)"
+                        },
+                        {
+                            "range": [121, 134],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [135, 245],
+                            "name": "Counter-Clockwise Rotation (Slow - Fast)"
+                        },
+                        {
+                            "range": [246, 255],
+                            "name": "No Rotation"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "5 Channel (Default)",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Dimmer/Strobe",
+                        "Moon Flower Rotation"
+                    ]
+                }
+            ]
+        }
+    ]
+}

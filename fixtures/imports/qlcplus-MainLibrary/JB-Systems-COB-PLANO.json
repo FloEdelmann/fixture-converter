@@ -1,0 +1,166 @@
+{
+    "manufacturers": {
+        "JB Systems": {
+            "name": "JB Systems"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "JB Systems",
+            "name": "COB-PLANO",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [202, 120, 224],
+                "weight": 2,
+                "power": 40,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Fresnel",
+                    "degreesMinMax": [15, 100]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red (0-100%)",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green (0-100%)",
+                            "color": "#55ff00"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue",
+                            "color": "#00aaff"
+                        }
+                    ]
+                },
+                "Control for 4 channel mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 190],
+                            "name": "Master Dimmer (0-100%)"
+                        },
+                        {
+                            "range": [191, 200],
+                            "name": "Sound control"
+                        },
+                        {
+                            "range": [201, 247],
+                            "name": "Strobe (slow to fast)"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Master dimmer full on"
+                        }
+                    ]
+                },
+                "Master dimmer": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer (0-100%)"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "ON / Open"
+                        },
+                        {
+                            "range": [8, 37],
+                            "name": "Random Strobe"
+                        },
+                        {
+                            "range": [38, 67],
+                            "name": "Sound Strobe"
+                        },
+                        {
+                            "range": [68, 255],
+                            "name": "Strobe Speed: Slow to Fast"
+                        }
+                    ]
+                },
+                "Effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [8, 247],
+                            "name": "Color Fade: Slow to fast"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Sound Chase"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "4 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Control for 4 channel mode"
+                    ]
+                },
+                {
+                    "name": "6 Channel",
+                    "channels": [
+                        "Master dimmer",
+                        "Strobe",
+                        "Effect",
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

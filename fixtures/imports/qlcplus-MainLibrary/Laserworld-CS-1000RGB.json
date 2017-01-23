@@ -1,0 +1,239 @@
+{
+    "manufacturers": {
+        "Laserworld": {
+            "name": "Laserworld"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Laserworld",
+            "name": "CS-1000RGB",
+            "type": "Laser",
+            "physical": {
+                "dimensions": [330, 170, 310],
+                "weight": 7,
+                "power": 50,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "RGB Laser"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [40, 40]
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 40,
+                    "tiltMax": 40
+                }
+            },
+            "availableChannels": {
+                "Mode": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Laser off"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Music mode"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Automatic mode"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "DMX Mode"
+                        }
+                    ]
+                },
+                "Patterns": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Patterns"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobe"
+                        }
+                    ]
+                },
+                "Horizontal movement": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No effect"
+                        },
+                        {
+                            "range": [1, 167],
+                            "name": "(fixed) Movement"
+                        },
+                        {
+                            "range": [168, 188],
+                            "name": "Animated left to right with increasing speed"
+                        },
+                        {
+                            "range": [189, 209],
+                            "name": "dto. Right to Left"
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "dto. Left to Right and back"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No effect"
+                        },
+                        {
+                            "range": [11, 104],
+                            "name": "Increasing size"
+                        },
+                        {
+                            "range": [105, 154],
+                            "name": "growing with increasing speed"
+                        },
+                        {
+                            "range": [155, 204],
+                            "name": "dto. shrinking"
+                        },
+                        {
+                            "range": [205, 255],
+                            "name": "dto. growing / shrinking"
+                        }
+                    ]
+                },
+                "Width (rotation over Y)": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 150],
+                            "name": "Fixed rotation"
+                        },
+                        {
+                            "range": [151, 255],
+                            "name": "automatic rotation with increased speed"
+                        }
+                    ]
+                },
+                "Width (rotation over X)": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Height (rotation over X): analogous to width"
+                        }
+                    ]
+                },
+                "Rotation": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 180],
+                            "name": "Fixed rotation"
+                        },
+                        {
+                            "range": [181, 217],
+                            "name": "automatic with increased speed clockwise"
+                        },
+                        {
+                            "range": [218, 255],
+                            "name": "do. counter clockwise"
+                        }
+                    ]
+                },
+                "Blanking": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 70],
+                            "name": "no effect"
+                        },
+                        {
+                            "range": [71, 139],
+                            "name": "points are brighter"
+                        },
+                        {
+                            "range": [140, 209],
+                            "name": "dashed lines"
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "points only"
+                        }
+                    ]
+                },
+                "Wave": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Wave"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "colour"
+                        }
+                    ]
+                },
+                "Image format": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "image format"
+                        }
+                    ]
+                },
+                "Horizontal / vertical movement": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Vertical movement: analogus to horizontal movement"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "CS-1000RGB",
+                    "channels": [
+                        "Mode",
+                        "Patterns",
+                        "Strobe",
+                        "Horizontal movement",
+                        "Horizontal / vertical movement",
+                        "Zoom",
+                        "Width (rotation over Y)",
+                        "Width (rotation over X)",
+                        "Rotation",
+                        "Blanking",
+                        "Wave",
+                        "Colour",
+                        "Image format"
+                    ]
+                }
+            ]
+        }
+    ]
+}

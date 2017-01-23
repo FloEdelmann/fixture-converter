@@ -1,0 +1,142 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "COREpar UV USB",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [200, 253, 139],
+                "weight": 2.1,
+                "power": 67,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [50, 100]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "UV": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Strobe/Speed/Sound Sensivity": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No function/Slow to fast/Off"
+                        },
+                        {
+                            "range": [11, 15],
+                            "name": "No function/Slow to fast/Control the sound sensitivity level"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Slow to fast/Slow to fast/Control the sound sensitivity level"
+                        }
+                    ]
+                },
+                "Programs": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [32, 95],
+                            "name": "Pulse effect 0-100%"
+                        },
+                        {
+                            "range": [96, 159],
+                            "name": "Pulse effect 100%-0"
+                        },
+                        {
+                            "range": [160, 223],
+                            "name": "Pulse effect 100%-0-100%"
+                        },
+                        {
+                            "range": [224, 240],
+                            "name": "Sound triggering mode 1"
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "Sound triggering mode 2"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Dimmer Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 51],
+                            "name": "Default set from menu"
+                        },
+                        {
+                            "range": [52, 101],
+                            "name": "Mode off"
+                        },
+                        {
+                            "range": [102, 152],
+                            "name": "Mode 1 (fast speed)"
+                        },
+                        {
+                            "range": [153, 203],
+                            "name": "Mode 2 (medium speed)"
+                        },
+                        {
+                            "range": [204, 255],
+                            "name": "Mode 3 (slow speed)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "5-Channel",
+                    "channels": [
+                        "UV",
+                        "Strobe/Speed/Sound Sensivity",
+                        "Programs",
+                        "Dimmer",
+                        "Dimmer Speed"
+                    ]
+                },
+                {
+                    "name": "1-Channel",
+                    "channels": [
+                        "UV"
+                    ]
+                }
+            ]
+        }
+    ]
+}

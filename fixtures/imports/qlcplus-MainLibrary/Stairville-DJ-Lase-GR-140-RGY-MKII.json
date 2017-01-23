@@ -1,0 +1,209 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "DJ Lase GR-140 RGY MKII",
+            "type": "Laser",
+            "physical": {
+                "dimensions": [145, 80, 160],
+                "weight": 1.8,
+                "power": 15,
+                "DMXconnector": "3-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Mode selection": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 50],
+                            "name": "Laser off"
+                        },
+                        {
+                            "range": [51, 100],
+                            "name": "Auto show"
+                        },
+                        {
+                            "range": [101, 150],
+                            "name": "Sound-controlled automatic show"
+                        },
+                        {
+                            "range": [151, 200],
+                            "name": "DMX 1 mode"
+                        },
+                        {
+                            "range": [201, 255],
+                            "name": "DMX 2 mode"
+                        }
+                    ]
+                },
+                "Patten rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [5, 127],
+                            "name": "Clockwise rotation (slow to fast)"
+                        },
+                        {
+                            "range": [128, 133],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [134, 255],
+                            "name": "Counterclockwise rotation (slow to fast)"
+                        }
+                    ]
+                },
+                "Vibration": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Vibration effect of patterns (small to large vibrations)"
+                        }
+                    ]
+                },
+                "Red Laser": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Laser off"
+                        },
+                        {
+                            "range": [5, 10],
+                            "name": "Laser on"
+                        },
+                        {
+                            "range": [11, 254],
+                            "name": "Strobing (strobe effect), slow to fast"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Sound-controlled strobe effect"
+                        }
+                    ]
+                },
+                "Green Laser": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Laser off"
+                        },
+                        {
+                            "range": [5, 10],
+                            "name": "Laser on"
+                        },
+                        {
+                            "range": [11, 254],
+                            "name": "Strobing (strobe effect), slow to fast"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Sound-controlled strobe effect"
+                        }
+                    ]
+                },
+                "Colour selection": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Laser off"
+                        },
+                        {
+                            "range": [5, 20],
+                            "name": "Constantly red"
+                        },
+                        {
+                            "range": [21, 35],
+                            "name": "Red off, constantly green"
+                        },
+                        {
+                            "range": [36, 50],
+                            "name": "Red and green constantly"
+                        },
+                        {
+                            "range": [51, 80],
+                            "name": "Strobe effect for red, green off"
+                        },
+                        {
+                            "range": [81, 110],
+                            "name": "Red off, strobe effect for green"
+                        },
+                        {
+                            "range": [111, 140],
+                            "name": "Strobe effect for red and green"
+                        },
+                        {
+                            "range": [141, 170],
+                            "name": "Constantly red, strobe effect for green"
+                        },
+                        {
+                            "range": [171, 200],
+                            "name": "Strobe effect for red, constantly green"
+                        },
+                        {
+                            "range": [201, 255],
+                            "name": "Alternating strobe effect for red and green"
+                        }
+                    ]
+                },
+                "Strobing (strobe effect)": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [5, 254],
+                            "name": "Strobing (strobe effect), slow to fast"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Sound-controlled strobe effect"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "DMX 1 mode",
+                    "channels": [
+                        "Mode selection",
+                        "Patten rotation",
+                        "Vibration",
+                        "Red Laser",
+                        "Green Laser"
+                    ]
+                },
+                {
+                    "name": "DMX 2 mode",
+                    "channels": [
+                        "Mode selection",
+                        "Patten rotation",
+                        "Vibration",
+                        "Colour selection",
+                        "Strobing (strobe effect)"
+                    ]
+                }
+            ]
+        }
+    ]
+}

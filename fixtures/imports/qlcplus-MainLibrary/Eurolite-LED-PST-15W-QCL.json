@@ -1,0 +1,188 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "LED PST-15W QCL",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [230, 180, 295],
+                "weight": 1.25,
+                "power": 18,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [6, 6]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity"
+                        }
+                    ]
+                },
+                "Master dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White intensity"
+                        }
+                    ]
+                },
+                "Effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [1, 10],
+                            "name": "Set music trigger mode"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "Set strobe mode"
+                        }
+                    ]
+                },
+                "Strobe Speed": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Set strobe/speed"
+                        }
+                    ]
+                },
+                "Color Effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Transition 0 -> 100 %",
+                            "color": "#ffffff",
+                            "color2": "#e603ff"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Transition 100 -> 0%",
+                            "color": "#ff06f1",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Transition 100 -> 0 -> 100%"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Transition"
+                        },
+                        {
+                            "range": [160, 223],
+                            "name": "Colour change"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Set music trigger mode"
+                        }
+                    ]
+                },
+                "Macro colours": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Macro colours"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "6 ch",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Master dimmer",
+                        "Effect"
+                    ]
+                },
+                {
+                    "name": "8 ch",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Macro colours",
+                        "Strobe Speed",
+                        "Color Effect",
+                        "Master dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

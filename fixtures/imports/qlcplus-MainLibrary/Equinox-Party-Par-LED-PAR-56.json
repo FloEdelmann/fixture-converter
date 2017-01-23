@@ -1,0 +1,141 @@
+{
+    "manufacturers": {
+        "Equinox": {
+            "name": "Equinox"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Equinox",
+            "name": "Party Par LED PAR 56",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [205, 195, 240],
+                "weight": 1.1,
+                "power": 20,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0: low brightness, 255: high brightness"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0: low brightness, 255: high brightness"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0: low brightness, 255: high brightness"
+                        }
+                    ]
+                },
+                "Colour Macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [1, 7],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [8, 255],
+                            "name": "Colour macro"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Strobe"
+                        }
+                    ]
+                },
+                "Dimmer/Program Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Dimming (32: dim, 63: bright)"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Dimming (64: bright, 96: dim)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Dimming (96: dim, 112: bright, 127: dim)"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Colour mixing"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "3 colour change"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "7 colour change"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Sound active (sensitivity adjustment knob)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "6 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Colour Macros",
+                        "Strobe",
+                        "Dimmer/Program Mode"
+                    ]
+                }
+            ]
+        }
+    ]
+}

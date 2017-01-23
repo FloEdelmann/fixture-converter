@@ -1,0 +1,168 @@
+{
+    "manufacturers": {
+        "JB Systems": {
+            "name": "JB Systems"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "JB Systems",
+            "name": "Plano Spot LED",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [212, 212, 67],
+                "weight": 1.6,
+                "power": 28,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [15, 15]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Dimmer/Sound/Strobe Mode 1": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [8, 190],
+                            "name": "Intensity 0-100%"
+                        },
+                        {
+                            "range": [191, 200],
+                            "name": "Sound (random colour changer)"
+                        },
+                        {
+                            "range": [201, 247],
+                            "name": "Strobe (slow-fast)"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer Mode 2": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Dimmer/Strobe Mode 3": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 160],
+                            "name": "Dimmer"
+                        },
+                        {
+                            "range": [161, 255],
+                            "name": "Strobe (slow-fast)"
+                        }
+                    ]
+                },
+                "Dimmer/Strobe/Colour Changer Mode 4": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Intensity 0-100%"
+                        },
+                        {
+                            "range": [128, 199],
+                            "name": "Strobe (slow-fast)"
+                        },
+                        {
+                            "range": [200, 255],
+                            "name": "Colour Change Show (slow-fast)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Dimmer/Sound/Strobe Mode 1"
+                    ]
+                },
+                {
+                    "name": "Mode 2",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Dimmer Mode 2"
+                    ]
+                },
+                {
+                    "name": "Mode 3",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Dimmer/Strobe Mode 3"
+                    ]
+                },
+                {
+                    "name": "Mode 4",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Dimmer/Strobe/Colour Changer Mode 4"
+                    ]
+                }
+            ]
+        }
+    ]
+}

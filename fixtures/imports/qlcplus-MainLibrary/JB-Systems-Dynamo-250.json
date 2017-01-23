@@ -1,0 +1,150 @@
+{
+    "manufacturers": {
+        "JB Systems": {
+            "name": "JB Systems"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "JB Systems",
+            "name": "Dynamo 250",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [385, 170, 120],
+                "weight": 4.4,
+                "power": 300,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "ELC 250W",
+                    "lumens": 550
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [13, 13]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 160,
+                    "tiltMax": 120
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [16, 131],
+                            "name": "Shutter speed (slow -> fast)"
+                        },
+                        {
+                            "range": [132, 247],
+                            "name": "Shaking"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 11],
+                            "name": "White (open)"
+                        },
+                        {
+                            "range": [12, 23],
+                            "name": "Yellow"
+                        },
+                        {
+                            "range": [24, 34],
+                            "name": "Blue"
+                        },
+                        {
+                            "range": [35, 46],
+                            "name": "Blue+Red+Green"
+                        },
+                        {
+                            "range": [47, 58],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [59, 69],
+                            "name": "Pink"
+                        },
+                        {
+                            "range": [70, 81],
+                            "name": "Red+Yellow+Green+Blue"
+                        },
+                        {
+                            "range": [82, 93],
+                            "name": "Magenta"
+                        },
+                        {
+                            "range": [94, 104],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [105, 116],
+                            "name": "Blue+Magenta"
+                        },
+                        {
+                            "range": [117, 127],
+                            "name": "White (gobo)"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Gobo change speed (slow -> fast)"
+                        }
+                    ]
+                }
+            },
+            "heads": {
+                "4 Channel-head0": [
+                    "Pan",
+                    "Tilt",
+                    "Shutter",
+                    "Gobo"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "4 Channel",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Shutter",
+                        "Gobo"
+                    ]
+                }
+            ]
+        }
+    ]
+}

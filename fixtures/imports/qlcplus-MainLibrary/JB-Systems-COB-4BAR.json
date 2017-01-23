@@ -1,0 +1,777 @@
+{
+    "manufacturers": {
+        "JB Systems": {
+            "name": "JB Systems"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "JB Systems",
+            "name": "COB-4BAR",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [1000, 320, 82],
+                "weight": 7.6,
+                "power": 120,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer (0-100%)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer (0-100%)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer (0-100%)"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer (0-100%)"
+                        }
+                    ]
+                },
+                "Strobe Modes": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No strobe"
+                        },
+                        {
+                            "range": [8, 37],
+                            "name": "Random strobe"
+                        },
+                        {
+                            "range": [38, 67],
+                            "name": "Sound strobe"
+                        },
+                        {
+                            "range": [68, 255],
+                            "name": "Strobe speed (slow to fast)"
+                        }
+                    ]
+                },
+                "Color macros and automatic color modes": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Off",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Red & Green",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Green & Blue",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Red & Blue",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Color 1"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Color 2"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Color 3"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Color 4"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "Color 5"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Color 6"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Color 7"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Color 8"
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "Color Fade"
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "Color Chase 1"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Color Chase 2"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Color Chase 3"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "Color Chase 4"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "Color Chase 5"
+                        },
+                        {
+                            "range": [184, 191],
+                            "name": "Color Chase 6"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "Color Chase 7"
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "Color Chase 8"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Color Chase 9"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Color Chase 10"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Color Chase 11"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Color Chase 12"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Sound Active"
+                        }
+                    ]
+                },
+                "Red 1 & 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer projector 1 & 2 (0-100%)"
+                        }
+                    ]
+                },
+                "Red 3 & 4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer projector 3 & 4 (0-100%)"
+                        }
+                    ]
+                },
+                "Red 3/not used": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer projector 3 (0-100%)"
+                        }
+                    ]
+                },
+                "Red 4/not used": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer projector 4 (0-100%)"
+                        }
+                    ]
+                },
+                "Green 1 & 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer projector 1 & 2 (0-100%)"
+                        }
+                    ]
+                },
+                "Green 3 & 4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer projector 3 & 4 (0-100%)"
+                        }
+                    ]
+                },
+                "Green 3/not used": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer projector 3 (0-100%)"
+                        }
+                    ]
+                },
+                "Green 4/not used": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer projector 4 (0-100%)"
+                        }
+                    ]
+                },
+                "Blue 1 & 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer projector 1 & 2 (0-100%)"
+                        }
+                    ]
+                },
+                "Blue 3 & 4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer projector 3 & 4 (0-100%)"
+                        }
+                    ]
+                },
+                "Blue 3/not used": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer projector 3 (0-100%)"
+                        }
+                    ]
+                },
+                "Blue 4/not used": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer projector 4 (0-100%)"
+                        }
+                    ]
+                },
+                "Extra power output 1": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Power off"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Power on"
+                        }
+                    ]
+                },
+                "Extra power output 2": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Power off"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Power on"
+                        }
+                    ]
+                },
+                "Red 1 (effect color 1/not used)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer projector 1 (0-100%)"
+                        }
+                    ]
+                },
+                "Green 1 (effect color 2/not used)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer projector 1 (0-100%)"
+                        }
+                    ]
+                },
+                "Blue 1/not used": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer projector 1 (0-100%)"
+                        }
+                    ]
+                },
+                "Red 2/not used": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer projector 2 (0-100%)"
+                        }
+                    ]
+                },
+                "Green 2/not used": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer projector 2 (0-100%)"
+                        }
+                    ]
+                },
+                "Blue 2/not used": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer projector 2 (0-100%)"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobe speed (slow to fast)"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Effect speed (from slow to fast)"
+                        }
+                    ]
+                },
+                "Automatic color mode": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No automatic mode"
+                        },
+                        {
+                            "range": [8, 247],
+                            "name": "Color fade speed (slow to fast)"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Sound chase"
+                        }
+                    ]
+                },
+                "Dimmer/speed/sound": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer/effect speed/sound (0-100%, from slow to fast, sensitivity from low to high))"
+                        }
+                    ]
+                },
+                "Dim strobe music mode 1": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [8, 190],
+                            "name": "Master dimmer (0-100%)"
+                        },
+                        {
+                            "range": [191, 200],
+                            "name": "Automatic sound controlled mode"
+                        },
+                        {
+                            "range": [201, 247],
+                            "name": "Strobe speed (slow to fast)"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Maximum master dimmer level"
+                        }
+                    ]
+                },
+                "Dim strobe music mode 2": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [8, 190],
+                            "name": "Master dimmer (0-100%)"
+                        },
+                        {
+                            "range": [191, 200],
+                            "name": "Automatic sound controlled mode"
+                        },
+                        {
+                            "range": [201, 247],
+                            "name": "Strobe speed (slow to fast)"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Maximum master dimmer level"
+                        }
+                    ]
+                },
+                "Dim strobe music mode 3": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [8, 190],
+                            "name": "Master dimmer (0-100%)"
+                        },
+                        {
+                            "range": [191, 200],
+                            "name": "Automatic sound controlled mode"
+                        },
+                        {
+                            "range": [201, 247],
+                            "name": "Strobe speed (slow to fast)"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Maximum master dimmer level"
+                        }
+                    ]
+                },
+                "Dim strobe music mode 4": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [8, 190],
+                            "name": "Master dimmer (0-100%)"
+                        },
+                        {
+                            "range": [191, 200],
+                            "name": "Automatic sound controlled mode"
+                        },
+                        {
+                            "range": [201, 247],
+                            "name": "Strobe speed (slow to fast)"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Maximum master dimmer level"
+                        }
+                    ]
+                }
+            },
+            "heads": {
+                "12 Channel-head0": [
+                    "Red 1 (effect color 1/not used)",
+                    "Green 1 (effect color 2/not used)",
+                    "Blue 1/not used"
+                ],
+                "12 Channel-head1": [
+                    "Red 2/not used",
+                    "Green 2/not used",
+                    "Blue 2/not used"
+                ],
+                "12 Channel-head2": [
+                    "Red 3/not used",
+                    "Green 3/not used",
+                    "Blue 3/not used"
+                ],
+                "12 Channel-head3": [
+                    "Red 4/not used",
+                    "Green 4/not used",
+                    "Blue 4/not used"
+                ],
+                "17 Channel-head0": [
+                    "Red 1 (effect color 1/not used)",
+                    "Green 1 (effect color 2/not used)",
+                    "Blue 1/not used"
+                ],
+                "17 Channel-head1": [
+                    "Red 2/not used",
+                    "Green 2/not used",
+                    "Blue 2/not used"
+                ],
+                "17 Channel-head2": [
+                    "Red 3/not used",
+                    "Green 3/not used",
+                    "Blue 3/not used"
+                ],
+                "17 Channel-head3": [
+                    "Red 4/not used",
+                    "Green 4/not used",
+                    "Blue 4/not used"
+                ],
+                "18 Channel-head0": [
+                    "Red 1 (effect color 1/not used)",
+                    "Green 1 (effect color 2/not used)",
+                    "Blue 1/not used",
+                    "Dim strobe music mode 1"
+                ],
+                "18 Channel-head1": [
+                    "Red 2/not used",
+                    "Green 2/not used",
+                    "Blue 2/not used",
+                    "Dim strobe music mode 2"
+                ],
+                "18 Channel-head2": [
+                    "Red 3/not used",
+                    "Green 3/not used",
+                    "Blue 3/not used",
+                    "Dim strobe music mode 3"
+                ],
+                "18 Channel-head3": [
+                    "Red 4/not used",
+                    "Green 4/not used",
+                    "Blue 4/not used",
+                    "Dim strobe music mode 4"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "3 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "5 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Extra power output 1",
+                        "Extra power output 2"
+                    ]
+                },
+                {
+                    "name": "8 Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe Modes",
+                        "Automatic color mode",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Extra power output 1",
+                        "Extra power output 2"
+                    ]
+                },
+                {
+                    "name": "12 Channel",
+                    "channels": [
+                        "Red 1 (effect color 1/not used)",
+                        "Green 1 (effect color 2/not used)",
+                        "Blue 1/not used",
+                        "Red 2/not used",
+                        "Green 2/not used",
+                        "Blue 2/not used",
+                        "Red 3/not used",
+                        "Green 3/not used",
+                        "Blue 3/not used",
+                        "Red 4/not used",
+                        "Green 4/not used",
+                        "Blue 4/not used"
+                    ]
+                },
+                {
+                    "name": "17 Channel",
+                    "channels": [
+                        "Color macros and automatic color modes",
+                        "Dimmer/speed/sound",
+                        "Strobe",
+                        "Red 1 (effect color 1/not used)",
+                        "Green 1 (effect color 2/not used)",
+                        "Blue 1/not used",
+                        "Red 2/not used",
+                        "Green 2/not used",
+                        "Blue 2/not used",
+                        "Red 3/not used",
+                        "Green 3/not used",
+                        "Blue 3/not used",
+                        "Red 4/not used",
+                        "Green 4/not used",
+                        "Blue 4/not used",
+                        "Extra power output 1",
+                        "Extra power output 2"
+                    ]
+                },
+                {
+                    "name": "6 Channel",
+                    "channels": [
+                        "Red 1 & 2",
+                        "Green 1 & 2",
+                        "Blue 1 & 2",
+                        "Red 3 & 4",
+                        "Green 3 & 4",
+                        "Blue 3 & 4"
+                    ]
+                },
+                {
+                    "name": "18 Channel",
+                    "channels": [
+                        "Red 1 (effect color 1/not used)",
+                        "Green 1 (effect color 2/not used)",
+                        "Blue 1/not used",
+                        "Dim strobe music mode 1",
+                        "Red 2/not used",
+                        "Green 2/not used",
+                        "Blue 2/not used",
+                        "Dim strobe music mode 2",
+                        "Red 3/not used",
+                        "Green 3/not used",
+                        "Blue 3/not used",
+                        "Dim strobe music mode 3",
+                        "Red 4/not used",
+                        "Green 4/not used",
+                        "Blue 4/not used",
+                        "Dim strobe music mode 4",
+                        "Extra power output 1",
+                        "Extra power output 2"
+                    ]
+                }
+            ]
+        }
+    ]
+}

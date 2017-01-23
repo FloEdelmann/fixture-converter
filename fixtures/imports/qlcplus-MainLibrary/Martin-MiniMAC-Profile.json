@@ -1,0 +1,450 @@
+{
+    "manufacturers": {
+        "Martin": {
+            "name": "Martin"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Martin",
+            "name": "MiniMAC Profile",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [316, 390, 415],
+                "weight": 12,
+                "power": 210,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "HTI 150W",
+                    "colorTemperature": 6500,
+                    "lumens": 1950
+                },
+                "lens": {
+                    "name": "PC",
+                    "degreesMinMax": [17, 17]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Shutter, strobe, reset, lamp": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [20, 38],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [39, 49],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [50, 112],
+                            "name": "Strobe, fast -> slow"
+                        },
+                        {
+                            "range": [113, 127],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [128, 157],
+                            "name": "Random strobe, fast -> slow"
+                        },
+                        {
+                            "range": [158, 167],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [168, 177],
+                            "name": "Stand-alone, music trigger"
+                        },
+                        {
+                            "range": [178, 187],
+                            "name": "Stand-alone, auto trigger"
+                        },
+                        {
+                            "range": [188, 207],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [208, 217],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [218, 227],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [228, 237],
+                            "name": "Lamp on"
+                        },
+                        {
+                            "range": [238, 247],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Lamp off"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 11],
+                            "name": "White"
+                        },
+                        {
+                            "range": [12, 23],
+                            "name": "CTC 5500->3400"
+                        },
+                        {
+                            "range": [24, 35],
+                            "name": "Pink 312"
+                        },
+                        {
+                            "range": [36, 47],
+                            "name": "Red 301"
+                        },
+                        {
+                            "range": [48, 59],
+                            "name": "Green 206"
+                        },
+                        {
+                            "range": [60, 71],
+                            "name": "Cyan 104"
+                        },
+                        {
+                            "range": [72, 83],
+                            "name": "Yellow 603"
+                        },
+                        {
+                            "range": [84, 95],
+                            "name": "Magenta 507"
+                        },
+                        {
+                            "range": [96, 107],
+                            "name": "Blue 101"
+                        },
+                        {
+                            "range": [108, 119],
+                            "name": "Green 208"
+                        },
+                        {
+                            "range": [120, 131],
+                            "name": "Purple 502"
+                        },
+                        {
+                            "range": [132, 143],
+                            "name": "Orange 306"
+                        },
+                        {
+                            "range": [144, 150],
+                            "name": "Blue 108"
+                        },
+                        {
+                            "range": [151, 159],
+                            "name": "Blue 108"
+                        },
+                        {
+                            "range": [160, 163],
+                            "name": "Orange 306"
+                        },
+                        {
+                            "range": [164, 167],
+                            "name": "Purple 502"
+                        },
+                        {
+                            "range": [168, 171],
+                            "name": "Green 208"
+                        },
+                        {
+                            "range": [172, 175],
+                            "name": "Blue 101"
+                        },
+                        {
+                            "range": [176, 179],
+                            "name": "Magenta 507"
+                        },
+                        {
+                            "range": [180, 183],
+                            "name": "Yellow 603"
+                        },
+                        {
+                            "range": [184, 187],
+                            "name": "Cyan 104"
+                        },
+                        {
+                            "range": [188, 191],
+                            "name": "Green 206"
+                        },
+                        {
+                            "range": [192, 195],
+                            "name": "Red 301"
+                        },
+                        {
+                            "range": [196, 199],
+                            "name": "Pink 312"
+                        },
+                        {
+                            "range": [200, 203],
+                            "name": "CTC 5500->3400"
+                        },
+                        {
+                            "range": [204, 207],
+                            "name": "White"
+                        },
+                        {
+                            "range": [208, 245],
+                            "name": "CW rotation, fast -> slow"
+                        },
+                        {
+                            "range": [246, 255],
+                            "name": "Random color, fast -> slow"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [21, 35],
+                            "name": "Fibroid texture glass"
+                        },
+                        {
+                            "range": [36, 50],
+                            "name": "Radial dashes"
+                        },
+                        {
+                            "range": [51, 65],
+                            "name": "Stardust 2"
+                        },
+                        {
+                            "range": [66, 80],
+                            "name": "Atomic 2"
+                        },
+                        {
+                            "range": [81, 95],
+                            "name": "Highways 2"
+                        },
+                        {
+                            "range": [96, 110],
+                            "name": "Decentered beam"
+                        },
+                        {
+                            "range": [111, 125],
+                            "name": "Sunburst 507"
+                        },
+                        {
+                            "range": [126, 145],
+                            "name": "Decentered beam, shake speed"
+                        },
+                        {
+                            "range": [146, 165],
+                            "name": "Highways 2, shake speed"
+                        },
+                        {
+                            "range": [166, 185],
+                            "name": "Atomic 2, shake speed"
+                        },
+                        {
+                            "range": [186, 205],
+                            "name": "Stardust 2, shake speed"
+                        },
+                        {
+                            "range": [206, 225],
+                            "name": "Radial dashes, shake speed"
+                        },
+                        {
+                            "range": [226, 245],
+                            "name": "Fibroid texture glass, shake speed"
+                        },
+                        {
+                            "range": [246, 255],
+                            "name": "Random gobo speed, fast -> slow"
+                        }
+                    ]
+                },
+                "Gobo rotation/swing": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [3, 117],
+                            "name": "CW rotation, slow -> fast"
+                        },
+                        {
+                            "range": [118, 232],
+                            "name": "CCW rotation, fast -> slow"
+                        },
+                        {
+                            "range": [233, 239],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Gobo swing, slow -> fast"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Channel Level"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Channel Level"
+                        }
+                    ]
+                },
+                "Pan/tilt speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Tracking mode"
+                        },
+                        {
+                            "range": [3, 245],
+                            "name": "Fast -> slow"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "Tracking mode, slow"
+                        },
+                        {
+                            "range": [249, 251],
+                            "name": "Tracking mode, fast"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Blackout while moving"
+                        }
+                    ]
+                },
+                "Effect speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Tracking mode"
+                        },
+                        {
+                            "range": [3, 251],
+                            "name": "Fast -> slow"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Blackout while moving"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Shutter, strobe, reset, lamp",
+                        "Color",
+                        "Gobo",
+                        "Gobo rotation/swing",
+                        "Pan",
+                        "Tilt"
+                    ]
+                },
+                {
+                    "name": "Mode 2",
+                    "channels": [
+                        "Shutter, strobe, reset, lamp",
+                        "Color",
+                        "Gobo",
+                        "Gobo rotation/swing",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine"
+                    ]
+                },
+                {
+                    "name": "Mode 4",
+                    "channels": [
+                        "Shutter, strobe, reset, lamp",
+                        "Color",
+                        "Gobo",
+                        "Gobo rotation/swing",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Pan/tilt speed",
+                        "Effect speed"
+                    ]
+                },
+                {
+                    "name": "Mode 3",
+                    "channels": [
+                        "Shutter, strobe, reset, lamp",
+                        "Color",
+                        "Gobo",
+                        "Gobo rotation/swing",
+                        "Pan",
+                        "Tilt",
+                        "Pan/tilt speed",
+                        "Effect speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

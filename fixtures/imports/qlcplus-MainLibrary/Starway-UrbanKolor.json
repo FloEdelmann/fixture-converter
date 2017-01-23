@@ -1,0 +1,233 @@
+{
+    "manufacturers": {
+        "Starway": {
+            "name": "Starway"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Starway",
+            "name": "UrbanKolor",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [367, 432, 232],
+                "weight": 13.5,
+                "power": 150,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [16, 151],
+                            "name": "Strobe min to max"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Open Pulse Slow"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Open Pulse Med"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "Open Pulse Fast"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "Close Pulse Slow"
+                        },
+                        {
+                            "range": [184, 190],
+                            "name": "Close Pulse Med"
+                        },
+                        {
+                            "range": [191, 199],
+                            "name": "Close Pulse Fast"
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "Random Strobe Slow"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Random  Strobe Med"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Random  Strobe Fast"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Color temperature": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [20, 255],
+                            "name": "CTO Cold +2000°K to Hot -2000°K"
+                        }
+                    ]
+                },
+                "Macro": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Nothing"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Rainbow Slow - 5s"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Rainbow Med - 5s"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Rainbow Fast - 5s"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Rainbow Slow"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Rainbow Med"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Rainbow Fast"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Rainbow  very slow"
+                        },
+                        {
+                            "range": [64, 70],
+                            "name": "Rainbow Random"
+                        },
+                        {
+                            "range": [71, 71],
+                            "name": "Register Colours"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Random medium"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Random Fast"
+                        }
+                    ]
+                },
+                "White Balance": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "White Balance Disabled"
+                        },
+                        {
+                            "range": [64, 189],
+                            "name": "White Balance Enabled"
+                        },
+                        {
+                            "range": [190, 250],
+                            "name": "White Balance Disabled"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Store White Balance"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Standard",
+                    "channels": [
+                        "Shutter",
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color temperature",
+                        "Macro",
+                        "White Balance"
+                    ]
+                }
+            ]
+        }
+    ]
+}

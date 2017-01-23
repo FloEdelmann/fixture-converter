@@ -1,0 +1,96 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "SC-100",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [117, 140, 420],
+                "weight": 3,
+                "power": 40,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 180,
+                    "tiltMax": 45
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Patterne/Chase": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [10, 159],
+                            "name": "Pattern"
+                        },
+                        {
+                            "range": [160, 255],
+                            "name": "Chase"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Strobe"
+                        },
+                        {
+                            "range": [10, 249],
+                            "name": "Strobe Speed"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Stand Alone"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Alm",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Patterne/Chase",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

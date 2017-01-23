@@ -1,0 +1,120 @@
+{
+    "manufacturers": {
+        "Varytec": {
+            "name": "Varytec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Varytec",
+            "name": "LED Hellball 3",
+            "type": "Flower",
+            "physical": {
+                "dimensions": [195, 190, 195],
+                "weight": 1.2,
+                "power": 15,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Strobe Off"
+                        },
+                        {
+                            "range": [6, 255],
+                            "name": "Strobe (fast to slow)"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Motor Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Manual Positon"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Forward Backward (slow to fast)"
+                        }
+                    ]
+                },
+                "Mode": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "DMX"
+                        },
+                        {
+                            "range": [6, 250],
+                            "name": "Built in Programs"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Sound to Light"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "6 Channel",
+                    "channels": [
+                        "Strobe",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Motor Speed",
+                        "Mode"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,198 @@
+{
+    "manufacturers": {
+        "Studio Due": {
+            "name": "Studio Due"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Studio Due",
+            "name": "City Color 1800",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [780, 720, 560],
+                "weight": 56,
+                "power": 2000,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "MHN/SA 1800W Philips",
+                    "colorTemperature": 5600,
+                    "lumens": 180000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [50, 52]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Motor Speed": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Slow"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Mid 2"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Mid 1"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Fast"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0= White; 255=Cyan",
+                            "color": "#1a6aff"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0= White; 255=Yellow",
+                            "color": "#ffec19"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0=White; 255=Magenta",
+                            "color": "#ff0d7a"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "from Dark to Light"
+                        }
+                    ]
+                },
+                "Macro Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 25],
+                            "name": "Color Mixing"
+                        },
+                        {
+                            "range": [26, 51],
+                            "name": "Cyan",
+                            "color": "#3f95ff"
+                        },
+                        {
+                            "range": [52, 77],
+                            "name": "Yellow",
+                            "color": "#ffdb22"
+                        },
+                        {
+                            "range": [78, 103],
+                            "name": "Magenta",
+                            "color": "#ff0267"
+                        },
+                        {
+                            "range": [104, 129],
+                            "name": "Blue",
+                            "color": "#2724ff"
+                        },
+                        {
+                            "range": [130, 155],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [156, 181],
+                            "name": "Green",
+                            "color": "#0ea800"
+                        },
+                        {
+                            "range": [182, 207],
+                            "name": "Color mix sequence (slow)"
+                        },
+                        {
+                            "range": [208, 233],
+                            "name": "Color mix sequence (mid)"
+                        },
+                        {
+                            "range": [234, 255],
+                            "name": "Color mix sequence (fast)"
+                        }
+                    ]
+                },
+                "Reset / Lamp Off": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Normal"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Reset (Delay)"
+                        },
+                        {
+                            "range": [192, 250],
+                            "name": "Normal"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Lamp Off (Delay)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "7 Channels",
+                    "channels": [
+                        "Motor Speed",
+                        "Cyan",
+                        "Yellow",
+                        "Magenta",
+                        "Dimmer",
+                        "Macro Color",
+                        "Reset / Lamp Off"
+                    ]
+                },
+                {
+                    "name": "6 Channels",
+                    "channels": [
+                        "Motor Speed",
+                        "Cyan",
+                        "Yellow",
+                        "Magenta",
+                        "Dimmer",
+                        "Macro Color"
+                    ]
+                }
+            ]
+        }
+    ]
+}

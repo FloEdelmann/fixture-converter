@@ -1,0 +1,150 @@
+{
+    "manufacturers": {
+        "Blizzard Lighting": {
+            "name": "Blizzard Lighting"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Blizzard Lighting",
+            "name": "Snowball",
+            "type": "Flower",
+            "physical": {
+                "dimensions": [168, 152, 174],
+                "weight": 3.5,
+                "power": 20,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 360
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer 0 - 100%"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red 0 - 100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green 0 - 100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue 0 - 100%"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White 0 - 100%"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 16],
+                            "name": "Strobe off (open)"
+                        },
+                        {
+                            "range": [17, 255],
+                            "name": "Strobe speed Slow -> Fast"
+                        }
+                    ]
+                },
+                "Color Macro": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Color macros"
+                        }
+                    ]
+                },
+                "Beam Rotation": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Fixed position"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Back-and-Forth Slow -> Fast"
+                        }
+                    ]
+                },
+                "Sound Active": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "On"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "DMX",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Strobe",
+                        "Color Macro",
+                        "Beam Rotation",
+                        "Sound Active"
+                    ]
+                }
+            ]
+        }
+    ]
+}

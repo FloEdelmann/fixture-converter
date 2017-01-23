@@ -1,0 +1,169 @@
+{
+    "manufacturers": {
+        "Ledj": {
+            "name": "Ledj"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Ledj",
+            "name": "59 7Q5 RGBW",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [224, 202, 99],
+                "weight": 2.5,
+                "power": 45,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 1293
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Master Dimmer/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 240],
+                            "name": "Master dimmer (0-100%)"
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "Strobe"
+                        }
+                    ]
+                },
+                "Colours": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [5, 80],
+                            "name": "Colour macro"
+                        },
+                        {
+                            "range": [81, 150],
+                            "name": "Colour change"
+                        },
+                        {
+                            "range": [151, 255],
+                            "name": "Colour fade"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red (0-100%)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green (0-100%)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue (0-100%)"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White (0-100%)"
+                        }
+                    ]
+                },
+                "Master Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer (0-100%)"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobe"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "2 Channel",
+                    "channels": [
+                        "Master Dimmer/Strobe",
+                        "Colours"
+                    ]
+                },
+                {
+                    "name": "4 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White"
+                    ]
+                },
+                {
+                    "name": "7 Channel",
+                    "channels": [
+                        "Master Dimmer",
+                        "Strobe",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Colours"
+                    ]
+                },
+                {
+                    "name": "3 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

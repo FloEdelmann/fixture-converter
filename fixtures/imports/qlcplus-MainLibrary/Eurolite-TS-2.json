@@ -1,0 +1,217 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "TS-2",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [285, 555, 270],
+                "weight": 8,
+                "power": 115,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 250W",
+                    "colorTemperature": 7200,
+                    "lumens": 18000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [18, 18]
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 180,
+                    "tiltMax": 90
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 17],
+                            "name": "White"
+                        },
+                        {
+                            "range": [18, 35],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [36, 53],
+                            "name": "Yellow"
+                        },
+                        {
+                            "range": [54, 71],
+                            "name": "Violet"
+                        },
+                        {
+                            "range": [72, 89],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [90, 107],
+                            "name": "Orange"
+                        },
+                        {
+                            "range": [108, 125],
+                            "name": "Blue"
+                        },
+                        {
+                            "range": [126, 143],
+                            "name": "Pink"
+                        },
+                        {
+                            "range": [144, 161],
+                            "name": "Light green"
+                        },
+                        {
+                            "range": [162, 179],
+                            "name": "Light blue"
+                        },
+                        {
+                            "range": [180, 197],
+                            "name": "Orange"
+                        },
+                        {
+                            "range": [198, 215],
+                            "name": "Light yellow"
+                        },
+                        {
+                            "range": [216, 233],
+                            "name": "Magenta"
+                        },
+                        {
+                            "range": [234, 251],
+                            "name": "Red/blue"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Yellow/green"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 6],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [7, 13],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [14, 20],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [21, 27],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [28, 34],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [35, 41],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [42, 48],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [49, 55],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [56, 62],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [63, 69],
+                            "name": "Gobo 9"
+                        },
+                        {
+                            "range": [70, 76],
+                            "name": "Gobo 10"
+                        },
+                        {
+                            "range": [77, 83],
+                            "name": "Gobo 11"
+                        },
+                        {
+                            "range": [84, 90],
+                            "name": "Gobo 12"
+                        },
+                        {
+                            "range": [91, 112],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [113, 127],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [128, 238],
+                            "name": "Strobe slow to fast"
+                        },
+                        {
+                            "range": [239, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Lamp": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Lamp OFF"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Lamp ON"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Colour",
+                        "Gobo",
+                        "Lamp"
+                    ]
+                }
+            ]
+        }
+    ]
+}

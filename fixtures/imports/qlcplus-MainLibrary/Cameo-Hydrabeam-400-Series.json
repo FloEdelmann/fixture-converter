@@ -1,0 +1,1295 @@
+{
+    "manufacturers": {
+        "Cameo": {
+            "name": "Cameo"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Cameo",
+            "name": "Hydrabeam 400 Series",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [810, 250, 130],
+                "weight": 7.6,
+                "power": 100,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 440
+                },
+                "lens": {
+                    "name": "PC",
+                    "degreesMinMax": [0, 4.5]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Master dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 254],
+                            "name": "Master dimmer (0 - 100%)"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No strobe"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "Strobe (slow to fast)"
+                        }
+                    ]
+                },
+                "Show mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No movement"
+                        },
+                        {
+                            "range": [8, 22],
+                            "name": "Show mode 1"
+                        },
+                        {
+                            "range": [23, 37],
+                            "name": "Show mode 2"
+                        },
+                        {
+                            "range": [38, 52],
+                            "name": "Show mode 3"
+                        },
+                        {
+                            "range": [53, 67],
+                            "name": "Show mode 4"
+                        },
+                        {
+                            "range": [68, 82],
+                            "name": "Show mode 5"
+                        },
+                        {
+                            "range": [83, 97],
+                            "name": "Show mode 6"
+                        },
+                        {
+                            "range": [98, 112],
+                            "name": "Show mode 7"
+                        },
+                        {
+                            "range": [113, 127],
+                            "name": "Show mode 8"
+                        },
+                        {
+                            "range": [128, 142],
+                            "name": "Show mode 9"
+                        },
+                        {
+                            "range": [143, 157],
+                            "name": "Show mode 10"
+                        },
+                        {
+                            "range": [158, 172],
+                            "name": "Show mode 11"
+                        },
+                        {
+                            "range": [173, 187],
+                            "name": "Show mode 12"
+                        },
+                        {
+                            "range": [188, 202],
+                            "name": "Show mode 13"
+                        },
+                        {
+                            "range": [203, 217],
+                            "name": "Show mode 14"
+                        },
+                        {
+                            "range": [218, 232],
+                            "name": "Show mode 15"
+                        },
+                        {
+                            "range": [233, 247],
+                            "name": "Show mode 16"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Sound control mode"
+                        }
+                    ]
+                },
+                "Show mode speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Show mode speed (slow to fast) / sound sensitivity"
+                        }
+                    ]
+                },
+                "Light control": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Lighting pattern 1"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Lighting pattern 2"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Lighting pattern 3"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Lighting pattern 4"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Lighting pattern 5"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Lighting pattern 6"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Full on"
+                        }
+                    ]
+                },
+                "Lighting pattern speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Lighting pattern speed"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan (0 - 540°)"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt (0 - 270°)"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Heads speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Heads speed (fast to slow)"
+                        }
+                    ]
+                },
+                "Pan (Head 1)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan head 1 (0 - 540°)"
+                        }
+                    ]
+                },
+                "Pan fine (Head 1)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine head 1"
+                        }
+                    ]
+                },
+                "Tilt (Head 1)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt head 1 (0 - 270°)"
+                        }
+                    ]
+                },
+                "Tilt fine (Head 1)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine head 1"
+                        }
+                    ]
+                },
+                "Speed (Head 1)": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Fastest value till 11 is reached)"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "Head 1 speed (fast to slow)"
+                        }
+                    ]
+                },
+                "Dimmer (Head 1)": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer head 1 (0 - 100%)"
+                        }
+                    ]
+                },
+                "Pan (Head 2)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan head 2 (0 - 540°)"
+                        }
+                    ]
+                },
+                "Pan fine (Head 2)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine head 2"
+                        }
+                    ]
+                },
+                "Tilt (Head 2)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt head 2 (0 - 270°)"
+                        }
+                    ]
+                },
+                "Tilt fine (Head 2)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine head 2"
+                        }
+                    ]
+                },
+                "Speed (Head 2)": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Fastest value till 11 is reached)"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "Head 2 speed (fast to slow)"
+                        }
+                    ]
+                },
+                "Dimmer (Head 2)": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer head 2 (0 - 100%)"
+                        }
+                    ]
+                },
+                "Pan (Head 3)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan head 3 (0 - 540°)"
+                        }
+                    ]
+                },
+                "Pan fine (Head 3)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine head 3"
+                        }
+                    ]
+                },
+                "Tilt (Head 3)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt head 3 (0 - 270°)"
+                        }
+                    ]
+                },
+                "Tilt fine (Head 3)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine head 3"
+                        }
+                    ]
+                },
+                "Speed (Head 3)": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Fastest value till 11 is reached)"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "Head 3 speed (fast to slow)"
+                        }
+                    ]
+                },
+                "Dimmer (Head 3)": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer head 3 (0 - 100%)"
+                        }
+                    ]
+                },
+                "Pan (Head 4)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan head 4 (0 - 540°)"
+                        }
+                    ]
+                },
+                "Pan fine (Head 4)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine head 4"
+                        }
+                    ]
+                },
+                "Tilt (Head 4)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt head 4 (0 - 270°)"
+                        }
+                    ]
+                },
+                "Tilt fine (Head 4)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine head 4"
+                        }
+                    ]
+                },
+                "Speed (Head 4)": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Fastest value till 11 is reached)"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "Head 4 speed (fast to slow)"
+                        }
+                    ]
+                },
+                "Dimmer (Head 4)": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer head 4 (0 - 100%)"
+                        }
+                    ]
+                },
+                "Sound mode / Reset": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 199],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [210, 240],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "Sound control mode"
+                        }
+                    ]
+                },
+                "Sound sensitivity": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Sound sensitivity in sound mode"
+                        }
+                    ]
+                },
+                "Colour macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 30],
+                            "name": "Automatic colour change"
+                        },
+                        {
+                            "range": [31, 45],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [46, 60],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [61, 75],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [76, 90],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [91, 105],
+                            "name": "Red / Green",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [106, 120],
+                            "name": "Red / Blue",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [121, 135],
+                            "name": "Red / White",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [136, 150],
+                            "name": "Green / Blue",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [151, 165],
+                            "name": "Green / White",
+                            "color": "#00ff00",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [166, 180],
+                            "name": "Blue / White",
+                            "color": "#0000ff",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [181, 195],
+                            "name": "Red / Green / Blue"
+                        },
+                        {
+                            "range": [196, 210],
+                            "name": "Red / Green / White"
+                        },
+                        {
+                            "range": [211, 225],
+                            "name": "Red / Blue / White"
+                        },
+                        {
+                            "range": [226, 240],
+                            "name": "Green / Blue / White"
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "Red / Green / Blue / White"
+                        }
+                    ]
+                },
+                "Automatic colour change speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Automatic colour change speed"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red dimmer (0 - 100%)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green dimmer (0 - 100%)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue dimmer (0 - 100%)"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White dimmer (0 - 100%)"
+                        }
+                    ]
+                },
+                "Colour macros (Head 1)": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 30],
+                            "name": "Use CH29-CH32 to control colour"
+                        },
+                        {
+                            "range": [31, 45],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [46, 60],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [61, 75],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [76, 90],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [91, 105],
+                            "name": "Red / Green",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [106, 120],
+                            "name": "Red / Blue",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [121, 135],
+                            "name": "Red / White",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [136, 150],
+                            "name": "Green / Blue",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [151, 165],
+                            "name": "Green / White",
+                            "color": "#00ff00",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [166, 180],
+                            "name": "Blue / White",
+                            "color": "#0000ff",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [181, 195],
+                            "name": "Red / Green / Blue"
+                        },
+                        {
+                            "range": [196, 210],
+                            "name": "Red / Green / White"
+                        },
+                        {
+                            "range": [211, 225],
+                            "name": "Red / Blue / White"
+                        },
+                        {
+                            "range": [226, 240],
+                            "name": "Green / Blue / White"
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "Red / Green / Blue / White"
+                        }
+                    ]
+                },
+                "Colour macros (Head 2)": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 30],
+                            "name": "Use CH29-CH32 to control colour"
+                        },
+                        {
+                            "range": [31, 45],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [46, 60],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [61, 75],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [76, 90],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [91, 105],
+                            "name": "Red / Green",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [106, 120],
+                            "name": "Red / Blue",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [121, 135],
+                            "name": "Red / White",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [136, 150],
+                            "name": "Green / Blue",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [151, 165],
+                            "name": "Green / White",
+                            "color": "#00ff00",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [166, 180],
+                            "name": "Blue / White",
+                            "color": "#0000ff",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [181, 195],
+                            "name": "Red / Green / Blue"
+                        },
+                        {
+                            "range": [196, 210],
+                            "name": "Red / Green / White"
+                        },
+                        {
+                            "range": [211, 225],
+                            "name": "Red / Blue / White"
+                        },
+                        {
+                            "range": [226, 240],
+                            "name": "Green / Blue / White"
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "Red / Green / Blue / White"
+                        }
+                    ]
+                },
+                "Colour macros (Head 3)": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 30],
+                            "name": "Use CH29-CH32 to control colour"
+                        },
+                        {
+                            "range": [31, 45],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [46, 60],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [61, 75],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [76, 90],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [91, 105],
+                            "name": "Red / Green",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [106, 120],
+                            "name": "Red / Blue",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [121, 135],
+                            "name": "Red / White",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [136, 150],
+                            "name": "Green / Blue",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [151, 165],
+                            "name": "Green / White",
+                            "color": "#00ff00",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [166, 180],
+                            "name": "Blue / White",
+                            "color": "#0000ff",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [181, 195],
+                            "name": "Red / Green / Blue"
+                        },
+                        {
+                            "range": [196, 210],
+                            "name": "Red / Green / White"
+                        },
+                        {
+                            "range": [211, 225],
+                            "name": "Red / Blue / White"
+                        },
+                        {
+                            "range": [226, 240],
+                            "name": "Green / Blue / White"
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "Red / Green / Blue / White"
+                        }
+                    ]
+                },
+                "Colour macros (Head 4)": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 30],
+                            "name": "Use CH29-CH32 to control colour"
+                        },
+                        {
+                            "range": [31, 45],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [46, 60],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [61, 75],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [76, 90],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [91, 105],
+                            "name": "Red / Green",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [106, 120],
+                            "name": "Red / Blue",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [121, 135],
+                            "name": "Red / White",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [136, 150],
+                            "name": "Green / Blue",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [151, 165],
+                            "name": "Green / White",
+                            "color": "#00ff00",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [166, 180],
+                            "name": "Blue / White",
+                            "color": "#0000ff",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [181, 195],
+                            "name": "Red / Green / Blue"
+                        },
+                        {
+                            "range": [196, 210],
+                            "name": "Red / Green / White"
+                        },
+                        {
+                            "range": [211, 225],
+                            "name": "Red / Blue / White"
+                        },
+                        {
+                            "range": [226, 240],
+                            "name": "Green / Blue / White"
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "Red / Green / Blue / White"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ],
+                [
+                    "Pan (Head 1)",
+                    "Pan fine (Head 1)"
+                ],
+                [
+                    "Tilt (Head 1)",
+                    "Tilt fine (Head 1)"
+                ],
+                [
+                    "Pan (Head 2)",
+                    "Pan fine (Head 2)"
+                ],
+                [
+                    "Tilt (Head 2)",
+                    "Tilt fine (Head 2)"
+                ],
+                [
+                    "Pan (Head 3)",
+                    "Pan fine (Head 3)"
+                ],
+                [
+                    "Tilt (Head 3)",
+                    "Tilt fine (Head 3)"
+                ],
+                [
+                    "Pan (Head 4)",
+                    "Pan fine (Head 4)"
+                ],
+                [
+                    "Tilt (Head 4)",
+                    "Tilt fine (Head 4)"
+                ]
+            ],
+            "heads": {
+                "15-CH (CLHB400W)-head0": [
+                    "Tilt (Head 1)",
+                    "Pan (Head 1)",
+                    "Dimmer (Head 1)"
+                ],
+                "15-CH (CLHB400W)-head1": [
+                    "Dimmer (Head 2)",
+                    "Tilt (Head 2)",
+                    "Pan (Head 2)"
+                ],
+                "15-CH (CLHB400W)-head2": [
+                    "Dimmer (Head 3)",
+                    "Tilt (Head 3)",
+                    "Pan (Head 3)"
+                ],
+                "15-CH (CLHB400W)-head3": [
+                    "Dimmer (Head 4)",
+                    "Tilt (Head 4)",
+                    "Pan (Head 4)"
+                ],
+                "28-CH (CLHB400W)-head0": [
+                    "Pan fine (Head 1)",
+                    "Pan (Head 1)",
+                    "Dimmer (Head 1)",
+                    "Speed (Head 1)",
+                    "Tilt fine (Head 1)",
+                    "Tilt (Head 1)"
+                ],
+                "28-CH (CLHB400W)-head1": [
+                    "Dimmer (Head 2)",
+                    "Speed (Head 2)",
+                    "Tilt fine (Head 2)",
+                    "Tilt (Head 2)",
+                    "Pan fine (Head 2)",
+                    "Pan (Head 2)"
+                ],
+                "28-CH (CLHB400W)-head2": [
+                    "Pan fine (Head 3)",
+                    "Pan (Head 3)",
+                    "Dimmer (Head 3)",
+                    "Speed (Head 3)",
+                    "Tilt fine (Head 3)",
+                    "Tilt (Head 3)"
+                ],
+                "28-CH (CLHB400W)-head3": [
+                    "Speed (Head 4)",
+                    "Tilt fine (Head 4)",
+                    "Tilt (Head 4)",
+                    "Pan fine (Head 4)",
+                    "Pan (Head 4)",
+                    "Dimmer (Head 4)"
+                ],
+                "19-CH (CLHB400RGBW)-head0": [
+                    "Tilt (Head 1)",
+                    "Pan (Head 1)",
+                    "Dimmer (Head 1)"
+                ],
+                "19-CH (CLHB400RGBW)-head1": [
+                    "Dimmer (Head 2)",
+                    "Tilt (Head 2)",
+                    "Pan (Head 2)"
+                ],
+                "19-CH (CLHB400RGBW)-head2": [
+                    "Dimmer (Head 3)",
+                    "Tilt (Head 3)",
+                    "Pan (Head 3)"
+                ],
+                "19-CH (CLHB400RGBW)-head3": [
+                    "Dimmer (Head 4)",
+                    "Tilt (Head 4)",
+                    "Pan (Head 4)"
+                ],
+                "32-CH (CLHB400RGBW)-head0": [
+                    "Pan fine (Head 1)",
+                    "Pan (Head 1)",
+                    "Colour macros (Head 1)",
+                    "Speed (Head 1)",
+                    "Tilt fine (Head 1)",
+                    "Tilt (Head 1)"
+                ],
+                "32-CH (CLHB400RGBW)-head1": [
+                    "Colour macros (Head 2)",
+                    "Speed (Head 2)",
+                    "Tilt fine (Head 2)",
+                    "Tilt (Head 2)",
+                    "Pan fine (Head 2)",
+                    "Pan (Head 2)"
+                ],
+                "32-CH (CLHB400RGBW)-head2": [
+                    "Pan fine (Head 3)",
+                    "Pan (Head 3)",
+                    "Colour macros (Head 3)",
+                    "Speed (Head 3)",
+                    "Tilt fine (Head 3)",
+                    "Tilt (Head 3)"
+                ],
+                "32-CH (CLHB400RGBW)-head3": [
+                    "Speed (Head 4)",
+                    "Tilt fine (Head 4)",
+                    "Tilt (Head 4)",
+                    "Pan fine (Head 4)",
+                    "Pan (Head 4)",
+                    "Colour macros (Head 4)"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "6-CH (CLHB400W)",
+                    "channels": [
+                        "Master dimmer",
+                        "Strobe",
+                        "Show mode",
+                        "Show mode speed",
+                        "Light control",
+                        "Lighting pattern speed"
+                    ]
+                },
+                {
+                    "name": "10-CH (CLHB400W)",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Master dimmer",
+                        "Strobe",
+                        "Show mode",
+                        "Show mode speed",
+                        "Light control",
+                        "Lighting pattern speed",
+                        "Pan fine",
+                        "Tilt fine"
+                    ]
+                },
+                {
+                    "name": "15-CH (CLHB400W)",
+                    "channels": [
+                        "Master dimmer",
+                        "Strobe",
+                        "Pan (Head 1)",
+                        "Tilt (Head 1)",
+                        "Dimmer (Head 1)",
+                        "Pan (Head 2)",
+                        "Tilt (Head 2)",
+                        "Dimmer (Head 2)",
+                        "Pan (Head 3)",
+                        "Tilt (Head 3)",
+                        "Dimmer (Head 3)",
+                        "Pan (Head 4)",
+                        "Tilt (Head 4)",
+                        "Dimmer (Head 4)",
+                        "Heads speed"
+                    ]
+                },
+                {
+                    "name": "28-CH (CLHB400W)",
+                    "channels": [
+                        "Master dimmer",
+                        "Strobe",
+                        "Pan (Head 1)",
+                        "Pan fine (Head 1)",
+                        "Tilt (Head 1)",
+                        "Tilt fine (Head 1)",
+                        "Speed (Head 1)",
+                        "Dimmer (Head 1)",
+                        "Pan (Head 2)",
+                        "Pan fine (Head 2)",
+                        "Tilt (Head 2)",
+                        "Tilt fine (Head 2)",
+                        "Speed (Head 2)",
+                        "Dimmer (Head 2)",
+                        "Pan (Head 3)",
+                        "Pan fine (Head 3)",
+                        "Tilt (Head 3)",
+                        "Tilt fine (Head 3)",
+                        "Speed (Head 3)",
+                        "Dimmer (Head 3)",
+                        "Pan (Head 4)",
+                        "Pan fine (Head 4)",
+                        "Tilt (Head 4)",
+                        "Tilt fine (Head 4)",
+                        "Speed (Head 4)",
+                        "Dimmer (Head 4)",
+                        "Sound mode / Reset",
+                        "Sound sensitivity"
+                    ]
+                },
+                {
+                    "name": "6-CH (CLHB400RGBW)",
+                    "channels": [
+                        "Master dimmer",
+                        "Strobe",
+                        "Show mode",
+                        "Show mode speed",
+                        "Colour macros",
+                        "Automatic colour change speed"
+                    ]
+                },
+                {
+                    "name": "10-CH (CLHB400RGBW)",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Master dimmer",
+                        "Strobe",
+                        "Show mode",
+                        "Show mode speed",
+                        "Colour macros",
+                        "Automatic colour change speed",
+                        "Pan fine",
+                        "Tilt fine"
+                    ]
+                },
+                {
+                    "name": "19-CH (CLHB400RGBW)",
+                    "channels": [
+                        "Master dimmer",
+                        "Strobe",
+                        "Pan (Head 1)",
+                        "Tilt (Head 1)",
+                        "Dimmer (Head 1)",
+                        "Pan (Head 2)",
+                        "Tilt (Head 2)",
+                        "Dimmer (Head 2)",
+                        "Pan (Head 3)",
+                        "Tilt (Head 3)",
+                        "Dimmer (Head 3)",
+                        "Pan (Head 4)",
+                        "Tilt (Head 4)",
+                        "Dimmer (Head 4)",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Heads speed"
+                    ]
+                },
+                {
+                    "name": "32-CH (CLHB400RGBW)",
+                    "channels": [
+                        "Master dimmer",
+                        "Strobe",
+                        "Pan (Head 1)",
+                        "Pan fine (Head 1)",
+                        "Tilt (Head 1)",
+                        "Tilt fine (Head 1)",
+                        "Speed (Head 1)",
+                        "Colour macros (Head 1)",
+                        "Pan (Head 2)",
+                        "Pan fine (Head 2)",
+                        "Tilt (Head 2)",
+                        "Tilt fine (Head 2)",
+                        "Speed (Head 2)",
+                        "Colour macros (Head 2)",
+                        "Pan (Head 3)",
+                        "Pan fine (Head 3)",
+                        "Tilt (Head 3)",
+                        "Tilt fine (Head 3)",
+                        "Speed (Head 3)",
+                        "Colour macros (Head 3)",
+                        "Pan (Head 4)",
+                        "Pan fine (Head 4)",
+                        "Tilt (Head 4)",
+                        "Tilt fine (Head 4)",
+                        "Speed (Head 4)",
+                        "Colour macros (Head 4)",
+                        "Sound mode / Reset",
+                        "Sound sensitivity",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White"
+                    ]
+                }
+            ]
+        }
+    ]
+}

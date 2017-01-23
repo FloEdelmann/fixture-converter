@@ -1,0 +1,306 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "Inno Pocket Beam Q4",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [147, 265, 159],
+                "weight": 3,
+                "power": 46,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 1231
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [4, 4]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 210
+                }
+            },
+            "availableChannels": {
+                "Pan Movement": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0° - 540°"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt Movement": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0° - 210°"
+                        }
+                    ]
+                },
+                "Tilt Fiine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Red LED": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Green LED": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Blue LED": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "White LED": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Shutter/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [16, 131],
+                            "name": "Strobing slow - fast"
+                        },
+                        {
+                            "range": [132, 139],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [140, 181],
+                            "name": "Shutter slow open - fast close"
+                        },
+                        {
+                            "range": [182, 189],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [190, 231],
+                            "name": "Shutter fast open - slow close"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Random strobe"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Shutter open"
+                        }
+                    ]
+                },
+                "Master Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast - slow"
+                        }
+                    ]
+                },
+                "Blackout/Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 69],
+                            "name": "Nothing"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Blackout w/pan/tilt movement"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Nothing"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Blackout w/Color Change"
+                        },
+                        {
+                            "range": [100, 199],
+                            "name": "Nothing"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Reset all"
+                        },
+                        {
+                            "range": [210, 249],
+                            "name": "Nothing"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Sound active"
+                        }
+                    ]
+                },
+                "Dimmer Curves": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "Standard"
+                        },
+                        {
+                            "range": [21, 40],
+                            "name": "Stage"
+                        },
+                        {
+                            "range": [41, 60],
+                            "name": "TV"
+                        },
+                        {
+                            "range": [61, 80],
+                            "name": "Architectural"
+                        },
+                        {
+                            "range": [81, 100],
+                            "name": "Theater"
+                        },
+                        {
+                            "range": [101, 255],
+                            "name": "Default to unit curve setting"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fiine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "13 Channel",
+                    "channels": [
+                        "Pan Movement",
+                        "Pan Fine",
+                        "Tilt Movement",
+                        "Tilt Fiine",
+                        "Red LED",
+                        "Green LED",
+                        "Blue LED",
+                        "White LED",
+                        "Shutter/Strobe",
+                        "Master Dimmer",
+                        "Pan/Tilt Speed",
+                        "Blackout/Reset",
+                        "Dimmer Curves"
+                    ]
+                },
+                {
+                    "name": "11 Channel",
+                    "channels": [
+                        "Pan Movement",
+                        "Tilt Movement",
+                        "Red LED",
+                        "Green LED",
+                        "Blue LED",
+                        "White LED",
+                        "Shutter/Strobe",
+                        "Master Dimmer",
+                        "Pan/Tilt Speed",
+                        "Blackout/Reset",
+                        "Dimmer Curves"
+                    ]
+                },
+                {
+                    "name": "10 Channel",
+                    "channels": [
+                        "Pan Movement",
+                        "Tilt Movement",
+                        "Green LED",
+                        "Red LED",
+                        "Blue LED",
+                        "White LED",
+                        "Shutter/Strobe",
+                        "Master Dimmer",
+                        "Pan/Tilt Speed",
+                        "Blackout/Reset"
+                    ]
+                }
+            ]
+        }
+    ]
+}

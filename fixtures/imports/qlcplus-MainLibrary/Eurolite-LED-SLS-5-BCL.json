@@ -1,0 +1,167 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "LED SLS 5 BCL",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [230, 270, 110],
+                "weight": 3,
+                "power": 24,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [0, 20]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White (Dim -> Bright)"
+                        }
+                    ]
+                },
+                "Amber": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber (Dim -> Bright)"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimming (Dim -> Bright)"
+                        }
+                    ]
+                },
+                "Sound / Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [1, 5],
+                            "name": "Sound control"
+                        },
+                        {
+                            "range": [6, 10],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "Strobe (slow to fast)"
+                        }
+                    ]
+                },
+                "CH5 Modes": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 28],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [29, 57],
+                            "name": "White"
+                        },
+                        {
+                            "range": [58, 82],
+                            "name": "Amber"
+                        },
+                        {
+                            "range": [83, 87],
+                            "name": "Color Dreaming 1"
+                        },
+                        {
+                            "range": [88, 92],
+                            "name": "Color Dreaming 2"
+                        },
+                        {
+                            "range": [93, 97],
+                            "name": "Color Dreaming 3"
+                        },
+                        {
+                            "range": [164, 168],
+                            "name": "Color Change"
+                        },
+                        {
+                            "range": [246, 255],
+                            "name": "Sound Active"
+                        }
+                    ]
+                },
+                "Strobe/Speed/Sensitivity": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobe, Color speed, Sound sensitivity (depends on CH5)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "2 Channel",
+                    "channels": [
+                        "White",
+                        "Amber"
+                    ]
+                },
+                {
+                    "name": "3 Channel",
+                    "channels": [
+                        "White",
+                        "Amber",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "4 Channel",
+                    "channels": [
+                        "White",
+                        "Amber",
+                        "Dimmer",
+                        "Sound / Strobe"
+                    ]
+                },
+                {
+                    "name": "5 Channel",
+                    "channels": [
+                        "White",
+                        "Amber",
+                        "Dimmer",
+                        "Strobe/Speed/Sensitivity",
+                        "CH5 Modes"
+                    ]
+                }
+            ]
+        }
+    ]
+}

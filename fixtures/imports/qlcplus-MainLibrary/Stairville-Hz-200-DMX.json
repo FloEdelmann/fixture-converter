@@ -1,0 +1,56 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "Hz-200 DMX",
+            "type": "Hazer",
+            "physical": {
+                "dimensions": [280, 380, 330],
+                "weight": 7.5,
+                "power": 615,
+                "DMXconnector": "3-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Haze": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amount of haze 0-100 %"
+                        }
+                    ]
+                },
+                "Fan Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fan speed 0-100 %"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Haze",
+                        "Fan Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

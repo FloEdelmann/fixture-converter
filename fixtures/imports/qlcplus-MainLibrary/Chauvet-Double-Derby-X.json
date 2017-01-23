@@ -1,0 +1,79 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "Double Derby X",
+            "type": "Flower",
+            "physical": {
+                "dimensions": [283, 264, 297],
+                "weight": 2.7,
+                "power": 30,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Control/Operating Mode": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [15, 100],
+                            "name": "LEDs on"
+                        },
+                        {
+                            "range": [101, 255],
+                            "name": "Auto"
+                        }
+                    ]
+                },
+                "Motor Rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Nothing"
+                        },
+                        {
+                            "range": [1, 85],
+                            "name": "Counter-clockwise motor rotation (Slow ~ Fast)"
+                        },
+                        {
+                            "range": [86, 170],
+                            "name": "Clockwise motor rotation (Slow ~ Fast)"
+                        },
+                        {
+                            "range": [171, 255],
+                            "name": "Motor rotation right-to-left-to-right (Slow ~ Fast)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Standard",
+                    "channels": [
+                        "Control/Operating Mode",
+                        "Motor Rotation"
+                    ]
+                }
+            ]
+        }
+    ]
+}

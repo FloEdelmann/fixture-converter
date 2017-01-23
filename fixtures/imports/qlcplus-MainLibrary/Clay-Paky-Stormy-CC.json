@@ -1,0 +1,317 @@
+{
+    "manufacturers": {
+        "Clay Paky": {
+            "name": "Clay Paky"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Clay Paky",
+            "name": "Stormy CC",
+            "type": "Strobe",
+            "physical": {
+                "dimensions": [482, 305, 182],
+                "weight": 7.5,
+                "power": 800,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "LED",
+                    "colorTemperature": 5700,
+                    "lumens": 80000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [42, 130]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Light Off"
+                        },
+                        {
+                            "range": [6, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Duration": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Rate": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Light Off"
+                        },
+                        {
+                            "range": [6, 255],
+                            "name": "Low < Fast"
+                        }
+                    ]
+                },
+                "Macro": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Macro Off"
+                        },
+                        {
+                            "range": [6, 42],
+                            "name": "Macro 1 - Up ramp"
+                        },
+                        {
+                            "range": [43, 85],
+                            "name": "Macro 2 - Down ramp"
+                        },
+                        {
+                            "range": [86, 128],
+                            "name": "Macro 3 - Up < > Down ramp"
+                        },
+                        {
+                            "range": [129, 171],
+                            "name": "Macro 4 - Random"
+                        },
+                        {
+                            "range": [172, 214],
+                            "name": "Macro 5 - Lighting"
+                        },
+                        {
+                            "range": [215, 255],
+                            "name": "Macro 6 - Spikes"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < MAx"
+                        }
+                    ]
+                },
+                "Blue Duration": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Blue Rate": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "White Duration": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "White Rate": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Green Duration": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < MAx"
+                        }
+                    ]
+                },
+                "Green Rate": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < MAx"
+                        }
+                    ]
+                },
+                "Red Duration": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Red Rate": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Mask": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "No overwrinting"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "RED overwrinting all"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Green overwrinting all"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Blue overwrinting all"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "White overwrinting all"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "RED, GREEN overwrinting BLUE, WHITE"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "RED, BLUE overwrinting GREEN, WHITE"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "RED, WHITE overwrinting GREEN, BLUE"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "GREEN, BLUE overwrinting RED, WHITE"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "GREEN, WHITE overwrinting RED, BLUE"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "BLUE, WHITE overwrinting RED, GREEN"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "RGB overwrinting WHITE"
+                        },
+                        {
+                            "range": [208, 223],
+                            "name": "RGW overwrinting BLUE"
+                        },
+                        {
+                            "range": [224, 239],
+                            "name": "RBW overwrinting GREEN"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "GBW overwrinting RED"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Independent",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Blue Duration",
+                        "Blue Rate",
+                        "White Duration",
+                        "White Rate",
+                        "Green Duration",
+                        "Green Rate",
+                        "Red Duration",
+                        "Red Rate",
+                        "Mask"
+                    ]
+                },
+                {
+                    "name": "Standard",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Dimmer",
+                        "Duration",
+                        "Rate"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,777 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "LED KLS Laser Bar FX Light Set",
+            "type": "Effect",
+            "physical": {
+                "dimensions": [1320, 320, 145],
+                "weight": 7.3,
+                "power": 50,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [8, 15]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Blackout, Automatic Mode and Sound-Controlled Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [10, 31],
+                            "name": "Automatic mode spots and derbies (APxx)"
+                        },
+                        {
+                            "range": [32, 65],
+                            "name": "Automatic mode laser (AL0x)"
+                        },
+                        {
+                            "range": [66, 95],
+                            "name": "Automatic mode strobe LEDs (AFxx)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Automatic mode derbies, spots, laser and strobe LEDs  (AM0x)"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Sound-controlled mode spots and derbies (SPxx)"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Sound-controlled mode laser (SL0x)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Sound-controlled mode strobe LEDs (SFxx)"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Sound-controlled mode derbies, spots, laser and strobe LEDs (SM0x)"
+                        }
+                    ]
+                },
+                "Program Selection for Channel 1": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "xP01/xL01/xF01/xM01"
+                        },
+                        {
+                            "range": [10, 14],
+                            "name": "xP02/xL01/xF01/xM01"
+                        },
+                        {
+                            "range": [15, 19],
+                            "name": "xP02/xL01/xF02/xM01"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "xP03/xL01/xF02/xM02"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "xP04/xL01/xF03/xM02"
+                        },
+                        {
+                            "range": [40, 44],
+                            "name": "xP05/xL02/xF03/xM03"
+                        },
+                        {
+                            "range": [45, 49],
+                            "name": "xP05/xL02/xF04/xM03"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "xP06/xL02/xF04/xM03"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "xP07/xL02/xF05/xM03"
+                        },
+                        {
+                            "range": [70, 74],
+                            "name": "xP08/xL02/xF05/xM03"
+                        },
+                        {
+                            "range": [75, 79],
+                            "name": "xP08/xL02/xF06/xM03"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "xP09/xL03/xF06/xM03"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "xP10/xL03/xF07/xM03"
+                        },
+                        {
+                            "range": [100, 104],
+                            "name": "xP11/xL03/xF07/xM03"
+                        },
+                        {
+                            "range": [105, 109],
+                            "name": "xP11/xL03/xF08/xM03"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "xP12/xL03/xF08/xM03"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "xP13/xL04/xF09/xM03"
+                        },
+                        {
+                            "range": [130, 134],
+                            "name": "xP14/xL04/xF09/xM03"
+                        },
+                        {
+                            "range": [135, 139],
+                            "name": "xP14/xL04/xF10/xM03"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "xP15/xL05/xF10/xM03"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "xP16/xL05/xF10/xM03"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "xP17/xL06/xF10/xM03"
+                        },
+                        {
+                            "range": [170, 255],
+                            "name": "xP18/xL06/xF10/xM03"
+                        }
+                    ]
+                },
+                "Running Speed (for Channel 1: 010-127)": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Running speed slow → fast"
+                        }
+                    ]
+                },
+                "Derbies and Spots: Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100 %"
+                        }
+                    ]
+                },
+                "Derbies and Spots: Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100 %"
+                        }
+                    ]
+                },
+                "Derbies and Spots: Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100 %"
+                        }
+                    ]
+                },
+                "Derbies and Spots: Dimmer/ Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 191],
+                            "name": "Master dimmer 0-100 %"
+                        },
+                        {
+                            "range": [192, 200],
+                            "name": "Sound-controlled strobe effect"
+                        },
+                        {
+                            "range": [201, 249],
+                            "name": "Strobe effect slow → fast (30 Hz)"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "All colors on"
+                        }
+                    ]
+                },
+                "Derbies and Spots: Rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [5, 127],
+                            "name": "Clockwise rotation slow → fast"
+                        },
+                        {
+                            "range": [128, 133],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [134, 255],
+                            "name": "Anti-clockwise rotation slow → fast"
+                        }
+                    ]
+                },
+                "Laser: Red": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Red laser off",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [5, 9],
+                            "name": "Red laser on",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Red laser strobe effect slow → fast"
+                        }
+                    ]
+                },
+                "Laser: Green": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Green laser off",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [5, 9],
+                            "name": "Green laser on",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Green laser strobe effect slow → fast"
+                        }
+                    ]
+                },
+                "Laser: Rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [5, 127],
+                            "name": "Clockwise rotation slow → fast"
+                        },
+                        {
+                            "range": [128, 133],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [134, 255],
+                            "name": "Anti-clockwise rotation slow → fast"
+                        }
+                    ]
+                },
+                "Strobe LEDs": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Strobe LEDs off"
+                        },
+                        {
+                            "range": [5, 9],
+                            "name": "Strobe LEDs on"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe effect slow → fast"
+                        }
+                    ]
+                },
+                "Derby 1: Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100 %"
+                        }
+                    ]
+                },
+                "Derby 1: Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100 %"
+                        }
+                    ]
+                },
+                "Derby 1: Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100 %"
+                        }
+                    ]
+                },
+                "Derby 1: Brightness/Sound-Control": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Brightness red, green and blue 0-100 %"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Sound-controlled strobe effect"
+                        }
+                    ]
+                },
+                "Derby 1: Strobe/Rotation": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Strobe effect slow → fast (30 Hz)"
+                        },
+                        {
+                            "range": [5, 127],
+                            "name": "All colors on"
+                        },
+                        {
+                            "range": [128, 133],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [134, 255],
+                            "name": "Clockwise rotation slow → fast"
+                        }
+                    ]
+                },
+                "Spot 2: Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100 %"
+                        }
+                    ]
+                },
+                "Spot 2: Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100 %"
+                        }
+                    ]
+                },
+                "Spot 2: Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100 %"
+                        }
+                    ]
+                },
+                "Spot 2: Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe effect slow → fast (30 Hz)"
+                        }
+                    ]
+                },
+                "Spot 2: Non/Rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "No function for spots or rotation when operating a derby at this position"
+                        }
+                    ]
+                },
+                "Spot 3: Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100 %"
+                        }
+                    ]
+                },
+                "Spot 3: Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100 %"
+                        }
+                    ]
+                },
+                "Spot 3: Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100 %"
+                        }
+                    ]
+                },
+                "Spot 3: Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe effect slow → fast (30 Hz)"
+                        }
+                    ]
+                },
+                "Spot 3: Non/Rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "No function for spots or rotation when operating a derby at this position"
+                        }
+                    ]
+                },
+                "Derby 4: Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100 %"
+                        }
+                    ]
+                },
+                "Derby 4: Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100 %"
+                        }
+                    ]
+                },
+                "Derby 4: Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100 %"
+                        }
+                    ]
+                },
+                "Derby 4: Brightness/Sound-Control": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Brightness red, green and blue 0-100 %"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Sound-controlled strobe effect"
+                        }
+                    ]
+                },
+                "Derby 4: Strobe/Rotation": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Strobe effect slow → fast (30 Hz)"
+                        },
+                        {
+                            "range": [5, 127],
+                            "name": "All colors on"
+                        },
+                        {
+                            "range": [128, 133],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [134, 255],
+                            "name": "Clockwise rotation slow → fast"
+                        }
+                    ]
+                },
+                "Strobe LED 1": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Strobe LED off"
+                        },
+                        {
+                            "range": [5, 9],
+                            "name": "Strobe LED on"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe effect slow → fast"
+                        }
+                    ]
+                },
+                "Strobe LED 2": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Strobe LED off"
+                        },
+                        {
+                            "range": [5, 9],
+                            "name": "Strobe LED on"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe effect slow → fast"
+                        }
+                    ]
+                },
+                "Strobe LED 3": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Strobe LED off"
+                        },
+                        {
+                            "range": [5, 9],
+                            "name": "Strobe LED on"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe effect slow → fast"
+                        }
+                    ]
+                },
+                "Strobe LED 4": {
+                    "type": "SingleColor",
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Strobe LED off"
+                        },
+                        {
+                            "range": [5, 9],
+                            "name": "Strobe LED on"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe effect slow → fast"
+                        }
+                    ]
+                }
+            },
+            "heads": {
+                "9 Channels-head0": [
+                    "Derbies and Spots: Green",
+                    "Derbies and Spots: Red",
+                    "Derbies and Spots: Dimmer/ Strobe",
+                    "Derbies and Spots: Blue",
+                    "Derbies and Spots: Rotation"
+                ],
+                "9 Channels-head1": [
+                    "Laser: Red",
+                    "Laser: Rotation",
+                    "Laser: Green"
+                ],
+                "9 Channels-head2": [
+                    "Strobe LEDs"
+                ],
+                "27 Channels-head0": [
+                    "Derby 1: Green",
+                    "Derby 1: Red",
+                    "Derby 1: Brightness/Sound-Control",
+                    "Derby 1: Blue",
+                    "Derby 1: Strobe/Rotation"
+                ],
+                "27 Channels-head1": [
+                    "Strobe LED 1"
+                ],
+                "27 Channels-head2": [
+                    "Spot 2: Red",
+                    "Spot 2: Blue",
+                    "Spot 2: Green",
+                    "Spot 2: Non/Rotation",
+                    "Spot 2: Strobe"
+                ],
+                "27 Channels-head3": [
+                    "Strobe LED 2"
+                ],
+                "27 Channels-head4": [
+                    "Laser: Green",
+                    "Laser: Red",
+                    "Laser: Rotation"
+                ],
+                "27 Channels-head5": [
+                    "Strobe LED 3"
+                ],
+                "27 Channels-head6": [
+                    "Spot 3: Green",
+                    "Spot 3: Red",
+                    "Spot 3: Strobe",
+                    "Spot 3: Blue",
+                    "Spot 3: Non/Rotation"
+                ],
+                "27 Channels-head7": [
+                    "Strobe LED 4"
+                ],
+                "27 Channels-head8": [
+                    "Derby 4: Red",
+                    "Derby 4: Blue",
+                    "Derby 4: Green",
+                    "Derby 4: Strobe/Rotation",
+                    "Derby 4: Brightness/Sound-Control"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "3 Channels",
+                    "channels": [
+                        "Blackout, Automatic Mode and Sound-Controlled Mode",
+                        "Program Selection for Channel 1",
+                        "Running Speed (for Channel 1: 010-127)"
+                    ]
+                },
+                {
+                    "name": "5 Channels",
+                    "channels": [
+                        "Derbies and Spots: Red",
+                        "Derbies and Spots: Green",
+                        "Derbies and Spots: Blue",
+                        "Derbies and Spots: Dimmer/ Strobe",
+                        "Derbies and Spots: Rotation"
+                    ]
+                },
+                {
+                    "name": "9 Channels",
+                    "channels": [
+                        "Derbies and Spots: Red",
+                        "Derbies and Spots: Green",
+                        "Derbies and Spots: Blue",
+                        "Derbies and Spots: Dimmer/ Strobe",
+                        "Derbies and Spots: Rotation",
+                        "Laser: Red",
+                        "Laser: Green",
+                        "Laser: Rotation",
+                        "Strobe LEDs"
+                    ]
+                },
+                {
+                    "name": "27 Channels",
+                    "channels": [
+                        "Derby 1: Red",
+                        "Derby 1: Green",
+                        "Derby 1: Blue",
+                        "Derby 1: Brightness/Sound-Control",
+                        "Derby 1: Strobe/Rotation",
+                        "Spot 2: Red",
+                        "Spot 2: Green",
+                        "Spot 2: Blue",
+                        "Spot 2: Strobe",
+                        "Spot 2: Non/Rotation",
+                        "Spot 3: Red",
+                        "Spot 3: Green",
+                        "Spot 3: Blue",
+                        "Spot 3: Strobe",
+                        "Spot 3: Non/Rotation",
+                        "Derby 4: Red",
+                        "Derby 4: Green",
+                        "Derby 4: Blue",
+                        "Derby 4: Brightness/Sound-Control",
+                        "Derby 4: Strobe/Rotation",
+                        "Laser: Red",
+                        "Laser: Green",
+                        "Laser: Rotation",
+                        "Strobe LED 1",
+                        "Strobe LED 2",
+                        "Strobe LED 3",
+                        "Strobe LED 4"
+                    ]
+                }
+            ]
+        }
+    ]
+}

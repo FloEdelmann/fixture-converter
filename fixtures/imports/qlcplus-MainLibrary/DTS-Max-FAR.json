@@ -1,0 +1,1137 @@
+{
+    "manufacturers": {
+        "DTS": {
+            "name": "DTS"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "DTS",
+            "name": "Max FAR",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [355, 600, 395],
+                "weight": 20,
+                "power": 450,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "MSD 275W",
+                    "colorTemperature": 8000,
+                    "lumens": 16000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [2, 40]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan Coarse": {
+                    "type": "Pan"
+                },
+                "Pan Fine": {
+                    "type": "Pan"
+                },
+                "Tilt Coarse": {
+                    "type": "Tilt"
+                },
+                "Tilt Fine": {
+                    "type": "Tilt"
+                },
+                "Speed Move": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Standard"
+                        },
+                        {
+                            "range": [11, 25],
+                            "name": "Fast Move"
+                        },
+                        {
+                            "range": [26, 127],
+                            "name": "Vector Mode"
+                        },
+                        {
+                            "range": [128, 247],
+                            "name": "Variable Reaction"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Silent Move"
+                        }
+                    ]
+                },
+                "Pan FAR": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Standard"
+                        },
+                        {
+                            "range": [11, 20],
+                            "name": "1 turn"
+                        },
+                        {
+                            "range": [21, 30],
+                            "name": "2 turns"
+                        },
+                        {
+                            "range": [31, 40],
+                            "name": "3 turns"
+                        },
+                        {
+                            "range": [41, 50],
+                            "name": "4 turns"
+                        },
+                        {
+                            "range": [51, 60],
+                            "name": "5 turns"
+                        },
+                        {
+                            "range": [61, 70],
+                            "name": "6 turns"
+                        },
+                        {
+                            "range": [71, 80],
+                            "name": "7 turns"
+                        },
+                        {
+                            "range": [81, 90],
+                            "name": "8 turns"
+                        },
+                        {
+                            "range": [91, 100],
+                            "name": "9 turns"
+                        },
+                        {
+                            "range": [101, 110],
+                            "name": "10 turns"
+                        },
+                        {
+                            "range": [111, 120],
+                            "name": "Smart Path"
+                        },
+                        {
+                            "range": [121, 182],
+                            "name": "Forward Spin"
+                        },
+                        {
+                            "range": [183, 193],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Reverse Spin"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [20, 39],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [40, 59],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [60, 79],
+                            "name": "Random"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Speed 1"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Speed 2"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Speed 3"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "Speed 4"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "Speed 5"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "Speed 6"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Open Speed 1"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "Open Speed 2"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "Open Speed 3"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "Open Speed 4"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "Close Speed 1"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "Close Speed 2"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Close Speed 3"
+                        },
+                        {
+                            "range": [210, 219],
+                            "name": "Close Speed 4"
+                        },
+                        {
+                            "range": [220, 227],
+                            "name": "Color/Gobo in BO"
+                        },
+                        {
+                            "range": [228, 233],
+                            "name": "Pan/Tilt in BO"
+                        },
+                        {
+                            "range": [234, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 13],
+                            "name": "White Open",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [14, 27],
+                            "name": "Red",
+                            "color": "#630002"
+                        },
+                        {
+                            "range": [28, 41],
+                            "name": "Yellow 1",
+                            "color": "#ffdb01"
+                        },
+                        {
+                            "range": [42, 55],
+                            "name": "Green",
+                            "color": "#35a41f"
+                        },
+                        {
+                            "range": [56, 69],
+                            "name": "Pink",
+                            "color": "#ff009c"
+                        },
+                        {
+                            "range": [70, 83],
+                            "name": "Full CTO",
+                            "color": "#fdc801"
+                        },
+                        {
+                            "range": [84, 97],
+                            "name": "Full CTB",
+                            "color": "#01cdff"
+                        },
+                        {
+                            "range": [98, 111],
+                            "name": "Orange",
+                            "color": "#fd5b00"
+                        },
+                        {
+                            "range": [112, 125],
+                            "name": "Dark Blue",
+                            "color": "#0300d6"
+                        },
+                        {
+                            "range": [126, 139],
+                            "name": "Light Red",
+                            "color": "#c51e01"
+                        },
+                        {
+                            "range": [140, 153],
+                            "name": "Purple",
+                            "color": "#a701ba"
+                        },
+                        {
+                            "range": [154, 167],
+                            "name": "Yellow 2",
+                            "color": "#eddf1d"
+                        },
+                        {
+                            "range": [168, 181],
+                            "name": "Light Blue",
+                            "color": "#3bc6ef"
+                        },
+                        {
+                            "range": [182, 195],
+                            "name": "Light Green",
+                            "color": "#00e000"
+                        },
+                        {
+                            "range": [196, 209],
+                            "name": "Magenta",
+                            "color": "#c801c3"
+                        },
+                        {
+                            "range": [210, 223],
+                            "name": "Blue",
+                            "color": "#0000e3"
+                        },
+                        {
+                            "range": [224, 237],
+                            "name": "Amber",
+                            "color": "#f7962c"
+                        },
+                        {
+                            "range": [238, 255],
+                            "name": "Dark Green",
+                            "color": "#02cd02"
+                        }
+                    ]
+                },
+                "Color Mode": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Full Color"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Half Color"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Proportional Color"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Rainbow"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan"
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta"
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow"
+                },
+                "CTO": {
+                    "type": "MultiColor"
+                },
+                "Speed CMY": {
+                    "type": "Speed"
+                },
+                "Macro CMY": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [10, 14],
+                            "name": "Macro 1"
+                        },
+                        {
+                            "range": [15, 19],
+                            "name": "Macro 2"
+                        },
+                        {
+                            "range": [20, 24],
+                            "name": "Macro 3"
+                        },
+                        {
+                            "range": [25, 29],
+                            "name": "Macro 4"
+                        },
+                        {
+                            "range": [30, 34],
+                            "name": "Macro 5"
+                        },
+                        {
+                            "range": [35, 39],
+                            "name": "Macro 6"
+                        },
+                        {
+                            "range": [40, 44],
+                            "name": "Macro 7"
+                        },
+                        {
+                            "range": [45, 49],
+                            "name": "Macro 8"
+                        },
+                        {
+                            "range": [50, 54],
+                            "name": "Macro 9"
+                        },
+                        {
+                            "range": [55, 59],
+                            "name": "Macro 10"
+                        },
+                        {
+                            "range": [60, 64],
+                            "name": "Macro 11"
+                        },
+                        {
+                            "range": [65, 69],
+                            "name": "Macro 12"
+                        },
+                        {
+                            "range": [70, 74],
+                            "name": "Macro 13"
+                        },
+                        {
+                            "range": [75, 79],
+                            "name": "Macro 14"
+                        },
+                        {
+                            "range": [80, 84],
+                            "name": "Macro 15"
+                        },
+                        {
+                            "range": [85, 89],
+                            "name": "Macro 16"
+                        },
+                        {
+                            "range": [90, 94],
+                            "name": "Macro 17"
+                        },
+                        {
+                            "range": [95, 99],
+                            "name": "Macro 18"
+                        },
+                        {
+                            "range": [100, 104],
+                            "name": "Macro 19"
+                        },
+                        {
+                            "range": [105, 109],
+                            "name": "Macro 20"
+                        },
+                        {
+                            "range": [110, 114],
+                            "name": "Macro 21"
+                        },
+                        {
+                            "range": [115, 121],
+                            "name": "Rainbow wait 0"
+                        },
+                        {
+                            "range": [122, 128],
+                            "name": "Rainbow wait 2"
+                        },
+                        {
+                            "range": [129, 135],
+                            "name": "Rainbow wait 3"
+                        },
+                        {
+                            "range": [136, 142],
+                            "name": "Rainbow wait 4"
+                        },
+                        {
+                            "range": [143, 149],
+                            "name": "Rainbow wait 5"
+                        },
+                        {
+                            "range": [150, 156],
+                            "name": "Rainbow wait 6"
+                        },
+                        {
+                            "range": [157, 163],
+                            "name": "Rainbow wait 7"
+                        },
+                        {
+                            "range": [164, 170],
+                            "name": "Rainbow wait 8"
+                        },
+                        {
+                            "range": [171, 177],
+                            "name": "Rainbow wait 9"
+                        },
+                        {
+                            "range": [178, 185],
+                            "name": "Rainbow wait 10"
+                        },
+                        {
+                            "range": [186, 192],
+                            "name": "FC Rainbow wait 0"
+                        },
+                        {
+                            "range": [193, 199],
+                            "name": "FC Rainbow wait 2"
+                        },
+                        {
+                            "range": [200, 206],
+                            "name": "FC Rainbow wait 3"
+                        },
+                        {
+                            "range": [207, 213],
+                            "name": "FC Rainbow wait 4"
+                        },
+                        {
+                            "range": [214, 220],
+                            "name": "FC Rainbow wait 5"
+                        },
+                        {
+                            "range": [221, 227],
+                            "name": "FC Rainbow wait 6"
+                        },
+                        {
+                            "range": [228, 234],
+                            "name": "FC Rainbow wait 7"
+                        },
+                        {
+                            "range": [235, 241],
+                            "name": "FC Rainbow wait 8"
+                        },
+                        {
+                            "range": [242, 248],
+                            "name": "FC Rainbow wait 9"
+                        },
+                        {
+                            "range": [249, 255],
+                            "name": "FC Rainbow wait 10"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [21, 41],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [42, 62],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [63, 83],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [84, 104],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [105, 125],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [126, 146],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [147, 167],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [168, 188],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [189, 207],
+                            "name": "Gobo 9"
+                        },
+                        {
+                            "range": [208, 213],
+                            "name": "Speed rot 1"
+                        },
+                        {
+                            "range": [214, 219],
+                            "name": "Speed rot 2"
+                        },
+                        {
+                            "range": [220, 225],
+                            "name": "Speed rot 3"
+                        },
+                        {
+                            "range": [226, 231],
+                            "name": "Speed rot 4"
+                        },
+                        {
+                            "range": [232, 237],
+                            "name": "Speed rot 5"
+                        },
+                        {
+                            "range": [238, 243],
+                            "name": "Speed rot 6"
+                        },
+                        {
+                            "range": [244, 249],
+                            "name": "Speed rot 7"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Speed rot 8"
+                        }
+                    ]
+                },
+                "Gobo Mode": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Rotation"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Index"
+                        }
+                    ]
+                },
+                "Gobo Rot/Index": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [10, 127],
+                            "name": "Left Rotation"
+                        },
+                        {
+                            "range": [128, 137],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [138, 255],
+                            "name": "Right Rotation"
+                        }
+                    ]
+                },
+                "Gobo Index Fine": {
+                    "type": "Gobo"
+                },
+                "Gobo Shake": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [10, 22],
+                            "name": "R-L speed 1"
+                        },
+                        {
+                            "range": [23, 35],
+                            "name": "R-L speed 2"
+                        },
+                        {
+                            "range": [36, 48],
+                            "name": "R-L speed 3"
+                        },
+                        {
+                            "range": [49, 61],
+                            "name": "R-L speed 4"
+                        },
+                        {
+                            "range": [62, 74],
+                            "name": "R-L speed 5"
+                        },
+                        {
+                            "range": [75, 87],
+                            "name": "R-L speed 6"
+                        },
+                        {
+                            "range": [88, 100],
+                            "name": "R-L speed 7"
+                        },
+                        {
+                            "range": [101, 113],
+                            "name": "R-L speed 8"
+                        },
+                        {
+                            "range": [114, 126],
+                            "name": "R-L speed 9"
+                        },
+                        {
+                            "range": [127, 138],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [139, 151],
+                            "name": "L-R speed 1"
+                        },
+                        {
+                            "range": [152, 164],
+                            "name": "L-R speed 2"
+                        },
+                        {
+                            "range": [165, 177],
+                            "name": "L-R speed 3"
+                        },
+                        {
+                            "range": [178, 190],
+                            "name": "L-R speed 4"
+                        },
+                        {
+                            "range": [191, 203],
+                            "name": "L-R speed 5"
+                        },
+                        {
+                            "range": [204, 216],
+                            "name": "L-R speed 6"
+                        },
+                        {
+                            "range": [217, 229],
+                            "name": "L-R speed 7"
+                        },
+                        {
+                            "range": [230, 242],
+                            "name": "L-R speed 8"
+                        },
+                        {
+                            "range": [243, 255],
+                            "name": "L-R speed 9"
+                        }
+                    ]
+                },
+                "Fixed Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 18],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [19, 37],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [38, 56],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [57, 75],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [76, 94],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [95, 113],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [114, 132],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [133, 151],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [152, 170],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [171, 189],
+                            "name": "Gobo 9"
+                        },
+                        {
+                            "range": [190, 207],
+                            "name": "Gobo 10"
+                        },
+                        {
+                            "range": [208, 213],
+                            "name": "Speed rot 1"
+                        },
+                        {
+                            "range": [214, 219],
+                            "name": "Speed rot 2"
+                        },
+                        {
+                            "range": [220, 225],
+                            "name": "Speed rot 3"
+                        },
+                        {
+                            "range": [226, 231],
+                            "name": "Speed rot 4"
+                        },
+                        {
+                            "range": [232, 237],
+                            "name": "Speed rot 5"
+                        },
+                        {
+                            "range": [238, 243],
+                            "name": "Speed rot 6"
+                        },
+                        {
+                            "range": [244, 255],
+                            "name": "Speed rot 7"
+                        }
+                    ]
+                },
+                "Fixed Gobo Shake": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [10, 22],
+                            "name": "R-L Speed 1"
+                        },
+                        {
+                            "range": [23, 35],
+                            "name": "R-L Speed 2"
+                        },
+                        {
+                            "range": [36, 48],
+                            "name": "R-L Speed 3"
+                        },
+                        {
+                            "range": [49, 61],
+                            "name": "R-L Speed 4"
+                        },
+                        {
+                            "range": [62, 74],
+                            "name": "R-L Speed 5"
+                        },
+                        {
+                            "range": [75, 87],
+                            "name": "R-L Speed 6"
+                        },
+                        {
+                            "range": [88, 100],
+                            "name": "R-L Speed 7"
+                        },
+                        {
+                            "range": [101, 113],
+                            "name": "R-L Speed 8"
+                        },
+                        {
+                            "range": [114, 126],
+                            "name": "R-L Speed 9"
+                        },
+                        {
+                            "range": [127, 138],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [139, 151],
+                            "name": "L-R Speed 1"
+                        },
+                        {
+                            "range": [152, 164],
+                            "name": "L-R Speed 2"
+                        },
+                        {
+                            "range": [165, 177],
+                            "name": "L-R Speed 3"
+                        },
+                        {
+                            "range": [178, 190],
+                            "name": "L-R Speed 4"
+                        },
+                        {
+                            "range": [191, 203],
+                            "name": "L-R Speed 5"
+                        },
+                        {
+                            "range": [204, 216],
+                            "name": "L-R Speed 6"
+                        },
+                        {
+                            "range": [217, 229],
+                            "name": "L-R Speed 7"
+                        },
+                        {
+                            "range": [230, 242],
+                            "name": "L-R Speed 8"
+                        },
+                        {
+                            "range": [243, 255],
+                            "name": "L-R Speed 9"
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [10, 246],
+                            "name": "Linear"
+                        },
+                        {
+                            "range": [247, 255],
+                            "name": "Closed"
+                        }
+                    ]
+                },
+                "Iris Macros": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No effect"
+                        },
+                        {
+                            "range": [10, 63],
+                            "name": "Diff Speed Pulse"
+                        },
+                        {
+                            "range": [64, 117],
+                            "name": "Closing Pulse"
+                        },
+                        {
+                            "range": [118, 171],
+                            "name": "Opening Pulse"
+                        },
+                        {
+                            "range": [172, 213],
+                            "name": "Closing Pulse + Zoom"
+                        },
+                        {
+                            "range": [214, 255],
+                            "name": "Opening Pulse + Zoom"
+                        }
+                    ]
+                },
+                "Animation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No effect"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Linear"
+                        }
+                    ]
+                },
+                "Frost": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Frost"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Prism"
+                        }
+                    ]
+                },
+                "Prism Anim/Rot": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [10, 127],
+                            "name": "Left Rotation"
+                        },
+                        {
+                            "range": [128, 137],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [138, 255],
+                            "name": "Right Rotation"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam"
+                },
+                "Focus Fine": {
+                    "type": "Beam"
+                },
+                "Zoom": {
+                    "type": "Beam"
+                },
+                "Reset/Lamp": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No effect"
+                        },
+                        {
+                            "range": [10, 60],
+                            "name": "Lamp OFF"
+                        },
+                        {
+                            "range": [61, 129],
+                            "name": "No effect"
+                        },
+                        {
+                            "range": [130, 179],
+                            "name": "Lamp ON"
+                        },
+                        {
+                            "range": [180, 200],
+                            "name": "No effect"
+                        },
+                        {
+                            "range": [201, 239],
+                            "name": "Internal Motor Reset"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Total Reset"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ],
+                [
+                    "Gobo",
+                    "Gobo Index Fine"
+                ],
+                [
+                    "Focus",
+                    "Focus Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "33ch",
+                    "channels": [
+                        "Pan Coarse",
+                        "Pan Fine",
+                        "Tilt Coarse",
+                        "Tilt Fine",
+                        "Speed Move",
+                        "Pan FAR",
+                        "Dimmer",
+                        "Shutter",
+                        "Color",
+                        "Color Mode",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "CTO",
+                        "Speed CMY",
+                        "Macro CMY",
+                        "Gobo",
+                        "Gobo Mode",
+                        "Gobo Rot/Index",
+                        "Gobo Index Fine",
+                        "Gobo Shake",
+                        "Fixed Gobo",
+                        "Fixed Gobo Shake",
+                        "Iris",
+                        "Iris Macros",
+                        "Animation",
+                        "Frost",
+                        "Prism",
+                        "Prism Anim/Rot",
+                        "Focus",
+                        "Focus Fine",
+                        "Zoom",
+                        "Reset/Lamp"
+                    ]
+                },
+                {
+                    "name": "24ch",
+                    "channels": [
+                        "Pan Coarse",
+                        "Pan Fine",
+                        "Tilt Coarse",
+                        "Tilt Fine",
+                        "Speed Move",
+                        "Pan FAR",
+                        "Dimmer",
+                        "Shutter",
+                        "Color",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "CTO",
+                        "Gobo",
+                        "Gobo Rot/Index",
+                        "Fixed Gobo",
+                        "Iris",
+                        "Animation",
+                        "Frost",
+                        "Prism",
+                        "Prism Anim/Rot",
+                        "Focus",
+                        "Zoom",
+                        "Reset/Lamp"
+                    ]
+                }
+            ]
+        }
+    ]
+}

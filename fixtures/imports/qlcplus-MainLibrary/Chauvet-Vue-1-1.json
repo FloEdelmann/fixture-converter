@@ -1,0 +1,150 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "Vue 1.1",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [216, 190, 254],
+                "weight": 2.3,
+                "power": 19,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [34, 34]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Control/Operating Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 24],
+                            "name": "Red, green, blue mode"
+                        },
+                        {
+                            "range": [25, 49],
+                            "name": "Standalone mode 1 (automatic)"
+                        },
+                        {
+                            "range": [50, 74],
+                            "name": "Standalone mode 2 (automatic)"
+                        },
+                        {
+                            "range": [75, 99],
+                            "name": "Standalone mode 3 (automatic)"
+                        },
+                        {
+                            "range": [100, 124],
+                            "name": "Standalone mode 4 (automatic)"
+                        },
+                        {
+                            "range": [125, 149],
+                            "name": "Standalone mode 5 (automatic)"
+                        },
+                        {
+                            "range": [150, 174],
+                            "name": "Standalone mode 6 (automatic)"
+                        },
+                        {
+                            "range": [175, 199],
+                            "name": "Standalone mode 7 (automatic)"
+                        },
+                        {
+                            "range": [200, 224],
+                            "name": "Standalone mode 8 (automatic)"
+                        },
+                        {
+                            "range": [225, 249],
+                            "name": "Standalone mode 9 (automatic)"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Standalone (sound active)"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <-> 100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <-> 100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <-> 100%"
+                        }
+                    ]
+                },
+                "Standalone Speed/Strobing Speed": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Slow <-> fast/No strobe"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Slow <-> fast/Slow <-> fast"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <-> 100%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Control/Operating Mode",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Standalone Speed/Strobing Speed",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,150 @@
+{
+    "manufacturers": {
+        "lightmaXX": {
+            "name": "lightmaXX"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "lightmaXX",
+            "name": "LED MEGA PAR 64 RGBW 18x8 W",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [300, 310, 270],
+                "weight": 2.5,
+                "power": 170,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "dark - bright"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "slow - fast"
+                        }
+                    ]
+                },
+                "red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "dark - bright"
+                        }
+                    ]
+                },
+                "green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "dark - bright"
+                        }
+                    ]
+                },
+                "blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "dark - bright"
+                        }
+                    ]
+                },
+                "white": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "dark - bright"
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "sound"
+                        },
+                        {
+                            "range": [5, 80],
+                            "name": "color macro"
+                        },
+                        {
+                            "range": [81, 150],
+                            "name": "color change"
+                        },
+                        {
+                            "range": [151, 255],
+                            "name": "color dream"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3 channel",
+                    "channels": [
+                        "red",
+                        "green",
+                        "blue"
+                    ]
+                },
+                {
+                    "name": "4 channel",
+                    "physical": {
+                        "DMXconnector": "5-pin"
+                    },
+                    "channels": [
+                        "red",
+                        "green",
+                        "blue",
+                        "white"
+                    ]
+                },
+                {
+                    "name": "7 channel full",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe",
+                        "red",
+                        "green",
+                        "blue",
+                        "white",
+                        "effect"
+                    ]
+                }
+            ]
+        }
+    ]
+}

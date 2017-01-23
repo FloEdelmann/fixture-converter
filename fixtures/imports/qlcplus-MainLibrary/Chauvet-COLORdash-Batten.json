@@ -1,0 +1,535 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "COLORdash Batten",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [470, 191, 84],
+                "weight": 3.6,
+                "power": 58,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100% (or STEP TIME when Custom 1-10 is activated)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100% (or FADE TIME when Custom 1-10 is activated)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Color Macro + White Balance": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [11, 35],
+                            "name": "Red 100% - Green Up - Blue 0%"
+                        },
+                        {
+                            "range": [36, 60],
+                            "name": "Red Down - Green 100% - Blue 0%"
+                        },
+                        {
+                            "range": [61, 85],
+                            "name": "Red 0% - Green 100% - Blue Up"
+                        },
+                        {
+                            "range": [86, 110],
+                            "name": "Red 0% - Green Down - Blue 100%"
+                        },
+                        {
+                            "range": [111, 135],
+                            "name": "Red Up - Green 0% - Blue 100%"
+                        },
+                        {
+                            "range": [136, 160],
+                            "name": "Red 100% - Green 0% - Blue Down"
+                        },
+                        {
+                            "range": [161, 185],
+                            "name": "Red 100% - Green Up - Blue Up"
+                        },
+                        {
+                            "range": [186, 210],
+                            "name": "Red Down - Green Down - Blue 100%"
+                        },
+                        {
+                            "range": [211, 215],
+                            "name": "White 1: 3200K"
+                        },
+                        {
+                            "range": [216, 220],
+                            "name": "White 2: 3400K"
+                        },
+                        {
+                            "range": [221, 225],
+                            "name": "White 3: 4200K"
+                        },
+                        {
+                            "range": [226, 230],
+                            "name": "White 4: 4900K"
+                        },
+                        {
+                            "range": [231, 235],
+                            "name": "White 5: 5600K"
+                        },
+                        {
+                            "range": [236, 240],
+                            "name": "White 6: 5900K"
+                        },
+                        {
+                            "range": [241, 245],
+                            "name": "White 7: 6500K"
+                        },
+                        {
+                            "range": [246, 250],
+                            "name": "White 8: 7200K"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "White 9: 8500K"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [5, 255],
+                            "name": "0 - 20Hz"
+                        }
+                    ]
+                },
+                "Auto + Custom Programs + Fan Control": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Reset to display fan setting"
+                        },
+                        {
+                            "range": [11, 20],
+                            "name": "Fans Off (Hold for 3sec)"
+                        },
+                        {
+                            "range": [21, 30],
+                            "name": "Fans Low (Hold for 3sec)"
+                        },
+                        {
+                            "range": [31, 40],
+                            "name": "Fans Normal (Hold for 3sec)"
+                        },
+                        {
+                            "range": [41, 50],
+                            "name": "Fans High (Hold for 3sec)"
+                        },
+                        {
+                            "range": [51, 60],
+                            "name": "Fans Auto (Hold for 3sec)"
+                        },
+                        {
+                            "range": [61, 70],
+                            "name": "Auto 1"
+                        },
+                        {
+                            "range": [71, 80],
+                            "name": "Auto 2"
+                        },
+                        {
+                            "range": [81, 90],
+                            "name": "Auto 3"
+                        },
+                        {
+                            "range": [91, 100],
+                            "name": "Auto 4"
+                        },
+                        {
+                            "range": [101, 110],
+                            "name": "Auto 5"
+                        },
+                        {
+                            "range": [111, 120],
+                            "name": "Auto 6"
+                        },
+                        {
+                            "range": [121, 130],
+                            "name": "Auto 7"
+                        },
+                        {
+                            "range": [131, 140],
+                            "name": "Auto 8"
+                        },
+                        {
+                            "range": [141, 150],
+                            "name": "Auto 9"
+                        },
+                        {
+                            "range": [151, 160],
+                            "name": "Auto 10"
+                        },
+                        {
+                            "range": [161, 170],
+                            "name": "Custom 1"
+                        },
+                        {
+                            "range": [171, 180],
+                            "name": "Custom 2"
+                        },
+                        {
+                            "range": [181, 190],
+                            "name": "Custom 3"
+                        },
+                        {
+                            "range": [191, 200],
+                            "name": "Custom 4"
+                        },
+                        {
+                            "range": [201, 210],
+                            "name": "Custom 5"
+                        },
+                        {
+                            "range": [211, 220],
+                            "name": "Custom 6"
+                        },
+                        {
+                            "range": [221, 230],
+                            "name": "Custom 7"
+                        },
+                        {
+                            "range": [231, 240],
+                            "name": "Custom 8"
+                        },
+                        {
+                            "range": [241, 250],
+                            "name": "Custom 9"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Custom 10"
+                        }
+                    ]
+                },
+                "Auto Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100% (only when CH 7 is between 61-255)"
+                        }
+                    ]
+                },
+                "Block": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Block 1,2,3,4"
+                        },
+                        {
+                            "range": [10, 29],
+                            "name": "Block 1"
+                        },
+                        {
+                            "range": [30, 49],
+                            "name": "Block 2"
+                        },
+                        {
+                            "range": [50, 69],
+                            "name": "Block 3"
+                        },
+                        {
+                            "range": [70, 89],
+                            "name": "Block 4"
+                        },
+                        {
+                            "range": [90, 109],
+                            "name": "Block 1,2"
+                        },
+                        {
+                            "range": [110, 129],
+                            "name": "Block 3,4"
+                        },
+                        {
+                            "range": [130, 149],
+                            "name": "Block 1,4"
+                        },
+                        {
+                            "range": [150, 169],
+                            "name": "Block 2,3"
+                        },
+                        {
+                            "range": [170, 189],
+                            "name": "Block 1,2,3"
+                        },
+                        {
+                            "range": [190, 209],
+                            "name": "Block 2,3,4"
+                        },
+                        {
+                            "range": [210, 229],
+                            "name": "Block 1,3,4"
+                        },
+                        {
+                            "range": [230, 255],
+                            "name": "Block 1,2,4"
+                        }
+                    ]
+                },
+                "ID Addressing": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "All IDs"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "ID 1 - 66"
+                        }
+                    ]
+                },
+                "Red 1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Green 1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Blue 1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Red 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Green 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Blue 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Red 3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Green 3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Blue 3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Red 4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Green 4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Blue 4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "STAGE 1",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color Macro + White Balance",
+                        "Strobe",
+                        "Auto + Custom Programs + Fan Control",
+                        "Auto Speed",
+                        "ID Addressing",
+                        "Block"
+                    ]
+                },
+                {
+                    "name": "ARC 1",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "ARC 1 + D",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "BLOCK",
+                    "channels": [
+                        "Red 1",
+                        "Green 1",
+                        "Blue 1",
+                        "Red 2",
+                        "Green 2",
+                        "Blue 2",
+                        "Red 3",
+                        "Green 3",
+                        "Blue 3",
+                        "Red 4",
+                        "Green 4",
+                        "Blue 4"
+                    ]
+                }
+            ]
+        }
+    ]
+}

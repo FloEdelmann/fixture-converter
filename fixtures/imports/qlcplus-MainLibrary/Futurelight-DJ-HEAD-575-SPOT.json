@@ -1,0 +1,613 @@
+{
+    "manufacturers": {
+        "Futurelight": {
+            "name": "Futurelight"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Futurelight",
+            "name": "DJ-HEAD 575 SPOT",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [475, 560, 500],
+                "weight": 35.5,
+                "power": 1000,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSR 575W"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 530,
+                    "tiltMax": 280
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Horizontal movement (within 530°)"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Vertical movement (within 280°)"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Movement with 16-bit resolution"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Movement with 16-bit resolution"
+                        }
+                    ]
+                },
+                "Pan/Tilt-speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Maximum speed (tracking mode)"
+                        },
+                        {
+                            "range": [1, 249],
+                            "name": "Decreasing speed (vector mode)"
+                        },
+                        {
+                            "range": [250, 252],
+                            "name": "Maximum speed (tracking mode), black-out color or gobo changes"
+                        },
+                        {
+                            "range": [253, 255],
+                            "name": "Maximum speed (tracking mode), black-out while pan, tilt moving or color gobo changes"
+                        }
+                    ]
+                },
+                "Switch On/Off the Lamp, Reset, Speed Control of Cooling Fan": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Decreasing speed of fan"
+                        },
+                        {
+                            "range": [128, 139],
+                            "name": "Switch on the lamp, reset, open position"
+                        },
+                        {
+                            "range": [140, 229],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Switch off the lamp after 3 seconds"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Colour-wheel 1": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 12],
+                            "name": "Open/white",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [13, 25],
+                            "name": "Light Blue",
+                            "color": "#0080ff"
+                        },
+                        {
+                            "range": [26, 37],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [38, 50],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [51, 63],
+                            "name": "Light green",
+                            "color": "#80ff00"
+                        },
+                        {
+                            "range": [64, 76],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [77, 89],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [90, 101],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [102, 114],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [115, 127],
+                            "name": "Orange",
+                            "color": "#ff8000"
+                        },
+                        {
+                            "range": [128, 190],
+                            "name": "Forwards rainbow effect with decreasing speed"
+                        },
+                        {
+                            "range": [191, 193],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Backwards rainbow effect with increasing speed"
+                        }
+                    ]
+                },
+                "Colour-wheel 2": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 11],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [12, 23],
+                            "name": "Deep red",
+                            "color": "#800000"
+                        },
+                        {
+                            "range": [24, 35],
+                            "name": "Deep blue",
+                            "color": "#000080"
+                        },
+                        {
+                            "range": [36, 47],
+                            "name": "Pink",
+                            "color": "#ff6fcf"
+                        },
+                        {
+                            "range": [48, 59],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [60, 71],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [72, 83],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [84, 95],
+                            "name": "6000K correction filter"
+                        },
+                        {
+                            "range": [96, 107],
+                            "name": "3200K correction filter"
+                        },
+                        {
+                            "range": [108, 119],
+                            "name": "UV filter",
+                            "color": "#3e0050"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Enable macro color function on channel 7"
+                        }
+                    ]
+                },
+                "Rotating 3-facet-prism, Macros": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [1, 63],
+                            "name": "Forwards rotation with decreasing speed"
+                        },
+                        {
+                            "range": [64, 64],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [65, 127],
+                            "name": "Backwards rotation with increasing speed"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Macro 1"
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "Macro 2"
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "Macro 3"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Macro 4"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Macro 5"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "Macro 6"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "Macro 7"
+                        },
+                        {
+                            "range": [184, 191],
+                            "name": "Macro 8"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "Macro 9"
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "Macro 10"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Macro 11"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Macro 12"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Macro 13"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Macro 14"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Macro 15"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Macro 16"
+                        }
+                    ]
+                },
+                "Static Gobo-wheel, Gobo Shake": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Gobo 9"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Gobo 1 shake with variable speed"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Gobo 2 shake with variable speed"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Gobo 3 shake with variable speed"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Gobo 4 shake with variable speed"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "Gobo 5 shake with variable speed"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "Gobo 6 shake with variable speed"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "Gobo 7 shake with variable speed"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "Gobo 8 shake with variable speed"
+                        },
+                        {
+                            "range": [208, 223],
+                            "name": "Gobo 9 shake with variable speed"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Gobo wheel rotation from with increasing speed"
+                        }
+                    ]
+                },
+                "Rotating Gobo-Wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Rot. gobo 1"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Rot. gobo 2"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Rot. gobo 3"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Rot. gobo 4"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Rot. gobo 5"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Rot. gobo 6"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Rotating gobo-wheel cont. rotation with increasing speed"
+                        }
+                    ]
+                },
+                "Rotating gobo index, gobo rotation": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Gobo indexing"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Forwards gobo rotation with decreasing speed"
+                        },
+                        {
+                            "range": [192, 192],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "Backwards gobo rotation with increasing speed"
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [1, 179],
+                            "name": "Max. diameter to min. diameter"
+                        },
+                        {
+                            "range": [180, 191],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Pulse closing with increasing speed"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Pulse opening with decreasing speed"
+                        }
+                    ]
+                },
+                "Focus & Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 85],
+                            "name": "Zoom 1 & continuous adjustment from near to far"
+                        },
+                        {
+                            "range": [86, 170],
+                            "name": "Zoom 2 & continuous adjustment from near to far"
+                        },
+                        {
+                            "range": [171, 255],
+                            "name": "Zoom 3 & continuous adjustment from near to far"
+                        }
+                    ]
+                },
+                "Shutter, Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "No function (shutter open)"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe-effect with increasing speed (max. 10 flashes/sec.)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "No function (shutter open)"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse effect in sequence"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "No function (shutter open)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random strobe-effect with increasing speed"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "No function (shutter open)"
+                        }
+                    ]
+                },
+                "Dimmer intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment of the dimmer intensity from 0 to 100 %"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "8-Bit",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan/Tilt-speed",
+                        "Switch On/Off the Lamp, Reset, Speed Control of Cooling Fan",
+                        "Colour-wheel 1",
+                        "Colour-wheel 2",
+                        "Rotating 3-facet-prism, Macros",
+                        "Static Gobo-wheel, Gobo Shake",
+                        "Rotating Gobo-Wheel",
+                        "Rotating gobo index, gobo rotation",
+                        "Iris",
+                        "Focus & Zoom",
+                        "Shutter, Strobe",
+                        "Dimmer intensity"
+                    ]
+                },
+                {
+                    "name": "16-Bit",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan Fine",
+                        "Tilt Fine",
+                        "Pan/Tilt-speed",
+                        "Switch On/Off the Lamp, Reset, Speed Control of Cooling Fan",
+                        "Colour-wheel 1",
+                        "Colour-wheel 2",
+                        "Rotating 3-facet-prism, Macros",
+                        "Static Gobo-wheel, Gobo Shake",
+                        "Rotating Gobo-Wheel",
+                        "Rotating gobo index, gobo rotation",
+                        "Iris",
+                        "Focus & Zoom",
+                        "Shutter, Strobe",
+                        "Dimmer intensity"
+                    ]
+                }
+            ]
+        }
+    ]
+}

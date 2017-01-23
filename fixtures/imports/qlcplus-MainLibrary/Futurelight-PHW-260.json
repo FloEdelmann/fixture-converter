@@ -1,0 +1,503 @@
+{
+    "manufacturers": {
+        "Futurelight": {
+            "name": "Futurelight"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Futurelight",
+            "name": "PHW-260",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [420, 470, 370],
+                "weight": 24,
+                "power": 485,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 250W"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [7, 28]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 630,
+                    "tiltMax": 265
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan (0 to 630°)"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt (0 to 265°)"
+                        }
+                    ]
+                },
+                "Pan/tilt speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "Tracking mode"
+                        },
+                        {
+                            "range": [15, 225],
+                            "name": "Vector mode speed fast to slow"
+                        },
+                        {
+                            "range": [226, 235],
+                            "name": "BO with pan/tilt"
+                        },
+                        {
+                            "range": [236, 245],
+                            "name": "BO with color/gobo change"
+                        },
+                        {
+                            "range": [246, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 13],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [14, 27],
+                            "name": "Red",
+                            "color": "#aa0000"
+                        },
+                        {
+                            "range": [28, 41],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [42, 55],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [56, 69],
+                            "name": "Light yellow",
+                            "color": "#ffff7f"
+                        },
+                        {
+                            "range": [70, 83],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [84, 97],
+                            "name": "CTO (Convert to orange)",
+                            "color": "#ff5500"
+                        },
+                        {
+                            "range": [98, 111],
+                            "name": "CTB (Convert to blue)",
+                            "color": "#00007f"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "UV-filter",
+                            "color": "#68004e"
+                        },
+                        {
+                            "range": [128, 187],
+                            "name": "Forwards rainbow effect (fast to slow)"
+                        },
+                        {
+                            "range": [188, 193],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Backwards rainbow effect (slow to fast)"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Cyan mix"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Magenta mix"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Yellow mix"
+                        }
+                    ]
+                },
+                "CMY/Dimmer speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Speed adjustment max to min"
+                        }
+                    ]
+                },
+                "CMY colour macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Neutral"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Macro 1"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Macro 2"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Macro 3"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Macro 4"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Macro 5"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Macro 6"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Macro 7"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Macro 8"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Macro 9"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Macro 10"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Macro 11"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Macro 12"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "Macro 13"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Macro 14"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Macro 15"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Macro 16"
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "Macro 17"
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "Macro 18"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Macro 19"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Macro 20"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "Macro 21"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "Macro 22"
+                        },
+                        {
+                            "range": [184, 191],
+                            "name": "Macro 23"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "Macro 24"
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "Macro 25"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Macro 26"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Macro 27"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Macro 28"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Macro 29"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Macro 30"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Random CMY"
+                        }
+                    ]
+                },
+                "Effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 70],
+                            "name": "Full beam"
+                        },
+                        {
+                            "range": [71, 230],
+                            "name": "Beam shaper"
+                        },
+                        {
+                            "range": [231, 255],
+                            "name": "Frost filter"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Zoom 28° to 7°"
+                        }
+                    ]
+                },
+                "Shutter, strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Dimmer activation"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe speed"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse sequence"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random strobe speed"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Shutter open, dimmer deactivation"
+                        }
+                    ]
+                },
+                "Dimmer intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Lamp switch, reset, programs": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Normal colour-change, shortest distance"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Colour change at every position, shortest distance"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Lamp on"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Internal program 1"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Internal program 2"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Internal program 3"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "Internal program 4"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "Internal program 5"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "Internal program 6"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "Internal program 7"
+                        },
+                        {
+                            "range": [208, 223],
+                            "name": "Internal program 8"
+                        },
+                        {
+                            "range": [224, 239],
+                            "name": "Lamp off"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Free": {
+                    "type": "Nothing"
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan/tilt speed",
+                        "Colour",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "CMY/Dimmer speed",
+                        "CMY colour macros",
+                        "Effect",
+                        "Zoom",
+                        "Free",
+                        "Shutter, strobe",
+                        "Dimmer intensity",
+                        "Lamp switch, reset, programs",
+                        "Pan fine",
+                        "Tilt fine"
+                    ]
+                }
+            ]
+        }
+    ]
+}

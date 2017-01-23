@@ -1,0 +1,450 @@
+{
+    "manufacturers": {
+        "SGM": {
+            "name": "SGM"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "SGM",
+            "name": "Victory II 250",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [180, 350, 650],
+                "weight": 14,
+                "power": 300,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "250W 24V-EVC M/33"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 90,
+                    "tiltMax": 180
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer intensity"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "White + yellow",
+                            "color": "#ffffff",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Yellow + magenta",
+                            "color": "#ffff00",
+                            "color2": "#ff00ff"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Magenta + cyan",
+                            "color": "#ff00ff",
+                            "color2": "#00ffff"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Cyan + orange",
+                            "color": "#00ffff",
+                            "color2": "#ffaa00"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Orange",
+                            "color": "#ffaa00"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Orange + green",
+                            "color": "#ffaa00",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "Green + blue",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "Blue + red",
+                            "color": "#0000ff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "Red + white",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [160, 244],
+                            "name": "Rainbow speed"
+                        },
+                        {
+                            "range": [245, 255],
+                            "name": "Music hard change"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [20, 39],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [40, 59],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [60, 79],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [160, 177],
+                            "name": "Rotagobo - speed 1"
+                        },
+                        {
+                            "range": [178, 194],
+                            "name": "Rotagobo - speed 2"
+                        },
+                        {
+                            "range": [195, 212],
+                            "name": "Rotagobo - speed 3"
+                        },
+                        {
+                            "range": [213, 229],
+                            "name": "Rotagobo - speed 4"
+                        },
+                        {
+                            "range": [230, 255],
+                            "name": "Music hard change"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Strobe 1.00 Hz"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Strobe 1.39 Hz"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Strobe 1.65 Hz"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Strobe 1.94 Hz"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Strobe 2.34 Hz"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Strobe 2.78 Hz"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Strobe 3.29 Hz"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Strobe 3.91 Hz"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Strobe 4.56 Hz"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Strobe 5.45 Hz"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "Strobe 5.98 Hz"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "Strobe 6.98 Hz"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "Strobe 7.85 Hz"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Strobe 9.00 Hz"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "Shutter sync: audio low freq"
+                        },
+                        {
+                            "range": [160, 172],
+                            "name": "Flash sync: audio low freq"
+                        },
+                        {
+                            "range": [173, 185],
+                            "name": "Flash sync: audio high freq"
+                        },
+                        {
+                            "range": [186, 198],
+                            "name": "Open, auto shade gobos"
+                        },
+                        {
+                            "range": [199, 211],
+                            "name": "Open, auto shade colours"
+                        },
+                        {
+                            "range": [212, 224],
+                            "name": "Open, auto shade gobos and colours"
+                        },
+                        {
+                            "range": [225, 237],
+                            "name": "Open, slow gobo change"
+                        },
+                        {
+                            "range": [238, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Gobo rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 112],
+                            "name": "Rotate CW"
+                        },
+                        {
+                            "range": [113, 142],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [143, 255],
+                            "name": "Rotate CCW"
+                        }
+                    ]
+                },
+                "Palette": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Colour conversion filter"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Frost filter"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Colour conversion and frost filter"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 49],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [50, 79],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [80, 255],
+                            "name": "Rotation, slow -> fast"
+                        }
+                    ]
+                },
+                "Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 49],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [50, 234],
+                            "name": "Lamp hysteresis"
+                        },
+                        {
+                            "range": [235, 255],
+                            "name": "Reset"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 2",
+                    "channels": [
+                        "Dimmer",
+                        "Colour",
+                        "Gobo",
+                        "Shutter",
+                        "Pan",
+                        "Tilt",
+                        "Gobo rotation",
+                        "Palette",
+                        "Prism",
+                        "Reset",
+                        "Pan fine",
+                        "Tilt fine"
+                    ]
+                },
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Dimmer",
+                        "Colour",
+                        "Gobo",
+                        "Shutter",
+                        "Pan",
+                        "Tilt",
+                        "Gobo rotation",
+                        "Palette",
+                        "Prism",
+                        "Reset"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,169 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "Slim Par Pro VW",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [256, 285, 87],
+                "weight": 2.8,
+                "power": 83,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [21, 21]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Warm White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Cool White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "0-20Hz, slow to fast"
+                        }
+                    ]
+                },
+                "Auto Program": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 51],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [52, 101],
+                            "name": "1"
+                        },
+                        {
+                            "range": [102, 152],
+                            "name": "2"
+                        },
+                        {
+                            "range": [153, 203],
+                            "name": "3"
+                        },
+                        {
+                            "range": [204, 254],
+                            "name": "4"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "5"
+                        }
+                    ]
+                },
+                "Auto Program Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%, slow to fast"
+                        }
+                    ]
+                },
+                "Dimming Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 51],
+                            "name": "Default"
+                        },
+                        {
+                            "range": [52, 101],
+                            "name": "Linear"
+                        },
+                        {
+                            "range": [102, 152],
+                            "name": "Non-linear 1"
+                        },
+                        {
+                            "range": [153, 203],
+                            "name": "Non-linear 2"
+                        },
+                        {
+                            "range": [204, 255],
+                            "name": "Non-linear 3"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "2-Channel",
+                    "channels": [
+                        "Warm White",
+                        "Cool White"
+                    ]
+                },
+                {
+                    "name": "3-Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Warm White",
+                        "Cool White"
+                    ]
+                },
+                {
+                    "name": "7-Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Warm White",
+                        "Cool White",
+                        "Strobe",
+                        "Auto Program",
+                        "Auto Program Speed",
+                        "Dimming Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,921 @@
+{
+    "manufacturers": {
+        "Showtec": {
+            "name": "Showtec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Showtec",
+            "name": "Pixel Bar 12",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [1015, 74, 72],
+                "weight": 4.28,
+                "power": 45,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 1380
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [40, 40]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Master Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from black to brightest"
+                        }
+                    ]
+                },
+                "Built-in Programs": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 6],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [7, 13],
+                            "name": "1"
+                        },
+                        {
+                            "range": [14, 20],
+                            "name": "2"
+                        },
+                        {
+                            "range": [21, 27],
+                            "name": "3"
+                        },
+                        {
+                            "range": [28, 34],
+                            "name": "4"
+                        },
+                        {
+                            "range": [35, 41],
+                            "name": "5"
+                        },
+                        {
+                            "range": [42, 48],
+                            "name": "6"
+                        },
+                        {
+                            "range": [49, 55],
+                            "name": "7"
+                        },
+                        {
+                            "range": [56, 62],
+                            "name": "8"
+                        },
+                        {
+                            "range": [63, 69],
+                            "name": "9"
+                        },
+                        {
+                            "range": [70, 76],
+                            "name": "10"
+                        },
+                        {
+                            "range": [77, 83],
+                            "name": "11"
+                        },
+                        {
+                            "range": [84, 90],
+                            "name": "12"
+                        },
+                        {
+                            "range": [91, 97],
+                            "name": "13"
+                        },
+                        {
+                            "range": [98, 104],
+                            "name": "14"
+                        },
+                        {
+                            "range": [105, 111],
+                            "name": "15"
+                        },
+                        {
+                            "range": [112, 118],
+                            "name": "16"
+                        },
+                        {
+                            "range": [119, 125],
+                            "name": "17"
+                        },
+                        {
+                            "range": [126, 132],
+                            "name": "18"
+                        },
+                        {
+                            "range": [133, 139],
+                            "name": "19"
+                        },
+                        {
+                            "range": [140, 146],
+                            "name": "20"
+                        },
+                        {
+                            "range": [147, 153],
+                            "name": "21"
+                        },
+                        {
+                            "range": [154, 160],
+                            "name": "22"
+                        },
+                        {
+                            "range": [161, 167],
+                            "name": "23"
+                        },
+                        {
+                            "range": [168, 174],
+                            "name": "24"
+                        },
+                        {
+                            "range": [175, 181],
+                            "name": "25"
+                        },
+                        {
+                            "range": [182, 188],
+                            "name": "26"
+                        },
+                        {
+                            "range": [189, 195],
+                            "name": "27"
+                        },
+                        {
+                            "range": [196, 202],
+                            "name": "28"
+                        },
+                        {
+                            "range": [203, 209],
+                            "name": "29"
+                        },
+                        {
+                            "range": [210, 216],
+                            "name": "30"
+                        },
+                        {
+                            "range": [217, 223],
+                            "name": "31"
+                        },
+                        {
+                            "range": [224, 230],
+                            "name": "32"
+                        },
+                        {
+                            "range": [231, 237],
+                            "name": "33"
+                        },
+                        {
+                            "range": [238, 244],
+                            "name": "34"
+                        },
+                        {
+                            "range": [245, 251],
+                            "name": "35"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Sound active"
+                        }
+                    ]
+                },
+                "Sound Mode/Blackout": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 169],
+                            "name": "Sound mode S1"
+                        },
+                        {
+                            "range": [170, 255],
+                            "name": "Blackout"
+                        }
+                    ]
+                },
+                "Red Section 1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Red Section 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Green Section 1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Green Section 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Blue Section 1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Blue Section 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Blue Section 3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Blue Section 4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Blue Section 5": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Blue Section 6": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Blue Section 7": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Blue Section 8": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Blue Section 9": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Blue Section 10": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Blue Section 11": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Blue Section 12": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Green Section 3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Green Section 4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Green Section 5": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Green Section 6": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Green Section 7": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Green Section 8": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Green Section 9": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Green Section 10": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Green Section 11": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Green Section 12": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Red Section 3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Red Section 4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Red Section 5": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Red Section 6": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Red Section 7": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Red Section 8": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Red Section 9": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Red Section 10": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Red Section 11": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Red Section 12": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment from 0 - 100%"
+                        }
+                    ]
+                },
+                "Speed/Audio Sensitivity": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "From slow to fast/From less sensitive to highly sensitive"
+                        }
+                    ]
+                }
+            },
+            "heads": {
+                "6 Channels-head0": [
+                    "Red Section 1",
+                    "Green Section 1",
+                    "Blue Section 1"
+                ],
+                "6 Channels-head1": [
+                    "Red Section 2",
+                    "Green Section 2",
+                    "Blue Section 2"
+                ],
+                "9 Channels-head0": [
+                    "Red Section 1",
+                    "Green Section 1",
+                    "Blue Section 1"
+                ],
+                "9 Channels-head1": [
+                    "Red Section 2",
+                    "Green Section 2",
+                    "Blue Section 2"
+                ],
+                "9 Channels-head2": [
+                    "Red Section 3",
+                    "Blue Section 3",
+                    "Green Section 3"
+                ],
+                "12 Channels-head0": [
+                    "Red Section 1",
+                    "Green Section 1",
+                    "Blue Section 1"
+                ],
+                "12 Channels-head1": [
+                    "Red Section 2",
+                    "Green Section 2",
+                    "Blue Section 2"
+                ],
+                "12 Channels-head2": [
+                    "Red Section 3",
+                    "Green Section 3",
+                    "Blue Section 3"
+                ],
+                "12 Channels-head3": [
+                    "Red Section 4",
+                    "Green Section 4",
+                    "Blue Section 4"
+                ],
+                "18 Channels-head0": [
+                    "Red Section 1",
+                    "Green Section 1",
+                    "Blue Section 1"
+                ],
+                "18 Channels-head1": [
+                    "Red Section 2",
+                    "Green Section 2",
+                    "Blue Section 2"
+                ],
+                "18 Channels-head2": [
+                    "Red Section 3",
+                    "Green Section 3",
+                    "Blue Section 3"
+                ],
+                "18 Channels-head3": [
+                    "Red Section 4",
+                    "Green Section 4",
+                    "Blue Section 4"
+                ],
+                "18 Channels-head4": [
+                    "Green Section 5",
+                    "Blue Section 5",
+                    "Red Section 5"
+                ],
+                "18 Channels-head5": [
+                    "Red Section 6",
+                    "Green Section 6",
+                    "Blue Section 6"
+                ],
+                "36 Channels-head0": [
+                    "Red Section 1",
+                    "Green Section 1",
+                    "Blue Section 1"
+                ],
+                "36 Channels-head1": [
+                    "Red Section 2",
+                    "Green Section 2",
+                    "Blue Section 2"
+                ],
+                "36 Channels-head2": [
+                    "Red Section 3",
+                    "Green Section 3",
+                    "Blue Section 3"
+                ],
+                "36 Channels-head3": [
+                    "Red Section 4",
+                    "Green Section 4",
+                    "Blue Section 4"
+                ],
+                "36 Channels-head4": [
+                    "Green Section 5",
+                    "Blue Section 5",
+                    "Red Section 5"
+                ],
+                "36 Channels-head5": [
+                    "Red Section 6",
+                    "Green Section 6",
+                    "Blue Section 6"
+                ],
+                "36 Channels-head6": [
+                    "Red Section 7",
+                    "Green Section 7",
+                    "Blue Section 7"
+                ],
+                "36 Channels-head7": [
+                    "Red Section 8",
+                    "Green Section 8",
+                    "Blue Section 8"
+                ],
+                "36 Channels-head8": [
+                    "Red Section 9",
+                    "Green Section 9",
+                    "Blue Section 9"
+                ],
+                "36 Channels-head9": [
+                    "Red Section 10",
+                    "Green Section 10",
+                    "Blue Section 10"
+                ],
+                "36 Channels-head10": [
+                    "Red Section 11",
+                    "Green Section 11",
+                    "Blue Section 11"
+                ],
+                "36 Channels-head11": [
+                    "Red Section 12",
+                    "Green Section 12",
+                    "Blue Section 12"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "7 Channels",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Master Dimmer",
+                        "Built-in Programs",
+                        "Speed/Audio Sensitivity",
+                        "Sound Mode/Blackout"
+                    ]
+                },
+                {
+                    "name": "3 Channels",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "4 Channels",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Master Dimmer"
+                    ]
+                },
+                {
+                    "name": "6 Channels",
+                    "channels": [
+                        "Red Section 1",
+                        "Green Section 1",
+                        "Blue Section 1",
+                        "Red Section 2",
+                        "Green Section 2",
+                        "Blue Section 2"
+                    ]
+                },
+                {
+                    "name": "9 Channels",
+                    "channels": [
+                        "Red Section 1",
+                        "Green Section 1",
+                        "Blue Section 1",
+                        "Red Section 2",
+                        "Green Section 2",
+                        "Blue Section 2",
+                        "Red Section 3",
+                        "Blue Section 3",
+                        "Green Section 3"
+                    ]
+                },
+                {
+                    "name": "12 Channels",
+                    "channels": [
+                        "Red Section 1",
+                        "Green Section 1",
+                        "Blue Section 1",
+                        "Red Section 2",
+                        "Green Section 2",
+                        "Blue Section 2",
+                        "Red Section 3",
+                        "Green Section 3",
+                        "Blue Section 3",
+                        "Red Section 4",
+                        "Green Section 4",
+                        "Blue Section 4"
+                    ]
+                },
+                {
+                    "name": "18 Channels",
+                    "channels": [
+                        "Red Section 1",
+                        "Green Section 1",
+                        "Blue Section 1",
+                        "Red Section 2",
+                        "Green Section 2",
+                        "Blue Section 2",
+                        "Red Section 3",
+                        "Green Section 3",
+                        "Blue Section 3",
+                        "Red Section 4",
+                        "Green Section 4",
+                        "Blue Section 4",
+                        "Red Section 5",
+                        "Green Section 5",
+                        "Blue Section 5",
+                        "Red Section 6",
+                        "Green Section 6",
+                        "Blue Section 6"
+                    ]
+                },
+                {
+                    "name": "36 Channels",
+                    "channels": [
+                        "Red Section 1",
+                        "Green Section 1",
+                        "Blue Section 1",
+                        "Red Section 2",
+                        "Green Section 2",
+                        "Blue Section 2",
+                        "Red Section 3",
+                        "Green Section 3",
+                        "Blue Section 3",
+                        "Red Section 4",
+                        "Green Section 4",
+                        "Blue Section 4",
+                        "Red Section 5",
+                        "Green Section 5",
+                        "Blue Section 5",
+                        "Red Section 6",
+                        "Green Section 6",
+                        "Blue Section 6",
+                        "Red Section 7",
+                        "Green Section 7",
+                        "Blue Section 7",
+                        "Red Section 8",
+                        "Green Section 8",
+                        "Blue Section 8",
+                        "Red Section 9",
+                        "Green Section 9",
+                        "Blue Section 9",
+                        "Red Section 10",
+                        "Green Section 10",
+                        "Blue Section 10",
+                        "Red Section 11",
+                        "Green Section 11",
+                        "Blue Section 11",
+                        "Red Section 12",
+                        "Green Section 12",
+                        "Blue Section 12"
+                    ]
+                }
+            ]
+        }
+    ]
+}

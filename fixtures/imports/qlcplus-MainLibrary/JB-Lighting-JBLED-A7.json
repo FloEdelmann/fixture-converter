@@ -1,0 +1,581 @@
+{
+    "manufacturers": {
+        "JB-Lighting": {
+            "name": "JB-Lighting"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "JB-Lighting",
+            "name": "JBLED A7",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [318, 388, 200],
+                "weight": 8.9,
+                "power": 350,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 430,
+                    "tiltMax": 300
+                }
+            },
+            "availableChannels": {
+                "Pan (X)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Movement 430°"
+                        }
+                    ]
+                },
+                "Pan (X) Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine"
+                        }
+                    ]
+                },
+                "Tilt (Y)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Movement 300°"
+                        }
+                    ]
+                },
+                "Tilt (Y) Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Full output power on LED fade out (slow - fast)"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Colour balance on RGB (8500K) fade out (slow - fast)"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Colour balance on RGB (6500K) fade out (slow - fast)"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Colour balance for colour picker function fade out (slow - fast)"
+                        },
+                        {
+                            "range": [32, 207],
+                            "name": "Safe"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Camera mode 50Hz (after 2 seconds)"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Camera mode 60Hz (after 2 seconds)"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Camera mode FLEX (after 2 seconds)"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Safe"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Reset (after 2 seconds)"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Safe"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [16, 95],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [96, 110],
+                            "name": "Pulse opening >10Hz (0.6sec - 4.8sec)"
+                        },
+                        {
+                            "range": [111, 111],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [112, 125],
+                            "name": "Fade effect with dimmer (slow - fast)"
+                        },
+                        {
+                            "range": [126, 126],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [127, 127],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [128, 142],
+                            "name": "Pulse opening <10Hz (0.6sec - 4.8sec)"
+                        },
+                        {
+                            "range": [143, 143],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [144, 158],
+                            "name": "Pulse closing (0.6sec - 4.8sec)"
+                        },
+                        {
+                            "range": [159, 159],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [160, 174],
+                            "name": "Fade 0% (0,6sec - 4,8sec)"
+                        },
+                        {
+                            "range": [175, 175],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [176, 190],
+                            "name": "Fade 100% (0,6sec - 4,8sec)"
+                        },
+                        {
+                            "range": [191, 191],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [192, 206],
+                            "name": "Random 100% (0.6sec - 4.8sec)"
+                        },
+                        {
+                            "range": [207, 207],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [208, 222],
+                            "name": "Random 0% (0.6sec - 4.8sec)"
+                        },
+                        {
+                            "range": [223, 223],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [224, 238],
+                            "name": "Random fade 0% (0.6sec - 4.8sec)"
+                        },
+                        {
+                            "range": [239, 239],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [240, 254],
+                            "name": "Random fade 100% (0.6sec - 4.8sec)"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "12° - 36° (1/10 peak measurement)"
+                        }
+                    ]
+                },
+                "Red (8 Bit)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Green (8 Bit)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Blue (8 Bit)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "CTC": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Colour Wheel": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "Inactive. Colour mixing with RGB",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [2, 3],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [4, 7],
+                            "name": "White/red",
+                            "color": "#ffffff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [8, 11],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [12, 15],
+                            "name": "Red/yellow",
+                            "color": "#ff0000",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [16, 19],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [20, 23],
+                            "name": "Yellow/magenta",
+                            "color": "#ffff00",
+                            "color2": "#ff00ff"
+                        },
+                        {
+                            "range": [24, 27],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [28, 31],
+                            "name": "Magenta/green",
+                            "color": "#ff00ff",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [32, 35],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [36, 39],
+                            "name": "Green/orange",
+                            "color": "#00ff00",
+                            "color2": "#ff8000"
+                        },
+                        {
+                            "range": [40, 43],
+                            "name": "Orange",
+                            "color": "#ff8000"
+                        },
+                        {
+                            "range": [44, 47],
+                            "name": "Orange/blue",
+                            "color": "#ff8000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [48, 51],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [52, 55],
+                            "name": "Blue/cyan",
+                            "color": "#0000ff",
+                            "color2": "#00ffff"
+                        },
+                        {
+                            "range": [56, 59],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [60, 63],
+                            "name": "Cyan/white",
+                            "color": "#00ffff",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [64, 191],
+                            "name": "Colour positioning"
+                        },
+                        {
+                            "range": [192, 222],
+                            "name": "Rotating clockwise (fast - slow)"
+                        },
+                        {
+                            "range": [223, 224],
+                            "name": "Rotation stop"
+                        },
+                        {
+                            "range": [225, 255],
+                            "name": "Rotating anticlockwise (slow - fast)"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Moves in realtime"
+                        },
+                        {
+                            "range": [4, 255],
+                            "name": "Moves delayed (fast - slow)"
+                        }
+                    ]
+                },
+                "Effect Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Effects in realtime"
+                        },
+                        {
+                            "range": [4, 255],
+                            "name": "Effects delayed (fast - slow)"
+                        }
+                    ]
+                },
+                "Blackout Move": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 95],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Blackout at pan/tilt move"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Blackout at colour changes"
+                        },
+                        {
+                            "range": [160, 223],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Blackout at colour changes and pan/tilt moves"
+                        }
+                    ]
+                },
+                "Red Fine (16 Bit)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Green Fine (16 Bit)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Blue Fine (16 Bit)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan (X)",
+                    "Pan (X) Fine"
+                ],
+                [
+                    "Tilt (Y)",
+                    "Tilt (Y) Fine"
+                ],
+                [
+                    "Red (8 Bit)",
+                    "Red Fine (16 Bit)"
+                ],
+                [
+                    "Green (8 Bit)",
+                    "Green Fine (16 Bit)"
+                ],
+                [
+                    "Blue (8 Bit)",
+                    "Blue Fine (16 Bit)"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Standard RGB 8 Bit (S8)",
+                    "channels": [
+                        "Pan (X)",
+                        "Pan (X) Fine",
+                        "Tilt (Y)",
+                        "Tilt (Y) Fine",
+                        "Control",
+                        "Shutter",
+                        "Dimmer",
+                        "Zoom",
+                        "Red (8 Bit)",
+                        "Green (8 Bit)",
+                        "Blue (8 Bit)",
+                        "CTC",
+                        "Colour Wheel",
+                        "Pan/Tilt Speed",
+                        "Effect Speed",
+                        "Blackout Move"
+                    ]
+                },
+                {
+                    "name": "Compressed RGB 8 Bit (C8)",
+                    "channels": [
+                        "Pan (X)",
+                        "Pan (X) Fine",
+                        "Tilt (Y)",
+                        "Tilt (Y) Fine",
+                        "Control",
+                        "Shutter",
+                        "Dimmer",
+                        "Zoom",
+                        "Red (8 Bit)",
+                        "Green (8 Bit)",
+                        "Blue (8 Bit)",
+                        "CTC"
+                    ]
+                },
+                {
+                    "name": "Standard RGB 16 Bit (S16)",
+                    "channels": [
+                        "Pan (X)",
+                        "Pan (X) Fine",
+                        "Tilt (Y)",
+                        "Tilt (Y) Fine",
+                        "Control",
+                        "Shutter",
+                        "Dimmer",
+                        "Zoom",
+                        "Red (8 Bit)",
+                        "Red Fine (16 Bit)",
+                        "Green (8 Bit)",
+                        "Green Fine (16 Bit)",
+                        "Blue (8 Bit)",
+                        "Blue Fine (16 Bit)",
+                        "CTC",
+                        "Colour Wheel",
+                        "Pan/Tilt Speed",
+                        "Effect Speed",
+                        "Blackout Move"
+                    ]
+                },
+                {
+                    "name": "Compressed RGB 16 Bit (C16)",
+                    "channels": [
+                        "Pan (X)",
+                        "Pan (X) Fine",
+                        "Tilt (Y)",
+                        "Tilt (Y) Fine",
+                        "Control",
+                        "Shutter",
+                        "Dimmer",
+                        "Zoom",
+                        "Red (8 Bit)",
+                        "Red Fine (16 Bit)",
+                        "Green (8 Bit)",
+                        "Green Fine (16 Bit)",
+                        "Blue (8 Bit)",
+                        "Blue Fine (16 Bit)",
+                        "CTC"
+                    ]
+                }
+            ]
+        }
+    ]
+}

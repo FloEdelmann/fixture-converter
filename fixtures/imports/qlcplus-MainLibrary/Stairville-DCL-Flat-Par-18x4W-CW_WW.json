@@ -1,0 +1,169 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "DCL Flat Par 18x4W CW/WW",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [164, 164, 105],
+                "weight": 2.34,
+                "power": 68,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Master Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer"
+                        }
+                    ]
+                },
+                "Warm White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Colour temperature warm white (0% to 100%)"
+                        }
+                    ]
+                },
+                "Cold White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Colour temperature cold white (0% to 100%)"
+                        }
+                    ]
+                },
+                "Programs": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [1, 42],
+                            "name": "Program 01"
+                        },
+                        {
+                            "range": [43, 85],
+                            "name": "Program 02"
+                        },
+                        {
+                            "range": [86, 128],
+                            "name": "Program 03"
+                        },
+                        {
+                            "range": [129, 171],
+                            "name": "Program 04"
+                        },
+                        {
+                            "range": [172, 214],
+                            "name": "Program 05"
+                        },
+                        {
+                            "range": [215, 255],
+                            "name": "Sound control"
+                        }
+                    ]
+                },
+                "Colour Setting / Process Speed / Sound-Control Sensitivity": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "No function, if channel 4 = 0/Speed, if channel 4 = 43..214/Sensitivity, if channel 4 = 215..255"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Warm white, if channel 4 = 1...42 (programme 01)/Speed, if channel 4 = 43..214/Sensitivity, if channel 4 = 215..255"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Cold white, if channel 4 = 1..42 (programme 01)/Speed, if channel 4 = 43..214/Sensitivity, if channel 4 = 215..255"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "All, if channel 4 = 1..42 (programme 01)/Speed, if channel 4 = 43..214/Sensitivity, if channel 4 = 215..255"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobe effect"
+                        }
+                    ]
+                },
+                "Warm White, if Channel 4 = 0": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Colour temperature selection warm white, if channel 4 = 0"
+                        }
+                    ]
+                },
+                "Cold White, if Channel 4 = 0": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Colour temperature selection cold white, if channel 4 = 0"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "2 Channel",
+                    "channels": [
+                        "Warm White",
+                        "Cold White"
+                    ]
+                },
+                {
+                    "name": "6 Channel",
+                    "channels": [
+                        "Master Dimmer",
+                        "Warm White, if Channel 4 = 0",
+                        "Cold White, if Channel 4 = 0",
+                        "Programs",
+                        "Colour Setting / Process Speed / Sound-Control Sensitivity",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "LED SLS-180 RGB",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [100, 200, 225],
+                "weight": 1.2,
+                "power": 13,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 1
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [35, 35]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Intensity"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Intensity"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Intensity"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No strobe effect "
+                        },
+                        {
+                            "range": [8, 255],
+                            "name": "Strobe effect with increasing speed "
+                        }
+                    ]
+                },
+                "Functions": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No function "
+                        },
+                        {
+                            "range": [11, 60],
+                            "name": "Static colours (colour selection CH 7) "
+                        },
+                        {
+                            "range": [61, 110],
+                            "name": "Colour change 1 - \nfading, 7 colours (speed CH 7) "
+                        },
+                        {
+                            "range": [111, 160],
+                            "name": "Colour change 2 - \nfading, 7 colours (speed CH 7) "
+                        },
+                        {
+                            "range": [161, 210],
+                            "name": "Colour change 3 - \nswitching, 7 colours (speed CH 7) "
+                        },
+                        {
+                            "range": [211, 255],
+                            "name": "Sound controlled mode"
+                        }
+                    ]
+                },
+                "Colours": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Select static colour / increasing speed "
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "Intensity",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Strobe",
+                        "Functions",
+                        "Colours"
+                    ]
+                }
+            ]
+        }
+    ]
+}

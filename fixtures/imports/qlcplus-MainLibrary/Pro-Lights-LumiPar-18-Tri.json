@@ -1,0 +1,302 @@
+{
+    "manufacturers": {
+        "Pro-Lights": {
+            "name": "Pro-Lights"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Pro-Lights",
+            "name": "LumiPar 18 Tri",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [94, 256, 290],
+                "weight": 2.9,
+                "power": 102,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "colorTemperature": 10000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [21, 42]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue"
+                        }
+                    ]
+                },
+                "Color Macro": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [11, 30],
+                            "name": "R: 100% / G: Up / B: 0%",
+                            "color": "#ff0000",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [31, 50],
+                            "name": "R: Down / G: 100% / B: 0%",
+                            "color": "#ffff00",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [51, 70],
+                            "name": "R: 0% / G: 100% / B: Up",
+                            "color": "#00ff00",
+                            "color2": "#00ffff"
+                        },
+                        {
+                            "range": [71, 90],
+                            "name": "R: 0% / G: Down / B: 100%",
+                            "color": "#00ffff",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [91, 110],
+                            "name": "R: Up / G: 0% / B: 100%",
+                            "color": "#0000ff",
+                            "color2": "#ff00ff"
+                        },
+                        {
+                            "range": [111, 130],
+                            "name": "R: 100% / G: 0% / B: Down",
+                            "color": "#ff00ff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [131, 150],
+                            "name": "R: 100% / G: Up / B: Up",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [151, 170],
+                            "name": "R: Down / G: Down / B: 100%",
+                            "color": "#ffffff",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [171, 190],
+                            "name": "R: 100% / G: 100% / B: 100%",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [201, 205],
+                            "name": "White 1: 3200K",
+                            "color": "#ffc076"
+                        },
+                        {
+                            "range": [206, 210],
+                            "name": "White 2: 3400K",
+                            "color": "#ffc61e"
+                        },
+                        {
+                            "range": [211, 215],
+                            "name": "White 3: 4200K",
+                            "color": "#ffd9ab"
+                        },
+                        {
+                            "range": [216, 220],
+                            "name": "White 4: 4900K",
+                            "color": "#ffe5c8"
+                        },
+                        {
+                            "range": [221, 225],
+                            "name": "White 5: 5600K",
+                            "color": "#ffefe1"
+                        },
+                        {
+                            "range": [226, 230],
+                            "name": "White 6: 5900K",
+                            "color": "#fff3ea"
+                        },
+                        {
+                            "range": [231, 235],
+                            "name": "White 7: 6500K",
+                            "color": "#fff9fb"
+                        },
+                        {
+                            "range": [236, 240],
+                            "name": "White 8: 7200K",
+                            "color": "#f3f3ff"
+                        },
+                        {
+                            "range": [241, 245],
+                            "name": "White 9: 8000K",
+                            "color": "#e5e9ff"
+                        },
+                        {
+                            "range": [246, 250],
+                            "name": "White 10: 8500K",
+                            "color": "#dfe5ff"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "White 11: 10000K",
+                            "color": "#cfdaff"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe: 1 > 20 Hz"
+                        }
+                    ]
+                },
+                "Auto": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 51],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [52, 101],
+                            "name": "Auto Program 1"
+                        },
+                        {
+                            "range": [102, 152],
+                            "name": "Auto Program 2"
+                        },
+                        {
+                            "range": [153, 203],
+                            "name": "Auto Program 3"
+                        },
+                        {
+                            "range": [204, 254],
+                            "name": "Auto Program 4"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Auto Program 5"
+                        }
+                    ]
+                },
+                "Auto Speed Adjustment": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow > Fast"
+                        }
+                    ]
+                },
+                "Dimmer Speed": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 51],
+                            "name": "Built-in Dimmer"
+                        },
+                        {
+                            "range": [52, 101],
+                            "name": "Linear Dimmer"
+                        },
+                        {
+                            "range": [102, 152],
+                            "name": "Non-linear Dimmer 1"
+                        },
+                        {
+                            "range": [153, 203],
+                            "name": "Non-linear Dimmer 2"
+                        },
+                        {
+                            "range": [204, 255],
+                            "name": "Non-linear Dimmer 3"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "9 Ch Mode",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color Macro",
+                        "Strobe",
+                        "Auto",
+                        "Auto Speed Adjustment",
+                        "Dimmer Speed"
+                    ]
+                },
+                {
+                    "name": "4 Ch Mode",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "3 Ch Mode",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

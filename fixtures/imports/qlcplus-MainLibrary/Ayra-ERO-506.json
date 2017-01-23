@@ -1,0 +1,284 @@
+{
+    "manufacturers": {
+        "Ayra": {
+            "name": "Ayra"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Ayra",
+            "name": "ERO 506",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [178, 175, 240],
+                "weight": 3,
+                "power": 57,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 5390
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [45, 45]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 540,
+                    "tiltMax": 180
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "X/Y Speed (slow-fast)": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "min - max"
+                        }
+                    ]
+                },
+                "Shutter / Strobe mode": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Not active"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "LED quick start "
+                        },
+                        {
+                            "range": [16, 131],
+                            "name": "Strobe, slow to fast"
+                        },
+                        {
+                            "range": [140, 181],
+                            "name": "Slow start, quick close"
+                        },
+                        {
+                            "range": [182, 189],
+                            "name": "LED quick start"
+                        },
+                        {
+                            "range": [190, 231],
+                            "name": "Quick start, slow close"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "LED quick start"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Random strobe"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%",
+                            "color": "#00ff00"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%",
+                            "color": "#0000ff"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%",
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                "Amber": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%",
+                            "color": "#ffaa00"
+                        }
+                    ]
+                },
+                "UV": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Colour Led Macro": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 255"
+                        }
+                    ]
+                },
+                "FX Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 69],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "X/Y move, but LED turned off"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "X/Y move stop, LED turned off"
+                        },
+                        {
+                            "range": [90, 239],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Independent operation mode (sound controlled)"
+                        }
+                    ]
+                },
+                "Master Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "15 channel",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "X/Y Speed (slow-fast)",
+                        "Master Dimmer",
+                        "Shutter / Strobe mode",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "UV",
+                        "Colour Led Macro",
+                        "FX Mode"
+                    ]
+                },
+                {
+                    "name": "11 channel",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Shutter / Strobe mode",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "UV",
+                        "Master Dimmer",
+                        "FX Mode"
+                    ]
+                }
+            ]
+        }
+    ]
+}

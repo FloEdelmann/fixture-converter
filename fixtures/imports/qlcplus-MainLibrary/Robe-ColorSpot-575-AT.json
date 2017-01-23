@@ -1,0 +1,1273 @@
+{
+    "manufacturers": {
+        "Robe": {
+            "name": "Robe"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Robe",
+            "name": "ColorSpot 575 AT",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [470, 558, 446],
+                "weight": 32,
+                "power": 760,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "MSR 575W",
+                    "colorTemperature": 7200,
+                    "lumens": 49000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [15, 22]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 530,
+                    "tiltMax": 280
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Movement by 530°"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine control of movement"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Movement by 280°"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine control of movement"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed, Pan/Tilt Time": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Max. speed (tracking mode)"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Speed from max. to min. (vector mode)/Time from 0.1sec to 25.5sec."
+                        }
+                    ]
+                },
+                "Power/Special Functions": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 49],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Pan/tilt speed mode"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Pan/tilt time mode"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Blackout while pan/tilt moving"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Disabled blackout while pan/tilt moving"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Blackout while colour wheel moving"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Disabled blackout while colour wheel moving"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "Blackout while gobo wheel moving"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "Disabled blackout while gobo wheel moving"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "Lamp on, reset (total reset except pan/tilt reset)"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Pan/tilt reset"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "Colour system reset"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "Gobo wheels reset"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "Dimmer/strobe reset"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "Focus/zoom/frost reset"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "Iris/prism reset"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Total reset"
+                        },
+                        {
+                            "range": [210, 229],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Lamp off"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Reserved"
+                        }
+                    ]
+                },
+                "Colour Wheel 1": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 12],
+                            "name": "Open/white - continual positioning",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [13, 25],
+                            "name": "Light blue - continual positioning",
+                            "color": "#7f7fff"
+                        },
+                        {
+                            "range": [26, 38],
+                            "name": "Red - continual positioning",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [39, 51],
+                            "name": "Blue - continual positioning",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [52, 64],
+                            "name": "Light green - continual positioning",
+                            "color": "#7fff7f"
+                        },
+                        {
+                            "range": [65, 77],
+                            "name": "Yellow - continual positioning",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [78, 90],
+                            "name": "Magenta - continual positioning",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [91, 103],
+                            "name": "Cyan - continual positioning",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [104, 116],
+                            "name": "Green - continual positioning",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [117, 127],
+                            "name": "Orange - continual positioning",
+                            "color": "#ff7f00"
+                        },
+                        {
+                            "range": [128, 129],
+                            "name": "White - continual positioning",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [130, 136],
+                            "name": "Light blue - positioning",
+                            "color": "#7f7fff"
+                        },
+                        {
+                            "range": [137, 143],
+                            "name": "Red - positioning",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [144, 149],
+                            "name": "Blue - positioning",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [150, 156],
+                            "name": "Light green - positioning",
+                            "color": "#7fff7f"
+                        },
+                        {
+                            "range": [157, 163],
+                            "name": "Yellow - positioning",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [164, 169],
+                            "name": "Magenta - positioning",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [170, 176],
+                            "name": "Cyan - positioning",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [177, 183],
+                            "name": "Green - positioning",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [184, 189],
+                            "name": "Orange - positioning",
+                            "color": "#ff7f00"
+                        },
+                        {
+                            "range": [190, 215],
+                            "name": "Forwards rainbow effect from fast to slow"
+                        },
+                        {
+                            "range": [216, 217],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [218, 243],
+                            "name": "Backwards rainbow effect from slow to fast"
+                        },
+                        {
+                            "range": [244, 249],
+                            "name": "Random colour selection by audio control"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Auto random colour selection from fast to slow"
+                        }
+                    ]
+                },
+                "Colour Wheel 1 - Fine Positioning": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine"
+                        }
+                    ]
+                },
+                "Static Gobo Wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 6],
+                            "name": "Continual positioning open/hole"
+                        },
+                        {
+                            "range": [7, 12],
+                            "name": "Continual positioning 1"
+                        },
+                        {
+                            "range": [13, 18],
+                            "name": "Continual positioning 2"
+                        },
+                        {
+                            "range": [19, 25],
+                            "name": "Continual positioning 3"
+                        },
+                        {
+                            "range": [26, 31],
+                            "name": "Continual positioning 4"
+                        },
+                        {
+                            "range": [32, 38],
+                            "name": "Continual positioning 5"
+                        },
+                        {
+                            "range": [39, 44],
+                            "name": "Continual positioning 6"
+                        },
+                        {
+                            "range": [45, 50],
+                            "name": "Continual positioning 7"
+                        },
+                        {
+                            "range": [51, 57],
+                            "name": "Continual positioning 8"
+                        },
+                        {
+                            "range": [58, 63],
+                            "name": "Continual positioning 9"
+                        },
+                        {
+                            "range": [64, 64],
+                            "name": "Continual positioning open/hole"
+                        },
+                        {
+                            "range": [65, 69],
+                            "name": "Positioning 1"
+                        },
+                        {
+                            "range": [70, 74],
+                            "name": "Positioning 2"
+                        },
+                        {
+                            "range": [75, 79],
+                            "name": "Positioning 3"
+                        },
+                        {
+                            "range": [80, 84],
+                            "name": "Positioning 4"
+                        },
+                        {
+                            "range": [85, 89],
+                            "name": "Positioning 5"
+                        },
+                        {
+                            "range": [90, 94],
+                            "name": "Positioning 6"
+                        },
+                        {
+                            "range": [95, 99],
+                            "name": "Positioning 7"
+                        },
+                        {
+                            "range": [100, 104],
+                            "name": "Positioning 8"
+                        },
+                        {
+                            "range": [105, 109],
+                            "name": "Positioning 9"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "Shaking 1 from slow to fast"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "Shaking 2 from slow to fast"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "Shaking 3 from slow to fast"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Shaking 4 from slow to fast"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "Shaking 5 from slow to fast"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "Shaking 6 from slow to fast"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "Shaking 7 from slow to fast"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "Shaking 8 from slow to fast"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "Shaking 9 from slow to fast"
+                        },
+                        {
+                            "range": [200, 201],
+                            "name": "Shaking open/hole from slow to fast"
+                        },
+                        {
+                            "range": [202, 221],
+                            "name": "Forwards rotation from fast to slow"
+                        },
+                        {
+                            "range": [222, 223],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [224, 243],
+                            "name": "Backwards rotation from slow to fast"
+                        },
+                        {
+                            "range": [244, 249],
+                            "name": "Random selection by audio control"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Auto random selection from fast to slow"
+                        }
+                    ]
+                },
+                "Fine Static Gobo Wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine"
+                        }
+                    ]
+                },
+                "Rotating Gobo Wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Indexed open/hole"
+                        },
+                        {
+                            "range": [4, 7],
+                            "name": "Indexed 1"
+                        },
+                        {
+                            "range": [8, 11],
+                            "name": "Indexed 2"
+                        },
+                        {
+                            "range": [12, 15],
+                            "name": "Indexed 3"
+                        },
+                        {
+                            "range": [16, 19],
+                            "name": "Indexed 4"
+                        },
+                        {
+                            "range": [20, 23],
+                            "name": "Indexed 5"
+                        },
+                        {
+                            "range": [24, 27],
+                            "name": "Indexed 6"
+                        },
+                        {
+                            "range": [28, 31],
+                            "name": "Indexed 7"
+                        },
+                        {
+                            "range": [32, 35],
+                            "name": "Rotation 1"
+                        },
+                        {
+                            "range": [36, 39],
+                            "name": "Rotation 2"
+                        },
+                        {
+                            "range": [40, 43],
+                            "name": "Rotation 3"
+                        },
+                        {
+                            "range": [44, 47],
+                            "name": "Rotation 4"
+                        },
+                        {
+                            "range": [48, 51],
+                            "name": "Rotation 5"
+                        },
+                        {
+                            "range": [52, 55],
+                            "name": "Rotation 6"
+                        },
+                        {
+                            "range": [56, 59],
+                            "name": "Rotation 7"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Shaking, indexed, 1 from slow to fast"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Shaking, indexed, 2 from slow to fast"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Shaking, indexed, 3 from slow to fast"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Shaking, indexed, 4 from slow to fast"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Shaking, indexed, 5 from slow to fast"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "Shaking, indexed, 6 from slow to fast"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "Shaking, indexed, 7 from slow to fast"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "Shaking, rotation, 1 from slow to fast"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Shaking, rotation, 2 from slow to fast"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "Shaking, rotation, 3 from slow to fast"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "Shaking, rotation, 4 from slow to fast"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "Shaking, rotation, 5 from slow to fast"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "Shaking, rotation, 6 from slow to fast"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "Shaking, rotation, 7 from slow to fast"
+                        },
+                        {
+                            "range": [200, 201],
+                            "name": "Shaking open/hole"
+                        },
+                        {
+                            "range": [202, 221],
+                            "name": "Forwards rotation from fast to slow"
+                        },
+                        {
+                            "range": [222, 223],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [224, 243],
+                            "name": "Backwards rotation from slow to fast"
+                        },
+                        {
+                            "range": [244, 249],
+                            "name": "Random selection by audio control"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Auto random selection from fast to slow"
+                        }
+                    ]
+                },
+                "Gobo Indexing and Rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No rotation/Indexing"
+                        },
+                        {
+                            "range": [1, 127],
+                            "name": "Forwards rotation from fast to slow/Indexing"
+                        },
+                        {
+                            "range": [128, 129],
+                            "name": "No rotation/Indexing"
+                        },
+                        {
+                            "range": [130, 255],
+                            "name": "Backwards rotation from slow to fast/Indexing"
+                        }
+                    ]
+                },
+                "Shutter, Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "No function (shutter open)"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Effect from slow to fast"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "No function (shutter open)"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Opening pulse in sequences from slow to fast"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "Closing pulse in sequences from fast to slow"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "No function (shutter open)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random effect from slow to fast"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "No function (shutter open)"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Coarse gradual adjustment of the intensity from 0% to 100%"
+                        }
+                    ]
+                },
+                "Dimmer Fine": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity fine"
+                        }
+                    ]
+                },
+                "Frost": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [1, 179],
+                            "name": "From 0% to 100%"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "100%"
+                        },
+                        {
+                            "range": [190, 211],
+                            "name": "Pulse closing from slow to fast"
+                        },
+                        {
+                            "range": [212, 233],
+                            "name": "Pulse opening from fast to slow"
+                        },
+                        {
+                            "range": [234, 255],
+                            "name": "Ramping from fast to slow"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Coarse"
+                        }
+                    ]
+                },
+                "Focus Fine": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine adjustment"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 39],
+                            "name": "Zoom 15° without focus correction"
+                        },
+                        {
+                            "range": [40, 79],
+                            "name": "Zoom 18° without focus correction"
+                        },
+                        {
+                            "range": [80, 127],
+                            "name": "Zoom 22° without focus correction"
+                        },
+                        {
+                            "range": [128, 169],
+                            "name": "Zoom 15° with focus correction"
+                        },
+                        {
+                            "range": [170, 219],
+                            "name": "Zoom 18° with focus correction"
+                        },
+                        {
+                            "range": [220, 255],
+                            "name": "Zoom 22° with focus correction"
+                        }
+                    ]
+                },
+                "Iris Fine": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine"
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [1, 179],
+                            "name": "From max. diameter to min. diameter"
+                        },
+                        {
+                            "range": [180, 191],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [192, 219],
+                            "name": "Pulse opening from slow to fast"
+                        },
+                        {
+                            "range": [220, 247],
+                            "name": "Pulse closing from fast to slow"
+                        },
+                        {
+                            "range": [248, 249],
+                            "name": "Random pulse opening (fast)"
+                        },
+                        {
+                            "range": [250, 251],
+                            "name": "Random pulse opening (slow)"
+                        },
+                        {
+                            "range": [252, 253],
+                            "name": "Random pulse closing (fast)"
+                        },
+                        {
+                            "range": [254, 255],
+                            "name": "Random pulse closing (slow)"
+                        }
+                    ]
+                },
+                "Frost Fine": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine"
+                        }
+                    ]
+                },
+                "Prism Rotation": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No"
+                        },
+                        {
+                            "range": [1, 127],
+                            "name": "Forwards from fast to slow proportional"
+                        },
+                        {
+                            "range": [128, 129],
+                            "name": "No"
+                        },
+                        {
+                            "range": [130, 255],
+                            "name": "Backwards rotation from slow to fast"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Open position (hole)"
+                        },
+                        {
+                            "range": [20, 127],
+                            "name": "3-facet rotating"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Macro 1"
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "Macro 2"
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "Macro 3"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Macro 4"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Macro 5"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "Macro 6"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "Macro 7"
+                        },
+                        {
+                            "range": [184, 191],
+                            "name": "Macro 8"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "Macro 9"
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "Macro 10"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Macro 11"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Macro 12"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Macro 13"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Macro 14"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Macro 15"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Macro 16"
+                        }
+                    ]
+                },
+                "Gobo Fine Indexing": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine"
+                        }
+                    ]
+                },
+                "Colour Wheel 2 - Fine Positioning": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine"
+                        }
+                    ]
+                },
+                "Colour Wheel 2": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Open/white - continual positioning",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [14, 14],
+                            "name": "Deep red - continual positioning",
+                            "color": "#7f0000"
+                        },
+                        {
+                            "range": [28, 28],
+                            "name": "Deep blue - continual positioning",
+                            "color": "#00007f"
+                        },
+                        {
+                            "range": [42, 42],
+                            "name": "Pink - continual positioning",
+                            "color": "#ff7fff"
+                        },
+                        {
+                            "range": [56, 56],
+                            "name": "Cyan - continual positioning",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [70, 70],
+                            "name": "Magenta - continual positioning",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [84, 84],
+                            "name": "Yellow - continual positioning",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [98, 98],
+                            "name": "3200°K correction filter - continual positioning",
+                            "color": "#ffe7c4"
+                        },
+                        {
+                            "range": [112, 112],
+                            "name": "UV filter - continual positioning",
+                            "color": "#55007f"
+                        },
+                        {
+                            "range": [128, 129],
+                            "name": "White - continual positioning",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [130, 136],
+                            "name": "Deep red - positioning",
+                            "color": "#7f0000"
+                        },
+                        {
+                            "range": [137, 144],
+                            "name": "Deep blue - positioning",
+                            "color": "#00007f"
+                        },
+                        {
+                            "range": [145, 151],
+                            "name": "Pink - positioning",
+                            "color": "#ff7fff"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Cyan - positioning",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [160, 166],
+                            "name": "Magenta - positioning",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [167, 174],
+                            "name": "Yellow - positioning",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [175, 181],
+                            "name": "3200°K correction filter - positioning",
+                            "color": "#ffe7c4"
+                        },
+                        {
+                            "range": [182, 189],
+                            "name": "UV filter - positioning",
+                            "color": "#55007f"
+                        },
+                        {
+                            "range": [190, 215],
+                            "name": "Forwards rainbow effect from fast to slow"
+                        },
+                        {
+                            "range": [216, 217],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [218, 243],
+                            "name": "Backwards rainbow effect from slow to fast"
+                        },
+                        {
+                            "range": [244, 249],
+                            "name": "Random colour selection by audio control"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Auto random colour selection from fast to slow"
+                        }
+                    ]
+                },
+                "Pan/Tilt Macro Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No macro generation"
+                        },
+                        {
+                            "range": [1, 127],
+                            "name": "Macro generation from fast to slow-forwards"
+                        },
+                        {
+                            "range": [128, 129],
+                            "name": "No macro generation"
+                        },
+                        {
+                            "range": [130, 255],
+                            "name": "Macro generation from slow to fast-backwards"
+                        }
+                    ]
+                },
+                "Pan/Tilt Macro Selection": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Disabled pan/tilt macro"
+                        },
+                        {
+                            "range": [10, 31],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Figure of circle (from small to large)"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Figure of horizontal eight (from small to large)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Figure of vertical eight (from small to large)"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Figure of rectangle (from small to large)"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Figure of triangle (from small to large)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Figure of five-pointed star (from small to large)"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Figure of cross (from small to large)"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ],
+                [
+                    "Colour Wheel 1",
+                    "Colour Wheel 1 - Fine Positioning"
+                ],
+                [
+                    "Static Gobo Wheel",
+                    "Fine Static Gobo Wheel"
+                ],
+                [
+                    "Dimmer",
+                    "Dimmer Fine"
+                ],
+                [
+                    "Focus",
+                    "Focus Fine"
+                ],
+                [
+                    "Iris",
+                    "Iris Fine"
+                ],
+                [
+                    "Frost",
+                    "Frost Fine"
+                ],
+                [
+                    "Gobo Indexing and Rotation",
+                    "Gobo Fine Indexing"
+                ],
+                [
+                    "Colour Wheel 2",
+                    "Colour Wheel 2 - Fine Positioning"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "1 - 27-Channel",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed, Pan/Tilt Time",
+                        "Power/Special Functions",
+                        "Colour Wheel 1",
+                        "Colour Wheel 1 - Fine Positioning",
+                        "Colour Wheel 2",
+                        "Colour Wheel 2 - Fine Positioning",
+                        "Static Gobo Wheel",
+                        "Fine Static Gobo Wheel",
+                        "Rotating Gobo Wheel",
+                        "Gobo Indexing and Rotation",
+                        "Gobo Fine Indexing",
+                        "Prism",
+                        "Prism Rotation",
+                        "Frost",
+                        "Frost Fine",
+                        "Iris",
+                        "Iris Fine",
+                        "Zoom",
+                        "Focus",
+                        "Focus Fine",
+                        "Shutter, Strobe",
+                        "Dimmer",
+                        "Dimmer Fine"
+                    ]
+                },
+                {
+                    "name": "2 - 19-Channel",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed, Pan/Tilt Time",
+                        "Power/Special Functions",
+                        "Colour Wheel 1",
+                        "Colour Wheel 2",
+                        "Static Gobo Wheel",
+                        "Rotating Gobo Wheel",
+                        "Gobo Indexing and Rotation",
+                        "Prism",
+                        "Prism Rotation",
+                        "Frost",
+                        "Iris",
+                        "Zoom",
+                        "Focus",
+                        "Shutter, Strobe",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "3 - 29-Channel",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed, Pan/Tilt Time",
+                        "Power/Special Functions",
+                        "Pan/Tilt Macro Selection",
+                        "Pan/Tilt Macro Speed",
+                        "Colour Wheel 1",
+                        "Colour Wheel 1 - Fine Positioning",
+                        "Colour Wheel 2",
+                        "Colour Wheel 2 - Fine Positioning",
+                        "Static Gobo Wheel",
+                        "Fine Static Gobo Wheel",
+                        "Rotating Gobo Wheel",
+                        "Gobo Indexing and Rotation",
+                        "Gobo Fine Indexing",
+                        "Prism",
+                        "Prism Rotation",
+                        "Frost",
+                        "Frost Fine",
+                        "Iris",
+                        "Iris Fine",
+                        "Zoom",
+                        "Focus",
+                        "Focus Fine",
+                        "Shutter, Strobe",
+                        "Dimmer",
+                        "Dimmer Fine"
+                    ]
+                },
+                {
+                    "name": "4 - 21-Channel",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed, Pan/Tilt Time",
+                        "Power/Special Functions",
+                        "Pan/Tilt Macro Selection",
+                        "Pan/Tilt Macro Speed",
+                        "Colour Wheel 1",
+                        "Colour Wheel 2",
+                        "Static Gobo Wheel",
+                        "Rotating Gobo Wheel",
+                        "Gobo Indexing and Rotation",
+                        "Prism",
+                        "Prism Rotation",
+                        "Frost",
+                        "Iris",
+                        "Zoom",
+                        "Focus",
+                        "Shutter, Strobe",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

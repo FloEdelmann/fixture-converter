@@ -1,0 +1,207 @@
+{
+    "manufacturers": {
+        "Sagitter": {
+            "name": "Sagitter"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Sagitter",
+            "name": "Slimpar 7DL",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [257, 250, 130],
+                "weight": 2.1,
+                "power": 100,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 3070
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Intensity"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Intensity"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Intensity"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White Intensity"
+                        }
+                    ]
+                },
+                "Amber": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber Intensity"
+                        }
+                    ]
+                },
+                "UV": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "UV Intensity"
+                        }
+                    ]
+                },
+                "Function": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [50, 101],
+                            "name": "Color Macro 1 (Fade)"
+                        },
+                        {
+                            "range": [102, 152],
+                            "name": "Color Macro 2 (Color Change)"
+                        },
+                        {
+                            "range": [153, 203],
+                            "name": "Sound Mode 1 (Strobe)"
+                        },
+                        {
+                            "range": [204, 255],
+                            "name": "Sound Mode 2 (Color Change)"
+                        }
+                    ]
+                },
+                "Color Macro Speed - Microphone Sensitivity": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Color Macro Speed (Ch8) - Microphone Sensitivity (Ch8)"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Strobe"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe from min to max"
+                        }
+                    ]
+                },
+                "Color Macro": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Color Macro"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "1 Channel",
+                    "channels": [
+                        "Color Macro"
+                    ]
+                },
+                {
+                    "name": "6 Channels",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "UV"
+                    ]
+                },
+                {
+                    "name": "7 Channels",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "UV"
+                    ]
+                },
+                {
+                    "name": "10 Channels",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "UV",
+                        "Function",
+                        "Color Macro Speed - Microphone Sensitivity",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

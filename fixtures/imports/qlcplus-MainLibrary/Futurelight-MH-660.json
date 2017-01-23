@@ -1,0 +1,404 @@
+{
+    "manufacturers": {
+        "Futurelight": {
+            "name": "Futurelight"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Futurelight",
+            "name": "MH-660",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [426, 447, 372],
+                "weight": 25,
+                "power": 450,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 250W"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [15, 15]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 530,
+                    "tiltMax": 280
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Pan/Tilt speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Tracking mode"
+                        },
+                        {
+                            "range": [1, 249],
+                            "name": "Vector speed fast to slow"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Tracking mode BO pan/tilt/color change"
+                        }
+                    ]
+                },
+                "Lamp switch, reset, fan speed": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Lamp on, fan speed max to min"
+                        },
+                        {
+                            "range": [128, 139],
+                            "name": "Lamp on, reset"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Lamp off after 3 seconds"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "White"
+                        },
+                        {
+                            "range": [10, 10],
+                            "name": "Turquoise"
+                        },
+                        {
+                            "range": [21, 21],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [32, 32],
+                            "name": "Cyan"
+                        },
+                        {
+                            "range": [42, 42],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [53, 53],
+                            "name": "Magenta"
+                        },
+                        {
+                            "range": [64, 64],
+                            "name": "Light blue"
+                        },
+                        {
+                            "range": [74, 74],
+                            "name": "Yellow"
+                        },
+                        {
+                            "range": [85, 85],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [96, 96],
+                            "name": "Pink"
+                        },
+                        {
+                            "range": [106, 106],
+                            "name": "Blue"
+                        },
+                        {
+                            "range": [117, 117],
+                            "name": "Orange"
+                        },
+                        {
+                            "range": [128, 189],
+                            "name": "Rainbow forward fast to slow"
+                        },
+                        {
+                            "range": [190, 193],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Rainbow backward slow to fast"
+                        }
+                    ]
+                },
+                "None": {
+                    "type": "Nothing"
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 95],
+                            "name": "No prism"
+                        },
+                        {
+                            "range": [96, 159],
+                            "name": "3-Prism"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Macro 1"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "Macro 2"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "Macro 3"
+                        },
+                        {
+                            "range": [184, 191],
+                            "name": "Macro 4"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "Macro 5"
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "Macro 6"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Macro 7"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Macro 8"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Macro 9"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Macro 10"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Macro 11"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Macro 12"
+                        }
+                    ]
+                },
+                "Prism rotation": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No prism rotation"
+                        },
+                        {
+                            "range": [1, 126],
+                            "name": "Prism rotation forward fast to slow"
+                        },
+                        {
+                            "range": [127, 128],
+                            "name": "No prism rotation"
+                        },
+                        {
+                            "range": [129, 255],
+                            "name": "Prism rotation backward slow to fast"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "No gobo"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Rot. gobo 1 (multicolor dichro)"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Rot. gobo 2 (glas)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Rot. gobo 3 (metal)"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Rot. gobo 4 (metal)"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Rot. gobo 5 (metal)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Rot. gobo 6 (metal)"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Rot. Gobowheel slow to fast"
+                        }
+                    ]
+                },
+                "Gobo orientation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Gobo orientation"
+                        },
+                        {
+                            "range": [128, 190],
+                            "name": "Gobo-rotation fast to slow"
+                        },
+                        {
+                            "range": [191, 192],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "Gobo-rotation slow to fast"
+                        }
+                    ]
+                },
+                "None2": {
+                    "type": "Nothing"
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Far to near"
+                        }
+                    ]
+                },
+                "Shutter, strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe speed slow to fast"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse sequence"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random strobe speed slow to fast"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Shutter open"
+                        }
+                    ]
+                },
+                "Dimmer intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer intensity"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan fine",
+                        "Tilt fine",
+                        "Pan/Tilt speed",
+                        "Lamp switch, reset, fan speed",
+                        "Color",
+                        "None",
+                        "Prism",
+                        "Prism rotation",
+                        "Gobo",
+                        "Gobo orientation",
+                        "None2",
+                        "Focus",
+                        "Shutter, strobe",
+                        "Dimmer intensity"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,821 @@
+{
+    "manufacturers": {
+        "Elation": {
+            "name": "Elation"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Elation",
+            "name": "Platinum Spot 5R",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [460, 635, 350],
+                "weight": 14.8,
+                "power": 350,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "MSD Platinum 5R",
+                    "colorTemperature": 8000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [16, 16]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 630,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 13],
+                            "name": "Open / white",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [14, 27],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [28, 41],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [42, 55],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [56, 69],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [70, 83],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [84, 97],
+                            "name": "UV",
+                            "color": "#8000ff"
+                        },
+                        {
+                            "range": [98, 111],
+                            "name": "CTB",
+                            "color": "#d0ffff"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "CTO",
+                            "color": "#fff0e1"
+                        },
+                        {
+                            "range": [128, 189],
+                            "name": "Scroll Forward (Fast -> Slow)"
+                        },
+                        {
+                            "range": [190, 193],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Scroll Backwards (Slow -> Fast)"
+                        }
+                    ]
+                },
+                "Color Fine": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Change to Any Position Fine"
+                        }
+                    ]
+                },
+                "Rotating Gobos (Continuous Rotation)": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Rot. Gobo 1"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Rot. Gobo 2"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Rot. Gobo 3"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Rot. Gobo 4"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Rot. Gobo 5"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Rot. Gobo 6"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Rot. Gobo 7"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Rot. Gobo 8"
+                        },
+                        {
+                            "range": [90, 104],
+                            "name": "Rot. Gobo 1 Shake"
+                        },
+                        {
+                            "range": [105, 119],
+                            "name": "Rot. Gobo 2 Shake"
+                        },
+                        {
+                            "range": [120, 134],
+                            "name": "Rot. Gobo 3 Shake"
+                        },
+                        {
+                            "range": [135, 149],
+                            "name": "Rot. Gobo 4 Shake"
+                        },
+                        {
+                            "range": [150, 164],
+                            "name": "Rot. Gobo 5 Shake"
+                        },
+                        {
+                            "range": [165, 179],
+                            "name": "Rot. Gobo 6 Shake"
+                        },
+                        {
+                            "range": [180, 194],
+                            "name": "Rot. Gobo 7 Shake"
+                        },
+                        {
+                            "range": [195, 209],
+                            "name": "Rot. Gobo 8 Shake"
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "Rot. Gobo Wheel Rotate (Slow -> Fast)"
+                        }
+                    ]
+                },
+                "Rotating Gobos (Indexing)": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Gobo Indexing"
+                        },
+                        {
+                            "range": [128, 189],
+                            "name": "Forward Gobo Rotation (Fast -> Slow)"
+                        },
+                        {
+                            "range": [190, 193],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Backward Gobo Rotation (Slow -> Fast)"
+                        }
+                    ]
+                },
+                "Rotating Gobo (Indexing) Fine": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Indexing"
+                        }
+                    ]
+                },
+                "Fixed Gobos": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Gobo 9"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Gobo 10"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Gobo 11"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Gobo 12"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "Gobo 13"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Gobo 14"
+                        },
+                        {
+                            "range": [120, 126],
+                            "name": "Gobo 1 Shake (Slow -> Fast)"
+                        },
+                        {
+                            "range": [127, 133],
+                            "name": "Gobo 2 Shake (Slow -> Fast)"
+                        },
+                        {
+                            "range": [134, 140],
+                            "name": "Gobo 3 Shake (Slow -> Fast)"
+                        },
+                        {
+                            "range": [141, 147],
+                            "name": "Gobo 4 Shake (Slow -> Fast)"
+                        },
+                        {
+                            "range": [148, 154],
+                            "name": "Gobo 5 Shake (Slow -> Fast)"
+                        },
+                        {
+                            "range": [155, 161],
+                            "name": "Gobo 6 Shake (Slow -> Fast)"
+                        },
+                        {
+                            "range": [162, 168],
+                            "name": "Gobo 7 Shake (Slow -> Fast)"
+                        },
+                        {
+                            "range": [169, 175],
+                            "name": "Gobo 8 Shake (Slow -> Fast)"
+                        },
+                        {
+                            "range": [176, 182],
+                            "name": "Gobo 9 Shake (Slow -> Fast)"
+                        },
+                        {
+                            "range": [183, 189],
+                            "name": "Gobo 10 Shake (Slow -> Fast)"
+                        },
+                        {
+                            "range": [190, 196],
+                            "name": "Gobo 11 Shake (Slow -> Fast)"
+                        },
+                        {
+                            "range": [197, 203],
+                            "name": "Gobo 12 Shake (Slow -> Fast)"
+                        },
+                        {
+                            "range": [204, 210],
+                            "name": "Gobo 13 Shake (Slow -> Fast)"
+                        },
+                        {
+                            "range": [211, 217],
+                            "name": "Gobo 14 Shake (Slow -> Fast)"
+                        },
+                        {
+                            "range": [218, 255],
+                            "name": "Gobo Wheel Rotation (Slow -> Fast)"
+                        }
+                    ]
+                },
+                "Fixed Gobo (Indexing) Fine": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fixed Gobo Indexing"
+                        }
+                    ]
+                },
+                "3 Facet Prism / Gobo Macros": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [32, 127],
+                            "name": "Rotating Prism"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Macro 1"
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "Macro 2"
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "Macro 3"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Macro 4"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Macro 5"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "Macro 6"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "Macro 7"
+                        },
+                        {
+                            "range": [184, 191],
+                            "name": "Macro 8"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "Macro 9"
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "Macro 10"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Macro 11"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Macro 12"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Macro 13"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Macro 14"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Macro 15"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Macro 16"
+                        }
+                    ]
+                },
+                "Rotating Prism / Gobo Macros": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Prism Indexing"
+                        },
+                        {
+                            "range": [128, 189],
+                            "name": "Forward Prism Rotation (Fast -> Slow)"
+                        },
+                        {
+                            "range": [190, 193],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Backwards Prism Rotation (Slow -> Fast)"
+                        }
+                    ]
+                },
+                "Rotating Prism Indexing Fine": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Indexing"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Near -> Far"
+                        }
+                    ]
+                },
+                "Focus Fine": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe (Slow -> Fast)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse-Effect in Sequences"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random Strobe (Slow -> Fast)"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Dimmer Fine": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity Fine"
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 191],
+                            "name": "Max -> Min"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Pulse Close (Fast -> Slow)"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Pulse Open (Slow -> Fast)"
+                        }
+                    ]
+                },
+                "Iris Fine": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine"
+                        }
+                    ]
+                },
+                "Frost": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 191],
+                            "name": "Frost (0% - 100%)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Pulse Open (Fast -> Slow)"
+                        },
+                        {
+                            "range": [224, 254],
+                            "name": "Pulse Close (Slow -> Fast)"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Max Frost"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 225],
+                            "name": "Max -> Min"
+                        },
+                        {
+                            "range": [226, 235],
+                            "name": "Blackout By Movement"
+                        },
+                        {
+                            "range": [236, 245],
+                            "name": "Blackout by All Wheel Change"
+                        }
+                    ]
+                },
+                "Lamp / Internal Programs": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Color Change Normal"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Color Change To Any Position"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Color & Gobo Change to Any Positon"
+                        },
+                        {
+                            "range": [40, 59],
+                            "name": "Lamp On"
+                        },
+                        {
+                            "range": [60, 79],
+                            "name": "Lamp Off"
+                        },
+                        {
+                            "range": [80, 84],
+                            "name": "All Motor Reset"
+                        },
+                        {
+                            "range": [85, 87],
+                            "name": "Scan Motor Reset"
+                        },
+                        {
+                            "range": [88, 90],
+                            "name": "Color Motor Reset"
+                        },
+                        {
+                            "range": [91, 93],
+                            "name": "Gobo Motor Reset"
+                        },
+                        {
+                            "range": [94, 96],
+                            "name": "Shutter & Dimmer Motor Reset"
+                        },
+                        {
+                            "range": [97, 99],
+                            "name": "Other Motor Reset"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Internal Program 1"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Internal Program 2"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Internal Program 3"
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Internal Program 4"
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "Internal Program 5"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Internal Program 6"
+                        },
+                        {
+                            "range": [220, 239],
+                            "name": "Internal Program 7"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Auto Program by Music"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ],
+                [
+                    "Color",
+                    "Color Fine"
+                ],
+                [
+                    "Rotating Gobo (Indexing)",
+                    "Rotating Gobo (Indexing) Fine"
+                ],
+                [
+                    "Fixed Gobo (Indexing)",
+                    "Fixed Gobo (Indexing) Fine"
+                ],
+                [
+                    "Rotating Prism Indexing",
+                    "Rotating Prism Indexing Fine"
+                ],
+                [
+                    "Focus",
+                    "Focus Fine"
+                ],
+                [
+                    "Dimmer",
+                    "Dimmer Fine"
+                ],
+                [
+                    "Iris",
+                    "Iris Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Basic",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Color",
+                        "Rotating Gobos (Continuous Rotation)",
+                        "Rotating Gobos (Indexing)",
+                        "Fixed Gobos",
+                        "3 Facet Prism / Gobo Macros",
+                        "Rotating Prism / Gobo Macros",
+                        "Focus",
+                        "Shutter",
+                        "Dimmer",
+                        "Iris",
+                        "Frost",
+                        "Speed",
+                        "Lamp / Internal Programs"
+                    ]
+                },
+                {
+                    "name": "Standard",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Color",
+                        "Rotating Gobos (Continuous Rotation)",
+                        "Rotating Gobos (Indexing)",
+                        "Fixed Gobos",
+                        "3 Facet Prism / Gobo Macros",
+                        "Rotating Prism / Gobo Macros",
+                        "Focus",
+                        "Shutter",
+                        "Dimmer",
+                        "Iris",
+                        "Frost",
+                        "Speed",
+                        "Lamp / Internal Programs"
+                    ]
+                },
+                {
+                    "name": "Extended",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Color",
+                        "Color Fine",
+                        "Rotating Gobos (Continuous Rotation)",
+                        "Rotating Gobos (Indexing)",
+                        "Rotating Gobo (Indexing) Fine",
+                        "Fixed Gobos",
+                        "Fixed Gobo (Indexing) Fine",
+                        "3 Facet Prism / Gobo Macros",
+                        "Rotating Prism / Gobo Macros",
+                        "Rotating Prism Indexing Fine",
+                        "Focus",
+                        "Focus Fine",
+                        "Shutter",
+                        "Dimmer",
+                        "Dimmer Fine",
+                        "Iris",
+                        "Iris Fine",
+                        "Frost",
+                        "Speed",
+                        "Lamp / Internal Programs"
+                    ]
+                }
+            ]
+        }
+    ]
+}

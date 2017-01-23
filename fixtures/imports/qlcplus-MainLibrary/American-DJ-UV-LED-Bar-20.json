@@ -1,0 +1,129 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "UV LED Bar 20",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [334, 61, 175],
+                "weight": 2.45,
+                "power": 30,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Fresnel",
+                    "degreesMinMax": [10, 40]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer (0 to 100%)"
+                        }
+                    ]
+                },
+                "Strobing": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Led OFF"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Led ON"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobing Slow - Fast"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Led ON"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse Strobe Slow - fast"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Led ON"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random Strobe Slow - Fast"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Sound Active Strobing"
+                        }
+                    ]
+                },
+                "Dimmer Curves": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "Standard"
+                        },
+                        {
+                            "range": [21, 40],
+                            "name": "Stage"
+                        },
+                        {
+                            "range": [41, 60],
+                            "name": "TV"
+                        },
+                        {
+                            "range": [61, 80],
+                            "name": "Architectural"
+                        },
+                        {
+                            "range": [81, 100],
+                            "name": "Theatre"
+                        },
+                        {
+                            "range": [101, 255],
+                            "name": "Default to Unit Current Setting"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "1 Channel",
+                    "channels": [
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "2 Channel",
+                    "channels": [
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "3 Channel",
+                    "channels": [
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

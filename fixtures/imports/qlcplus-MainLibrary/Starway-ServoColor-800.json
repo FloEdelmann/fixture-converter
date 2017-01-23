@@ -1,0 +1,614 @@
+{
+    "manufacturers": {
+        "Starway": {
+            "name": "Starway"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Starway",
+            "name": "ServoColor 800",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [400, 270, 463],
+                "weight": 13,
+                "power": 465,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 6860
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [15, 60]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Coarse"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Coarse"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Speed Max to Min "
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [20, 39],
+                            "name": "Pan/Tilt Black Active"
+                        },
+                        {
+                            "range": [40, 59],
+                            "name": "Pan/Tilt Black Desactive"
+                        },
+                        {
+                            "range": [60, 79],
+                            "name": "Fan Auto"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Fan Slow"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Fan Normal"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Fan Fast"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Auto 1"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "Auto 2"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "Test"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "Custom"
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "Sound1"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [220, 235],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [236, 239],
+                            "name": "Dim 1"
+                        },
+                        {
+                            "range": [240, 243],
+                            "name": "Dim 2"
+                        },
+                        {
+                            "range": [244, 247],
+                            "name": "Dim 3"
+                        },
+                        {
+                            "range": [248, 251],
+                            "name": "Dim 4"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Dim 5"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min to Max"
+                        }
+                    ]
+                },
+                "Shutter Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Strobe"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Min > Max"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer 0% to 100%"
+                        }
+                    ]
+                },
+                "Red (Z1)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "Green (Z1)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "Blue (Z1)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "White (Z1)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "Red (Z2)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "Green (Z2)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "Blue (Z2)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "White (Z2)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "Red (Z3)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "Green (Z3)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "Blue (Z3)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Saturation 0% to 100%"
+                        }
+                    ]
+                },
+                "White (Z3)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine Saturation"
+                        }
+                    ]
+                },
+                "Macro Color": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [6, 10],
+                            "name": "RGBW 100%"
+                        },
+                        {
+                            "range": [11, 30],
+                            "name": "Macro RGB 1"
+                        },
+                        {
+                            "range": [31, 50],
+                            "name": "Macro RGB 2"
+                        },
+                        {
+                            "range": [51, 70],
+                            "name": "Macro RGB 3"
+                        },
+                        {
+                            "range": [71, 90],
+                            "name": "Macro RGB 4"
+                        },
+                        {
+                            "range": [91, 110],
+                            "name": "Macro RGB 5"
+                        },
+                        {
+                            "range": [111, 130],
+                            "name": "Macro RGB 6"
+                        },
+                        {
+                            "range": [131, 150],
+                            "name": "Macro RGB 7"
+                        },
+                        {
+                            "range": [151, 170],
+                            "name": "Macro RGB 8"
+                        },
+                        {
+                            "range": [171, 200],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [201, 205],
+                            "name": "White 1"
+                        },
+                        {
+                            "range": [206, 210],
+                            "name": "White 2"
+                        },
+                        {
+                            "range": [211, 215],
+                            "name": "White 3"
+                        },
+                        {
+                            "range": [216, 220],
+                            "name": "White 4"
+                        },
+                        {
+                            "range": [221, 225],
+                            "name": "White 5"
+                        },
+                        {
+                            "range": [226, 230],
+                            "name": "White 6"
+                        },
+                        {
+                            "range": [231, 235],
+                            "name": "White 7"
+                        },
+                        {
+                            "range": [236, 240],
+                            "name": "White 8"
+                        },
+                        {
+                            "range": [241, 245],
+                            "name": "White 9"
+                        },
+                        {
+                            "range": [246, 250],
+                            "name": "White 10"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "White 11"
+                        }
+                    ]
+                },
+                "Macro Ring": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Macro Ring Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "HUE": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < MAx"
+                        }
+                    ]
+                },
+                "SAT": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "VALUE": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min< Max"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "heads": {
+                "Person3 16 Bits-head0": [
+                    "Red (Z1)",
+                    "Green (Z1)",
+                    "Blue (Z1)",
+                    "White (Z1)"
+                ],
+                "Person3 16 Bits-head1": [
+                    "White (Z2)",
+                    "Red (Z2)",
+                    "Green (Z2)",
+                    "Blue (Z2)"
+                ],
+                "Person3 16 Bits-head2": [
+                    "White (Z3)",
+                    "Red (Z3)",
+                    "Green (Z3)",
+                    "Blue (Z3)"
+                ],
+                "Person5 16 Bits-head0": [
+                    "White (Z1)",
+                    "Red (Z1)",
+                    "Green (Z1)",
+                    "Blue (Z1)"
+                ],
+                "Person5 16 Bits-head1": [
+                    "White (Z2)",
+                    "Red (Z2)",
+                    "Green (Z2)",
+                    "Blue (Z2)"
+                ],
+                "Person5 16 Bits-head2": [
+                    "Red (Z3)",
+                    "Green (Z3)",
+                    "Blue (Z3)",
+                    "White (Z3)"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "Person1 8 Bits",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Red (Z1)",
+                        "Green (Z1)",
+                        "Blue (Z1)",
+                        "White (Z1)",
+                        "Dimmer",
+                        "Shutter Strobe",
+                        "Zoom",
+                        "Control"
+                    ]
+                },
+                {
+                    "name": "Person2 16 Bits",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed",
+                        "Red (Z1)",
+                        "Green (Z1)",
+                        "Blue (Z1)",
+                        "White (Z1)",
+                        "Macro Color",
+                        "Macro Ring",
+                        "Macro Ring Speed",
+                        "Dimmer",
+                        "Shutter Strobe",
+                        "Zoom",
+                        "Control"
+                    ]
+                },
+                {
+                    "name": "Person3 16 Bits",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed",
+                        "Red (Z1)",
+                        "Green (Z1)",
+                        "Blue (Z1)",
+                        "White (Z1)",
+                        "Red (Z2)",
+                        "Green (Z2)",
+                        "Blue (Z2)",
+                        "White (Z2)",
+                        "Red (Z3)",
+                        "Green (Z3)",
+                        "Blue (Z3)",
+                        "White (Z3)",
+                        "Dimmer",
+                        "Shutter Strobe",
+                        "Zoom",
+                        "Control"
+                    ]
+                },
+                {
+                    "name": "Person4 8 Bits - HSV",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "HUE",
+                        "SAT",
+                        "VALUE",
+                        "Shutter Strobe",
+                        "Zoom",
+                        "Control"
+                    ]
+                },
+                {
+                    "name": "Person5 16 Bits",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed",
+                        "Dimmer",
+                        "Shutter Strobe",
+                        "Zoom",
+                        "Control",
+                        "Red (Z1)",
+                        "Green (Z1)",
+                        "Blue (Z1)",
+                        "White (Z1)",
+                        "Red (Z2)",
+                        "Green (Z2)",
+                        "Blue (Z2)",
+                        "White (Z2)",
+                        "Red (Z3)",
+                        "Green (Z3)",
+                        "Blue (Z3)",
+                        "White (Z3)"
+                    ]
+                }
+            ]
+        }
+    ]
+}

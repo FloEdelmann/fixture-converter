@@ -1,0 +1,612 @@
+{
+    "manufacturers": {
+        "Contest": {
+            "name": "Contest"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Contest",
+            "name": "Tri4U",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [375, 160, 60],
+                "weight": 2.5,
+                "power": 50,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Mode": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "LED Off"
+                        },
+                        {
+                            "range": [11, 20],
+                            "name": "Red: R255 - G00 - B00"
+                        },
+                        {
+                            "range": [21, 30],
+                            "name": "Orange: R255 - G070 - B000"
+                        },
+                        {
+                            "range": [31, 40],
+                            "name": "Yellow: R255 - G155 - B000"
+                        },
+                        {
+                            "range": [41, 51],
+                            "name": "Green: R000 - G255 - B000"
+                        },
+                        {
+                            "range": [52, 61],
+                            "name": "Cyan: R000 - G255 - B255"
+                        },
+                        {
+                            "range": [62, 71],
+                            "name": "Blue: R000 - G000 - B255"
+                        },
+                        {
+                            "range": [72, 81],
+                            "name": "Pink: R255 - G000 - B255"
+                        },
+                        {
+                            "range": [82, 92],
+                            "name": "Magenta: R255 - G000 - B100"
+                        },
+                        {
+                            "range": [93, 102],
+                            "name": "Cold White: R255 - G255 - B255"
+                        },
+                        {
+                            "range": [103, 112],
+                            "name": "Hot White: R255 - B200"
+                        },
+                        {
+                            "range": [113, 122],
+                            "name": "Color macro 1"
+                        },
+                        {
+                            "range": [123, 133],
+                            "name": "Color macro 2"
+                        },
+                        {
+                            "range": [134, 143],
+                            "name": "Color macro 3"
+                        },
+                        {
+                            "range": [144, 153],
+                            "name": "Color macro 4"
+                        },
+                        {
+                            "range": [154, 163],
+                            "name": "Color macro 5"
+                        },
+                        {
+                            "range": [164, 174],
+                            "name": "Pattern 1"
+                        },
+                        {
+                            "range": [175, 184],
+                            "name": "Pattern 2"
+                        },
+                        {
+                            "range": [185, 194],
+                            "name": "Pattern 3"
+                        },
+                        {
+                            "range": [195, 204],
+                            "name": "Pattern 4"
+                        },
+                        {
+                            "range": [205, 215],
+                            "name": "Pattern 5"
+                        },
+                        {
+                            "range": [216, 225],
+                            "name": "Pattern 6"
+                        },
+                        {
+                            "range": [226, 235],
+                            "name": "Pattern 7"
+                        },
+                        {
+                            "range": [236, 245],
+                            "name": "Pattern 8"
+                        },
+                        {
+                            "range": [246, 255],
+                            "name": "Auto mode: Macros then patterns 10 times each"
+                        }
+                    ]
+                },
+                "Dimmer / Speed / Audio": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer (Mode < 113) / Speed (113<Mode<245) / Audio (Mode >245)"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity"
+                        }
+                    ]
+                },
+                "Dimmer & Strobe": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Black-out"
+                        },
+                        {
+                            "range": [1, 189],
+                            "name": "Dimmer"
+                        },
+                        {
+                            "range": [190, 250],
+                            "name": "Strobe (slow to fast)"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Full-on"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer 0 - 100%"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "No strobe"
+                        },
+                        {
+                            "range": [16, 250],
+                            "name": "Strobe (slow to fast)"
+                        }
+                    ]
+                },
+                "Dim (ch 6 <= 10) / Dim & Speed (ch 6 > 10)": {
+                    "type": "Intensity",
+                    "crossfade": true
+                },
+                "Red (ch 6 < 11)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity"
+                        }
+                    ]
+                },
+                "Green (ch 6 < 11)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity"
+                        }
+                    ]
+                },
+                "Blue (ch 6 < 11)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity"
+                        }
+                    ]
+                },
+                "Strobe (6 ch)": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 24],
+                            "name": "No strobe"
+                        },
+                        {
+                            "range": [25, 255],
+                            "name": "Strobe"
+                        }
+                    ]
+                },
+                "Red #1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity"
+                        }
+                    ]
+                },
+                "Green #1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity"
+                        }
+                    ]
+                },
+                "Blue #1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity"
+                        }
+                    ]
+                },
+                "Red #2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity"
+                        }
+                    ]
+                },
+                "Green #2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity"
+                        }
+                    ]
+                },
+                "Blue #2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity"
+                        }
+                    ]
+                },
+                "Red #3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity"
+                        }
+                    ]
+                },
+                "Green #3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity"
+                        }
+                    ]
+                },
+                "Blue #3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity"
+                        }
+                    ]
+                },
+                "Red #4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity"
+                        }
+                    ]
+                },
+                "Green #4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity"
+                        }
+                    ]
+                },
+                "Blue #4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity"
+                        }
+                    ]
+                },
+                "Speed / Audio": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 200],
+                            "name": "Speed"
+                        },
+                        {
+                            "range": [201, 255],
+                            "name": "Audio"
+                        }
+                    ]
+                },
+                "Dimmer & Strobe #1": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Black-out"
+                        },
+                        {
+                            "range": [1, 189],
+                            "name": "Dimmer"
+                        },
+                        {
+                            "range": [190, 250],
+                            "name": "Strobe (slow to fast)"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Full-on"
+                        }
+                    ]
+                },
+                "Dimmer & Strobe #2": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Black-out"
+                        },
+                        {
+                            "range": [1, 189],
+                            "name": "Dimmer"
+                        },
+                        {
+                            "range": [190, 250],
+                            "name": "Strobe (slow to fast)"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Full-on"
+                        }
+                    ]
+                },
+                "Dimmer & Strobe #3": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Black-out"
+                        },
+                        {
+                            "range": [1, 189],
+                            "name": "Dimmer"
+                        },
+                        {
+                            "range": [190, 250],
+                            "name": "Strobe (slow to fast)"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Full-on"
+                        }
+                    ]
+                },
+                "Dimmer & Strobe #4": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Black-out"
+                        },
+                        {
+                            "range": [1, 189],
+                            "name": "Dimmer"
+                        },
+                        {
+                            "range": [190, 250],
+                            "name": "Strobe (slow to fast)"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Full-on"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "2 Ch Mode",
+                    "channels": [
+                        "Mode",
+                        "Dimmer / Speed / Audio"
+                    ]
+                },
+                {
+                    "name": "3 Ch Mode",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "4 Ch mode",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Dimmer & Strobe"
+                    ]
+                },
+                {
+                    "name": "5 Ch mode",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Dimmer",
+                        "Strobe"
+                    ]
+                },
+                {
+                    "name": "6 Ch mode",
+                    "channels": [
+                        "Red (ch 6 < 11)",
+                        "Green (ch 6 < 11)",
+                        "Blue (ch 6 < 11)",
+                        "Dim (ch 6 <= 10) / Dim & Speed (ch 6 > 10)",
+                        "Strobe (6 ch)",
+                        "Mode"
+                    ]
+                },
+                {
+                    "name": "12 Ch mode",
+                    "channels": [
+                        "Red #1",
+                        "Green #1",
+                        "Blue #1",
+                        "Red #2",
+                        "Green #2",
+                        "Blue #2",
+                        "Red #3",
+                        "Green #3",
+                        "Blue #3",
+                        "Red #4",
+                        "Green #4",
+                        "Blue #4"
+                    ]
+                },
+                {
+                    "name": "15 Ch mode",
+                    "channels": [
+                        "Red #1",
+                        "Green #1",
+                        "Blue #1",
+                        "Red #2",
+                        "Green #2",
+                        "Blue #2",
+                        "Red #3",
+                        "Green #3",
+                        "Blue #3",
+                        "Red #4",
+                        "Green #4",
+                        "Blue #4",
+                        "Dimmer & Strobe",
+                        "Mode",
+                        "Speed / Audio"
+                    ]
+                },
+                {
+                    "name": "16 Ch mode",
+                    "channels": [
+                        "Red #1",
+                        "Green #1",
+                        "Blue #1",
+                        "Dimmer & Strobe #1",
+                        "Red #2",
+                        "Green #2",
+                        "Blue #2",
+                        "Dimmer & Strobe #2",
+                        "Red #3",
+                        "Green #3",
+                        "Blue #3",
+                        "Dimmer & Strobe #3",
+                        "Red #4",
+                        "Green #4",
+                        "Blue #4",
+                        "Dimmer & Strobe #4"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,514 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "Vizi LED Spot",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [419, 214, 303],
+                "weight": 9,
+                "power": 88,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [14, 14]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Color Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [15, 29],
+                            "name": "Color 1"
+                        },
+                        {
+                            "range": [30, 44],
+                            "name": "Color 2"
+                        },
+                        {
+                            "range": [45, 59],
+                            "name": "Color 3"
+                        },
+                        {
+                            "range": [60, 74],
+                            "name": "Color 4"
+                        },
+                        {
+                            "range": [75, 89],
+                            "name": "Color 5"
+                        },
+                        {
+                            "range": [90, 104],
+                            "name": "Color 6"
+                        },
+                        {
+                            "range": [105, 119],
+                            "name": "Color 7"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Color 8"
+                        },
+                        {
+                            "range": [128, 189],
+                            "name": "Forward Rainbow Effect (Fast - Slow)"
+                        },
+                        {
+                            "range": [190, 193],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Backwards Rainbow Effect (Slow - Fast)"
+                        }
+                    ]
+                },
+                "Gobos": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Rotating Gobo 1"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Rotating Gobo 2"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Rotating Gobo 3"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Rotating Gobo 4"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Rotating Gobo 5"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Rotating Gobo 6"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Rotating Gobo 7"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Rotating Gobo 1 Shake"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Rotating Gobo 2 Shake"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Rotating Gobo 3 Shake"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Rotating Gobo 4 Shake"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "Rotating Gobo 5 Shake"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "Rotating Gobo 6 Shake"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "Rotating Gobo 7 Shake"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Continious Rotation of Gobo Wheel (Slow - Fast)"
+                        }
+                    ]
+                },
+                "Gobo Indexing & Rotation": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Gobo Indexing"
+                        },
+                        {
+                            "range": [128, 189],
+                            "name": "Forwards Gobo Rotation (Fast - Slow)"
+                        },
+                        {
+                            "range": [190, 193],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Backwards Gobo Rotation (Slow - Fast)"
+                        }
+                    ]
+                },
+                "Rotating Prism/Gobo Macros": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "3 Facet Prism"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "5 Facet Prism"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Trapezoid Prism"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Macro 1"
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "Macro 2"
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "Macro 3"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Macro 4"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Macro 5"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "Macro 6"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "Macro 7"
+                        },
+                        {
+                            "range": [184, 191],
+                            "name": "Macro 8"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "Macro 9"
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "Macro 10"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Macro 11"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Macro 12"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Macro 13"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Macro 14"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Macro 15"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Macro 16"
+                        }
+                    ]
+                },
+                "Shutter & Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "LED Off"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "LED On"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobing (Slow - Fast)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "LED On"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse Effect in Sequences"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "LED On"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random Strobe (Slow - Fast)"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "LED On"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer intensity"
+                        }
+                    ]
+                },
+                "Pan/Tilt Movement Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 225],
+                            "name": "Max to Min Speed"
+                        },
+                        {
+                            "range": [226, 235],
+                            "name": "Blackout by Movement"
+                        },
+                        {
+                            "range": [236, 245],
+                            "name": "Blackout by Wheel Changing"
+                        }
+                    ]
+                },
+                "Reset & Internal Programs": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Color Change Normal"
+                        },
+                        {
+                            "range": [20, 39],
+                            "name": "Color Change to any Position"
+                        },
+                        {
+                            "range": [80, 84],
+                            "name": "All Motor Reset"
+                        },
+                        {
+                            "range": [85, 87],
+                            "name": "Scan Motor Reset"
+                        },
+                        {
+                            "range": [88, 90],
+                            "name": "Color Motor Reset"
+                        },
+                        {
+                            "range": [91, 93],
+                            "name": "Gobo Motor Reset"
+                        },
+                        {
+                            "range": [97, 99],
+                            "name": "Other Motor Reset"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Internal Program 1"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Internal Program 2"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Internal Program 3"
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Internal Program 4"
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "Internal Program 5"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Internal Program 6"
+                        },
+                        {
+                            "range": [220, 239],
+                            "name": "Internal Program 7"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Sound Active Program"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Extended",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Color Wheel",
+                        "Gobos",
+                        "Gobo Indexing & Rotation",
+                        "Rotating Prism/Gobo Macros",
+                        "Shutter & Strobe",
+                        "Dimmer",
+                        "Pan/Tilt Movement Speed",
+                        "Reset & Internal Programs"
+                    ]
+                },
+                {
+                    "name": "Standard",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Color Wheel",
+                        "Gobos",
+                        "Gobo Indexing & Rotation",
+                        "Rotating Prism/Gobo Macros",
+                        "Shutter & Strobe",
+                        "Dimmer",
+                        "Pan/Tilt Movement Speed",
+                        "Reset & Internal Programs"
+                    ]
+                },
+                {
+                    "name": "Extended (630 degree Pan)",
+                    "physical": {
+                        "focus": {
+                            "panMax": 630
+                        }
+                    },
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Color Wheel",
+                        "Gobos",
+                        "Gobo Indexing & Rotation",
+                        "Rotating Prism/Gobo Macros",
+                        "Shutter & Strobe",
+                        "Dimmer",
+                        "Pan/Tilt Movement Speed",
+                        "Reset & Internal Programs"
+                    ]
+                },
+                {
+                    "name": "Standard (630 degree Pan)",
+                    "physical": {
+                        "focus": {
+                            "panMax": 630
+                        }
+                    },
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Color Wheel",
+                        "Gobos",
+                        "Gobo Indexing & Rotation",
+                        "Rotating Prism/Gobo Macros",
+                        "Shutter & Strobe",
+                        "Dimmer",
+                        "Pan/Tilt Movement Speed",
+                        "Reset & Internal Programs"
+                    ]
+                }
+            ]
+        }
+    ]
+}

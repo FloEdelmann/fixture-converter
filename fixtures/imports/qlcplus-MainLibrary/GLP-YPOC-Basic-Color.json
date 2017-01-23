@@ -1,0 +1,354 @@
+{
+    "manufacturers": {
+        "GLP": {
+            "name": "GLP"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "GLP",
+            "name": "YPOC Basic Color",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [380, 510, 390],
+                "weight": 18,
+                "power": 500,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 250W",
+                    "colorTemperature": 8500,
+                    "lumens": 18000
+                },
+                "lens": {
+                    "name": "Fresnel",
+                    "degreesMinMax": [8, 22]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 280
+                }
+            },
+            "availableChannels": {
+                "Pan coarse": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan coarse"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt coarse": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt coarse"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "White (fast)"
+                        },
+                        {
+                            "range": [4, 7],
+                            "name": "Brilliant blue (fast)"
+                        },
+                        {
+                            "range": [8, 11],
+                            "name": "Blue (fast)"
+                        },
+                        {
+                            "range": [12, 15],
+                            "name": "Purple (fast)"
+                        },
+                        {
+                            "range": [16, 19],
+                            "name": "Magenta (fast)"
+                        },
+                        {
+                            "range": [20, 23],
+                            "name": "Pink (fast)"
+                        },
+                        {
+                            "range": [24, 27],
+                            "name": "Orange (fast)"
+                        },
+                        {
+                            "range": [28, 31],
+                            "name": "Canary (fast)"
+                        },
+                        {
+                            "range": [32, 35],
+                            "name": "Italian blue (fast)"
+                        },
+                        {
+                            "range": [36, 39],
+                            "name": "Turquoise (fast)"
+                        },
+                        {
+                            "range": [40, 43],
+                            "name": "Jade (fast)"
+                        },
+                        {
+                            "range": [44, 47],
+                            "name": "Red (fast)"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "White (fast)"
+                        },
+                        {
+                            "range": [64, 67],
+                            "name": "White (slow)"
+                        },
+                        {
+                            "range": [68, 71],
+                            "name": "Brilliant blue (slow)"
+                        },
+                        {
+                            "range": [72, 75],
+                            "name": "Blue (slow)"
+                        },
+                        {
+                            "range": [76, 79],
+                            "name": "Purple (slow)"
+                        },
+                        {
+                            "range": [80, 83],
+                            "name": "Magenta (slow)"
+                        },
+                        {
+                            "range": [84, 87],
+                            "name": "Pink (slow)"
+                        },
+                        {
+                            "range": [88, 91],
+                            "name": "Orange (slow)"
+                        },
+                        {
+                            "range": [92, 95],
+                            "name": "Canary (slow)"
+                        },
+                        {
+                            "range": [96, 99],
+                            "name": "Italian blue (slow)"
+                        },
+                        {
+                            "range": [100, 103],
+                            "name": "Turquoise (slow)"
+                        },
+                        {
+                            "range": [104, 107],
+                            "name": "Jade (slow)"
+                        },
+                        {
+                            "range": [108, 111],
+                            "name": "Red (slow)"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "White (slow)"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "CW rotation slow to fast"
+                        },
+                        {
+                            "range": [192, 253],
+                            "name": "CCW rotation fast to slow"
+                        },
+                        {
+                            "range": [254, 254],
+                            "name": "Color chase slow"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Color chase fast"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Random strobe"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Strobe pulse slow to fast"
+                        },
+                        {
+                            "range": [48, 239],
+                            "name": "Strobe slow to fast"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "Special": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Rotating color chaser"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Color chaser C/C+1 slow to fast"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Color chaser C/C+2 slow to fast"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Pan/Tilt chaser slow"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Pan/Tilt chaser fast"
+                        },
+                        {
+                            "range": [128, 229],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [230, 249],
+                            "name": "Lamp OFF (when shutter closed)"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Reset"
+                        }
+                    ]
+                },
+                "Movement": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No movement"
+                        },
+                        {
+                            "range": [1, 31],
+                            "name": "Pan effects"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Tilt effects"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Pan/Tilt effects"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Inverse pan/tilt effects"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Circle effects"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Inverse circle effects"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Lying eight effects"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Random movement effects"
+                        }
+                    ]
+                },
+                "Movement speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Relative movement"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Slow to fast"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan coarse",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt coarse",
+                    "Tilt file"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Pan coarse",
+                        "Pan fine",
+                        "Tilt coarse",
+                        "Tilt fine",
+                        "Colour",
+                        "Shutter",
+                        "Dimmer",
+                        "Special",
+                        "Movement",
+                        "Movement speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

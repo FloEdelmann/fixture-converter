@@ -1,0 +1,353 @@
+{
+    "manufacturers": {
+        "Showtec": {
+            "name": "Showtec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Showtec",
+            "name": "Expression 5000",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [190, 344, 296],
+                "weight": 6.5,
+                "power": 140,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 2800
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [6, 6]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan (0 - 540°)"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt (0 - 270°)"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine"
+                        }
+                    ]
+                },
+                "Pan/tilt speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan/Tilt Speed"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Intensity"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Intensity"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Bue Intensity"
+                        }
+                    ]
+                },
+                "Macro colors": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [11, 30],
+                            "name": "Red 100% / Green Up / Blue 0%"
+                        },
+                        {
+                            "range": [31, 50],
+                            "name": "Red Down / Green 100% / Blue 0%"
+                        },
+                        {
+                            "range": [51, 70],
+                            "name": "Red 0% / Green 100% / Blue Up"
+                        },
+                        {
+                            "range": [71, 90],
+                            "name": "Red 0% / Green Down / Blue 100%"
+                        },
+                        {
+                            "range": [91, 110],
+                            "name": "Red Up / Green 0% / Blue 100%"
+                        },
+                        {
+                            "range": [111, 130],
+                            "name": "Red 100% / Green 0% / Blue Down"
+                        },
+                        {
+                            "range": [131, 150],
+                            "name": "Red 100% / Green Up / Blue Up"
+                        },
+                        {
+                            "range": [151, 170],
+                            "name": "Red Down / Green Down / Blue 100%"
+                        },
+                        {
+                            "range": [171, 200],
+                            "name": "RGB 100%"
+                        },
+                        {
+                            "range": [201, 205],
+                            "name": "White: 3200K"
+                        },
+                        {
+                            "range": [206, 210],
+                            "name": "White: 3400K"
+                        },
+                        {
+                            "range": [211, 215],
+                            "name": "White: 4200K"
+                        },
+                        {
+                            "range": [216, 220],
+                            "name": "White: 4900K"
+                        },
+                        {
+                            "range": [221, 225],
+                            "name": "White: 5600K"
+                        },
+                        {
+                            "range": [226, 230],
+                            "name": "White: 5900K"
+                        },
+                        {
+                            "range": [231, 235],
+                            "name": "White: 6500K"
+                        },
+                        {
+                            "range": [236, 240],
+                            "name": "White: 7200K"
+                        },
+                        {
+                            "range": [241, 245],
+                            "name": "White: 8000K"
+                        },
+                        {
+                            "range": [246, 250],
+                            "name": "White: 8500K"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "White: 10000K"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer (0 - 100%)"
+                        }
+                    ]
+                },
+                "Shutter / strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe effect, from slot to fast (0-10 fashes/sec)"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [20, 39],
+                            "name": "Blackout during Pan/Tilt movement"
+                        },
+                        {
+                            "range": [40, 59],
+                            "name": "Disabled blackout during Pan/Tilt movement"
+                        },
+                        {
+                            "range": [60, 79],
+                            "name": "Fan Auto"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Fan Slow"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Fan Normal"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Fan Fast"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Auto 1 activated after 5 seconds"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "Auto 2 activated after 5 seconds"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "Test activated after 5 seconds"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "Custom activated after 5 seconds"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "Sound 1"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "Sound 2"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Reset activated after 5 seconds"
+                        },
+                        {
+                            "range": [220, 235],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [236, 239],
+                            "name": "DIM 0 activated after 5 seconds"
+                        },
+                        {
+                            "range": [240, 243],
+                            "name": "DIM 1 activated after 5 seconds"
+                        },
+                        {
+                            "range": [244, 247],
+                            "name": "DIM 2 activated after 5 seconds"
+                        },
+                        {
+                            "range": [248, 251],
+                            "name": "DIM 3 activated after 5 seconds"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "DIM 4 activated after 5 seconds"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Advanced (12CH)",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Pan/tilt speed",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Macro colors",
+                        "Dimmer",
+                        "Shutter / strobe",
+                        "Control"
+                    ]
+                },
+                {
+                    "name": "Basic (9CH)",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Macro colors",
+                        "Dimmer",
+                        "Shutter / strobe",
+                        "Control"
+                    ]
+                }
+            ]
+        }
+    ]
+}

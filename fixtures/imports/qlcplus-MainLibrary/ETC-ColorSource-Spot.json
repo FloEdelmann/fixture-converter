@@ -1,0 +1,97 @@
+{
+    "manufacturers": {
+        "ETC": {
+            "name": "ETC"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "ETC",
+            "name": "ColorSource Spot",
+            "type": "Dimmer",
+            "physical": {
+                "dimensions": [339, 593, 672],
+                "weight": 7.7,
+                "power": 160,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 6940
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [5, 90]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobe"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "5-Channel",
+                    "channels": [
+                        "Intensity",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

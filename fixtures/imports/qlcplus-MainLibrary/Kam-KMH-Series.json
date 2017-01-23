@@ -1,0 +1,225 @@
+{
+    "manufacturers": {
+        "Kam": {
+            "name": "Kam"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Kam",
+            "name": "KMH Series",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [515, 260, 100],
+                "weight": 4.3,
+                "power": 20,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 360,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer (0 - 100%)"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobe (Slow - Fast)"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red (Dark to Bright)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green (Dark to Bright)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red (Dark to Bright)"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red (Dark to Bright)"
+                        }
+                    ]
+                },
+                "Effects": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "RGBW Dimmer"
+                        },
+                        {
+                            "range": [3, 223],
+                            "name": "Color Mixing"
+                        },
+                        {
+                            "range": [224, 234],
+                            "name": "Snap Color Changes (Slow > Fast)"
+                        },
+                        {
+                            "range": [235, 243],
+                            "name": "Fading Color Changes (Slow > Fast)"
+                        },
+                        {
+                            "range": [244, 255],
+                            "name": "Sound Control (Slow > Fast)"
+                        }
+                    ]
+                },
+                "Effect Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Effect Speed (Slow > Fast)"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Pan Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Speed (Slow > Fast)"
+                        }
+                    ]
+                },
+                "Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Speed (Slow > Fast)"
+                        }
+                    ]
+                },
+                "Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 50],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [51, 101],
+                            "name": "Pan Reset"
+                        },
+                        {
+                            "range": [102, 152],
+                            "name": "Tilt Reset"
+                        },
+                        {
+                            "range": [153, 203],
+                            "name": "Pan/Tilt Reset"
+                        },
+                        {
+                            "range": [204, 255],
+                            "name": "Reset"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "9 Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Effects",
+                        "Pan",
+                        "Tilt"
+                    ]
+                },
+                {
+                    "name": "13 Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Effects",
+                        "Effect Speed",
+                        "Pan",
+                        "Tilt",
+                        "Pan Speed",
+                        "Tilt Speed",
+                        "Reset"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,177 @@
+{
+    "manufacturers": {
+        "Showtec": {
+            "name": "Showtec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Showtec",
+            "name": "Led Air Cone Pro",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [473, 187, 473],
+                "weight": 9.95,
+                "power": 115,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Intensity (0 to 100%)"
+                        }
+                    ]
+                },
+                "Macro": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 13],
+                            "name": "Nothing"
+                        },
+                        {
+                            "range": [14, 255],
+                            "name": "Macro"
+                        }
+                    ]
+                },
+                "Speed/strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Strobe static state"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Strobe/Speed 16 steps"
+                        }
+                    ]
+                },
+                "Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 35],
+                            "name": "Adjust colors"
+                        },
+                        {
+                            "range": [36, 71],
+                            "name": "Light mode"
+                        },
+                        {
+                            "range": [72, 107],
+                            "name": "Dim mode"
+                        },
+                        {
+                            "range": [108, 143],
+                            "name": "Light and dim mode"
+                        },
+                        {
+                            "range": [144, 179],
+                            "name": "Auto mixcolor"
+                        },
+                        {
+                            "range": [180, 251],
+                            "name": "7 colors random shows"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Change light by music signal"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer"
+                        }
+                    ]
+                },
+                "Macro simple modes": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Macro"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Mode 4",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Macro",
+                        "Speed/strobe",
+                        "Mode",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Macro simple modes"
+                    ]
+                },
+                {
+                    "name": "Mode 2",
+                    "channels": [
+                        "Macro simple modes",
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "Mode 3",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

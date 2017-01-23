@@ -1,0 +1,391 @@
+{
+    "manufacturers": {
+        "Showtec": {
+            "name": "Showtec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Showtec",
+            "name": "Indigo 150 LED",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [210, 370, 245],
+                "weight": 6.3,
+                "power": 20,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "degreesMinMax": [16, 16]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 530,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan (0 to 530°)"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min to max"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt (0 to 270°)"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min to max"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Max to min"
+                        }
+                    ]
+                },
+                "Colour Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "Open",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [15, 29],
+                            "name": "Red",
+                            "color": "#da261d"
+                        },
+                        {
+                            "range": [30, 44],
+                            "name": "Yellow",
+                            "color": "#fef636"
+                        },
+                        {
+                            "range": [45, 59],
+                            "name": "Green",
+                            "color": "#13923f"
+                        },
+                        {
+                            "range": [60, 74],
+                            "name": "Pink",
+                            "color": "#f19aa0"
+                        },
+                        {
+                            "range": [75, 89],
+                            "name": "Blue",
+                            "color": "#2a156f"
+                        },
+                        {
+                            "range": [90, 104],
+                            "name": "Orange",
+                            "color": "#e67820"
+                        },
+                        {
+                            "range": [105, 119],
+                            "name": "Magenta",
+                            "color": "#b84e8e"
+                        },
+                        {
+                            "range": [120, 134],
+                            "name": "Light Blue",
+                            "color": "#137dc3"
+                        },
+                        {
+                            "range": [135, 149],
+                            "name": "Light Green",
+                            "color": "#86c127"
+                        },
+                        {
+                            "range": [150, 255],
+                            "name": "Forwards rainbow effect from fast to slow"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Gobo 7 Shake Slow to fast"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Gobo 6 Shake Slow to fast"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Gobo 5 Shake Slow to fast"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Gobo 4 Shake Slow to fast"
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Gobo 3 Shake Slow to fast"
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "Gobo 2 Shake Slow to fast"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Gobo 1 Shake Slow to fast"
+                        },
+                        {
+                            "range": [220, 255],
+                            "name": "Forwards rainbow effect from slow to fast"
+                        }
+                    ]
+                },
+                "Gobo Rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [3, 6],
+                            "name": "Slowest rotation"
+                        },
+                        {
+                            "range": [7, 128],
+                            "name": "Forwards gobo rotation from slow to fast"
+                        },
+                        {
+                            "range": [129, 132],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [133, 136],
+                            "name": "Backwards Slowest rotation"
+                        },
+                        {
+                            "range": [137, 255],
+                            "name": "Backwards gobo rotation from slow to fast"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "3-facet Prism Effect"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min to max"
+                        }
+                    ]
+                },
+                "Shutter/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe effect, from slow to fast"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse-effect, in sequences from slow to fast"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random strobe effect, from slow to fast"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Channel Functions": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [20, 39],
+                            "name": "Blackout during Pan/Tilt movement"
+                        },
+                        {
+                            "range": [40, 59],
+                            "name": "Disabled blackout during Pan/Tilt movement"
+                        },
+                        {
+                            "range": [60, 79],
+                            "name": "Auto 1"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Auto 2"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Sound 1"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Sound 2"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Custom"
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Test"
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [220, 255],
+                            "name": "No Function"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Advanced",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed",
+                        "Colour Wheel",
+                        "Gobo",
+                        "Gobo Rotation",
+                        "Prism",
+                        "Dimmer",
+                        "Shutter/Strobe",
+                        "Channel Functions"
+                    ]
+                },
+                {
+                    "name": "Basic",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Colour Wheel",
+                        "Gobo",
+                        "Gobo Rotation",
+                        "Prism",
+                        "Dimmer",
+                        "Shutter/Strobe",
+                        "Channel Functions"
+                    ]
+                }
+            ]
+        }
+    ]
+}

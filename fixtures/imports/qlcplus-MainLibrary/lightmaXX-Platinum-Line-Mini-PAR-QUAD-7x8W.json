@@ -1,0 +1,190 @@
+{
+    "manufacturers": {
+        "lightmaXX": {
+            "name": "lightmaXX"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "lightmaXX",
+            "name": "Platinum Line Mini PAR QUAD 7x8W",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [170, 160, 170],
+                "weight": 2,
+                "power": 59,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Master": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red Intensity"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green Intensity"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Intensity"
+                        }
+                    ]
+                },
+                "7ch Macro": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [5, 80],
+                            "name": "Colour Sound to Light"
+                        },
+                        {
+                            "range": [81, 150],
+                            "name": "Colour Jump"
+                        },
+                        {
+                            "range": [151, 255],
+                            "name": "Colour Fade"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobe from slow to fast"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White"
+                        }
+                    ]
+                },
+                "2ch Macro 1": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 240],
+                            "name": "Intensity"
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "Strobe"
+                        }
+                    ]
+                },
+                "2ch Macro 2": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [5, 80],
+                            "name": "Colour Changer Sound to Light"
+                        },
+                        {
+                            "range": [81, 150],
+                            "name": "Colour Jump"
+                        },
+                        {
+                            "range": [151, 255],
+                            "name": "Colour Fade"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "7 channel",
+                    "channels": [
+                        "Master",
+                        "Strobe",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "7ch Macro",
+                        "White"
+                    ]
+                },
+                {
+                    "name": "4 channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White"
+                    ]
+                },
+                {
+                    "name": "3 channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "2 channel",
+                    "channels": [
+                        "2ch Macro 1",
+                        "2ch Macro 2"
+                    ]
+                }
+            ]
+        }
+    ]
+}

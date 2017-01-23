@@ -1,0 +1,236 @@
+{
+    "manufacturers": {
+        "Blizzard Lighting": {
+            "name": "Blizzard Lighting"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Blizzard Lighting",
+            "name": "Rocklite RGBAW",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [197, 197, 254],
+                "weight": 2.4,
+                "power": 160,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 1090
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <--> 100%"
+                        }
+                    ]
+                },
+                "Red Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <--> 100%"
+                        }
+                    ]
+                },
+                "Green Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <--> 100%"
+                        }
+                    ]
+                },
+                "Blue Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <--> 100%"
+                        }
+                    ]
+                },
+                "Amber Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <--> 100%"
+                        }
+                    ]
+                },
+                "White Intensity": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <--> 100%"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "Dimming"
+                        },
+                        {
+                            "range": [15, 255],
+                            "name": "Strobe (slow <--> fast)"
+                        }
+                    ]
+                },
+                "Fade, Color Change, Sound Active": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Fade in (ch. 9 controls speed)"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Fade out (ch. 9 controls speed)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Fade in / fade out (ch. 9 controls speed)"
+                        },
+                        {
+                            "range": [128, 164],
+                            "name": "Multicolor fade (ch. 9 controls speed)"
+                        },
+                        {
+                            "range": [165, 191],
+                            "name": "Fade in / fade out, auto run"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Color jump (ch. 9 controls speed)"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Sound active, multicolor (ch. 9 controls speed)"
+                        }
+                    ]
+                },
+                "Fade Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow <--> fast"
+                        }
+                    ]
+                },
+                "32-Bit Dimmer": {
+                    "type": "Nothing",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "As set in the control menu display"
+                        },
+                        {
+                            "range": [6, 55],
+                            "name": "Mode 0 = 8-bit, 256 dimming steps"
+                        },
+                        {
+                            "range": [56, 105],
+                            "name": "Mode 1 = 32-bit, 0-25% intensity range"
+                        },
+                        {
+                            "range": [106, 155],
+                            "name": "Mode 2 = 32-bit, 0-50% intensity range"
+                        },
+                        {
+                            "range": [156, 205],
+                            "name": "Mode 3 = 32-bit, 0-75% intensity range"
+                        },
+                        {
+                            "range": [206, 255],
+                            "name": "Mode 4 = 32-bit, full intensity dimming"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "10-Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Red Intensity",
+                        "Green Intensity",
+                        "Blue Intensity",
+                        "Amber Intensity",
+                        "White Intensity",
+                        "Strobe",
+                        "Fade, Color Change, Sound Active",
+                        "Fade Speed",
+                        "32-Bit Dimmer"
+                    ]
+                },
+                {
+                    "name": "9-Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Red Intensity",
+                        "Green Intensity",
+                        "Blue Intensity",
+                        "Amber Intensity",
+                        "White Intensity",
+                        "Strobe",
+                        "Fade, Color Change, Sound Active",
+                        "Fade Speed"
+                    ]
+                },
+                {
+                    "name": "5-Channel",
+                    "channels": [
+                        "Red Intensity",
+                        "Green Intensity",
+                        "Blue Intensity",
+                        "Amber Intensity",
+                        "White Intensity"
+                    ]
+                },
+                {
+                    "name": "4-Channel",
+                    "channels": [
+                        "Red Intensity",
+                        "Amber Intensity",
+                        "White Intensity",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

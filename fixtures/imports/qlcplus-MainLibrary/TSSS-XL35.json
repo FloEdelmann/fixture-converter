@@ -1,0 +1,147 @@
+{
+    "manufacturers": {
+        "TSSS": {
+            "name": "TSSS"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "TSSS",
+            "name": "XL35",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [195, 195, 195],
+                "weight": 1,
+                "power": 25,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "Strobe Speed": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobe speed, slow-fast"
+                        }
+                    ]
+                },
+                "Program Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Program speed, slow-fast"
+                        }
+                    ]
+                },
+                "Program": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Dimmer mode"
+                        },
+                        {
+                            "range": [1, 50],
+                            "name": "Program 1 (rainbow changer)"
+                        },
+                        {
+                            "range": [51, 100],
+                            "name": "Program 2 (rainbow fader)"
+                        },
+                        {
+                            "range": [101, 150],
+                            "name": "Program 3 (RGB changer)"
+                        },
+                        {
+                            "range": [151, 200],
+                            "name": "Program 4 (RGB fader with black)"
+                        },
+                        {
+                            "range": [201, 250],
+                            "name": "Program 5 (rainbow fader with black)"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Sound control"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "d mode",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Strobe Speed",
+                        "Program Speed",
+                        "Program"
+                    ]
+                },
+                {
+                    "name": "A mode",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

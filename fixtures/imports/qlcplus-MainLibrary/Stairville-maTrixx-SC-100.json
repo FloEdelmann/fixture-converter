@@ -1,0 +1,207 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "maTrixx SC-100",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [420, 140, 171],
+                "weight": 3,
+                "power": 40,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 180,
+                    "tiltMax": 45
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Pattern/Chase": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Blackout",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Pattern 01 (red, green, blue, white)"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Pattern 02 (red)",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Pattern 03 (green)",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Pattern 04 (blue)",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Pattern 05 (white)",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Pattern 06 (red, blue)",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Pattern 07 (red, blue)",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Pattern 08 (red, white)",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Pattern 09 (red, white)",
+                            "color": "#ff0000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Pattern 10 (red, blue, white)"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "Pattern 11 (red, blue, white)"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "Pattern 12 (red, green, blue, white)"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "Pattern 13 (red, green, blue, white)"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Pattern 14 (red, green)",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "Pattern 15 (green, blue)",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "Chase 01 (red, green, blue, white)"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "Chase 02 (red, green, blue, white)"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "Chase 03 (red, blue, white)"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "Chase 04 (red, green)",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Chase 05 (red, blue, white)"
+                        },
+                        {
+                            "range": [210, 219],
+                            "name": "Chase 06 (red, green, blue, white)"
+                        },
+                        {
+                            "range": [220, 229],
+                            "name": "Chase 07 (red, green, blue, white)"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Chase 08 (red, green, blue, white)"
+                        },
+                        {
+                            "range": [240, 249],
+                            "name": "Chase 09 (red, green, blue, white)"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Chase 10 (red, green, blue, white)"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Strobe"
+                        },
+                        {
+                            "range": [10, 249],
+                            "name": "Slow Strobe - Fast Strobe"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Stand-Alone"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "4-Channel Mode",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pattern/Chase",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

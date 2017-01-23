@@ -1,0 +1,140 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "Ovation FD-165WW",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [417, 261, 284],
+                "weight": 6.6,
+                "power": 170,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "LED",
+                    "colorTemperature": 3184,
+                    "lumens": 6481
+                },
+                "lens": {
+                    "name": "Fresnel",
+                    "degreesMinMax": [14, 55]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Dimmer Fine": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "16-bit"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [10, 99],
+                            "name": "Slow to fast"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [110, 179],
+                            "name": "Lightning effect"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [190, 255],
+                            "name": "Random"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Motor Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 200],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [201, 220],
+                            "name": "Motor reset"
+                        },
+                        {
+                            "range": [221, 255],
+                            "name": "No function"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Dimmer",
+                    "Dimmer Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Uno",
+                    "channels": [
+                        "Dimmer"
+                    ]
+                },
+                {
+                    "name": "Dos",
+                    "channels": [
+                        "Dimmer",
+                        "Dimmer Fine"
+                    ]
+                },
+                {
+                    "name": "Std.P",
+                    "channels": [
+                        "Dimmer",
+                        "Dimmer Fine",
+                        "Strobe",
+                        "Zoom",
+                        "Motor Reset"
+                    ]
+                }
+            ]
+        }
+    ]
+}

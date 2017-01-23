@@ -1,0 +1,339 @@
+{
+    "manufacturers": {
+        "Studio Due": {
+            "name": "Studio Due"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Studio Due",
+            "name": "Shark 150C",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [350, 420, 315],
+                "weight": 10,
+                "power": 230,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "HTI 150W",
+                    "colorTemperature": 6900
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Motors Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Fast - Speed 1"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Speed 2"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Speed 3"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Speed 4"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Speed 5"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Speed 6"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Speed 7"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Slow - Speed 8"
+                        }
+                    ]
+                },
+                "Colours": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [1, 30],
+                            "name": "C1 - Sky Blue",
+                            "color": "#66ccff"
+                        },
+                        {
+                            "range": [31, 58],
+                            "name": "C2 - Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [59, 88],
+                            "name": "C3 - Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [89, 118],
+                            "name": "C4 - Orange",
+                            "color": "#ff8000"
+                        },
+                        {
+                            "range": [119, 145],
+                            "name": "C5 - Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [146, 175],
+                            "name": "C6 - Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [176, 255],
+                            "name": "Rainbow"
+                        }
+                    ]
+                },
+                "Gobos": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Gobo-0"
+                        },
+                        {
+                            "range": [32, 95],
+                            "name": "Gobo-1"
+                        },
+                        {
+                            "range": [96, 159],
+                            "name": "Gobo-2"
+                        },
+                        {
+                            "range": [160, 223],
+                            "name": "Gobo-3"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Gobo-4"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "Flash (1Hz to 10Hz)"
+                        }
+                    ]
+                },
+                "Pan Coarse": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan (0 to 540°)"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine"
+                        }
+                    ]
+                },
+                "Tilt Coarse": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt (0 to 270°)"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [4, 223],
+                            "name": "Mechanical Dimmer"
+                        },
+                        {
+                            "range": [224, 254],
+                            "name": "Electronic Lamp"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Focus"
+                        }
+                    ]
+                },
+                "Rotation Gobos": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Static"
+                        },
+                        {
+                            "range": [4, 123],
+                            "name": "Slow To Fast CW"
+                        },
+                        {
+                            "range": [124, 135],
+                            "name": "Static"
+                        },
+                        {
+                            "range": [136, 255],
+                            "name": "Slow To Fast CCW"
+                        }
+                    ]
+                },
+                "Remote Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Normal"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Reset Fixture"
+                        },
+                        {
+                            "range": [192, 239],
+                            "name": "Normal"
+                        },
+                        {
+                            "range": [240, 250],
+                            "name": "Lamp Off"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Normal"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan Coarse",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt Coarse",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "8bit",
+                    "channels": [
+                        "Motors Speed",
+                        "Colours",
+                        "Gobos",
+                        "Strobe",
+                        "Pan Coarse",
+                        "Tilt Coarse",
+                        "Dimmer",
+                        "Focus",
+                        "Rotation Gobos"
+                    ]
+                },
+                {
+                    "name": "16bit",
+                    "channels": [
+                        "Motors Speed",
+                        "Colours",
+                        "Gobos",
+                        "Strobe",
+                        "Pan Coarse",
+                        "Pan Fine",
+                        "Tilt Coarse",
+                        "Tilt Fine",
+                        "Dimmer",
+                        "Focus",
+                        "Rotation Gobos"
+                    ]
+                },
+                {
+                    "name": "8bit+remote",
+                    "channels": [
+                        "Motors Speed",
+                        "Colours",
+                        "Gobos",
+                        "Strobe",
+                        "Pan Coarse",
+                        "Tilt Coarse",
+                        "Dimmer",
+                        "Focus",
+                        "Rotation Gobos",
+                        "Remote Reset"
+                    ]
+                },
+                {
+                    "name": "16bit+remote",
+                    "channels": [
+                        "Motors Speed",
+                        "Colours",
+                        "Gobos",
+                        "Strobe",
+                        "Pan Coarse",
+                        "Pan Fine",
+                        "Tilt Coarse",
+                        "Tilt Fine",
+                        "Dimmer",
+                        "Focus",
+                        "Rotation Gobos",
+                        "Remote Reset"
+                    ]
+                }
+            ]
+        }
+    ]
+}

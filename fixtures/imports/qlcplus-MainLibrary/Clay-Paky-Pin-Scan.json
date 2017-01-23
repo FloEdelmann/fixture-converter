@@ -1,0 +1,83 @@
+{
+    "manufacturers": {
+        "Clay Paky": {
+            "name": "Clay Paky"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Clay Paky",
+            "name": "Pin Scan",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [230, 230, 325],
+                "weight": 5.8,
+                "power": 150,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "EFR 100W"
+                },
+                "lens": {
+                    "degreesMinMax": [2.5, 2.5]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 360,
+                    "tiltMax": 227
+                }
+            },
+            "availableChannels": {
+                "Dimmer/ Strobe": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Close"
+                        },
+                        {
+                            "range": [128, 139],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [140, 243],
+                            "name": "Strobe Slow < Fast"
+                        },
+                        {
+                            "range": [244, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < MAx"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Standard",
+                    "channels": [
+                        "Dimmer/ Strobe",
+                        "Pan",
+                        "Tilt"
+                    ]
+                }
+            ]
+        }
+    ]
+}

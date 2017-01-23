@@ -1,0 +1,506 @@
+{
+    "manufacturers": {
+        "Martin": {
+            "name": "Martin"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Martin",
+            "name": "MH2 Wash",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [258, 156, 305],
+                "weight": 5.7,
+                "power": 125,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "RGBW LED",
+                    "lumens": 2300
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [17, 17]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 540,
+                    "tiltMax": 180
+                }
+            },
+            "availableChannels": {
+                "Electronic Shutter Effect": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [20, 49],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [50, 64],
+                            "name": "Strobe 1 (fast to slow)"
+                        },
+                        {
+                            "range": [65, 69],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [70, 84],
+                            "name": "Strobe 2: opening pulse (fast to slow)"
+                        },
+                        {
+                            "range": [85, 89],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [90, 104],
+                            "name": "Strobe 3: closing pulse (fast to slow)"
+                        },
+                        {
+                            "range": [105, 109],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [110, 124],
+                            "name": "Strobe 4: random strobe (fast to slow)"
+                        },
+                        {
+                            "range": [125, 129],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [130, 144],
+                            "name": "Strobe 5: random opening pulse (fast to slow)"
+                        },
+                        {
+                            "range": [145, 149],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [150, 164],
+                            "name": "Strobe 6: random closing pulse (fast to slow)"
+                        },
+                        {
+                            "range": [165, 169],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [170, 184],
+                            "name": "Strobe 7: burst pulse (fast to slow)"
+                        },
+                        {
+                            "range": [185, 189],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [190, 204],
+                            "name": "Strobe 8: random burst pulse (fast to slow)"
+                        },
+                        {
+                            "range": [205, 209],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [210, 224],
+                            "name": "Strobe 9: sine wave (fast to slow)"
+                        },
+                        {
+                            "range": [225, 229],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [230, 244],
+                            "name": "Strobe 10: burst (fast to slow)"
+                        },
+                        {
+                            "range": [245, 255],
+                            "name": "Shutter open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer 0-100%"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan 0°-540°"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt 0°-180°"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Fixture Control Settings": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [10, 14],
+                            "name": "Reset entire fixture"
+                        },
+                        {
+                            "range": [15, 94],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [95, 99],
+                            "name": "Enable blackout during Pan/Tilt movement"
+                        },
+                        {
+                            "range": [100, 104],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [105, 109],
+                            "name": "Disable blackout during Pan/Tilt movement"
+                        },
+                        {
+                            "range": [110, 114],
+                            "name": "Fast dimming, unrestricted effects speed"
+                        },
+                        {
+                            "range": [115, 119],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [120, 124],
+                            "name": "Smooth dimming, slightly reduced effects speed"
+                        },
+                        {
+                            "range": [125, 249],
+                            "name": "Illuminate display"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Stand-alone"
+                        }
+                    ]
+                },
+                "Color Wheel Effect": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [10, 14],
+                            "name": "LEE 790 - Moroccan pink",
+                            "color": "#ffb4a6"
+                        },
+                        {
+                            "range": [15, 19],
+                            "name": "LEE 157 - Pink",
+                            "color": "#ffb4a6"
+                        },
+                        {
+                            "range": [20, 24],
+                            "name": "LEE 332 - Special rose pink",
+                            "color": "#fe3887"
+                        },
+                        {
+                            "range": [25, 29],
+                            "name": "LEE 328 - Follies pink",
+                            "color": "#ff64c9"
+                        },
+                        {
+                            "range": [30, 34],
+                            "name": "LEE 345 - Fuchsia pink",
+                            "color": "#ce6ed9"
+                        },
+                        {
+                            "range": [35, 39],
+                            "name": "LEE 194 - Suprise pink",
+                            "color": "#a31beb"
+                        },
+                        {
+                            "range": [40, 44],
+                            "name": "LEE 181 - Congo blue",
+                            "color": "#4f00ab"
+                        },
+                        {
+                            "range": [45, 49],
+                            "name": "LEE 071 - Tokyo blue",
+                            "color": "#0001b4"
+                        },
+                        {
+                            "range": [50, 54],
+                            "name": "LEE 120 - Deep blue",
+                            "color": "#015fbf"
+                        },
+                        {
+                            "range": [55, 59],
+                            "name": "LEE 079 - Just blue",
+                            "color": "#3d8cd1"
+                        },
+                        {
+                            "range": [60, 64],
+                            "name": "LEE 132 - Medium blue",
+                            "color": "#00a0dc"
+                        },
+                        {
+                            "range": [65, 69],
+                            "name": "LEE 200 - Double CT blue",
+                            "color": "#91bef5"
+                        },
+                        {
+                            "range": [70, 74],
+                            "name": "LEE 161 - Slate blue",
+                            "color": "#7ed2f6"
+                        },
+                        {
+                            "range": [75, 79],
+                            "name": "LEE 201 - Full CT blue",
+                            "color": "#c3e1fb"
+                        },
+                        {
+                            "range": [80, 84],
+                            "name": "LEE 202 - Half CT blue",
+                            "color": "#d7f1fe"
+                        },
+                        {
+                            "range": [85, 89],
+                            "name": "LEE 117 - Steel blue",
+                            "color": "#b4fbf7"
+                        },
+                        {
+                            "range": [90, 94],
+                            "name": "LEE 353 - Lighter blue",
+                            "color": "#61e8e2"
+                        },
+                        {
+                            "range": [95, 99],
+                            "name": "LEE 118 - Light blue",
+                            "color": "#00e2eb"
+                        },
+                        {
+                            "range": [100, 104],
+                            "name": "LEE 116 - Medium blue green",
+                            "color": "#00c9b9"
+                        },
+                        {
+                            "range": [105, 109],
+                            "name": "LEE 124 - Dark green",
+                            "color": "#01dc78"
+                        },
+                        {
+                            "range": [110, 114],
+                            "name": "LEE 139 - Primary green",
+                            "color": "#4bc301"
+                        },
+                        {
+                            "range": [115, 119],
+                            "name": "LEE 089 - Moss green",
+                            "color": "#5adb5a"
+                        },
+                        {
+                            "range": [120, 124],
+                            "name": "LEE 122 - Fern green",
+                            "color": "#7afa6f"
+                        },
+                        {
+                            "range": [125, 129],
+                            "name": "LEE 738 - JAS green",
+                            "color": "#aaff01"
+                        },
+                        {
+                            "range": [130, 134],
+                            "name": "LEE 088 - Lime green",
+                            "color": "#dcff63"
+                        },
+                        {
+                            "range": [135, 139],
+                            "name": "LEE 100 - Spring yellow",
+                            "color": "#f5ff00"
+                        },
+                        {
+                            "range": [140, 144],
+                            "name": "LEE 104 - Deep amber",
+                            "color": "#fedc01"
+                        },
+                        {
+                            "range": [145, 149],
+                            "name": "LEE 179 - Chrome orange",
+                            "color": "#ffbe00"
+                        },
+                        {
+                            "range": [150, 154],
+                            "name": "LEE 105 - Orange",
+                            "color": "#fea000"
+                        },
+                        {
+                            "range": [155, 159],
+                            "name": "LEE 021 - Gold amber",
+                            "color": "#ff8c31"
+                        },
+                        {
+                            "range": [160, 164],
+                            "name": "LEE 778 - Millenium gold",
+                            "color": "#fe7600"
+                        },
+                        {
+                            "range": [165, 169],
+                            "name": "LEE 135 - Deep golden amber",
+                            "color": "#ff5f01"
+                        },
+                        {
+                            "range": [170, 174],
+                            "name": "LEE 164 - Flame red",
+                            "color": "#ff3301"
+                        },
+                        {
+                            "range": [175, 179],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [180, 201],
+                            "name": "Rotation Clockwise, fast to slow"
+                        },
+                        {
+                            "range": [202, 207],
+                            "name": "Stop (this will stop wherever the color is at the time)"
+                        },
+                        {
+                            "range": [208, 229],
+                            "name": "Rotation Counter-clockwise, slow to fast"
+                        },
+                        {
+                            "range": [230, 234],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [235, 239],
+                            "name": "Random color fast"
+                        },
+                        {
+                            "range": [240, 244],
+                            "name": "Random color medium"
+                        },
+                        {
+                            "range": [245, 249],
+                            "name": "Random color slow"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red 0-100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green 0-100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue 0-100%"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White 0-100%"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "12 Channel",
+                    "channels": [
+                        "Electronic Shutter Effect",
+                        "Dimmer",
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Fixture Control Settings",
+                        "Color Wheel Effect",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White"
+                    ]
+                }
+            ]
+        }
+    ]
+}

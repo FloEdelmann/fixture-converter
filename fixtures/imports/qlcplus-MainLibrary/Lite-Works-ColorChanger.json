@@ -1,0 +1,66 @@
+{
+    "manufacturers": {
+        "Lite-Works": {
+            "name": "Lite-Works"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Lite-Works",
+            "name": "ColorChanger",
+            "type": "Color Changer",
+            "physical": {
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimming": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Channel Level"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [21, 40],
+                            "name": "Yellow"
+                        }
+                    ]
+                },
+                "Fade time": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fade time"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Dimming",
+                        "Color",
+                        "Fade time"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,241 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "TB-250",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [270, 555, 285],
+                "weight": 8.5,
+                "power": 450,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 250W"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Mirrored cylinder movement": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gradual adjustment of the mirrored cylinder position from left to right"
+                        }
+                    ]
+                },
+                "Mirrored cylinder rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [5, 120],
+                            "name": "Forwards rotation with increasing speed"
+                        },
+                        {
+                            "range": [121, 139],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [140, 255],
+                            "name": "Backwards rotation with increasing speed"
+                        }
+                    ]
+                },
+                "Colour-wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 17],
+                            "name": "Open / white",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [18, 35],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [36, 53],
+                            "name": "Yellow",
+                            "color": "#e2e200"
+                        },
+                        {
+                            "range": [54, 71],
+                            "name": "Violet",
+                            "color": "#b10d74"
+                        },
+                        {
+                            "range": [72, 89],
+                            "name": "Green",
+                            "color": "#3aa91b"
+                        },
+                        {
+                            "range": [90, 107],
+                            "name": "Orange",
+                            "color": "#ff8000"
+                        },
+                        {
+                            "range": [108, 125],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [126, 143],
+                            "name": "Pink",
+                            "color": "#ff5fef"
+                        },
+                        {
+                            "range": [144, 161],
+                            "name": "Light green",
+                            "color": "#2aff2e"
+                        },
+                        {
+                            "range": [162, 179],
+                            "name": "Light blue",
+                            "color": "#46aeff"
+                        },
+                        {
+                            "range": [180, 197],
+                            "name": "Orange",
+                            "color": "#ff8000"
+                        },
+                        {
+                            "range": [198, 215],
+                            "name": "Light yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [216, 233],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [234, 251],
+                            "name": "Red/blue",
+                            "color": "#ff0000",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Yellow/green",
+                            "color": "#ffff00",
+                            "color2": "#00ff00"
+                        }
+                    ]
+                },
+                "Gobo-wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 17],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [18, 35],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [36, 53],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [54, 71],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [72, 89],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [90, 107],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [108, 125],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [126, 143],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [144, 161],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [162, 179],
+                            "name": "Gobo 9"
+                        },
+                        {
+                            "range": [180, 197],
+                            "name": "Gobo 10"
+                        },
+                        {
+                            "range": [198, 215],
+                            "name": "Gobo 11"
+                        },
+                        {
+                            "range": [216, 233],
+                            "name": "Gobo 12"
+                        },
+                        {
+                            "range": [234, 251],
+                            "name": "Gobo 13"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Gobo 14"
+                        }
+                    ]
+                },
+                "Shutter, strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [15, 29],
+                            "name": "No function (shutter open)"
+                        },
+                        {
+                            "range": [30, 250],
+                            "name": "Strobe-effect with increasing speed (max. 7 flashes/sec.)"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "No function (shutter open)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Protocol",
+                    "channels": [
+                        "Mirrored cylinder movement",
+                        "Mirrored cylinder rotation",
+                        "Colour-wheel",
+                        "Gobo-wheel",
+                        "Shutter, strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

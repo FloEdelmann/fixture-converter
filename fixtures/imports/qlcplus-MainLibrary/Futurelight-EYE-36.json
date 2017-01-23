@@ -1,0 +1,246 @@
+{
+    "manufacturers": {
+        "Futurelight": {
+            "name": "Futurelight"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Futurelight",
+            "name": "EYE-36",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [290, 360, 290],
+                "weight": 9,
+                "power": 160,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Pan/tilt speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 225],
+                            "name": "Vector mode speed"
+                        },
+                        {
+                            "range": [226, 235],
+                            "name": "BO with pan/tilt"
+                        },
+                        {
+                            "range": [236, 245],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Rainbow": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [8, 220],
+                            "name": "Rainbow speed"
+                        },
+                        {
+                            "range": [221, 255],
+                            "name": "Crossfading colour speed"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red mix"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green mix"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue mix"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe speed"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse sequence"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random strobe speed"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Shutter open"
+                        }
+                    ]
+                },
+                "Lamp switch, reset, programs": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 79],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Internal program 1"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Internal program 2"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Internal program 3"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "Internal program 4"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "Internal program 5"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "Internal program 6"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "Internal program 7"
+                        },
+                        {
+                            "range": [208, 223],
+                            "name": "Internal program 8"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan/tilt speed",
+                        "Rainbow",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Shutter",
+                        "Lamp switch, reset, programs",
+                        "Pan fine",
+                        "Tilt fine"
+                    ]
+                }
+            ]
+        }
+    ]
+}

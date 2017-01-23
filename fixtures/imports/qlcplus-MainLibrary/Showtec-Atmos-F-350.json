@@ -1,0 +1,45 @@
+{
+    "manufacturers": {
+        "Showtec": {
+            "name": "Showtec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Showtec",
+            "name": "Atmos F-350",
+            "type": "Hazer",
+            "physical": {
+                "dimensions": [565, 200, 200],
+                "weight": 6,
+                "power": 1000,
+                "DMXconnector": "3-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity (0% to 100%)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Intensity"
+                    ]
+                }
+            ]
+        }
+    ]
+}

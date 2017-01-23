@@ -1,0 +1,103 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "LEDSplash Jr",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [121, 168, 102],
+                "weight": 1,
+                "power": 24,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 538
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Reserved": {
+                    "type": "Nothing",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Nothing"
+                        }
+                    ]
+                },
+                "Shutter/Strobe/Dimmer": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [2, 127],
+                            "name": "Strobe"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "All",
+                    "channels": [
+                        "Reserved",
+                        "Shutter/Strobe/Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,485 @@
+{
+    "manufacturers": {
+        "Showtec": {
+            "name": "Showtec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Showtec",
+            "name": "Phantom 250",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [400, 476, 400],
+                "weight": 25,
+                "power": 500,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 250W",
+                    "colorTemperature": 5500,
+                    "lumens": 8000
+                },
+                "lens": {
+                    "name": "PC",
+                    "degreesMinMax": [8, 22]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 530,
+                    "tiltMax": 280
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Pan 16bit": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan 16bit"
+                        }
+                    ]
+                },
+                "Tilt 16bit": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt 16bit"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Speed Fast - Slow"
+                        }
+                    ]
+                },
+                "Color": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "open"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "pink",
+                            "color": "#ffaaff"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "magenta",
+                            "color": "#aa55ff"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "UV",
+                            "color": "#5500ff"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Forward Rainbow fast - slow"
+                        }
+                    ]
+                },
+                "Gobo1": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "open"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "shaking Gobo 1"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "shaking Gobo 2"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "shaking Gobo 3"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "shaking Gobo 4"
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "shaking Gobo 5"
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "shaking Gobo 6"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "shaking Gobo 7"
+                        },
+                        {
+                            "range": [220, 255],
+                            "name": "Clockwise Rotation slow - fast"
+                        }
+                    ]
+                },
+                "Gobo Rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Gobo indexing"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Forwards Rotation fast - slow"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Backwards Rotation slow - fast"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "closed"
+                        },
+                        {
+                            "range": [8, 22],
+                            "name": "open"
+                        },
+                        {
+                            "range": [23, 85],
+                            "name": "strobe effect slow - fast"
+                        },
+                        {
+                            "range": [86, 100],
+                            "name": "open"
+                        },
+                        {
+                            "range": [101, 165],
+                            "name": "pulse effect slow - fast"
+                        },
+                        {
+                            "range": [166, 180],
+                            "name": "open"
+                        },
+                        {
+                            "range": [181, 245],
+                            "name": "random effect slow - fast"
+                        },
+                        {
+                            "range": [246, 255],
+                            "name": "open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "black - bright"
+                        }
+                    ]
+                },
+                "Function": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "no function"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "moving blackout"
+                        },
+                        {
+                            "range": [20, 99],
+                            "name": "no function"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "reset"
+                        },
+                        {
+                            "range": [110, 129],
+                            "name": "no function"
+                        },
+                        {
+                            "range": [130, 145],
+                            "name": "auto1"
+                        },
+                        {
+                            "range": [146, 161],
+                            "name": "auto2"
+                        },
+                        {
+                            "range": [162, 177],
+                            "name": "auto3"
+                        },
+                        {
+                            "range": [178, 193],
+                            "name": "auto4"
+                        },
+                        {
+                            "range": [194, 209],
+                            "name": "sound control 1"
+                        },
+                        {
+                            "range": [210, 225],
+                            "name": "sound control 2"
+                        },
+                        {
+                            "range": [226, 241],
+                            "name": "sound control 3"
+                        },
+                        {
+                            "range": [242, 255],
+                            "name": "sound contorl 4"
+                        }
+                    ]
+                },
+                "Effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "no function"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "effect1"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "effect2"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "effect3"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "effect4"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "effect5"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "effect6"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "effect7"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "effect8"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "effect9"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "effect10"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "effect11"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "effect12"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "effect13"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "effect14"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "effect15"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "effect16"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "effect17"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "effect18"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "effect19"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "effect20"
+                        },
+                        {
+                            "range": [210, 219],
+                            "name": "effect21"
+                        },
+                        {
+                            "range": [220, 229],
+                            "name": "effect22"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "effect23"
+                        },
+                        {
+                            "range": [240, 249],
+                            "name": "effect24"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "effect25"
+                        }
+                    ]
+                },
+                "Prism Rotation": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "no rotation"
+                        },
+                        {
+                            "range": [16, 239],
+                            "name": "backwards rotation fast - slow"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "prism"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "distance close - far"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan 16bit"
+                ],
+                [
+                    "Tilt",
+                    "Tilt 16bit"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan 16bit",
+                        "Tilt 16bit",
+                        "Speed",
+                        "Color",
+                        "Gobo1",
+                        "Gobo Rotation",
+                        "Shutter",
+                        "Dimmer",
+                        "Function",
+                        "Effect",
+                        "Prism Rotation",
+                        "Focus"
+                    ]
+                }
+            ]
+        }
+    ]
+}

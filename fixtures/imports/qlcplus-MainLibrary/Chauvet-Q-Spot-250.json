@@ -1,0 +1,313 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "Q-Spot 250",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [400, 476, 400],
+                "weight": 25,
+                "power": 300,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "MSD 250W"
+                },
+                "lens": {
+                    "degreesMinMax": [21, 21]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 530,
+                    "tiltMax": 280
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Left > Right (128 = center)"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Up > Down (128 = center)"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast > Slow"
+                        }
+                    ]
+                },
+                "Lamp on/off & Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "No Function "
+                        },
+                        {
+                            "range": [128, 139],
+                            "name": "Lamp on after 3 seconds when lamp is off"
+                        },
+                        {
+                            "range": [140, 229],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Lamp off after 3 seconds "
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "No Function"
+                        }
+                    ]
+                },
+                "Color Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "White Open",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Cyan",
+                            "color": "#29efef"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Green",
+                            "color": "#169f19"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Yellow",
+                            "color": "#e7de30"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Magenta",
+                            "color": "#e61bad"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Pink",
+                            "color": "#fec0c0"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Orange",
+                            "color": "#fd8023"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Dark Blue",
+                            "color": "#02096c"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Rainbow effect: Fast > Slow (clockwise) "
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [5, 127],
+                            "name": "Clockwise rotation: Fast > Slow"
+                        },
+                        {
+                            "range": [128, 132],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [133, 255],
+                            "name": "Counter-clockwise rotation: Slow > Fast"
+                        }
+                    ]
+                },
+                "Rotating Gobo Wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [160, 223],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Gobo Spin: Slow > Fast"
+                        }
+                    ]
+                },
+                "Gobo Rotation & Index": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 40],
+                            "name": "Gobo Incremental rotation"
+                        },
+                        {
+                            "range": [41, 60],
+                            "name": "Constant rotation"
+                        },
+                        {
+                            "range": [61, 158],
+                            "name": "Clockwise rotation: Slow > Fast "
+                        },
+                        {
+                            "range": [159, 255],
+                            "name": "Counter-clockwise rotation: Slow > Fast "
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Proportional: Far > Near "
+                        }
+                    ]
+                },
+                "Shutter/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe: Slow > Fast (max 10fps)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse Strobe: Slow > Fast "
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random Strobe: Slow > Fast "
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity: 0 to 100%"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Standard",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan Fine",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed",
+                        "Lamp on/off & Reset",
+                        "Color Wheel",
+                        "Prism",
+                        "Rotating Gobo Wheel",
+                        "Gobo Rotation & Index",
+                        "Focus",
+                        "Shutter/Strobe",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

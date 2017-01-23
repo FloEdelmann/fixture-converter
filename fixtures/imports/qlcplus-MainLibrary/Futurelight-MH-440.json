@@ -1,0 +1,243 @@
+{
+    "manufacturers": {
+        "Futurelight": {
+            "name": "Futurelight"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Futurelight",
+            "name": "MH-440",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [292, 415, 378],
+                "weight": 10.5,
+                "power": 150,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "HMI 150W"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 530,
+                    "tiltMax": 285
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Tracking Mode"
+                        },
+                        {
+                            "range": [1, 249],
+                            "name": "Vector Mode Speed"
+                        },
+                        {
+                            "range": [250, 252],
+                            "name": "Tracking Mode, BO color changes"
+                        },
+                        {
+                            "range": [253, 255],
+                            "name": "Max. Vector speed, BO pan/tilt/color change"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [10, 10],
+                            "name": "Turquoise",
+                            "color": "#aaffff"
+                        },
+                        {
+                            "range": [21, 21],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [32, 32],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [42, 42],
+                            "name": "Light green",
+                            "color": "#aaff7f"
+                        },
+                        {
+                            "range": [53, 53],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [64, 64],
+                            "name": "Light blue",
+                            "color": "#aaaaff"
+                        },
+                        {
+                            "range": [74, 74],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [85, 85],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [96, 96],
+                            "name": "Pink",
+                            "color": "#ffaaff"
+                        },
+                        {
+                            "range": [106, 106],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [117, 117],
+                            "name": "Orange",
+                            "color": "#ffaa00"
+                        },
+                        {
+                            "range": [128, 189],
+                            "name": "Rainbow forward"
+                        },
+                        {
+                            "range": [190, 193],
+                            "name": "No Rotation"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Rainbow backward"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer intensity"
+                        }
+                    ]
+                },
+                "Shutter, Strobe, Reset": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Strobe speed"
+                        },
+                        {
+                            "range": [128, 139],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "Pulse sequence speed slow to fast"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "Pulse sequence fast to slow"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random strobe slow to fast"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Shutter open"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan Fine",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed",
+                        "Colour",
+                        "Dimmer",
+                        "Shutter, Strobe, Reset"
+                    ]
+                }
+            ]
+        }
+    ]
+}

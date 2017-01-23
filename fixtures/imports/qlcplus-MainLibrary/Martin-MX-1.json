@@ -1,0 +1,221 @@
+{
+    "manufacturers": {
+        "Martin": {
+            "name": "Martin"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Martin",
+            "name": "MX-1",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [269, 537, 263],
+                "weight": 6,
+                "power": 265,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "ELC 250W",
+                    "colorTemperature": 3200
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [16, 16]
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 230,
+                    "tiltMax": 77
+                }
+            },
+            "availableChannels": {
+                "Dimmer, strobe, reset": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Light off"
+                        },
+                        {
+                            "range": [5, 154],
+                            "name": "Dimmer intensity"
+                        },
+                        {
+                            "range": [155, 169],
+                            "name": "Dimmer full open"
+                        },
+                        {
+                            "range": [170, 229],
+                            "name": "Strobe speed fast to slow"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Stand-alone, music trigger"
+                        },
+                        {
+                            "range": [240, 249],
+                            "name": "Stand-alone, auto trigger"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Reset"
+                        }
+                    ]
+                },
+                "Not used": {
+                    "type": "Nothing",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Not used"
+                        }
+                    ]
+                },
+                "Colour / gobo wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 11],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [12, 23],
+                            "name": "Position 2"
+                        },
+                        {
+                            "range": [24, 35],
+                            "name": "Position 3"
+                        },
+                        {
+                            "range": [36, 47],
+                            "name": "Position 4"
+                        },
+                        {
+                            "range": [48, 59],
+                            "name": "Position 5"
+                        },
+                        {
+                            "range": [60, 71],
+                            "name": "Position 6"
+                        },
+                        {
+                            "range": [72, 83],
+                            "name": "Position 7"
+                        },
+                        {
+                            "range": [84, 95],
+                            "name": "Position 8"
+                        },
+                        {
+                            "range": [96, 107],
+                            "name": "Position 9"
+                        },
+                        {
+                            "range": [108, 119],
+                            "name": "Position 10"
+                        },
+                        {
+                            "range": [120, 131],
+                            "name": "Position 11"
+                        },
+                        {
+                            "range": [132, 143],
+                            "name": "Position 12"
+                        },
+                        {
+                            "range": [144, 155],
+                            "name": "Position 13"
+                        },
+                        {
+                            "range": [156, 167],
+                            "name": "Position 14"
+                        },
+                        {
+                            "range": [168, 179],
+                            "name": "Position 15"
+                        },
+                        {
+                            "range": [180, 191],
+                            "name": "Position 16"
+                        },
+                        {
+                            "range": [192, 203],
+                            "name": "Position 17"
+                        },
+                        {
+                            "range": [204, 215],
+                            "name": "Position 18"
+                        },
+                        {
+                            "range": [216, 227],
+                            "name": "Position 19"
+                        },
+                        {
+                            "range": [228, 239],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Random, stand-alone"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Pan/tilt speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Tracking mode"
+                        },
+                        {
+                            "range": [3, 255],
+                            "name": "Vector mode speed fast to slow"
+                        }
+                    ]
+                },
+                "Colour / gobo speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Dimmer, strobe, reset",
+                        "Not used",
+                        "Colour / gobo wheel",
+                        "Pan",
+                        "Tilt",
+                        "Pan/tilt speed",
+                        "Colour / gobo speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

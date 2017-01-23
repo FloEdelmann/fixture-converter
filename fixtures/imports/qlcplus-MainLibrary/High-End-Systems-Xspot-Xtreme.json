@@ -1,0 +1,1120 @@
+{
+    "manufacturers": {
+        "High End Systems": {
+            "name": "High End Systems"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "High End Systems",
+            "name": "Xspot Xtreme",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [523, 825, 521],
+                "weight": 32,
+                "power": 1200,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "MSR 700W",
+                    "colorTemperature": 5500,
+                    "lumens": 16000
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 630,
+                    "tiltMax": 240
+                }
+            },
+            "availableChannels": {
+                "Pan Coarse": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Coarse-adjusts pan to approximately 2 degrees\r\nof desired position"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine-adjusts pan position in increments less\r\nthan 1 degree"
+                        }
+                    ]
+                },
+                "Tillt Coarse": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Coarse-adjusts tilt to approximately 2\r\ndegrees of desired position"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fine-adjusts tilt position in increments less than\r\n1 degree"
+                        }
+                    ]
+                },
+                "Lamp Function": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Normal Shutter Functions"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Lamp Assisted Strobes boosts the Lamp above\r\n700 Watts for periodic and random strobes set\r\nin Shutter channel 6."
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Lamp Effects boosts the lamp above 700 watts\r\nfor Boost to White, Boost to Black, or Lightning\r\neffects set in Shutter channel 6"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Dual Dimming adds electronic dimming to the\r\nmechanical dimming set in the Dim channel 7.\r\n(0%?100%)"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Electronic Dimming Only Lamp output varies\r\nfrom a minimum?700W; does not go to black"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Normal Shutter Fuctions"
+                        }
+                    ]
+                },
+                "Shutter Fuctions": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 23],
+                            "name": "Close"
+                        },
+                        {
+                            "range": [24, 255],
+                            "name": "See manual"
+                        }
+                    ]
+                },
+                "Dim": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Mechanical dimming"
+                        }
+                    ]
+                },
+                "Frost": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Open (No Frost)"
+                        },
+                        {
+                            "range": [1, 127],
+                            "name": "Variable Frost (open to close)"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Full Frost"
+                        },
+                        {
+                            "range": [136, 151],
+                            "name": "Periodic Frost Strobe"
+                        },
+                        {
+                            "range": [152, 167],
+                            "name": "Random Frost Strobe"
+                        },
+                        {
+                            "range": [168, 183],
+                            "name": "Ramp Open/ Snap Shut"
+                        },
+                        {
+                            "range": [184, 199],
+                            "name": "Snap Open/ Ramp Shut"
+                        },
+                        {
+                            "range": [200, 215],
+                            "name": "Ramp Open/ Ramp Shut"
+                        },
+                        {
+                            "range": [216, 231],
+                            "name": "Random Ramp/ Snap"
+                        },
+                        {
+                            "range": [232, 247],
+                            "name": "Random Snap/ Ramp"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Open (No Frost)"
+                        }
+                    ]
+                },
+                "Focus Function": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "ZoomTrack"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Manual Focus"
+                        },
+                        {
+                            "range": [64, 255],
+                            "name": "Reserved"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Auto or Manual Focus from In to Out"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Zoom from In to Out"
+                        }
+                    ]
+                },
+                "MSpeed": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "see Conversion Table in Manual"
+                        }
+                    ]
+                },
+                "Macro": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Macro Off"
+                        },
+                        {
+                            "range": [6, 62],
+                            "name": "Pan sweep from small to large angle"
+                        },
+                        {
+                            "range": [63, 65],
+                            "name": "Macro Off"
+                        },
+                        {
+                            "range": [66, 122],
+                            "name": "Tilt sweep from small to large angle"
+                        },
+                        {
+                            "range": [123, 125],
+                            "name": "Macro Off"
+                        },
+                        {
+                            "range": [126, 160],
+                            "name": "Clockwise circle from small to large"
+                        },
+                        {
+                            "range": [161, 163],
+                            "name": "Macro Off"
+                        },
+                        {
+                            "range": [164, 198],
+                            "name": "Counterclockwise circle from small to large"
+                        },
+                        {
+                            "range": [199, 255],
+                            "name": "Reserved"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Safe"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Pan and Tilt Mspeed Off"
+                        },
+                        {
+                            "range": [20, 28],
+                            "name": "Display Off"
+                        },
+                        {
+                            "range": [30, 38],
+                            "name": "display dim"
+                        },
+                        {
+                            "range": [40, 48],
+                            "name": "display bright"
+                        },
+                        {
+                            "range": [60, 68],
+                            "name": "Home all"
+                        },
+                        {
+                            "range": [80, 88],
+                            "name": "lamp on"
+                        },
+                        {
+                            "range": [90, 98],
+                            "name": "lamp off"
+                        },
+                        {
+                            "range": [120, 130],
+                            "name": "shutdown"
+                        },
+                        {
+                            "range": [131, 149],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [160, 168],
+                            "name": "Home Pan/tilt"
+                        },
+                        {
+                            "range": [170, 178],
+                            "name": "Home Color system"
+                        },
+                        {
+                            "range": [180, 188],
+                            "name": "Home Gobo System"
+                        },
+                        {
+                            "range": [190, 198],
+                            "name": "Home strobe/dim"
+                        },
+                        {
+                            "range": [200, 208],
+                            "name": "Home focus/Zoom/Frost"
+                        },
+                        {
+                            "range": [210, 218],
+                            "name": "Home Iris"
+                        }
+                    ]
+                },
+                "Static Color Function": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Indexed"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Forward Spin"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Reverse Spin"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Continuous"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "slow scan"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "fast scan"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "RANDOM"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Blink-Indexed"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "MSpeed Control Indexed"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "MSpeed Control Forward Spin"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "MSpeed Control Reverse Spin"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "MSpeed Control Continuous"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "MSpeed Control slow scan"
+                        },
+                        {
+                            "range": [208, 223],
+                            "name": "MSpeed Control fast scan"
+                        },
+                        {
+                            "range": [224, 239],
+                            "name": "MSpeed Control random"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "MSpeed Control blink"
+                        }
+                    ]
+                },
+                "Static Color Position ": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "See manual"
+                        }
+                    ]
+                },
+                "Mix Color Fuction": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Pure Mix"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Continuous"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Spin"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Cycle"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "Random"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Blink"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "MSpeed Control Pure Mix"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "MSpeed Control Continuous"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "MSpeed Control Reserved"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "MSpeed Control Spin"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "MSpeed Control Cycle"
+                        },
+                        {
+                            "range": [208, 223],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [224, 239],
+                            "name": "MSpeed Control Random"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "MSpeed Control Blink"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "See Manual"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "See Manual"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "see manual"
+                        }
+                    ]
+                },
+                "Color Temp Orange": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [170, 170],
+                            "name": "Full CTO"
+                        },
+                        {
+                            "range": [213, 213],
+                            "name": "Beam Flatness"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Color Temp Blue": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Beam flatten"
+                        },
+                        {
+                            "range": [43, 43],
+                            "name": "OPEN"
+                        },
+                        {
+                            "range": [213, 213],
+                            "name": "Full CTB"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Beam Flatness"
+                        }
+                    ]
+                },
+                "Gobo 1 Function": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Indexed"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Forward Wheel Spin"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Reverse Wheel spin"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Scan"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Random"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Blink"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "TBC"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Continuous"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "MSpeed Control\r\nIndexed"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "MSpeed Control\r\nForward Wheel Spin"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "MSpeed Control\r\nReverse Spin"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "MSpeed Control\r\n Scan"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "MSpeed Control\r\nRandom"
+                        },
+                        {
+                            "range": [208, 223],
+                            "name": "MSpeed Control\r\nBlink"
+                        },
+                        {
+                            "range": [224, 239],
+                            "name": "MSpeed Control\r\nTBC"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "MSpeed Control\r\nContinuous"
+                        }
+                    ]
+                },
+                "Gobo 1 Position": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "see manual"
+                        }
+                    ]
+                },
+                "Gobo 1 Rotate Function": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Indexed"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Forward Rotate"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Reverse Rotate"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Scan"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Blink"
+                        },
+                        {
+                            "range": [80, 127],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "MSpeed Control\r\nIndexed"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "MSpeed Control\r\nForward Rotate"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "MSpeed Control\r\nReverse Rotate"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "MSpeed Control\r\nScan"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "MSpeed Control\r\nBlink"
+                        },
+                        {
+                            "range": [208, 255],
+                            "name": "MSpeed Control\r\n Reserved"
+                        }
+                    ]
+                },
+                "Gobo 1 Rotate Coarse": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "see manual"
+                        }
+                    ]
+                },
+                "Gobo 1 Rotate Fine": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Low Order Byte 0-360 degrees"
+                        }
+                    ]
+                },
+                "Effects Function": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "indexed"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Forward Wheel Spin"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Reverse Wheel Spin"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Scan"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Random"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Blink"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "TBC"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Continuous"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "MSpeed Control\r\nindexed"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "MSpeed Control\r\nForward Wheel Spin"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "MSpeed Control\r\nReverse Wheel Spin"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "MSpeed Control\r\nScan"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "MSpeed Control\r\nRandom"
+                        },
+                        {
+                            "range": [208, 223],
+                            "name": "MSpeed Control\r\nBlink"
+                        },
+                        {
+                            "range": [224, 239],
+                            "name": "MSpeed Control\r\nTBC"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "MSpeed Control\r\nContinuous"
+                        }
+                    ]
+                },
+                "Effects Position": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "manual"
+                        }
+                    ]
+                },
+                "Effects Rotate Function": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Indexed"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Forward Rotate"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Reverse Rotate"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Scan"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Blink"
+                        },
+                        {
+                            "range": [80, 127],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "MSpeed Control\r\nIndexed"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "MSpeed Control\r\nForward Rotate"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "MSpeed Control\r\nReverse Rotate"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "MSpeed Control\r\nScan"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "MSpeed Control\r\nBlink"
+                        },
+                        {
+                            "range": [208, 255],
+                            "name": "MSpeed Control\r\nReserved"
+                        }
+                    ]
+                },
+                "Effects Rotate Coarse": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "see manual"
+                        }
+                    ]
+                },
+                "Effects Rotate Fine": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Low Order Byte position 0-360 degrees"
+                        }
+                    ]
+                },
+                "Gobo 2 Function": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "indexed"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Forward wheel spin"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Reverse Wheel Spin"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Scan"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Random"
+                        },
+                        {
+                            "range": [80, 95],
+                            "name": "Blink"
+                        },
+                        {
+                            "range": [96, 111],
+                            "name": "TBC"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Continuous"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "MSpeed Control\r\nIndexed"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "MSpeed Control\r\nForward Wheel Spin"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "MSpeed Control\r\nReverse Wheel Spin"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "MSpeed Control\r\nScan"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "MSpeed Control\r\nRandom"
+                        },
+                        {
+                            "range": [208, 223],
+                            "name": "MSpeed Control\r\nBlink"
+                        },
+                        {
+                            "range": [224, 239],
+                            "name": "MSpeed Control\r\nTBC"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "MSpeed Control\r\n Continuous"
+                        }
+                    ]
+                },
+                "Gobo 2 position": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "see manual"
+                        }
+                    ]
+                },
+                "Gobo 2 Rotate Function": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Indexed"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "Forward Rotate"
+                        },
+                        {
+                            "range": [32, 47],
+                            "name": "Reverse Rotate"
+                        },
+                        {
+                            "range": [48, 63],
+                            "name": "Scan"
+                        },
+                        {
+                            "range": [64, 79],
+                            "name": "Blink"
+                        },
+                        {
+                            "range": [80, 127],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "MSpeed Control\r\nIndexed"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "MSpeed Control\r\nForward Rotate"
+                        },
+                        {
+                            "range": [160, 175],
+                            "name": "MSpeed Control\r\nReverse Rotate"
+                        },
+                        {
+                            "range": [176, 191],
+                            "name": "MSpeed Control\r\n Scan"
+                        },
+                        {
+                            "range": [192, 207],
+                            "name": "MSpeed Control\r\nBlink"
+                        },
+                        {
+                            "range": [208, 255],
+                            "name": "MSpeed Control\r\nReserved"
+                        }
+                    ]
+                },
+                "Gobo 2 Rotate Coarse": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "position 0-360 / forward- reverse rotate slowest to fastest"
+                        }
+                    ]
+                },
+                "Gobo 2 Rotate Fine": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Low Order Byte position from 0-360"
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [1, 127],
+                            "name": "Variable Iris"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [136, 151],
+                            "name": "Periodic Strobe"
+                        },
+                        {
+                            "range": [152, 167],
+                            "name": "Random Strobe"
+                        },
+                        {
+                            "range": [168, 183],
+                            "name": "Ramp Open/Snap Shut"
+                        },
+                        {
+                            "range": [184, 199],
+                            "name": "Snap Open/Ramp Shut"
+                        },
+                        {
+                            "range": [200, 215],
+                            "name": "Ramp Open/Ramp Shut"
+                        },
+                        {
+                            "range": [216, 231],
+                            "name": "Random Ramp/Snap"
+                        },
+                        {
+                            "range": [232, 247],
+                            "name": "Random Snap/Ramp"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Open"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan Coarse",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt Coarse",
+                    "Tilt Fine"
+                ],
+                [
+                    "Gobo 1 Rotate Coarse",
+                    "Gobo 1 Rotate Fine"
+                ],
+                [
+                    "Effects Rotate Coarse",
+                    "Effects Rotate Fine"
+                ],
+                [
+                    "Gobo 2 Rotate Coarse",
+                    "Gobo 2 Rotate Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "38 Channels",
+                    "channels": [
+                        "Pan Coarse",
+                        "Pan Fine",
+                        "Tillt Coarse",
+                        "Tilt Fine",
+                        "Lamp Function",
+                        "Shutter Fuctions",
+                        "Dim",
+                        "Frost",
+                        "Focus Function",
+                        "Focus",
+                        "Zoom",
+                        "MSpeed",
+                        "Macro",
+                        "Control",
+                        "Static Color Function",
+                        "Static Color Position ",
+                        "Mix Color Fuction",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color Temp Orange",
+                        "Color Temp Blue",
+                        "Gobo 1 Function",
+                        "Gobo 1 Position",
+                        "Gobo 1 Rotate Function",
+                        "Gobo 1 Rotate Coarse",
+                        "Gobo 1 Rotate Fine",
+                        "Effects Function",
+                        "Effects Position",
+                        "Effects Rotate Function",
+                        "Effects Rotate Coarse",
+                        "Effects Rotate Fine",
+                        "Gobo 2 Function",
+                        "Gobo 2 position",
+                        "Gobo 2 Rotate Function",
+                        "Gobo 2 Rotate Coarse",
+                        "Gobo 2 Rotate Fine",
+                        "Iris"
+                    ]
+                }
+            ]
+        }
+    ]
+}

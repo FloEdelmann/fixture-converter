@@ -1,0 +1,193 @@
+{
+    "manufacturers": {
+        "Ghost": {
+            "name": "Ghost"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Ghost",
+            "name": "Green 30",
+            "type": "Laser",
+            "physical": {
+                "dimensions": [260, 85, 330],
+                "weight": 3,
+                "power": 30,
+                "DMXconnector": "3-pin",
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [30, 30]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Mode": {
+                    "type": "SingleColor",
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Laser source switch"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "DMX-512 control mode"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Automatic mode"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Audio mode"
+                        }
+                    ]
+                },
+                "Pattern": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "H-Line"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Pattern 2"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "V-Line"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Open half H Circle"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Open half V Circle"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Dot + H Line"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Pattern 7"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Rotating line"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Rectangle"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "H dash"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Double triangle"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "Dots in rectangle"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "Closed half H circle"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "3 circles"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Closed half H circle"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "Closed half V Right circle"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "3 circles"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "Closed moving half H circle"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "Closed half V Left circle"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "Cross"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Double lines"
+                        },
+                        {
+                            "range": [210, 219],
+                            "name": "Pattern 22"
+                        },
+                        {
+                            "range": [220, 229],
+                            "name": "3 H lines"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "3 V lines"
+                        },
+                        {
+                            "range": [240, 249],
+                            "name": "3 moving circles"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "3 moving circles"
+                        }
+                    ]
+                },
+                "Pattern Left/Right turning": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Left/Right turning"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Special effects"
+                        }
+                    ]
+                },
+                "Pattern Up/down turning": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Up/Down turning"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "4 Channel",
+                    "channels": [
+                        "Mode",
+                        "Pattern",
+                        "Pattern Left/Right turning",
+                        "Pattern Up/down turning"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "LED Shadow",
+            "type": "Dimmer",
+            "physical": {
+                "dimensions": [248, 356, 165],
+                "weight": 2.2,
+                "power": 12,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Mode": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 39],
+                            "name": "Dimmer Mode"
+                        },
+                        {
+                            "range": [40, 159],
+                            "name": "Auto Mode 1"
+                        },
+                        {
+                            "range": [160, 199],
+                            "name": "Auto Mode 2"
+                        },
+                        {
+                            "range": [200, 239],
+                            "name": "Auto Mode 3"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Sound Mode"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow to Fast"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity (0 -100%)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Mode",
+                        "Speed",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

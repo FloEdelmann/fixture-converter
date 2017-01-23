@@ -1,0 +1,219 @@
+{
+    "manufacturers": {
+        "Flash-Butrym": {
+            "name": "Flash-Butrym"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Flash-Butrym",
+            "name": "LED Moving Head Mini Beam 18x3W RGB CREE",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [190, 270, 190],
+                "weight": 2.75,
+                "power": 90,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "PC",
+                    "degreesMinMax": [14, 35]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "PAN"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "auto movement/color": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "no program"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "program 1"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "dark to bright"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "dark to bright"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "dark to bright"
+                        }
+                    ]
+                },
+                "Color Macro": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [11, 18],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [19, 86],
+                            "name": "Red - Green",
+                            "color": "#ff0000",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [87, 94],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [95, 163],
+                            "name": "Green - Blue",
+                            "color": "#00ff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [164, 171],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [172, 240],
+                            "name": "Blue - Red",
+                            "color": "#0000ff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [241, 248],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [249, 255],
+                            "name": "White",
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "shutter off"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "shutter slow to fast"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "dark to bright"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Full, 11 channel",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color Macro",
+                        "Shutter",
+                        "auto movement/color"
+                    ]
+                }
+            ]
+        }
+    ]
+}

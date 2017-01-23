@@ -1,0 +1,283 @@
+{
+    "manufacturers": {
+        "Blizzard Lighting": {
+            "name": "Blizzard Lighting"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Blizzard Lighting",
+            "name": "HotBox Infiniwhite",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [127, 127, 102],
+                "weight": 1.6,
+                "power": 47,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [0, 28]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <--> 100%"
+                        }
+                    ]
+                },
+                "Amber": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <--> 100%"
+                        }
+                    ]
+                },
+                "Warm White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <--> 100%"
+                        }
+                    ]
+                },
+                "Cool White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% <--> 100%"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "Dimming"
+                        },
+                        {
+                            "range": [15, 255],
+                            "name": "Slow <--> fast"
+                        }
+                    ]
+                },
+                "Fade, Color Change, Sound Active": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Fade in (Ch. 5 controls speed)"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Fade out (Ch. 5 controls speed)"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Fade in / fade out (Ch. 5 controls speed)"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "ACW gradual change (Ch. 5 controls speed)"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Fade in / fade out, auto run"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Color jump (Ch. 5 Controls speed)"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Sound active"
+                        }
+                    ]
+                },
+                "Color Saturation": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Invalid"
+                        },
+                        {
+                            "range": [10, 29],
+                            "name": "A 100%"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "A85%+(A+C)15%"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "A60%+(A+C)40%",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [50, 69],
+                            "name": "(A+C)100%"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "(A+C)85%+C15%"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "(A+C)60%+C40%"
+                        },
+                        {
+                            "range": [90, 109],
+                            "name": "C 100%"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "C85%+W15%"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "C60%+W40%"
+                        },
+                        {
+                            "range": [130, 149],
+                            "name": "W 100%"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "W85%+(C+W)15%"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "W60%+(C+W)40%"
+                        },
+                        {
+                            "range": [170, 189],
+                            "name": "(C+W)100%"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "(C+W)50%+(A+W)50%"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "(A+W)100%"
+                        },
+                        {
+                            "range": [220, 229],
+                            "name": "(A+W)50%+(A+C+W)50%"
+                        },
+                        {
+                            "range": [230, 249],
+                            "name": "(A+C+W)95%+(A+C)5%"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "All Colors 100%"
+                        }
+                    ]
+                },
+                "32-Bit Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "As set in the control menu display"
+                        },
+                        {
+                            "range": [6, 55],
+                            "name": "Mode 0 = 8-bit, 256 dimming steps"
+                        },
+                        {
+                            "range": [56, 105],
+                            "name": "Mode 1 = 32-bit, 0-25% intensity range"
+                        },
+                        {
+                            "range": [106, 155],
+                            "name": "Mode 2 = 32-bit, 0-50% intensity range"
+                        },
+                        {
+                            "range": [156, 205],
+                            "name": "Mode 3 = 32-bit, 0-75% intensity range"
+                        },
+                        {
+                            "range": [206, 255],
+                            "name": "Mode 4 = 32-bit, full intensity dimming"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "8-Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Amber",
+                        "Warm White",
+                        "Cool White",
+                        "Strobe",
+                        "Fade, Color Change, Sound Active",
+                        "Color Saturation",
+                        "32-Bit Dimmer"
+                    ]
+                },
+                {
+                    "name": "7-Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Amber",
+                        "Warm White",
+                        "Cool White",
+                        "Strobe",
+                        "Fade, Color Change, Sound Active",
+                        "Color Saturation"
+                    ]
+                },
+                {
+                    "name": "6-Channel",
+                    "channels": [
+                        "Dimmer",
+                        "Amber",
+                        "Warm White",
+                        "Cool White",
+                        "Strobe",
+                        "Fade, Color Change, Sound Active"
+                    ]
+                },
+                {
+                    "name": "3-Channel (ACW)",
+                    "channels": [
+                        "Amber",
+                        "Warm White",
+                        "Cool White"
+                    ]
+                }
+            ]
+        }
+    ]
+}

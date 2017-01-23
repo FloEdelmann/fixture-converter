@@ -1,0 +1,257 @@
+{
+    "manufacturers": {
+        "lightmaXX": {
+            "name": "lightmaXX"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "lightmaXX",
+            "name": "EASY Wash 5IVE LED",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [225, 270, 225],
+                "weight": 4.2,
+                "power": 75,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [20, 20]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 540,
+                    "tiltMax": 180
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan (0 - 540°)"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt (0 - 180°)"
+                        }
+                    ]
+                },
+                "Dimmer & Strobe": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [10, 134],
+                            "name": "Dimmer"
+                        },
+                        {
+                            "range": [135, 239],
+                            "name": "Strobe from 0Hz to 40Hz"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Amber": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine"
+                        }
+                    ]
+                },
+                "Color Mixed and Changed": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 223],
+                            "name": "Color mixed"
+                        },
+                        {
+                            "range": [224, 240],
+                            "name": "Color gradient from slow to fast"
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "Color jump from slow to fast"
+                        }
+                    ]
+                },
+                "Movement (Auto and Sound Effect)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "DMX control"
+                        },
+                        {
+                            "range": [4, 102],
+                            "name": "Auto 1"
+                        },
+                        {
+                            "range": [103, 152],
+                            "name": "Auto 2"
+                        },
+                        {
+                            "range": [153, 203],
+                            "name": "Auto 3"
+                        },
+                        {
+                            "range": [204, 255],
+                            "name": "Sound"
+                        }
+                    ]
+                },
+                "Reset": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 254],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Reset"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "9 channel",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Dimmer & Strobe",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "Pan/Tilt Speed"
+                    ]
+                },
+                {
+                    "name": "14 channel",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Dimmer & Strobe",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "Pan/Tilt Speed",
+                        "Color Mixed and Changed",
+                        "Movement (Auto and Sound Effect)",
+                        "Reset"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,810 @@
+{
+    "manufacturers": {
+        "Robe": {
+            "name": "Robe"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Robe",
+            "name": "Pointe",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [364, 575, 260],
+                "weight": 15,
+                "power": 470,
+                "DMXconnector": "3-pin and 5-pin",
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [5, 20]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan"
+                },
+                "Pan Fine": {
+                    "type": "Pan"
+                },
+                "Tilt": {
+                    "type": "Tilt"
+                },
+                "Tilt Fine": {
+                    "type": "Tilt"
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Maximum Speed"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Speed"
+                        }
+                    ]
+                },
+                "Special functions": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [10, 14],
+                            "name": "Input: Wired DMX"
+                        },
+                        {
+                            "range": [15, 19],
+                            "name": "Input: Wireless DMX"
+                        },
+                        {
+                            "range": [20, 24],
+                            "name": "Eco Mode (230W)"
+                        },
+                        {
+                            "range": [25, 29],
+                            "name": "Standard Mode(280W)"
+                        },
+                        {
+                            "range": [30, 49],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Pan/Tilt Speed Mode"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Pan/Tilt Time Mode"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Blackout while Pan/Tilt"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Disable Blackout while Pan/Tilt"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Blackout while colour wheel moving"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Disabled Blackout while color wheel moving"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "Blackout while Gobo wheel moving"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "Disable Blackout while Gobo wheel moving"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "Lamp On, reset"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Pan/Tilt Reset"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "Colour System reset"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "Gobo wheels reset"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "Dimmer/Shutter reset"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "Zoom/Focus/Prism reset"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Total reset"
+                        },
+                        {
+                            "range": [210, 229],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Lamp Off"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Reserved"
+                        }
+                    ]
+                },
+                "Colour wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "White"
+                        },
+                        {
+                            "range": [130, 134],
+                            "name": "Deep Red",
+                            "color": "#ff0004"
+                        },
+                        {
+                            "range": [135, 138],
+                            "name": "Deep Blue",
+                            "color": "#2600ff"
+                        },
+                        {
+                            "range": [139, 143],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [144, 147],
+                            "name": "Green",
+                            "color": "#22ff00"
+                        },
+                        {
+                            "range": [148, 152],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [153, 157],
+                            "name": "Azure",
+                            "color": "#00aaff"
+                        },
+                        {
+                            "range": [158, 161],
+                            "name": "Red",
+                            "color": "#ca4345"
+                        },
+                        {
+                            "range": [162, 166],
+                            "name": "Dark Green",
+                            "color": "#0d8700"
+                        },
+                        {
+                            "range": [167, 171],
+                            "name": "Amber",
+                            "color": "#ffb339"
+                        },
+                        {
+                            "range": [172, 176],
+                            "name": "Blue",
+                            "color": "#5555ff"
+                        },
+                        {
+                            "range": [177, 180],
+                            "name": "Orange",
+                            "color": "#ff9d00"
+                        },
+                        {
+                            "range": [181, 185],
+                            "name": "CTO",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [186, 189],
+                            "name": "UV",
+                            "color": "#8800ff"
+                        },
+                        {
+                            "range": [190, 215],
+                            "name": "Forwards Rainbow"
+                        },
+                        {
+                            "range": [216, 217],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [218, 243],
+                            "name": "Backwards Rainbow"
+                        },
+                        {
+                            "range": [244, 249],
+                            "name": "Audio Control"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Random"
+                        }
+                    ]
+                },
+                "Colour wheel fine": {
+                    "type": "MultiColor"
+                },
+                "Speed of Rot. Gobo wheel": {
+                    "type": "Speed"
+                },
+                "Static Gobo wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [4, 9],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [10, 15],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [16, 21],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [22, 27],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [28, 33],
+                            "name": "Gobo5"
+                        },
+                        {
+                            "range": [34, 39],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [40, 45],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [46, 51],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [52, 57],
+                            "name": "Gobo 9"
+                        },
+                        {
+                            "range": [58, 63],
+                            "name": "Gobo 10"
+                        },
+                        {
+                            "range": [64, 69],
+                            "name": "Beam reducer 1"
+                        },
+                        {
+                            "range": [70, 75],
+                            "name": "Beam reducer 2"
+                        },
+                        {
+                            "range": [76, 81],
+                            "name": "Beam reducer 3"
+                        },
+                        {
+                            "range": [82, 87],
+                            "name": "Beam reducer 4"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Shaking Gobo 1"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Shaking Gobo 2"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "Shaking Gobo 3"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Shaking Gobo 4"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Shaking Gobo 5"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Shaking Gobo 6"
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "Shaking Gobo 7"
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "Shaking Gobo 8"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Shaking Gobo 9"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Shaking Gobo 10"
+                        }
+                    ]
+                },
+                "Rotating Gobo wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [1, 4],
+                            "name": "Hole"
+                        },
+                        {
+                            "range": [5, 7],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [8, 10],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [11, 13],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [14, 16],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [17, 19],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [20, 22],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [23, 25],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [26, 28],
+                            "name": "Gobo 8"
+                        },
+                        {
+                            "range": [29, 31],
+                            "name": "Gobo 9"
+                        },
+                        {
+                            "range": [32, 34],
+                            "name": "Rot. Gobo 1"
+                        },
+                        {
+                            "range": [35, 37],
+                            "name": "Rot. Gobo 2"
+                        },
+                        {
+                            "range": [38, 40],
+                            "name": "Rot. Gobo 3"
+                        },
+                        {
+                            "range": [41, 43],
+                            "name": "Rot. Gobo 4"
+                        },
+                        {
+                            "range": [44, 46],
+                            "name": "Rot. Gobo 5"
+                        },
+                        {
+                            "range": [47, 49],
+                            "name": "Rot. Gobo 6"
+                        },
+                        {
+                            "range": [50, 52],
+                            "name": "Rot. Gobo 7"
+                        },
+                        {
+                            "range": [53, 55],
+                            "name": "Rot. Gobo 8"
+                        },
+                        {
+                            "range": [56, 59],
+                            "name": "Rot. Gobo 9"
+                        },
+                        {
+                            "range": [60, 67],
+                            "name": "Shaking Index Gobo 1"
+                        },
+                        {
+                            "range": [68, 75],
+                            "name": "Shaking Index Gobo 2"
+                        },
+                        {
+                            "range": [76, 83],
+                            "name": "Shaking Index Gobo 3"
+                        },
+                        {
+                            "range": [84, 91],
+                            "name": "Shaking Index Gobo 4"
+                        },
+                        {
+                            "range": [92, 99],
+                            "name": "Shaking Index Gobo 5"
+                        },
+                        {
+                            "range": [100, 107],
+                            "name": "Shaking Index Gobo 6"
+                        },
+                        {
+                            "range": [108, 115],
+                            "name": "Shaking Index Gobo 7"
+                        },
+                        {
+                            "range": [116, 123],
+                            "name": "Shaking Index Gobo 8"
+                        },
+                        {
+                            "range": [124, 129],
+                            "name": "Shaking Index Gobo 9"
+                        },
+                        {
+                            "range": [130, 137],
+                            "name": "Shaking Rot. Gobo 1"
+                        },
+                        {
+                            "range": [138, 145],
+                            "name": "Shaking Rot. Gobo 2"
+                        },
+                        {
+                            "range": [146, 153],
+                            "name": "Shaking Rot. Gobo 3"
+                        },
+                        {
+                            "range": [154, 161],
+                            "name": "Shaking Rot. Gobo 4"
+                        },
+                        {
+                            "range": [162, 169],
+                            "name": "Shaking Rot. Gobo 5"
+                        },
+                        {
+                            "range": [170, 177],
+                            "name": "Shaking Rot. Gobo 6"
+                        },
+                        {
+                            "range": [178, 185],
+                            "name": "Shaking Rot. Gobo 7"
+                        },
+                        {
+                            "range": [186, 193],
+                            "name": "Shaking Rot. Gobo 8"
+                        },
+                        {
+                            "range": [194, 199],
+                            "name": "Shaking Rot. Gobo 9"
+                        },
+                        {
+                            "range": [200, 201],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [202, 221],
+                            "name": "Forwards gobo wheel rotation from fast to slow"
+                        },
+                        {
+                            "range": [222, 223],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [224, 243],
+                            "name": "Backwards gobo wheel rotation from slow to fast "
+                        },
+                        {
+                            "range": [244, 249],
+                            "name": "Random gobo selection by audio control"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Auto random gobo from fast to slow"
+                        }
+                    ]
+                },
+                "Rot. gobo indexing and rotation (CH 11 extension)": {
+                    "type": "Speed"
+                },
+                "Rot. gobo indexing and rotation fine": {
+                    "type": "Speed"
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [20, 49],
+                            "name": "6-facet linear rotating - indexing"
+                        },
+                        {
+                            "range": [50, 75],
+                            "name": "6-facet linear rotating - rotation"
+                        },
+                        {
+                            "range": [76, 105],
+                            "name": "8-facet circular rotating - indexing"
+                        },
+                        {
+                            "range": [106, 127],
+                            "name": "8-facet circular rotating - rotation"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Macro 1"
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "Macro 2"
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "Macro 3"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Macro 4"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Macro 5"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "Macro 6"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "Macro 7"
+                        },
+                        {
+                            "range": [184, 191],
+                            "name": "Macro 8"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "Macro 9"
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "Macro 10"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Macro 11"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Macro 12"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Macro 13"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Macro 14"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Macro 15"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Macro 16"
+                        }
+                    ]
+                },
+                "Frost": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 179],
+                            "name": "Frost from 0-100"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "Frost 100%"
+                        },
+                        {
+                            "range": [190, 211],
+                            "name": "Pulse closing from slow to fast"
+                        },
+                        {
+                            "range": [212, 233],
+                            "name": "Pulse opening from slow to fast"
+                        },
+                        {
+                            "range": [234, 255],
+                            "name": "Raming from fast to slow"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam"
+                },
+                "Zoom fine": {
+                    "type": "Beam"
+                },
+                "Focus": {
+                    "type": "Beam"
+                },
+                "Focus fine": {
+                    "type": "Beam"
+                },
+                "Autofocus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Autofocus off"
+                        },
+                        {
+                            "range": [1, 63],
+                            "name": "Rotating gobos & hole from 10-45 metres"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Static gobos & Hole (default) from 10-Infinity metres"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Reserved"
+                        }
+                    ]
+                },
+                "Shutter/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Closed (Lamp power reduced to 230W)"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Shutter open (Full Lamp power)"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe effect from slow to fast"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Opening pulse from slow to fast"
+                        },
+                        {
+                            "range": [144, 159],
+                            "name": "Closing pulse from fast to slow"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random strobe effect from slow to fast"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Shutter open, Full lamp power"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true
+                },
+                "Dimmer fine": {
+                    "type": "Intensity",
+                    "crossfade": true
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ],
+                [
+                    "Colour wheel",
+                    "Colour wheel fine"
+                ],
+                [
+                    "Rot. gobo indexing and rotation (CH 11 extension)",
+                    "Rot. gobo indexing and rotation fine"
+                ],
+                [
+                    "Zoom",
+                    "Zoom fine"
+                ],
+                [
+                    "Focus",
+                    "Focus fine"
+                ],
+                [
+                    "Dimmer",
+                    "Dimmer fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Main",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed",
+                        "Special functions",
+                        "Colour wheel",
+                        "Colour wheel fine",
+                        "Speed of Rot. Gobo wheel",
+                        "Static Gobo wheel",
+                        "Rotating Gobo wheel",
+                        "Rot. gobo indexing and rotation (CH 11 extension)",
+                        "Rot. gobo indexing and rotation fine",
+                        "Prism",
+                        "Frost",
+                        "Zoom",
+                        "Zoom fine",
+                        "Focus",
+                        "Focus fine",
+                        "Autofocus",
+                        "Shutter/Strobe",
+                        "Dimmer",
+                        "Dimmer fine"
+                    ]
+                }
+            ]
+        }
+    ]
+}

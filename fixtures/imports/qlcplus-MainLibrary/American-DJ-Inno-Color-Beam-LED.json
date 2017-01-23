@@ -1,0 +1,353 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "Inno Color Beam LED",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [304, 168, 262],
+                "weight": 5.8,
+                "power": 110,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [0, 13]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 630,
+                    "tiltMax": 220
+                }
+            },
+            "availableChannels": {
+                "Shows": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [8, 67],
+                            "name": "Show 1"
+                        },
+                        {
+                            "range": [68, 127],
+                            "name": "Show 2"
+                        },
+                        {
+                            "range": [128, 187],
+                            "name": "Show 3"
+                        },
+                        {
+                            "range": [188, 247],
+                            "name": "Show 4"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Random Show"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0° - 630°"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0° - 220°"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% to 100%"
+                        }
+                    ]
+                },
+                "Shutter / strobing": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobing slow - fast"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Slow open - fast close"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random strobe slow - fast"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Master Dimming": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Rainbow": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "no function"
+                        },
+                        {
+                            "range": [10, 39],
+                            "name": "Rainbow Colors 1"
+                        },
+                        {
+                            "range": [40, 71],
+                            "name": "Rainbow Colors 2"
+                        },
+                        {
+                            "range": [72, 103],
+                            "name": "Rainbow Colors 3"
+                        },
+                        {
+                            "range": [104, 135],
+                            "name": "Rainbow Colors 4"
+                        },
+                        {
+                            "range": [136, 167],
+                            "name": "Rainbow Colors 5"
+                        },
+                        {
+                            "range": [168, 199],
+                            "name": "Rainbow Colors 6"
+                        },
+                        {
+                            "range": [200, 231],
+                            "name": "Rainbow Colors 7"
+                        },
+                        {
+                            "range": [232, 255],
+                            "name": "Crossfading colors slow - fast"
+                        }
+                    ]
+                },
+                "Pan/ Tilt movement Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 225],
+                            "name": "Max - Min speed"
+                        },
+                        {
+                            "range": [226, 235],
+                            "name": "Blackout By Movement"
+                        },
+                        {
+                            "range": [236, 255],
+                            "name": "nothing"
+                        }
+                    ]
+                },
+                "open/ reset / internal programs": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 79],
+                            "name": "Normal"
+                        },
+                        {
+                            "range": [80, 84],
+                            "name": "All motor Reset"
+                        },
+                        {
+                            "range": [85, 99],
+                            "name": "nothing"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Program 1"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Program 2"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Program 3"
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Program 4"
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "Program 5"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Program 6"
+                        },
+                        {
+                            "range": [220, 239],
+                            "name": "Program 7"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Sound Active Program"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "heads": {
+                "1 channel-head0": [
+                    "Shows"
+                ],
+                "13 Channel-head0": [
+                    "Pan",
+                    "Pan Fine",
+                    "Tilt",
+                    "Tilt Fine",
+                    "Red",
+                    "Green",
+                    "Blue",
+                    "White",
+                    "Shutter / strobing",
+                    "Master Dimming",
+                    "Rainbow",
+                    "Pan/ Tilt movement Speed",
+                    "open/ reset / internal programs"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "1 channel",
+                    "channels": [
+                        "Shows"
+                    ]
+                },
+                {
+                    "name": "13 Channel",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Shutter / strobing",
+                        "Master Dimming",
+                        "Rainbow",
+                        "Pan/ Tilt movement Speed",
+                        "open/ reset / internal programs"
+                    ]
+                }
+            ]
+        }
+    ]
+}

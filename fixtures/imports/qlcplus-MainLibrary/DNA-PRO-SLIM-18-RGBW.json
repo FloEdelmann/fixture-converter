@@ -1,0 +1,222 @@
+{
+    "manufacturers": {
+        "DNA": {
+            "name": "DNA"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "DNA",
+            "name": "PRO SLIM 18 RGBW",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [242, 242, 113],
+                "weight": 6.6,
+                "power": 150,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Led",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer (0 - 100%)"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity",
+                            "color": "#ff0012"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity",
+                            "color": "#02ff00"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity",
+                            "color": "#0005ff"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White intensity"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "Strobe off"
+                        },
+                        {
+                            "range": [2, 196],
+                            "name": "Strobe speed"
+                        },
+                        {
+                            "range": [197, 255],
+                            "name": "Random strobe"
+                        }
+                    ]
+                },
+                "Macros": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 1],
+                            "name": "No Function",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [2, 19],
+                            "name": "RGB Colour Fade",
+                            "color": "#ffee9e"
+                        },
+                        {
+                            "range": [20, 39],
+                            "name": "Colour changing"
+                        },
+                        {
+                            "range": [40, 59],
+                            "name": "Random colour changing"
+                        },
+                        {
+                            "range": [60, 79],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Purple",
+                            "color": "#7f00ff"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Light green",
+                            "color": "#7fff7f"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Orange",
+                            "color": "#ff7f00"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Red on/off (10 sec)",
+                            "color": "#ff0000",
+                            "color2": "#000000"
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Green on/off (10 sec)",
+                            "color": "#00ff00",
+                            "color2": "#000000"
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "Blue on/off (10 sec)",
+                            "color": "#0000ff",
+                            "color2": "#000000"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Yellow on/off (10 sec)",
+                            "color": "#ffff00",
+                            "color2": "#000000"
+                        },
+                        {
+                            "range": [220, 229],
+                            "name": "Cyan on/off (10 sec)",
+                            "color": "#00ffff",
+                            "color2": "#000000"
+                        },
+                        {
+                            "range": [230, 249],
+                            "name": "White on/off (10 sec)",
+                            "color": "#ffffff",
+                            "color2": "#000000"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Full on",
+                            "color": "#ffffff"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "7 Channels",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Strobe"
+                    ]
+                },
+                {
+                    "name": "5 Channels",
+                    "channels": [
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White"
+                    ]
+                },
+                {
+                    "name": "4 Channels",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White"
+                    ]
+                }
+            ]
+        }
+    ]
+}

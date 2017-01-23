@@ -1,0 +1,128 @@
+{
+    "manufacturers": {
+        "Lightronics": {
+            "name": "Lightronics"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Lightronics",
+            "name": "FXLD618C2I",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [251, 231, 251],
+                "weight": 4.5,
+                "power": 120,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Master Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master Dimmer"
+                        }
+                    ]
+                },
+                "Warm White Level": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Warm White Level",
+                            "color": "#ffbb78"
+                        }
+                    ]
+                },
+                "Cool White Level": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Cool White Level",
+                            "color": "#e4eaff"
+                        }
+                    ]
+                },
+                "Strobe Control": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobe Control"
+                        }
+                    ]
+                },
+                "Color Temperature": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Color temperature",
+                            "color": "#ffbb78",
+                            "color2": "#e4eaff"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "1 Channel (P)",
+                    "channels": [
+                        "Master Dimmer"
+                    ]
+                },
+                {
+                    "name": "2 Channel (A)",
+                    "channels": [
+                        "Warm White Level",
+                        "Cool White Level"
+                    ]
+                },
+                {
+                    "name": "3 Channel (F)",
+                    "channels": [
+                        "Master Dimmer",
+                        "Warm White Level",
+                        "Cool White Level"
+                    ]
+                },
+                {
+                    "name": "4 Channel (D)",
+                    "channels": [
+                        "Master Dimmer",
+                        "Strobe Control",
+                        "Warm White Level",
+                        "Cool White Level"
+                    ]
+                },
+                {
+                    "name": "5 Channel (H)",
+                    "channels": [
+                        "Master Dimmer",
+                        "Strobe Control",
+                        "Warm White Level",
+                        "Cool White Level",
+                        "Color Temperature"
+                    ]
+                }
+            ]
+        }
+    ]
+}

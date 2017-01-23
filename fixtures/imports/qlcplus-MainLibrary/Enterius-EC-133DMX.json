@@ -1,0 +1,112 @@
+{
+    "manufacturers": {
+        "Enterius": {
+            "name": "Enterius"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Enterius",
+            "name": "EC-133DMX",
+            "type": "Dimmer",
+            "physical": {
+                "dimensions": [87, 35, 59],
+                "weight": 0.1,
+                "power": 252,
+                "DMXconnector": "Other",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Channel 1": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Channel 1 brightness"
+                        }
+                    ]
+                },
+                "Channel 2": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Channel 2 brightness"
+                        }
+                    ]
+                },
+                "Channel 3": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Channel 3 brightness"
+                        }
+                    ]
+                },
+                "Red brightness": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red brightness"
+                        }
+                    ]
+                },
+                "Green brightness": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green brightness"
+                        }
+                    ]
+                },
+                "Blue brightness": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue brightness"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3 channel dimmer",
+                    "channels": [
+                        "Channel 1",
+                        "Channel 2",
+                        "Channel 3"
+                    ]
+                },
+                {
+                    "name": "RGB controller",
+                    "channels": [
+                        "Red brightness",
+                        "Green brightness",
+                        "Blue brightness"
+                    ]
+                }
+            ]
+        }
+    ]
+}

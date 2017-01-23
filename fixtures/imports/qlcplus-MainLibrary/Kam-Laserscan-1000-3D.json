@@ -1,0 +1,455 @@
+{
+    "manufacturers": {
+        "Kam": {
+            "name": "Kam"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Kam",
+            "name": "Laserscan 1000 3D",
+            "type": "Laser",
+            "physical": {
+                "dimensions": [290, 190, 245],
+                "weight": 4.2,
+                "power": 40,
+                "DMXconnector": "3-pin",
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [20, 20]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 20,
+                    "tiltMax": 20
+                }
+            },
+            "availableChannels": {
+                "Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 18],
+                            "name": "Laser off",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [19, 36],
+                            "name": "AUT - auto show with mixed 5 effect"
+                        },
+                        {
+                            "range": [37, 54],
+                            "name": "A3D - laser 3D effect auto show"
+                        },
+                        {
+                            "range": [55, 72],
+                            "name": "AUB - scanned beam effect auto show"
+                        },
+                        {
+                            "range": [73, 90],
+                            "name": "AUL - laser lumina effect auto show"
+                        },
+                        {
+                            "range": [91, 108],
+                            "name": "AUN - burst grating effect auto show"
+                        },
+                        {
+                            "range": [109, 126],
+                            "name": "AUO - laser universal effect auto show"
+                        },
+                        {
+                            "range": [127, 144],
+                            "name": "SOU - sound show with mixed 5 effect"
+                        },
+                        {
+                            "range": [145, 162],
+                            "name": "S3D - sound show with laser 3D"
+                        },
+                        {
+                            "range": [163, 180],
+                            "name": "SOB - sound show with scanned beam"
+                        },
+                        {
+                            "range": [181, 198],
+                            "name": "SOL - sound show with laser lumia"
+                        },
+                        {
+                            "range": [199, 216],
+                            "name": "SON - sound show with burst grating"
+                        },
+                        {
+                            "range": [217, 234],
+                            "name": "SOO - sound show with laser universal"
+                        },
+                        {
+                            "range": [235, 255],
+                            "name": "DMX mode"
+                        }
+                    ]
+                },
+                "Group": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 51],
+                            "name": "Group 1 patterns"
+                        },
+                        {
+                            "range": [52, 103],
+                            "name": "Group 2 patterns"
+                        },
+                        {
+                            "range": [104, 155],
+                            "name": "Group 3 patterns"
+                        },
+                        {
+                            "range": [156, 207],
+                            "name": "Group 4 patterns"
+                        },
+                        {
+                            "range": [208, 255],
+                            "name": "Group 5 patterns"
+                        }
+                    ]
+                },
+                "Pattern group": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "16 per pattern per pattern group, total 80 patterns"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Original"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Purple",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Light blue",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [64, 111],
+                            "name": "Colour rolling"
+                        },
+                        {
+                            "range": [112, 159],
+                            "name": "Colour jumping"
+                        },
+                        {
+                            "range": [160, 207],
+                            "name": "Colour moving"
+                        },
+                        {
+                            "range": [208, 255],
+                            "name": "Strobing"
+                        }
+                    ]
+                },
+                "Clipping": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Full pattern without clipping"
+                        },
+                        {
+                            "range": [1, 127],
+                            "name": "0-99% fixed pattern clipped"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Clipping speed"
+                        }
+                    ]
+                },
+                "Zooming": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "100-5% fixed pattern zoomed"
+                        },
+                        {
+                            "range": [128, 169],
+                            "name": "Zooming in"
+                        },
+                        {
+                            "range": [170, 209],
+                            "name": "Zooming out"
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "Alternate zooming"
+                        }
+                    ]
+                },
+                "Zoom speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow"
+                        }
+                    ]
+                },
+                "Y-axis rolling": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "0-359 degree fixed Y-axis rolling"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Clockwise rolling"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Anticlockwise rolling"
+                        }
+                    ]
+                },
+                "Y-axis roll speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow"
+                        }
+                    ]
+                },
+                "X-axis rolling": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "0-359 degree fixed X-axis rolled"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Clockwise rolling"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Anticlockwise rolling"
+                        }
+                    ]
+                },
+                "X-axis roll speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow"
+                        }
+                    ]
+                },
+                "Z-axis rolling": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "0-359 degree fixed Z-axis rolled"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Clockwise rolling"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Anticlockwise rolling"
+                        }
+                    ]
+                },
+                "Z axis roll speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow"
+                        }
+                    ]
+                },
+                "Y-axis moving": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "128 different fixed positions on X-axis"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Clockwise moving"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Anticlockwise moving"
+                        }
+                    ]
+                },
+                "Y-axis move speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow"
+                        }
+                    ]
+                },
+                "X axis moving": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "128 different fixed positions on Y-axis"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Clockwise moving"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Anticlockwise moving"
+                        }
+                    ]
+                },
+                "X-axis move speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow"
+                        }
+                    ]
+                },
+                "Grating rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No grating rotation"
+                        },
+                        {
+                            "range": [5, 127],
+                            "name": "Clockwise grating rotation"
+                        },
+                        {
+                            "range": [128, 133],
+                            "name": "No grating rotation"
+                        },
+                        {
+                            "range": [134, 255],
+                            "name": "Anticlockwise grating rotation"
+                        }
+                    ]
+                },
+                "Grating effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Laser 3D effect"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Scanned beam effect (pattern effect)"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Laser lumina effect"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Scanned beam effect (pattern effect)"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Burst grating effect"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Scanned beam effect (pattern effect)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Laser universal effect"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Scanned beam effect (pattern effect)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "DMX channels with ILDA NOT connected",
+                    "channels": [
+                        "Mode",
+                        "Group",
+                        "Pattern group",
+                        "Colour",
+                        "Clipping",
+                        "Zooming",
+                        "Zoom speed",
+                        "Y-axis rolling",
+                        "Y-axis roll speed",
+                        "X-axis rolling",
+                        "X-axis roll speed",
+                        "Z-axis rolling",
+                        "Z axis roll speed",
+                        "Y-axis moving",
+                        "Y-axis move speed",
+                        "X axis moving",
+                        "X-axis move speed",
+                        "Grating rotation",
+                        "Grating effect"
+                    ]
+                },
+                {
+                    "name": "DMX channels with ILDA connected",
+                    "channels": [
+                        "Grating rotation",
+                        "Grating effect"
+                    ]
+                }
+            ]
+        }
+    ]
+}

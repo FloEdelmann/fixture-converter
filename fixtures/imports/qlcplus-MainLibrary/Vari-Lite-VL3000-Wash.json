@@ -1,0 +1,1938 @@
+{
+    "manufacturers": {
+        "Vari-Lite": {
+            "name": "Vari-Lite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Vari-Lite",
+            "name": "VL3000 Wash",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [457, 802, 368],
+                "weight": 34,
+                "power": 1500,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "HMI 1200W",
+                    "colorTemperature": 6000,
+                    "lumens": 35000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [7.5, 30.5]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine"
+                        }
+                    ]
+                },
+                "Edge": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Edge"
+                        }
+                    ]
+                },
+                "CTO Mixer": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "CTO Mixer (open to diffuse)",
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                "Blue Mixer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue Mixer (open to full saturation)"
+                        }
+                    ]
+                },
+                "Amber Mixer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber Mixer (open to full saturation)"
+                        }
+                    ]
+                },
+                "Magenta Mixer": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Magenta Mixer (open to full saturation)"
+                        }
+                    ]
+                },
+                "Color Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "Open",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [15, 30],
+                            "name": "Open/Blue",
+                            "color": "#ffffff",
+                            "color2": "#1d2c7f"
+                        },
+                        {
+                            "range": [31, 47],
+                            "name": "Congo Blue",
+                            "color": "#1d2c7f"
+                        },
+                        {
+                            "range": [48, 61],
+                            "name": "Blue/Orange",
+                            "color": "#1d2c7f",
+                            "color2": "#fd6500"
+                        },
+                        {
+                            "range": [62, 76],
+                            "name": "Orange",
+                            "color": "#fd6500"
+                        },
+                        {
+                            "range": [77, 92],
+                            "name": "Orange/Green",
+                            "color": "#fd6500",
+                            "color2": "#018637"
+                        },
+                        {
+                            "range": [93, 108],
+                            "name": "Kelly Green",
+                            "color": "#018637"
+                        },
+                        {
+                            "range": [109, 123],
+                            "name": "Green/Fuchsia",
+                            "color": "#018637",
+                            "color2": "#97017f"
+                        },
+                        {
+                            "range": [124, 139],
+                            "name": "Dark Fuchsia",
+                            "color": "#97017f"
+                        },
+                        {
+                            "range": [140, 154],
+                            "name": "Fuchsia/Mag",
+                            "color": "#97017f",
+                            "color2": "#ee027e"
+                        },
+                        {
+                            "range": [155, 170],
+                            "name": "Magenta",
+                            "color": "#ee027e"
+                        },
+                        {
+                            "range": [171, 185],
+                            "name": "Magenta/Red",
+                            "color": "#ee027e",
+                            "color2": "#d60000"
+                        },
+                        {
+                            "range": [186, 200],
+                            "name": "Deep Red",
+                            "color": "#d60000"
+                        },
+                        {
+                            "range": [201, 216],
+                            "name": "Red/Open",
+                            "color": "#d60000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [217, 235],
+                            "name": "Scroll CCW"
+                        },
+                        {
+                            "range": [236, 236],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [237, 255],
+                            "name": "Scroll CW"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [3, 5],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [6, 7],
+                            "name": "Slow Random"
+                        },
+                        {
+                            "range": [8, 12],
+                            "name": "Med Random"
+                        },
+                        {
+                            "range": [13, 255],
+                            "name": "Speed Range"
+                        }
+                    ]
+                },
+                "Focus Time": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [255, 255],
+                            "name": "Follows Cue Data"
+                        },
+                        {
+                            "range": [0, 0],
+                            "name": "Full Speed"
+                        },
+                        {
+                            "range": [1, 1],
+                            "name": "0.2 S"
+                        },
+                        {
+                            "range": [2, 2],
+                            "name": "0.4 S"
+                        },
+                        {
+                            "range": [3, 3],
+                            "name": "0.6 S"
+                        },
+                        {
+                            "range": [4, 4],
+                            "name": "0.8 S"
+                        },
+                        {
+                            "range": [5, 5],
+                            "name": "1 S"
+                        },
+                        {
+                            "range": [6, 6],
+                            "name": "1.2 S"
+                        },
+                        {
+                            "range": [7, 7],
+                            "name": "1.4 S"
+                        },
+                        {
+                            "range": [8, 8],
+                            "name": "1.6 S"
+                        },
+                        {
+                            "range": [9, 9],
+                            "name": "1.8 S"
+                        },
+                        {
+                            "range": [10, 10],
+                            "name": "2 S"
+                        },
+                        {
+                            "range": [11, 11],
+                            "name": "2.2 S"
+                        },
+                        {
+                            "range": [12, 12],
+                            "name": "2.4 S"
+                        },
+                        {
+                            "range": [13, 13],
+                            "name": "2.6 S"
+                        },
+                        {
+                            "range": [14, 14],
+                            "name": "2.8 S"
+                        },
+                        {
+                            "range": [15, 15],
+                            "name": "3 S"
+                        },
+                        {
+                            "range": [16, 16],
+                            "name": "3.2 S"
+                        },
+                        {
+                            "range": [17, 17],
+                            "name": "3.4 S"
+                        },
+                        {
+                            "range": [18, 18],
+                            "name": "3.6 S"
+                        },
+                        {
+                            "range": [19, 19],
+                            "name": "3.8 S"
+                        },
+                        {
+                            "range": [20, 20],
+                            "name": "4 S"
+                        },
+                        {
+                            "range": [21, 21],
+                            "name": "4.2 S"
+                        },
+                        {
+                            "range": [22, 22],
+                            "name": "4.4 S"
+                        },
+                        {
+                            "range": [23, 23],
+                            "name": "4.6 S"
+                        },
+                        {
+                            "range": [24, 24],
+                            "name": "4.8 S"
+                        },
+                        {
+                            "range": [25, 25],
+                            "name": "5 S"
+                        },
+                        {
+                            "range": [26, 26],
+                            "name": "5.2 S"
+                        },
+                        {
+                            "range": [27, 27],
+                            "name": "5.4 S"
+                        },
+                        {
+                            "range": [28, 28],
+                            "name": "5.6 S"
+                        },
+                        {
+                            "range": [29, 29],
+                            "name": "5.8 S"
+                        },
+                        {
+                            "range": [30, 30],
+                            "name": "6 S"
+                        },
+                        {
+                            "range": [31, 31],
+                            "name": "6.2 S"
+                        },
+                        {
+                            "range": [32, 32],
+                            "name": "6.4 S"
+                        },
+                        {
+                            "range": [33, 33],
+                            "name": "6.6 S"
+                        },
+                        {
+                            "range": [34, 34],
+                            "name": "6.8 S"
+                        },
+                        {
+                            "range": [35, 35],
+                            "name": "7 S"
+                        },
+                        {
+                            "range": [36, 36],
+                            "name": "7.2 S"
+                        },
+                        {
+                            "range": [37, 37],
+                            "name": "7.4 S"
+                        },
+                        {
+                            "range": [38, 38],
+                            "name": "7.6 S"
+                        },
+                        {
+                            "range": [39, 39],
+                            "name": "7.8 S"
+                        },
+                        {
+                            "range": [40, 40],
+                            "name": "8 S"
+                        },
+                        {
+                            "range": [41, 41],
+                            "name": "8.2 S"
+                        },
+                        {
+                            "range": [42, 42],
+                            "name": "8.4 S"
+                        },
+                        {
+                            "range": [43, 43],
+                            "name": "8.6 S"
+                        },
+                        {
+                            "range": [44, 44],
+                            "name": "8.8 S"
+                        },
+                        {
+                            "range": [45, 45],
+                            "name": "9 S"
+                        },
+                        {
+                            "range": [46, 46],
+                            "name": "9.2 S"
+                        },
+                        {
+                            "range": [47, 47],
+                            "name": "9.4 S"
+                        },
+                        {
+                            "range": [48, 48],
+                            "name": "9.6 S"
+                        },
+                        {
+                            "range": [49, 49],
+                            "name": "9.8 S"
+                        },
+                        {
+                            "range": [50, 50],
+                            "name": "10 S"
+                        },
+                        {
+                            "range": [51, 51],
+                            "name": "10.2 S"
+                        },
+                        {
+                            "range": [52, 52],
+                            "name": "10.4 S"
+                        },
+                        {
+                            "range": [53, 53],
+                            "name": "10.6 S"
+                        },
+                        {
+                            "range": [54, 55],
+                            "name": "11 S"
+                        },
+                        {
+                            "range": [56, 57],
+                            "name": "12 S"
+                        },
+                        {
+                            "range": [58, 59],
+                            "name": "13 S"
+                        },
+                        {
+                            "range": [60, 62],
+                            "name": "14 S"
+                        },
+                        {
+                            "range": [63, 64],
+                            "name": "15 S"
+                        },
+                        {
+                            "range": [65, 67],
+                            "name": "16 S"
+                        },
+                        {
+                            "range": [68, 69],
+                            "name": "17 S"
+                        },
+                        {
+                            "range": [70, 72],
+                            "name": "18 S"
+                        },
+                        {
+                            "range": [73, 74],
+                            "name": "19 S"
+                        },
+                        {
+                            "range": [75, 77],
+                            "name": "20 S"
+                        },
+                        {
+                            "range": [78, 80],
+                            "name": "21 S"
+                        },
+                        {
+                            "range": [81, 82],
+                            "name": "22 S"
+                        },
+                        {
+                            "range": [83, 85],
+                            "name": "23 S"
+                        },
+                        {
+                            "range": [86, 87],
+                            "name": "24 S"
+                        },
+                        {
+                            "range": [88, 90],
+                            "name": "25 S"
+                        },
+                        {
+                            "range": [91, 92],
+                            "name": "26 S"
+                        },
+                        {
+                            "range": [93, 95],
+                            "name": "27 S"
+                        },
+                        {
+                            "range": [96, 97],
+                            "name": "28 S"
+                        },
+                        {
+                            "range": [98, 100],
+                            "name": "29 S"
+                        },
+                        {
+                            "range": [101, 103],
+                            "name": "30 S"
+                        },
+                        {
+                            "range": [104, 105],
+                            "name": "31 S"
+                        },
+                        {
+                            "range": [106, 108],
+                            "name": "32 S"
+                        },
+                        {
+                            "range": [109, 110],
+                            "name": "33 S"
+                        },
+                        {
+                            "range": [111, 113],
+                            "name": "34 S"
+                        },
+                        {
+                            "range": [114, 115],
+                            "name": "35 S"
+                        },
+                        {
+                            "range": [116, 118],
+                            "name": "36 S"
+                        },
+                        {
+                            "range": [121, 123],
+                            "name": "38 S"
+                        },
+                        {
+                            "range": [119, 120],
+                            "name": "37 S"
+                        },
+                        {
+                            "range": [124, 126],
+                            "name": "39 S"
+                        },
+                        {
+                            "range": [127, 128],
+                            "name": "40 S"
+                        },
+                        {
+                            "range": [129, 131],
+                            "name": "41 S"
+                        },
+                        {
+                            "range": [132, 133],
+                            "name": "42 S"
+                        },
+                        {
+                            "range": [134, 136],
+                            "name": "43 S"
+                        },
+                        {
+                            "range": [137, 138],
+                            "name": "44 S"
+                        },
+                        {
+                            "range": [139, 141],
+                            "name": "45 S"
+                        },
+                        {
+                            "range": [142, 143],
+                            "name": "46 S"
+                        },
+                        {
+                            "range": [144, 146],
+                            "name": "47 S"
+                        },
+                        {
+                            "range": [147, 148],
+                            "name": "48 S"
+                        },
+                        {
+                            "range": [149, 151],
+                            "name": "49 S"
+                        },
+                        {
+                            "range": [152, 154],
+                            "name": "50 S"
+                        },
+                        {
+                            "range": [155, 156],
+                            "name": "51 S"
+                        },
+                        {
+                            "range": [157, 158],
+                            "name": "52 S"
+                        },
+                        {
+                            "range": [160, 161],
+                            "name": "53 S"
+                        },
+                        {
+                            "range": [162, 164],
+                            "name": "54 S"
+                        },
+                        {
+                            "range": [165, 166],
+                            "name": "55 S"
+                        },
+                        {
+                            "range": [167, 169],
+                            "name": "56 S"
+                        },
+                        {
+                            "range": [170, 171],
+                            "name": "57 S"
+                        },
+                        {
+                            "range": [172, 174],
+                            "name": "58 S"
+                        },
+                        {
+                            "range": [175, 177],
+                            "name": "59 S"
+                        },
+                        {
+                            "range": [178, 179],
+                            "name": "60 S"
+                        },
+                        {
+                            "range": [180, 182],
+                            "name": "65 S"
+                        },
+                        {
+                            "range": [183, 184],
+                            "name": "70 S"
+                        },
+                        {
+                            "range": [185, 187],
+                            "name": "75 S"
+                        },
+                        {
+                            "range": [188, 189],
+                            "name": "80 S"
+                        },
+                        {
+                            "range": [190, 192],
+                            "name": "85 S"
+                        },
+                        {
+                            "range": [193, 194],
+                            "name": "90 S"
+                        },
+                        {
+                            "range": [195, 197],
+                            "name": "95 S"
+                        },
+                        {
+                            "range": [198, 199],
+                            "name": "100 S"
+                        },
+                        {
+                            "range": [200, 202],
+                            "name": "110 S"
+                        },
+                        {
+                            "range": [203, 205],
+                            "name": "120 S"
+                        },
+                        {
+                            "range": [206, 207],
+                            "name": "130 S"
+                        },
+                        {
+                            "range": [208, 210],
+                            "name": "140 S"
+                        },
+                        {
+                            "range": [211, 212],
+                            "name": "150 S"
+                        },
+                        {
+                            "range": [213, 215],
+                            "name": "160 S"
+                        },
+                        {
+                            "range": [216, 217],
+                            "name": "170 S"
+                        },
+                        {
+                            "range": [218, 220],
+                            "name": "180 S"
+                        },
+                        {
+                            "range": [221, 222],
+                            "name": "190 S"
+                        },
+                        {
+                            "range": [223, 224],
+                            "name": "200 S"
+                        },
+                        {
+                            "range": [226, 228],
+                            "name": "210 S"
+                        },
+                        {
+                            "range": [229, 230],
+                            "name": "220 S"
+                        },
+                        {
+                            "range": [231, 233],
+                            "name": "230 S"
+                        },
+                        {
+                            "range": [234, 235],
+                            "name": "240 S"
+                        },
+                        {
+                            "range": [236, 238],
+                            "name": "250 S"
+                        },
+                        {
+                            "range": [239, 240],
+                            "name": "260 S"
+                        },
+                        {
+                            "range": [241, 243],
+                            "name": "270 S"
+                        },
+                        {
+                            "range": [244, 245],
+                            "name": "280 S"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "290 S"
+                        },
+                        {
+                            "range": [249, 250],
+                            "name": "300 S"
+                        },
+                        {
+                            "range": [251, 254],
+                            "name": "310 S"
+                        }
+                    ]
+                },
+                "Color Time": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Full Speed"
+                        },
+                        {
+                            "range": [1, 1],
+                            "name": "0.2 S"
+                        },
+                        {
+                            "range": [2, 2],
+                            "name": "0.4 S"
+                        },
+                        {
+                            "range": [3, 3],
+                            "name": "0.6 S"
+                        },
+                        {
+                            "range": [4, 4],
+                            "name": "0.8 S"
+                        },
+                        {
+                            "range": [5, 5],
+                            "name": "1 S"
+                        },
+                        {
+                            "range": [6, 6],
+                            "name": "1.2 S"
+                        },
+                        {
+                            "range": [7, 7],
+                            "name": "1.4 S"
+                        },
+                        {
+                            "range": [8, 8],
+                            "name": "1.6 S"
+                        },
+                        {
+                            "range": [9, 9],
+                            "name": "1.8 S"
+                        },
+                        {
+                            "range": [10, 10],
+                            "name": "2 S"
+                        },
+                        {
+                            "range": [11, 11],
+                            "name": "2.2 S"
+                        },
+                        {
+                            "range": [12, 12],
+                            "name": "2.4 S"
+                        },
+                        {
+                            "range": [13, 13],
+                            "name": "2.6 S"
+                        },
+                        {
+                            "range": [14, 14],
+                            "name": "2.8 S"
+                        },
+                        {
+                            "range": [15, 15],
+                            "name": "3 S"
+                        },
+                        {
+                            "range": [16, 16],
+                            "name": "3.2 S"
+                        },
+                        {
+                            "range": [17, 17],
+                            "name": "3.4 S"
+                        },
+                        {
+                            "range": [18, 18],
+                            "name": "3.6 S"
+                        },
+                        {
+                            "range": [19, 19],
+                            "name": "3.8 S"
+                        },
+                        {
+                            "range": [20, 20],
+                            "name": "4 S"
+                        },
+                        {
+                            "range": [21, 21],
+                            "name": "4.2 S"
+                        },
+                        {
+                            "range": [22, 22],
+                            "name": "4.4 S"
+                        },
+                        {
+                            "range": [23, 23],
+                            "name": "4.6 S"
+                        },
+                        {
+                            "range": [24, 24],
+                            "name": "4.8 S"
+                        },
+                        {
+                            "range": [25, 25],
+                            "name": "5 S"
+                        },
+                        {
+                            "range": [26, 26],
+                            "name": "5.2 S"
+                        },
+                        {
+                            "range": [27, 27],
+                            "name": "5.4 S"
+                        },
+                        {
+                            "range": [28, 28],
+                            "name": "5.6 S"
+                        },
+                        {
+                            "range": [29, 29],
+                            "name": "5.8 S"
+                        },
+                        {
+                            "range": [30, 30],
+                            "name": "6 S"
+                        },
+                        {
+                            "range": [31, 31],
+                            "name": "6.2 S"
+                        },
+                        {
+                            "range": [32, 32],
+                            "name": "6.4 S"
+                        },
+                        {
+                            "range": [33, 33],
+                            "name": "6.6 S"
+                        },
+                        {
+                            "range": [34, 34],
+                            "name": "6.8 S"
+                        },
+                        {
+                            "range": [35, 35],
+                            "name": "7 S"
+                        },
+                        {
+                            "range": [36, 36],
+                            "name": "7.2 S"
+                        },
+                        {
+                            "range": [37, 37],
+                            "name": "7.4 S"
+                        },
+                        {
+                            "range": [38, 38],
+                            "name": "7.6 S"
+                        },
+                        {
+                            "range": [39, 39],
+                            "name": "7.8 S"
+                        },
+                        {
+                            "range": [40, 40],
+                            "name": "8 S"
+                        },
+                        {
+                            "range": [41, 41],
+                            "name": "8.2 S"
+                        },
+                        {
+                            "range": [42, 42],
+                            "name": "8.4 S"
+                        },
+                        {
+                            "range": [43, 43],
+                            "name": "8.6 S"
+                        },
+                        {
+                            "range": [44, 44],
+                            "name": "8.8 S"
+                        },
+                        {
+                            "range": [45, 45],
+                            "name": "9 S"
+                        },
+                        {
+                            "range": [46, 46],
+                            "name": "9.2 S"
+                        },
+                        {
+                            "range": [47, 47],
+                            "name": "9.4 S"
+                        },
+                        {
+                            "range": [48, 48],
+                            "name": "9.6 S"
+                        },
+                        {
+                            "range": [49, 49],
+                            "name": "9.8 S"
+                        },
+                        {
+                            "range": [50, 50],
+                            "name": "10 S"
+                        },
+                        {
+                            "range": [51, 51],
+                            "name": "10.2 S"
+                        },
+                        {
+                            "range": [52, 52],
+                            "name": "10.4 S"
+                        },
+                        {
+                            "range": [53, 53],
+                            "name": "10.6 S"
+                        },
+                        {
+                            "range": [54, 55],
+                            "name": "11 S"
+                        },
+                        {
+                            "range": [56, 57],
+                            "name": "12 S"
+                        },
+                        {
+                            "range": [58, 59],
+                            "name": "13 S"
+                        },
+                        {
+                            "range": [60, 62],
+                            "name": "14 S"
+                        },
+                        {
+                            "range": [63, 64],
+                            "name": "15 S"
+                        },
+                        {
+                            "range": [65, 67],
+                            "name": "16 S"
+                        },
+                        {
+                            "range": [68, 69],
+                            "name": "17 S"
+                        },
+                        {
+                            "range": [70, 72],
+                            "name": "18 S"
+                        },
+                        {
+                            "range": [73, 74],
+                            "name": "19 S"
+                        },
+                        {
+                            "range": [75, 77],
+                            "name": "20 S"
+                        },
+                        {
+                            "range": [78, 80],
+                            "name": "21 S"
+                        },
+                        {
+                            "range": [81, 82],
+                            "name": "22 S"
+                        },
+                        {
+                            "range": [83, 85],
+                            "name": "23 S"
+                        },
+                        {
+                            "range": [86, 87],
+                            "name": "24 S"
+                        },
+                        {
+                            "range": [88, 90],
+                            "name": "25 S"
+                        },
+                        {
+                            "range": [91, 92],
+                            "name": "26 S"
+                        },
+                        {
+                            "range": [93, 95],
+                            "name": "27 S"
+                        },
+                        {
+                            "range": [96, 97],
+                            "name": "28 S"
+                        },
+                        {
+                            "range": [98, 100],
+                            "name": "29 S"
+                        },
+                        {
+                            "range": [101, 103],
+                            "name": "30 S"
+                        },
+                        {
+                            "range": [104, 105],
+                            "name": "31 S"
+                        },
+                        {
+                            "range": [106, 108],
+                            "name": "32 S"
+                        },
+                        {
+                            "range": [109, 110],
+                            "name": "33 S"
+                        },
+                        {
+                            "range": [111, 113],
+                            "name": "34 S"
+                        },
+                        {
+                            "range": [114, 115],
+                            "name": "35 S"
+                        },
+                        {
+                            "range": [116, 118],
+                            "name": "36 S"
+                        },
+                        {
+                            "range": [119, 120],
+                            "name": "37 S"
+                        },
+                        {
+                            "range": [121, 123],
+                            "name": "38 S"
+                        },
+                        {
+                            "range": [124, 126],
+                            "name": "39 S"
+                        },
+                        {
+                            "range": [127, 128],
+                            "name": "40 S"
+                        },
+                        {
+                            "range": [129, 131],
+                            "name": "41 S"
+                        },
+                        {
+                            "range": [132, 133],
+                            "name": "42 S"
+                        },
+                        {
+                            "range": [134, 136],
+                            "name": "43 S"
+                        },
+                        {
+                            "range": [137, 138],
+                            "name": "44 S"
+                        },
+                        {
+                            "range": [139, 141],
+                            "name": "45 S"
+                        },
+                        {
+                            "range": [142, 143],
+                            "name": "46 S"
+                        },
+                        {
+                            "range": [144, 146],
+                            "name": "47 S"
+                        },
+                        {
+                            "range": [147, 148],
+                            "name": "48 S"
+                        },
+                        {
+                            "range": [149, 151],
+                            "name": "49 S"
+                        },
+                        {
+                            "range": [152, 154],
+                            "name": "50 S"
+                        },
+                        {
+                            "range": [155, 156],
+                            "name": "51 S"
+                        },
+                        {
+                            "range": [157, 158],
+                            "name": "52 S"
+                        },
+                        {
+                            "range": [160, 161],
+                            "name": "53 S"
+                        },
+                        {
+                            "range": [162, 164],
+                            "name": "54 S"
+                        },
+                        {
+                            "range": [165, 166],
+                            "name": "55 S"
+                        },
+                        {
+                            "range": [167, 169],
+                            "name": "56 S"
+                        },
+                        {
+                            "range": [170, 171],
+                            "name": "57 S"
+                        },
+                        {
+                            "range": [172, 174],
+                            "name": "58 S"
+                        },
+                        {
+                            "range": [175, 177],
+                            "name": "59 S"
+                        },
+                        {
+                            "range": [178, 179],
+                            "name": "60 S"
+                        },
+                        {
+                            "range": [180, 182],
+                            "name": "65 S"
+                        },
+                        {
+                            "range": [183, 184],
+                            "name": "70 S"
+                        },
+                        {
+                            "range": [185, 187],
+                            "name": "75 S"
+                        },
+                        {
+                            "range": [188, 189],
+                            "name": "80 S"
+                        },
+                        {
+                            "range": [190, 192],
+                            "name": "85 S"
+                        },
+                        {
+                            "range": [193, 194],
+                            "name": "90 S"
+                        },
+                        {
+                            "range": [195, 197],
+                            "name": "95 S"
+                        },
+                        {
+                            "range": [198, 199],
+                            "name": "100 S"
+                        },
+                        {
+                            "range": [200, 202],
+                            "name": "110 S"
+                        },
+                        {
+                            "range": [203, 205],
+                            "name": "120 S"
+                        },
+                        {
+                            "range": [206, 207],
+                            "name": "130 S"
+                        },
+                        {
+                            "range": [208, 210],
+                            "name": "140 S"
+                        },
+                        {
+                            "range": [211, 212],
+                            "name": "150 S"
+                        },
+                        {
+                            "range": [213, 215],
+                            "name": "160 S"
+                        },
+                        {
+                            "range": [216, 217],
+                            "name": "170 S"
+                        },
+                        {
+                            "range": [218, 220],
+                            "name": "180 S"
+                        },
+                        {
+                            "range": [221, 222],
+                            "name": "190 S"
+                        },
+                        {
+                            "range": [223, 224],
+                            "name": "200 S"
+                        },
+                        {
+                            "range": [226, 228],
+                            "name": "210 S"
+                        },
+                        {
+                            "range": [229, 230],
+                            "name": "220 S"
+                        },
+                        {
+                            "range": [231, 233],
+                            "name": "230 S"
+                        },
+                        {
+                            "range": [234, 235],
+                            "name": "240 S"
+                        },
+                        {
+                            "range": [236, 238],
+                            "name": "250 S"
+                        },
+                        {
+                            "range": [239, 240],
+                            "name": "260 S"
+                        },
+                        {
+                            "range": [241, 243],
+                            "name": "270 S"
+                        },
+                        {
+                            "range": [244, 245],
+                            "name": "280 S"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "290 S"
+                        },
+                        {
+                            "range": [249, 250],
+                            "name": "300 S"
+                        },
+                        {
+                            "range": [251, 254],
+                            "name": "310 S"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Follows Cue Data"
+                        }
+                    ]
+                },
+                "Beam Time": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [255, 255],
+                            "name": "Follows Cue Data"
+                        },
+                        {
+                            "range": [0, 0],
+                            "name": "Full Speed"
+                        },
+                        {
+                            "range": [1, 1],
+                            "name": "0.2 S"
+                        },
+                        {
+                            "range": [2, 2],
+                            "name": "0.4 S"
+                        },
+                        {
+                            "range": [3, 3],
+                            "name": "0.6 S"
+                        },
+                        {
+                            "range": [4, 4],
+                            "name": "0.8 S"
+                        },
+                        {
+                            "range": [5, 5],
+                            "name": "1 S"
+                        },
+                        {
+                            "range": [6, 6],
+                            "name": "1.2 S"
+                        },
+                        {
+                            "range": [7, 7],
+                            "name": "1.4 S"
+                        },
+                        {
+                            "range": [8, 8],
+                            "name": "1.6 S"
+                        },
+                        {
+                            "range": [9, 9],
+                            "name": "1.8 S"
+                        },
+                        {
+                            "range": [10, 10],
+                            "name": "2 S"
+                        },
+                        {
+                            "range": [11, 11],
+                            "name": "2.2 S"
+                        },
+                        {
+                            "range": [12, 12],
+                            "name": "2.4 S"
+                        },
+                        {
+                            "range": [13, 13],
+                            "name": "2.6 S"
+                        },
+                        {
+                            "range": [14, 14],
+                            "name": "2.8 S"
+                        },
+                        {
+                            "range": [15, 15],
+                            "name": "3 S"
+                        },
+                        {
+                            "range": [16, 16],
+                            "name": "3.2 S"
+                        },
+                        {
+                            "range": [17, 17],
+                            "name": "3.4 S"
+                        },
+                        {
+                            "range": [18, 18],
+                            "name": "3.6 S"
+                        },
+                        {
+                            "range": [19, 19],
+                            "name": "3.8 S"
+                        },
+                        {
+                            "range": [20, 20],
+                            "name": "4 S"
+                        },
+                        {
+                            "range": [21, 21],
+                            "name": "4.2 S"
+                        },
+                        {
+                            "range": [22, 22],
+                            "name": "4.4 S"
+                        },
+                        {
+                            "range": [23, 23],
+                            "name": "4.6 S"
+                        },
+                        {
+                            "range": [24, 24],
+                            "name": "4.8 S"
+                        },
+                        {
+                            "range": [25, 25],
+                            "name": "5 S"
+                        },
+                        {
+                            "range": [26, 26],
+                            "name": "5.2 S"
+                        },
+                        {
+                            "range": [27, 27],
+                            "name": "5.4 S"
+                        },
+                        {
+                            "range": [28, 28],
+                            "name": "5.6 S"
+                        },
+                        {
+                            "range": [29, 29],
+                            "name": "5.8 S"
+                        },
+                        {
+                            "range": [30, 30],
+                            "name": "6 S"
+                        },
+                        {
+                            "range": [31, 31],
+                            "name": "6.2 S"
+                        },
+                        {
+                            "range": [32, 32],
+                            "name": "6.4 S"
+                        },
+                        {
+                            "range": [33, 33],
+                            "name": "6.6 S"
+                        },
+                        {
+                            "range": [34, 34],
+                            "name": "6.8 S"
+                        },
+                        {
+                            "range": [35, 35],
+                            "name": "7 S"
+                        },
+                        {
+                            "range": [36, 36],
+                            "name": "7.2 S"
+                        },
+                        {
+                            "range": [37, 37],
+                            "name": "7.4 S"
+                        },
+                        {
+                            "range": [38, 38],
+                            "name": "7.6 S"
+                        },
+                        {
+                            "range": [39, 39],
+                            "name": "7.8 S"
+                        },
+                        {
+                            "range": [40, 40],
+                            "name": "8 S"
+                        },
+                        {
+                            "range": [41, 41],
+                            "name": "8.2 S"
+                        },
+                        {
+                            "range": [42, 42],
+                            "name": "8.4 S"
+                        },
+                        {
+                            "range": [43, 43],
+                            "name": "8.6 S"
+                        },
+                        {
+                            "range": [44, 44],
+                            "name": "8.8 S"
+                        },
+                        {
+                            "range": [45, 45],
+                            "name": "9 S"
+                        },
+                        {
+                            "range": [46, 46],
+                            "name": "9.2 S"
+                        },
+                        {
+                            "range": [47, 47],
+                            "name": "9.4 S"
+                        },
+                        {
+                            "range": [48, 48],
+                            "name": "9.6 S"
+                        },
+                        {
+                            "range": [49, 49],
+                            "name": "9.8 S"
+                        },
+                        {
+                            "range": [50, 50],
+                            "name": "10 S"
+                        },
+                        {
+                            "range": [51, 51],
+                            "name": "10.2 S"
+                        },
+                        {
+                            "range": [52, 52],
+                            "name": "10.4 S"
+                        },
+                        {
+                            "range": [53, 53],
+                            "name": "10.6 S"
+                        },
+                        {
+                            "range": [54, 55],
+                            "name": "11 S"
+                        },
+                        {
+                            "range": [56, 57],
+                            "name": "12 S"
+                        },
+                        {
+                            "range": [58, 59],
+                            "name": "13 S"
+                        },
+                        {
+                            "range": [60, 62],
+                            "name": "14 S"
+                        },
+                        {
+                            "range": [63, 64],
+                            "name": "15 S"
+                        },
+                        {
+                            "range": [65, 67],
+                            "name": "16 S"
+                        },
+                        {
+                            "range": [68, 69],
+                            "name": "17 S"
+                        },
+                        {
+                            "range": [70, 72],
+                            "name": "18 S"
+                        },
+                        {
+                            "range": [73, 74],
+                            "name": "19 S"
+                        },
+                        {
+                            "range": [75, 77],
+                            "name": "20 S"
+                        },
+                        {
+                            "range": [78, 80],
+                            "name": "21 S"
+                        },
+                        {
+                            "range": [81, 82],
+                            "name": "22 S"
+                        },
+                        {
+                            "range": [83, 85],
+                            "name": "23 S"
+                        },
+                        {
+                            "range": [86, 87],
+                            "name": "24 S"
+                        },
+                        {
+                            "range": [88, 90],
+                            "name": "25 S"
+                        },
+                        {
+                            "range": [91, 92],
+                            "name": "26 S"
+                        },
+                        {
+                            "range": [93, 95],
+                            "name": "27 S"
+                        },
+                        {
+                            "range": [96, 97],
+                            "name": "28 S"
+                        },
+                        {
+                            "range": [98, 100],
+                            "name": "29 S"
+                        },
+                        {
+                            "range": [101, 103],
+                            "name": "30 S"
+                        },
+                        {
+                            "range": [104, 105],
+                            "name": "31 S"
+                        },
+                        {
+                            "range": [106, 108],
+                            "name": "32 S"
+                        },
+                        {
+                            "range": [109, 110],
+                            "name": "33 S"
+                        },
+                        {
+                            "range": [111, 113],
+                            "name": "34 S"
+                        },
+                        {
+                            "range": [114, 115],
+                            "name": "35 S"
+                        },
+                        {
+                            "range": [116, 118],
+                            "name": "36 S"
+                        },
+                        {
+                            "range": [121, 123],
+                            "name": "38 S"
+                        },
+                        {
+                            "range": [119, 120],
+                            "name": "37 S"
+                        },
+                        {
+                            "range": [124, 126],
+                            "name": "39 S"
+                        },
+                        {
+                            "range": [127, 128],
+                            "name": "40 S"
+                        },
+                        {
+                            "range": [129, 131],
+                            "name": "41 S"
+                        },
+                        {
+                            "range": [132, 133],
+                            "name": "42 S"
+                        },
+                        {
+                            "range": [134, 136],
+                            "name": "43 S"
+                        },
+                        {
+                            "range": [137, 138],
+                            "name": "44 S"
+                        },
+                        {
+                            "range": [139, 141],
+                            "name": "45 S"
+                        },
+                        {
+                            "range": [142, 143],
+                            "name": "46 S"
+                        },
+                        {
+                            "range": [144, 146],
+                            "name": "47 S"
+                        },
+                        {
+                            "range": [147, 148],
+                            "name": "48 S"
+                        },
+                        {
+                            "range": [149, 151],
+                            "name": "49 S"
+                        },
+                        {
+                            "range": [152, 154],
+                            "name": "50 S"
+                        },
+                        {
+                            "range": [155, 156],
+                            "name": "51 S"
+                        },
+                        {
+                            "range": [157, 158],
+                            "name": "52 S"
+                        },
+                        {
+                            "range": [160, 161],
+                            "name": "53 S"
+                        },
+                        {
+                            "range": [162, 164],
+                            "name": "54 S"
+                        },
+                        {
+                            "range": [165, 166],
+                            "name": "55 S"
+                        },
+                        {
+                            "range": [167, 169],
+                            "name": "56 S"
+                        },
+                        {
+                            "range": [170, 171],
+                            "name": "57 S"
+                        },
+                        {
+                            "range": [172, 174],
+                            "name": "58 S"
+                        },
+                        {
+                            "range": [175, 177],
+                            "name": "59 S"
+                        },
+                        {
+                            "range": [178, 179],
+                            "name": "60 S"
+                        },
+                        {
+                            "range": [180, 182],
+                            "name": "65 S"
+                        },
+                        {
+                            "range": [183, 184],
+                            "name": "70 S"
+                        },
+                        {
+                            "range": [185, 187],
+                            "name": "75 S"
+                        },
+                        {
+                            "range": [188, 189],
+                            "name": "80 S"
+                        },
+                        {
+                            "range": [190, 192],
+                            "name": "85 S"
+                        },
+                        {
+                            "range": [193, 194],
+                            "name": "90 S"
+                        },
+                        {
+                            "range": [195, 197],
+                            "name": "95 S"
+                        },
+                        {
+                            "range": [198, 199],
+                            "name": "100 S"
+                        },
+                        {
+                            "range": [200, 202],
+                            "name": "110 S"
+                        },
+                        {
+                            "range": [203, 205],
+                            "name": "120 S"
+                        },
+                        {
+                            "range": [206, 207],
+                            "name": "130 S"
+                        },
+                        {
+                            "range": [208, 210],
+                            "name": "140 S"
+                        },
+                        {
+                            "range": [211, 212],
+                            "name": "150 S"
+                        },
+                        {
+                            "range": [213, 215],
+                            "name": "160 S"
+                        },
+                        {
+                            "range": [216, 217],
+                            "name": "170 S"
+                        },
+                        {
+                            "range": [218, 220],
+                            "name": "180 S"
+                        },
+                        {
+                            "range": [221, 222],
+                            "name": "190 S"
+                        },
+                        {
+                            "range": [223, 224],
+                            "name": "200 S"
+                        },
+                        {
+                            "range": [226, 228],
+                            "name": "210 S"
+                        },
+                        {
+                            "range": [229, 230],
+                            "name": "220 S"
+                        },
+                        {
+                            "range": [231, 233],
+                            "name": "230 S"
+                        },
+                        {
+                            "range": [234, 235],
+                            "name": "240 S"
+                        },
+                        {
+                            "range": [236, 238],
+                            "name": "250 S"
+                        },
+                        {
+                            "range": [239, 240],
+                            "name": "260 S"
+                        },
+                        {
+                            "range": [241, 243],
+                            "name": "270 S"
+                        },
+                        {
+                            "range": [244, 245],
+                            "name": "280 S"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "290 S"
+                        },
+                        {
+                            "range": [249, 250],
+                            "name": "300 S"
+                        },
+                        {
+                            "range": [251, 254],
+                            "name": "310 S"
+                        }
+                    ]
+                },
+                "Control": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 80],
+                            "name": "Nothing"
+                        },
+                        {
+                            "range": [81, 87],
+                            "name": "Luminaire Reset"
+                        },
+                        {
+                            "range": [100, 104],
+                            "name": "Recalibration Color"
+                        },
+                        {
+                            "range": [112, 116],
+                            "name": "Recalibration Gobo"
+                        },
+                        {
+                            "range": [126, 130],
+                            "name": "Recalibration Edge/Zoom/Iris"
+                        },
+                        {
+                            "range": [138, 142],
+                            "name": "Recalibration Dimmer/Strobe"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Standard",
+                    "channels": [
+                        "Intensity",
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Edge",
+                        "CTO Mixer",
+                        "Blue Mixer",
+                        "Amber Mixer",
+                        "Magenta Mixer",
+                        "Color Wheel",
+                        "Strobe",
+                        "Focus Time",
+                        "Color Time",
+                        "Beam Time",
+                        "Control"
+                    ]
+                }
+            ]
+        }
+    ]
+}

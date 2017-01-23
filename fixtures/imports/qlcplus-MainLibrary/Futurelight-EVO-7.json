@@ -1,0 +1,179 @@
+{
+    "manufacturers": {
+        "Futurelight": {
+            "name": "Futurelight"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Futurelight",
+            "name": "EVO-7",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [300, 290, 360],
+                "weight": 10,
+                "power": 375,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "HSD 250W"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Color/gobo indexing"
+                        },
+                        {
+                            "range": [128, 187],
+                            "name": "Rainbow forward slow to fast"
+                        },
+                        {
+                            "range": [188, 193],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Rainbow backward slow to fast"
+                        }
+                    ]
+                },
+                "Prism rotation": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [8, 127],
+                            "name": "Forward speed"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [136, 255],
+                            "name": "Backward speed"
+                        }
+                    ]
+                },
+                "Shutter, strobe": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [4, 7],
+                            "name": "Shutter closed, reset"
+                        },
+                        {
+                            "range": [8, 31],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Dimmer"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe speed"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse sequence"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random strobe speed"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Shutter open"
+                        }
+                    ]
+                },
+                "Auto program": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 23],
+                            "name": "Normal"
+                        },
+                        {
+                            "range": [24, 47],
+                            "name": "Program 1"
+                        },
+                        {
+                            "range": [48, 71],
+                            "name": "Program 2"
+                        },
+                        {
+                            "range": [72, 95],
+                            "name": "Program 3"
+                        },
+                        {
+                            "range": [96, 119],
+                            "name": "Program 4"
+                        },
+                        {
+                            "range": [120, 143],
+                            "name": "Program 5"
+                        },
+                        {
+                            "range": [144, 167],
+                            "name": "Program 6"
+                        },
+                        {
+                            "range": [168, 191],
+                            "name": "Program 7"
+                        },
+                        {
+                            "range": [192, 215],
+                            "name": "Program 8"
+                        },
+                        {
+                            "range": [216, 239],
+                            "name": "Program 9"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Program 10"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Colour",
+                        "Prism rotation",
+                        "Shutter, strobe",
+                        "Auto program"
+                    ]
+                }
+            ]
+        }
+    ]
+}

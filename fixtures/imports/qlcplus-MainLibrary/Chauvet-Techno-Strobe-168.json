@@ -1,0 +1,72 @@
+{
+    "manufacturers": {
+        "Chauvet": {
+            "name": "Chauvet"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Chauvet",
+            "name": "Techno Strobe 168",
+            "type": "Strobe",
+            "physical": {
+                "dimensions": [238, 220, 140],
+                "weight": 1,
+                "power": 28,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 500
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Control Functions": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [6, 240],
+                            "name": "Strobe speed, slow to fast"
+                        },
+                        {
+                            "range": [241, 250],
+                            "name": "Full On (all LEDs on)"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Sound-Active mode"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "2-Channel Mode",
+                    "channels": [
+                        "Control Functions",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

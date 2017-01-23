@@ -1,0 +1,249 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "LED BAR 252 RGB (no. 234564)",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [1100, 161, 114],
+                "weight": 4.5,
+                "power": 30,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "colorTemperature": 4500
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [20, 20]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Mode 1": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 40],
+                            "name": "Black out",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [41, 80],
+                            "name": "Dimmer 1 (RGB mix, seperated segments)"
+                        },
+                        {
+                            "range": [81, 120],
+                            "name": "Dimmer 2 (RGB mix, all segments)"
+                        },
+                        {
+                            "range": [161, 200],
+                            "name": "Color change"
+                        },
+                        {
+                            "range": [201, 240],
+                            "name": "Color flow"
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "Dream flow"
+                        }
+                    ]
+                },
+                "Shutter / Speed": {
+                    "type": "SingleColor",
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [41, 160],
+                            "name": "Shutter"
+                        },
+                        {
+                            "range": [161, 255],
+                            "name": "Speed"
+                        }
+                    ]
+                },
+                "Red1 / All Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red1 / All Red"
+                        }
+                    ]
+                },
+                "Green1 / All Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green 1 / All Green"
+                        }
+                    ]
+                },
+                "Blue 1 / All Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue 1 / All Blue"
+                        }
+                    ]
+                },
+                "Red 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red 2"
+                        }
+                    ]
+                },
+                "Green 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green 2"
+                        }
+                    ]
+                },
+                "Blue 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue 2"
+                        }
+                    ]
+                },
+                "Red 3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red 3"
+                        }
+                    ]
+                },
+                "Green 3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green 3"
+                        }
+                    ]
+                },
+                "Blue 3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue 3"
+                        }
+                    ]
+                },
+                "Mode 2": {
+                    "type": "SingleColor",
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 40],
+                            "name": "Black out",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [81, 120],
+                            "name": "Dimmer 2 (RGB mix, all segments)"
+                        },
+                        {
+                            "range": [161, 200],
+                            "name": "Color change"
+                        },
+                        {
+                            "range": [201, 240],
+                            "name": "Color flow"
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "Dream flow"
+                        }
+                    ]
+                }
+            },
+            "heads": {
+                "Mode 1-head0": [
+                    "Red1 / All Red",
+                    "Green1 / All Green",
+                    "Blue 1 / All Blue"
+                ],
+                "Mode 1-head1": [
+                    "Red 2",
+                    "Green 2",
+                    "Blue 2"
+                ],
+                "Mode 1-head2": [
+                    "Red 3",
+                    "Green 3",
+                    "Blue 3"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Mode 1",
+                        "Shutter / Speed",
+                        "Red1 / All Red",
+                        "Green1 / All Green",
+                        "Blue 1 / All Blue",
+                        "Red 2",
+                        "Green 2",
+                        "Blue 2",
+                        "Red 3",
+                        "Green 3",
+                        "Blue 3"
+                    ]
+                },
+                {
+                    "name": "Mode 2",
+                    "channels": [
+                        "Mode 2",
+                        "Shutter / Speed",
+                        "Red1 / All Red",
+                        "Green1 / All Green",
+                        "Blue 1 / All Blue"
+                    ]
+                }
+            ]
+        }
+    ]
+}

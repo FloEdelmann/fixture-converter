@@ -1,0 +1,279 @@
+{
+    "manufacturers": {
+        "Laserworld": {
+            "name": "Laserworld"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Laserworld",
+            "name": "RS400G",
+            "type": "Laser",
+            "physical": {
+                "dimensions": [550, 310, 320],
+                "weight": 15,
+                "power": 120,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "Laser"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [40, 60]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Control": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Auto-music mode (ch 1 & 2 valid)"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Auto-mode (ch 1 & 2 valid)"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Music-edit mode (all channels valid)"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Manual mode (all channels valid)"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "No beam"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Single colour: Strobe, Multicolour: Colours"
+                        },
+                        {
+                            "range": [128, 192],
+                            "name": "Single colour: Fluxion blanking, Multicolour: Colour change"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "On"
+                        }
+                    ]
+                },
+                "Pattern group": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 42],
+                            "name": "Pattern group 1"
+                        },
+                        {
+                            "range": [43, 85],
+                            "name": "Pattern group 2"
+                        },
+                        {
+                            "range": [86, 128],
+                            "name": "Pattern group 3"
+                        },
+                        {
+                            "range": [129, 171],
+                            "name": "Pattern group 4"
+                        },
+                        {
+                            "range": [172, 214],
+                            "name": "Pattern group 5"
+                        },
+                        {
+                            "range": [215, 255],
+                            "name": "Pattern group 6"
+                        }
+                    ]
+                },
+                "Pattern": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "32 patterns"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow to fast"
+                        }
+                    ]
+                },
+                "Rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Rotate horizontally"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Rotate vertically"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Rotate h. & v."
+                        }
+                    ]
+                },
+                "Dot rotation": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Rotating"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Rotating & dotting"
+                        }
+                    ]
+                },
+                "Move": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Move horizontally"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Move vertically"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Move h. & v."
+                        }
+                    ]
+                },
+                "Extend": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Extend horizontally"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Extend vertically"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Extend h. & v."
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 85],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [86, 169],
+                            "name": "Small to large"
+                        },
+                        {
+                            "range": [170, 255],
+                            "name": "Large to small"
+                        }
+                    ]
+                },
+                "Drawing Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow to fast"
+                        }
+                    ]
+                },
+                "Scan speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow to fast"
+                        }
+                    ]
+                },
+                "Colour Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow to fast"
+                        }
+                    ]
+                },
+                "Size": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Original size"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Small to large (120 = original)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Laserworld RS400G",
+                    "channels": [
+                        "Control",
+                        "Colour",
+                        "Pattern group",
+                        "Pattern",
+                        "Speed",
+                        "Rotation",
+                        "Dot rotation",
+                        "Move",
+                        "Extend",
+                        "Zoom",
+                        "Drawing Speed",
+                        "Scan speed",
+                        "Colour Speed",
+                        "Size"
+                    ]
+                }
+            ]
+        }
+    ]
+}

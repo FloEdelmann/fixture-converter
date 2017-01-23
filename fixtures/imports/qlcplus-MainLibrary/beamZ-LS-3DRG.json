@@ -1,0 +1,244 @@
+{
+    "manufacturers": {
+        "beamZ": {
+            "name": "beamZ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "beamZ",
+            "name": "LS-3DRG",
+            "type": "Laser",
+            "physical": {
+                "dimensions": [290, 200, 370],
+                "weight": 4,
+                "power": 40,
+                "DMXconnector": "3-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Mode Select": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 103],
+                            "name": "Sound Active Mode"
+                        },
+                        {
+                            "range": [104, 155],
+                            "name": "Auto-Animation Mode"
+                        },
+                        {
+                            "range": [156, 255],
+                            "name": "Static Patterns (selection with CH3)"
+                        }
+                    ]
+                },
+                "Color Select": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Laser OFF"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Color selection"
+                        }
+                    ]
+                },
+                "Pattern select": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Selecting patters"
+                        }
+                    ]
+                },
+                "Y axis moving": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Manual up to down moving"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Auto down moving (under dunamic pattern)"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Auto up moving (under dynamic pattern)"
+                        }
+                    ]
+                },
+                "X axis moving": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Manual left to right moving"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Auto right moving (under dynamic pattern)"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Auto left moving (under dynamic pattern)"
+                        }
+                    ]
+                },
+                "X axis rolling": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Manual rolling"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Auto rolling (under dynamic pattern)"
+                        }
+                    ]
+                },
+                "Y axis rolling": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Manual rolling"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Auto rolling (under dynamic pattern)"
+                        }
+                    ]
+                },
+                "Rotation": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Manual rotation"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Auto clockwise rotation (under dynamic pattern)"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Auto counter-clockwise rotation (under dynamic pattern)"
+                        }
+                    ]
+                },
+                "Zooming": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 85],
+                            "name": "Auto zooming (+)"
+                        },
+                        {
+                            "range": [86, 170],
+                            "name": "Auto zooming (-)"
+                        },
+                        {
+                            "range": [171, 255],
+                            "name": "Manual zooming (+/-)"
+                        }
+                    ]
+                },
+                "Pattern Size": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Normal size"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "1 is smallest, 255 is biggest"
+                        }
+                    ]
+                },
+                "Display dot": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Normal display"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "display dot, 255 is best brightness"
+                        }
+                    ]
+                },
+                "Drawing": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "No drawing"
+                        },
+                        {
+                            "range": [6, 127],
+                            "name": "Auto drawing mode 1 (under dynamic pattern)"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Auto drawing mode 2 (under dynamic pattern)"
+                        }
+                    ]
+                },
+                "Stretch": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "X/Y/Z stretch"
+                        }
+                    ]
+                },
+                "Shake Effect": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Combination with channel 13"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Mode Select",
+                        "Color Select",
+                        "Pattern select",
+                        "Y axis moving",
+                        "X axis moving",
+                        "X axis rolling",
+                        "Y axis rolling",
+                        "Rotation",
+                        "Zooming",
+                        "Pattern Size",
+                        "Display dot",
+                        "Drawing",
+                        "Stretch",
+                        "Shake Effect"
+                    ]
+                }
+            ]
+        }
+    ]
+}

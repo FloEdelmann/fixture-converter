@@ -1,0 +1,871 @@
+{
+    "manufacturers": {
+        "PR Lighting": {
+            "name": "PR Lighting"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "PR Lighting",
+            "name": "Pilot 575",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [510, 730, 500],
+                "weight": 39,
+                "power": 780,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "MSR 575W",
+                    "colorTemperature": 7200
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [0, 22]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [10, 20],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [21, 34],
+                            "name": "1"
+                        },
+                        {
+                            "range": [35, 48],
+                            "name": "2"
+                        },
+                        {
+                            "range": [49, 62],
+                            "name": "3"
+                        },
+                        {
+                            "range": [63, 76],
+                            "name": "4"
+                        },
+                        {
+                            "range": [77, 90],
+                            "name": "5"
+                        },
+                        {
+                            "range": [91, 104],
+                            "name": "6"
+                        },
+                        {
+                            "range": [105, 118],
+                            "name": "7"
+                        },
+                        {
+                            "range": [119, 132],
+                            "name": "8"
+                        },
+                        {
+                            "range": [133, 146],
+                            "name": "9"
+                        },
+                        {
+                            "range": [147, 160],
+                            "name": "10"
+                        },
+                        {
+                            "range": [161, 174],
+                            "name": "11"
+                        },
+                        {
+                            "range": [175, 188],
+                            "name": "12"
+                        },
+                        {
+                            "range": [189, 202],
+                            "name": "13"
+                        },
+                        {
+                            "range": [203, 216],
+                            "name": "14"
+                        },
+                        {
+                            "range": [217, 230],
+                            "name": "15"
+                        },
+                        {
+                            "range": [231, 244],
+                            "name": "16"
+                        },
+                        {
+                            "range": [245, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear adjust from open to closed"
+                        }
+                    ]
+                },
+                "Fixed Gobos": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "Clear"
+                        },
+                        {
+                            "range": [21, 40],
+                            "name": "1"
+                        },
+                        {
+                            "range": [41, 60],
+                            "name": "2"
+                        },
+                        {
+                            "range": [61, 80],
+                            "name": "3"
+                        },
+                        {
+                            "range": [81, 100],
+                            "name": "4"
+                        },
+                        {
+                            "range": [101, 120],
+                            "name": "5"
+                        },
+                        {
+                            "range": [121, 140],
+                            "name": "6"
+                        },
+                        {
+                            "range": [141, 160],
+                            "name": "7"
+                        },
+                        {
+                            "range": [161, 167],
+                            "name": "Clockwise rotation in speed 1 (slowest)"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "Clockwise rotation in speed 2"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "Clockwise rotation in speed 3"
+                        },
+                        {
+                            "range": [184, 191],
+                            "name": "Clockwise rotation in speed 4 (fastest)"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Stop rotating"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Anti-clockwise rotation in speed (slowest)"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Anti-clockwise rotation in speed 2"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Anti-clockwise rotation in speed 3"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Anti-clockwise rotation in speed 4 (fastest)"
+                        }
+                    ]
+                },
+                "Pan rotation": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "From 0 to 540°"
+                        }
+                    ]
+                },
+                "Tilt rotation": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "From 0 to 270°"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Linear adjust iris from near to far"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 50],
+                            "name": "Clear"
+                        },
+                        {
+                            "range": [51, 101],
+                            "name": "Angle 1 (wide)"
+                        },
+                        {
+                            "range": [102, 152],
+                            "name": "Angle 2 (narrow)"
+                        },
+                        {
+                            "range": [153, 203],
+                            "name": "CTB"
+                        },
+                        {
+                            "range": [204, 255],
+                            "name": "CTO"
+                        }
+                    ]
+                },
+                "Colour Wheel 1": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 16],
+                            "name": "White. Note: Stay 5 seconds while DMX value is 5, 6 or 7, the reset function is performed"
+                        },
+                        {
+                            "range": [17, 24],
+                            "name": "White/filter 1"
+                        },
+                        {
+                            "range": [25, 32],
+                            "name": "Filter 1"
+                        },
+                        {
+                            "range": [33, 40],
+                            "name": "Filter 1/filter 2"
+                        },
+                        {
+                            "range": [41, 48],
+                            "name": "Filter 2"
+                        },
+                        {
+                            "range": [49, 56],
+                            "name": "Filter 2/filter 3"
+                        },
+                        {
+                            "range": [57, 64],
+                            "name": "Filter 3"
+                        },
+                        {
+                            "range": [65, 72],
+                            "name": "Filter 3/filter 4"
+                        },
+                        {
+                            "range": [73, 80],
+                            "name": "Filter 4"
+                        },
+                        {
+                            "range": [81, 88],
+                            "name": "Filter 4/filter 5"
+                        },
+                        {
+                            "range": [89, 96],
+                            "name": "Filter 5"
+                        },
+                        {
+                            "range": [97, 104],
+                            "name": "Filter 5/filter 6"
+                        },
+                        {
+                            "range": [105, 112],
+                            "name": "Filter 6"
+                        },
+                        {
+                            "range": [113, 120],
+                            "name": "Filter 6/white"
+                        },
+                        {
+                            "range": [121, 127],
+                            "name": "White"
+                        },
+                        {
+                            "range": [128, 133],
+                            "name": "Clockwise rotation in speed 1"
+                        },
+                        {
+                            "range": [134, 139],
+                            "name": "Clockwise rotation in speed 2"
+                        },
+                        {
+                            "range": [140, 145],
+                            "name": "Clockwise rotation in speed 3"
+                        },
+                        {
+                            "range": [146, 151],
+                            "name": "Clockwise rotation in speed 4"
+                        },
+                        {
+                            "range": [152, 157],
+                            "name": "Clockwise rotation in speed 5"
+                        },
+                        {
+                            "range": [158, 163],
+                            "name": "Clockwise rotation in speed 6"
+                        },
+                        {
+                            "range": [164, 169],
+                            "name": "Clockwise rotation in speed 7"
+                        },
+                        {
+                            "range": [170, 175],
+                            "name": "Clockwise rotation in speed 8"
+                        },
+                        {
+                            "range": [176, 181],
+                            "name": "Clockwise rotation in speed 9"
+                        },
+                        {
+                            "range": [182, 187],
+                            "name": "Clockwise rotation in speed 10"
+                        },
+                        {
+                            "range": [188, 195],
+                            "name": "Stop rotating"
+                        },
+                        {
+                            "range": [196, 201],
+                            "name": "Anti-clockwise rotation in speed 1"
+                        },
+                        {
+                            "range": [202, 207],
+                            "name": "Anti-clockwise rotation in speed 2"
+                        },
+                        {
+                            "range": [208, 213],
+                            "name": "Anti-clockwise rotation in speed 3"
+                        },
+                        {
+                            "range": [214, 219],
+                            "name": "Anti-clockwise rotation in speed 4"
+                        },
+                        {
+                            "range": [220, 225],
+                            "name": "Anti-clockwise rotation in speed 5"
+                        },
+                        {
+                            "range": [226, 231],
+                            "name": "Anti-clockwise rotation in speed 6"
+                        },
+                        {
+                            "range": [232, 237],
+                            "name": "Anti-clockwise rotation in speed 7"
+                        },
+                        {
+                            "range": [238, 243],
+                            "name": "Anti-clockwise rotation in speed 8"
+                        },
+                        {
+                            "range": [244, 249],
+                            "name": "Anti-clockwise rotation in speed 9"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Anti-clockwise rotation in speed 10"
+                        }
+                    ]
+                },
+                "Colour Wheel 2": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 16],
+                            "name": "White. Note: Stay 5 seconds while DMX value is 5, 6 or 7, the reset function is performed"
+                        },
+                        {
+                            "range": [17, 24],
+                            "name": "White/filter 1"
+                        },
+                        {
+                            "range": [25, 32],
+                            "name": "Filter 1"
+                        },
+                        {
+                            "range": [33, 40],
+                            "name": "Filter 1/filter 2"
+                        },
+                        {
+                            "range": [41, 48],
+                            "name": "Filter 2"
+                        },
+                        {
+                            "range": [49, 56],
+                            "name": "Filter 2/filter 3"
+                        },
+                        {
+                            "range": [57, 64],
+                            "name": "Filter 3"
+                        },
+                        {
+                            "range": [65, 72],
+                            "name": "Filter 3/filter 4"
+                        },
+                        {
+                            "range": [73, 80],
+                            "name": "Filter 4"
+                        },
+                        {
+                            "range": [81, 88],
+                            "name": "Filter 4/filter 5"
+                        },
+                        {
+                            "range": [89, 96],
+                            "name": "Filter 5"
+                        },
+                        {
+                            "range": [97, 104],
+                            "name": "Filter 5/filter 6"
+                        },
+                        {
+                            "range": [105, 112],
+                            "name": "Filter 6"
+                        },
+                        {
+                            "range": [113, 120],
+                            "name": "Filter 6/white"
+                        },
+                        {
+                            "range": [121, 127],
+                            "name": "White"
+                        },
+                        {
+                            "range": [128, 133],
+                            "name": "Clockwise rotation in speed 1"
+                        },
+                        {
+                            "range": [134, 139],
+                            "name": "Clockwise rotation in speed 2"
+                        },
+                        {
+                            "range": [140, 145],
+                            "name": "Clockwise rotation in speed 3"
+                        },
+                        {
+                            "range": [146, 151],
+                            "name": "Clockwise rotation in speed 4"
+                        },
+                        {
+                            "range": [152, 157],
+                            "name": "Clockwise rotation in speed 5"
+                        },
+                        {
+                            "range": [158, 163],
+                            "name": "Clockwise rotation in speed 6"
+                        },
+                        {
+                            "range": [164, 169],
+                            "name": "Clockwise rotation in speed 7"
+                        },
+                        {
+                            "range": [170, 175],
+                            "name": "Clockwise rotation in speed 8"
+                        },
+                        {
+                            "range": [176, 181],
+                            "name": "Clockwise rotation in speed 9"
+                        },
+                        {
+                            "range": [182, 187],
+                            "name": "Clockwise rotation in speed 10"
+                        },
+                        {
+                            "range": [188, 195],
+                            "name": "Stop rotating"
+                        },
+                        {
+                            "range": [196, 201],
+                            "name": "Anti-clockwise rotation in speed 1"
+                        },
+                        {
+                            "range": [202, 207],
+                            "name": "Anti-clockwise rotation in speed 2"
+                        },
+                        {
+                            "range": [208, 213],
+                            "name": "Anti-clockwise rotation in speed 3"
+                        },
+                        {
+                            "range": [214, 219],
+                            "name": "Anti-clockwise rotation in speed 4"
+                        },
+                        {
+                            "range": [220, 225],
+                            "name": "Anti-clockwise rotation in speed 5"
+                        },
+                        {
+                            "range": [226, 231],
+                            "name": "Anti-clockwise rotation in speed 6"
+                        },
+                        {
+                            "range": [232, 237],
+                            "name": "Anti-clockwise rotation in speed 7"
+                        },
+                        {
+                            "range": [238, 243],
+                            "name": "Anti-clockwise rotation in speed 8"
+                        },
+                        {
+                            "range": [244, 249],
+                            "name": "Anti-clockwise rotation in speed 9"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Anti-clockwise rotation in speed 10"
+                        }
+                    ]
+                },
+                "Rotating Gobo Wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 43],
+                            "name": "Clear"
+                        },
+                        {
+                            "range": [44, 85],
+                            "name": "1"
+                        },
+                        {
+                            "range": [86, 128],
+                            "name": "2"
+                        },
+                        {
+                            "range": [129, 170],
+                            "name": "3"
+                        },
+                        {
+                            "range": [171, 212],
+                            "name": "4"
+                        },
+                        {
+                            "range": [213, 255],
+                            "name": "5"
+                        }
+                    ]
+                },
+                "Gobo Rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 120],
+                            "name": "0~540°"
+                        },
+                        {
+                            "range": [121, 127],
+                            "name": "Clockwise in speed 1"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Clockwise in speed 2"
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "Clockwise in speed 3"
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "Clockwise in speed 4"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Clockwise in speed 5"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Clockwise in speed 6"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "Clockwise in speed 7"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "Clockwise in speed 8"
+                        },
+                        {
+                            "range": [184, 191],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "Anti-clockwise in speed 8"
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "Anti-clockwise in speed 7"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Anti-clockwise in speed 6"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Anti-clockwise in speed 5"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Anti-clockwise in speed 4"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Anti-clockwise in speed 3"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Anti-clockwise in speed 2"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Anti-clockwise in speed 1"
+                        }
+                    ]
+                },
+                "Prism Rotation": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 120],
+                            "name": "0~540°"
+                        },
+                        {
+                            "range": [121, 127],
+                            "name": "Clockwise in speed 1"
+                        },
+                        {
+                            "range": [128, 135],
+                            "name": "Clockwise in speed 2"
+                        },
+                        {
+                            "range": [136, 143],
+                            "name": "Clockwise in speed 3"
+                        },
+                        {
+                            "range": [144, 151],
+                            "name": "Clockwise in speed 4"
+                        },
+                        {
+                            "range": [152, 159],
+                            "name": "Clockwise in speed 5"
+                        },
+                        {
+                            "range": [160, 167],
+                            "name": "Clockwise in speed 6"
+                        },
+                        {
+                            "range": [168, 175],
+                            "name": "Clockwise in speed 7"
+                        },
+                        {
+                            "range": [176, 183],
+                            "name": "Clockwise in speed 8"
+                        },
+                        {
+                            "range": [184, 191],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [192, 199],
+                            "name": "Anti-clockwise in speed 8"
+                        },
+                        {
+                            "range": [200, 207],
+                            "name": "Anti-clockwise in speed 7"
+                        },
+                        {
+                            "range": [208, 215],
+                            "name": "Anti-clockwise in speed 6"
+                        },
+                        {
+                            "range": [216, 223],
+                            "name": "Anti-clockwise in speed 5"
+                        },
+                        {
+                            "range": [224, 231],
+                            "name": "Anti-clockwise in speed 4"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Anti-clockwise in speed 3"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Anti-clockwise in speed 2"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Anti-clockwise in speed 1"
+                        }
+                    ]
+                },
+                "Pan & Tilt Speed (Extended Function)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Adjust"
+                        }
+                    ]
+                },
+                "Pan Fine (16-bit Extended Function)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Adjust"
+                        }
+                    ]
+                },
+                "Tilt Fine (16-bit Extended Function)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Adjust"
+                        }
+                    ]
+                },
+                "Gobo Rotation Fine (16-bit Extended Function)": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Adjust"
+                        }
+                    ]
+                },
+                "Control (When Extended functions are Invalid, Shift This Channel to 15th Channel.)": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 48],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [49, 80],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [81, 112],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [113, 144],
+                            "name": "Turn lamp Off (stay 10 seconds)"
+                        },
+                        {
+                            "range": [145, 223],
+                            "name": "Reserved"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Turn lamp on"
+                        }
+                    ]
+                },
+                "Prisms": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 51],
+                            "name": "Clear"
+                        },
+                        {
+                            "range": [52, 102],
+                            "name": "1"
+                        },
+                        {
+                            "range": [103, 153],
+                            "name": "2"
+                        },
+                        {
+                            "range": [154, 204],
+                            "name": "UV effect"
+                        },
+                        {
+                            "range": [205, 255],
+                            "name": "Frost"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan rotation",
+                    "Pan Fine (16-bit Extended Function)"
+                ],
+                [
+                    "Tilt rotation",
+                    "Tilt Fine (16-bit Extended Function)"
+                ],
+                [
+                    "Gobo Rotation",
+                    "Gobo Rotation Fine (16-bit Extended Function)"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "19 Channel",
+                    "channels": [
+                        "Strobe",
+                        "Dimmer",
+                        "Iris",
+                        "Fixed Gobos",
+                        "Pan rotation",
+                        "Tilt rotation",
+                        "Focus",
+                        "Zoom",
+                        "Colour Wheel 1",
+                        "Colour Wheel 2",
+                        "Rotating Gobo Wheel",
+                        "Gobo Rotation",
+                        "Prisms",
+                        "Prism Rotation",
+                        "Pan & Tilt Speed (Extended Function)",
+                        "Pan Fine (16-bit Extended Function)",
+                        "Tilt Fine (16-bit Extended Function)",
+                        "Gobo Rotation Fine (16-bit Extended Function)",
+                        "Control (When Extended functions are Invalid, Shift This Channel to 15th Channel.)"
+                    ]
+                }
+            ]
+        }
+    ]
+}

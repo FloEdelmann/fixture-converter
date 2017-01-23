@@ -1,0 +1,205 @@
+{
+    "manufacturers": {
+        "lightmaXX": {
+            "name": "lightmaXX"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "lightmaXX",
+            "name": "Platinum Line Mini TRI-PAR 7x3 Watt",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [170, 170, 160],
+                "weight": 2,
+                "power": 30,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Master": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue"
+                        }
+                    ]
+                },
+                "Macro": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Off",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [5, 9],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [10, 14],
+                            "name": "Light blue",
+                            "color": "#00d5ff"
+                        },
+                        {
+                            "range": [15, 19],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [20, 24],
+                            "name": "Purple",
+                            "color": "#a200ff"
+                        },
+                        {
+                            "range": [25, 29],
+                            "name": "Light pink",
+                            "color": "#ff5ae1"
+                        },
+                        {
+                            "range": [30, 34],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [35, 39],
+                            "name": "Pink",
+                            "color": "#ff009d"
+                        },
+                        {
+                            "range": [40, 44],
+                            "name": "Dark pink",
+                            "color": "#ff0073"
+                        },
+                        {
+                            "range": [45, 49],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [50, 54],
+                            "name": "Orange",
+                            "color": "#ff5d00"
+                        },
+                        {
+                            "range": [55, 59],
+                            "name": "Light orange",
+                            "color": "#ffcc00"
+                        },
+                        {
+                            "range": [60, 64],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [65, 69],
+                            "name": "Light green",
+                            "color": "#7bff00"
+                        },
+                        {
+                            "range": [70, 74],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [75, 79],
+                            "name": "Aquamarine",
+                            "color": "#00ffbf"
+                        },
+                        {
+                            "range": [80, 84],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [85, 169],
+                            "name": "7-color jump from slow to fast"
+                        },
+                        {
+                            "range": [170, 255],
+                            "name": "Color fade from slow to fast"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobe from slow to fast"
+                        }
+                    ]
+                }
+            },
+            "heads": {
+                "6 channel mode-head0": [
+                    "Master",
+                    "Red",
+                    "Green",
+                    "Blue",
+                    "Macro",
+                    "Strobe"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "6 channel mode",
+                    "channels": [
+                        "Master",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Macro",
+                        "Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}

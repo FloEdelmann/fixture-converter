@@ -1,0 +1,153 @@
+{
+    "manufacturers": {
+        "Elation": {
+            "name": "Elation"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Elation",
+            "name": "EVC MH",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [207, 209, 246],
+                "weight": 3.8,
+                "power": 36,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [60, 60]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan Coarse": {
+                    "type": "Pan"
+                },
+                "Pan Fine": {
+                    "type": "Pan"
+                },
+                "Tilt Coarse": {
+                    "type": "Tilt"
+                },
+                "Tilt Fine": {
+                    "type": "Tilt"
+                },
+                "Pan / Tilt Speed": {
+                    "type": "Speed"
+                },
+                "Warm White LED": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White"
+                },
+                "Cool White LED": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White"
+                },
+                "Zoom": {
+                    "type": "Effect"
+                },
+                "Focus Coarse": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Auto Focus"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Near - Far"
+                        }
+                    ]
+                },
+                "Focus Fine": {
+                    "type": "Effect"
+                },
+                "Function": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 69],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Enable Blackout while moving"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Disable Blackout while moving"
+                        },
+                        {
+                            "range": [90, 199],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Reset All"
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "No Function"
+                        }
+                    ]
+                },
+                "LED Color Temperature": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "OFF"
+                        },
+                        {
+                            "range": [8, 255],
+                            "name": "Warm - Cool"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan Coarse",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt Coarse",
+                    "Tilt Fine"
+                ],
+                [
+                    "Focus Coarse",
+                    "Focus Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "12-CH",
+                    "channels": [
+                        "Pan Coarse",
+                        "Pan Fine",
+                        "Tilt Coarse",
+                        "Tilt Fine",
+                        "Pan / Tilt Speed",
+                        "LED Color Temperature",
+                        "Warm White LED",
+                        "Cool White LED",
+                        "Zoom",
+                        "Focus Coarse",
+                        "Focus Fine",
+                        "Function"
+                    ]
+                }
+            ]
+        }
+    ]
+}

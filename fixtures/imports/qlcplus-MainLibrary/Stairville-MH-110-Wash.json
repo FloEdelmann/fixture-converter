@@ -1,0 +1,274 @@
+{
+    "manufacturers": {
+        "Stairville": {
+            "name": "Stairville"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stairville",
+            "name": "MH-110 Wash",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [260, 310, 148],
+                "weight": 4.5,
+                "power": 100,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [15, 15]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 630,
+                    "tiltMax": 220
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Min < Max"
+                        }
+                    ]
+                },
+                "Pan / Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast to slow\r"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 < 100%"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 < 100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 < 100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 < 100%"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 < 100%"
+                        }
+                    ]
+                },
+                "CTO": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 35],
+                            "name": "Blackout, all LEDs off"
+                        },
+                        {
+                            "range": [36, 55],
+                            "name": "3200K"
+                        },
+                        {
+                            "range": [56, 75],
+                            "name": "3400K"
+                        },
+                        {
+                            "range": [76, 95],
+                            "name": "4200K"
+                        },
+                        {
+                            "range": [96, 115],
+                            "name": "4900K"
+                        },
+                        {
+                            "range": [116, 135],
+                            "name": "5600K"
+                        },
+                        {
+                            "range": [136, 175],
+                            "name": "6500K"
+                        },
+                        {
+                            "range": [176, 195],
+                            "name": "7200K"
+                        },
+                        {
+                            "range": [196, 215],
+                            "name": "8000K"
+                        },
+                        {
+                            "range": [216, 235],
+                            "name": "8500K"
+                        },
+                        {
+                            "range": [236, 255],
+                            "name": "10000K"
+                        }
+                    ]
+                },
+                "Colour Macro": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "Blackout, all LEDs off"
+                        },
+                        {
+                            "range": [15, 255],
+                            "name": "One of 28 preprogrammed colours"
+                        }
+                    ]
+                },
+                "Strobe effect": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [10, 140],
+                            "name": "Strobe, Increasing speed\r"
+                        },
+                        {
+                            "range": [141, 255],
+                            "name": "Strobe, Random speed"
+                        }
+                    ]
+                },
+                "Special functions": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 99],
+                            "name": "Without function\r"
+                        },
+                        {
+                            "range": [100, 199],
+                            "name": "Automatic sound"
+                        },
+                        {
+                            "range": [200, 255],
+                            "name": "Reset"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Standard",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Pan / Tilt Speed",
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "CTO",
+                        "Colour Macro",
+                        "Strobe effect",
+                        "Special functions"
+                    ]
+                },
+                {
+                    "name": "9 Channels",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Pan / Tilt Speed",
+                        "Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Strobe effect"
+                    ]
+                }
+            ]
+        }
+    ]
+}

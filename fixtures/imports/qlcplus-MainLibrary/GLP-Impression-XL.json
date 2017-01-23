@@ -1,0 +1,474 @@
+{
+    "manufacturers": {
+        "GLP": {
+            "name": "GLP"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "GLP",
+            "name": "Impression XL",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [340, 145, 370],
+                "weight": 8,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [10, 25]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 660,
+                    "tiltMax": 300
+                }
+            },
+            "availableChannels": {
+                "Pan coarse": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan coarse"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt coarse": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt coarse"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "RGB mix"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Amber"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Warm yellow"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Yellow"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Turquoise"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Cyan"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Blue"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Lavender"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Mauve"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Magenta"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Pink"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "White CTO 3200K"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "White 5600K"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "White CTB 7200K"
+                        },
+                        {
+                            "range": [128, 223],
+                            "name": "Rainbow slow to fast"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Random rainbow slow to fast"
+                        }
+                    ]
+                },
+                "Red coarse": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red mix"
+                        }
+                    ]
+                },
+                "Red fine": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red fine mix"
+                        }
+                    ]
+                },
+                "Green coarse": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green mix"
+                        }
+                    ]
+                },
+                "Green fine": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green fine mix"
+                        }
+                    ]
+                },
+                "Blue coarse": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue mix"
+                        }
+                    ]
+                },
+                "Blue fine": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue fine mix"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [16, 47],
+                            "name": "Random pulse speed"
+                        },
+                        {
+                            "range": [48, 79],
+                            "name": "Up-dimming then shutter closing (random)"
+                        },
+                        {
+                            "range": [80, 111],
+                            "name": "Shutter open then down-dimming (random)"
+                        },
+                        {
+                            "range": [112, 143],
+                            "name": "Up-dimming then down-dimming (random)"
+                        },
+                        {
+                            "range": [144, 199],
+                            "name": "Strobe pause 5s - 1s"
+                        },
+                        {
+                            "range": [240, 249],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [250, 250],
+                            "name": "RESET (3sec)"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [200, 239],
+                            "name": "Strobe speed 1Hz to 10Hz"
+                        }
+                    ]
+                },
+                "Dimmer coarse": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "Dimmer fine": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer fine"
+                        }
+                    ]
+                },
+                "Colour temperature": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No correction"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "3200K to 7200K"
+                        }
+                    ]
+                },
+                "Special": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Maximum light"
+                        },
+                        {
+                            "range": [16, 31],
+                            "name": "White balance"
+                        },
+                        {
+                            "range": [32, 111],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [112, 127],
+                            "name": "Color chaser C/C+1 slow to fast"
+                        },
+                        {
+                            "range": [128, 143],
+                            "name": "Color chaser C/C+2 slow to fast"
+                        },
+                        {
+                            "range": [144, 223],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [224, 229],
+                            "name": "Fan silent"
+                        },
+                        {
+                            "range": [230, 249],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "RESET"
+                        }
+                    ]
+                },
+                "Movement": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "No movement"
+                        },
+                        {
+                            "range": [1, 31],
+                            "name": "Pan effects"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Tilt effects"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Pan/Tilt effects"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Inverse pan/tilt effects"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Circle effects"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Inverse circle effects"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Lying eight effects"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Random movement effects"
+                        }
+                    ]
+                },
+                "Movement speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Relative movement"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Slow to fast"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan coarse",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt coarse",
+                    "Tilt fine"
+                ],
+                [
+                    "Red coarse",
+                    "Red fine"
+                ],
+                [
+                    "Green coarse",
+                    "Green fine"
+                ],
+                [
+                    "Blue coarse",
+                    "Blue fine"
+                ],
+                [
+                    "Dimmer coarse",
+                    "Dimmer fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "Pan coarse",
+                        "Pan fine",
+                        "Tilt coarse",
+                        "Tilt fine",
+                        "Colour",
+                        "Red coarse",
+                        "Green coarse",
+                        "Blue coarse",
+                        "Shutter",
+                        "Dimmer coarse",
+                        "Colour temperature",
+                        "Special",
+                        "Movement",
+                        "Movement speed"
+                    ]
+                },
+                {
+                    "name": "Compressed",
+                    "physical": {
+                        "dimensions": [340, 370, 145]
+                    },
+                    "channels": [
+                        "Pan coarse",
+                        "Pan fine",
+                        "Tilt coarse",
+                        "Tilt fine",
+                        "Colour",
+                        "Red coarse",
+                        "Green coarse",
+                        "Blue coarse",
+                        "Shutter",
+                        "Dimmer coarse"
+                    ]
+                },
+                {
+                    "name": "Extended",
+                    "physical": {
+                        "dimensions": [340, 370, 145],
+                        "focus": {
+                            "type": "Fixed"
+                        }
+                    },
+                    "channels": [
+                        "Pan coarse",
+                        "Pan fine",
+                        "Tilt coarse",
+                        "Tilt fine",
+                        "Red coarse",
+                        "Red fine",
+                        "Green coarse",
+                        "Green fine",
+                        "Blue coarse",
+                        "Blue fine",
+                        "Shutter",
+                        "Dimmer coarse",
+                        "Dimmer fine"
+                    ]
+                }
+            ]
+        }
+    ]
+}

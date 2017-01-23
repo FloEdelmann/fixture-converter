@@ -1,0 +1,1131 @@
+{
+    "manufacturers": {
+        "SGM": {
+            "name": "SGM"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "SGM",
+            "name": "G-Profile",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [492, 821, 585],
+                "weight": 52,
+                "power": 11000,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 170000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [8, 43]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 240
+                }
+            },
+            "availableChannels": {
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Open 1 ('pre heat' enabled)"
+                        },
+                        {
+                            "range": [16, 151],
+                            "name": "Strobe, slow -> fast"
+                        },
+                        {
+                            "range": [152, 175],
+                            "name": "Pulse - open, slow -> fast"
+                        },
+                        {
+                            "range": [176, 199],
+                            "name": "Pulse - close, slow -> fast"
+                        },
+                        {
+                            "range": [200, 244],
+                            "name": "Strobe - random, slow -> fast"
+                        },
+                        {
+                            "range": [245, 255],
+                            "name": "Open 2 ('pre-heat' enabled)"
+                        }
+                    ]
+                },
+                "Intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "No light -> maximum light"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "No red -> maximum red"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "No green -> maximum green"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "No blue -> maximum blue"
+                        }
+                    ]
+                },
+                "CTC": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No CTC (raw)"
+                        },
+                        {
+                            "range": [5, 5],
+                            "name": "≈2000°K",
+                            "color": "#ff8912"
+                        },
+                        {
+                            "range": [6, 14],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [15, 15],
+                            "name": "≈2200°K",
+                            "color": "#ff932c"
+                        },
+                        {
+                            "range": [16, 39],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [40, 40],
+                            "name": "≈2700°K",
+                            "color": "#ffa957"
+                        },
+                        {
+                            "range": [41, 53],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [54, 54],
+                            "name": "≈3000°K",
+                            "color": "#ffb46b"
+                        },
+                        {
+                            "range": [55, 64],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [65, 65],
+                            "name": "≈3200°K",
+                            "color": "#ffbb78"
+                        },
+                        {
+                            "range": [66, 104],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [105, 105],
+                            "name": "≈4000°K",
+                            "color": "#ffd1a3"
+                        },
+                        {
+                            "range": [106, 114],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [115, 115],
+                            "name": "≈4200°K",
+                            "color": "#ffd5ad"
+                        },
+                        {
+                            "range": [116, 176],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [177, 177],
+                            "name": "≈5500°K",
+                            "color": "#ffece0"
+                        },
+                        {
+                            "range": [178, 215],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [216, 216],
+                            "name": "≈6300°K",
+                            "color": "#fff6f8"
+                        },
+                        {
+                            "range": [217, 237],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [238, 238],
+                            "name": "≈8000°K",
+                            "color": "#e3e9ff"
+                        },
+                        {
+                            "range": [239, 254],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "≈10000°K",
+                            "color": "#ccdbff"
+                        }
+                    ]
+                },
+                "Pan (Coarse)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-270° to 270°"
+                        }
+                    ]
+                },
+                "Tilt (Coarse)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-120° to 120°"
+                        }
+                    ]
+                },
+                "Gobo Wheel 1": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [21, 41],
+                            "name": "Gobo 1 - position 1"
+                        },
+                        {
+                            "range": [42, 62],
+                            "name": "Gobo 1 - position 2"
+                        },
+                        {
+                            "range": [63, 83],
+                            "name": "Gobo 1 - position 3"
+                        },
+                        {
+                            "range": [84, 104],
+                            "name": "Gobo 1 - position 4"
+                        },
+                        {
+                            "range": [105, 127],
+                            "name": "Gobo 1 - position 5"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Continuous rotation CW"
+                        },
+                        {
+                            "range": [192, 192],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "Continuous rotation CCW"
+                        }
+                    ]
+                },
+                "Gobo Wheel 1 Indexing/Rotation/Shake (Coarse)": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gobo wheel 1 indexing/rotation/shake (coarse)"
+                        }
+                    ]
+                },
+                "Gobo Wheel 1 Indexing/Rotation/Shake (Fine)": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gobo wheel 1 indexing/rotation/shake (fine)"
+                        }
+                    ]
+                },
+                "Blade 1 In": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Out -> In"
+                        }
+                    ]
+                },
+                "Blade 2 In": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Out -> In"
+                        }
+                    ]
+                },
+                "Blade 3 In": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Out -> In"
+                        }
+                    ]
+                },
+                "Blade 4 In": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Out -> In"
+                        }
+                    ]
+                },
+                "Blade 1 Angle": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-30° -> +30°"
+                        }
+                    ]
+                },
+                "Blade 2 Angle": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-30° -> +30°"
+                        }
+                    ]
+                },
+                "Blade 3 Angle": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-30° -> +30°"
+                        }
+                    ]
+                },
+                "Blade 4 Angle": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-30° -> +30°"
+                        }
+                    ]
+                },
+                "Blade Assembly Rotate": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-45° -> +45°"
+                        }
+                    ]
+                },
+                "Effect Wheel (Coarse)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Effect wheel (coarse)"
+                        }
+                    ]
+                },
+                "Effect Wheel (Fine)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Effect wheel (fine)"
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 200],
+                            "name": "Open -> close"
+                        },
+                        {
+                            "range": [201, 205],
+                            "name": "Effect - \"open fast / close slow\""
+                        },
+                        {
+                            "range": [206, 210],
+                            "name": "Effect - \"open slow / close fast\""
+                        },
+                        {
+                            "range": [211, 215],
+                            "name": "Effect - \"open / close\""
+                        },
+                        {
+                            "range": [216, 255],
+                            "name": "Effect - \"random close / open\", slow -> fast"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [5, 129],
+                            "name": "Continuous rotation CW, fast -> slow"
+                        },
+                        {
+                            "range": [130, 130],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [131, 255],
+                            "name": "Continuous rotation CCW, slow to fast"
+                        }
+                    ]
+                },
+                "Frost": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [6, 255],
+                            "name": "No frost -> maximum frost"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Wide -> narrow"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Far -> near"
+                        }
+                    ]
+                },
+                "Effect Channel": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No effect"
+                        },
+                        {
+                            "range": [5, 15],
+                            "name": "Reserved (no function)"
+                        },
+                        {
+                            "range": [16, 26],
+                            "name": "Reserved (no function)"
+                        },
+                        {
+                            "range": [27, 32],
+                            "name": "Shutter black = red"
+                        },
+                        {
+                            "range": [33, 38],
+                            "name": "Shutter black = green"
+                        },
+                        {
+                            "range": [39, 44],
+                            "name": "Shutter black = blue"
+                        },
+                        {
+                            "range": [45, 50],
+                            "name": "Shutter black = white"
+                        },
+                        {
+                            "range": [51, 56],
+                            "name": "Shutter black = magenta"
+                        },
+                        {
+                            "range": [57, 62],
+                            "name": "Shutter black = yellow"
+                        },
+                        {
+                            "range": [63, 68],
+                            "name": "Shutter black = cyan"
+                        },
+                        {
+                            "range": [69, 255],
+                            "name": "Reserved (no function)"
+                        }
+                    ]
+                },
+                "Control Channel": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [5, 9],
+                            "name": "Full reset"
+                        },
+                        {
+                            "range": [10, 14],
+                            "name": "Pan reset"
+                        },
+                        {
+                            "range": [15, 19],
+                            "name": "Tilt reset"
+                        },
+                        {
+                            "range": [20, 24],
+                            "name": "Gobo reset"
+                        },
+                        {
+                            "range": [25, 29],
+                            "name": "Zoom reset"
+                        },
+                        {
+                            "range": [30, 34],
+                            "name": "Sleep mode"
+                        },
+                        {
+                            "range": [35, 39],
+                            "name": "Display off"
+                        },
+                        {
+                            "range": [40, 44],
+                            "name": "Display on"
+                        },
+                        {
+                            "range": [45, 115],
+                            "name": "LED frequency (100kHz - 1.41kHz)"
+                        },
+                        {
+                            "range": [116, 119],
+                            "name": "Capture scene 1"
+                        },
+                        {
+                            "range": [120, 123],
+                            "name": "Capture scene 2"
+                        },
+                        {
+                            "range": [124, 127],
+                            "name": "Capture scene 3"
+                        },
+                        {
+                            "range": [128, 131],
+                            "name": "Capture scene 4"
+                        },
+                        {
+                            "range": [132, 135],
+                            "name": "Capture scene 5"
+                        },
+                        {
+                            "range": [136, 139],
+                            "name": "Capture scene 6"
+                        },
+                        {
+                            "range": [140, 143],
+                            "name": "Capture scene 7"
+                        },
+                        {
+                            "range": [144, 147],
+                            "name": "Capture scene 8"
+                        },
+                        {
+                            "range": [148, 151],
+                            "name": "Capture scene 9"
+                        },
+                        {
+                            "range": [152, 155],
+                            "name": "Capture scene 10"
+                        },
+                        {
+                            "range": [156, 159],
+                            "name": "Capture scene 11"
+                        },
+                        {
+                            "range": [160, 163],
+                            "name": "Capture scene 12"
+                        },
+                        {
+                            "range": [164, 167],
+                            "name": "Capture scene 13"
+                        },
+                        {
+                            "range": [168, 171],
+                            "name": "Capture scene 14"
+                        },
+                        {
+                            "range": [172, 175],
+                            "name": "Capture scene 15"
+                        },
+                        {
+                            "range": [176, 179],
+                            "name": "Capture scene 16"
+                        },
+                        {
+                            "range": [180, 183],
+                            "name": "Capture scene 17"
+                        },
+                        {
+                            "range": [184, 187],
+                            "name": "Capture scene 18"
+                        },
+                        {
+                            "range": [188, 191],
+                            "name": "Capture scene 19"
+                        },
+                        {
+                            "range": [192, 195],
+                            "name": "Capture scene 20"
+                        },
+                        {
+                            "range": [196, 199],
+                            "name": "Capture scene 21"
+                        },
+                        {
+                            "range": [200, 203],
+                            "name": "Capture scene 22"
+                        },
+                        {
+                            "range": [204, 207],
+                            "name": "Capture scene 23"
+                        },
+                        {
+                            "range": [208, 211],
+                            "name": "Capture scene 24"
+                        },
+                        {
+                            "range": [212, 255],
+                            "name": "Reserved (no function)"
+                        }
+                    ]
+                },
+                "Pan (Fine)": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-270° to 270°"
+                        }
+                    ]
+                },
+                "Tilt (Fine)": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-120° to 120°"
+                        }
+                    ]
+                },
+                "Red (Fine)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "No red -> maximum red"
+                        }
+                    ]
+                },
+                "Green (Fine)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "No green -> maximum green"
+                        }
+                    ]
+                },
+                "Blue (Fine)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "No blue -> maximum blue"
+                        }
+                    ]
+                },
+                "Intensity (Fine)": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "No light -> maximum light"
+                        }
+                    ]
+                },
+                "Blade 1 In (Fine)": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Out -> In"
+                        }
+                    ]
+                },
+                "Blade 2 In (Fine)": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Out -> In"
+                        }
+                    ]
+                },
+                "Blade 3 In (Fine)": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Out -> In"
+                        }
+                    ]
+                },
+                "Blade 4 In (Fine)": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Out -> In"
+                        }
+                    ]
+                },
+                "Blade 1 Angle (Fine)": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-30° -> +30°"
+                        }
+                    ]
+                },
+                "Blade 2 Angle (Fine)": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-30° -> +30°"
+                        }
+                    ]
+                },
+                "Blade 3 Angle (Fine)": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-30° -> +30°"
+                        }
+                    ]
+                },
+                "Blade 4 Angle (Fine)": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-30° -> +30°"
+                        }
+                    ]
+                },
+                "Blade Assembly Rotate (Fine)": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-45° -> +45°"
+                        }
+                    ]
+                },
+                "Zoom (Fine)": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Wide -> narrow"
+                        }
+                    ]
+                },
+                "Focus (Fine)": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Far -> near"
+                        }
+                    ]
+                },
+                "Red (Coarse)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "No red -> maximum red"
+                        }
+                    ]
+                },
+                "Green (Coarse)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "No green -> maximum green"
+                        }
+                    ]
+                },
+                "Blue (Coarse)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "No blue -> maximum blue"
+                        }
+                    ]
+                },
+                "Intensity (Coarse)": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "No light -> maximum light"
+                        }
+                    ]
+                },
+                "Blade 1 In (Coarse)": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Out -> In"
+                        }
+                    ]
+                },
+                "Blade 2 In (Coarse)": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Out -> In"
+                        }
+                    ]
+                },
+                "Blade 3 In (Coarse)": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Out -> In"
+                        }
+                    ]
+                },
+                "Blade 4 In (Coarse)": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Out -> In"
+                        }
+                    ]
+                },
+                "Blade 1 Angle (Coarse)": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-30° -> +30°"
+                        }
+                    ]
+                },
+                "Blade 2 Angle (Coarse)": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-30° -> +30°"
+                        }
+                    ]
+                },
+                "Blade 3 Angle (Coarse)": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-30° -> +30°"
+                        }
+                    ]
+                },
+                "Blade 4 Angle (Coarse)": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-30° -> +30°"
+                        }
+                    ]
+                },
+                "Blade Assembly Rotate (Coarse)": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "-45° -> +45°"
+                        }
+                    ]
+                },
+                "Zoom (Coarse)": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Wide -> narrow"
+                        }
+                    ]
+                },
+                "Focus (Coarse)": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Far -> near"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Gobo Wheel 1 Indexing/Rotation/Shake (Coarse)",
+                    "Gobo Wheel 1 Indexing/Rotation/Shake (Fine)"
+                ],
+                [
+                    "Effect Wheel (Coarse)",
+                    "Effect Wheel (Fine)"
+                ],
+                [
+                    "Pan (Coarse)",
+                    "Pan (Fine)"
+                ],
+                [
+                    "Tilt (Coarse)",
+                    "Tilt (Fine)"
+                ],
+                [
+                    "Red (Coarse)",
+                    "Red (Fine)"
+                ],
+                [
+                    "Green (Coarse)",
+                    "Green (Fine)"
+                ],
+                [
+                    "Blue (Coarse)",
+                    "Blue (Fine)"
+                ],
+                [
+                    "Intensity (Coarse)",
+                    "Intensity (Fine)"
+                ],
+                [
+                    "Blade 1 In (Coarse)",
+                    "Blade 1 In (Fine)"
+                ],
+                [
+                    "Blade 2 In (Coarse)",
+                    "Blade 2 In (Fine)"
+                ],
+                [
+                    "Blade 3 In (Coarse)",
+                    "Blade 3 In (Fine)"
+                ],
+                [
+                    "Blade 4 In (Coarse)",
+                    "Blade 4 In (Fine)"
+                ],
+                [
+                    "Blade 1 Angle (Coarse)",
+                    "Blade 1 Angle (Fine)"
+                ],
+                [
+                    "Blade 2 Angle (Coarse)",
+                    "Blade 2 Angle (Fine)"
+                ],
+                [
+                    "Blade 3 Angle (Coarse)",
+                    "Blade 3 Angle (Fine)"
+                ],
+                [
+                    "Blade 4 Angle (Coarse)",
+                    "Blade 4 Angle (Fine)"
+                ],
+                [
+                    "Blade Assembly Rotate (Coarse)",
+                    "Blade Assembly Rotate (Fine)"
+                ],
+                [
+                    "Zoom (Coarse)",
+                    "Zoom (Fine)"
+                ],
+                [
+                    "Focus (Coarse)",
+                    "Focus (Fine)"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Standard (31 Channels)",
+                    "channels": [
+                        "Shutter",
+                        "Intensity",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "CTC",
+                        "Pan (Coarse)",
+                        "Pan (Fine)",
+                        "Tilt (Coarse)",
+                        "Tilt (Fine)",
+                        "Gobo Wheel 1",
+                        "Gobo Wheel 1 Indexing/Rotation/Shake (Coarse)",
+                        "Gobo Wheel 1 Indexing/Rotation/Shake (Fine)",
+                        "Blade 1 In",
+                        "Blade 1 Angle",
+                        "Blade 2 In",
+                        "Blade 2 Angle",
+                        "Blade 3 In",
+                        "Blade 3 Angle",
+                        "Blade 4 In",
+                        "Blade 4 Angle",
+                        "Blade Assembly Rotate",
+                        "Effect Wheel (Coarse)",
+                        "Effect Wheel (Fine)",
+                        "Iris",
+                        "Prism",
+                        "Frost",
+                        "Zoom",
+                        "Focus",
+                        "Effect Channel",
+                        "Control Channel"
+                    ]
+                },
+                {
+                    "name": "Extended (46 Channels)",
+                    "channels": [
+                        "Shutter",
+                        "Intensity (Coarse)",
+                        "Intensity (Fine)",
+                        "Red (Coarse)",
+                        "Red (Fine)",
+                        "Green (Coarse)",
+                        "Green (Fine)",
+                        "Blue (Fine)",
+                        "Blue (Coarse)",
+                        "CTC",
+                        "Pan (Coarse)",
+                        "Pan (Fine)",
+                        "Tilt (Coarse)",
+                        "Tilt (Fine)",
+                        "Gobo Wheel 1",
+                        "Gobo Wheel 1 Indexing/Rotation/Shake (Coarse)",
+                        "Gobo Wheel 1 Indexing/Rotation/Shake (Fine)",
+                        "Blade 1 In (Coarse)",
+                        "Blade 1 In (Fine)",
+                        "Blade 1 Angle (Coarse)",
+                        "Blade 1 Angle (Fine)",
+                        "Blade 2 In (Coarse)",
+                        "Blade 2 In (Fine)",
+                        "Blade 2 Angle (Coarse)",
+                        "Blade 2 Angle (Fine)",
+                        "Blade 3 In (Coarse)",
+                        "Blade 3 In (Fine)",
+                        "Blade 3 Angle (Coarse)",
+                        "Blade 3 Angle (Fine)",
+                        "Blade 4 In (Coarse)",
+                        "Blade 4 In (Fine)",
+                        "Blade 4 Angle (Coarse)",
+                        "Blade 4 Angle (Fine)",
+                        "Blade Assembly Rotate (Coarse)",
+                        "Blade Assembly Rotate (Fine)",
+                        "Effect Wheel (Coarse)",
+                        "Effect Wheel (Fine)",
+                        "Iris",
+                        "Prism",
+                        "Frost",
+                        "Zoom (Coarse)",
+                        "Zoom (Fine)",
+                        "Focus (Coarse)",
+                        "Focus (Fine)",
+                        "Effect Channel",
+                        "Control Channel"
+                    ]
+                }
+            ]
+        }
+    ]
+}

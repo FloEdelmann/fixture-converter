@@ -1,0 +1,168 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "Spherion Tri LED",
+            "type": "Effect",
+            "physical": {
+                "dimensions": [190, 422, 320],
+                "weight": 5,
+                "power": 27,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Shows": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [8, 47],
+                            "name": "Show 1"
+                        },
+                        {
+                            "range": [48, 87],
+                            "name": "Show 2"
+                        },
+                        {
+                            "range": [88, 127],
+                            "name": "Show 3"
+                        },
+                        {
+                            "range": [128, 167],
+                            "name": "Show 4"
+                        },
+                        {
+                            "range": [168, 207],
+                            "name": "Show 5"
+                        },
+                        {
+                            "range": [208, 247],
+                            "name": "Show 6"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Sound Active"
+                        }
+                    ]
+                },
+                "Rotation": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [10, 113],
+                            "name": "Clockwise [Fast > Slow]"
+                        },
+                        {
+                            "range": [114, 141],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [142, 245],
+                            "name": "Counter Clockwise [Fast > Slow]"
+                        },
+                        {
+                            "range": [246, 247],
+                            "name": "Stop"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Sound Active"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [8, 199],
+                            "name": "Dimmer [0% > 100%]"
+                        },
+                        {
+                            "range": [200, 247],
+                            "name": "Strobe [Fast > Slow]"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "On"
+                        }
+                    ]
+                },
+                "Color Macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 46],
+                            "name": "Color 1"
+                        },
+                        {
+                            "range": [47, 85],
+                            "name": "Color 2"
+                        },
+                        {
+                            "range": [86, 124],
+                            "name": "Color 3"
+                        },
+                        {
+                            "range": [125, 163],
+                            "name": "Color 4"
+                        },
+                        {
+                            "range": [164, 202],
+                            "name": "Color 5"
+                        },
+                        {
+                            "range": [203, 240],
+                            "name": "Color 6"
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "Color 7"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "1 Ch. [Default]",
+                    "channels": [
+                        "Shows"
+                    ]
+                },
+                {
+                    "name": "3 Ch",
+                    "channels": [
+                        "Rotation",
+                        "Shutter",
+                        "Color Macros"
+                    ]
+                }
+            ]
+        }
+    ]
+}

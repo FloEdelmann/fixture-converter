@@ -1,0 +1,684 @@
+{
+    "manufacturers": {
+        "Showtec": {
+            "name": "Showtec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Showtec",
+            "name": "Indigo 6500",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [296, 523, 405],
+                "weight": 19.44,
+                "power": 295,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [18, 18]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan/Tilt Speed"
+                        }
+                    ]
+                },
+                "Colourwheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "Open/White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Red",
+                            "color": "#a80000"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Green",
+                            "color": "#55aa7f"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Yellow",
+                            "color": "#d8d800"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Blue",
+                            "color": "#0082be"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Orange",
+                            "color": "#f7a500"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Magenta",
+                            "color": "#ac73ac"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Light Blue",
+                            "color": "#55aaff"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Light Blue->Magenta",
+                            "color": "#55aaff",
+                            "color2": "#ac73ac"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Magenta->Orange",
+                            "color": "#ac73ac",
+                            "color2": "#f7a500"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "Orange->Blue",
+                            "color": "#f7a500",
+                            "color2": "#0082be"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "Blue->Yellow",
+                            "color": "#0082be",
+                            "color2": "#d8d800"
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "Yellow->Green",
+                            "color": "#d8d800",
+                            "color2": "#55aa7f"
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "Green->Red",
+                            "color": "#55aa7f",
+                            "color2": "#a80000"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Red->Open/White",
+                            "color": "#a80000",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [220, 255],
+                            "name": "Rainbow effect from slow to fast"
+                        }
+                    ]
+                },
+                "Static Gobo-wheel + Gobo Shake": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Open/White"
+                        },
+                        {
+                            "range": [11, 20],
+                            "name": "Metal Gobo 1"
+                        },
+                        {
+                            "range": [21, 30],
+                            "name": "Metal Gobo 2"
+                        },
+                        {
+                            "range": [31, 40],
+                            "name": "Metal Gobo 3"
+                        },
+                        {
+                            "range": [41, 50],
+                            "name": "Metal Gobo 4"
+                        },
+                        {
+                            "range": [51, 60],
+                            "name": "Metal Gobo 5"
+                        },
+                        {
+                            "range": [61, 70],
+                            "name": "Metal Gobo 6"
+                        },
+                        {
+                            "range": [71, 80],
+                            "name": "Metal Gobo 7"
+                        },
+                        {
+                            "range": [81, 95],
+                            "name": "Shake 7 Slow->Fast"
+                        },
+                        {
+                            "range": [96, 110],
+                            "name": "Shake 6 Slow->Fast"
+                        },
+                        {
+                            "range": [111, 125],
+                            "name": "Shake 5 Slow->Fast"
+                        },
+                        {
+                            "range": [126, 140],
+                            "name": "Shake 4 Slow->Fast"
+                        },
+                        {
+                            "range": [141, 155],
+                            "name": "Shake 3 Slow->Fast"
+                        },
+                        {
+                            "range": [156, 170],
+                            "name": "Shake 2 Slow->Fast"
+                        },
+                        {
+                            "range": [171, 185],
+                            "name": "Shake 1 Slow->Fast"
+                        },
+                        {
+                            "range": [186, 255],
+                            "name": "Backwards (CCW) Rotation Slow->Fast"
+                        }
+                    ]
+                },
+                "Rotating Gobo-wheel + Gobo Shake": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Open/White"
+                        },
+                        {
+                            "range": [11, 20],
+                            "name": "Metal Gobo 1"
+                        },
+                        {
+                            "range": [21, 30],
+                            "name": "Metal Gobo 2"
+                        },
+                        {
+                            "range": [31, 40],
+                            "name": "Metal Gobo 3"
+                        },
+                        {
+                            "range": [41, 50],
+                            "name": "Glass Gobo 4"
+                        },
+                        {
+                            "range": [51, 60],
+                            "name": "Metal Gobo 5"
+                        },
+                        {
+                            "range": [61, 70],
+                            "name": "Glass Gobo 6"
+                        },
+                        {
+                            "range": [71, 85],
+                            "name": "Shake 6 Slow->Fast"
+                        },
+                        {
+                            "range": [86, 100],
+                            "name": "Shake 5 Slow->Fast"
+                        },
+                        {
+                            "range": [101, 115],
+                            "name": "Shake 4 Slow->Fast"
+                        },
+                        {
+                            "range": [116, 130],
+                            "name": "Shake 3 Slow->Fast"
+                        },
+                        {
+                            "range": [131, 145],
+                            "name": "Shake 2 Slow->Fast"
+                        },
+                        {
+                            "range": [146, 160],
+                            "name": "Shake 1 Slow->Fast"
+                        },
+                        {
+                            "range": [161, 255],
+                            "name": "Gobo-Wheel Rotation Slow->Fast"
+                        }
+                    ]
+                },
+                "Rotation Gobo": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 60],
+                            "name": "CCW Indexing"
+                        },
+                        {
+                            "range": [61, 150],
+                            "name": "CW Rotation Slow->Fast"
+                        },
+                        {
+                            "range": [166, 255],
+                            "name": "CCW Rotation Slow->Fast"
+                        }
+                    ]
+                },
+                "Prism/Effects": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Prism"
+                        },
+                        {
+                            "range": [10, 39],
+                            "name": "Prism Rotation"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Prism Effect 1"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Prism Effect 2"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Prism Effect 3"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Prism Effect 4"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Prism Effect 5"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Prism Effect 6"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Prism Effect 7"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "Prism Effect 8"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "Prism Effect 9"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "Prism Effect 10"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Effect 11"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "Effect 12"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "Effect 13"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "Effect 14"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "Effect 15"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "Effect 16"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Effect 17"
+                        },
+                        {
+                            "range": [210, 219],
+                            "name": "Effect 18"
+                        },
+                        {
+                            "range": [220, 229],
+                            "name": "Effect 19"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Effect 20"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Prism Rotation"
+                        }
+                    ]
+                },
+                "Prism Rotation Control": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Prism Rotation"
+                        },
+                        {
+                            "range": [10, 119],
+                            "name": "CCW Rotation Slow->Fast"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "No Prism Rotation"
+                        },
+                        {
+                            "range": [130, 255],
+                            "name": "CW Rotation Slow->Fast"
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 199],
+                            "name": "Linear Iris"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Slow Open, Fast Close Slow->Fast"
+                        },
+                        {
+                            "range": [210, 219],
+                            "name": "Slow Open, Slow Close Slow->Fast"
+                        },
+                        {
+                            "range": [220, 229],
+                            "name": "Fast Open, Slow Close Slow->Fast"
+                        },
+                        {
+                            "range": [230, 239],
+                            "name": "Fast Open, Fast Close Slow->Fast"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Random Slow->Fast"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Near->Far"
+                        }
+                    ]
+                },
+                "Focus Fine": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Near->Far"
+                        }
+                    ]
+                },
+                "Dimmer Intensity": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Shutter/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Close"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Strobe Slow->Fast"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Pulse Effect Slow->Fast"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Random Strobe Slow->Fast"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Shutter open"
+                        }
+                    ]
+                },
+                "Channel Functions": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [20, 39],
+                            "name": "Blackout during Pan/Tilt"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "Auto 1"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "Auto 2"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "Test"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "Custom"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "Sound 1"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "Sound 2"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [237, 239],
+                            "name": "DIM 0"
+                        },
+                        {
+                            "range": [240, 243],
+                            "name": "DIM 1"
+                        },
+                        {
+                            "range": [244, 247],
+                            "name": "DIM 2"
+                        },
+                        {
+                            "range": [248, 251],
+                            "name": "DIM 3"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "DIM 4"
+                        }
+                    ]
+                },
+                "Prism (Basic Mode)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "No Prism"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "CW Slow->Fast"
+                        }
+                    ]
+                },
+                "Prism Rotation Control (Basic Mode)": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "No Prism"
+                        },
+                        {
+                            "range": [5, 9],
+                            "name": "No Prism Rotation"
+                        },
+                        {
+                            "range": [10, 127],
+                            "name": "CCW Rotation Slow->Fast"
+                        },
+                        {
+                            "range": [128, 132],
+                            "name": "No Prism Rotation"
+                        },
+                        {
+                            "range": [133, 255],
+                            "name": "CW Rotation Slow->Fast"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ],
+                [
+                    "Focus",
+                    "Focus Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Advanced",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed",
+                        "Colourwheel",
+                        "Static Gobo-wheel + Gobo Shake",
+                        "Rotating Gobo-wheel + Gobo Shake",
+                        "Rotation Gobo",
+                        "Prism/Effects",
+                        "Prism Rotation Control",
+                        "Iris",
+                        "Focus",
+                        "Focus Fine",
+                        "Dimmer Intensity",
+                        "Shutter/Strobe",
+                        "Channel Functions"
+                    ]
+                },
+                {
+                    "name": "Basic",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Colourwheel",
+                        "Static Gobo-wheel + Gobo Shake",
+                        "Rotating Gobo-wheel + Gobo Shake",
+                        "Rotation Gobo",
+                        "Prism (Basic Mode)",
+                        "Prism Rotation Control (Basic Mode)",
+                        "Iris",
+                        "Focus",
+                        "Dimmer Intensity",
+                        "Shutter/Strobe",
+                        "Channel Functions"
+                    ]
+                }
+            ]
+        }
+    ]
+}

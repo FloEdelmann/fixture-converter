@@ -1,0 +1,61 @@
+{
+    "manufacturers": {
+        "Eurolite": {
+            "name": "Eurolite"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Eurolite",
+            "name": "DMX Superstrobe 2700",
+            "type": "Strobe",
+            "physical": {
+                "dimensions": [460, 130, 210],
+                "weight": 3.5,
+                "power": 3600,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "XOP 1500W",
+                    "colorTemperature": 5600,
+                    "lumens": 645
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Flash rate": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Flash rate slow to fast"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer intensity"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "Flash rate",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

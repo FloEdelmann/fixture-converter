@@ -1,0 +1,173 @@
+{
+    "manufacturers": {
+        "Proel": {
+            "name": "Proel"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Proel",
+            "name": "PLLEDMLBG LED Moving Head",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [300, 280, 350],
+                "weight": 6,
+                "power": 50,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow - fast"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Auto": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 254],
+                            "name": "255 preset color chases"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Continuous color scrolling"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Adjust color scrolling speed"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 – 540°"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 – 270°"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine control"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine control"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "8-Bit Movement",
+                    "channels": [
+                        "Strobe",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Auto",
+                        "Speed",
+                        "Pan",
+                        "Tilt"
+                    ]
+                },
+                {
+                    "name": "16-Bit Movement",
+                    "channels": [
+                        "Strobe",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Auto",
+                        "Speed",
+                        "Pan",
+                        "Tilt",
+                        "Pan Fine",
+                        "Tilt Fine"
+                    ]
+                }
+            ]
+        }
+    ]
+}

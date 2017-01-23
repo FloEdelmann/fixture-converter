@@ -1,0 +1,335 @@
+{
+    "manufacturers": {
+        "JB-Lighting": {
+            "name": "JB-Lighting"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "JB-Lighting",
+            "name": "Varyscan 4 EV",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [450, 895, 320],
+                "weight": 34,
+                "power": 1430,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "HMI 1200W"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Mirror",
+                    "panMax": 170,
+                    "tiltMax": 90
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Gobo": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [128, 254],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Reset"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Colour 1"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Colour 2"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Colour 3"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Colour 4"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Colour 5"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Colour 6"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Colour 7"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Colour 8"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Colour 9"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Colour 10"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Colour 11"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Colour 12"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Colour 13"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "Colour 14"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Colour 15"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Colour 16"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Rainbow"
+                        }
+                    ]
+                },
+                "Dimmer/Shutter": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [20, 127],
+                            "name": "Dimmer intensity"
+                        },
+                        {
+                            "range": [128, 138],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [139, 139],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [140, 243],
+                            "name": "Strobe speed 1-11/sec"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Iris"
+                        }
+                    ]
+                },
+                "Gobo rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 191],
+                            "name": "0-540 degrees"
+                        },
+                        {
+                            "range": [192, 222],
+                            "name": "Rotation speed CCW"
+                        },
+                        {
+                            "range": [223, 224],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [225, 255],
+                            "name": "Rotation speed CW"
+                        }
+                    ]
+                },
+                "Effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Artificial light filter"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Daylight filter"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Prism"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Floodfilter"
+                        },
+                        {
+                            "range": [160, 255],
+                            "name": "Flood to open"
+                        }
+                    ]
+                },
+                "Gobo 2": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [16, 23],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [24, 31],
+                            "name": "Gobo 1 shake"
+                        },
+                        {
+                            "range": [32, 39],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [40, 47],
+                            "name": "Gobo 2 shake"
+                        },
+                        {
+                            "range": [48, 55],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [56, 63],
+                            "name": "Gobo 3 shake"
+                        },
+                        {
+                            "range": [64, 71],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [72, 79],
+                            "name": "Gobo 4 shake 1"
+                        },
+                        {
+                            "range": [80, 87],
+                            "name": "Gobo 4 shake 2"
+                        },
+                        {
+                            "range": [88, 95],
+                            "name": "Gobo 4 shake 3"
+                        },
+                        {
+                            "range": [96, 103],
+                            "name": "Gobo 4 shake 4"
+                        },
+                        {
+                            "range": [104, 111],
+                            "name": "Gobo 4 shake 5"
+                        },
+                        {
+                            "range": [112, 119],
+                            "name": "Gobo 4 shake 6"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Gobo 4 shake 7"
+                        },
+                        {
+                            "range": [128, 190],
+                            "name": "Rotation CCW fast to slow"
+                        },
+                        {
+                            "range": [191, 193],
+                            "name": "No rotation"
+                        },
+                        {
+                            "range": [194, 255],
+                            "name": "Rotation CW slow to fast"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Normal",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Gobo",
+                        "Colour",
+                        "Dimmer/Shutter",
+                        "Iris",
+                        "Gobo rotation",
+                        "Effect",
+                        "Gobo 2"
+                    ]
+                }
+            ]
+        }
+    ]
+}

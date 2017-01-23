@@ -1,0 +1,412 @@
+{
+    "manufacturers": {
+        "Martin": {
+            "name": "Martin"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Martin",
+            "name": "MAC300",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [384, 536, 330],
+                "weight": 21,
+                "power": 350,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "MSD 250W",
+                    "colorTemperature": 6500,
+                    "lumens": 4765
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [18, 35]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 270,
+                    "tiltMax": 265
+                }
+            },
+            "availableChannels": {
+                "Shutter, strobe, reset, lamp": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 19],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [20, 49],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [50, 72],
+                            "name": "Strobe, fast -> slow"
+                        },
+                        {
+                            "range": [73, 79],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [80, 99],
+                            "name": "Opening pulse, fast -> slow"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "Closing pulse, fast -> slow"
+                        },
+                        {
+                            "range": [120, 127],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [128, 187],
+                            "name": "Random strobe, fast -> slow"
+                        },
+                        {
+                            "range": [188, 190],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [191, 193],
+                            "name": "Random opening pulse, fast"
+                        },
+                        {
+                            "range": [194, 196],
+                            "name": "Random opening pulse, slow"
+                        },
+                        {
+                            "range": [197, 199],
+                            "name": "Random closing pulse, fast"
+                        },
+                        {
+                            "range": [200, 202],
+                            "name": "Random closing pulse, slow"
+                        },
+                        {
+                            "range": [203, 207],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [208, 217],
+                            "name": "Reset"
+                        },
+                        {
+                            "range": [218, 227],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [228, 237],
+                            "name": "Lamp on"
+                        },
+                        {
+                            "range": [238, 247],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Lamp off"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer intensity"
+                        }
+                    ]
+                },
+                "Cyan": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Cyan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Cyan mix"
+                        }
+                    ]
+                },
+                "Magenta": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Magenta",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Magenta mix"
+                        }
+                    ]
+                },
+                "Yellow": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Yellow",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Yellow mix"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "White"
+                        },
+                        {
+                            "range": [26, 26],
+                            "name": "CTC 5500-2900"
+                        },
+                        {
+                            "range": [52, 52],
+                            "name": "Pink 312"
+                        },
+                        {
+                            "range": [78, 78],
+                            "name": "UV"
+                        },
+                        {
+                            "range": [104, 104],
+                            "name": "Red 308"
+                        },
+                        {
+                            "range": [130, 130],
+                            "name": "Green 206"
+                        },
+                        {
+                            "range": [156, 156],
+                            "name": "Blue 108"
+                        },
+                        {
+                            "range": [180, 183],
+                            "name": "Blue 108"
+                        },
+                        {
+                            "range": [184, 187],
+                            "name": "Green 206"
+                        },
+                        {
+                            "range": [188, 191],
+                            "name": "Red 308"
+                        },
+                        {
+                            "range": [192, 195],
+                            "name": "UV"
+                        },
+                        {
+                            "range": [196, 199],
+                            "name": "Pink 312"
+                        },
+                        {
+                            "range": [200, 203],
+                            "name": "CTC 5500-2900"
+                        },
+                        {
+                            "range": [204, 207],
+                            "name": "White"
+                        },
+                        {
+                            "range": [208, 226],
+                            "name": "CW fast to slow"
+                        },
+                        {
+                            "range": [227, 245],
+                            "name": "CCW slow to fast"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "Random CMY fast"
+                        },
+                        {
+                            "range": [249, 251],
+                            "name": "Random CMY medium"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Random CMY slow"
+                        }
+                    ]
+                },
+                "Frost": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Open to full"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Pan/tilt speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Tracking mode"
+                        },
+                        {
+                            "range": [3, 245],
+                            "name": "Fast -> slow"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "Tracking, PTSP NORM"
+                        },
+                        {
+                            "range": [249, 251],
+                            "name": "Tracking, PTSP FAST"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Blackout while moving"
+                        }
+                    ]
+                },
+                "Effect speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 2],
+                            "name": "Tracking mode"
+                        },
+                        {
+                            "range": [3, 245],
+                            "name": "Fast -> slow"
+                        },
+                        {
+                            "range": [246, 248],
+                            "name": "Tracking, SCUT OFF"
+                        },
+                        {
+                            "range": [249, 251],
+                            "name": "Tracking, SCUT ON"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Blackout while moving"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "Mode 1",
+                    "channels": [
+                        "Shutter, strobe, reset, lamp",
+                        "Dimmer",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "Colour",
+                        "Frost",
+                        "Pan",
+                        "Tilt"
+                    ]
+                },
+                {
+                    "name": "Mode 2",
+                    "channels": [
+                        "Shutter, strobe, reset, lamp",
+                        "Dimmer",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "Colour",
+                        "Frost",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine"
+                    ]
+                },
+                {
+                    "name": "Mode 3",
+                    "channels": [
+                        "Shutter, strobe, reset, lamp",
+                        "Dimmer",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "Colour",
+                        "Frost",
+                        "Pan",
+                        "Tilt",
+                        "Pan/tilt speed",
+                        "Effect speed"
+                    ]
+                },
+                {
+                    "name": "Mode 4",
+                    "channels": [
+                        "Shutter, strobe, reset, lamp",
+                        "Dimmer",
+                        "Cyan",
+                        "Magenta",
+                        "Yellow",
+                        "Colour",
+                        "Frost",
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Pan/tilt speed",
+                        "Effect speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

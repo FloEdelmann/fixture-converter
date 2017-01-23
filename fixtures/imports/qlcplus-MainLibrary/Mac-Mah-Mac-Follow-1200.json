@@ -1,0 +1,141 @@
+{
+    "manufacturers": {
+        "Mac Mah": {
+            "name": "Mac Mah"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Mac Mah",
+            "name": "Mac Follow 1200",
+            "type": "Scanner",
+            "physical": {
+                "dimensions": [330, 500, 1250],
+                "weight": 40,
+                "power": 1400,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "HMI 1200W",
+                    "colorTemperature": 5500
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [0, 12]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 24],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [25, 49],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [50, 74],
+                            "name": "Purple",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [75, 99],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [100, 124],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [125, 149],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [150, 174],
+                            "name": "Orange",
+                            "color": "#ff8000"
+                        },
+                        {
+                            "range": [175, 203],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [204, 255],
+                            "name": "Rainbow (slow>fast)"
+                        }
+                    ]
+                },
+                "Colour Temperature": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 80],
+                            "name": "5600°K"
+                        },
+                        {
+                            "range": [81, 160],
+                            "name": "3200°K"
+                        },
+                        {
+                            "range": [161, 255],
+                            "name": "6000°K"
+                        }
+                    ]
+                },
+                "Iris": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Iris (small>large)"
+                        }
+                    ]
+                },
+                "Shutter": {
+                    "type": "Shutter",
+                    "capabilities": [
+                        {
+                            "range": [0, 11],
+                            "name": "Close"
+                        },
+                        {
+                            "range": [12, 84],
+                            "name": "Dimmer 0>100%"
+                        },
+                        {
+                            "range": [85, 254],
+                            "name": "Strobe (slow>fast)"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "Open"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Colour",
+                        "Colour Temperature",
+                        "Iris",
+                        "Shutter"
+                    ]
+                }
+            ]
+        }
+    ]
+}

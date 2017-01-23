@@ -1,0 +1,1787 @@
+{
+    "manufacturers": {
+        "Cameo": {
+            "name": "Cameo"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Cameo",
+            "name": "Pixbar 600 PRO",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [900, 120, 75],
+                "weight": 6.8,
+                "power": 160,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [23, 23]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master Dimmer 0-100%"
+                        }
+                    ]
+                },
+                "Colour Macro": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Colour off",
+                            "color": "#000000"
+                        },
+                        {
+                            "range": [6, 13],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [14, 21],
+                            "name": "Amber",
+                            "color": "#ffc329"
+                        },
+                        {
+                            "range": [22, 29],
+                            "name": "Yellow warm",
+                            "color": "#fdf1a9"
+                        },
+                        {
+                            "range": [30, 37],
+                            "name": "Yellow",
+                            "color": "#ffff01"
+                        },
+                        {
+                            "range": [38, 45],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [46, 53],
+                            "name": "Turquoise",
+                            "color": "#00e5ee"
+                        },
+                        {
+                            "range": [54, 61],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [62, 69],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [70, 77],
+                            "name": "Lavender",
+                            "color": "#e6e6fa"
+                        },
+                        {
+                            "range": [78, 85],
+                            "name": "Mauve",
+                            "color": "#cc99ff"
+                        },
+                        {
+                            "range": [86, 93],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [94, 101],
+                            "name": "Pink",
+                            "color": "#ffcaea"
+                        },
+                        {
+                            "range": [102, 109],
+                            "name": "Warm White",
+                            "color": "#fdffef"
+                        },
+                        {
+                            "range": [110, 117],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [118, 125],
+                            "name": "Cold White",
+                            "color": "#f5f4ff"
+                        },
+                        {
+                            "range": [126, 128],
+                            "name": "Colour Jumping Stop"
+                        },
+                        {
+                            "range": [129, 192],
+                            "name": "Colour Jumping Speed slow -> fast / Colour 1 -> 12"
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "Colour Fading Speed slow -> fast / Colour 1 -> 12"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Strobe open"
+                        },
+                        {
+                            "range": [6, 10],
+                            "name": "Strobe closed"
+                        },
+                        {
+                            "range": [11, 250],
+                            "name": "Strobe slow -> fast 0Hz-20Hz"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Strobe open"
+                        }
+                    ]
+                },
+                "White (add to Colour Macro)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master Dimmer 0-100% (can add to Colour Macro)"
+                        }
+                    ]
+                },
+                "Amber (add to Colour Macro)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master Dimmer 0-100% (can add to Colour Macro)"
+                        }
+                    ]
+                },
+                "UV (add to Colour Macro)": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master Dimmer 0-100% (can add to Colour Macro)"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red dimmer"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green dimmer"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue dimmer"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White dimmer"
+                        }
+                    ]
+                },
+                "Amber": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber dimmer"
+                        }
+                    ]
+                },
+                "UV": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "UV dimmer"
+                        }
+                    ]
+                },
+                "Colour Temperature Correction (add to RGB and Colour Macro)": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Off"
+                        },
+                        {
+                            "range": [6, 255],
+                            "name": "Cold to warm"
+                        }
+                    ]
+                },
+                "Auto Mode (Override RGBAW, Colour Macro, CT)": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [6, 23],
+                            "name": "Dream"
+                        },
+                        {
+                            "range": [24, 41],
+                            "name": "Meteor"
+                        },
+                        {
+                            "range": [42, 59],
+                            "name": "Fade"
+                        },
+                        {
+                            "range": [60, 77],
+                            "name": "Jump"
+                        },
+                        {
+                            "range": [78, 95],
+                            "name": "Flow1"
+                        },
+                        {
+                            "range": [96, 113],
+                            "name": "Flow2"
+                        },
+                        {
+                            "range": [114, 131],
+                            "name": "Flow3"
+                        },
+                        {
+                            "range": [132, 149],
+                            "name": "Flow4"
+                        },
+                        {
+                            "range": [150, 167],
+                            "name": "Flow5"
+                        },
+                        {
+                            "range": [168, 185],
+                            "name": "Flow6"
+                        },
+                        {
+                            "range": [186, 203],
+                            "name": "Flow7"
+                        },
+                        {
+                            "range": [204, 221],
+                            "name": "Flow8"
+                        },
+                        {
+                            "range": [222, 239],
+                            "name": "Flow9"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Flow10"
+                        }
+                    ]
+                },
+                "Sound": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Sound Control Off"
+                        },
+                        {
+                            "range": [6, 255],
+                            "name": "Sound Control On Low -> High (Mic Sensitivity)"
+                        }
+                    ]
+                },
+                "Strobe Advanced": {
+                    "type": "Strobe",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Strobe open"
+                        },
+                        {
+                            "range": [6, 10],
+                            "name": "Strobe closed"
+                        },
+                        {
+                            "range": [11, 33],
+                            "name": "Pulse Random, slow -> fast"
+                        },
+                        {
+                            "range": [34, 56],
+                            "name": "Ramp up random, slow -> fast"
+                        },
+                        {
+                            "range": [57, 79],
+                            "name": "Ramp down random, slow -> fast"
+                        },
+                        {
+                            "range": [80, 102],
+                            "name": "Random strobe effect, slow -> fast"
+                        },
+                        {
+                            "range": [103, 127],
+                            "name": "Strobe break effect, 5s -> 1s (Very Short Flash)"
+                        },
+                        {
+                            "range": [128, 250],
+                            "name": "Strobe, slow -> fast 0-20Hz"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Strobe open"
+                        }
+                    ]
+                },
+                "Red 1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red dimmer"
+                        }
+                    ]
+                },
+                "Green 1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green dimmer"
+                        }
+                    ]
+                },
+                "Blue 1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue dimmer"
+                        }
+                    ]
+                },
+                "White 1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White dimmer"
+                        }
+                    ]
+                },
+                "Amber 1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber dimmer"
+                        }
+                    ]
+                },
+                "UV 1": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "UV dimmer"
+                        }
+                    ]
+                },
+                "Red 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red dimmer"
+                        }
+                    ]
+                },
+                "Green 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green dimmer"
+                        }
+                    ]
+                },
+                "Blue 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue dimmer"
+                        }
+                    ]
+                },
+                "White 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White dimmer"
+                        }
+                    ]
+                },
+                "Amber 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber dimmer"
+                        }
+                    ]
+                },
+                "UV 2": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "UV dimmer"
+                        }
+                    ]
+                },
+                "Red 3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red dimmer"
+                        }
+                    ]
+                },
+                "Green 3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green dimmer"
+                        }
+                    ]
+                },
+                "Blue 3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue dimmer"
+                        }
+                    ]
+                },
+                "White 3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White dimmer"
+                        }
+                    ]
+                },
+                "Amber 3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber dimmer"
+                        }
+                    ]
+                },
+                "UV 3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "UV dimmer"
+                        }
+                    ]
+                },
+                "Red 4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red dimmer"
+                        }
+                    ]
+                },
+                "Green 4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green dimmer"
+                        }
+                    ]
+                },
+                "Blue 4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue dimmer"
+                        }
+                    ]
+                },
+                "White 4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White dimmer"
+                        }
+                    ]
+                },
+                "Amber 4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber dimmer"
+                        }
+                    ]
+                },
+                "UV 4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "UV dimmer"
+                        }
+                    ]
+                },
+                "Red 5": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red dimmer"
+                        }
+                    ]
+                },
+                "Green 5": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green dimmer"
+                        }
+                    ]
+                },
+                "Blue 5": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue dimmer"
+                        }
+                    ]
+                },
+                "White 5": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White dimmer"
+                        }
+                    ]
+                },
+                "Amber 5": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber dimmer"
+                        }
+                    ]
+                },
+                "UV 5": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "UV dimmer"
+                        }
+                    ]
+                },
+                "Red 6": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red dimmer"
+                        }
+                    ]
+                },
+                "Green 6": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green dimmer"
+                        }
+                    ]
+                },
+                "Blue 6": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue dimmer"
+                        }
+                    ]
+                },
+                "White 6": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White dimmer"
+                        }
+                    ]
+                },
+                "Amber 6": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber dimmer"
+                        }
+                    ]
+                },
+                "UV 6": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "UV dimmer"
+                        }
+                    ]
+                },
+                "Red 7": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red dimmer"
+                        }
+                    ]
+                },
+                "Green 7": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green dimmer"
+                        }
+                    ]
+                },
+                "Blue 7": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue dimmer"
+                        }
+                    ]
+                },
+                "White 7": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White dimmer"
+                        }
+                    ]
+                },
+                "Amber 7": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber dimmer"
+                        }
+                    ]
+                },
+                "UV 7": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "UV dimmer"
+                        }
+                    ]
+                },
+                "Red 8": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red dimmer"
+                        }
+                    ]
+                },
+                "Green 8": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green dimmer"
+                        }
+                    ]
+                },
+                "Blue 8": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue dimmer"
+                        }
+                    ]
+                },
+                "White 8": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White dimmer"
+                        }
+                    ]
+                },
+                "Amber 8": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber dimmer"
+                        }
+                    ]
+                },
+                "UV 8": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "UV dimmer"
+                        }
+                    ]
+                },
+                "Red 9": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red dimmer"
+                        }
+                    ]
+                },
+                "Green 9": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green dimmer"
+                        }
+                    ]
+                },
+                "Blue 9": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue dimmer"
+                        }
+                    ]
+                },
+                "White 9": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White dimmer"
+                        }
+                    ]
+                },
+                "Amber 9": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber dimmer"
+                        }
+                    ]
+                },
+                "UV 9": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "UV dimmer"
+                        }
+                    ]
+                },
+                "Red 10": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red dimmer"
+                        }
+                    ]
+                },
+                "Green 10": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green dimmer"
+                        }
+                    ]
+                },
+                "Blue 10": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue dimmer"
+                        }
+                    ]
+                },
+                "White 10": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White dimmer"
+                        }
+                    ]
+                },
+                "Amber 10": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber dimmer"
+                        }
+                    ]
+                },
+                "UV 10": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "UV dimmer"
+                        }
+                    ]
+                },
+                "Red 11": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red dimmer"
+                        }
+                    ]
+                },
+                "Green 11": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green dimmer"
+                        }
+                    ]
+                },
+                "Blue 11": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue dimmer"
+                        }
+                    ]
+                },
+                "White 11": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White dimmer"
+                        }
+                    ]
+                },
+                "Amber 11": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber dimmer"
+                        }
+                    ]
+                },
+                "UV 11": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "UV dimmer"
+                        }
+                    ]
+                },
+                "Red 12": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red dimmer"
+                        }
+                    ]
+                },
+                "Green 12": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green dimmer"
+                        }
+                    ]
+                },
+                "Blue 12": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue dimmer"
+                        }
+                    ]
+                },
+                "White 12": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White dimmer"
+                        }
+                    ]
+                },
+                "Amber 12": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber dimmer"
+                        }
+                    ]
+                },
+                "UV 12": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "UV dimmer"
+                        }
+                    ]
+                }
+            },
+            "heads": {
+                "38-CH-head0": [
+                    "UV 1",
+                    "Amber 1",
+                    "White 1",
+                    "Blue 1",
+                    "Green 1",
+                    "Red 1"
+                ],
+                "38-CH-head1": [
+                    "Green 2",
+                    "Red 2",
+                    "UV 2",
+                    "Amber 2",
+                    "White 2",
+                    "Blue 2"
+                ],
+                "38-CH-head2": [
+                    "UV 3",
+                    "Amber 3",
+                    "White 3",
+                    "Blue 3",
+                    "Green 3",
+                    "Red 3"
+                ],
+                "38-CH-head3": [
+                    "UV 4",
+                    "Amber 4",
+                    "White 4",
+                    "Blue 4",
+                    "Green 4",
+                    "Red 4"
+                ],
+                "38-CH-head4": [
+                    "Red 5",
+                    "UV 5",
+                    "Amber 5",
+                    "White 5",
+                    "Blue 5",
+                    "Green 5"
+                ],
+                "38-CH-head5": [
+                    "UV 6",
+                    "Amber 6",
+                    "White 6",
+                    "Blue 6",
+                    "Green 6",
+                    "Red 6"
+                ],
+                "42-CH-head0": [
+                    "UV 1",
+                    "Amber 1",
+                    "White 1",
+                    "Blue 1",
+                    "Green 1",
+                    "Red 1"
+                ],
+                "42-CH-head1": [
+                    "Green 2",
+                    "Red 2",
+                    "UV 2",
+                    "Amber 2",
+                    "White 2",
+                    "Blue 2"
+                ],
+                "42-CH-head2": [
+                    "UV 3",
+                    "Amber 3",
+                    "White 3",
+                    "Blue 3",
+                    "Green 3",
+                    "Red 3"
+                ],
+                "42-CH-head3": [
+                    "UV 4",
+                    "Amber 4",
+                    "White 4",
+                    "Blue 4",
+                    "Green 4",
+                    "Red 4"
+                ],
+                "42-CH-head4": [
+                    "Red 5",
+                    "UV 5",
+                    "Amber 5",
+                    "White 5",
+                    "Blue 5",
+                    "Green 5"
+                ],
+                "42-CH-head5": [
+                    "UV 6",
+                    "Amber 6",
+                    "White 6",
+                    "Blue 6",
+                    "Green 6",
+                    "Red 6"
+                ],
+                "74-CH-head0": [
+                    "UV 1",
+                    "Amber 1",
+                    "White 1",
+                    "Blue 1",
+                    "Green 1",
+                    "Red 1"
+                ],
+                "74-CH-head1": [
+                    "Green 2",
+                    "Red 2",
+                    "UV 2",
+                    "Amber 2",
+                    "White 2",
+                    "Blue 2"
+                ],
+                "74-CH-head2": [
+                    "UV 3",
+                    "Amber 3",
+                    "White 3",
+                    "Blue 3",
+                    "Green 3",
+                    "Red 3"
+                ],
+                "74-CH-head3": [
+                    "UV 4",
+                    "Amber 4",
+                    "White 4",
+                    "Blue 4",
+                    "Green 4",
+                    "Red 4"
+                ],
+                "74-CH-head4": [
+                    "Red 5",
+                    "UV 5",
+                    "Amber 5",
+                    "White 5",
+                    "Blue 5",
+                    "Green 5"
+                ],
+                "74-CH-head5": [
+                    "UV 6",
+                    "Amber 6",
+                    "White 6",
+                    "Blue 6",
+                    "Green 6",
+                    "Red 6"
+                ],
+                "74-CH-head6": [
+                    "UV 7",
+                    "Amber 7",
+                    "White 7",
+                    "Blue 7",
+                    "Green 7",
+                    "Red 7"
+                ],
+                "74-CH-head7": [
+                    "UV 8",
+                    "Amber 8",
+                    "White 8",
+                    "Blue 8",
+                    "Green 8",
+                    "Red 8"
+                ],
+                "74-CH-head8": [
+                    "UV 9",
+                    "Amber 9",
+                    "White 9",
+                    "Blue 9",
+                    "Green 9",
+                    "Red 9"
+                ],
+                "74-CH-head9": [
+                    "Amber 10",
+                    "White 10",
+                    "Blue 10",
+                    "Green 10",
+                    "Red 10",
+                    "UV 10"
+                ],
+                "74-CH-head10": [
+                    "UV 11",
+                    "Amber 11",
+                    "White 11",
+                    "Blue 11",
+                    "Green 11",
+                    "Red 11"
+                ],
+                "74-CH-head11": [
+                    "Green 12",
+                    "Red 12",
+                    "UV 12",
+                    "Amber 12",
+                    "White 12",
+                    "Blue 12"
+                ],
+                "78-CH-head0": [
+                    "UV 1",
+                    "Amber 1",
+                    "White 1",
+                    "Blue 1",
+                    "Green 1",
+                    "Red 1"
+                ],
+                "78-CH-head1": [
+                    "Green 2",
+                    "Red 2",
+                    "UV 2",
+                    "Amber 2",
+                    "White 2",
+                    "Blue 2"
+                ],
+                "78-CH-head2": [
+                    "UV 3",
+                    "Amber 3",
+                    "White 3",
+                    "Blue 3",
+                    "Green 3",
+                    "Red 3"
+                ],
+                "78-CH-head3": [
+                    "UV 4",
+                    "Amber 4",
+                    "White 4",
+                    "Blue 4",
+                    "Green 4",
+                    "Red 4"
+                ],
+                "78-CH-head4": [
+                    "Red 5",
+                    "UV 5",
+                    "Amber 5",
+                    "White 5",
+                    "Blue 5",
+                    "Green 5"
+                ],
+                "78-CH-head5": [
+                    "UV 6",
+                    "Amber 6",
+                    "White 6",
+                    "Blue 6",
+                    "Green 6",
+                    "Red 6"
+                ],
+                "78-CH-head6": [
+                    "UV 7",
+                    "Amber 7",
+                    "White 7",
+                    "Blue 7",
+                    "Green 7",
+                    "Red 7"
+                ],
+                "78-CH-head7": [
+                    "UV 8",
+                    "Amber 8",
+                    "White 8",
+                    "Blue 8",
+                    "Green 8",
+                    "Red 8"
+                ],
+                "78-CH-head8": [
+                    "UV 9",
+                    "Amber 9",
+                    "White 9",
+                    "Blue 9",
+                    "Green 9",
+                    "Red 9"
+                ],
+                "78-CH-head9": [
+                    "Amber 10",
+                    "White 10",
+                    "Blue 10",
+                    "Green 10",
+                    "Red 10",
+                    "UV 10"
+                ],
+                "78-CH-head10": [
+                    "UV 11",
+                    "Amber 11",
+                    "White 11",
+                    "Blue 11",
+                    "Green 11",
+                    "Red 11"
+                ],
+                "78-CH-head11": [
+                    "Green 12",
+                    "Red 12",
+                    "UV 12",
+                    "Amber 12",
+                    "White 12",
+                    "Blue 12"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "2-CH",
+                    "channels": [
+                        "Dimmer",
+                        "Colour Macro"
+                    ]
+                },
+                {
+                    "name": "6-CH Mode 1",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe",
+                        "Colour Macro",
+                        "White (add to Colour Macro)",
+                        "Amber (add to Colour Macro)",
+                        "UV (add to Colour Macro)"
+                    ]
+                },
+                {
+                    "name": "6-CH Mode 2",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "UV"
+                    ]
+                },
+                {
+                    "name": "8-CH",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe Advanced",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "UV"
+                    ]
+                },
+                {
+                    "name": "12-CH",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe Advanced",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "UV",
+                        "Colour Macro",
+                        "Colour Temperature Correction (add to RGB and Colour Macro)",
+                        "Auto Mode (Override RGBAW, Colour Macro, CT)",
+                        "Sound"
+                    ]
+                },
+                {
+                    "name": "38-CH",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe Advanced",
+                        "Red 1",
+                        "Green 1",
+                        "Blue 1",
+                        "White 1",
+                        "Amber 1",
+                        "UV 1",
+                        "Red 2",
+                        "Green 2",
+                        "Blue 2",
+                        "White 2",
+                        "Amber 2",
+                        "UV 2",
+                        "Red 3",
+                        "Green 3",
+                        "Blue 3",
+                        "White 3",
+                        "Amber 3",
+                        "UV 3",
+                        "Red 4",
+                        "Green 4",
+                        "Blue 4",
+                        "White 4",
+                        "Amber 4",
+                        "UV 4",
+                        "Red 5",
+                        "Green 5",
+                        "Blue 5",
+                        "White 5",
+                        "Amber 5",
+                        "UV 5",
+                        "Red 6",
+                        "Green 6",
+                        "Blue 6",
+                        "White 6",
+                        "Amber 6",
+                        "UV 6"
+                    ]
+                },
+                {
+                    "name": "42-CH",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe Advanced",
+                        "Red 1",
+                        "Green 1",
+                        "Blue 1",
+                        "White 1",
+                        "Amber 1",
+                        "UV 1",
+                        "Red 2",
+                        "Green 2",
+                        "Blue 2",
+                        "White 2",
+                        "Amber 2",
+                        "UV 2",
+                        "Red 3",
+                        "Green 3",
+                        "Blue 3",
+                        "White 3",
+                        "Amber 3",
+                        "UV 3",
+                        "Red 4",
+                        "Green 4",
+                        "Blue 4",
+                        "White 4",
+                        "Amber 4",
+                        "UV 4",
+                        "Red 5",
+                        "Green 5",
+                        "Blue 5",
+                        "White 5",
+                        "Amber 5",
+                        "UV 5",
+                        "Red 6",
+                        "Green 6",
+                        "Blue 6",
+                        "White 6",
+                        "Amber 6",
+                        "UV 6",
+                        "Colour Macro",
+                        "Colour Temperature Correction (add to RGB and Colour Macro)",
+                        "Auto Mode (Override RGBAW, Colour Macro, CT)",
+                        "Sound"
+                    ]
+                },
+                {
+                    "name": "74-CH",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe Advanced",
+                        "Red 1",
+                        "Green 1",
+                        "Blue 1",
+                        "White 1",
+                        "Amber 1",
+                        "UV 1",
+                        "Red 2",
+                        "Green 2",
+                        "Blue 2",
+                        "White 2",
+                        "Amber 2",
+                        "UV 2",
+                        "Red 3",
+                        "Green 3",
+                        "Blue 3",
+                        "White 3",
+                        "Amber 3",
+                        "UV 3",
+                        "Red 4",
+                        "Green 4",
+                        "Blue 4",
+                        "White 4",
+                        "Amber 4",
+                        "UV 4",
+                        "Red 5",
+                        "Green 5",
+                        "Blue 5",
+                        "White 5",
+                        "Amber 5",
+                        "UV 5",
+                        "Red 6",
+                        "Green 6",
+                        "Blue 6",
+                        "White 6",
+                        "Amber 6",
+                        "UV 6",
+                        "Red 7",
+                        "Green 7",
+                        "Blue 7",
+                        "White 7",
+                        "Amber 7",
+                        "UV 7",
+                        "Red 8",
+                        "Green 8",
+                        "Blue 8",
+                        "White 8",
+                        "Amber 8",
+                        "UV 8",
+                        "Red 9",
+                        "Green 9",
+                        "Blue 9",
+                        "White 9",
+                        "Amber 9",
+                        "UV 9",
+                        "Red 10",
+                        "Green 10",
+                        "Blue 10",
+                        "White 10",
+                        "Amber 10",
+                        "UV 10",
+                        "Red 11",
+                        "Green 11",
+                        "Blue 11",
+                        "White 11",
+                        "Amber 11",
+                        "UV 11",
+                        "Red 12",
+                        "Green 12",
+                        "Blue 12",
+                        "White 12",
+                        "Amber 12",
+                        "UV 12"
+                    ]
+                },
+                {
+                    "name": "78-CH",
+                    "channels": [
+                        "Dimmer",
+                        "Strobe Advanced",
+                        "Red 1",
+                        "Green 1",
+                        "Blue 1",
+                        "White 1",
+                        "Amber 1",
+                        "UV 1",
+                        "Red 2",
+                        "Green 2",
+                        "Blue 2",
+                        "White 2",
+                        "Amber 2",
+                        "UV 2",
+                        "Red 3",
+                        "Green 3",
+                        "Blue 3",
+                        "White 3",
+                        "Amber 3",
+                        "UV 3",
+                        "Red 4",
+                        "Green 4",
+                        "Blue 4",
+                        "White 4",
+                        "Amber 4",
+                        "UV 4",
+                        "Red 5",
+                        "Green 5",
+                        "Blue 5",
+                        "White 5",
+                        "Amber 5",
+                        "UV 5",
+                        "Red 6",
+                        "Green 6",
+                        "Blue 6",
+                        "White 6",
+                        "Amber 6",
+                        "UV 6",
+                        "Red 7",
+                        "Green 7",
+                        "Blue 7",
+                        "White 7",
+                        "Amber 7",
+                        "UV 7",
+                        "Red 8",
+                        "Green 8",
+                        "Blue 8",
+                        "White 8",
+                        "Amber 8",
+                        "UV 8",
+                        "Red 9",
+                        "Green 9",
+                        "Blue 9",
+                        "White 9",
+                        "Amber 9",
+                        "UV 9",
+                        "Red 10",
+                        "Green 10",
+                        "Blue 10",
+                        "White 10",
+                        "Amber 10",
+                        "UV 10",
+                        "Red 11",
+                        "Green 11",
+                        "Blue 11",
+                        "White 11",
+                        "Amber 11",
+                        "UV 11",
+                        "Red 12",
+                        "Green 12",
+                        "Blue 12",
+                        "White 12",
+                        "Amber 12",
+                        "UV 12",
+                        "Colour Macro",
+                        "Colour Temperature Correction (add to RGB and Colour Macro)",
+                        "Auto Mode (Override RGBAW, Colour Macro, CT)",
+                        "Sound"
+                    ]
+                }
+            ]
+        }
+    ]
+}
