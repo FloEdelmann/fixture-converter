@@ -72,7 +72,7 @@ module.exports.export = function formatEcue(manufacturers, fixtures, optionsOutp
                 const channel = fixture.availableChannels[chKey];
 
                 if (channel === undefined) {
-                    die(`Channel "${chKey}" not found in fixture "${fixData.name}", exiting.`);
+                    die(`Channel "${chKey}" not found in ${fixData.manufacturer}'s fixture "${fixData.name}", exiting.`);
                 }
 
                 let chData = Object.assign({}, defaults.fixtures[0].availableChannels["Unique channel name"], channel);
@@ -114,7 +114,7 @@ module.exports.export = function formatEcue(manufacturers, fixtures, optionsOutp
                     const channelLsb = fixture.availableChannels[chKeyLsb];
 
                     if (channelLsb === undefined) {
-                        die(`Channel "${chKeyLsb}" not found in fixture "${fixData.name}", exiting.`);
+                        die(`Channel "${chKeyLsb}" not found in ${fixData.manufacturer}'s fixture "${fixData.name}", exiting.`);
                     }
                     const chDataLsb = Object.assign({}, defaults.fixtures[0].availableChannels["Unique channel name"], channelLsb);
 
@@ -365,15 +365,17 @@ module.exports.import = function importEcue(str, filename) {
                             if (name == shortName)
                                 delete ch.name;
 
+                            const testName = channel.$.Name.toLowerCase();
+
                             if (fixture.ChannelColor && fixture.ChannelColor.indexOf(channel) != -1) {
-                                if (channel.Range && channel.Range.length > 1) {
+                                if ((channel.Range && channel.Range.length > 1) || /colou?r\s*macro/.test(testName)) {
                                     ch.type = 'MultiColor';
                                 }
                                 else {
                                     ch.type = 'SingleColor';
                                     ch.color = 'Generic';
                                     ['Red', 'Green', 'Blue', 'Cyan', 'Magenta', 'Yellow', 'Amber', 'White', 'UV', 'Lime'].some((color) => {
-                                        if (channel.$.Name.toLowerCase().includes(color.toLowerCase())) {
+                                        if (testName.includes(color.toLowerCase())) {
                                             ch.color = color;
                                             return true;
                                         }
@@ -381,26 +383,40 @@ module.exports.import = function importEcue(str, filename) {
                                     });
                                 }
                             }
-                            else if (channel.$.Name.toLowerCase().includes('speed'))
+                            else if (testName.includes('speed')) {
                                 ch.type = 'Speed';
-                            else if (channel.$.Name.toLowerCase().includes('gobo'))
+                            }
+                            else if (testName.includes('gobo')) {
                                 ch.type = 'Gobo';
-                            else if (channel.$.Name.toLowerCase().includes('program') || channel.$.Name.toLowerCase().includes('effect'))
+                            }
+                            else if (testName.includes('program') || testName.includes('effect') || testName.includes('macro')) {
                                 ch.type = 'Effect';
-                            else if (channel.$.Name.toLowerCase().includes('prism'))
+                            }
+                            else if (testName.includes('prism')) {
                                 ch.type = 'Prism';
-                            else if (channel.$.Name.toLowerCase().includes('shutter'))
+                            }
+                            else if (testName.includes('shutter')) {
                                 ch.type = 'Shutter';
-                            else if (channel.$.Name.toLowerCase().includes('strob'))
+                            }
+                            else if (testName.includes('strob')) {
                                 ch.type = 'Strobe';
-                            else if (channel.$.Name.toLowerCase().includes('pan'))
+                            }
+                            else if (testName.includes('pan')) {
                                 ch.type = 'Pan';
-                            else if (channel.$.Name.toLowerCase().includes('tilt'))
+                            }
+                            else if (testName.includes('tilt')) {
                                 ch.type = 'Tilt';
-                            else if (fixture.ChannelBeam && fixture.ChannelBeam.indexOf(channel) != -1)
+                            }
+                            else if (testName.includes('reset')) {
+                                ch.type = 'Maintenance';
+                            }
+                            else if (fixture.ChannelBeam && fixture.ChannelBeam.indexOf(channel) != -1) {
                                 ch.type = 'Beam';
-                            else if (!fixture.ChannelIntensity || fixture.ChannelIntensity.indexOf(channel) != -1) // not even a default Intensity channel
+                            }
+                            else if (!fixture.ChannelIntensity || fixture.ChannelIntensity.indexOf(channel) == -1) {
+                                // not even a default Intensity channel
                                 ch.warning = "Please check type!";
+                            }
 
                             if (channel.$.DefaultValue != "0")
                                 ch.defaultValue = parseInt(channel.$.DefaultValue);

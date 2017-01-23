@@ -40,12 +40,27 @@ module.exports.export = function formatQLCplus(manufacturers, fixtures, optionOu
         str += ` <Model>${fixData.name}</Model>\n`;
         str += ` <Type>${fixData.type}</Type>\n`;
 
+        // make null references in channel list link to a "No function" channel
+        for (const mode of fixData.modes) {
+            for (let i=0; i<mode.channels.length; i++) {
+                if (mode.channels[i] == null) {
+                    mode.channels[i] = "No Function " + i;
+                    fixData.availableChannels["No Function " + i] = {
+                        "name": "No Function",
+                        "type": "Nothing"
+                    };
+                }
+            }
+        }
+
         const chDatas = {};
         for (const channel in fixData.availableChannels) {
             const chData = chDatas[channel] = Object.assign({}, defaults.fixtures[0].availableChannels["Unique channel name"], fixData.availableChannels[channel]);
 
             if (!chData.name)
                 chData.name = channel;
+
+            chData.name = chData.name.replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
             let byte = 0;
             for (const multiByteChannel of fixData.multiByteChannels) {
@@ -82,6 +97,7 @@ module.exports.export = function formatQLCplus(manufacturers, fixtures, optionOu
 
             for (const capability of chData.capabilities) {
                 const capData = Object.assign({}, defaults.fixtures[0].availableChannels["Unique channel name"].capabilities[0], capability);
+                capData.name = capData.name.replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
                 str += `  <Capability Min="${capData.range[0]}" Max="${capData.range[1]}"`;
                 if (capData.image != null) {
@@ -127,7 +143,7 @@ module.exports.export = function formatQLCplus(manufacturers, fixtures, optionOu
                 let channel = modeData.channels[i];
 
                 if (!chDatas[channel])
-                    die(`Channel "${channel}" not found in fixture "${fixData.name}" (mode "${modeData.name}"), exiting.`);
+                    die(`Channel "${channel}" not found in ${manData.name}'s fixture "${fixData.name}" (mode "${modeData.name}"), exiting.`);
                 
                 str += `  <Channel Number="${i}">${chDatas[channel].name}</Channel>\n`;
             }
