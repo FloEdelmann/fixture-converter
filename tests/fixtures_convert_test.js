@@ -84,17 +84,38 @@ fs.mkdir(outputDir, (err) => {
             format: "ecue",
         }
     ]);
+
+    // check if default export in all formats passes
+    for (const format in formats) {
+        const command = 'node ' + (useHarmonyFlag ? '--harmony-destructuring ' : '')
+            + path.join(__dirname, '..', 'fixtures_convert.js')
+            + ` -f ${format}`
+            + ' -o ' + path.join(outputDir, '%FORMAT%', `%MANUFACTURER%-%FIXTURE%${formats[format].fileEnding}`);
+
+        cp.exec(command, (error, stdout, stderr) => {
+            console.log(`Testing command: ${command} ...`);
+            try {
+                assert.strictEqual(error, null, `${stdout}\n${stderr}\n${error}`);
+                assert.strictEqual(stderr, '', `${stdout}\n${stderr}`);
+                console.log('Test pass.');
+            }
+            catch (assertionError) {
+                console.error(assertionError.message);
+                process.exit(1);
+            }
+        });
+    }
 });
 
 
 function testDevice(deviceName, tests) {
     for (const testData of tests) {
-        test(deviceName, testData);
+        singleTest(deviceName, testData);
     }
 }
 
 
-function test(deviceName, testData) {
+function singleTest(deviceName, testData) {
     const format = formats[testData.format];
     const useDefaultFile = testData.files === undefined;
     testData = Object.assign({}, defaultTest, testData);
@@ -118,102 +139,99 @@ function test(deviceName, testData) {
         + ' -i ' + path.join(__dirname, inputFile)
         + ` -f ${testData.format}`
         + ' -o ' + path.join(outputDir, '%FORMAT%', `%MANUFACTURER%-%FIXTURE%${outputFileEnding}`);
-    cp.exec(
-        command,
-        (error, stdout, stderr) => {
-            try {
-                console.log(`Testing command: ${command} ...`);
 
-                assert.strictEqual(error, null, `${stdout}\n${stderr}\n${error}`);
-                assert.strictEqual(stderr, '', `${stdout}\n${stderr}`);
+    cp.exec(command, (error, stdout, stderr) => {
+        console.log(`Testing command: ${command} ...`);
+        try {
+            assert.strictEqual(error, null, `${stdout}\n${stderr}\n${error}`);
+            assert.strictEqual(stderr, '', `${stdout}\n${stderr}`);
 
-                const stdoutLines = stdout.split('\n');
-                // remove "Handling ..." message in the first line when exporting
-                if (!testData.isImport) {
-                    assert.strictEqual(stdoutLines.shift(), `Handling ${testData.format} formatting...`, stdout + '\nError: missing "Handling ..." message');
+            const stdoutLines = stdout.split('\n');
+            // remove "Handling ..." message in the first line when exporting
+            if (!testData.isImport) {
+                assert.strictEqual(stdoutLines.shift(), `Handling ${testData.format} formatting...`, stdout + '\nError: missing "Handling ..." message');
+            }
+            // remove last (empty) line
+            assert.strictEqual(stdoutLines.pop(), '', stdout + '\nError: last line not empty');
+
+            let fileCount = 0;
+            for (let i = 0; i < stdoutLines.length; i++) {
+                const line = stdoutLines[i];
+                const returnedFile = line.match(/File "([^"]*)" successfully written./);
+                let basename = path.basename(returnedFile[1], outputFileEnding);
+                const errorMessage = `${stdout}\nError: outputted file path not found (file ${fileCount+1} in line ${i+1})`;
+                assert.notStrictEqual(returnedFile, null, errorMessage);
+                assert.notStrictEqual(returnedFile[1], undefined, errorMessage);
+
+                // check if the returned file name was desired
+                let desiredFile;
+                if (useDefaultFile) {
+                    desiredFile = defaultTest.files.default;
+                } else {
+                    desiredFile = testData.files[basename];
+                    assert.notStrictEqual(
+                        desiredFile,
+                        undefined,
+                        stdout + `\nError: unexpected file ${basename}`
+                    )
+                    desiredFile = Object.assign({}, defaultTest.files.default, desiredFile);
+                    delete testData.files[basename];
                 }
-                // remove last (empty) line
-                assert.strictEqual(stdoutLines.pop(), '', stdout + '\nError: last line not empty');
 
-                let fileCount = 0;
-                for (let i = 0; i < stdoutLines.length; i++) {
-                    const line = stdoutLines[i];
-                    const returnedFile = line.match(/File "([^"]*)" successfully written./);
-                    let basename = path.basename(returnedFile[1], outputFileEnding);
-                    const errorMessage = `${stdout}\nError: outputted file path not found (file ${fileCount+1} in line ${i+1})`;
-                    assert.notStrictEqual(returnedFile, null, errorMessage);
-                    assert.notStrictEqual(returnedFile[1], undefined, errorMessage);
+                // check equality of returned and desired file contents
+                let returnedFileContent = fs.readFileSync(
+                    returnedFile[1],
+                    'utf8'
+                );
+                const desiredContentFilePath = path.join(__dirname, 'desired_out', testData.format, basename + outputFileEnding);
+                let desiredContent = fs.readFileSync(
+                    desiredContentFilePath,
+                    'utf8'
+                );
 
-                    // check if the returned file name was desired
-                    let desiredFile;
-                    if (useDefaultFile) {
-                        desiredFile = defaultTest.files.default;
-                    } else {
-                        desiredFile = testData.files[basename];
-                        assert.notStrictEqual(
-                            desiredFile,
-                            undefined,
-                            stdout + `\nError: unexpected file ${basename}`
-                        )
-                        desiredFile = Object.assign({}, defaultTest.files.default, desiredFile);
-                        delete testData.files[basename];
+                if (format.replacers !== undefined && format.replacers !== null) {
+                    for (const replacer of format.replacers) {
+                        returnedFileContent = returnedFileContent.replace(replacer[0], replacer[1]);
+                        desiredContent = desiredContent.replace(replacer[0], replacer[1]);
                     }
+                }
 
-                    // check equality of returned and desired file contents
-                    let returnedFileContent = fs.readFileSync(
-                        returnedFile[1],
-                        'utf8'
-                    );
-                    const desiredContentFilePath = path.join(__dirname, 'desired_out', testData.format, basename + outputFileEnding);
-                    let desiredContent = fs.readFileSync(
-                        desiredContentFilePath,
-                        'utf8'
-                    );
+                assert.strictEqual(
+                    returnedFileContent,
+                    desiredContent,
+                    "Returned file content doesn't equal desired content.\n"
+                    + "--- returned output file\n"
+                    + "+++ desired output file\n"
+                    + diff.createTwoFilesPatch(returnedFile[1], desiredContentFilePath, returnedFileContent, desiredContent)
+                );
 
-                    if (format.replacers !== undefined && format.replacers !== null) {
-                        for (const replacer of format.replacers) {
-                            returnedFileContent = returnedFileContent.replace(replacer[0], replacer[1]);
-                            desiredContent = desiredContent.replace(replacer[0], replacer[1]);
-                        }
-                    }
-
+                // check if next line is a warning and if there should be a warning
+                const nextLine = stdoutLines[i+1];
+                if (desiredFile.hasWarnings) {
                     assert.strictEqual(
-                        returnedFileContent,
-                        desiredContent,
-                        "Returned file content doesn't equal desired content.\n"
-                        + "--- returned output file\n"
-                        + "+++ desired output file\n"
-                        + diff.createTwoFilesPatch(returnedFile[1], desiredContentFilePath, returnedFileContent, desiredContent)
+                        nextLine,
+                        "Please check for warnings using a text editor.",
+                        stdout + `\nError: warning expected in line ${i+2}`
                     );
-
-                    // check if next line is a warning and if there should be a warning
-                    const nextLine = stdoutLines[i+1];
-                    if (desiredFile.hasWarnings) {
-                        assert.strictEqual(
-                            nextLine,
-                            "Please check for warnings using a text editor.",
-                            stdout + `\nError: warning expected in line ${i+2}`
-                        );
-                        // skip next line in this loop
-                        i++;
-                    }
-                    else {
-                        assert.notStrictEqual(
-                            nextLine,
-                            "Please check for warnings using a text editor.",
-                            stdout + `\nError: unexpected warning in line ${i+2}`
-                        );
-                    }
-
-                    fileCount++;
+                    // skip next line in this loop
+                    i++;
+                }
+                else {
+                    assert.notStrictEqual(
+                        nextLine,
+                        "Please check for warnings using a text editor.",
+                        stdout + `\nError: unexpected warning in line ${i+2}`
+                    );
                 }
 
-                console.log('Test ok.')
+                fileCount++;
             }
-            catch(assertionError) {
-                console.error(assertionError.message);
-                process.exit(1);
-            }
+
+            console.log('Test pass.');
         }
-    );
+        catch (assertionError) {
+            console.error(assertionError.message);
+            process.exit(1);
+        }
+    });
 }
