@@ -1,0 +1,183 @@
+{
+    "manufacturers": {
+        "ETEC": {
+            "name": "ETEC"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "ETEC",
+            "name": "LED PAR 64 18x10W RGBWA",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [270, 270, 300],
+                "weight": 2.5,
+                "power": 190,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Master": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "increasing brightness"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Amber": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Controlled by CH1 to CH6"
+                        },
+                        {
+                            "range": [32, 95],
+                            "name": "Static Color Change CC01-CC31 with 36 colors, controlled by CH8"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Auto Fading Colors, Speed controlled by CH7"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Auto Increasing Brightness, Speed controlled by CH7"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "Auto Decreasing Brightness, Speed controlled by CH7"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "Auto Switching Colors, Speed controlled by CH7"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Auto Switching by Sound"
+                        }
+                    ]
+                },
+                "Static Colour / Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "CC01-CC31, 31 kinds of static colors, Speed from slow to fast"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "No Strobe"
+                        },
+                        {
+                            "range": [64, 223],
+                            "name": "AUTO Strobe, Spped from slow to fast"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Sound Strobe"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "9 Channel",
+                    "channels": [
+                        "Master",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "Colour",
+                        "Static Colour / Speed",
+                        "Strobe"
+                    ]
+                },
+                {
+                    "name": "6 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "Static Colour / Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

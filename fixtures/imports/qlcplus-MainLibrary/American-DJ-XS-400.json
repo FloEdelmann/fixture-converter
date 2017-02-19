@@ -1,0 +1,421 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "XS 400",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [169, 284, 123],
+                "weight": 6,
+                "power": 40,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Fresnel",
+                    "degreesMinMax": [5, 5]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 999
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan (0 - 540°)"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt"
+                        }
+                    ]
+                },
+                "Tilt Continuous Rotation": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 55],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [56, 127],
+                            "name": "Clockwise Rotation"
+                        },
+                        {
+                            "range": [128, 199],
+                            "name": "Counter-Clockwise Rotation"
+                        },
+                        {
+                            "range": [200, 255],
+                            "name": "No Function"
+                        }
+                    ]
+                },
+                "Tilt Continuous Rotation Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow - Fast"
+                        }
+                    ]
+                },
+                "Red LED": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "Green LED": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "Blue LED": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "White LED": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Intensity"
+                        }
+                    ]
+                },
+                "Color Macros & Effects": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [11, 20],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [21, 30],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [31, 40],
+                            "name": "Red & Green"
+                        },
+                        {
+                            "range": [41, 50],
+                            "name": "Blue"
+                        },
+                        {
+                            "range": [51, 60],
+                            "name": "Red & Blue"
+                        },
+                        {
+                            "range": [61, 70],
+                            "name": "Green & Blue"
+                        },
+                        {
+                            "range": [71, 80],
+                            "name": "Red & Green & Blue"
+                        },
+                        {
+                            "range": [81, 123],
+                            "name": "Single Color Change Slow - Fast"
+                        },
+                        {
+                            "range": [124, 166],
+                            "name": "Color Mix Slow - Fast"
+                        },
+                        {
+                            "range": [167, 209],
+                            "name": "Color Fade Slow - Fast"
+                        },
+                        {
+                            "range": [210, 249],
+                            "name": "Color Change Slow - Fast"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Sound Active Color Effect"
+                        }
+                    ]
+                },
+                "Strobing": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [8, 139],
+                            "name": "Strobing Slow - Fast"
+                        },
+                        {
+                            "range": [140, 189],
+                            "name": "Slow open - Fast close"
+                        },
+                        {
+                            "range": [190, 231],
+                            "name": "Fast Open - Slow Close"
+                        },
+                        {
+                            "range": [232, 255],
+                            "name": "Random Strobe"
+                        }
+                    ]
+                },
+                "Master Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0% - 100%"
+                        }
+                    ]
+                },
+                "Programs": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Nothing"
+                        },
+                        {
+                            "range": [16, 40],
+                            "name": "Program 1"
+                        },
+                        {
+                            "range": [41, 65],
+                            "name": "Program 2"
+                        },
+                        {
+                            "range": [66, 90],
+                            "name": "Program 3"
+                        },
+                        {
+                            "range": [91, 115],
+                            "name": "Program 4"
+                        },
+                        {
+                            "range": [116, 140],
+                            "name": "Program 5"
+                        },
+                        {
+                            "range": [141, 165],
+                            "name": "Program 6"
+                        },
+                        {
+                            "range": [166, 190],
+                            "name": "Program 7"
+                        },
+                        {
+                            "range": [191, 215],
+                            "name": "Program 8"
+                        },
+                        {
+                            "range": [216, 240],
+                            "name": "Random Program Playing 5 Times Each"
+                        },
+                        {
+                            "range": [241, 255],
+                            "name": "Random Program Playing 2 Mins. Each"
+                        }
+                    ]
+                },
+                "Program Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow - Fast"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Fast - Slow"
+                        }
+                    ]
+                },
+                "Special Functions": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 69],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Blackout With Pan/Tilt Movement"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Blackout with RGBW Value Changes"
+                        },
+                        {
+                            "range": [100, 199],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Reset All"
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "No Function"
+                        }
+                    ]
+                },
+                "Dimmer Mode": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 20],
+                            "name": "Standard"
+                        },
+                        {
+                            "range": [21, 40],
+                            "name": "Stage"
+                        },
+                        {
+                            "range": [41, 60],
+                            "name": "TV"
+                        },
+                        {
+                            "range": [61, 80],
+                            "name": "Architectural"
+                        },
+                        {
+                            "range": [81, 100],
+                            "name": "Theatre"
+                        },
+                        {
+                            "range": [101, 255],
+                            "name": "Default Dimmer Setting"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "16 Channel",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Tilt Continuous Rotation",
+                        "Tilt Continuous Rotation Speed",
+                        "Red LED",
+                        "Green LED",
+                        "Blue LED",
+                        "White LED",
+                        "Color Macros & Effects",
+                        "Strobing",
+                        "Master Dimmer",
+                        "Programs",
+                        "Program Speed",
+                        "Pan/Tilt Speed",
+                        "Special Functions",
+                        "Dimmer Mode"
+                    ]
+                },
+                {
+                    "name": "18 Channel",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Tilt Continuous Rotation",
+                        "Tilt Continuous Rotation Speed",
+                        "Red LED",
+                        "Green LED",
+                        "Blue LED",
+                        "White LED",
+                        "Color Macros & Effects",
+                        "Strobing",
+                        "Master Dimmer",
+                        "Programs",
+                        "Program Speed",
+                        "Pan/Tilt Speed",
+                        "Special Functions",
+                        "Dimmer Mode"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,174 @@
+{
+    "manufacturers": {
+        "American DJ": {
+            "name": "American DJ"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "American DJ",
+            "name": "Punch LED Pro",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [460, 200, 125],
+                "weight": 5,
+                "power": 34,
+                "DMXconnector": "5-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        }
+                    ]
+                },
+                "Color Macro": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Nothing"
+                        },
+                        {
+                            "range": [8, 255],
+                            "name": "Color Macro"
+                        }
+                    ]
+                },
+                "Strobing": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Nothing"
+                        },
+                        {
+                            "range": [16, 255],
+                            "name": "Strobing"
+                        }
+                    ]
+                },
+                "Dimming Control": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 31],
+                            "name": "Nothing"
+                        },
+                        {
+                            "range": [32, 63],
+                            "name": "Dim->Bright"
+                        },
+                        {
+                            "range": [64, 95],
+                            "name": "Bright->Dim"
+                        },
+                        {
+                            "range": [96, 127],
+                            "name": "Dim->Bright->Dim"
+                        },
+                        {
+                            "range": [128, 159],
+                            "name": "Color Mixing"
+                        },
+                        {
+                            "range": [160, 191],
+                            "name": "3 Color Change"
+                        },
+                        {
+                            "range": [192, 223],
+                            "name": "7 Color Change"
+                        },
+                        {
+                            "range": [224, 255],
+                            "name": "Sound Active"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer (0 - 100%)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "6 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color Macro",
+                        "Strobing",
+                        "Dimming Control"
+                    ]
+                },
+                {
+                    "name": "7 Channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Color Macro",
+                        "Strobing",
+                        "Dimming Control",
+                        "Dimmer"
+                    ]
+                }
+            ]
+        }
+    ]
+}

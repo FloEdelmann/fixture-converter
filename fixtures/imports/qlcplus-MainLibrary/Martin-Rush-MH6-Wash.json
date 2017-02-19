@@ -1,0 +1,343 @@
+{
+    "manufacturers": {
+        "Martin": {
+            "name": "Martin"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Martin",
+            "name": "Rush MH6 Wash",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [418, 588, 328],
+                "weight": 18,
+                "power": 300,
+                "DMXconnector": "3-pin and 5-pin",
+                "bulb": {
+                    "type": "LED",
+                    "lumens": 7100
+                },
+                "lens": {
+                    "degreesMinMax": [16, 16]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan (0 to 540°)"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt (0 to 270°)"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Fine"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Closed"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [16, 131],
+                            "name": "Strobe, slow-fast"
+                        },
+                        {
+                            "range": [132, 139],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [140, 181],
+                            "name": "Fast close, slow open"
+                        },
+                        {
+                            "range": [182, 189],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [190, 231],
+                            "name": "Slow close, fast open"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Random strobe"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer (0 to 100%)"
+                        }
+                    ]
+                },
+                "Dimmer fine": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer fine (0 to 100%)"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 to 100%"
+                        }
+                    ]
+                },
+                "Color presets": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [11, 190],
+                            "name": "Color presets"
+                        },
+                        {
+                            "range": [191, 192],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [193, 214],
+                            "name": "Color scroll fast-slow"
+                        },
+                        {
+                            "range": [215, 221],
+                            "name": "Stop at current position"
+                        },
+                        {
+                            "range": [222, 243],
+                            "name": "Color scroll slow-fast"
+                        },
+                        {
+                            "range": [244, 247],
+                            "name": "Random fast"
+                        },
+                        {
+                            "range": [248, 251],
+                            "name": "Random medium"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "Random slow"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Wide to narrow"
+                        }
+                    ]
+                },
+                "Fixture control": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No function (disables calibration)"
+                        },
+                        {
+                            "range": [10, 14],
+                            "name": "Reset fixture"
+                        },
+                        {
+                            "range": [15, 54],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [55, 59],
+                            "name": "Enable calibration"
+                        },
+                        {
+                            "range": [60, 74],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [75, 79],
+                            "name": "Pan & Tilt Speed = Normal"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Pan & Tilt Speed = Fast (default)"
+                        },
+                        {
+                            "range": [90, 94],
+                            "name": "Pan & Tilt Speed = Slow"
+                        },
+                        {
+                            "range": [95, 144],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [145, 149],
+                            "name": "Pan/tilt blackout = ON"
+                        },
+                        {
+                            "range": [150, 154],
+                            "name": "Pan/tilt blackout = OFF"
+                        },
+                        {
+                            "range": [155, 159],
+                            "name": "Illuminate display"
+                        },
+                        {
+                            "range": [160, 164],
+                            "name": "Display illumination off"
+                        },
+                        {
+                            "range": [165, 229],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [230, 234],
+                            "name": "Store zoom calibration"
+                        },
+                        {
+                            "range": [235, 239],
+                            "name": "Store pan calibration"
+                        },
+                        {
+                            "range": [240, 244],
+                            "name": "Store tilt calibration"
+                        },
+                        {
+                            "range": [245, 249],
+                            "name": "Reset all calibrations to factory\ndefault"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "No function"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt Fine"
+                ],
+                [
+                    "Dimmer fine"
+                ]
+            ],
+            "warning": "Please validate these 16-bit channels!",
+            "modes": [
+                {
+                    "name": "Standard",
+                    "channels": [
+                        "Strobe",
+                        "Dimmer",
+                        "Dimmer fine",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Color presets",
+                        "Zoom",
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Fixture control"
+                    ]
+                }
+            ]
+        }
+    ]
+}

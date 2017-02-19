@@ -1,0 +1,328 @@
+{
+    "manufacturers": {
+        "Contest": {
+            "name": "Contest"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Contest",
+            "name": "Mini-Head 10W",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [175, 258, 141],
+                "weight": 2.7,
+                "power": 20,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "colorTemperature": 6000,
+                    "lumens": 625
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [14, 14]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 610,
+                    "tiltMax": 220
+                }
+            },
+            "availableChannels": {
+                "Shows": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Blackout"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Show 0 (audio off)"
+                        },
+                        {
+                            "range": [16, 63],
+                            "name": "Show 1"
+                        },
+                        {
+                            "range": [64, 111],
+                            "name": "Show 2"
+                        },
+                        {
+                            "range": [112, 159],
+                            "name": "Show 3"
+                        },
+                        {
+                            "range": [160, 207],
+                            "name": "Show 4"
+                        },
+                        {
+                            "range": [208, 255],
+                            "name": "Show 0 (audio on)"
+                        }
+                    ]
+                },
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan (0 - 610°)"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt (0 - 220°)"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Black out"
+                        },
+                        {
+                            "range": [8, 255],
+                            "name": "Dim 0-100%"
+                        }
+                    ]
+                },
+                "Color wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [16, 50],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [51, 85],
+                            "name": "Orange",
+                            "color": "#ffaa00"
+                        },
+                        {
+                            "range": [86, 115],
+                            "name": "Purple",
+                            "color": "#bd3f91"
+                        },
+                        {
+                            "range": [116, 150],
+                            "name": "Blue sky",
+                            "color": "#015daa"
+                        },
+                        {
+                            "range": [151, 185],
+                            "name": "Violet",
+                            "color": "#cd60a1"
+                        },
+                        {
+                            "range": [186, 215],
+                            "name": "Green",
+                            "color": "#019a3f"
+                        },
+                        {
+                            "range": [216, 255],
+                            "name": "Yellow",
+                            "color": "#f2e500"
+                        }
+                    ]
+                },
+                "Gobos": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 14],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [15, 50],
+                            "name": "Circle small"
+                        },
+                        {
+                            "range": [51, 85],
+                            "name": "Twist"
+                        },
+                        {
+                            "range": [86, 115],
+                            "name": "Scratch"
+                        },
+                        {
+                            "range": [116, 150],
+                            "name": "Line"
+                        },
+                        {
+                            "range": [151, 185],
+                            "name": "Triangle"
+                        },
+                        {
+                            "range": [186, 215],
+                            "name": "Circle open"
+                        },
+                        {
+                            "range": [216, 255],
+                            "name": "Star open"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [16, 131],
+                            "name": "Strobe 0-100%"
+                        },
+                        {
+                            "range": [132, 139],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [140, 181],
+                            "name": "Pulse"
+                        },
+                        {
+                            "range": [182, 189],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [190, 231],
+                            "name": "Pulse inv."
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Strobe random"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Open"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Special functions": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 69],
+                            "name": "Noop"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Blackout during pan/tilt"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Noop"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Blackout during colorchange"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Noop"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "Blackout during gobo-change"
+                        },
+                        {
+                            "range": [120, 199],
+                            "name": "Noop"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "General reset"
+                        },
+                        {
+                            "range": [210, 255],
+                            "name": "Noop"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "1 channel",
+                    "channels": [
+                        "Shows"
+                    ]
+                },
+                {
+                    "name": "8 channel",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Dimmer",
+                        "Strobe",
+                        "Color wheel",
+                        "Gobos",
+                        "Special functions",
+                        "Shows"
+                    ]
+                },
+                {
+                    "name": "10 channel",
+                    "channels": [
+                        "Pan",
+                        "Pan Fine",
+                        "Tilt",
+                        "Tilt Fine",
+                        "Dimmer",
+                        "Strobe",
+                        "Color wheel",
+                        "Gobos",
+                        "Special functions",
+                        "Shows"
+                    ]
+                }
+            ]
+        }
+    ]
+}

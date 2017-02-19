@@ -1,0 +1,271 @@
+{
+    "manufacturers": {
+        "Showtec": {
+            "name": "Showtec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Showtec",
+            "name": "XS-1W Mini Moving Beam",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [125, 236, 125],
+                "weight": 2,
+                "power": 25,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "colorTemperature": 7000
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [0, 3]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 270
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Horizontal Movement"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Vertical Movement"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100% dimmer"
+                        }
+                    ]
+                },
+                "Shutter/Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 7],
+                            "name": "Shutter closed"
+                        },
+                        {
+                            "range": [8, 15],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [16, 131],
+                            "name": "Strobe effect, from slow to fast"
+                        },
+                        {
+                            "range": [132, 139],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [140, 181],
+                            "name": "Fast Close to slow Open, from slow to fast"
+                        },
+                        {
+                            "range": [182, 189],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [190, 231],
+                            "name": "Slow Close to Fast Open, slow Open, from slow to fast"
+                        },
+                        {
+                            "range": [232, 239],
+                            "name": "Shutter open"
+                        },
+                        {
+                            "range": [240, 247],
+                            "name": "Random shutters are on or off, from long to short intervals"
+                        },
+                        {
+                            "range": [248, 255],
+                            "name": "Shutter open"
+                        }
+                    ]
+                },
+                "Channel Functions": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 69],
+                            "name": "Not used"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Enable Pan/tilt blackout (after 5 seconds)"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Disable Pan/tilt blackout (after 5 seconds)"
+                        },
+                        {
+                            "range": [90, 199],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "Reset All (after 5 seconds)"
+                        },
+                        {
+                            "range": [210, 249],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [250, 255],
+                            "name": "Sound-controlled"
+                        }
+                    ]
+                },
+                "Pan fine 16 bit": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Horizontal Movement Fine"
+                        }
+                    ]
+                },
+                "Tilt fine 16 bit": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Vertical Movement Fine"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "From Max Speed (0) to Min Speed (255)"
+                        }
+                    ]
+                },
+                "Pan/Tilt Macro": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 15],
+                            "name": "Not used"
+                        },
+                        {
+                            "range": [16, 35],
+                            "name": "Pan/Tilt Macro 1"
+                        },
+                        {
+                            "range": [36, 55],
+                            "name": "Pan/Tilt Macro 2"
+                        },
+                        {
+                            "range": [56, 75],
+                            "name": "Pan/Tilt Macro 3"
+                        },
+                        {
+                            "range": [76, 95],
+                            "name": "Pan/Tilt Macro 4"
+                        },
+                        {
+                            "range": [96, 115],
+                            "name": "Pan/Tilt Macro 5"
+                        },
+                        {
+                            "range": [116, 135],
+                            "name": "Pan/Tilt Macro 6"
+                        },
+                        {
+                            "range": [136, 155],
+                            "name": "Pan/Tilt Macro 7"
+                        },
+                        {
+                            "range": [156, 175],
+                            "name": "Pan/Tilt Macro 8"
+                        },
+                        {
+                            "range": [176, 195],
+                            "name": "Pan/Tilt Macro 9"
+                        },
+                        {
+                            "range": [196, 215],
+                            "name": "Pan/Tilt Macro 10"
+                        },
+                        {
+                            "range": [216, 235],
+                            "name": "Pan/Tilt Macro 11"
+                        },
+                        {
+                            "range": [236, 255],
+                            "name": "Pan/Tilt Macro 12"
+                        }
+                    ]
+                },
+                "Pan/Tilt Macro Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "From fast to slow"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine 16 bit"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine 16 bit"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "5 Channel",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Dimmer",
+                        "Shutter/Strobe",
+                        "Channel Functions"
+                    ]
+                },
+                {
+                    "name": "10 channel",
+                    "channels": [
+                        "Pan",
+                        "Pan fine 16 bit",
+                        "Tilt",
+                        "Tilt fine 16 bit",
+                        "Pan/Tilt Speed",
+                        "Pan/Tilt Macro",
+                        "Pan/Tilt Macro Speed",
+                        "Channel Functions",
+                        "Dimmer",
+                        "Shutter/Strobe"
+                    ]
+                }
+            ]
+        }
+    ]
+}
