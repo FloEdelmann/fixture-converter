@@ -1,8 +1,8 @@
 # DMX Fixture converter
 
-## DISCONTINUED!
+## 🚫 DISCONTINUED!
 
-See [Open Fixture Library](https://github.com/FloEdelmann/open-fixture-library) for successor project.
+➡ See [Open Fixture Library](https://github.com/FloEdelmann/open-fixture-library) for successor project.
 
 ---
 
