@@ -1,4 +1,10 @@
-# DMX Fixture converter [![Test Status](https://travis-ci.org/FloEdelmann/fixture-converter.svg?branch=master)](https://travis-ci.org/FloEdelmann/fixture-converter)
+# DMX Fixture converter
+
+## DISCONTINUED!
+
+See [Open Fixture Library](https://github.com/FloEdelmann/open-fixture-library) for successor project.
+
+---
 
 Creating fixture files is relatively easy for most DMX control software, as they offer graphical editors for their proprietary formats. But what if you want to try another program?
 
