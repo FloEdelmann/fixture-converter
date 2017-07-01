@@ -1,0 +1,49 @@
+{
+    "manufacturers": {
+        "Velleman": {
+            "name": "Velleman"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Velleman",
+            "name": "VDP1500SM",
+            "type": "Smoke",
+            "physical": {
+                "dimensions": [336, 214, 511],
+                "weight": 10,
+                "power": 1500,
+                "DMXconnector": "3-pin and 5-pin",
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Smoke": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 5],
+                            "name": "Spray OFF "
+                        },
+                        {
+                            "range": [6, 255],
+                            "name": "Spray ON (gradual min to max output)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Standard",
+                    "channels": [
+                        "Smoke"
+                    ]
+                }
+            ]
+        }
+    ]
+}

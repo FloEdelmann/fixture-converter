@@ -1,0 +1,98 @@
+{
+    "manufacturers": {
+        "Stage Right": {
+            "name": "Stage Right"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Stage Right",
+            "name": "7x20W COB LED Theater PAR",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [31, 34, 256],
+                "weight": 8,
+                "power": 160,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED",
+                    "colorTemperature": 3200,
+                    "lumens": 2780
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [28, 70]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100% brightness"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Adjust beam angle (0=28°, 255=70°)"
+                        }
+                    ]
+                },
+                "Strobe Speed": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 10],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [11, 255],
+                            "name": "Strobe speed 5-20Hz"
+                        }
+                    ]
+                },
+                "Dimmer speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 64],
+                            "name": "Real time"
+                        },
+                        {
+                            "range": [65, 128],
+                            "name": "Fast controlled response (Recommended for use with less expensive DMX512 controllers)"
+                        },
+                        {
+                            "range": [129, 192],
+                            "name": "Medium controlled response "
+                        },
+                        {
+                            "range": [193, 255],
+                            "name": "Slow controlled response "
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "Default",
+                    "channels": [
+                        "Dimmer",
+                        "Zoom",
+                        "Strobe Speed",
+                        "Dimmer speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

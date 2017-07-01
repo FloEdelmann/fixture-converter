@@ -1,0 +1,272 @@
+{
+    "manufacturers": {
+        "Cameo": {
+            "name": "Cameo"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Cameo",
+            "name": "Studio PAR 64 RGBWA UV 12W",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [230, 220, 255],
+                "weight": 4.5,
+                "power": 110,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [25, 25]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer 0 - 100%"
+                        }
+                    ]
+                },
+                "Stroboscope": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Slow to fast"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Amber": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "UV": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "UV",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0 - 100%"
+                        }
+                    ]
+                },
+                "Color macros": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Blackout / colors ch3 - ch8"
+                        },
+                        {
+                            "range": [5, 80],
+                            "name": "Macros"
+                        },
+                        {
+                            "range": [81, 150],
+                            "name": "Color change"
+                        },
+                        {
+                            "range": [151, 220],
+                            "name": "Color blending"
+                        },
+                        {
+                            "range": [221, 255],
+                            "name": "Music control (mic sensitivity)"
+                        }
+                    ]
+                },
+                "Color macros 2ch": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 16],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [17, 33],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [34, 50],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [51, 67],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [68, 84],
+                            "name": "Amber",
+                            "color": "#ffaa00"
+                        },
+                        {
+                            "range": [85, 101],
+                            "name": "UV",
+                            "color": "#aa007f"
+                        },
+                        {
+                            "range": [102, 118],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [119, 135],
+                            "name": "Cyan",
+                            "color": "#00ffff"
+                        },
+                        {
+                            "range": [136, 152],
+                            "name": "Lavender",
+                            "color": "#aaaaff"
+                        },
+                        {
+                            "range": [153, 169],
+                            "name": "Light green",
+                            "color": "#aaff7f"
+                        },
+                        {
+                            "range": [170, 186],
+                            "name": "Magenta",
+                            "color": "#ff00ff"
+                        },
+                        {
+                            "range": [187, 203],
+                            "name": "Torquoise",
+                            "color": "#aaffff"
+                        },
+                        {
+                            "range": [204, 220],
+                            "name": "Orange",
+                            "color": "#ff6e07"
+                        },
+                        {
+                            "range": [221, 237],
+                            "name": "Cold white",
+                            "color": "#f0f0ff"
+                        },
+                        {
+                            "range": [238, 255],
+                            "name": "Warm white",
+                            "color": "#ffeee5"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "9 channel",
+                    "channels": [
+                        "Dimmer",
+                        "Stroboscope",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "UV",
+                        "Color macros"
+                    ]
+                },
+                {
+                    "name": "2 channel",
+                    "channels": [
+                        "Dimmer",
+                        "Color macros 2ch"
+                    ]
+                },
+                {
+                    "name": "3 channel mode 1",
+                    "channels": [
+                        "Dimmer",
+                        "Stroboscope",
+                        "Color macros"
+                    ]
+                },
+                {
+                    "name": "3 channel mode 2",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "6 channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "UV"
+                    ]
+                }
+            ]
+        }
+    ]
+}

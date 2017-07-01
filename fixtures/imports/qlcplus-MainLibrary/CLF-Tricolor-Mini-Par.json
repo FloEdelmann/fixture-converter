@@ -1,0 +1,259 @@
+{
+    "manufacturers": {
+        "CLF": {
+            "name": "CLF"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "CLF",
+            "name": "Tricolor Mini Par",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [200, 240, 178],
+                "weight": 2,
+                "power": 35,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [20, 40]
+                },
+                "focus": {
+                    "type": "Fixed"
+                }
+            },
+            "availableChannels": {
+                "Dimming": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100%"
+                        }
+                    ]
+                },
+                "Macro color control": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Macro color control"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Strobe (0-20Hz)"
+                        }
+                    ]
+                },
+                "Auto & Custom program": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [10, 19],
+                            "name": "Out1 AUTO1"
+                        },
+                        {
+                            "range": [20, 29],
+                            "name": "Out2 AUTO2"
+                        },
+                        {
+                            "range": [30, 39],
+                            "name": "Out3 AUTO3"
+                        },
+                        {
+                            "range": [40, 49],
+                            "name": "Out4 AUTO4"
+                        },
+                        {
+                            "range": [50, 59],
+                            "name": "Out5 AUTO5"
+                        },
+                        {
+                            "range": [60, 69],
+                            "name": "Out6 AUTO6"
+                        },
+                        {
+                            "range": [70, 79],
+                            "name": "Out7 AUTO7"
+                        },
+                        {
+                            "range": [80, 89],
+                            "name": "Out8 AUTO8"
+                        },
+                        {
+                            "range": [90, 99],
+                            "name": "Out9 AUTO9"
+                        },
+                        {
+                            "range": [100, 109],
+                            "name": "Out10 AUTO10"
+                        },
+                        {
+                            "range": [110, 119],
+                            "name": "cust1 custom program1"
+                        },
+                        {
+                            "range": [120, 129],
+                            "name": "cust2 custom program2"
+                        },
+                        {
+                            "range": [130, 139],
+                            "name": "cust3 custom program3"
+                        },
+                        {
+                            "range": [140, 149],
+                            "name": "cust4 custom program4"
+                        },
+                        {
+                            "range": [150, 159],
+                            "name": "cust5 custom program5"
+                        },
+                        {
+                            "range": [160, 169],
+                            "name": "cust6 custom program6"
+                        },
+                        {
+                            "range": [170, 179],
+                            "name": "cust7 custom program7"
+                        },
+                        {
+                            "range": [180, 189],
+                            "name": "cust8 custom program8"
+                        },
+                        {
+                            "range": [190, 199],
+                            "name": "cust9 custom program9"
+                        },
+                        {
+                            "range": [200, 209],
+                            "name": "cust10 custom program10"
+                        },
+                        {
+                            "range": [210, 219],
+                            "name": "choose 01 program of sound controlling"
+                        },
+                        {
+                            "range": [220, 229],
+                            "name": "choose 02 program of sound controlling"
+                        },
+                        {
+                            "range": [230, 255],
+                            "name": "choose 03 program of sound controlling"
+                        }
+                    ]
+                },
+                "Auto speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "0-100% (only when using ch. 7)"
+                        }
+                    ]
+                },
+                "Dimming speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimming speed"
+                        }
+                    ]
+                },
+                "ID": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "ID address selection"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "3 channel",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "4 channel",
+                    "channels": [
+                        "Dimming",
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                {
+                    "name": "10 channel",
+                    "channels": [
+                        "Dimming",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Macro color control",
+                        "Strobe",
+                        "Auto & Custom program",
+                        "Auto speed",
+                        "Dimming speed",
+                        "ID"
+                    ]
+                }
+            ]
+        }
+    ]
+}

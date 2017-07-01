@@ -39,7 +39,7 @@ module.exports = {
                 "Unique channel name": {
                     "name": null, // optional. default: Unique channel name
                     "type": "Intensity", // optional. Possible values: "Intensity/Strobe/Shutter/Speed/SingleColor/MultiColor/Gobo/Prism/Pan/Tilt/Beam/Effect/Maintenance/Nothing"
-                    "color": "Generic", // optional. Possible values: "Generic/Red/Green/Blue/Cyan/Magenta/Yellow/Amber/White/UV/Lime". Note: Only used if "type" is "SingleColor"
+                    "color": "Generic", // optional. Possible values: "Generic/Red/Green/Blue/Cyan/Magenta/Indigo/Yellow/Amber/White/UV/Lime". Note: Only used if "type" is "SingleColor"
                     "defaultValue": 0, // optional. DMX channel value
                     "highlightValue": 0, // optional. DMX channel value
                     "invert": false, // optional

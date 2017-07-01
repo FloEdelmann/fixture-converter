@@ -1,0 +1,641 @@
+{
+    "manufacturers": {
+        "Involight": {
+            "name": "Involight"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Involight",
+            "name": "LED MH77S",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [330, 320, 455],
+                "weight": 10.5,
+                "power": 120,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other"
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 540,
+                    "tiltMax": 280
+                }
+            },
+            "availableChannels": {
+                "Pan Coarse": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Coarse"
+                        }
+                    ]
+                },
+                "Pan Fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan Fine"
+                        }
+                    ]
+                },
+                "Tilt Coarse": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt Coarse"
+                        }
+                    ]
+                },
+                "Tilt Fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Pan/Tilt Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "PAN & TILT Movement Speed"
+                        }
+                    ]
+                },
+                "Strobe Effect": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 3],
+                            "name": "No strobe (shutter closed)"
+                        },
+                        {
+                            "range": [4, 251],
+                            "name": "Strobe"
+                        },
+                        {
+                            "range": [252, 255],
+                            "name": "No strobe (shutter open)"
+                        }
+                    ]
+                },
+                "Master dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master Dimmer"
+                        }
+                    ]
+                },
+                "Color Wheel": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [5, 9],
+                            "name": "White & Red",
+                            "color": "#ffffff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [10, 14],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [15, 19],
+                            "name": "Red & Orange",
+                            "color": "#ff0000",
+                            "color2": "#ff5500"
+                        },
+                        {
+                            "range": [20, 24],
+                            "name": "Orange",
+                            "color": "#ff5500"
+                        },
+                        {
+                            "range": [25, 29],
+                            "name": "Orange & Green",
+                            "color": "#ff5500",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [30, 34],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [35, 39],
+                            "name": "Green & Light blue",
+                            "color": "#00ff00",
+                            "color2": "#00aaff"
+                        },
+                        {
+                            "range": [40, 44],
+                            "name": "Light blue",
+                            "color": "#00aaff"
+                        },
+                        {
+                            "range": [45, 49],
+                            "name": "Light blue & Purple",
+                            "color": "#00aaff",
+                            "color2": "#aa00ff"
+                        },
+                        {
+                            "range": [50, 54],
+                            "name": "Purple",
+                            "color": "#aa00ff"
+                        },
+                        {
+                            "range": [55, 59],
+                            "name": "Purple & Yellow",
+                            "color": "#aa00ff",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [60, 64],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [65, 69],
+                            "name": "Yellow & Blue",
+                            "color": "#ffff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [70, 74],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [75, 79],
+                            "name": "Blue & Magenta",
+                            "color": "#0000ff",
+                            "color2": "#ff007f"
+                        },
+                        {
+                            "range": [80, 84],
+                            "name": "Magenta",
+                            "color": "#ff007f"
+                        },
+                        {
+                            "range": [85, 89],
+                            "name": "Magenta & White",
+                            "color": "#ff007f",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [90, 255],
+                            "name": "Rainbow with speed controll"
+                        }
+                    ]
+                },
+                "Gobo Wheel": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [5, 9],
+                            "name": "Gobo 1"
+                        },
+                        {
+                            "range": [10, 14],
+                            "name": "Gobo 2"
+                        },
+                        {
+                            "range": [15, 19],
+                            "name": "Gobo 3"
+                        },
+                        {
+                            "range": [20, 24],
+                            "name": "Gobo 4"
+                        },
+                        {
+                            "range": [25, 29],
+                            "name": "Gobo 5"
+                        },
+                        {
+                            "range": [30, 34],
+                            "name": "Gobo 6"
+                        },
+                        {
+                            "range": [35, 39],
+                            "name": "Gobo 7"
+                        },
+                        {
+                            "range": [40, 129],
+                            "name": "Gobo Change, speed descending"
+                        },
+                        {
+                            "range": [130, 134],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [135, 220],
+                            "name": "Gobo Change, speed ascending"
+                        },
+                        {
+                            "range": [221, 225],
+                            "name": "Gobo 1 Shake, speed controll"
+                        },
+                        {
+                            "range": [226, 230],
+                            "name": "Gobo 2 Shake, speed controll"
+                        },
+                        {
+                            "range": [231, 235],
+                            "name": "Gobo 3 Shake, speed controll"
+                        },
+                        {
+                            "range": [236, 240],
+                            "name": "Gobo 4 Shake, speed controll"
+                        },
+                        {
+                            "range": [241, 245],
+                            "name": "Gobo 5 Shake, speed controll"
+                        },
+                        {
+                            "range": [246, 250],
+                            "name": "Gobo 6 Shake, speed controll"
+                        },
+                        {
+                            "range": [251, 255],
+                            "name": "Gobo 7 Shake, speed controll"
+                        }
+                    ]
+                },
+                "Gobo Rotation": {
+                    "type": "Gobo",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Fix rotation 0-360"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "Rotation CW, speed controll"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Rotation CCW, speed controll"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "CW-CCW rotation, speed controll"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Focus"
+                        }
+                    ]
+                },
+                "Prism": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 127],
+                            "name": "Open"
+                        },
+                        {
+                            "range": [128, 255],
+                            "name": "Prism"
+                        }
+                    ]
+                },
+                "Prism Rotation": {
+                    "type": "Prism",
+                    "capabilities": [
+                        {
+                            "range": [0, 63],
+                            "name": "Fix position 0-360"
+                        },
+                        {
+                            "range": [64, 127],
+                            "name": "CW-CCW rotation, speed controll"
+                        },
+                        {
+                            "range": [128, 191],
+                            "name": "Prism is rotating CW, speed controll"
+                        },
+                        {
+                            "range": [192, 255],
+                            "name": "Prism is rotating CCW, speed controll"
+                        }
+                    ]
+                },
+                "Macro program": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 52],
+                            "name": "Split-color manual setup"
+                        },
+                        {
+                            "range": [53, 80],
+                            "name": "Rainbow effect, speed controll"
+                        },
+                        {
+                            "range": [81, 255],
+                            "name": "Macro programs"
+                        }
+                    ]
+                },
+                "Function": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 25],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [26, 45],
+                            "name": "Reset except PAN, TILT and software"
+                        },
+                        {
+                            "range": [46, 103],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [104, 119],
+                            "name": "Reset PAN and TILT motors"
+                        },
+                        {
+                            "range": [120, 190],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [191, 205],
+                            "name": "Reset all"
+                        },
+                        {
+                            "range": [206, 255],
+                            "name": "No function"
+                        }
+                    ]
+                },
+                "Color Wheel effect": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 4],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [5, 9],
+                            "name": "White & Red",
+                            "color": "#ffffff",
+                            "color2": "#ff0000"
+                        },
+                        {
+                            "range": [10, 14],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [15, 19],
+                            "name": "Red & Orange",
+                            "color": "#ff0000",
+                            "color2": "#ff5500"
+                        },
+                        {
+                            "range": [20, 24],
+                            "name": "Orange",
+                            "color": "#ff5500"
+                        },
+                        {
+                            "range": [25, 29],
+                            "name": "Orange & Green",
+                            "color": "#ff5500",
+                            "color2": "#00ff00"
+                        },
+                        {
+                            "range": [30, 34],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [35, 39],
+                            "name": "Green & Light blue",
+                            "color": "#00ff00",
+                            "color2": "#00aaff"
+                        },
+                        {
+                            "range": [40, 44],
+                            "name": "Light blue",
+                            "color": "#00aaff"
+                        },
+                        {
+                            "range": [45, 49],
+                            "name": "Light blue & Purple",
+                            "color": "#00aaff",
+                            "color2": "#aa00ff"
+                        },
+                        {
+                            "range": [50, 54],
+                            "name": "Purple",
+                            "color": "#aa00ff"
+                        },
+                        {
+                            "range": [55, 59],
+                            "name": "Purple & Yellow",
+                            "color": "#aa00ff",
+                            "color2": "#ffff00"
+                        },
+                        {
+                            "range": [60, 64],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [65, 69],
+                            "name": "Yellow & Blue",
+                            "color": "#ffff00",
+                            "color2": "#0000ff"
+                        },
+                        {
+                            "range": [70, 74],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [75, 79],
+                            "name": "Blue & Magenta",
+                            "color": "#0000ff",
+                            "color2": "#ff007f"
+                        },
+                        {
+                            "range": [80, 84],
+                            "name": "Magenta",
+                            "color": "#ff007f"
+                        },
+                        {
+                            "range": [85, 89],
+                            "name": "Magenta & White",
+                            "color": "#ff007f",
+                            "color2": "#ffffff"
+                        },
+                        {
+                            "range": [90, 94],
+                            "name": "White",
+                            "color": "#ffffff"
+                        },
+                        {
+                            "range": [95, 114],
+                            "name": "Red",
+                            "color": "#ff0000"
+                        },
+                        {
+                            "range": [115, 134],
+                            "name": "Orange",
+                            "color": "#ff5500"
+                        },
+                        {
+                            "range": [135, 154],
+                            "name": "Green",
+                            "color": "#00ff00"
+                        },
+                        {
+                            "range": [155, 174],
+                            "name": "Light blue",
+                            "color": "#00aaff"
+                        },
+                        {
+                            "range": [175, 194],
+                            "name": "Purple",
+                            "color": "#aa00ff"
+                        },
+                        {
+                            "range": [195, 214],
+                            "name": "Yellow",
+                            "color": "#ffff00"
+                        },
+                        {
+                            "range": [215, 234],
+                            "name": "Blue",
+                            "color": "#0000ff"
+                        },
+                        {
+                            "range": [235, 254],
+                            "name": "Magenta",
+                            "color": "#ff007f"
+                        },
+                        {
+                            "range": [255, 255],
+                            "name": "White",
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                "Color Wheel Rotating Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Color Wheel Rotating Speed"
+                        }
+                    ]
+                },
+                "Prism on-off speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Prism on-off speed"
+                        }
+                    ]
+                },
+                "Gobo Wheel Rotation Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Gobo Wheel Rotation Speed"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan Coarse",
+                    "Pan Fine"
+                ],
+                [
+                    "Tilt Coarse",
+                    "Tilt Fine"
+                ]
+            ],
+            "modes": [
+                {
+                    "name": "15 Channel",
+                    "channels": [
+                        "Pan Coarse",
+                        "Pan Fine",
+                        "Tilt Coarse",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed",
+                        "Strobe Effect",
+                        "Master dimmer",
+                        "Color Wheel",
+                        "Gobo Wheel",
+                        "Gobo Rotation",
+                        "Focus",
+                        "Prism",
+                        "Prism Rotation",
+                        "Macro program",
+                        "Function"
+                    ]
+                },
+                {
+                    "name": "19 Channel",
+                    "channels": [
+                        "Pan Coarse",
+                        "Pan Fine",
+                        "Tilt Coarse",
+                        "Tilt Fine",
+                        "Pan/Tilt Speed",
+                        "Strobe Effect",
+                        "Master dimmer",
+                        "Color Wheel",
+                        "Gobo Wheel",
+                        "Gobo Rotation",
+                        "Focus",
+                        "Prism",
+                        "Prism Rotation",
+                        "Macro program",
+                        "Function",
+                        "Color Wheel effect",
+                        "Color Wheel Rotating Speed",
+                        "Prism on-off speed",
+                        "Gobo Wheel Rotation Speed"
+                    ]
+                }
+            ]
+        }
+    ]
+}

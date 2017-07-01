@@ -1,0 +1,370 @@
+{
+    "manufacturers": {
+        "Varytec": {
+            "name": "Varytec"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "Varytec",
+            "name": "LED Easy Move Mini Beam & Wash RGBW",
+            "type": "Moving Head",
+            "physical": {
+                "dimensions": [236, 301, 134],
+                "weight": 4.37,
+                "power": 60,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "zoom",
+                    "degreesMinMax": [5, 35]
+                },
+                "focus": {
+                    "type": "Head",
+                    "panMax": 630,
+                    "tiltMax": 235
+                }
+            },
+            "availableChannels": {
+                "Pan": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan (0 - 630°)"
+                        }
+                    ]
+                },
+                "Pan fine": {
+                    "type": "Pan",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Pan fine"
+                        }
+                    ]
+                },
+                "Tilt": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt (0 - 235°)"
+                        }
+                    ]
+                },
+                "Tilt fine": {
+                    "type": "Tilt",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Tilt fine"
+                        }
+                    ]
+                },
+                "Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 225],
+                            "name": "Speed pan/tilt fast-slow"
+                        },
+                        {
+                            "range": [226, 235],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [236, 255],
+                            "name": "Highest speed"
+                        }
+                    ]
+                },
+                "RED led1/led3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red led 1 & 3",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "GREEN led1/led3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green led 1 & 3",
+                            "color": "#00ff00"
+                        }
+                    ]
+                },
+                "BLUE led1/led3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue led 1 & 3",
+                            "color": "#000aff"
+                        }
+                    ]
+                },
+                "WHITE led1/led3": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White led 1 & 3",
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                "RED led2/led4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red led 2 & 4",
+                            "color": "#ff0000"
+                        }
+                    ]
+                },
+                "GREEN led2/led4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green led 2 & 4",
+                            "color": "#00ff00"
+                        }
+                    ]
+                },
+                "BLUE led2/led4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue led 2 & 4",
+                            "color": "#000aff"
+                        }
+                    ]
+                },
+                "WHITE led2/led4": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White led 2 & 4",
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Zoom narrow-wide"
+                        }
+                    ]
+                },
+                "Strobe": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 16],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [17, 255],
+                            "name": "Strobe"
+                        }
+                    ]
+                },
+                "Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Dimmer"
+                        }
+                    ]
+                },
+                "Colour Macros": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 55],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [56, 75],
+                            "name": "Red"
+                        },
+                        {
+                            "range": [76, 95],
+                            "name": "Green"
+                        },
+                        {
+                            "range": [96, 115],
+                            "name": "Blue 1"
+                        },
+                        {
+                            "range": [116, 135],
+                            "name": "White"
+                        },
+                        {
+                            "range": [136, 155],
+                            "name": "Pink"
+                        },
+                        {
+                            "range": [156, 175],
+                            "name": "Orange 1"
+                        },
+                        {
+                            "range": [176, 195],
+                            "name": "Blue 2"
+                        },
+                        {
+                            "range": [196, 215],
+                            "name": "Blue 3"
+                        },
+                        {
+                            "range": [216, 255],
+                            "name": "Orange 2"
+                        }
+                    ]
+                },
+                "Colour temp presets": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 55],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [56, 255],
+                            "name": "Different presets"
+                        }
+                    ]
+                },
+                "Automatic Programs": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 75],
+                            "name": "No function"
+                        },
+                        {
+                            "range": [76, 255],
+                            "name": "Automatic programs"
+                        }
+                    ]
+                }
+            },
+            "multiByteChannels": [
+                [
+                    "Pan",
+                    "Pan fine"
+                ],
+                [
+                    "Tilt",
+                    "Tilt fine"
+                ]
+            ],
+            "heads": {
+                "Standard-head0": [
+                    "RED led1/led3",
+                    "GREEN led1/led3",
+                    "BLUE led1/led3",
+                    "WHITE led1/led3"
+                ],
+                "Standard-head1": [
+                    "RED led2/led4",
+                    "GREEN led2/led4",
+                    "BLUE led2/led4",
+                    "WHITE led2/led4"
+                ],
+                "Basic-head0": [
+                    "BLUE led1/led3",
+                    "WHITE led1/led3",
+                    "RED led1/led3",
+                    "GREEN led1/led3"
+                ],
+                "Basic-head1": [
+                    "RED led2/led4",
+                    "GREEN led2/led4",
+                    "BLUE led2/led4",
+                    "WHITE led2/led4"
+                ]
+            },
+            "modes": [
+                {
+                    "name": "Standard",
+                    "channels": [
+                        "Pan",
+                        "Pan fine",
+                        "Tilt",
+                        "Tilt fine",
+                        "Speed",
+                        "RED led1/led3",
+                        "GREEN led1/led3",
+                        "BLUE led1/led3",
+                        "WHITE led1/led3",
+                        "RED led2/led4",
+                        "GREEN led2/led4",
+                        "BLUE led2/led4",
+                        "WHITE led2/led4",
+                        "Zoom",
+                        "Strobe",
+                        "Dimmer",
+                        "Colour Macros",
+                        "Colour temp presets",
+                        "Automatic Programs"
+                    ]
+                },
+                {
+                    "name": "Basic",
+                    "channels": [
+                        "Pan",
+                        "Tilt",
+                        "Speed",
+                        "RED led1/led3",
+                        "GREEN led1/led3",
+                        "BLUE led1/led3",
+                        "WHITE led1/led3",
+                        "RED led2/led4",
+                        "GREEN led2/led4",
+                        "BLUE led2/led4",
+                        "WHITE led2/led4",
+                        "Zoom",
+                        "Strobe",
+                        "Dimmer",
+                        "Colour Macros",
+                        "Colour temp presets",
+                        "Automatic Programs"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,330 @@
+{
+    "manufacturers": {
+        "ETEC": {
+            "name": "ETEC"
+        }
+    },
+    "fixtures": [
+        {
+            "manufacturer": "ETEC",
+            "name": "LED PAR 64 18x15W RGBWA Zoom",
+            "type": "Color Changer",
+            "physical": {
+                "dimensions": [270, 270, 300],
+                "weight": 2.3,
+                "power": 280,
+                "DMXconnector": "3-pin",
+                "bulb": {
+                    "type": "LED"
+                },
+                "lens": {
+                    "name": "Other",
+                    "degreesMinMax": [0, 10]
+                },
+                "focus": {
+                    "type": "Fixed",
+                    "panMax": 10
+                }
+            },
+            "availableChannels": {
+                "Master Dimmer": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Master dimmer"
+                        }
+                    ]
+                },
+                "Red": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Red",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Red intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Green": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Green",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Green intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Blue": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Blue",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Blue intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "White": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "White",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "White intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Amber": {
+                    "type": "SingleColor",
+                    "crossfade": true,
+                    "color": "Amber",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Amber intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Zoom": {
+                    "type": "Beam",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Zoom adjustment"
+                        }
+                    ]
+                },
+                "Colour": {
+                    "type": "MultiColor",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Colour Macros"
+                        }
+                    ]
+                },
+                "Strobe Speed": {
+                    "type": "Strobe",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [10, 255],
+                            "name": "Strobe Speed"
+                        }
+                    ]
+                },
+                "HSV": {
+                    "type": "Effect",
+                    "capabilities": [
+                        {
+                            "range": [0, 9],
+                            "name": "No Function"
+                        },
+                        {
+                            "range": [10, 99],
+                            "name": "HSV Effect"
+                        },
+                        {
+                            "range": [100, 119],
+                            "name": "3 colors, pure color"
+                        },
+                        {
+                            "range": [120, 139],
+                            "name": "7 colors, pure color"
+                        },
+                        {
+                            "range": [140, 159],
+                            "name": "7 colors, diffuse color"
+                        },
+                        {
+                            "range": [160, 179],
+                            "name": "DMX control, vanishing strobe colors"
+                        },
+                        {
+                            "range": [180, 199],
+                            "name": "7 color strobe"
+                        },
+                        {
+                            "range": [200, 219],
+                            "name": "7 additional color strobe"
+                        },
+                        {
+                            "range": [220, 239],
+                            "name": "7 water course colors"
+                        },
+                        {
+                            "range": [240, 255],
+                            "name": "Sound to light mode"
+                        }
+                    ]
+                },
+                "Auto Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "adjusting speed for AUTO programs"
+                        }
+                    ]
+                },
+                "Dimmer Speed": {
+                    "type": "Speed",
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "increasing speed of dimmer"
+                        }
+                    ]
+                },
+                "ID": {
+                    "type": "Maintenance",
+                    "capabilities": [
+                        {
+                            "range": [0, 0],
+                            "name": "Whole ID address controlled"
+                        },
+                        {
+                            "range": [1, 255],
+                            "name": "Same ID address controlled"
+                        }
+                    ]
+                },
+                "Hue": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Hue intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Saturation": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Saturation intensity (0 - 100%)"
+                        }
+                    ]
+                },
+                "Brightness": {
+                    "type": "Intensity",
+                    "crossfade": true,
+                    "capabilities": [
+                        {
+                            "range": [0, 255],
+                            "name": "Brightness intensity (0 - 100%)"
+                        }
+                    ]
+                }
+            },
+            "modes": [
+                {
+                    "name": "STAGE",
+                    "channels": [
+                        "Master Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "Zoom",
+                        "Colour",
+                        "Strobe Speed",
+                        "HSV",
+                        "Auto Speed",
+                        "Dimmer Speed",
+                        "ID"
+                    ]
+                },
+                {
+                    "name": "ARC.1",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "Zoom"
+                    ]
+                },
+                {
+                    "name": "ARC1.D",
+                    "channels": [
+                        "Master Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "Zoom"
+                    ]
+                },
+                {
+                    "name": "ARC.2",
+                    "channels": [
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "Dimmer Speed",
+                        "Zoom"
+                    ]
+                },
+                {
+                    "name": "ARC2.D",
+                    "channels": [
+                        "Master Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "Dimmer Speed",
+                        "Zoom"
+                    ]
+                },
+                {
+                    "name": "ARC2.S",
+                    "channels": [
+                        "Master Dimmer",
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "White",
+                        "Amber",
+                        "Strobe Speed",
+                        "Zoom"
+                    ]
+                },
+                {
+                    "name": "HSV",
+                    "channels": [
+                        "Hue",
+                        "Saturation",
+                        "Brightness",
+                        "Dimmer Speed",
+                        "Zoom"
+                    ]
+                }
+            ]
+        }
+    ]
+}
