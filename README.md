@@ -2,7 +2,7 @@
 
 ## 🚫 DISCONTINUED!
 
-➡ See [Open Fixture Library](https://github.com/FloEdelmann/open-fixture-library) for successor project.
+➡ See [Open Fixture Library](https://github.com/OpenLightingProject/open-fixture-library) for successor project.
 
 ---
 
